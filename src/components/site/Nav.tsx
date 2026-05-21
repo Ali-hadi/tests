@@ -56,8 +56,12 @@ export function Nav() {
             aria-label="Menu"
           >
             <div className="flex flex-col gap-1.5">
-              <span className={`block w-4 h-px bg-foreground transition-transform ${open ? "rotate-45 translate-y-[3px]" : ""}`} />
-              <span className={`block w-4 h-px bg-foreground transition-transform ${open ? "-rotate-45 -translate-y-[3px]" : ""}`} />
+              <span
+                className={`block w-4 h-px bg-foreground transition-transform ${open ? "rotate-45 translate-y-[3px]" : ""}`}
+              />
+              <span
+                className={`block w-4 h-px bg-foreground transition-transform ${open ? "-rotate-45 -translate-y-[3px]" : ""}`}
+              />
             </div>
           </button>
         </div>
