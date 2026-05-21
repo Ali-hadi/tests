@@ -137,6 +137,11 @@ function HomePage() {
           <img src={heroBg} alt="" className="w-full h-full object-cover opacity-60" />
           <div className="absolute inset-0 bg-gradient-to-b from-ink/50 via-ink/40 to-background" />
           <div className="absolute inset-0 grid-overlay opacity-30" />
+          <div className="hero-wave-field" aria-hidden="true">
+            <span className="hero-wave hero-wave-a" />
+            <span className="hero-wave hero-wave-b" />
+            <span className="hero-wave hero-wave-c" />
+          </div>
         </motion.div>
 
         <div className="relative max-w-[1400px] mx-auto px-6 lg:px-10 w-full">
@@ -350,7 +355,7 @@ function HomePage() {
                 to="/portfolio"
                 className="text-[10px] font-mono uppercase tracking-[0.3em] text-teal border-b border-teal/30 pb-1"
               >
-                View all case studies →
+                View 100+ project catalog →
               </Link>
             </div>
           </Reveal>

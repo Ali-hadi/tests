@@ -165,6 +165,49 @@
   .noise {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
   }
+  .hero-wave-field {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .hero-wave {
+    position: absolute;
+    left: -18%;
+    width: 136%;
+    height: 42%;
+    border-top: 1px solid color-mix(in oklab, var(--color-teal) 42%, transparent);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 18px color-mix(in oklab, var(--color-teal) 20%, transparent));
+    opacity: 0.72;
+    transform: rotate(-6deg);
+    animation: wave-drift 14s ease-in-out infinite;
+  }
+  .hero-wave::after {
+    content: "";
+    position: absolute;
+    inset: 18px 0 auto;
+    height: 100%;
+    border-top: 1px solid color-mix(in oklab, var(--color-orange) 24%, transparent);
+    border-radius: inherit;
+  }
+  .hero-wave-a {
+    top: 18%;
+  }
+  .hero-wave-b {
+    top: 34%;
+    animation-duration: 18s;
+    animation-delay: -5s;
+    opacity: 0.48;
+    transform: rotate(-3deg);
+  }
+  .hero-wave-c {
+    top: 50%;
+    animation-duration: 22s;
+    animation-delay: -9s;
+    opacity: 0.36;
+    transform: rotate(-8deg);
+  }
 }
 
 @keyframes marquee {
@@ -199,6 +242,15 @@
   }
   100% {
     transform: translateY(100vh);
+  }
+}
+@keyframes wave-drift {
+  0%,
+  100% {
+    transform: translate3d(-2%, 0, 0) rotate(-6deg) scaleX(1);
+  }
+  50% {
+    transform: translate3d(3%, -18px, 0) rotate(-4deg) scaleX(1.04);
   }
 }
 .animate-marquee {
