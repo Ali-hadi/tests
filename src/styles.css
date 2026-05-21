@@ -1,0 +1,175 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-teal: var(--teal);
+  --color-teal-glow: var(--teal-glow);
+  --color-orange: var(--orange);
+  --color-orange-glow: var(--orange-glow);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-sans: "Inter Tight", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+}
+
+:root {
+  /* Cinematic dark — brand teal #0E8C8E + orange #F26A1F over deep ink */
+  --background: oklch(0.13 0.025 230);
+  --foreground: oklch(0.97 0.005 230);
+  --ink: oklch(0.10 0.025 230);
+  --ink-2: oklch(0.17 0.03 230);
+  --card: oklch(0.16 0.025 230);
+  --card-foreground: oklch(0.97 0.005 230);
+  --popover: oklch(0.13 0.025 230);
+  --popover-foreground: oklch(0.97 0.005 230);
+  --primary: oklch(0.62 0.13 195);
+  --primary-foreground: oklch(0.10 0.025 230);
+  --teal: oklch(0.62 0.13 195);
+  --teal-glow: oklch(0.78 0.14 190);
+  --orange: oklch(0.70 0.20 45);
+  --orange-glow: oklch(0.80 0.18 50);
+  --secondary: oklch(0.20 0.025 230);
+  --secondary-foreground: oklch(0.97 0.005 230);
+  --muted: oklch(0.20 0.025 230);
+  --muted-foreground: oklch(0.65 0.02 230);
+  --accent: oklch(0.70 0.20 45);
+  --accent-foreground: oklch(0.10 0.025 230);
+  --destructive: oklch(0.60 0.22 25);
+  --destructive-foreground: oklch(0.97 0.005 230);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 10%);
+  --ring: oklch(0.62 0.13 195);
+}
+
+.dark {
+  --background: oklch(0.13 0.025 230);
+  --foreground: oklch(0.97 0.005 230);
+}
+
+@layer base {
+  @font-face {
+    font-family: "Space Grotesk";
+    src: url("https://fonts.gstatic.com/s/spacegrotesk/v16/V8mDoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUUxjLA.woff2") format("woff2");
+    font-weight: 300 700;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Inter Tight";
+    src: url("https://fonts.gstatic.com/s/intertight/v7/NGSnv5HMAFg6IuGlBNMjxJEL2VmU3NS7Z2KSjzwZZWcS9Q.woff2") format("woff2");
+    font-weight: 300 800;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "JetBrains Mono";
+    src: url("https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2") format("woff2");
+    font-weight: 400 700;
+    font-display: swap;
+  }
+
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--color-teal) 40%, transparent);
+    color: var(--color-foreground);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  .glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+    backdrop-filter: blur(14px);
+    border: 1px solid color-mix(in oklab, var(--color-foreground) 8%, transparent);
+  }
+  .glow-teal {
+    box-shadow: 0 0 40px -10px color-mix(in oklab, var(--color-teal) 70%, transparent);
+  }
+  .text-glow {
+    text-shadow: 0 0 30px color-mix(in oklab, var(--color-teal) 50%, transparent);
+  }
+  .gradient-text {
+    background: linear-gradient(120deg, var(--color-teal-glow) 0%, var(--color-foreground) 50%, var(--color-orange-glow) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .grid-overlay {
+    background-image:
+      linear-gradient(color-mix(in oklab, var(--color-foreground) 4%, transparent) 1px, transparent 1px),
+      linear-gradient(90deg, color-mix(in oklab, var(--color-foreground) 4%, transparent) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+  .noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.9; }
+}
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
