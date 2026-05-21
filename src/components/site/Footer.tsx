@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import logo from "@/assets/logo-white.png";
+import { siteConfig } from "@/lib/seo";
 
 export function Footer() {
   return (
@@ -74,9 +75,24 @@ export function Footer() {
             </div>
             <div>
               <p className="text-[10px] font-mono uppercase tracking-[0.3em] text-muted-foreground mb-5">
-                Operations
+                Contact
               </p>
               <ul className="space-y-3 text-muted-foreground">
+                <li>
+                  <a href={`mailto:${siteConfig.email}`} className="hover:text-teal break-all">
+                    {siteConfig.email}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={siteConfig.whatsappUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-teal"
+                  >
+                    WhatsApp {siteConfig.whatsappDisplay}
+                  </a>
+                </li>
                 <li>24/7 Global</li>
                 <li>Fixed-price</li>
                 <li>Hourly engagements</li>

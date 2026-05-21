@@ -1,22 +1,21 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
+import { createSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/pricing")({
-  head: () => ({
-    meta: [
-      { title: "Pricing — AItouchSolutions" },
-      {
-        name: "description",
-        content:
-          "Fixed-price projects, hourly engagements, dedicated teams, AI packages — transparent global pricing.",
-      },
-      { property: "og:title", content: "Pricing — AItouchSolutions" },
-      {
-        property: "og:description",
-        content: "Flexible engagement models for projects of any size.",
-      },
-    ],
-  }),
+  head: () =>
+    createSeo({
+      title: "Pricing for AI & Software Projects | AItouchSolutions",
+      description:
+        "Review AItouchSolutions pricing for hourly development, fixed-price projects, dedicated teams, AI automation packages, and custom enterprise work.",
+      path: "/pricing",
+      keywords: [
+        "AI project pricing",
+        "software development pricing",
+        "fixed price development",
+        "hourly developers",
+      ],
+    }),
   component: PricingPage,
 });
 

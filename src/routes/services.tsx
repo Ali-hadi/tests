@@ -1,22 +1,21 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
+import { createSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/services")({
-  head: () => ({
-    meta: [
-      { title: "Services — AItouchSolutions" },
-      {
-        name: "description",
-        content:
-          "AI Agents, Automation, Custom SaaS, Web & Mobile Apps, CRM/ERP, Cloud & DevOps. Fixed-price or hourly. 24/7 global delivery.",
-      },
-      { property: "og:title", content: "Services — AItouchSolutions" },
-      {
-        property: "og:description",
-        content: "End-to-end AI and software services for global clients.",
-      },
-    ],
-  }),
+  head: () =>
+    createSeo({
+      title: "AI & Software Development Services | AItouchSolutions",
+      description:
+        "Explore AI agents, automation, custom SaaS, web and mobile app development, CRM/ERP, cloud, DevOps, and support from AItouchSolutions.",
+      path: "/services",
+      keywords: [
+        "AI development services",
+        "custom SaaS development",
+        "web app development",
+        "mobile app development",
+      ],
+    }),
   component: ServicesPage,
 });
 

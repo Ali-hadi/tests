@@ -1,23 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import founder from "@/assets/founder.jpg";
+import { createSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About — AItouchSolutions" },
-      {
-        name: "description",
-        content:
-          "Founded by Shahzad Nazar, AItouchSolutions builds intelligent software for global enterprises.",
-      },
-      { property: "og:title", content: "About — AItouchSolutions" },
-      {
-        property: "og:description",
-        content: "The story, the vision, the team behind AItouchSolutions.",
-      },
-    ],
-  }),
+  head: () =>
+    createSeo({
+      title: "About Shahzad Nazar | AItouchSolutions",
+      description:
+        "Learn about Shahzad Nazar, founder of AItouchSolutions, an AI and custom software studio building agents, automation, SaaS products, web apps, and mobile apps.",
+      path: "/about",
+      keywords: ["Shahzad Nazar", "AItouchSolutions founder", "AI software founder"],
+    }),
   component: AboutPage,
 });
 

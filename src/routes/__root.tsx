@@ -12,6 +12,7 @@ import appCss from "../styles.css?url";
 import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import { Jarvis } from "@/components/site/Jarvis";
+import { organizationJsonLd, siteConfig } from "@/lib/seo";
 
 function NotFoundComponent() {
   return (
@@ -72,23 +73,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "AItouchSolutions — AI-Powered Software Solutions for the Future" },
-      {
-        name: "description",
-        content:
-          "Global AI-powered software company building intelligent web apps, AI agents, automation systems, and scalable digital products. Founded by Shahzad Nazar. Available 24/7.",
-      },
-      { name: "author", content: "AItouchSolutions" },
-      { property: "og:title", content: "AItouchSolutions — AI Software for the Future" },
-      {
-        property: "og:description",
-        content:
-          "Intelligent web apps, AI agents, automation systems for global clients. 24/7 delivery.",
-      },
-      { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "AItouchSolutions" },
-      { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#0A1A2E" },
+      { name: "application-name", content: siteConfig.name },
+      { name: "creator", content: siteConfig.author },
+      { name: "publisher", content: siteConfig.name },
     ],
     links: [{ rel: "stylesheet", href: appCss }],
   }),
@@ -103,6 +91,12 @@ function RootShell({ children }: { children: React.ReactNode }) {
     <html lang="en" className="dark">
       <head>
         <HeadContent />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
       </head>
       <body>
         {children}

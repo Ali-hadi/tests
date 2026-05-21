@@ -7,23 +7,16 @@ import case2 from "@/assets/case-2.jpg";
 import case3 from "@/assets/case-3.jpg";
 import { Reveal } from "@/components/site/Reveal";
 import { Counter } from "@/components/site/Counter";
+import { createSeo, siteConfig } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "AItouchSolutions — AI-Powered Software Solutions for the Future" },
-      {
-        name: "description",
-        content:
-          "Global AI software company by Shahzad Nazar. AI agents, automation, custom SaaS, web & mobile apps for clients worldwide. Available 24/7.",
-      },
-      { property: "og:title", content: "AItouchSolutions — AI Software for the Future" },
-      {
-        property: "og:description",
-        content: "Intelligent products, AI agents, and automation for global enterprises.",
-      },
-    ],
-  }),
+  head: () =>
+    createSeo({
+      title: siteConfig.defaultTitle,
+      description: siteConfig.defaultDescription,
+      path: "/",
+      keywords: ["AI software solutions", "AI automation agency", "custom web apps"],
+    }),
   component: HomePage,
 });
 

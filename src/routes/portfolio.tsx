@@ -3,23 +3,17 @@ import { Reveal } from "@/components/site/Reveal";
 import case1 from "@/assets/case-1.jpg";
 import case2 from "@/assets/case-2.jpg";
 import case3 from "@/assets/case-3.jpg";
+import { createSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/portfolio")({
-  head: () => ({
-    meta: [
-      { title: "Portfolio — AItouchSolutions" },
-      {
-        name: "description",
-        content:
-          "Selected case studies: AI dashboards, automation engines, mobile apps for global clients.",
-      },
-      { property: "og:title", content: "Portfolio — AItouchSolutions" },
-      {
-        property: "og:description",
-        content: "Award-grade work delivered for ambitious teams worldwide.",
-      },
-    ],
-  }),
+  head: () =>
+    createSeo({
+      title: "AI Software Portfolio & Case Studies | AItouchSolutions",
+      description:
+        "Explore AItouchSolutions case studies across AI dashboards, automation platforms, SaaS products, and mobile apps for ambitious global teams.",
+      path: "/portfolio",
+      keywords: ["AI portfolio", "software case studies", "automation platform", "SaaS case study"],
+    }),
   component: PortfolioPage,
 });
 

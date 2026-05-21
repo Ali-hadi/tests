@@ -1,23 +1,22 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { useState } from "react";
+import { createSeo, siteConfig } from "@/lib/seo";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — AItouchSolutions" },
-      {
-        name: "description",
-        content:
-          "Start a conversation with AItouchSolutions. Tell us about your project — we respond within 24 hours, globally.",
-      },
-      { property: "og:title", content: "Contact — AItouchSolutions" },
-      {
-        property: "og:description",
-        content: "Tell us about your project. We respond within 24 hours.",
-      },
-    ],
-  }),
+  head: () =>
+    createSeo({
+      title: "Contact Shahzad Nazar | AItouchSolutions",
+      description:
+        "Contact Shahzad Nazar and AItouchSolutions for AI agents, automation, SaaS, web apps, and mobile apps. Email or WhatsApp for a project quote.",
+      path: "/contact",
+      keywords: [
+        "contact AItouchSolutions",
+        "hire Shahzad Nazar",
+        "AI project quote",
+        "WhatsApp software developer",
+      ],
+    }),
   component: ContactPage,
 });
 
@@ -112,13 +111,26 @@ function ContactPage() {
           <Reveal className="lg:col-span-5 lg:pl-10 space-y-12">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-teal mb-4">
-                Direct
+                Email
               </p>
               <a
-                href="mailto:hello@aitouchsolutions.com"
+                href={`mailto:${siteConfig.email}`}
                 className="font-display text-2xl lg:text-3xl block hover:text-teal break-all"
               >
-                hello@aitouchsolutions.com
+                {siteConfig.email}
+              </a>
+            </div>
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-teal mb-4">
+                WhatsApp
+              </p>
+              <a
+                href={siteConfig.whatsappUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="font-display text-2xl lg:text-3xl block hover:text-teal"
+              >
+                {siteConfig.whatsappDisplay}
               </a>
             </div>
             <div>

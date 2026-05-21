@@ -1,22 +1,22 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
+import { createSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/technologies")({
-  head: () => ({
-    meta: [
-      { title: "Technologies — AItouchSolutions" },
-      {
-        name: "description",
-        content:
-          "100+ technologies across frontend, backend, AI/ML, cloud, mobile, CMS, and design.",
-      },
-      { property: "og:title", content: "Technologies — AItouchSolutions" },
-      {
-        property: "og:description",
-        content: "Our complete stack — battle-tested across global deployments.",
-      },
-    ],
-  }),
+  head: () =>
+    createSeo({
+      title: "Technologies We Use | AItouchSolutions",
+      description:
+        "See the 100+ technologies AItouchSolutions uses across React, Next.js, Node.js, Python, AI/ML, cloud, mobile, CMS, and e-commerce projects.",
+      path: "/technologies",
+      keywords: [
+        "React developers",
+        "Next.js developers",
+        "Node.js developers",
+        "AI ML stack",
+        "cloud DevOps",
+      ],
+    }),
   component: TechPage,
 });
 
