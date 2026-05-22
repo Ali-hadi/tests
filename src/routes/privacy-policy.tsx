@@ -7,9 +7,13 @@ export const Route = createFileRoute("/privacy-policy")({
     createSeo({
       title: "Privacy Policy | AItouchSolutions",
       description:
-        "Read the AItouchSolutions privacy policy covering contact forms, project inquiries, analytics, communications, and data protection.",
+        "Read the AItouchSolutions privacy policy covering services, subscriptions, digital tools, billing, AI products, and account data.",
       path: "/privacy-policy",
-      keywords: ["AItouchSolutions privacy policy", "privacy policy"],
+      keywords: [
+        "AItouchSolutions privacy policy",
+        "subscription privacy policy",
+        "AI tools privacy",
+      ],
     }),
   component: PrivacyPolicyPage,
 });
@@ -17,27 +21,39 @@ export const Route = createFileRoute("/privacy-policy")({
 const sections = [
   {
     title: "Information We Collect",
-    body: "We collect information you choose to send through contact forms, email, WhatsApp, discovery calls, and project documents. This can include your name, email, phone number, company, project goals, budget range, and technical requirements.",
+    body: "We collect information you provide through forms, email, WhatsApp, checkout, account signup, subscription dashboards, support requests, discovery calls, and project documents. This can include your name, email, phone, company, billing details, tax details, project goals, budget, and technical requirements.",
+  },
+  {
+    title: "Account, Subscription, and Billing Data",
+    body: "When you buy a subscription, tool, license, template, automation, or digital product, we may process account status, plan level, purchase history, invoices, payment status, renewal dates, usage limits, and support history. Payment card details are handled by payment processors, not stored directly by us.",
+  },
+  {
+    title: "Tool Usage and Product Data",
+    body: "Digital tools, SaaS products, AI utilities, and automations may collect usage logs, feature events, device/browser data, error reports, API activity, license checks, and performance metrics so we can operate, secure, debug, and improve the products.",
+  },
+  {
+    title: "Project and AI Data",
+    body: "Client project files, prompts, datasets, content, credentials, and integration details are handled only for agreed work, support, hosting, security, and delivery. Where AI providers or third-party APIs are used, data may be processed under those providers' terms and privacy policies.",
   },
   {
     title: "How We Use Information",
-    body: "We use submitted information to respond to inquiries, prepare proposals, deliver software services, provide support, improve our website, and maintain security for our systems and client projects.",
-  },
-  {
-    title: "Project Data",
-    body: "Client project materials are handled only for agreed work. Access is limited to team members and service providers who need it for delivery, support, hosting, security, or communication.",
+    body: "We use information to respond to inquiries, create proposals, process orders, manage subscriptions, deliver tools and services, provide support, prevent abuse, improve products, secure systems, send important account notices, and meet legal or accounting obligations.",
   },
   {
     title: "Cookies and Analytics",
-    body: "The website may use basic cookies, hosting logs, and privacy-respecting analytics to understand performance, traffic, errors, and security events.",
+    body: "The website and products may use cookies, local storage, hosting logs, analytics, and similar technologies for login sessions, preferences, checkout, fraud prevention, traffic measurement, performance monitoring, and security events.",
   },
   {
-    title: "Sharing and Retention",
-    body: "We do not sell personal information. We keep records only as long as needed for business, legal, security, and service obligations, then delete or anonymize them when practical.",
+    title: "Sharing and Service Providers",
+    body: "We do not sell personal information. We may share limited data with service providers such as hosting, payment, analytics, email, CRM, support, AI model, security, and infrastructure vendors when needed to operate the business and deliver services.",
   },
   {
-    title: "Your Choices",
-    body: "You can ask us to update, export, or delete your personal information where applicable. Some records may be retained when required for legal, accounting, security, or contractual reasons.",
+    title: "Retention and Security",
+    body: "We keep records only as long as needed for delivery, support, subscriptions, legal, tax, accounting, fraud prevention, and security obligations. We use reasonable technical and organizational safeguards, but no online system can be guaranteed perfectly secure.",
+  },
+  {
+    title: "Your Choices and Requests",
+    body: "You can ask us to update, export, restrict, or delete your personal information where applicable. Some records may be retained when required for legal, accounting, security, contractual, or fraud-prevention reasons.",
   },
 ];
 
@@ -55,7 +71,8 @@ function PrivacyPolicyPage() {
             </h1>
             <p className="mt-10 max-w-2xl text-lg text-muted-foreground leading-relaxed">
               Last updated May 22, 2026. This policy explains how {siteConfig.name} handles
-              information collected through the website and client communication channels.
+              information across the website, service projects, subscriptions, digital tools,
+              purchases, AI products, and support channels.
             </p>
           </Reveal>
         </div>

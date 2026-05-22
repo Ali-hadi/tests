@@ -5,43 +5,67 @@ import { createSeo, siteConfig } from "@/lib/seo";
 export const Route = createFileRoute("/terms-and-conditions")({
   head: () =>
     createSeo({
-      title: "Terms & Conditions | AItouchSolutions",
+      title: "Terms of Service | AItouchSolutions",
       description:
-        "Read the AItouchSolutions terms and conditions for using the website, requesting proposals, and engaging software services.",
+        "Read the AItouchSolutions terms of service for software services, subscriptions, digital tools, AI products, and website use.",
       path: "/terms-and-conditions",
-      keywords: ["AItouchSolutions terms", "terms and conditions"],
+      keywords: ["AItouchSolutions terms", "terms of service", "software subscription terms"],
     }),
   component: TermsPage,
 });
 
 const terms = [
   {
-    title: "Website Use",
-    body: "You may browse this website for business information about AItouchSolutions. You agree not to misuse the website, attempt unauthorized access, disrupt availability, or copy protected content in a way that violates applicable law.",
+    title: "Scope of These Terms",
+    body: "These terms apply when you use the AItouchSolutions website, request custom services, purchase digital tools, access AI products, or subscribe to any monthly, yearly, or usage-based plan. A separate signed agreement, invoice, order form, or proposal may add project-specific terms.",
   },
   {
-    title: "Project Inquiries",
-    body: "Submitting a form, email, or message does not create a client relationship by itself. Work begins only after scope, pricing, timeline, payment terms, and acceptance criteria are agreed in writing.",
+    title: "Services and Project Work",
+    body: "Custom services may include AI agents, automation, websites, apps, SaaS products, integrations, consulting, support, and maintenance. Work begins after scope, pricing, payment schedule, deliverables, and acceptance criteria are confirmed in writing.",
   },
   {
-    title: "Proposals and Pricing",
-    body: "Estimates are based on the information available at the time. Changes in scope, integrations, compliance needs, content, or third-party requirements may affect cost and timeline.",
+    title: "Subscriptions",
+    body: "Subscription plans may renew automatically until cancelled. You are responsible for keeping billing information current and paying all recurring fees, usage charges, taxes, and overage fees shown at checkout, in the invoice, or in the subscription dashboard.",
+  },
+  {
+    title: "Digital Tools and Licenses",
+    body: "Tools, templates, scripts, automations, SaaS dashboards, AI utilities, downloads, and digital products are licensed, not sold, unless a written agreement says otherwise. You may not resell, share, reverse engineer, copy, sublicense, or redistribute them without written permission.",
+  },
+  {
+    title: "Payments and Late Fees",
+    body: "Fees are due according to the invoice, checkout page, subscription terms, or written agreement. Late or failed payments may pause access to tools, subscriptions, hosting, maintenance, support, or project delivery until the account is brought current.",
   },
   {
     title: "Client Responsibilities",
-    body: "Clients are responsible for timely feedback, accurate requirements, legal rights to supplied materials, credentials, third-party approvals, and any business decisions made from delivered software or analysis.",
+    body: "You are responsible for accurate requirements, approvals, content, credentials, third-party permissions, legal rights to supplied materials, data quality, security of your accounts, and decisions made from delivered software, automation, analytics, or AI output.",
+  },
+  {
+    title: "Acceptable Use",
+    body: "You may not use our services, subscriptions, or tools for illegal activity, spam, malware, scraping that violates third-party rules, credential theft, harmful automation, abuse, harassment, infringement, or attempts to bypass usage limits, licensing, or security controls.",
+  },
+  {
+    title: "AI and Automation Output",
+    body: "AI tools and automations can make mistakes. You are responsible for reviewing outputs, workflows, messages, decisions, and generated content before relying on them in business, legal, financial, medical, security, or public-facing contexts.",
   },
   {
     title: "Intellectual Property",
-    body: "Ownership of deliverables is handled in the project agreement. AItouchSolutions may retain rights to pre-existing tools, reusable libraries, workflows, and general know-how unless the agreement says otherwise.",
+    body: "Ownership of custom deliverables is handled in the project agreement. AItouchSolutions may retain rights to pre-existing code, tools, templates, libraries, workflows, prompts, models, product ideas, and general know-how unless agreed otherwise.",
   },
   {
     title: "Third-Party Services",
-    body: "Projects may depend on APIs, hosting providers, AI models, payment processors, analytics, or other third-party services. Their pricing, availability, policies, and performance are outside our direct control.",
+    body: "Services and tools may depend on payment processors, hosting providers, app stores, AI model providers, APIs, analytics, databases, email services, and other third-party platforms. Their pricing, availability, rules, and performance are outside our direct control.",
   },
   {
-    title: "Limitation of Liability",
-    body: "To the maximum extent allowed by law, AItouchSolutions is not liable for indirect, incidental, special, consequential, or punitive damages arising from website use or service discussions.",
+    title: "Cancellations and Termination",
+    body: "You may cancel eligible subscriptions according to the plan terms. We may suspend or terminate access for non-payment, misuse, security risk, policy violations, unlawful activity, or breach of these terms.",
+  },
+  {
+    title: "Refunds",
+    body: "Refund eligibility is explained in our Refund Policy. Custom service fees, subscription renewals, delivered digital tools, downloads, licenses, setup work, and completed milestones may have different refund rules.",
+  },
+  {
+    title: "Disclaimers and Liability",
+    body: "Services, subscriptions, tools, and content are provided as available and without guaranteed business results unless written in a signed agreement. To the maximum extent allowed by law, AItouchSolutions is not liable for indirect, incidental, special, consequential, or punitive damages.",
   },
 ];
 
@@ -52,14 +76,14 @@ function TermsPage() {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
           <Reveal>
             <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-teal mb-8">
-              Terms & Conditions
+              Terms of Service
             </p>
             <h1 className="font-display font-bold text-6xl md:text-8xl lg:text-9xl tracking-[-0.04em] leading-[0.9] max-w-5xl">
-              Clear terms for <span className="gradient-text">clear work.</span>
+              Terms for services, subscriptions, and <span className="gradient-text">tools.</span>
             </h1>
             <p className="mt-10 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-              Last updated May 22, 2026. These terms apply to website use and early service
-              discussions with {siteConfig.name}.
+              Last updated May 22, 2026. These terms apply to website use, custom software services,
+              AI products, subscriptions, digital tools, and support from {siteConfig.name}.
             </p>
           </Reveal>
         </div>
