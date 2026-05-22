@@ -9,15 +9,23 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TermsAndConditionsRouteImport } from './routes/terms-and-conditions'
 import { Route as TechnologiesRouteImport } from './routes/technologies'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PortfolioRouteImport } from './routes/portfolio'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AiSolutionsRouteImport } from './routes/ai-solutions'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const TermsAndConditionsRoute = TermsAndConditionsRouteImport.update({
+  id: '/terms-and-conditions',
+  path: '/terms-and-conditions',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TechnologiesRoute = TechnologiesRouteImport.update({
   id: '/technologies',
   path: '/technologies',
@@ -26,6 +34,11 @@ const TechnologiesRoute = TechnologiesRouteImport.update({
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
   path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PricingRoute = PricingRouteImport.update({
@@ -41,6 +54,11 @@ const PortfolioRoute = PortfolioRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AiSolutionsRoute = AiSolutionsRouteImport.update({
@@ -63,32 +81,41 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/ai-solutions': typeof AiSolutionsRoute
+  '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
   '/portfolio': typeof PortfolioRoute
   '/pricing': typeof PricingRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/services': typeof ServicesRoute
   '/technologies': typeof TechnologiesRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/ai-solutions': typeof AiSolutionsRoute
+  '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
   '/portfolio': typeof PortfolioRoute
   '/pricing': typeof PricingRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/services': typeof ServicesRoute
   '/technologies': typeof TechnologiesRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/ai-solutions': typeof AiSolutionsRoute
+  '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
   '/portfolio': typeof PortfolioRoute
   '/pricing': typeof PricingRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/services': typeof ServicesRoute
   '/technologies': typeof TechnologiesRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -96,46 +123,65 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/ai-solutions'
+    | '/blog'
     | '/contact'
     | '/portfolio'
     | '/pricing'
+    | '/privacy-policy'
     | '/services'
     | '/technologies'
+    | '/terms-and-conditions'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
     | '/ai-solutions'
+    | '/blog'
     | '/contact'
     | '/portfolio'
     | '/pricing'
+    | '/privacy-policy'
     | '/services'
     | '/technologies'
+    | '/terms-and-conditions'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/ai-solutions'
+    | '/blog'
     | '/contact'
     | '/portfolio'
     | '/pricing'
+    | '/privacy-policy'
     | '/services'
     | '/technologies'
+    | '/terms-and-conditions'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   AiSolutionsRoute: typeof AiSolutionsRoute
+  BlogRoute: typeof BlogRoute
   ContactRoute: typeof ContactRoute
   PortfolioRoute: typeof PortfolioRoute
   PricingRoute: typeof PricingRoute
+  PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   ServicesRoute: typeof ServicesRoute
   TechnologiesRoute: typeof TechnologiesRoute
+  TermsAndConditionsRoute: typeof TermsAndConditionsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/terms-and-conditions': {
+      id: '/terms-and-conditions'
+      path: '/terms-and-conditions'
+      fullPath: '/terms-and-conditions'
+      preLoaderRoute: typeof TermsAndConditionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/technologies': {
       id: '/technologies'
       path: '/technologies'
@@ -148,6 +194,13 @@ declare module '@tanstack/react-router' {
       path: '/services'
       fullPath: '/services'
       preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pricing': {
@@ -169,6 +222,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ai-solutions': {
@@ -199,11 +259,14 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   AiSolutionsRoute: AiSolutionsRoute,
+  BlogRoute: BlogRoute,
   ContactRoute: ContactRoute,
   PortfolioRoute: PortfolioRoute,
   PricingRoute: PricingRoute,
+  PrivacyPolicyRoute: PrivacyPolicyRoute,
   ServicesRoute: ServicesRoute,
   TechnologiesRoute: TechnologiesRoute,
+  TermsAndConditionsRoute: TermsAndConditionsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

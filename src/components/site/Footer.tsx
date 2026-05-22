@@ -49,6 +49,11 @@ export function Footer() {
                     Pricing
                   </Link>
                 </li>
+                <li>
+                  <Link to="/blog" className="hover:text-teal">
+                    Blog News
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
@@ -69,6 +74,16 @@ export function Footer() {
                 <li>
                   <Link to="/contact" className="hover:text-teal">
                     Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/privacy-policy" className="hover:text-teal">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/terms-and-conditions" className="hover:text-teal">
+                    Terms & Conditions
                   </Link>
                 </li>
               </ul>
@@ -101,7 +116,9 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-20 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-[11px] font-mono uppercase tracking-[0.25em] text-muted-foreground">
-          <p>© {new Date().getFullYear()} AItouchSolutions — Founded by Shahzad Nazar</p>
+          <p>
+            Copyright {new Date().getFullYear()} AItouchSolutions - Founded by {siteConfig.author}
+          </p>
           <p className="flex items-center gap-2">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full rounded-full bg-teal opacity-75 animate-ping" />

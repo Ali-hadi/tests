@@ -6,13 +6,13 @@ import { createSeo, siteConfig } from "@/lib/seo";
 export const Route = createFileRoute("/contact")({
   head: () =>
     createSeo({
-      title: "Contact Shahzad Nazar | AItouchSolutions",
+      title: "Contact Jon | AItouchSolutions",
       description:
-        "Contact Shahzad Nazar and AItouchSolutions for AI agents, automation, SaaS, web apps, and mobile apps. Email or WhatsApp for a project quote.",
+        "Contact Jon and AItouchSolutions for AI agents, automation, SaaS, web apps, and mobile apps. Email or WhatsApp for a project quote.",
       path: "/contact",
       keywords: [
         "contact AItouchSolutions",
-        "hire Shahzad Nazar",
+        "hire Jon",
         "AI project quote",
         "WhatsApp software developer",
       ],
@@ -50,9 +50,7 @@ function ContactPage() {
                   <span className="text-3xl text-teal">✓</span>
                 </div>
                 <h2 className="font-display text-3xl font-bold mb-4">Message received.</h2>
-                <p className="text-muted-foreground">
-                  Shahzad's team will respond within 24 hours.
-                </p>
+                <p className="text-muted-foreground">Jon's team will respond within 24 hours.</p>
               </div>
             ) : (
               <form

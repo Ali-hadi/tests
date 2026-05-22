@@ -155,7 +155,7 @@ function HomePage() {
               <span className="absolute inline-flex h-full w-full rounded-full bg-teal opacity-75 animate-ping" />
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-teal" />
             </span>
-            Founded by Shahzad Nazar
+            Founded by Jon
           </motion.div>
 
           <h1 className="font-display font-bold text-[clamp(2.6rem,9vw,9rem)] leading-[0.9] tracking-[-0.04em] max-w-[18ch]">
@@ -407,7 +407,7 @@ function HomePage() {
             <div className="mt-12 flex items-center gap-5">
               <div className="w-14 h-px bg-teal" />
               <div>
-                <p className="font-display font-bold text-lg">Shahzad Nazar</p>
+                <p className="font-display font-bold text-lg">Jon</p>
                 <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-muted-foreground mt-1">
                   Founder · AItouchSolutions
                 </p>

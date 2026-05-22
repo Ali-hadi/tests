@@ -1,16 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
-import founder from "@/assets/founder.jpg";
+import founder from "@/assets/founder-jon.jpg";
 import { createSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/about")({
   head: () =>
     createSeo({
-      title: "About Shahzad Nazar | AItouchSolutions",
+      title: "About Jon | AItouchSolutions",
       description:
-        "Learn about Shahzad Nazar, founder of AItouchSolutions, an AI and custom software studio building agents, automation, SaaS products, web apps, and mobile apps.",
+        "Learn about Jon, founder of AItouchSolutions, an AI and custom software studio building agents, automation, SaaS products, web apps, and mobile apps.",
       path: "/about",
-      keywords: ["Shahzad Nazar", "AItouchSolutions founder", "AI software founder"],
+      keywords: ["Jon", "AItouchSolutions founder", "AI software founder"],
     }),
   component: AboutPage,
 });
@@ -49,12 +49,7 @@ function AboutPage() {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <Reveal className="lg:col-span-5">
             <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-ink-2">
-              <img
-                src={founder}
-                alt="Shahzad Nazar"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
+              <img src={founder} alt="Jon" className="w-full h-full object-cover" loading="lazy" />
             </div>
           </Reveal>
           <Reveal className="lg:col-span-7">
@@ -62,10 +57,10 @@ function AboutPage() {
               Founder
             </p>
             <h2 className="font-display text-5xl lg:text-7xl font-bold tracking-[-0.03em] leading-[0.95] mb-8">
-              Shahzad Nazar
+              Jon
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Shahzad founded AItouchSolutions with a simple thesis: the next generation of software
+              Jon founded AItouchSolutions with a simple thesis: the next generation of software
               isn't just built — it thinks. After a decade shipping production systems for global
               clients, he assembled a senior team to deliver AI-first products at enterprise scale.
             </p>

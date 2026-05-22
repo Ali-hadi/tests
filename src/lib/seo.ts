@@ -1,16 +1,16 @@
 const SITE_URL = "https://aitouchsolutions.com";
 const SITE_NAME = "AItouchSolutions";
-const AUTHOR_NAME = "Shahzad Nazar";
+const AUTHOR_NAME = "Jon";
 const CONTACT_EMAIL = "shahzad.mern.dev@gmail.com";
 const WHATSAPP_DISPLAY = "03244958672";
 const WHATSAPP_INTERNATIONAL = "+923244958672";
 const WHATSAPP_URL = "https://wa.me/923244958672";
 const DEFAULT_IMAGE = "/og-image.jpg";
-const FOUNDER_IMAGE = "/founder.jpg";
+const FOUNDER_IMAGE = "/founder-jon.jpg";
 
 const baseKeywords = [
   "AItouchSolutions",
-  "Shahzad Nazar",
+  "Jon",
   "AI software company",
   "AI agent development",
   "workflow automation",
@@ -33,7 +33,7 @@ export const siteConfig = {
   founderImage: FOUNDER_IMAGE,
   defaultTitle: "AItouchSolutions | AI Software, Web Apps & Automation",
   defaultDescription:
-    "AItouchSolutions builds AI agents, automation systems, custom SaaS, web apps, mobile apps, and scalable digital products for global clients. Founded by Shahzad Nazar.",
+    "AItouchSolutions builds AI agents, automation systems, custom SaaS, web apps, mobile apps, and scalable digital products for global clients. Founded by Jon.",
   keywords: baseKeywords,
 };
 
