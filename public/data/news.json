@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-23T03:28:00.884Z",
+  "generatedAt": "2026-05-23T13:39:23.846Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -52,6 +52,135 @@
   ],
   "posts": [
     {
+      "id": "d7ba36d1e5f9",
+      "title": "This rugged Windows tablet handles mud and rain - but didn't impress with the basics",
+      "excerpt": "The Getac G140 puts power in the hands of fire & rescue, automotive, and utility workers.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-23T13:15:44.000Z",
+      "url": "https://www.zdnet.com/article/getac-g14-windows-ai-tablet-review/"
+    },
+    {
+      "id": "4e9cfd70d984",
+      "title": "Elon Musk has given up on solar power (on Earth)",
+      "excerpt": "Elon Muks's xAI has gone all in on natural gas, while SpaceX is obsessed with orbital data centers. What happened to the \"solar-electric economy\" he promised?",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-23T13:00:00.000Z",
+      "url": "https://techcrunch.com/2026/05/23/elon-musk-has-given-up-on-solar-power-on-earth/",
+      "tags": [
+        "AI",
+        "Climate",
+        "Analysis",
+        "data centers",
+        "Elon Musk",
+        "Solar Power"
+      ]
+    },
+    {
+      "id": "4b41fa06eea2",
+      "title": "Hanging out in my favorite virtual coffee shop in Tokyo",
+      "excerpt": "Finding a cafe that fits you can be a revelatory experience. For me at least, there are few places outside of my house that I can truly feel comfortable in. I'm lucky enough to have two options in walking distance: a...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-23T13:00:00.000Z",
+      "url": "https://www.theverge.com/entertainment/936278/coffee-talk-tokyo-review-switch-xbox-ps5-steam",
+      "tags": [
+        "Entertainment",
+        "Games Review",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "389799927c12",
+      "title": "I have a new go-to browser",
+      "excerpt": "Hi, friends! Welcome to Installer No. 129, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, come on you Gunners, and also you can read all the old editions at the Installer homep...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-23T12:00:00.000Z",
+      "url": "https://www.theverge.com/tech/936395/vivaldi-8-review-mandalorian-installer",
+      "tags": [
+        "Gadgets",
+        "Installer",
+        "Streaming",
+        "Tech"
+      ]
+    },
+    {
+      "id": "53f4652d1b79",
+      "title": "I joyfully reunited with my first Linux distro at the Virtual OS Museum",
+      "excerpt": "Feeling nostalgic? From Amiga Unix to XVM/RSX, anyone can run over 570 extinct OSes. Try it now on Linux, MacOS, or Windows.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-23T11:00:38.000Z",
+      "url": "https://www.zdnet.com/article/reunited-with-my-first-linux-distro-at-the-virtual-os-museum/"
+    },
+    {
+      "id": "65518546ec73",
+      "title": "Google’s new anything-to-anything AI model is wild",
+      "excerpt": "Last year I deepfaked my kid's stuffed animal to make it look like his plush deer was on vacation. It was an experiment to see if I could re-create the events depicted in a Gemini ad Google was running, and I never sh...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-05-23T11:00:00.000Z",
+      "url": "https://www.theverge.com/tech/936507/gemini-omni-hands-on-deepfake-ai-video",
+      "tags": [
+        "AI",
+        "Google",
+        "Google I/O 2026",
+        "Hands-on",
+        "Reviews",
+        "Tech"
+      ]
+    },
+    {
+      "id": "e472adcd0eae",
+      "title": "Dirty Frag, Copy Fail, Fragnesia: The start of a worrisome Linux security trend",
+      "excerpt": "Or is it just life today, with AI constantly digging through code repositories in search of security holes?",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-05-23T10:59:00.000Z",
+      "url": "https://www.theregister.com/security/2026/05/23/dirty-frag-copy-fail-fragnesia-the-start-of-a-worrisome-linux-security-trend/5244742",
+      "image": "https://image.theregister.com/?imageId=5244793&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "2182bf4a970b",
+      "title": "This QLED canvas art TV isn't made by Samsung, and it's $650 cheaper this weekend",
+      "excerpt": "Amazon is selling the 2026 Hisense Hi-QLED S7 Canvas TV for 43% off during Memorial Day weekend.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-23T10:00:44.000Z",
+      "url": "https://www.zdnet.com/article/hisense-canvas-s7-art-tv-deal-memorial-day-2026/"
+    },
+    {
+      "id": "27d5a34202fb",
+      "title": "UK MPs slam digital ID rollout as a 'fiasco' after botched launch",
+      "excerpt": "Government's 'rushed' plans damaged public confidence before ministers had even explained how the system would work",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-23T09:30:00.000Z",
+      "url": "https://www.theregister.com/public-sector/2026/05/23/uk-mps-slam-digital-id-rollout-as-a-fiasco-after-botched-launch/5245124",
+      "image": "https://image.theregister.com/?imageId=244169&width=800",
+      "tags": [
+        "public sector"
+      ]
+    },
+    {
+      "id": "d2880131a36a",
+      "title": "The Virtual OS Museum opens its doors",
+      "excerpt": "A massive compilation of historic OSes and the emulators to run them",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-23T08:30:00.000Z",
+      "url": "https://www.theregister.com/oses/2026/05/23/the-virtual-os-museum-opens-its-doors/5243459",
+      "image": "https://image.theregister.com/?imageId=5243566&width=800",
+      "tags": [
+        "oses"
+      ]
+    },
+    {
       "id": "3bd970360d4b",
       "title": "I've tested portable speakers from Bose, Sony, JBL, more - these deals are actually worth it",
       "excerpt": "I found the best Bluetooth speaker deals for your holiday weekend festivities.",
@@ -77,6 +206,19 @@
       "category": "IT",
       "publishedAt": "2026-05-23T02:04:00.000Z",
       "url": "https://www.zdnet.com/article/best-early-memorial-day-2026-ssd-deals/"
+    },
+    {
+      "id": "1f55634b5567",
+      "title": "Feds unwittingly leak pilots' pre-crash conversation",
+      "excerpt": "Release of spectrogram of cockpit recorder audio allows conversation recovery with 'emerging' decades-old tech",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-22T23:20:02.000Z",
+      "url": "https://www.theregister.com/science/2026/05/23/feds-unwittingly-leak-pilots-pre-crash-conversation/5245462",
+      "image": "https://image.theregister.com/?imageId=241517&width=800",
+      "tags": [
+        "science"
+      ]
     },
     {
       "id": "48a55c9b5771",
@@ -548,155 +690,6 @@
         "News",
         "Tesla",
         "Transportation"
-      ]
-    },
-    {
-      "id": "efdec4cc24bd",
-      "title": "Boots Riley turns class struggle into comedy with I Love Boosters",
-      "excerpt": "Before Boots Riley became the writer / director / musician behind Sorry to Bother You and I'm a Virgo, he was a young community organizer fighting for social justice as part of the Progressive Labor Party. Riley has c...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-22T14:00:00.000Z",
-      "url": "https://www.theverge.com/entertainment/935285/i-love-boosters-boots-riley-interview",
-      "tags": [
-        "Entertainment",
-        "Film",
-        "Interview",
-        "Report"
-      ]
-    },
-    {
-      "id": "4e49024069c4",
-      "title": "Lowe's just dropped its Memorial Day deals - I found the best ones",
-      "excerpt": "Lowe's has everything you need for home, lawn, and garden projects with these Memorial Day deals on appliances, grills, and more.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-22T13:56:00.000Z",
-      "url": "https://www.zdnet.com/article/best-lowes-memorial-day-deals-2026/"
-    },
-    {
-      "id": "d3af996ecc20",
-      "title": "The post-search Google era begins",
-      "excerpt": "Google is many things, but most of the time it's a verb: It is what it is to search the internet for information. But what if it's an AI agent doing the searching? And it's doing it proactively? Without even telling y...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-05-22T13:47:41.000Z",
-      "url": "https://www.theverge.com/podcast/936037/google-io-2026-search-agents-vergecast",
-      "tags": [
-        "Google",
-        "Google I/O 2026",
-        "Podcasts",
-        "Tech",
-        "Vergecast"
-      ]
-    },
-    {
-      "id": "660b360a2ff3",
-      "title": "AT&T wants to ditch Cali copper phone lines to save billions",
-      "excerpt": "Telecoms giant files suit in Golden State so it doesn't have to maintain network it claims is hardly used",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-22T13:29:00.000Z",
-      "url": "https://www.theregister.com/networks/2026/05/22/att-wants-to-ditch-cali-copper-phone-lines-to-save-billions/5244917",
-      "image": "https://image.theregister.com/?imageId=226807&width=800",
-      "tags": [
-        "networks"
-      ]
-    },
-    {
-      "id": "5b26ac863bcc",
-      "title": "The Boys limped through its last season, but made up for it with the finale",
-      "excerpt": "It's hard existing in a world seemingly designed for the undeservingly powerful and painfully boring few. They have been gifted what many of us only dream of: the ability to effectively do whatever they like, free fro...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-22T13:00:00.000Z",
-      "url": "https://www.theverge.com/entertainment/935482/the-boys-finale-review",
-      "tags": [
-        "Entertainment",
-        "TV Show Reviews",
-        "TV Shows"
-      ]
-    },
-    {
-      "id": "4e181a0fbe3e",
-      "title": "If I could only have one laptop for work and gaming, I’d get this one",
-      "excerpt": "I've loved the Asus ROG Zephyrus G14 since it launched in 2020. I bought one for my wife after reading about how awesome it was on a little site called The Verge dot com. Since then, the G14 has gotten some facelifts,...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-22T13:00:00.000Z",
-      "url": "https://www.theverge.com/tech/935898/asus-rog-zephyrus-g14-2026-intel-nvidia-review",
-      "tags": [
-        "Asus",
-        "Gadgets",
-        "Gaming",
-        "Laptop Reviews",
-        "Laptops",
-        "PC Gaming"
-      ]
-    },
-    {
-      "id": "22defe540820",
-      "title": "Workday wants AI to punch in instead of having to hire new recruits",
-      "excerpt": "CEO eyes margin gains by keeping headcount flat – bold for a company selling HR software to employers",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-22T12:59:00.000Z",
-      "url": "https://www.theregister.com/saas/2026/05/22/workday-wants-ai-to-punch-in-instead-of-having-to-hire-new-recruits/5245011",
-      "image": "https://image.theregister.com/?imageId=5245073&width=800",
-      "tags": [
-        "saas"
-      ]
-    },
-    {
-      "id": "d9ae19caac79",
-      "title": "FBI warns Kali365 phishing kit is stealing Microsoft OAuth tokens at scale",
-      "excerpt": "MFA? No problem, says crimeware that tricks users into handing attackers the keys to M365",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-22T12:27:52.000Z",
-      "url": "https://www.theregister.com/cyber-crime/2026/05/22/fbi-warns-of-kali365-as-device-code-phishing-soars/5245024",
-      "image": "https://image.theregister.com/?imageId=262937&width=800",
-      "tags": [
-        "cyber-crime"
-      ]
-    },
-    {
-      "id": "9cb113b19bb9",
-      "title": "ZTE Day Indonesia 2026 strengthens AI innovation and digital infrastructure collaboration to accelerate Indonesia's digital transformation",
-      "excerpt": "The annual tech showcase highlights next-gen AI, cloud, and future-ready ICT solutions while uniting ecosystem partners to build the foundation for the nation's AI era",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-22T12:04:52.000Z",
-      "url": "https://www.theregister.com/networks/2026/05/22/zte-day-indonesia-2026-strengthens-ai-innovation-and-digital-infrastructure-collaboration-to-accelerate-indonesias-digital-transformation/5245048",
-      "image": "https://image.theregister.com/?imageId=5245060&width=800",
-      "tags": [
-        "networks"
-      ]
-    },
-    {
-      "id": "b094b7d32232",
-      "title": "SpaceX scrubs Starship launch with seconds to go",
-      "excerpt": "Not all bad news: Crypto billionaire signs up for a mission to Mars",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-22T12:00:00.000Z",
-      "url": "https://www.theregister.com/science/2026/05/22/spacex-scrubs-starship-launch-with-seconds-to-go/5244968",
-      "image": "https://image.theregister.com/?imageId=226873&width=800",
-      "tags": [
-        "science"
-      ]
-    },
-    {
-      "id": "2c09c6f0bd8f",
-      "title": "ZTE unveils localized roadmap for Eurasia's digital future at GSMA M360 Eurasia 2026",
-      "excerpt": "Driving \"affordable AI\" through open ecosystems, anti-fragile infrastructure, and optimized TCO to empower local industries",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-22T11:34:23.000Z",
-      "url": "https://www.theregister.com/networks/2026/05/22/zte-unveils-localized-roadmap-for-eurasias-digital-future-at-gsma-m360-eurasia-2026/5244937",
-      "image": "https://image.theregister.com/?imageId=5245007&width=800",
-      "tags": [
-        "networks"
       ]
     }
   ]
