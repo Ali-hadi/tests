@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-24T03:48:16.288Z",
+  "generatedAt": "2026-05-24T13:39:20.358Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,80 @@
     }
   ],
   "posts": [
+    {
+      "id": "c023ede6addd",
+      "title": "I found the 11 best early Memorial Day Apple deals: Save hundreds on iPad, Apple Watch, and more",
+      "excerpt": "Summer is almost here, and you can already find deals on all things Apple with these early Memorial Day weekend sales.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-24T12:53:23.000Z",
+      "url": "https://www.zdnet.com/article/best-apple-deals-memorial-day-2026/"
+    },
+    {
+      "id": "cc09eb87a07d",
+      "title": "Hackers are learning to exploit chatbot ‘personalities’",
+      "excerpt": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on AI mischief, follow Robert Hart. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-05-24T12:00:00.000Z",
+      "url": "https://www.theverge.com/column/935545/hackers-ai-chatbots",
+      "tags": [
+        "AI",
+        "Column",
+        "Security",
+        "Tech",
+        "The Stepback"
+      ]
+    },
+    {
+      "id": "77a97633db12",
+      "title": "My favorite early Memorial Day deals: Save big on laptops, tablets, and more",
+      "excerpt": "Memorial Day is here. These are the best deals we found so far, including price drops from Apple, Samsung, Hisense, Ninja, and more.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-24T11:09:54.000Z",
+      "url": "https://www.zdnet.com/article/best-early-memorial-day-deals-2026/"
+    },
+    {
+      "id": "aae4212408bf",
+      "title": "Why Nuro thinks being a robotaxi ‘second mover’ gives it an advantage",
+      "excerpt": "Waymo is the undisputed leader in the robotaxi space, operating a fleet of over 3,000 driverless cars in at least 10 cities across the US. A number of companies, including Tesla, Zoox, Avride, and Motional, are racing...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-24T11:00:00.000Z",
+      "url": "https://www.theverge.com/transportation/936126/nuro-robotaxi-dave-ferguson-interview-uber-lucid-waymo",
+      "tags": [
+        "Autonomous Cars",
+        "Report",
+        "Transportation"
+      ]
+    },
+    {
+      "id": "03d6a57cb900",
+      "title": "HP investigating BIOS updates that leave premium laptop users in boot loop limbo",
+      "excerpt": "Slowdowns, crashes, BSODs reported on pricey mobile workstations",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-24T10:28:00.000Z",
+      "url": "https://www.theregister.com/personal-tech/2026/05/24/hp-investigating-bios-updates-that-leave-premium-laptop-users-in-boot-loop-limbo/5244769",
+      "image": "https://image.theregister.com/?imageId=4093804&width=800",
+      "tags": [
+        "personal tech"
+      ]
+    },
+    {
+      "id": "40aead3923ba",
+      "title": "No captain, my captain: Navantia floats crewless warship",
+      "excerpt": "Spanish shipbuilder's 75-meter drone vessel comes with sensors, modular payloads, and no room for sailors",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-24T08:30:00.000Z",
+      "url": "https://www.theregister.com/offbeat/2026/05/24/no-captain-my-captain-navantia-floats-crewless-warship/5244332",
+      "image": "https://image.theregister.com/?imageId=5244357&width=800",
+      "tags": [
+        "offbeat"
+      ]
+    },
     {
       "id": "a1e37b4b0cae",
       "title": "Samsung is giving away free 32-inch Odyssey monitors - seriously",
@@ -599,83 +673,6 @@
         "Smart Home",
         "Tech",
         "Verge Shopping"
-      ]
-    },
-    {
-      "id": "eb1028d8c008",
-      "title": "Google appeals search monopoly ruling, says it won business ‘fair and square’",
-      "excerpt": "Google officially filed its appeal of the federal ruling deeming it an illegal search monopolist, arguing the decision \"crashed\" through legal guardrails. \"Google just prevailed in the marketplace fair and square,\" it...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-22T16:28:56.000Z",
-      "url": "https://www.theverge.com/policy/936175/google-search-monopoly-ruling-appeal",
-      "tags": [
-        "Antitrust",
-        "Google",
-        "Policy",
-        "Tech"
-      ]
-    },
-    {
-      "id": "6b6dabd10281",
-      "title": "5 iPad accessories I'll never regret buying (including a $35 Apple Pencil alternative)",
-      "excerpt": "I've been using an iPad Air M2 for over two years, and these are my go-to essentials to get the most out of the tablet.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-22T16:20:03.000Z",
-      "url": "https://www.zdnet.com/article/my-favorite-ipad-air-accessories/"
-    },
-    {
-      "id": "55343e8ef49c",
-      "title": "Waymo suspends freeway driving amid safety concerns",
-      "excerpt": "On Thursday, Waymo customers opened up the app and noticed something unusual: no more freeway service. Trips that would normally take a few minutes on the freeway were suddenly projected to last much longer via local...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-22T16:17:54.000Z",
-      "url": "https://www.theverge.com/transportation/936129/waymo-freeway-suspend-atlanta-san-antonio-flood-pause",
-      "tags": [
-        "Autonomous Cars",
-        "News",
-        "Transportation",
-        "Waymo"
-      ]
-    },
-    {
-      "id": "fdbee54decf1",
-      "title": "You can no longer Google the word ‘disregard’",
-      "excerpt": "After Google Search's AI update, the word \"disregard\" now effectively breaks the search interface.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-22T16:16:48.000Z",
-      "url": "https://techcrunch.com/2026/05/22/you-can-no-longer-google-the-word-disregard/",
-      "tags": [
-        "AI",
-        "AI summaries",
-        "Google",
-        "Google Search",
-        "In Brief"
-      ]
-    },
-    {
-      "id": "8222a4c3428f",
-      "title": "AT&T will give you the new Razr+ flip phone for under $5 a month - no trade-in required",
-      "excerpt": "With this Memorial Day deal, AT&T is offering new and existing customers the 2026 Razr+ flip phone for just $4.43 per month. Here's what to know.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-22T16:00:39.000Z",
-      "url": "https://www.zdnet.com/article/att-razr-memorial-day-deal-2026/"
-    },
-    {
-      "id": "5b6acef07872",
-      "title": "As memory prices squeeze enterprise buyers, Lenovo laughs all the way to the bank",
-      "excerpt": "Switch to premium devices pays off as PC giant post record record, just don't ask about cheap laptops",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-22T15:52:17.000Z",
-      "url": "https://www.theregister.com/personal-tech/2026/05/22/as-memory-prices-squeeze-enterprise-buyers-lenovo-laughs-all-the-way-to-the-bank/5245202",
-      "image": "https://image.theregister.com/?imageId=4093591&width=800",
-      "tags": [
-        "personal tech"
       ]
     }
   ]
