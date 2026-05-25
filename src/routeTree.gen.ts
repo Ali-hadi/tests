@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ToolsRouteImport } from './routes/tools'
 import { Route as TermsAndConditionsRouteImport } from './routes/terms-and-conditions'
 import { Route as TechnologiesRouteImport } from './routes/technologies'
 import { Route as ServicesRouteImport } from './routes/services'
@@ -21,7 +22,13 @@ import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AiSolutionsRouteImport } from './routes/ai-solutions'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ToolsToolIdRouteImport } from './routes/tools.$toolId'
 
+const ToolsRoute = ToolsRouteImport.update({
+  id: '/tools',
+  path: '/tools',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TermsAndConditionsRoute = TermsAndConditionsRouteImport.update({
   id: '/terms-and-conditions',
   path: '/terms-and-conditions',
@@ -82,6 +89,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ToolsToolIdRoute = ToolsToolIdRouteImport.update({
+  id: '/$toolId',
+  path: '/$toolId',
+  getParentRoute: () => ToolsRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -96,6 +108,8 @@ export interface FileRoutesByFullPath {
   '/services': typeof ServicesRoute
   '/technologies': typeof TechnologiesRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
+  '/tools': typeof ToolsRouteWithChildren
+  '/tools/$toolId': typeof ToolsToolIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -110,6 +124,8 @@ export interface FileRoutesByTo {
   '/services': typeof ServicesRoute
   '/technologies': typeof TechnologiesRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
+  '/tools': typeof ToolsRouteWithChildren
+  '/tools/$toolId': typeof ToolsToolIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -125,6 +141,8 @@ export interface FileRoutesById {
   '/services': typeof ServicesRoute
   '/technologies': typeof TechnologiesRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
+  '/tools': typeof ToolsRouteWithChildren
+  '/tools/$toolId': typeof ToolsToolIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -141,6 +159,8 @@ export interface FileRouteTypes {
     | '/services'
     | '/technologies'
     | '/terms-and-conditions'
+    | '/tools'
+    | '/tools/$toolId'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -155,6 +175,8 @@ export interface FileRouteTypes {
     | '/services'
     | '/technologies'
     | '/terms-and-conditions'
+    | '/tools'
+    | '/tools/$toolId'
   id:
     | '__root__'
     | '/'
@@ -169,6 +191,8 @@ export interface FileRouteTypes {
     | '/services'
     | '/technologies'
     | '/terms-and-conditions'
+    | '/tools'
+    | '/tools/$toolId'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -184,10 +208,18 @@ export interface RootRouteChildren {
   ServicesRoute: typeof ServicesRoute
   TechnologiesRoute: typeof TechnologiesRoute
   TermsAndConditionsRoute: typeof TermsAndConditionsRoute
+  ToolsRoute: typeof ToolsRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/tools': {
+      id: '/tools'
+      path: '/tools'
+      fullPath: '/tools'
+      preLoaderRoute: typeof ToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/terms-and-conditions': {
       id: '/terms-and-conditions'
       path: '/terms-and-conditions'
@@ -272,8 +304,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/$toolId': {
+      id: '/tools/$toolId'
+      path: '/$toolId'
+      fullPath: '/tools/$toolId'
+      preLoaderRoute: typeof ToolsToolIdRouteImport
+      parentRoute: typeof ToolsRoute
+    }
   }
 }
+
+interface ToolsRouteChildren {
+  ToolsToolIdRoute: typeof ToolsToolIdRoute
+}
+
+const ToolsRouteChildren: ToolsRouteChildren = {
+  ToolsToolIdRoute: ToolsToolIdRoute,
+}
+
+const ToolsRouteWithChildren = ToolsRoute._addFileChildren(ToolsRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
@@ -288,6 +337,7 @@ const rootRouteChildren: RootRouteChildren = {
   ServicesRoute: ServicesRoute,
   TechnologiesRoute: TechnologiesRoute,
   TermsAndConditionsRoute: TermsAndConditionsRoute,
+  ToolsRoute: ToolsRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

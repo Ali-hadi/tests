@@ -5,6 +5,7 @@ import logo from "@/assets/logo-white.png";
 const links = [
   { to: "/services", label: "Services" },
   { to: "/ai-solutions", label: "AI Solutions" },
+  { to: "/tools", label: "Tools" },
   { to: "/technologies", label: "Technologies" },
   { to: "/portfolio", label: "Portfolio" },
   { to: "/pricing", label: "Pricing" },

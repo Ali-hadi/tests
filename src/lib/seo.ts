@@ -77,6 +77,20 @@ export function createSeo({
           ? "noindex,nofollow"
           : "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1",
       },
+      {
+        name: "googlebot",
+        content: noIndex
+          ? "noindex,nofollow"
+          : "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1",
+      },
+      {
+        name: "bingbot",
+        content: noIndex
+          ? "noindex,nofollow"
+          : "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1",
+      },
+      { name: "referrer", content: "strict-origin-when-cross-origin" },
+      { name: "format-detection", content: "telephone=no" },
       { property: "og:locale", content: "en_US" },
       { property: "og:type", content: type },
       { property: "og:site_name", content: SITE_NAME },
@@ -84,13 +98,21 @@ export function createSeo({
       { property: "og:description", content: description },
       { property: "og:url", content: canonical },
       { property: "og:image", content: imageUrl },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
       { property: "og:image:alt", content: `${SITE_NAME} AI software and automation services` },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:site", content: `@${SITE_NAME}` },
+      { name: "twitter:creator", content: AUTHOR_NAME },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
       { name: "twitter:image", content: imageUrl },
     ],
-    links: [{ rel: "canonical", href: canonical }],
+    links: [
+      { rel: "canonical", href: canonical },
+      { rel: "alternate", hrefLang: "en", href: canonical },
+      { rel: "alternate", hrefLang: "x-default", href: canonical },
+    ],
   };
 }
 
