@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T04:00:28.656Z",
+  "generatedAt": "2026-05-27T15:49:32.685Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,450 @@
     }
   ],
   "posts": [
+    {
+      "id": "71c34489d509",
+      "title": "AI tried to bury this politician — now people have actually heard of him",
+      "excerpt": "By the time that the Democratic primary for New York's 12th congressional district wraps up in June, Anthropic and OpenAI will have spent millions on their battle over the political future of AI: who gets to regulate...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-05-27T15:40:00.000Z",
+      "url": "https://www.theverge.com/policy/937650/ai-alex-bores-openai-anthropic-ny12",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "OpenAI",
+        "Policy",
+        "Politics"
+      ]
+    },
+    {
+      "id": "4b94c2135be1",
+      "title": "AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up",
+      "excerpt": "The government is playing catch-up, but Nvidia has a lifeline.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-05-27T15:39:15.000Z",
+      "url": "https://www.zdnet.com/article/heres-why-the-government-wants-to-spend-9-billion-on-ai-superchips/"
+    },
+    {
+      "id": "88a7fa564933",
+      "title": "My new favorite Windows app made my PC safer and more reliable - and it's free",
+      "excerpt": "Downloading executable installer files from random websites is the best way to put malware on your Windows PC. Stop doing that! UniGetUI makes it easy to get all those apps from trusted sources.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-27T15:36:00.000Z",
+      "url": "https://www.zdnet.com/article/how-to-use-unigetui-to-install-and-manage-windows-apps/"
+    },
+    {
+      "id": "0e198fad6825",
+      "title": "Here’s how Google is responding to Fitbit users who don’t like the new Health app",
+      "excerpt": "After a flood of complaints about the Google Health app that just replaced Fitbit, Google has responded with a list of changes that will roll out starting this week. Google is addressing some of the biggest complaints...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-27T15:28:43.000Z",
+      "url": "https://www.theverge.com/tech/938179/google-health-fitbit-roadmap",
+      "tags": [
+        "Fitness",
+        "Gadgets",
+        "Google",
+        "Health",
+        "News",
+        "Science"
+      ]
+    },
+    {
+      "id": "0e4a5a5ab37b",
+      "title": "Why the future of AI is on-premises - business advice from Dell Tech World 2026",
+      "excerpt": "With rising costs, sovereignty requirements, and agent adoption, Dell's latest conference focused on how enterprises can transition AI workloads to a hybrid infrastructure.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-05-27T14:51:30.000Z",
+      "url": "https://www.zdnet.com/article/dell-tech-world-2026-why-the-future-of-ai-is-moving-on-premises/"
+    },
+    {
+      "id": "f32d3141ab84",
+      "title": "Acer vs. Asus: I've tested dozens of laptops from both brands, and this one's better",
+      "excerpt": "Acer and Asus both have solid options, but they excel in different areas. Let's break down the major differences.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-27T14:48:00.000Z",
+      "url": "https://www.zdnet.com/article/acer-vs-asus-laptops/"
+    },
+    {
+      "id": "c631be817da5",
+      "title": "Sony’s DualSense controllers are almost 30 percent off",
+      "excerpt": "Sony has a tradition of marking down its PlayStation 5 hardware a couple of times a year, and one of those opportunities to save is here through June 10th. Its latest Days of Play sale is happening at multiple retaile...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-27T14:38:05.000Z",
+      "url": "https://www.theverge.com/gadgets/938029/sony-dualsense-wireless-edge-controller-ps5-pc-deal-sale",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Gaming",
+        "PlayStation",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "819fd8ad239b",
+      "title": "Robinhood will let your AI agent trade stocks and make (or lose) lots of money",
+      "excerpt": "Robinhood is opening its trading platform to AI agents. In an announcement on Wednesday, Robinhood says traders can now create a separate account for an AI agent and add a specific amount of money, allowing the agent...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-05-27T14:36:10.000Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/938095/robinhood-ai-agent-stock-trading",
+      "tags": [
+        "AI",
+        "News"
+      ]
+    },
+    {
+      "id": "c846312c46f6",
+      "title": "4 in 10 AI agents headed for demotion or the rubbish bin",
+      "excerpt": "Gartner predicts governance struggles to plague rollout of this year’s much-hyped technology",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-05-27T14:32:00.000Z",
+      "url": "https://www.theregister.com/ai-ml/2026/05/27/4-in-10-ai-agents-headed-for-demotion-or-the-rubbish-bin/5246964",
+      "image": "https://image.theregister.com/?imageId=5226945&width=800",
+      "tags": [
+        "ai + ml"
+      ]
+    },
+    {
+      "id": "2b32d553785b",
+      "title": "Fitbit Air vs. Whoop: I've worn both trackers for health and fitness, and this model wins",
+      "excerpt": "How does the new Fitbit Air stack up against the tried-and-true Whoop band? I've broken down the key differences.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-27T14:30:00.000Z",
+      "url": "https://www.zdnet.com/article/whoop-vs-fitbit-air-google/"
+    },
+    {
+      "id": "9f605ab2148c",
+      "title": "Startup Battlefield 200 applications close today: Nominate a founder or submit your startup",
+      "excerpt": "Today is the final day to apply or nominate a startup for Startup Battlefield 200. Once the clock strikes 11:59 p.m. PT, the window closes on your chance to compete for $100,000 in equity-free funding, gain global vis...",
+      "source": "TechCrunch AI",
+      "category": "IT",
+      "publishedAt": "2026-05-27T14:15:00.000Z",
+      "url": "https://techcrunch.com/2026/05/27/startup-battlefield-200-applications-close-today-nominate-a-founder-or-submit-your-startup/",
+      "tags": [
+        "TC",
+        "Startups",
+        "Hardware",
+        "Crypto",
+        "Climate",
+        "Fintech"
+      ]
+    },
+    {
+      "id": "8ff63c21f892",
+      "title": "ElevenLabs’s new music generation model can switch genres mid-track",
+      "excerpt": "ElevenLabs' new model will let users regenerate a section of a song without affecting rest of the track",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-27T14:14:10.000Z",
+      "url": "https://techcrunch.com/2026/05/27/elevenlabss-new-music-generation-model-can-switch-genres-mid-track/",
+      "tags": [
+        "AI",
+        "Media & Entertainment",
+        "ai music",
+        "ElevenLabs",
+        "Google",
+        "Music"
+      ]
+    },
+    {
+      "id": "9dfe160a56b0",
+      "title": "Own a Hisense TV? I'd change these 12 settings to noticeably improve the picture quality",
+      "excerpt": "You might think your Hisense TV already looks great, but you can easily get more out of it by tweaking just a few menu options.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-27T14:00:19.000Z",
+      "url": "https://www.zdnet.com/article/best-hisense-tv-settings-to-change-better-picture-quality/"
+    },
+    {
+      "id": "bc991d8e1a8e",
+      "title": "SOND, a sleep tech startup from Bose’s former head of sleep, exits stealth with $7M",
+      "excerpt": "SOND, a startup led by Bose’s former head of sleep products, emerged from stealth with $7M in funding for its AI-powered sleep earbuds.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-27T14:00:00.000Z",
+      "url": "https://techcrunch.com/2026/05/27/sond-a-sleep-tech-startup-from-boses-former-head-of-sleep-exits-stealth-with-7m/",
+      "tags": [
+        "TC",
+        "Startups",
+        "Hardware",
+        "AI",
+        "sleepbuds",
+        "sleep earbuds"
+      ]
+    },
+    {
+      "id": "19417fa11c3b",
+      "title": "TechCrunch Disrupt 2026 Early Bird ticket savings end in 3 days",
+      "excerpt": "There are only 3 days left to save up to $410 on your ticket to TechCrunch Disrupt 2026. Early Bird pricing ends May 29 at 11:59 p.m. PT, and once the deadline passes, ticket prices increase. If you plan to attend one...",
+      "source": "TechCrunch AI",
+      "category": "IT",
+      "publishedAt": "2026-05-27T14:00:00.000Z",
+      "url": "https://techcrunch.com/2026/05/27/techcrunch-disrupt-2026-early-bird-ticket-savings-end-in-3-days/",
+      "tags": [
+        "TC",
+        "Startups",
+        "Transportation",
+        "Security",
+        "Hardware",
+        "Crypto"
+      ]
+    },
+    {
+      "id": "e9973cb6d6d8",
+      "title": "This smart bird feeder captures more of my backyard drama",
+      "excerpt": "Since moving to South Carolina's Lowcountry, I've been spellbound by the myriad of beautiful birds that share the coast with us - ospreys raising their babies in towering nests beside the road to my daughter's school,...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-05-27T14:00:00.000Z",
+      "url": "https://www.theverge.com/tech/937628/coolfly-aura-smart-bird-feeder-review",
+      "tags": [
+        "AI",
+        "Cameras",
+        "Gadgets",
+        "Reviews",
+        "Smart Home Reviews",
+        "Tech"
+      ]
+    },
+    {
+      "id": "a53e8a319266",
+      "title": "India's cyber agency sets clock at 12 hours to tackle exploited bugs as AI turns up the heat",
+      "excerpt": "CERT-In says internet-facing or critical systems should be patched, mitigated, or cut off within half a day where feasible",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-05-27T14:00:00.000Z",
+      "url": "https://www.theregister.com/security/2026/05/27/cert-in-professes-12-hour-patching-for-ai-assisted-attacks/5247009",
+      "image": "https://image.theregister.com/?imageId=5247056&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "5f66912cc471",
+      "title": "This Ferrari should have been a Volkswagen",
+      "excerpt": "It may be the NBA playoffs but right now Ferrari is getting dunked on more than anyone. Whether they own a Ferrari or just have a poster of a Testarossa on their wall, fans in the Ferrari-verse are frothy about the Lu...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-27T13:55:37.000Z",
+      "url": "https://www.theverge.com/transportation/938016/this-ferrari-should-have-been-a-volkswagen",
+      "tags": [
+        "Cars",
+        "Electric Cars",
+        "Transportation"
+      ]
+    },
+    {
+      "id": "368aa051a05d",
+      "title": "China is increasingly keeping its best AI talent to itself",
+      "excerpt": "China's AI boom is producing world-class talent, and Beijing is increasingly reluctant to let them go elsewhere.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-27T13:48:41.000Z",
+      "url": "https://techcrunch.com/2026/05/27/china-is-increasingly-keeping-its-best-ai-talent-to-itself/",
+      "tags": [
+        "AI",
+        "Government & Policy",
+        "China",
+        "travel ban"
+      ]
+    },
+    {
+      "id": "e2538e59d3f3",
+      "title": "Rust will save Linux from AI, says Greg Kroah-Hartman",
+      "excerpt": "Now that doesn't mean Linux stable kernel maintainer Greg Kroah-Hartman thinks Rust is magic.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-05-27T13:34:00.000Z",
+      "url": "https://www.zdnet.com/article/rust-will-save-linux-from-ai-says-greg-kroah-hartman/"
+    },
+    {
+      "id": "e5ec71ba7247",
+      "title": "007 First Light is like a James Bond movie in the best way possible",
+      "excerpt": "The James Bond franchise is nothing if not a spectacle: Aside from the explosions and gun fights, even its calmer moments are dripping in the pomp and glamour of elite ostentation and luxury locales. Bond, however, ha...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-27T13:30:00.000Z",
+      "url": "https://www.theverge.com/entertainment/937984/007-first-light-review-james-bond-ps5-xbox",
+      "tags": [
+        "Entertainment",
+        "Games Review",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "dd8bf6d55355",
+      "title": "Windows 11 update preview promises faster launches, puts Task Manager on NPU patrol",
+      "excerpt": "Just mind the known issue that can still send installs rolling back",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-27T13:30:00.000Z",
+      "url": "https://www.theregister.com/personal-tech/2026/05/27/windows-11-update-preview-promises-faster-launches-puts-task-manager-on-npu-patrol/5246940",
+      "image": "https://image.theregister.com/?imageId=1682093&width=800",
+      "tags": [
+        "personal tech"
+      ]
+    },
+    {
+      "id": "64901b21982b",
+      "title": "ClickHouse triples anualized revenue to $250M, charting a path toward an IPO",
+      "excerpt": "The database provider is eyeing a public debut within the next few years.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-27T13:04:20.000Z",
+      "url": "https://techcrunch.com/2026/05/27/clickhouse-triples-anualized-revenue-to-250m-charting-a-path-toward-an-ipo/",
+      "tags": [
+        "AI",
+        "Enterprise",
+        "Venture",
+        "AI infranstructure",
+        "ClickHouse",
+        "database services"
+      ]
+    },
+    {
+      "id": "6fcbe7591c75",
+      "title": "YouTube will now automatically label AI videos",
+      "excerpt": "YouTube will now automatically label videos that use significant photorealistic AI, instead of relying solely on creators to disclose AI-generated content themselves. It's also making AI labels more prominent.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-27T13:00:00.000Z",
+      "url": "https://techcrunch.com/2026/05/27/youtube-will-now-automatically-label-ai-videos/",
+      "tags": [
+        "TC",
+        "Media & Entertainment",
+        "AI",
+        "YouTube",
+        "media",
+        "Creators"
+      ]
+    },
+    {
+      "id": "d941f0ddee36",
+      "title": "Win cool gadgets we can’t keep because The Verge has ethics",
+      "excerpt": "When people learn I work for The Verge, they inevitably ask: “Do you get to keep the gadgets?” Now that I film Today I’m Toying With, a video series where I share the joy of tech, I get that question more than ever. T...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-27T13:00:00.000Z",
+      "url": "https://www.theverge.com/gadgets/936771/today-im-toying-with-giveaway-free-gadgets",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Giveaway",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "ca747c5e86ac",
+      "title": "Broadcom gets early start on WiFi 8 with next-gen wireless routing kit",
+      "excerpt": "Better, more reliable, and cheaper? Isn't that the story every generation?",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-27T13:00:00.000Z",
+      "url": "https://www.theregister.com/networks/2026/05/27/broadcom-gets-early-start-on-wifi-8-with-new-routing-kit/5246623",
+      "image": "https://image.theregister.com/?imageId=253637&width=800",
+      "tags": [
+        "networks"
+      ]
+    },
+    {
+      "id": "e5985a331c7c",
+      "title": "Broadcom's custom ASIC biz adds South Korea's FuriosaAI to its empire",
+      "excerpt": "Third-gen chips to use Broadzilla's advanced packaging, networking tech",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-05-27T13:00:00.000Z",
+      "url": "https://www.theregister.com/ai-ml/2026/05/27/broadcom-lands-furiosaai-as-latest-custom-ai-chip-partner/5246536",
+      "image": "https://image.theregister.com/?imageId=252467&width=800",
+      "tags": [
+        "ai + ml"
+      ]
+    },
+    {
+      "id": "7665c0628339",
+      "title": "When my eye doctor got my glasses prescription wrong, AI helped me fix it",
+      "excerpt": "An eye exam produced a good distance prescription and a terrible computer prescription. Here's how AI helped decode the numbers and expose the mismatch.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-05-27T12:44:00.000Z",
+      "url": "https://www.zdnet.com/article/eye-doctor-ai-prescription/"
+    },
+    {
+      "id": "8687cbf07431",
+      "title": "Robinhood now lets your AI agents trade stocks",
+      "excerpt": "Robinhood will let users create a separate account with pre-loaded balance that an agent use to trade",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-27T12:30:00.000Z",
+      "url": "https://techcrunch.com/2026/05/27/robinhood-now-lets-your-ai-agents-trade-stocks/",
+      "tags": [
+        "Fintech",
+        "AI",
+        "payments",
+        "Robinhood",
+        "AI agents",
+        "AI stock trading"
+      ]
+    },
+    {
+      "id": "49fb2de68224",
+      "title": "Tony Blair and the Reform party both want AI in government, though they can't agree on what for",
+      "excerpt": "Former UK PM demands modernization, and right wing party channels inner Musk to call for mass job cuts in public sector",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-05-27T12:30:00.000Z",
+      "url": "https://www.theregister.com/public-sector/2026/05/27/tony-blair-and-the-reform-party-both-want-ai-in-government-though-they-cant-agree-on-what-for/5246983",
+      "image": "https://image.theregister.com/?imageId=247383&width=800",
+      "tags": [
+        "public sector"
+      ]
+    },
+    {
+      "id": "6f52c1a9863b",
+      "title": "UK armed forces aims for secure comms via optical satellite links",
+      "excerpt": "Brit military boffins test ground station with infra-red lasers to deliver multi-gigabyte downloads",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-27T12:14:58.000Z",
+      "url": "https://www.theregister.com/networks/2026/05/27/uk-armed-forces-aims-for-secure-comms-via-optical-satellite-links/5246994",
+      "image": "https://image.theregister.com/?imageId=5230051&width=800",
+      "tags": [
+        "networks"
+      ]
+    },
+    {
+      "id": "8c437557e105",
+      "title": "How to guarantee a speaker gig: Hack the system. Literally",
+      "excerpt": "Make your mark on the call-for-proposal platform",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-27T12:00:00.000Z",
+      "url": "https://www.theregister.com/security/2026/05/27/pretalx-xss-flaw-exposed-conference-cfp-systems/5246598",
+      "image": "https://image.theregister.com/?imageId=5246620&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "9da64821c60f",
+      "title": "Building self-improving tax agents with Codex",
+      "excerpt": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.",
+      "source": "OpenAI News",
+      "category": "AI",
+      "publishedAt": "2026-05-27T07:00:00.000Z",
+      "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
+      "tags": [
+        "Engineering"
+      ]
+    },
     {
       "id": "1a579bbf9df8",
       "title": "Cisco making SONiC available to all customers – not just hyperscalers",
@@ -240,443 +684,6 @@
         "News",
         "Science"
       ]
-    },
-    {
-      "id": "a7e8ad2d9282",
-      "title": "I found the best Memorial Day phone deals, and it's your last chance to save big on a new device",
-      "excerpt": "I've rounded up the best smartphone deals you can shop this Memorial Day. Discounts are still live, so now is a great time to save.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T18:59:34.000Z",
-      "url": "https://www.zdnet.com/article/best-memorial-day-phones-deals-2026/"
-    },
-    {
-      "id": "cc009bad7cd7",
-      "title": "GE’s nugget ice maker is nearly half off if you buy it refurbished",
-      "excerpt": "If you’re looking for ways to make staying cool and hydrated easier this summer, Woot is currently selling a refurbished GE Profile Opal 2.0 Ultra Nugget Ice Maker for $264.99 through June 3rd. That’s $184 less than b...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-26T18:50:35.000Z",
-      "url": "https://www.theverge.com/gadgets/937560/ge-profile-opal-ultra-nugget-ice-maker-deal-sale",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Tech",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "416c0678d8f0",
-      "title": "OpenRouter more than doubles valuation to $1.3B in a year",
-      "excerpt": "OpenRouter has raised a $113 million Series B led by CapitalG. Its 5x growth in usage over six months indicates the multi-AI-model future is here.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-26T18:33:01.000Z",
-      "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/",
-      "tags": [
-        "AI",
-        "Startups",
-        "AI gateway",
-        "CapitalG",
-        "In Brief",
-        "openrouter"
-      ]
-    },
-    {
-      "id": "f01b7214658e",
-      "title": "I found 7 low-cost ways to make my TV sound a lot better (even without a soundbar)",
-      "excerpt": "Getting great sound from your TV doesn't have to cost an arm and a leg. These are my expert-vetted TV audio tricks.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T18:32:05.000Z",
-      "url": "https://www.zdnet.com/article/how-to-fix-tv-audio-sound/"
-    },
-    {
-      "id": "0ad1fcf46f8a",
-      "title": "Last chance for these Memorial Day TV deals at Amazon and Best Buy",
-      "excerpt": "Memorial Day might have passed, but you can still save big on TVs from Samsung, LG, and more.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T18:28:00.000Z",
-      "url": "https://www.zdnet.com/article/best-memorial-day-2026-tv-deals/"
-    },
-    {
-      "id": "3bce7bbc1d57",
-      "title": "MyPillow must decide whether to be firm or soft as ransomware crims demand pay",
-      "excerpt": "Guess they could deny the alleged intrusion … like the 2020 election results",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-26T18:02:48.000Z",
-      "url": "https://www.theregister.com/cyber-crime/2026/05/26/mypillow-appears-on-play-ransomware-leak-site/5246513",
-      "image": "https://image.theregister.com/?imageId=5246533&width=800",
-      "tags": [
-        "cyber-crime"
-      ]
-    },
-    {
-      "id": "5144a4a37d73",
-      "title": "MySQL faithful launch OurSQL Foundation to keep Oracle honest",
-      "excerpt": "Community group wants transparency, collaboration, and a clearer roadmap for the open source database",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-26T17:30:00.000Z",
-      "url": "https://www.theregister.com/databases/2026/05/26/mysql-faithful-launch-oursql-foundation-to-keep-oracle-honest/5246451",
-      "image": "https://image.theregister.com/?imageId=5246467&width=800",
-      "tags": [
-        "databases"
-      ]
-    },
-    {
-      "id": "37518cd7928e",
-      "title": "Bezos rocket fell short after cryogenic leak cut engine thrust",
-      "excerpt": "Frozen hydraulic line blamed for leaving payload in the wrong orbit",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-26T17:20:00.000Z",
-      "url": "https://www.theregister.com/science/2026/05/26/bezos-rocket-fell-short-after-cryogenic-leak-cut-engine-thrust/5246481",
-      "image": "https://image.theregister.com/?imageId=5246501&width=800",
-      "tags": [
-        "science"
-      ]
-    },
-    {
-      "id": "0a1c0c1b572f",
-      "title": "Sony’s sloppy Spider-Man universe gets even messier with Spider-Noir",
-      "excerpt": "After years of it seeming like the Spider-Man film rights might be better off in Marvel's hands alone, Into the Spider-Verse came along and proved that Sony was still capable of telling phenomenal stories featuring ev...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-26T16:30:00.000Z",
-      "url": "https://www.theverge.com/entertainment/936358/amazon-spider-noir-review",
-      "tags": [
-        "Amazon",
-        "Entertainment",
-        "Marvel",
-        "Tech",
-        "TV Show Reviews",
-        "TV Shows"
-      ]
-    },
-    {
-      "id": "e3fc9ba847d1",
-      "title": "The best Memorial Day sales you can still shop",
-      "excerpt": "The long weekend is over, but many of the best Memorial Day deals are still available. Many of our favorite portable speakers are discounted, as are other outdoorsy products we like, including a set of solar lights. Y...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-26T16:10:06.000Z",
-      "url": "https://www.theverge.com/gadgets/936196/best-memorial-day-sales-tech-deals-2026",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "bd3b11d42394",
-      "title": "American Airlines is getting Starlink Wi-Fi",
-      "excerpt": "American Airlines is planning to install SpaceX's Starlink Wi-Fi in hundreds of its airplanes, the airline announced today. American says the deployment will start in the first quarter of 2027, and will span more than...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-26T16:07:39.000Z",
-      "url": "https://www.theverge.com/transportation/937439/american-airlines-starlink-wifi-speed",
-      "tags": [
-        "Aviation",
-        "News",
-        "Science",
-        "Space",
-        "SpaceX",
-        "Transportation"
-      ]
-    },
-    {
-      "id": "1be411e90618",
-      "title": "This startup is betting India’s gig economy can train the world’s robots",
-      "excerpt": "Human Archive, a startup founded by UC Berkeley and Stanford researchers, is paying gig workers in India to wear camera-equipped caps and sensor devices to collect the real-world physical training data that AI and rob...",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-26T16:00:00.000Z",
-      "url": "https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/",
-      "tags": [
-        "AI",
-        "robots",
-        "wing vc",
-        "physical ai",
-        "Human Archive"
-      ]
-    },
-    {
-      "id": "bf6b0848880f",
-      "title": "Memory V re-creates the Memorymoog without the massive headaches or price tag",
-      "excerpt": "The Memorymoog is legendary for being an absolutely massive-sounding synth and being incredibly unreliable. But now you can enjoy its classic Moog sound without the headaches or the sky-high vintage price, thanks to A...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-26T16:00:00.000Z",
-      "url": "https://www.theverge.com/entertainment/937054/arturia-memory-v-memorymoog-synthesizer",
-      "tags": [
-        "Entertainment",
-        "Music",
-        "News",
-        "Tech"
-      ]
-    },
-    {
-      "id": "7c1ede0105a2",
-      "title": "Saving for a Switch 2 is easier with Newegg’s gift card deal",
-      "excerpt": "If you foresee a bunch of Nintendo purchases in your future, Newegg’s deal on Nintendo gift cards might just help save your wallet. The retailer is offering a deal that lets gamers get $200 worth of credit towards gam...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-26T15:33:42.000Z",
-      "url": "https://www.theverge.com/gadgets/937183/nintendo-gift-card-switch-2-apple-studio-display-deal-sale",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "b1ab7b6cdba0",
-      "title": "Oppo’s Bubble is a thin round screen for taking rear camera selfies",
-      "excerpt": "Oppo launched a new smartphone accessory that makes it easier to snap selfies using your smartphone's rear cameras that typically feature better sensors than front-facing cameras. The Bubble offers similar functionali...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-26T15:07:45.000Z",
-      "url": "https://www.theverge.com/tech/937067/oppo-bubble-wireless-screen-remote-selfie-magnetic",
-      "tags": [
-        "Gadgets",
-        "News",
-        "Phones",
-        "Tech"
-      ]
-    },
-    {
-      "id": "9aa5e4c1e619",
-      "title": "Govee included a book on ‘White Supremacy’ in its website imagery",
-      "excerpt": "Companies often include background props in their product imagery that serve as set dressing, but one of Govee's decorative choices is raising some eyebrows. An eagle-eyed Verge reader spotted that two copies of a boo...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-26T15:07:40.000Z",
-      "url": "https://www.theverge.com/tech/937378/govee-white-supremacy-book-promotional-image",
-      "tags": [
-        "Gadgets",
-        "News",
-        "Smart Home",
-        "Tech"
-      ]
-    },
-    {
-      "id": "c023ede6addd",
-      "title": "I found the best Memorial Day Apple deals still available: Save on iPad, Apple Watch, and more",
-      "excerpt": "Summer is almost here, and you can find deals on all things Apple with these lingering Memorial Day sales.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T14:58:00.000Z",
-      "url": "https://www.zdnet.com/article/best-apple-deals-memorial-day-2026/"
-    },
-    {
-      "id": "c93cfc8186a5",
-      "title": "Universal Music Group and TikTok renew agreement to combat unauthorized AI music",
-      "excerpt": "For years, UMG has pushed platforms, streaming services, and AI companies to implement stricter content moderation policies.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-26T14:55:05.000Z",
-      "url": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/",
-      "tags": [
-        "AI",
-        "Apps",
-        "Media & Entertainment",
-        "TikTok",
-        "universal music group"
-      ]
-    },
-    {
-      "id": "2d32c8a58f7a",
-      "title": "Jony Ive’s Ferrari looks nothing like a Ferrari",
-      "excerpt": "Ferrari makes some of the fastest cars on the planet, so it's anyone's guess how the Italian automaker ended up being so incredibly late to the EV party. Long after most automakers have drastically scaled back their E...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-26T14:17:37.000Z",
-      "url": "https://www.theverge.com/transportation/937077/ferrari-luce-ev-apple-car-jony-ice-design",
-      "tags": [
-        "Apple",
-        "Electric Cars",
-        "News",
-        "Tech",
-        "Transportation"
-      ]
-    },
-    {
-      "id": "659581d832be",
-      "title": "Nvidia has retired its GeForce Control Panel app after 20 years",
-      "excerpt": "Nvidia announced more than two years ago that it was working to replace its Control Panel app on Windows with a new Nvidia app. After porting across various features to the Nvidia app, Nvidia is announcing today that...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-26T14:14:35.000Z",
-      "url": "https://www.theverge.com/news/937221/nvidia-geforce-control-panel-app-retirement",
-      "tags": [
-        "Gaming",
-        "News",
-        "Nvidia",
-        "PC Gaming",
-        "Tech"
-      ]
-    },
-    {
-      "id": "6247e216a555",
-      "title": "How clips ate the internet",
-      "excerpt": "Once upon a time, you could probably guess why most things appeared on your feed. Maybe you followed the creator who posted it; maybe you'd liked their stuff in the past; maybe all your friends were into them. That's...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-26T14:02:36.000Z",
-      "url": "https://www.theverge.com/podcast/937188/clips-internet-feed-fitbit-air-vergecast",
-      "tags": [
-        "Gadgets",
-        "Podcasts",
-        "Social Media",
-        "Tech",
-        "Vergecast",
-        "Wearable"
-      ]
-    },
-    {
-      "id": "137863414983",
-      "title": "TechCrunch Disrupt 2026 Early Bird ticket rates end May 29",
-      "excerpt": "Save up to $410 on your TechCrunch Disrupt 2026 pass before prices increase on May 29 at 11:59 p.m. PT. Register here to join the tech epicenter in San Francisco.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-26T14:00:00.000Z",
-      "url": "https://techcrunch.com/2026/05/26/techcrunch-disrupt-2026-early-bird-ticket-rates-end-may-29/",
-      "tags": [
-        "AI",
-        "Apps",
-        "Biotech & Health",
-        "Climate",
-        "Crypto",
-        "Fintech"
-      ]
-    },
-    {
-      "id": "9025a1088f4c",
-      "title": "Sundar Pichai on AI, the future of search, and what’s happening to the web",
-      "excerpt": "Today, I’m talking with Google and Alphabet CEO Sundar Pichai, in a conversation we recorded just after the Google I/O developer conference. This is the fifth year Sundar and I have sat down after I/O, and it’s become...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-05-26T14:00:00.000Z",
-      "url": "https://www.theverge.com/podcast/936445/sundar-pichai-ai-search-google-zero-youtube-web",
-      "tags": [
-        "AI",
-        "Decoder",
-        "Google",
-        "Google I/O 2026",
-        "Podcasts",
-        "Tech"
-      ]
-    },
-    {
-      "id": "5c3698bf8527",
-      "title": "Rogue states are putting AI agents to work on sanctions evasion",
-      "excerpt": "RUSI warns fake IDs, shell companies, and crypto laundering could soon operate at industrial scale",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-26T13:44:43.000Z",
-      "url": "https://www.theregister.com/ai-ml/2026/05/26/rogue-states-are-putting-ai-agents-to-work-on-sanctions-evasion/5246210",
-      "image": "https://image.theregister.com/?imageId=5244798&width=800",
-      "tags": [
-        "ai + ml"
-      ]
-    },
-    {
-      "id": "2d99f4ff7111",
-      "title": "Last chance on Memorial Day laptop deals: Save on Apple, Dell, Lenovo, and more",
-      "excerpt": "In the market for a new laptop? I've rounded up the best laptop deals still live following Memorial Day weekend.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T13:39:00.000Z",
-      "url": "https://www.zdnet.com/article/best-memorial-day-laptop-deals-2026/"
-    },
-    {
-      "id": "346944ae485b",
-      "title": "How I make my solar panels last long enough to pay for themselves",
-      "excerpt": "You need to maintain your solar panels if you want them to last. Here are my top care tips, plus how to test for faulty ones.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T13:28:00.000Z",
-      "url": "https://www.zdnet.com/article/how-to-make-solar-panels-last-long-to-pay-for-themselves/"
-    },
-    {
-      "id": "1cd98045733b",
-      "title": "Avoid these 8 solar mistakes that cut your power output in half - I learned the hard way",
-      "excerpt": "Solar power can definitely save you money, but it requires a different mindset than with typical grid AC. Here's why.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T13:17:00.000Z",
-      "url": "https://www.zdnet.com/article/avoid-solar-mistakes-that-cut-power-output-by-half-learned-hard-way/"
-    },
-    {
-      "id": "75a5fd2a797b",
-      "title": "Gothenburg's self-driving bus trammed on day one",
-      "excerpt": "Autonomous shuttle's second passenger trip ends with rear-end collision and a tow truck",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-26T12:49:15.000Z",
-      "url": "https://www.theregister.com/offbeat/2026/05/26/gothenburgs-self-driving-bus-trammed-on-day-one/5246159",
-      "image": "https://image.theregister.com/?imageId=5246204&width=800",
-      "tags": [
-        "offbeat"
-      ]
-    },
-    {
-      "id": "f3df913edd43",
-      "title": "How I easily built my own Wi-Fi router with a Raspberry Pi - for Starlink and solar control",
-      "excerpt": "This custom Wi-Fi router works off-grid with Starlink and can control my solar power station. Here's why I went the DIY route - and how.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T12:47:43.000Z",
-      "url": "https://www.zdnet.com/article/how-i-easily-built-my-own-wi-fi-router-with-a-raspberry-pi-for-starlink-and-solar-control/"
-    },
-    {
-      "id": "9b94c10bcd01",
-      "title": "Nobody wants to tell me why they only listen to their own Suno slop",
-      "excerpt": "There's this alarming trend in the Suno subreddit. People aren't just prompting AI songs; they're sitting around listening almost exclusively to their own slop. And in some cases, they proudly proclaim that they don't...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-05-26T12:46:03.000Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/937059/nobody-wants-to-tell-me-why-they-only-listen-their-own-suno-slop",
-      "tags": [
-        "AI",
-        "Entertainment",
-        "Music",
-        "Report"
-      ]
-    },
-    {
-      "id": "19d73f6e44f1",
-      "title": "Experts pour cold borscht on Farage's Russian hack claim",
-      "excerpt": "Reform UK leader alleges Moscow broke into his phone and leaked £5M gift story, but security specialists await evidence",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-26T12:12:51.000Z",
-      "url": "https://www.theregister.com/security/2026/05/26/experts-question-nigel-farages-russian-phone-hacking-claims/5246114",
-      "image": "https://image.theregister.com/?imageId=256312&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "72709e9159e5",
-      "title": "Is graphene heat dissipation in portable batteries legit? I cracked one open to find out",
-      "excerpt": "The Momax Q.Mag X is one of the more reliable magnetic wireless battery packs I've tested, thanks to its enhanced heat management.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T12:00:39.000Z",
-      "url": "https://www.zdnet.com/article/momax-q-mag-x-magsafe-power-bank-review/"
-    },
-    {
-      "id": "783463bf4328",
-      "title": "You can easily make Zorin OS look and feel like Windows, MacOS, or Linux - here's how",
-      "excerpt": "Zorin OS is one of the most popular Linux distributions. One reason is its flexibility, which makes it easy to customize the desktop's look and feel.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T11:55:00.000Z",
-      "url": "https://www.zdnet.com/article/how-to-customize-zorin-os-linux-macos-windows/"
     }
   ]
 }
