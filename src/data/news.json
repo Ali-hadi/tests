@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T15:36:20.393Z",
+  "generatedAt": "2026-05-27T04:00:28.656Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,373 @@
     }
   ],
   "posts": [
+    {
+      "id": "1a579bbf9df8",
+      "title": "Cisco making SONiC available to all customers – not just hyperscalers",
+      "excerpt": "Hardened version of open-source NOS coming to Nexus 9000s",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-27T03:41:58.000Z",
+      "url": "https://www.theregister.com/networks/2026/05/27/cisco-making-sonic-available-to-all-customers-not-just-hyperscalers/5246733",
+      "image": "https://image.theregister.com/?imageId=5246756&width=800",
+      "tags": [
+        "networks"
+      ]
+    },
+    {
+      "id": "2efaa04f78f6",
+      "title": "Alibaba gets Android 16 running on RISC-V",
+      "excerpt": "Beijing’s sovereign stack ambitions strengthen",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-27T02:19:27.000Z",
+      "url": "https://www.theregister.com/systems/2026/05/27/alibaba-gets-android-16-running-on-risc-v/5246710",
+      "image": "https://image.theregister.com/?imageId=261431&width=800",
+      "tags": [
+        "systems"
+      ]
+    },
+    {
+      "id": "b71ef8a1fb22",
+      "title": "I've tried so many Linux email clients - why Aerion just replaced Geary as my top pick",
+      "excerpt": "A cross-platform app for Linux, MacOS and Windows, Aerion supports all the features I need, without any extra clutter.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-27T02:00:47.000Z",
+      "url": "https://www.zdnet.com/article/aerion-my-new-favorite-email-client/"
+    },
+    {
+      "id": "703dc29ebb73",
+      "title": "I was intrigued by Google's new video-cloning Omni AI - then I considered the implications",
+      "excerpt": "Google's Gemini Omni combines realism, avatars, style control, and natural-language editing in one AI video tool.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-05-27T01:30:48.000Z",
+      "url": "https://www.zdnet.com/article/google-omni-ai-tool-video-gemini/"
+    },
+    {
+      "id": "c4ee34653122",
+      "title": "Bash vs. Fish? I've tried both Linux shells, and one makes using the command line much easier",
+      "excerpt": "Replacing your current Linux shell with something way more user-friendly is a lot easier than you think. Let's go Fish!",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-27T01:00:37.000Z",
+      "url": "https://www.zdnet.com/article/bash-vs-fish-which-linux-shells-makes-using-the-command-line-easier/"
+    },
+    {
+      "id": "42b5980add02",
+      "title": "Anthropic cofounder hallucinates ghost in the machine after hearing the Pope speak about AI",
+      "excerpt": "The nature of AI is unnatural. It's not intelligent. It's not human.",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-05-27T00:38:57.000Z",
+      "url": "https://www.theregister.com/ai-ml/2026/05/27/anthropic-cofounder-hallucinates-ghost-in-the-machine-after-hearing-the-pope-speak-about-ai/5246671",
+      "image": "https://image.theregister.com/?imageId=5246691&width=800",
+      "tags": [
+        "ai + ml"
+      ]
+    },
+    {
+      "id": "cce08bbed68c",
+      "title": "Did the Pope use AI to write about the dangers of AI?",
+      "excerpt": "It's possible that AI was used to write parts of Pope Leo XIV's latest encyclical about AI's impact on humanity. An analysis by Linch Zhang posted on the forum LessWrong found certain paragraphs of Magnifica Humanitas...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-05-27T00:38:11.000Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/937801/pope-leo-xiv-magnifica-humanitas-ai-pangram",
+      "tags": [
+        "AI",
+        "News"
+      ]
+    },
+    {
+      "id": "1cd60b1f7a07",
+      "title": "I wore Google's Fitbit Air to track my health for a week, and it's a serious Whoop rival for less money",
+      "excerpt": "The latest screenless health tracker is hidden inside a slick fitness band.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-27T00:30:52.000Z",
+      "url": "https://www.zdnet.com/article/google-fitbit-air-review/"
+    },
+    {
+      "id": "dafe7bdfa096",
+      "title": "NASA to pull an IKEA by dropping tons of plastic, metal, and glass on the Moon",
+      "excerpt": "Astronauts will get to self-assemble lunar base",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-27T00:04:17.000Z",
+      "url": "https://www.theregister.com/science/2026/05/27/nasa-plans-moon-base-buildout-with-rovers-drones-cargo-landers/5246638",
+      "image": "https://image.theregister.com/?imageId=5246668&width=800",
+      "tags": [
+        "science"
+      ]
+    },
+    {
+      "id": "8fb858abec4f",
+      "title": "DuckDuckGo installs are up 30% as users reject being ‘force-fed’ Google’s AI Search",
+      "excerpt": "Google overhauled Search at I/O 2026, replacing blue links with AI agents. The backlash has been swift. DuckDuckGo app installs spiked 30% as users seek a way out.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-26T22:32:56.000Z",
+      "url": "https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/",
+      "tags": [
+        "AI",
+        "Enterprise",
+        "AI search",
+        "DuckDuckGo",
+        "Google",
+        "google io 2026"
+      ]
+    },
+    {
+      "id": "92feb55b8508",
+      "title": "NASA’s permanent Moon base plans start with three missions this year",
+      "excerpt": "On Tuesday, NASA announced several upcoming lunar missions to the Moon's South Pole region. These missions will pave the way for the crewed Artemis landing slated for 2028, starting with three Moon Base missions NASA...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-26T22:24:53.000Z",
+      "url": "https://www.theverge.com/science/937775/nasa-moon-base-moonfall-updates",
+      "tags": [
+        "NASA",
+        "News",
+        "Science",
+        "Space"
+      ]
+    },
+    {
+      "id": "eaaedcc5225a",
+      "title": "This 4TB WD Black SSD is nearly $1,200 off at Best Buy - and I'm vouching for it",
+      "excerpt": "In the era of increasing SSD prices, you can still save 65% on the 4TB WD Black SN850X SSD right now.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-26T20:47:00.000Z",
+      "url": "https://www.zdnet.com/article/wd-black-sn850x-4tb-best-buy-deal/"
+    },
+    {
+      "id": "3d614cc22e93",
+      "title": "Millions of AI agents imperiled by critical vulnerability in open source package",
+      "excerpt": "\"BadHost\" was found in Starlette, a package with 325 million weekly downloads.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "publishedAt": "2026-05-26T19:50:33.000Z",
+      "url": "https://arstechnica.com/information-technology/2026/05/millions-of-ai-agents-imperiled-by-critical-vulnerability-in-open-source-package/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/gatekeeping-ai-agents-1152x648.jpg",
+      "tags": [
+        "AI",
+        "Biz & IT",
+        "Security",
+        "AI agents",
+        "Starlette",
+        "vulnerability"
+      ]
+    },
+    {
+      "id": "3d2fd0ad589a",
+      "title": "California may let Linux bypass age check",
+      "excerpt": "Exemption in amendment offers relief to open source software makers",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-26T19:49:21.000Z",
+      "url": "https://www.theregister.com/software/2026/05/26/california-may-let-linux-bypass-age-check/5246575",
+      "image": "https://image.theregister.com/?imageId=254050&width=800",
+      "tags": [
+        "software"
+      ]
+    },
+    {
+      "id": "373f951e6cf0",
+      "title": "Google Health is here, but a lot of people want their Fitbit app back instead",
+      "excerpt": "The Fitbit app is no more. Along with the launch of the new Fitbit Air (which you can expect a full review of once we've spent more time with it), Google has officially replaced it with Google Health, as previously an...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-26T19:00:15.000Z",
+      "url": "https://www.theverge.com/gadgets/937534/google-health-fitbit-app-ai",
+      "tags": [
+        "Fitness",
+        "Gadgets",
+        "Google",
+        "Health",
+        "News",
+        "Science"
+      ]
+    },
+    {
+      "id": "a7e8ad2d9282",
+      "title": "I found the best Memorial Day phone deals, and it's your last chance to save big on a new device",
+      "excerpt": "I've rounded up the best smartphone deals you can shop this Memorial Day. Discounts are still live, so now is a great time to save.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-26T18:59:34.000Z",
+      "url": "https://www.zdnet.com/article/best-memorial-day-phones-deals-2026/"
+    },
+    {
+      "id": "cc009bad7cd7",
+      "title": "GE’s nugget ice maker is nearly half off if you buy it refurbished",
+      "excerpt": "If you’re looking for ways to make staying cool and hydrated easier this summer, Woot is currently selling a refurbished GE Profile Opal 2.0 Ultra Nugget Ice Maker for $264.99 through June 3rd. That’s $184 less than b...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-26T18:50:35.000Z",
+      "url": "https://www.theverge.com/gadgets/937560/ge-profile-opal-ultra-nugget-ice-maker-deal-sale",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Tech",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "416c0678d8f0",
+      "title": "OpenRouter more than doubles valuation to $1.3B in a year",
+      "excerpt": "OpenRouter has raised a $113 million Series B led by CapitalG. Its 5x growth in usage over six months indicates the multi-AI-model future is here.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-26T18:33:01.000Z",
+      "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/",
+      "tags": [
+        "AI",
+        "Startups",
+        "AI gateway",
+        "CapitalG",
+        "In Brief",
+        "openrouter"
+      ]
+    },
+    {
+      "id": "f01b7214658e",
+      "title": "I found 7 low-cost ways to make my TV sound a lot better (even without a soundbar)",
+      "excerpt": "Getting great sound from your TV doesn't have to cost an arm and a leg. These are my expert-vetted TV audio tricks.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-26T18:32:05.000Z",
+      "url": "https://www.zdnet.com/article/how-to-fix-tv-audio-sound/"
+    },
+    {
+      "id": "0ad1fcf46f8a",
+      "title": "Last chance for these Memorial Day TV deals at Amazon and Best Buy",
+      "excerpt": "Memorial Day might have passed, but you can still save big on TVs from Samsung, LG, and more.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-26T18:28:00.000Z",
+      "url": "https://www.zdnet.com/article/best-memorial-day-2026-tv-deals/"
+    },
+    {
+      "id": "3bce7bbc1d57",
+      "title": "MyPillow must decide whether to be firm or soft as ransomware crims demand pay",
+      "excerpt": "Guess they could deny the alleged intrusion … like the 2020 election results",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-26T18:02:48.000Z",
+      "url": "https://www.theregister.com/cyber-crime/2026/05/26/mypillow-appears-on-play-ransomware-leak-site/5246513",
+      "image": "https://image.theregister.com/?imageId=5246533&width=800",
+      "tags": [
+        "cyber-crime"
+      ]
+    },
+    {
+      "id": "5144a4a37d73",
+      "title": "MySQL faithful launch OurSQL Foundation to keep Oracle honest",
+      "excerpt": "Community group wants transparency, collaboration, and a clearer roadmap for the open source database",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-26T17:30:00.000Z",
+      "url": "https://www.theregister.com/databases/2026/05/26/mysql-faithful-launch-oursql-foundation-to-keep-oracle-honest/5246451",
+      "image": "https://image.theregister.com/?imageId=5246467&width=800",
+      "tags": [
+        "databases"
+      ]
+    },
+    {
+      "id": "37518cd7928e",
+      "title": "Bezos rocket fell short after cryogenic leak cut engine thrust",
+      "excerpt": "Frozen hydraulic line blamed for leaving payload in the wrong orbit",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-26T17:20:00.000Z",
+      "url": "https://www.theregister.com/science/2026/05/26/bezos-rocket-fell-short-after-cryogenic-leak-cut-engine-thrust/5246481",
+      "image": "https://image.theregister.com/?imageId=5246501&width=800",
+      "tags": [
+        "science"
+      ]
+    },
+    {
+      "id": "0a1c0c1b572f",
+      "title": "Sony’s sloppy Spider-Man universe gets even messier with Spider-Noir",
+      "excerpt": "After years of it seeming like the Spider-Man film rights might be better off in Marvel's hands alone, Into the Spider-Verse came along and proved that Sony was still capable of telling phenomenal stories featuring ev...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-26T16:30:00.000Z",
+      "url": "https://www.theverge.com/entertainment/936358/amazon-spider-noir-review",
+      "tags": [
+        "Amazon",
+        "Entertainment",
+        "Marvel",
+        "Tech",
+        "TV Show Reviews",
+        "TV Shows"
+      ]
+    },
+    {
+      "id": "e3fc9ba847d1",
+      "title": "The best Memorial Day sales you can still shop",
+      "excerpt": "The long weekend is over, but many of the best Memorial Day deals are still available. Many of our favorite portable speakers are discounted, as are other outdoorsy products we like, including a set of solar lights. Y...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-26T16:10:06.000Z",
+      "url": "https://www.theverge.com/gadgets/936196/best-memorial-day-sales-tech-deals-2026",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "bd3b11d42394",
+      "title": "American Airlines is getting Starlink Wi-Fi",
+      "excerpt": "American Airlines is planning to install SpaceX's Starlink Wi-Fi in hundreds of its airplanes, the airline announced today. American says the deployment will start in the first quarter of 2027, and will span more than...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-26T16:07:39.000Z",
+      "url": "https://www.theverge.com/transportation/937439/american-airlines-starlink-wifi-speed",
+      "tags": [
+        "Aviation",
+        "News",
+        "Science",
+        "Space",
+        "SpaceX",
+        "Transportation"
+      ]
+    },
+    {
+      "id": "1be411e90618",
+      "title": "This startup is betting India’s gig economy can train the world’s robots",
+      "excerpt": "Human Archive, a startup founded by UC Berkeley and Stanford researchers, is paying gig workers in India to wear camera-equipped caps and sensor devices to collect the real-world physical training data that AI and rob...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-26T16:00:00.000Z",
+      "url": "https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/",
+      "tags": [
+        "AI",
+        "robots",
+        "wing vc",
+        "physical ai",
+        "Human Archive"
+      ]
+    },
+    {
+      "id": "bf6b0848880f",
+      "title": "Memory V re-creates the Memorymoog without the massive headaches or price tag",
+      "excerpt": "The Memorymoog is legendary for being an absolutely massive-sounding synth and being incredibly unreliable. But now you can enjoy its classic Moog sound without the headaches or the sky-high vintage price, thanks to A...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-26T16:00:00.000Z",
+      "url": "https://www.theverge.com/entertainment/937054/arturia-memory-v-memorymoog-synthesizer",
+      "tags": [
+        "Entertainment",
+        "Music",
+        "News",
+        "Tech"
+      ]
+    },
     {
       "id": "7c1ede0105a2",
       "title": "Saving for a Switch 2 is easier with Newegg’s gift card deal",
@@ -107,7 +474,7 @@
     {
       "id": "c93cfc8186a5",
       "title": "Universal Music Group and TikTok renew agreement to combat unauthorized AI music",
-      "excerpt": "For years, UMG has pushed platforms, streaming services, and AI companies to implement stricter content moderation policies",
+      "excerpt": "For years, UMG has pushed platforms, streaming services, and AI companies to implement stricter content moderation policies.",
       "source": "TechCrunch AI",
       "category": "AI",
       "publishedAt": "2026-05-26T14:55:05.000Z",
@@ -174,15 +541,15 @@
       "title": "TechCrunch Disrupt 2026 Early Bird ticket rates end May 29",
       "excerpt": "Save up to $410 on your TechCrunch Disrupt 2026 pass before prices increase on May 29 at 11:59 p.m. PT. Register here to join the tech epicenter in San Francisco.",
       "source": "TechCrunch AI",
-      "category": "IT",
+      "category": "AI",
       "publishedAt": "2026-05-26T14:00:00.000Z",
       "url": "https://techcrunch.com/2026/05/26/techcrunch-disrupt-2026-early-bird-ticket-rates-end-may-29/",
       "tags": [
-        "TC",
-        "Startups",
-        "Hardware",
-        "Crypto",
+        "AI",
+        "Apps",
+        "Biotech & Health",
         "Climate",
+        "Crypto",
         "Fintech"
       ]
     },
@@ -242,15 +609,6 @@
       "category": "IT",
       "publishedAt": "2026-05-26T13:17:00.000Z",
       "url": "https://www.zdnet.com/article/avoid-solar-mistakes-that-cut-power-output-by-half-learned-hard-way/"
-    },
-    {
-      "id": "1cd60b1f7a07",
-      "title": "I wore Google's Fitbit Air for a week, and it gives the Whoop a serious run for its money",
-      "excerpt": "The hottest health-tracking device is hidden inside a slick fitness band.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T13:00:45.000Z",
-      "url": "https://www.zdnet.com/article/google-fitbit-air-review/"
     },
     {
       "id": "75a5fd2a797b",
@@ -319,340 +677,6 @@
       "category": "IT",
       "publishedAt": "2026-05-26T11:55:00.000Z",
       "url": "https://www.zdnet.com/article/how-to-customize-zorin-os-linux-macos-windows/"
-    },
-    {
-      "id": "43a3e71fad40",
-      "title": "Logitech unveils a cushioned mouse for all-day use",
-      "excerpt": "Ideal for aching palms – though only if you're right-handed",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-26T11:30:00.000Z",
-      "url": "https://www.theregister.com/personal-tech/2026/05/26/logitech-unveils-a-cushioned-mouse-for-all-day-use/5246078",
-      "image": "https://image.theregister.com/?imageId=5246090&width=800",
-      "tags": [
-        "personal tech"
-      ]
-    },
-    {
-      "id": "67aa137cf6d9",
-      "title": "Big Tech extracts retirement-scale wealth from UK internet users, research shows",
-      "excerpt": "Britain's 'free' internet economy is powered by invisible data extraction that feeds advertisers, AI firms, and digital platforms",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-26T10:30:00.000Z",
-      "url": "https://www.theregister.com/off-prem/2026/05/26/big-tech-extracts-retirement-scale-wealth-from-uk-internet-users-research-shows/5246048",
-      "image": "https://image.theregister.com/?imageId=5216834&width=800",
-      "tags": [
-        "off-prem"
-      ]
-    },
-    {
-      "id": "0632b6935a6b",
-      "title": "Ucell and ZTE complete large-scale deployment of AI‑Powered green network solution in Uzbekistan",
-      "excerpt": "Network-wide rollout boosts energy efficiency by 10.6%, cutting carbon emissions and operational costs without compromising user experience",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-26T10:25:26.000Z",
-      "url": "https://www.theregister.com/networks/2026/05/26/ucell-and-zte-complete-large-scale-deployment-of-aipowered-green-network-solution-in-uzbekistan/5246097",
-      "image": "https://image.theregister.com/?imageId=5246101&width=800",
-      "tags": [
-        "networks"
-      ]
-    },
-    {
-      "id": "6872e54637f2",
-      "title": "The SaaS-pocalypse can wait, Salesforce still has customers where it wants them",
-      "excerpt": "AI coding agents may make software cheaper to build, but switching off major platforms remains expensive and risky",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-26T10:00:00.000Z",
-      "url": "https://www.theregister.com/saas/2026/05/26/the-saas-pocalypse-can-wait-salesforce-still-has-customers-where-it-wants-them/5245228",
-      "image": "https://image.theregister.com/?imageId=254426&width=800",
-      "tags": [
-        "saas"
-      ]
-    },
-    {
-      "id": "6609699767ec",
-      "title": "HP customer claims firmware update shoved printer off support cliff",
-      "excerpt": "Internal notes point to cloud connectivity woes for older OfficeJets, though company denies systemic issue",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-26T09:15:00.000Z",
-      "url": "https://www.theregister.com/personal-tech/2026/05/26/hp-customer-claims-firmware-update-shoved-printer-off-support-cliff/5244888",
-      "image": "https://image.theregister.com/?imageId=5244931&width=800",
-      "tags": [
-        "personal tech"
-      ]
-    },
-    {
-      "id": "222888747baf",
-      "title": "Your old Kindle tablet may have lost update support - but it can still be highly useful (for free)",
-      "excerpt": "Amazon just ended support for these Kindle ereaders and Fire tablets, making them unable to access the Kindle Store.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T02:00:36.000Z",
-      "url": "https://www.zdnet.com/article/amazon-kindle-ending-support-models-store/"
-    },
-    {
-      "id": "d07c9b11e59d",
-      "title": "Best Buy dropped this 64GB Kingston DDR5 RAM kit by nearly $200 - and I'd consider it",
-      "excerpt": "The AI-pocalypse might finally have an end in sight with an almost $200 discount on this 64GB Kingston Fury Beast DDR5 RAM kit at Best Buy.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-05-26T01:22:00.000Z",
-      "url": "https://www.zdnet.com/article/kingston-fury-beast-ddr5-ram-deal-memorial-day-2026/"
-    },
-    {
-      "id": "d7ba36d1e5f9",
-      "title": "This Windows tablet will outlast my iPad Pro in the mud and rain - but I can't take it seriously",
-      "excerpt": "The Getac G140 puts power in the hands of fire & rescue, automotive, and utility workers.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T01:13:00.000Z",
-      "url": "https://www.zdnet.com/article/getac-g14-windows-ai-tablet-review/"
-    },
-    {
-      "id": "8bc076931fd0",
-      "title": "Home Depot and Lowe's have slashed power tool deals by up to $400 off this Memorial Day",
-      "excerpt": "Save big on everything you need for DIY projects and home repairs with these Memorial Day deals on tools from DeWalt, Milwaukee, and more.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T01:11:00.000Z",
-      "url": "https://www.zdnet.com/article/best-power-tool-deals-memorial-day-2026/"
-    },
-    {
-      "id": "136dfe316646",
-      "title": "Considering plug-in solar? My expert advice after setting up the DIY energy tech at home",
-      "excerpt": "Government regulations remain a major obstacle for this emerging solar technology. Here's where plug-in solar is allowed - and where it isn't.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T01:00:45.000Z",
-      "url": "https://www.zdnet.com/article/switch-to-plug-in-solar-my-advice-on-diy-energy-tech/"
-    },
-    {
-      "id": "21d5351d8026",
-      "title": "Best Buy discounted this Lenovo gaming laptop almost 50% for Memorial Day",
-      "excerpt": "Upgrade your gaming laptop with the Lenovo Legion Pro 5, and save some serious cash in the process.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T00:34:00.000Z",
-      "url": "https://www.zdnet.com/article/lenovo-legion-pro-5-deal-memorial-day-2026/"
-    },
-    {
-      "id": "7a04fa80c0a9",
-      "title": "Sennheiser’s new Momentum 5 headphones have upgraded ANC and a replaceable battery",
-      "excerpt": "Nearly four years after the last version of Sennheiser's Momentum headphones debuted with a redesign that traded a retro aesthetic for a more contemporary and comfortable design, the company has announced its Momentum...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-25T22:00:00.000Z",
-      "url": "https://www.theverge.com/tech/936127/sennheiser-momentum-5-wireless-headphones-anc-lossless-bluetooth",
-      "tags": [
-        "Audio",
-        "Gadgets",
-        "Headphones",
-        "News",
-        "Tech"
-      ]
-    },
-    {
-      "id": "7a95e9fee04c",
-      "title": "After wearing Sennheiser's Momentum 5, I'll never doubt the company's competitive edge again",
-      "excerpt": "The Sennheiser Momentum 5 returns with several new features, but one major upgrade is what should catch your attention the most.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-25T22:00:00.000Z",
-      "url": "https://www.zdnet.com/article/sennheiser-momentum-5-review/"
-    },
-    {
-      "id": "451aa0f855f3",
-      "title": "This Alienware laptop is a gaming powerhouse, and it's $650 off right now",
-      "excerpt": "The Alienware 16 Area-51 is one of the most powerful gaming laptops on the market right now, and multiple configurations are on sale for Memorial Day.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-25T21:55:00.000Z",
-      "url": "https://www.zdnet.com/article/alienware-16-area51-memorial-day-deals-2026/"
-    },
-    {
-      "id": "270fb711606e",
-      "title": "Ferrari reveals its first EV, with design help from Jony Ive",
-      "excerpt": "After months of teasers, Ferrari is offering the first full view of its Luce electric vehicle. The Luce is notable not just for being Ferrari's first EV, but for being designed in collaboration with Jony Ive and Mark...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-25T21:33:12.000Z",
-      "url": "https://www.theverge.com/transportation/937066/ferrari-luce-ev-jony-ive-marc-newson-lovefrom",
-      "tags": [
-        "Electric Cars",
-        "News",
-        "Tech",
-        "Transportation"
-      ]
-    },
-    {
-      "id": "ac251e22728c",
-      "title": "Cox Media fined after bragging it spied on users through their phones",
-      "excerpt": "An exceptionally weird controversy has come back to haunt Cox Media and a pair of marketing firms, which claimed they were secretly listening to users via phones and smart devices - despite little evidence they actual...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-25T18:28:30.000Z",
-      "url": "https://www.theverge.com/policy/937027/cox-media-marketing-ai-powered-phone-spying-ads-ftc-fine",
-      "tags": [
-        "News",
-        "Policy",
-        "Privacy",
-        "Tech"
-      ]
-    },
-    {
-      "id": "3a07a00116f5",
-      "title": "What ClickUp’s mass layoff tells us about the future of work",
-      "excerpt": "The nine-year-old startup is replacing hundreds of employees with thousands of AI agents.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-25T16:00:00.000Z",
-      "url": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/",
-      "tags": [
-        "Startups",
-        "AI",
-        "layoff",
-        "ClickUp"
-      ]
-    },
-    {
-      "id": "e3fc9ba847d1",
-      "title": "The best Memorial Day sales you can shop this weekend",
-      "excerpt": "Memorial Day is here, meaning the seasonal sales are in full swing. If your plans over the long weekend involve pool parties or barbecues, now is a great time to pick up a portable speaker or set of solar lights, as m...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-25T15:33:28.000Z",
-      "url": "https://www.theverge.com/gadgets/936196/best-memorial-day-sales-tech-deals-2026",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "fdea37182454",
-      "title": "The pope’s AI encyclical isn’t really about AI",
-      "excerpt": "Pope Leo XIV's first encyclical uses AI as a lens to diagnose older problems: concentrated power, eroding democracy, and a tech elite that shapes the world to its own advantage.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-25T15:09:41.000Z",
-      "url": "https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/",
-      "tags": [
-        "AI",
-        "ai encyclical",
-        "Magnifica Humanitas",
-        "pope leo xiv",
-        "the vatican"
-      ]
-    },
-    {
-      "id": "b66bd8f4519d",
-      "title": "Pope Leo calls for being ‘profoundly human’ in the age of AI",
-      "excerpt": "Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the t...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-05-25T15:05:07.000Z",
-      "url": "https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare",
-      "tags": [
-        "AI",
-        "Anthropic",
-        "Law",
-        "News",
-        "Policy",
-        "Politics"
-      ]
-    },
-    {
-      "id": "a7e8ad2d9282",
-      "title": "I found the best Memorial Day phone deals: Save big on Samsung, Google, Apple and more",
-      "excerpt": "I've rounded up the best smartphone deals you can shop this Memorial Day. Discounts are live, so now is a great time to save.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-25T14:38:25.000Z",
-      "url": "https://www.zdnet.com/article/best-memorial-day-phones-deals-2026/"
-    },
-    {
-      "id": "3ae2c16d0d06",
-      "title": "Startup Battlefield 200 applications close in days: Apply before May 27",
-      "excerpt": "The deadline to apply or nominate for Startup Battlefield 200 is May 27. This is your shot at VC access, global visibility, TechCrunch coverage, and $100,000. Apply now.",
-      "source": "TechCrunch AI",
-      "category": "IT",
-      "publishedAt": "2026-05-25T14:30:00.000Z",
-      "url": "https://techcrunch.com/2026/05/25/startup-battlefield-200-applications-close-in-days-apply-before-may-27/",
-      "tags": [
-        "TC",
-        "Startups",
-        "Crypto",
-        "Climate",
-        "Fintech",
-        "Biotech & Health"
-      ]
-    },
-    {
-      "id": "0ad1fcf46f8a",
-      "title": "These are the best Memorial Day 2026 TV deals I've found so far",
-      "excerpt": "Save hundreds on some of our most highly reviewed TVs from Samsung, LG, and more this Memorial Day.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-25T14:23:07.000Z",
-      "url": "https://www.zdnet.com/article/best-memorial-day-2026-tv-deals/"
-    },
-    {
-      "id": "994b9f34f178",
-      "title": "My favorite Memorial Day deals: Save big on laptops, tablets, and more",
-      "excerpt": "Memorial Day is finally here. These are the best deals we found so far, including price drops from Apple, Samsung, Hisense, Ninja, and more.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-25T14:13:54.000Z",
-      "url": "https://www.zdnet.com/article/best-memorial-day-deals-2026/"
-    },
-    {
-      "id": "779ec9b4a258",
-      "title": "5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase",
-      "excerpt": "Early Bird savings for TechCrunch Disrupt 2026 in San Francisco end May 29 at 11:59 p.m. PT. Register now to save up to $410 before prices increase.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-25T14:00:00.000Z",
-      "url": "https://techcrunch.com/2026/05/25/5-days-left-save-up-to-410-on-techcrunch-disrupt-2026-passes-before-prices-increase/",
-      "tags": [
-        "TC",
-        "Startups",
-        "Crypto",
-        "Climate",
-        "Fintech",
-        "Biotech & Health"
-      ]
-    },
-    {
-      "id": "0315b2783e5f",
-      "title": "Here are our favorite last-minute deals from REI’s giant Anniversary Sale",
-      "excerpt": "REI’s annual Anniversary Sale — the retailer’s biggest of the year — is still going strong, letting you save on all kinds of outdoor essentials. If you’ve got a camping trip coming up, now is a good time to stock up o...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-25T13:40:00.000Z",
-      "url": "https://www.theverge.com/gadgets/931274/rei-anniversary-sale-2026",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Tech",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "2f5a743d2635",
-      "title": "Google is cannibalizing the web to feed AI",
-      "excerpt": "Google Search used to direct users to web sites; AI Mode will keep them in Google's garden",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-25T12:25:00.000Z",
-      "url": "https://www.theregister.com/ai-ml/2026/05/25/google-is-cannibalizing-the-web-to-feed-ai/5244641",
-      "image": "https://image.theregister.com/?imageId=5245335&width=800",
-      "tags": [
-        "ai + ml"
-      ]
     }
   ]
 }
