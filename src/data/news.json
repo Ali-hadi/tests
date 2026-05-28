@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T15:49:32.685Z",
+  "generatedAt": "2026-05-28T03:48:21.476Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,419 @@
     }
   ],
   "posts": [
+    {
+      "id": "b71ef8a1fb22",
+      "title": "I've tested so many Linux email clients - why I'm recommending Aerion above all else",
+      "excerpt": "A cross-platform app for Linux, MacOS and Windows, Aerion supports all the features I need, without the extra clutter.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-28T02:00:42.000Z",
+      "url": "https://www.zdnet.com/article/aerion-my-new-favorite-email-client/"
+    },
+    {
+      "id": "0b91f2b720dc",
+      "title": "Bare metal cloud servers now cheaper and more readily available than on-prem hardware, says Nutanix CEO",
+      "excerpt": "Hyperscalers can get hardware before enterprise vendors and buyers don't much care where they land",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-28T01:59:00.000Z",
+      "url": "https://www.theregister.com/virtualization/2026/05/28/bare-metal-cloud-servers-now-cheaper-and-more-readily-available-than-on-prem-hardware-says-nutanix-ceo/5247599",
+      "image": "https://image.theregister.com/?imageId=223151&width=800",
+      "tags": [
+        "virtualization"
+      ]
+    },
+    {
+      "id": "9ea74c2c434b",
+      "title": "I demoed Sony's new modular theater system, and the audio quality was next level",
+      "excerpt": "The Sony Bravia Theater Trio might look unassuming, but you shouldn't judge a book by its cover.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-28T01:00:36.000Z",
+      "url": "https://www.zdnet.com/article/sony-bravia-trio-hands-on/"
+    },
+    {
+      "id": "1c5dfc1243fb",
+      "title": "I dug deeper into my Oura Ring data using this free app - here's what I found",
+      "excerpt": "The Simple Wearable Report uses AI to extract more insights from your Oura Ring data. Here's how I've been using it.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-05-28T00:30:00.000Z",
+      "url": "https://www.zdnet.com/article/oura-ring-simple-wearable-report-gemini-ai-chatbot/"
+    },
+    {
+      "id": "bee8459a22fd",
+      "title": "Salesforce waves bye-bye to UI in 'headless' embrace",
+      "excerpt": "Anthropic's use of Sales Cloud increased five-fold as its workers access Salesforce through Claude and Slack",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-05-28T00:20:29.000Z",
+      "url": "https://www.theregister.com/saas/2026/05/28/salesforce-waves-bye-bye-to-ui-in-headless-embrace/5247587",
+      "image": "https://image.theregister.com/?imageId=5223048&width=800",
+      "tags": [
+        "saas"
+      ]
+    },
+    {
+      "id": "b4d0e41acafd",
+      "title": "Why Google’s AI can’t spell Google (or anything else)",
+      "excerpt": "Google is embarrassing itself, again.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-28T00:17:41.000Z",
+      "url": "https://techcrunch.com/2026/05/27/why-googles-ai-cant-spell-google-or-anything-else/",
+      "tags": [
+        "AI",
+        "Google",
+        "spelling"
+      ]
+    },
+    {
+      "id": "0389a00a72ff",
+      "title": "A Google employee allegedly used inside information to win $1.2 million on Polymarket",
+      "excerpt": "Federal prosecutors charged a Google employee with fraud after he allegedly made $1.2 million on Polymarket bets related to Search-related trends in 2025, as reported earlier by ABC News. In their now-unsealed complai...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-27T22:30:02.000Z",
+      "url": "https://www.theverge.com/tech/938635/google-polymarket-insider-trading-prediction-market-bets",
+      "tags": [
+        "Business",
+        "Google",
+        "Policy",
+        "Tech"
+      ]
+    },
+    {
+      "id": "8640b3e9499f",
+      "title": "Snowflake to burn $6B on AWS Graviton CPUs and AI accelerators",
+      "excerpt": "Dataware house gambles cloud conveniences, AI accelerated insights will justify the cost.",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-05-27T21:20:00.000Z",
+      "url": "https://www.theregister.com/off-prem/2026/05/27/snowflake-to-burn-6b-on-aws-graviton-cpus-ai-infra/5247475",
+      "image": "https://image.theregister.com/?imageId=227469&width=800",
+      "tags": [
+        "off-prem"
+      ]
+    },
+    {
+      "id": "f27faf4d8060",
+      "title": "Apple’s newest iPad Air is up to $100 off for the first time",
+      "excerpt": "If you want an iPad that’s more powerful than the entry-level model but less expensive than the iPad Pro, the latest iPad Air is the one to buy, and it’s down to one its best prices to date. The 11-inch Air with 128GB...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-27T21:08:41.000Z",
+      "url": "https://www.theverge.com/gadgets/938519/apple-ipad-air-m4-deal-sale",
+      "tags": [
+        "Apple",
+        "Deals",
+        "Gadgets",
+        "Tech",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "6d274c662d22",
+      "title": "FAA grounds SpaceX’s Starship after another launch mishap",
+      "excerpt": "IPO? More like IP-uh-oh",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-27T20:57:38.000Z",
+      "url": "https://www.theregister.com/offbeat/2026/05/27/faa-grounds-spacexs-starship-after-another-launch-mishap/5247446",
+      "image": "https://image.theregister.com/?imageId=5238835&width=800",
+      "tags": [
+        "offbeat"
+      ]
+    },
+    {
+      "id": "329c0acaeb85",
+      "title": "Websites have a new way to spy on visitors: analyzing their SSD activity",
+      "excerpt": "Telltale SSD activity can be measured in the browser using simple JavaScript.",
+      "source": "Ars Technica",
+      "category": "IT",
+      "publishedAt": "2026-05-27T20:56:03.000Z",
+      "url": "https://arstechnica.com/security/2026/05/websites-have-a-new-way-to-spy-on-visitors-analyzing-their-ssd-activity/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/solid-state-drive-ssd-1152x648.jpg",
+      "tags": [
+        "Biz & IT",
+        "Security",
+        "side channel attacks",
+        "solid state drives",
+        "SSDs"
+      ]
+    },
+    {
+      "id": "36e2059eae5c",
+      "title": "Malware dev tries to steal Claude users' secrets, writes npm slop, leaks own GitHub private token",
+      "excerpt": "Script kiddies these days",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-27T20:33:03.000Z",
+      "url": "https://www.theregister.com/cyber-crime/2026/05/27/supply-chain-brain-drain-npm-attacker-foolishly-leaks-own-github-private-token/5247424",
+      "image": "https://image.theregister.com/?imageId=5247468&width=800",
+      "tags": [
+        "cyber-crime"
+      ]
+    },
+    {
+      "id": "cae3c10884c8",
+      "title": "All the news about Ferrari’s polarizing Luce EV",
+      "excerpt": "Ferrari fans don’t like the design of the new Luce EV, an electric four-door sedan that just doesn’t look like the Ferraris of old. It was designed with help from Jony Ive’s LoveFrom, but what worked for Ive at Apple...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-27T20:22:57.000Z",
+      "url": "https://www.theverge.com/transportation/938513/ferrari-luce-ev",
+      "tags": [
+        "Cars",
+        "Design",
+        "Electric Cars",
+        "News",
+        "Transportation"
+      ]
+    },
+    {
+      "id": "23d6fbbb3742",
+      "title": "Argonne flexes spare supercompute to build private AI inference service",
+      "excerpt": "Think ChatDoE",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-05-27T20:15:48.000Z",
+      "url": "https://www.theregister.com/ai-ml/2026/05/27/argonne-flexes-spare-supercompute-to-build-private-ai-inference-servic/5247362",
+      "image": "https://image.theregister.com/?imageId=232762&width=800",
+      "tags": [
+        "ai + ml"
+      ]
+    },
+    {
+      "id": "fb999f0220ea",
+      "title": "In more good news for Amazon, Snowflake signs $6B deal with AWS for AI CPU chips",
+      "excerpt": "Snowflake has signed a new, enormous five-year deal with Amazon to secure chips for AI usage. Nvidia is once again being put on notice.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-27T20:10:00.000Z",
+      "url": "https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/",
+      "tags": [
+        "Enterprise",
+        "TC",
+        "AI",
+        "Amazon",
+        "AWS",
+        "Snowflake"
+      ]
+    },
+    {
+      "id": "ead1925c07bf",
+      "title": "The new Halide camera app launches with film looks and an upgraded photo editor",
+      "excerpt": "After first being announced in December 2024, Lux Optics has finally released the latest version of its Halide camera app for the iPhone and iPad. The Halide Mark III app's most compelling feature is a new film simula...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-27T20:06:12.000Z",
+      "url": "https://www.theverge.com/tech/938339/lux-optics-halide-mark-iii-ios-iphone-camera-app-looks-editor-raw-files-now-available",
+      "tags": [
+        "Apple",
+        "Apps",
+        "Cameras",
+        "Gadgets",
+        "iPhone",
+        "News"
+      ]
+    },
+    {
+      "id": "6a4dff3a6d34",
+      "title": "Facebook launches a ‘Plus’ subscription that gives you extra features",
+      "excerpt": "After announcing tests of premium subscriptions for Facebook, Instagram, WhatsApp earlier this year, TechCrunch and Bloomberg report that Meta is launching a global rollout over the next few weeks and is also starting...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-27T20:03:42.000Z",
+      "url": "https://www.theverge.com/tech/938500/facebook-whatsapp-instagram-meta-ai-subscriptions",
+      "tags": [
+        "Facebook",
+        "Instagram",
+        "Meta",
+        "News",
+        "Tech"
+      ]
+    },
+    {
+      "id": "70b6107c84d4",
+      "title": "ICANN again intervenes to defend AFRINIC",
+      "excerpt": "Africa’s regional internet registry and its longtime antagonist are fighting on old and new fronts",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-27T20:00:31.000Z",
+      "url": "https://www.theregister.com/networks/2026/05/27/icann-again-intervenes-to-defend-afrinic/5246790",
+      "image": "https://image.theregister.com/?imageId=263294&width=800",
+      "tags": [
+        "networks"
+      ]
+    },
+    {
+      "id": "1e9bd05baaeb",
+      "title": "Payroll startup Remote says it grew revenue 50% per employee without adding headcount",
+      "excerpt": "Payroll service provider Remote recently surpassed $300 million in annual recurring revenue (ARR) and became cash-flow positive, thanks to a 50% increase in revenue per employee resulting from AI adoption.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-27T19:39:45.000Z",
+      "url": "https://techcrunch.com/2026/05/27/payroll-startup-remote-says-it-grew-revenue-50-per-employee-without-adding-headcount/",
+      "tags": [
+        "AI",
+        "AI adoption",
+        "Remote"
+      ]
+    },
+    {
+      "id": "27d345e7232f",
+      "title": "AI hiring algorithms reject Black, Asian job seekers at higher rates",
+      "excerpt": "Stanford researchers argue need for transparency and independent testing",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-05-27T19:39:39.000Z",
+      "url": "https://www.theregister.com/ai-ml/2026/05/27/ai-hiring-algorithms-reject-black-asian-job-seekers-at-higher-rates/5247387",
+      "image": "https://image.theregister.com/?imageId=5247407&width=800",
+      "tags": [
+        "ai + ml"
+      ]
+    },
+    {
+      "id": "2b32d553785b",
+      "title": "Whoop vs. Fitbit Air: I've tested both trackers for health and fitness, and this model wins",
+      "excerpt": "How does the new Fitbit Air stack up against the tried-and-true Whoop band? I've broken down the key differences.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-27T19:31:20.000Z",
+      "url": "https://www.zdnet.com/article/whoop-vs-fitbit-air-google/"
+    },
+    {
+      "id": "1f300e5abd85",
+      "title": "Roids were all the rage at the Enhanced Games",
+      "excerpt": "In Las Vegas, the blazing sun beats down on a makeshift Olympic-length pool. Cody Miller stands on the starting block of lane one. His arms are raised in victory. MC Hammer's \"U Can't Touch This\" thumps over the louds...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-27T19:08:31.000Z",
+      "url": "https://www.theverge.com/features/937620/enhanced-games-performance-enhancing-drugs-science-health-sports",
+      "tags": [
+        "Entertainment",
+        "Features",
+        "Health",
+        "Science",
+        "Sports"
+      ]
+    },
+    {
+      "id": "b8fadf34df6a",
+      "title": "Your SEO strategy is optimized for a search engine that no longer exists.",
+      "excerpt": "Google I/O made it official: AI-generated answers are now front and center in search, and most brands have almost no visibility into how AI is describing them to their customers. For anyone who has spent years buildin...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-27T18:39:17.000Z",
+      "url": "https://techcrunch.com/podcast/your-seo-strategy-is-optimized-for-a-search-engine-that-no-longer-exists/",
+      "tags": [
+        "AI",
+        "Startups",
+        "AI agents",
+        "AI search",
+        "discoverability",
+        "Equity podcast"
+      ]
+    },
+    {
+      "id": "e8f167e71996",
+      "title": "Why I use wireless security cameras at home versus a wired system - after years of testing",
+      "excerpt": "After using multiple security cameras over the years, I've found the best arrangement for my home - but that doesn't make it right for everyone.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-27T18:34:07.000Z",
+      "url": "https://www.zdnet.com/article/why-i-use-wireless-security-cameras-at-home-versus-wired/"
+    },
+    {
+      "id": "346944ae485b",
+      "title": "Is investing in solar worth it? How I'm maximizing my panels' lifespan and savings",
+      "excerpt": "You need to maintain your solar panels if you want them to last. Here are my top maintenance tips if you're serious about switching.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-27T18:30:39.000Z",
+      "url": "https://www.zdnet.com/article/how-to-make-solar-panels-last-long-to-pay-for-themselves/"
+    },
+    {
+      "id": "cd09f96c821c",
+      "title": "Sony Bravia 9 II vs. Bravia 9: I compared both TV models, and True RGB is a serious upgrade",
+      "excerpt": "Sony just announced the new Bravia 9 II True RGB TV. But is it worth upgrading from the older Bravia 9 Mini LED?",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-27T18:16:00.000Z",
+      "url": "https://www.zdnet.com/article/sony-bravia-9-ii-vs-sony-bravia-9/"
+    },
+    {
+      "id": "eb89427d80fe",
+      "title": "This AI-free Google alternative is surging in popularity - how to try it for yourself",
+      "excerpt": "DuckDuckGo is an AI-free alternative to Google's AI-based overviews, attracting more people who prefer traditional search results.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-05-27T18:01:00.000Z",
+      "url": "https://www.zdnet.com/article/this-ai-free-search-engine-is-getting-more-popular-heres-why-you-should-try-it/"
+    },
+    {
+      "id": "c13e753add11",
+      "title": "Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans",
+      "excerpt": "Meta is rolling out paid subscription plans for Instagram, Facebook, and WhatsApp worldwide, while also testing new AI, creator, and business-focused offerings under its broader “Meta One” subscription brand.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-27T18:00:00.000Z",
+      "url": "https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/",
+      "tags": [
+        "AI",
+        "Apps",
+        "Media & Entertainment",
+        "Social",
+        "Creators",
+        "Facebook"
+      ]
+    },
+    {
+      "id": "fd848e82af9e",
+      "title": "Valve raises Steam Deck prices by more than $200",
+      "excerpt": "Valve has significantly increased the price of the Steam Deck - but now, it's also in stock. The 512GB Steam Deck OLED now costs $789, up from $549, while the 1TB model costs $949, up from $649. As I write this, both...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-27T17:32:48.000Z",
+      "url": "https://www.theverge.com/games/938340/valve-steam-deck-price-increase",
+      "tags": [
+        "Gaming",
+        "News",
+        "PC Gaming"
+      ]
+    },
+    {
+      "id": "c5dbe7d7e873",
+      "title": "The Verge’s 2026 college graduation gift guide",
+      "excerpt": "Graduating from college is exciting, but it can also feel slightly terrifying. Along with celebrating a huge accomplishment, many grads jump right into looking for a job. Some might be getting their first apartment, t...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-27T17:00:00.000Z",
+      "url": "https://www.theverge.com/gadgets/927121/best-college-graduation-gift-ideas",
+      "tags": [
+        "Gadgets",
+        "Gift Guides",
+        "Tech",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "2eed09f142a3",
+      "title": "AI coding startup Cognition raises $1B at $25B pre-money valuation",
+      "excerpt": "As Cognition reaches $492 million in annualized revenue run rate, it more than doubled its valuation in eight months, it says.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-27T16:00:00.000Z",
+      "url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+      "tags": [
+        "AI",
+        "Startups",
+        "ai coding",
+        "cognition",
+        "Devin"
+      ]
+    },
     {
       "id": "71c34489d509",
       "title": "AI tried to bury this politician — now people have actually heard of him",
@@ -163,35 +576,26 @@
       ]
     },
     {
-      "id": "2b32d553785b",
-      "title": "Fitbit Air vs. Whoop: I've worn both trackers for health and fitness, and this model wins",
-      "excerpt": "How does the new Fitbit Air stack up against the tried-and-true Whoop band? I've broken down the key differences.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-27T14:30:00.000Z",
-      "url": "https://www.zdnet.com/article/whoop-vs-fitbit-air-google/"
-    },
-    {
       "id": "9f605ab2148c",
       "title": "Startup Battlefield 200 applications close today: Nominate a founder or submit your startup",
       "excerpt": "Today is the final day to apply or nominate a startup for Startup Battlefield 200. Once the clock strikes 11:59 p.m. PT, the window closes on your chance to compete for $100,000 in equity-free funding, gain global vis...",
       "source": "TechCrunch AI",
-      "category": "IT",
+      "category": "AI",
       "publishedAt": "2026-05-27T14:15:00.000Z",
       "url": "https://techcrunch.com/2026/05/27/startup-battlefield-200-applications-close-today-nominate-a-founder-or-submit-your-startup/",
       "tags": [
-        "TC",
-        "Startups",
-        "Hardware",
-        "Crypto",
+        "AI",
+        "Apps",
+        "Biotech & Health",
         "Climate",
+        "Crypto",
         "Fintech"
       ]
     },
     {
       "id": "8ff63c21f892",
-      "title": "ElevenLabs’s new music generation model can switch genres mid-track",
-      "excerpt": "ElevenLabs' new model will let users regenerate a section of a song without affecting rest of the track",
+      "title": "ElevenLabs’ new music-generation model can switch genres mid-track",
+      "excerpt": "ElevenLabs' new model will let users regenerate a section of a song without affecting the rest of the track.",
       "source": "TechCrunch AI",
       "category": "AI",
       "publishedAt": "2026-05-27T14:14:10.000Z",
@@ -290,399 +694,6 @@
         "Cars",
         "Electric Cars",
         "Transportation"
-      ]
-    },
-    {
-      "id": "368aa051a05d",
-      "title": "China is increasingly keeping its best AI talent to itself",
-      "excerpt": "China's AI boom is producing world-class talent, and Beijing is increasingly reluctant to let them go elsewhere.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-27T13:48:41.000Z",
-      "url": "https://techcrunch.com/2026/05/27/china-is-increasingly-keeping-its-best-ai-talent-to-itself/",
-      "tags": [
-        "AI",
-        "Government & Policy",
-        "China",
-        "travel ban"
-      ]
-    },
-    {
-      "id": "e2538e59d3f3",
-      "title": "Rust will save Linux from AI, says Greg Kroah-Hartman",
-      "excerpt": "Now that doesn't mean Linux stable kernel maintainer Greg Kroah-Hartman thinks Rust is magic.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-05-27T13:34:00.000Z",
-      "url": "https://www.zdnet.com/article/rust-will-save-linux-from-ai-says-greg-kroah-hartman/"
-    },
-    {
-      "id": "e5ec71ba7247",
-      "title": "007 First Light is like a James Bond movie in the best way possible",
-      "excerpt": "The James Bond franchise is nothing if not a spectacle: Aside from the explosions and gun fights, even its calmer moments are dripping in the pomp and glamour of elite ostentation and luxury locales. Bond, however, ha...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-27T13:30:00.000Z",
-      "url": "https://www.theverge.com/entertainment/937984/007-first-light-review-james-bond-ps5-xbox",
-      "tags": [
-        "Entertainment",
-        "Games Review",
-        "Gaming"
-      ]
-    },
-    {
-      "id": "dd8bf6d55355",
-      "title": "Windows 11 update preview promises faster launches, puts Task Manager on NPU patrol",
-      "excerpt": "Just mind the known issue that can still send installs rolling back",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-27T13:30:00.000Z",
-      "url": "https://www.theregister.com/personal-tech/2026/05/27/windows-11-update-preview-promises-faster-launches-puts-task-manager-on-npu-patrol/5246940",
-      "image": "https://image.theregister.com/?imageId=1682093&width=800",
-      "tags": [
-        "personal tech"
-      ]
-    },
-    {
-      "id": "64901b21982b",
-      "title": "ClickHouse triples anualized revenue to $250M, charting a path toward an IPO",
-      "excerpt": "The database provider is eyeing a public debut within the next few years.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-27T13:04:20.000Z",
-      "url": "https://techcrunch.com/2026/05/27/clickhouse-triples-anualized-revenue-to-250m-charting-a-path-toward-an-ipo/",
-      "tags": [
-        "AI",
-        "Enterprise",
-        "Venture",
-        "AI infranstructure",
-        "ClickHouse",
-        "database services"
-      ]
-    },
-    {
-      "id": "6fcbe7591c75",
-      "title": "YouTube will now automatically label AI videos",
-      "excerpt": "YouTube will now automatically label videos that use significant photorealistic AI, instead of relying solely on creators to disclose AI-generated content themselves. It's also making AI labels more prominent.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-27T13:00:00.000Z",
-      "url": "https://techcrunch.com/2026/05/27/youtube-will-now-automatically-label-ai-videos/",
-      "tags": [
-        "TC",
-        "Media & Entertainment",
-        "AI",
-        "YouTube",
-        "media",
-        "Creators"
-      ]
-    },
-    {
-      "id": "d941f0ddee36",
-      "title": "Win cool gadgets we can’t keep because The Verge has ethics",
-      "excerpt": "When people learn I work for The Verge, they inevitably ask: “Do you get to keep the gadgets?” Now that I film Today I’m Toying With, a video series where I share the joy of tech, I get that question more than ever. T...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-27T13:00:00.000Z",
-      "url": "https://www.theverge.com/gadgets/936771/today-im-toying-with-giveaway-free-gadgets",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Giveaway",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "ca747c5e86ac",
-      "title": "Broadcom gets early start on WiFi 8 with next-gen wireless routing kit",
-      "excerpt": "Better, more reliable, and cheaper? Isn't that the story every generation?",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-27T13:00:00.000Z",
-      "url": "https://www.theregister.com/networks/2026/05/27/broadcom-gets-early-start-on-wifi-8-with-new-routing-kit/5246623",
-      "image": "https://image.theregister.com/?imageId=253637&width=800",
-      "tags": [
-        "networks"
-      ]
-    },
-    {
-      "id": "e5985a331c7c",
-      "title": "Broadcom's custom ASIC biz adds South Korea's FuriosaAI to its empire",
-      "excerpt": "Third-gen chips to use Broadzilla's advanced packaging, networking tech",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-27T13:00:00.000Z",
-      "url": "https://www.theregister.com/ai-ml/2026/05/27/broadcom-lands-furiosaai-as-latest-custom-ai-chip-partner/5246536",
-      "image": "https://image.theregister.com/?imageId=252467&width=800",
-      "tags": [
-        "ai + ml"
-      ]
-    },
-    {
-      "id": "7665c0628339",
-      "title": "When my eye doctor got my glasses prescription wrong, AI helped me fix it",
-      "excerpt": "An eye exam produced a good distance prescription and a terrible computer prescription. Here's how AI helped decode the numbers and expose the mismatch.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-05-27T12:44:00.000Z",
-      "url": "https://www.zdnet.com/article/eye-doctor-ai-prescription/"
-    },
-    {
-      "id": "8687cbf07431",
-      "title": "Robinhood now lets your AI agents trade stocks",
-      "excerpt": "Robinhood will let users create a separate account with pre-loaded balance that an agent use to trade",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-27T12:30:00.000Z",
-      "url": "https://techcrunch.com/2026/05/27/robinhood-now-lets-your-ai-agents-trade-stocks/",
-      "tags": [
-        "Fintech",
-        "AI",
-        "payments",
-        "Robinhood",
-        "AI agents",
-        "AI stock trading"
-      ]
-    },
-    {
-      "id": "49fb2de68224",
-      "title": "Tony Blair and the Reform party both want AI in government, though they can't agree on what for",
-      "excerpt": "Former UK PM demands modernization, and right wing party channels inner Musk to call for mass job cuts in public sector",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-27T12:30:00.000Z",
-      "url": "https://www.theregister.com/public-sector/2026/05/27/tony-blair-and-the-reform-party-both-want-ai-in-government-though-they-cant-agree-on-what-for/5246983",
-      "image": "https://image.theregister.com/?imageId=247383&width=800",
-      "tags": [
-        "public sector"
-      ]
-    },
-    {
-      "id": "6f52c1a9863b",
-      "title": "UK armed forces aims for secure comms via optical satellite links",
-      "excerpt": "Brit military boffins test ground station with infra-red lasers to deliver multi-gigabyte downloads",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-27T12:14:58.000Z",
-      "url": "https://www.theregister.com/networks/2026/05/27/uk-armed-forces-aims-for-secure-comms-via-optical-satellite-links/5246994",
-      "image": "https://image.theregister.com/?imageId=5230051&width=800",
-      "tags": [
-        "networks"
-      ]
-    },
-    {
-      "id": "8c437557e105",
-      "title": "How to guarantee a speaker gig: Hack the system. Literally",
-      "excerpt": "Make your mark on the call-for-proposal platform",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-27T12:00:00.000Z",
-      "url": "https://www.theregister.com/security/2026/05/27/pretalx-xss-flaw-exposed-conference-cfp-systems/5246598",
-      "image": "https://image.theregister.com/?imageId=5246620&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "9da64821c60f",
-      "title": "Building self-improving tax agents with Codex",
-      "excerpt": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.",
-      "source": "OpenAI News",
-      "category": "AI",
-      "publishedAt": "2026-05-27T07:00:00.000Z",
-      "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
-      "tags": [
-        "Engineering"
-      ]
-    },
-    {
-      "id": "1a579bbf9df8",
-      "title": "Cisco making SONiC available to all customers – not just hyperscalers",
-      "excerpt": "Hardened version of open-source NOS coming to Nexus 9000s",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-27T03:41:58.000Z",
-      "url": "https://www.theregister.com/networks/2026/05/27/cisco-making-sonic-available-to-all-customers-not-just-hyperscalers/5246733",
-      "image": "https://image.theregister.com/?imageId=5246756&width=800",
-      "tags": [
-        "networks"
-      ]
-    },
-    {
-      "id": "2efaa04f78f6",
-      "title": "Alibaba gets Android 16 running on RISC-V",
-      "excerpt": "Beijing’s sovereign stack ambitions strengthen",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-27T02:19:27.000Z",
-      "url": "https://www.theregister.com/systems/2026/05/27/alibaba-gets-android-16-running-on-risc-v/5246710",
-      "image": "https://image.theregister.com/?imageId=261431&width=800",
-      "tags": [
-        "systems"
-      ]
-    },
-    {
-      "id": "b71ef8a1fb22",
-      "title": "I've tried so many Linux email clients - why Aerion just replaced Geary as my top pick",
-      "excerpt": "A cross-platform app for Linux, MacOS and Windows, Aerion supports all the features I need, without any extra clutter.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-27T02:00:47.000Z",
-      "url": "https://www.zdnet.com/article/aerion-my-new-favorite-email-client/"
-    },
-    {
-      "id": "703dc29ebb73",
-      "title": "I was intrigued by Google's new video-cloning Omni AI - then I considered the implications",
-      "excerpt": "Google's Gemini Omni combines realism, avatars, style control, and natural-language editing in one AI video tool.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-05-27T01:30:48.000Z",
-      "url": "https://www.zdnet.com/article/google-omni-ai-tool-video-gemini/"
-    },
-    {
-      "id": "c4ee34653122",
-      "title": "Bash vs. Fish? I've tried both Linux shells, and one makes using the command line much easier",
-      "excerpt": "Replacing your current Linux shell with something way more user-friendly is a lot easier than you think. Let's go Fish!",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-27T01:00:37.000Z",
-      "url": "https://www.zdnet.com/article/bash-vs-fish-which-linux-shells-makes-using-the-command-line-easier/"
-    },
-    {
-      "id": "42b5980add02",
-      "title": "Anthropic cofounder hallucinates ghost in the machine after hearing the Pope speak about AI",
-      "excerpt": "The nature of AI is unnatural. It's not intelligent. It's not human.",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-27T00:38:57.000Z",
-      "url": "https://www.theregister.com/ai-ml/2026/05/27/anthropic-cofounder-hallucinates-ghost-in-the-machine-after-hearing-the-pope-speak-about-ai/5246671",
-      "image": "https://image.theregister.com/?imageId=5246691&width=800",
-      "tags": [
-        "ai + ml"
-      ]
-    },
-    {
-      "id": "cce08bbed68c",
-      "title": "Did the Pope use AI to write about the dangers of AI?",
-      "excerpt": "It's possible that AI was used to write parts of Pope Leo XIV's latest encyclical about AI's impact on humanity. An analysis by Linch Zhang posted on the forum LessWrong found certain paragraphs of Magnifica Humanitas...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-05-27T00:38:11.000Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/937801/pope-leo-xiv-magnifica-humanitas-ai-pangram",
-      "tags": [
-        "AI",
-        "News"
-      ]
-    },
-    {
-      "id": "1cd60b1f7a07",
-      "title": "I wore Google's Fitbit Air to track my health for a week, and it's a serious Whoop rival for less money",
-      "excerpt": "The latest screenless health tracker is hidden inside a slick fitness band.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-27T00:30:52.000Z",
-      "url": "https://www.zdnet.com/article/google-fitbit-air-review/"
-    },
-    {
-      "id": "dafe7bdfa096",
-      "title": "NASA to pull an IKEA by dropping tons of plastic, metal, and glass on the Moon",
-      "excerpt": "Astronauts will get to self-assemble lunar base",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-27T00:04:17.000Z",
-      "url": "https://www.theregister.com/science/2026/05/27/nasa-plans-moon-base-buildout-with-rovers-drones-cargo-landers/5246638",
-      "image": "https://image.theregister.com/?imageId=5246668&width=800",
-      "tags": [
-        "science"
-      ]
-    },
-    {
-      "id": "8fb858abec4f",
-      "title": "DuckDuckGo installs are up 30% as users reject being ‘force-fed’ Google’s AI Search",
-      "excerpt": "Google overhauled Search at I/O 2026, replacing blue links with AI agents. The backlash has been swift. DuckDuckGo app installs spiked 30% as users seek a way out.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-26T22:32:56.000Z",
-      "url": "https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/",
-      "tags": [
-        "AI",
-        "Enterprise",
-        "AI search",
-        "DuckDuckGo",
-        "Google",
-        "google io 2026"
-      ]
-    },
-    {
-      "id": "92feb55b8508",
-      "title": "NASA’s permanent Moon base plans start with three missions this year",
-      "excerpt": "On Tuesday, NASA announced several upcoming lunar missions to the Moon's South Pole region. These missions will pave the way for the crewed Artemis landing slated for 2028, starting with three Moon Base missions NASA...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-26T22:24:53.000Z",
-      "url": "https://www.theverge.com/science/937775/nasa-moon-base-moonfall-updates",
-      "tags": [
-        "NASA",
-        "News",
-        "Science",
-        "Space"
-      ]
-    },
-    {
-      "id": "eaaedcc5225a",
-      "title": "This 4TB WD Black SSD is nearly $1,200 off at Best Buy - and I'm vouching for it",
-      "excerpt": "In the era of increasing SSD prices, you can still save 65% on the 4TB WD Black SN850X SSD right now.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-26T20:47:00.000Z",
-      "url": "https://www.zdnet.com/article/wd-black-sn850x-4tb-best-buy-deal/"
-    },
-    {
-      "id": "3d614cc22e93",
-      "title": "Millions of AI agents imperiled by critical vulnerability in open source package",
-      "excerpt": "\"BadHost\" was found in Starlette, a package with 325 million weekly downloads.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "publishedAt": "2026-05-26T19:50:33.000Z",
-      "url": "https://arstechnica.com/information-technology/2026/05/millions-of-ai-agents-imperiled-by-critical-vulnerability-in-open-source-package/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/gatekeeping-ai-agents-1152x648.jpg",
-      "tags": [
-        "AI",
-        "Biz & IT",
-        "Security",
-        "AI agents",
-        "Starlette",
-        "vulnerability"
-      ]
-    },
-    {
-      "id": "3d2fd0ad589a",
-      "title": "California may let Linux bypass age check",
-      "excerpt": "Exemption in amendment offers relief to open source software makers",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-26T19:49:21.000Z",
-      "url": "https://www.theregister.com/software/2026/05/26/california-may-let-linux-bypass-age-check/5246575",
-      "image": "https://image.theregister.com/?imageId=254050&width=800",
-      "tags": [
-        "software"
-      ]
-    },
-    {
-      "id": "373f951e6cf0",
-      "title": "Google Health is here, but a lot of people want their Fitbit app back instead",
-      "excerpt": "The Fitbit app is no more. Along with the launch of the new Fitbit Air (which you can expect a full review of once we've spent more time with it), Google has officially replaced it with Google Health, as previously an...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-26T19:00:15.000Z",
-      "url": "https://www.theverge.com/gadgets/937534/google-health-fitbit-app-ai",
-      "tags": [
-        "Fitness",
-        "Gadgets",
-        "Google",
-        "Health",
-        "News",
-        "Science"
       ]
     }
   ]
