@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-28T16:01:50.457Z",
+  "generatedAt": "2026-05-29T03:50:09.740Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -52,6 +52,399 @@
   ],
   "posts": [
     {
+      "id": "aad485663242",
+      "title": "4 Android Auto developer settings that make driving so much easier - how to enable them",
+      "excerpt": "These developer settings can completely change how your Android Auto looks and operates.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-29T01:44:00.000Z",
+      "url": "https://www.zdnet.com/article/android-auto-hidden-developer-settings-my-favorites/"
+    },
+    {
+      "id": "504d920ffaee",
+      "title": "Sony's most premium ANC headphones yet made luxury audio click for me",
+      "excerpt": "The special-edition pair of 1000X-series headphones strikes a balance between modern style and functionality.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-29T01:39:00.000Z",
+      "url": "https://www.zdnet.com/article/sony-1000-x-the-collexion-review/"
+    },
+    {
+      "id": "5471d9492ea3",
+      "title": "Glean’s top line crosses $300M as AI budget-cutting becomes its major selling point",
+      "excerpt": "The enterprise AI search startup tripled its annual revenue even as tech giants entered the category.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-29T00:44:37.000Z",
+      "url": "https://techcrunch.com/2026/05/28/gleans-top-line-crosses-300m-as-ai-budget-cutting-becomes-its-major-selling-point/",
+      "tags": [
+        "AI",
+        "Enterprise",
+        "Startups",
+        "AI search",
+        "Glean",
+        "revenue"
+      ]
+    },
+    {
+      "id": "e157285d39dc",
+      "title": "Troops’ phones gave away location data to foreign adversaries",
+      "excerpt": "Lawmakers push DoD to tighten smartphone controls after adversaries exploited commercial tracking data",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-28T21:35:36.000Z",
+      "url": "https://www.theregister.com/security/2026/05/28/troops-phones-leaked-location-data-to-foreign-adversaries/5248108",
+      "image": "https://image.theregister.com/?imageId=225434&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "12919de6dcce",
+      "title": "The internet is being rebuilt for machines",
+      "excerpt": "As AI agents move from experiments to production, AWS, Cloudflare, and others are redesigning cloud infrastructure for a future dominated by machine-generated internet traffic instead of human users.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-28T21:24:01.000Z",
+      "url": "https://techcrunch.com/2026/05/28/the-internet-is-being-rebuilt-for-machines/",
+      "tags": [
+        "AI",
+        "agentic search",
+        "AI agents",
+        "AWS",
+        "aws opensearch serverless"
+      ]
+    },
+    {
+      "id": "7aa8f8a40756",
+      "title": "AI Model Release Tracker: Opus 4.8's misalignment rates similar to Claude Mythos Preview",
+      "excerpt": "Not every new model is all it's cracked up to be. Our tracker keeps each release in context with its peers, so you know which models are worth your time.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-05-28T21:11:11.000Z",
+      "url": "https://www.zdnet.com/article/ai-model-release-tracker/"
+    },
+    {
+      "id": "7f647e57ab8a",
+      "title": "Perplexity launches Bumblebee: How its new read-only dev scanner differs from Chainguard",
+      "excerpt": "The AI company's Bumblebee tool tackles your most urgent question after any supply‑chain advisory: Do your programmers have this malware installed?",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-05-28T21:01:24.000Z",
+      "url": "https://www.zdnet.com/article/perplexity-launches-bumblebee-how-its-new-read-only-dev-scanner-differs-from-chainguard/"
+    },
+    {
+      "id": "bc3ca44337a2",
+      "title": "Fed up with vibe coders, dev sneaks data-nuking prompt injection into their code",
+      "excerpt": "Undisclosed addition in jqwik instructed AI coding agents to delete app output.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "publishedAt": "2026-05-28T20:29:53.000Z",
+      "url": "https://arstechnica.com/security/2026/05/fed-up-with-vibe-coders-dev-sneaks-data-nuking-prompt-injection-into-their-code/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/01/coding_robots_agents-1152x648.jpg",
+      "tags": [
+        "AI",
+        "Biz & IT",
+        "Security",
+        "AI agents",
+        "prompt injections",
+        "vibe coding"
+      ]
+    },
+    {
+      "id": "c34309c86f48",
+      "title": "Disgruntled 0-day hunter 'humiliated' by Microsoft pledges 'bone shattering drop' as Redmond calls cops",
+      "excerpt": "Six 0-days, three under active exploitation, more to come on July 14?",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-28T20:19:09.000Z",
+      "url": "https://www.theregister.com/security/2026/05/28/microsoft-0-day-feud-escalates-as-researcher-threatens-another-windows-exploit-dump/5248085",
+      "image": "https://image.theregister.com/?imageId=254471&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "69f6900cd4b0",
+      "title": "Nintendo’s newest WarioWare is a weirdo smartphone app",
+      "excerpt": "A decade ago, Nintendo made a big splash into the world of mobile gaming with a new Super Mario platformer directed by none other than Shigeru Miyamoto. But even though the game proved popular, it wasn't the success t...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-28T20:16:16.000Z",
+      "url": "https://www.theverge.com/games/939283/pictonico-nintendo-mobile-game",
+      "tags": [
+        "Analysis",
+        "Entertainment",
+        "Gaming",
+        "Nintendo",
+        "Report"
+      ]
+    },
+    {
+      "id": "11e6e2adfb18",
+      "title": "Microsoft 365 Copilot gets a speed boost and cleaner design",
+      "excerpt": "Microsoft is launching a revamped version of Microsoft 365 Copilot, offering a cleaner design that the company claims loads twice as fast. As part of this update, Copilot will provide more reliable and structured resp...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-05-28T20:14:07.000Z",
+      "url": "https://www.theverge.com/tech/939273/microsoft-365-copilot-redesign",
+      "tags": [
+        "AI",
+        "Microsoft",
+        "News",
+        "Tech"
+      ]
+    },
+    {
+      "id": "8f55d62b8b18",
+      "title": "Amazon’s last-gen Paperwhite is on sale for less than the entry-level Kindle",
+      "excerpt": "If you like to read by the pool or at the beach, the 2021 Kindle Paperwhite remains one of the best e-readers available despite its age. That’s because, unlike Amazon’s latest entry-level Kindle, the last-gen Paperwhi...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-28T20:10:09.000Z",
+      "url": "https://www.theverge.com/gadgets/939259/amazon-kindle-paperwhite-2021-woot-dad-tech-sale",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Tech",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "e14094841cd1",
+      "title": "Asana acquires no-code agent-builder StackAI",
+      "excerpt": "Asana will incorporate StackAI into its growing suite of AI workflow tools.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-28T20:06:07.000Z",
+      "url": "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/",
+      "tags": [
+        "AI",
+        "acquisition",
+        "Asana",
+        "Automation",
+        "Stack AI"
+      ]
+    },
+    {
+      "id": "15b3d2f4d2c6",
+      "title": "Snowflake buys Natoma to help freeze out rogue agents",
+      "excerpt": "It is the database titan’s sixth acquisition announcement since June 2025",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-05-28T19:52:47.000Z",
+      "url": "https://www.theregister.com/ai-ml/2026/05/28/snowflake-buys-natoma-to-help-freeze-out-rogue-agents/5248062",
+      "image": "https://image.theregister.com/?imageId=5248082&width=800",
+      "tags": [
+        "ai + ml"
+      ]
+    },
+    {
+      "id": "dc040f131c1f",
+      "title": "Disabled ACR on your TV? I set up a router-based VPN for further protection - here's how",
+      "excerpt": "Installing a VPN on your smart TV blocks hackers from accessing your network and stealing your data. But there are benefits to the content, too.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-28T19:00:48.000Z",
+      "url": "https://www.zdnet.com/article/how-to-add-a-vpn-to-your-smart-tv/"
+    },
+    {
+      "id": "7270867c0523",
+      "title": "Google, Canonical team up to certify Ubuntu images for TPU VMs",
+      "excerpt": "Chocolate Factory shifts Tensor Processing Unit Ubuntu support back upstream",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-28T19:00:00.000Z",
+      "url": "https://www.theregister.com/off-prem/2026/05/28/google-canonical-team-up-to-certify-ubuntu-images-for-tpu-vms/5248028",
+      "image": "https://image.theregister.com/?imageId=261674&width=800",
+      "tags": [
+        "off-prem"
+      ]
+    },
+    {
+      "id": "9ee607688cc2",
+      "title": "Anthropic raises $65 billion, nears $1T valuation ahead of IPO",
+      "excerpt": "Anthropic has closed a $65 billion Series H round at a $965 billion post-money valuation, marking what could be the AI startup's final private fundraise before a highly anticipated IPO.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-28T18:52:51.000Z",
+      "url": "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/",
+      "tags": [
+        "AI",
+        "Fundraising",
+        "Anthropic",
+        "Claude",
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "cc1088edb6ae",
+      "title": "Motorola’s last-gen Razr Ultra is almost half off",
+      "excerpt": "Motorola’s latest Razr Ultra proves that its flip foldable format has evolved to become more than just a nostalgic gimmick. I’d understand if you’re not interested in shelling out $1,499.99 for the 2026 model, but the...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-28T18:33:08.000Z",
+      "url": "https://www.theverge.com/gadgets/938621/razr-ultra-roborock-qrevo-curv-2-robot-vacuum-deal-sale",
+      "tags": [
+        "Deals",
+        "Foldable Phones",
+        "Gadgets",
+        "Mobile",
+        "Tech",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "350fe0bcb65e",
+      "title": "Just like gold and oil, we’ll soon be able to trade AI token futures",
+      "excerpt": "Large exchanges are designing derivative products around AI tokens, which are increasingly being considered less a computational output and more a raw material input, like electricity or bandwidth.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-28T18:32:25.000Z",
+      "url": "https://techcrunch.com/2026/05/28/just-like-gold-and-oil-well-soon-be-able-to-trade-ai-token-futures/",
+      "tags": [
+        "AI",
+        "AI futures",
+        "ai tokens",
+        "CME Group",
+        "commodities",
+        "Intercontinental Exchange"
+      ]
+    },
+    {
+      "id": "21308c23b8aa",
+      "title": "Euro-Office, Europe's open-source alternative to Microsoft Office and Google Docs, launches June 9",
+      "excerpt": "European tech firms will ship the first stable release of Euro-Office next month, giving governments and businesses worldwide a ready-to-run, sovereign alternative to Microsoft Office and Google Docs.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-28T18:17:33.000Z",
+      "url": "https://www.zdnet.com/article/euro-office-a-sovereign-cloud-based-office-suite-google-microsoft-alternative/"
+    },
+    {
+      "id": "f773a0a5b0f5",
+      "title": "This 8TB SanDisk SSD is over $1,000 off at Best Buy - and I recommend it",
+      "excerpt": "The price of SSDs has been skyrocketing, but you can still save nearly 62% on the 8TB SanDisk Desk Drive external SSD from Best Buy right now.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-28T18:08:00.000Z",
+      "url": "https://www.zdnet.com/article/sandisk-8tb-desk-drive-ssd-best-buy-deal/"
+    },
+    {
+      "id": "72d2f9c82b84",
+      "title": "The line between games and movies keeps getting blurrier",
+      "excerpt": "The most memorable part of 007 First Light is something that's typically pretty boring: the tutorial. In many games, you're forced through a series of tedious lessons in how to play, presented in a way that feels disc...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-28T18:03:51.000Z",
+      "url": "https://www.theverge.com/entertainment/939152/007-first-light-james-bond-movie-games",
+      "tags": [
+        "Analysis",
+        "Entertainment",
+        "Gaming",
+        "Report"
+      ]
+    },
+    {
+      "id": "a7fee3fac6f2",
+      "title": "In just 3 weeks, StrictlyVC is coming to Los Angeles",
+      "excerpt": "StrictlyVC Los Angeles is on June 18. Join for meaningful networking and fireside chats with leaders from Mach Industries, Shinkei Systems, and more. Register today.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-28T17:30:00.000Z",
+      "url": "https://techcrunch.com/2026/05/28/in-just-3-weeks-strictlyvc-is-coming-to-los-angeles/",
+      "tags": [
+        "AI",
+        "Space",
+        "Startups",
+        "Venture",
+        "Ethan Thornton",
+        "Los Angeles"
+      ]
+    },
+    {
+      "id": "215cc629463f",
+      "title": "Anthropic releases Opus 4.8 with new ‘dynamic workflow’ tool",
+      "excerpt": "The new Opus model comes with a tool called Dynamic Workflows, for coordinating swarms of subagents.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-28T17:00:09.000Z",
+      "url": "https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/",
+      "tags": [
+        "AI",
+        "TC",
+        "agent swarms",
+        "Anthropic",
+        "Claude",
+        "Opus"
+      ]
+    },
+    {
+      "id": "2259730a105c",
+      "title": "Claude’s new model is more ‘honest’ when it messes up",
+      "excerpt": "Anthropic is releasing Claude Opus 4.8 on Thursday, and the company is touting the model's \"honesty.\" According to Anthropic, it trains \"all [its] models to be honest - for instance, to avoid making claims that they c...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-05-28T17:00:00.000Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/939094/anthropic-claude-4-8-opus-honesty-effort",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "News"
+      ]
+    },
+    {
+      "id": "7a26356b1155",
+      "title": "Anthropic launches Opus 4.8, with honesty as its killer feature",
+      "excerpt": "Anthropic's latest Claude model isn't just faster or smarter. Opus 4.8 is being pitched as more honest, more careful, and better suited to complex coding projects.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-05-28T17:00:00.000Z",
+      "url": "https://www.zdnet.com/article/anthropics-launches-opus-4-8-where-honesty-is-the-killer-feature/"
+    },
+    {
+      "id": "e972bde9cccf",
+      "title": "Here’s where you can preorder the new Oura Ring 5",
+      "excerpt": "If you’ve been waiting for a smaller version of the Oura Ring, the company’s latest wearable is now available for preorder ahead of its June 4th release from Oura and various third-party retailers, including both Amaz...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-28T16:43:52.000Z",
+      "url": "https://www.theverge.com/gadgets/938380/oura-ring-5-preorder-price-release-date-availability",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Tech",
+        "Verge Shopping",
+        "Wearable"
+      ]
+    },
+    {
+      "id": "92495bfb19d0",
+      "title": "Microsoft tests the 15-character limit of Windows Server admins' patience",
+      "excerpt": "May security update trips over hostnames of a very specific length",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-28T16:30:00.000Z",
+      "url": "https://www.theregister.com/oses/2026/05/28/microsoft-tests-the-15-character-limit-of-windows-server-admins-patience/5247943",
+      "image": "https://image.theregister.com/?imageId=5247969&width=800",
+      "tags": [
+        "oses"
+      ]
+    },
+    {
+      "id": "a8e64a26d282",
+      "title": "A $2,000 AI-generated film will make its debut at Tribeca",
+      "excerpt": "Next month's Tribeca Festival will include the premiere of an AI-generated film: Dreams of Violets. The 75-minute film is a fictional dramatization of the Iranian government's mass killing of protestors in January, wi...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-05-28T16:08:45.000Z",
+      "url": "https://www.theverge.com/entertainment/939067/ai-film-dreams-of-violets-tribeca",
+      "tags": [
+        "AI",
+        "Entertainment",
+        "Film"
+      ]
+    },
+    {
       "id": "b7d2bc49907c",
       "title": "What’s next for Microsoft’s Surface PCs?",
       "excerpt": "Nearly 10 years ago I reviewed my favorite Surface device. Microsoft hand-delivered its Surface Studio all-in-one PC to me, and I was hooked from the moment I switched it on. It had a beautiful floating touchscreen th...",
@@ -89,7 +482,7 @@
     },
     {
       "id": "409530355c13",
-      "title": "How long is Anthropic’s lease with SpaceX? Opinions vary.",
+      "title": "How long is Anthropic’s lease with SpaceX? Opinions vary",
       "excerpt": "Elon Musk is publicly reframing xAI’s massive Anthropic compute deal as short-term and cancellable, despite SpaceX’s own S-1 filing describing payments through May 2029.",
       "source": "TechCrunch AI",
       "category": "AI",
@@ -97,9 +490,9 @@
       "url": "https://techcrunch.com/2026/05/28/how-long-is-anthropics-lease-with-spacex-opinions-vary/",
       "tags": [
         "AI",
-        "TC",
         "Anthropic",
         "compute",
+        "Elon Musk",
         "SpaceX",
         "xAI"
       ]
@@ -186,6 +579,19 @@
       ]
     },
     {
+      "id": "12b3825c8493",
+      "title": "Zig creator seeks 'uncompromising perfection' before blessing 1.0",
+      "excerpt": "Andrew Kelley interview describes paying monthly for cloud-powered AI coding as an 'insane proposition'",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-05-28T15:00:00.000Z",
+      "url": "https://www.theregister.com/software/2026/05/28/zig-creator-seeks-uncompromising-perfection-before-blessing-10/5247916",
+      "image": "https://image.theregister.com/?imageId=5247958&width=800",
+      "tags": [
+        "software"
+      ]
+    },
+    {
       "id": "a04de4a7809f",
       "title": "Waymo to begin passenger rides in its new Ojai robotaxi",
       "excerpt": "After several months of testing, Waymo is finally ready to invite non-employee passengers into its newest vehicle, the Zeekr RT minivan, which has been rebranded as Ojai. Waymo says it will begin offering \"select ride...",
@@ -198,19 +604,6 @@
         "News",
         "Transportation",
         "Waymo"
-      ]
-    },
-    {
-      "id": "12b3825c8493",
-      "title": "Zig creator seeks 'uncompromising perfection' before blessing 1.0",
-      "excerpt": "Andrew Kelley interview describes paying monthly for cloud-powered AI coding as an 'insane proposition'",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-28T15:00:00.000Z",
-      "url": "https://www.theregister.com/software/2026/05/28/zig-creator-seeks-uncompromising-perfection-before-blessing-10/5247916",
-      "image": "https://image.theregister.com/?imageId=5247958&width=800",
-      "tags": [
-        "software"
       ]
     },
     {
@@ -319,386 +712,6 @@
       "category": "AI",
       "publishedAt": "2026-05-28T14:16:00.000Z",
       "url": "https://www.zdnet.com/article/proceed-cautiously-with-ai-rollouts/"
-    },
-    {
-      "id": "11692b92dd6b",
-      "title": "Three in ten HP customers still clinging to Windows 10",
-      "excerpt": "Refresh cycle sluggishness is a tailwind, insists PC giant's money people",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-28T14:15:00.000Z",
-      "url": "https://www.theregister.com/personal-tech/2026/05/28/three-in-ten-hp-customers-still-clinging-to-windows-10/5247884",
-      "image": "https://image.theregister.com/?imageId=5248005&width=800",
-      "tags": [
-        "personal tech"
-      ]
-    },
-    {
-      "id": "a44521486464",
-      "title": "CNN sues Perplexity over ‘verbatim’ copycat articles",
-      "excerpt": "CNN has filed a lawsuit against Perplexity, claiming that the startup's AI tools generate \"verbatim\" copies of its work, as reported earlier by CNN. The lawsuit, filed in a New York court on Thursday, also alleges tha...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-05-28T14:08:36.000Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/938893/cnn-perplexity-ai-copyright-lawsuit",
-      "tags": [
-        "AI",
-        "Copyright",
-        "Law",
-        "News",
-        "Policy"
-      ]
-    },
-    {
-      "id": "c4bf9985a24e",
-      "title": "How to watch the 2026 FIFA World Cup: 9 ways to stream (including free options)",
-      "excerpt": "One of the biggest sporting events of all time kicks off soon - and you don't need an expensive cable package to watch.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-28T14:00:18.000Z",
-      "url": "https://www.zdnet.com/article/how-to-watch-the-world-cup-2026/"
-    },
-    {
-      "id": "3655c76183d3",
-      "title": "2 days left: Lock in ticket savings of up to $410 to TechCrunch Disrupt 2026",
-      "excerpt": "Savings of up to $410 on TechCrunch Disrupt 2026 tickets end tomorrow, May 29, 11:59 p.m. PT. Register now to save and join 10,000+ tech leaders on October 13-15 in San Francisco.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-28T14:00:00.000Z",
-      "url": "https://techcrunch.com/2026/05/28/2-days-left-lock-in-ticket-savings-of-up-to-410-to-techcrunch-disrupt-2026/",
-      "tags": [
-        "TC",
-        "Startups",
-        "Transportation",
-        "Crypto",
-        "Climate",
-        "Fintech"
-      ]
-    },
-    {
-      "id": "d9dddcb5b5e7",
-      "title": "Visa invests in Replit to power agentic payments for developers",
-      "excerpt": "Visa said that over 1,000 employees has been using Replit for prototyping and development",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-28T14:00:00.000Z",
-      "url": "https://techcrunch.com/2026/05/28/visa-invests-in-replit-to-power-agentic-payments-for-developers/",
-      "tags": [
-        "TC",
-        "AI",
-        "visa",
-        "Replit",
-        "agentic payments"
-      ]
-    },
-    {
-      "id": "4f15b7a1c760",
-      "title": "These are my favorite Switch 2 accessories",
-      "excerpt": "The Nintendo Switch 2 can be enjoyed right out of the box, but it’s even better with the right accessories. Some of these add-ons are more crucial than others, especially if you’re deciding what to buy early on. For e...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-28T14:00:00.000Z",
-      "url": "https://www.theverge.com/buying-guides/720160/best-switch-2-accessories",
-      "tags": [
-        "Buying Guides",
-        "Entertainment",
-        "Gadgets",
-        "Gaming",
-        "Nintendo",
-        "Tech"
-      ]
-    },
-    {
-      "id": "18f8419c90dc",
-      "title": "Qualcomm picks bad time to pitch a $300 laptop platform",
-      "excerpt": "Systems based on Snapdragon C to target students, families, and small businesses",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-28T13:30:00.000Z",
-      "url": "https://www.theregister.com/systems/2026/05/28/qualcomm-picks-bad-time-to-pitch-a-300-laptop-platform/5247841",
-      "image": "https://image.theregister.com/?imageId=255221&width=800",
-      "tags": [
-        "systems"
-      ]
-    },
-    {
-      "id": "b1938442ef6b",
-      "title": "Why I ditched Copilot for Claude in Word, Excel, and PowerPoint - and how you can, too",
-      "excerpt": "Need AI help in Microsoft 365, but don't love Copilot? Claude AI can help you create, edit, and analyze documents. Here's how.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-05-28T13:10:13.000Z",
-      "url": "https://www.zdnet.com/article/how-i-ditched-copilot-for-claude-in-word-excel-powerpoint/"
-    },
-    {
-      "id": "b2eb8389bed5",
-      "title": "AI agents get their own phone directory built atop DNS",
-      "excerpt": "DNS-AID, under the auspices of the Linux Foundation, promises easier agent discovery",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-28T13:06:00.000Z",
-      "url": "https://www.theregister.com/ai-ml/2026/05/28/ai-agents-get-their-own-phone-directory-built-atop-dns/5247539",
-      "image": "https://image.theregister.com/?imageId=5247563&width=800",
-      "tags": [
-        "ai + ml"
-      ]
-    },
-    {
-      "id": "3ae1a96af06e",
-      "title": "NordVPN isn't just a VPN anymore, but a full security suite - here's what you get now",
-      "excerpt": "NordVPN argues that antivirus now means far more than it used to, so creating an app that combines VPN services with modern threat protection is the right path.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-28T12:39:42.000Z",
-      "url": "https://www.zdnet.com/article/nordvpn-combines-vpn-antivirus-in-one-app/"
-    },
-    {
-      "id": "078ec3851238",
-      "title": "Steam Deck prices go through the roof as Valve blames component shortages",
-      "excerpt": "Same handheld, same specs, just a much steeper bill",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-28T12:34:42.000Z",
-      "url": "https://www.theregister.com/personal-tech/2026/05/28/steam-deck-prices-go-through-the-roof-as-valve-blames-component-shortages/5247830",
-      "image": "https://image.theregister.com/?imageId=5247878&width=800",
-      "tags": [
-        "personal tech"
-      ]
-    },
-    {
-      "id": "fd118d380717",
-      "title": "I'm an iPhone user, but Gemini with Android Auto beats Siri in the car any day - here's why",
-      "excerpt": "Gemini can help with a variety of tasks when behind the wheel. All you need is an Android phone and a car with Android Auto.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-05-28T12:31:00.000Z",
-      "url": "https://www.zdnet.com/article/gemini-with-android-auto-beats-siri-in-car-heres-why/"
-    },
-    {
-      "id": "1bb45ee3314a",
-      "title": "Carnival confirms ShinyHunters cruised off with 6M customer records after April breach",
-      "excerpt": "Travel and leisure giant was just one of many victims of the cybercrooks' crime spree this year",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-28T12:10:00.000Z",
-      "url": "https://www.theregister.com/cyber-crime/2026/05/28/carnival-shinyhunters-cruised-off-with-6m-customer-records/5247808",
-      "image": "https://image.theregister.com/?imageId=5225143&width=800",
-      "tags": [
-        "cyber-crime"
-      ]
-    },
-    {
-      "id": "76862f916307",
-      "title": "ReactOS brings its Windows NT tribute act to ARM64",
-      "excerpt": "Experimental build boots on Raspberry Pi 5, but for now the joy is mostly in getting there",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-28T11:30:00.000Z",
-      "url": "https://www.theregister.com/oses/2026/05/28/reactos-brings-its-windows-nt-tribute-act-to-arm64/5247768",
-      "image": "https://image.theregister.com/?imageId=241996&width=800",
-      "tags": [
-        "oses"
-      ]
-    },
-    {
-      "id": "b71ef8a1fb22",
-      "title": "I've tested so many Linux email clients - why I'm recommending Aerion above all else",
-      "excerpt": "A cross-platform app for Linux, MacOS and Windows, Aerion supports all the features I need, without the extra clutter.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-28T02:00:42.000Z",
-      "url": "https://www.zdnet.com/article/aerion-my-new-favorite-email-client/"
-    },
-    {
-      "id": "0b91f2b720dc",
-      "title": "Bare metal cloud servers now cheaper and more readily available than on-prem hardware, says Nutanix CEO",
-      "excerpt": "Hyperscalers can get hardware before enterprise vendors and buyers don't much care where they land",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-28T01:59:00.000Z",
-      "url": "https://www.theregister.com/virtualization/2026/05/28/bare-metal-cloud-servers-now-cheaper-and-more-readily-available-than-on-prem-hardware-says-nutanix-ceo/5247599",
-      "image": "https://image.theregister.com/?imageId=223151&width=800",
-      "tags": [
-        "virtualization"
-      ]
-    },
-    {
-      "id": "9ea74c2c434b",
-      "title": "I demoed Sony's new modular theater system, and the audio quality was next level",
-      "excerpt": "The Sony Bravia Theater Trio might look unassuming, but you shouldn't judge a book by its cover.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-28T01:00:36.000Z",
-      "url": "https://www.zdnet.com/article/sony-bravia-trio-hands-on/"
-    },
-    {
-      "id": "1c5dfc1243fb",
-      "title": "I dug deeper into my Oura Ring data using this free app - here's what I found",
-      "excerpt": "The Simple Wearable Report uses AI to extract more insights from your Oura Ring data. Here's how I've been using it.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-05-28T00:30:00.000Z",
-      "url": "https://www.zdnet.com/article/oura-ring-simple-wearable-report-gemini-ai-chatbot/"
-    },
-    {
-      "id": "bee8459a22fd",
-      "title": "Salesforce waves bye-bye to UI in 'headless' embrace",
-      "excerpt": "Anthropic's use of Sales Cloud increased five-fold as its workers access Salesforce through Claude and Slack",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-28T00:20:29.000Z",
-      "url": "https://www.theregister.com/saas/2026/05/28/salesforce-waves-bye-bye-to-ui-in-headless-embrace/5247587",
-      "image": "https://image.theregister.com/?imageId=5223048&width=800",
-      "tags": [
-        "saas"
-      ]
-    },
-    {
-      "id": "b4d0e41acafd",
-      "title": "Why Google’s AI can’t spell Google (or anything else)",
-      "excerpt": "Google is embarrassing itself, again.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-28T00:17:41.000Z",
-      "url": "https://techcrunch.com/2026/05/27/why-googles-ai-cant-spell-google-or-anything-else/",
-      "tags": [
-        "AI",
-        "Google",
-        "spelling"
-      ]
-    },
-    {
-      "id": "0389a00a72ff",
-      "title": "A Google employee allegedly used inside information to win $1.2 million on Polymarket",
-      "excerpt": "Federal prosecutors charged a Google employee with fraud after he allegedly made $1.2 million on Polymarket bets related to Search-related trends in 2025, as reported earlier by ABC News. In their now-unsealed complai...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-27T22:30:02.000Z",
-      "url": "https://www.theverge.com/tech/938635/google-polymarket-insider-trading-prediction-market-bets",
-      "tags": [
-        "Business",
-        "Google",
-        "Policy",
-        "Tech"
-      ]
-    },
-    {
-      "id": "8640b3e9499f",
-      "title": "Snowflake to burn $6B on AWS Graviton CPUs and AI accelerators",
-      "excerpt": "Dataware house gambles cloud conveniences, AI accelerated insights will justify the cost.",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-27T21:20:00.000Z",
-      "url": "https://www.theregister.com/off-prem/2026/05/27/snowflake-to-burn-6b-on-aws-graviton-cpus-ai-infra/5247475",
-      "image": "https://image.theregister.com/?imageId=227469&width=800",
-      "tags": [
-        "off-prem"
-      ]
-    },
-    {
-      "id": "f27faf4d8060",
-      "title": "Apple’s newest iPad Air is up to $100 off for the first time",
-      "excerpt": "If you want an iPad that’s more powerful than the entry-level model but less expensive than the iPad Pro, the latest iPad Air is the one to buy, and it’s down to one its best prices to date. The 11-inch Air with 128GB...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-27T21:08:41.000Z",
-      "url": "https://www.theverge.com/gadgets/938519/apple-ipad-air-m4-deal-sale",
-      "tags": [
-        "Apple",
-        "Deals",
-        "Gadgets",
-        "Tech",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "6d274c662d22",
-      "title": "FAA grounds SpaceX’s Starship after another launch mishap",
-      "excerpt": "IPO? More like IP-uh-oh",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-27T20:57:38.000Z",
-      "url": "https://www.theregister.com/offbeat/2026/05/27/faa-grounds-spacexs-starship-after-another-launch-mishap/5247446",
-      "image": "https://image.theregister.com/?imageId=5238835&width=800",
-      "tags": [
-        "offbeat"
-      ]
-    },
-    {
-      "id": "329c0acaeb85",
-      "title": "Websites have a new way to spy on visitors: Analyzing their SSD activity",
-      "excerpt": "Telltale SSD activity can be measured in the browser using simple JavaScript.",
-      "source": "Ars Technica",
-      "category": "IT",
-      "publishedAt": "2026-05-27T20:56:03.000Z",
-      "url": "https://arstechnica.com/security/2026/05/websites-have-a-new-way-to-spy-on-visitors-analyzing-their-ssd-activity/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/solid-state-drive-ssd-1152x648.jpg",
-      "tags": [
-        "Biz & IT",
-        "Security",
-        "side channel attacks",
-        "solid state drives",
-        "SSDs"
-      ]
-    },
-    {
-      "id": "36e2059eae5c",
-      "title": "Malware dev tries to steal Claude users' secrets, writes npm slop, leaks own GitHub private token",
-      "excerpt": "Script kiddies these days",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-27T20:33:03.000Z",
-      "url": "https://www.theregister.com/cyber-crime/2026/05/27/supply-chain-brain-drain-npm-attacker-foolishly-leaks-own-github-private-token/5247424",
-      "image": "https://image.theregister.com/?imageId=5247468&width=800",
-      "tags": [
-        "cyber-crime"
-      ]
-    },
-    {
-      "id": "cae3c10884c8",
-      "title": "All the news about Ferrari’s polarizing Luce EV",
-      "excerpt": "Ferrari fans don’t like the design of the new Luce EV, an electric four-door sedan that just doesn’t look like the Ferraris of old. It was designed with help from Jony Ive’s LoveFrom, but what worked for Ive at Apple...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-27T20:22:57.000Z",
-      "url": "https://www.theverge.com/transportation/938513/ferrari-luce-ev",
-      "tags": [
-        "Cars",
-        "Design",
-        "Electric Cars",
-        "News",
-        "Transportation"
-      ]
-    },
-    {
-      "id": "23d6fbbb3742",
-      "title": "Argonne flexes spare supercompute to build private AI inference service",
-      "excerpt": "Think ChatDoE",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-27T20:15:48.000Z",
-      "url": "https://www.theregister.com/ai-ml/2026/05/27/argonne-flexes-spare-supercompute-to-build-private-ai-inference-servic/5247362",
-      "image": "https://image.theregister.com/?imageId=232762&width=800",
-      "tags": [
-        "ai + ml"
-      ]
-    },
-    {
-      "id": "fb999f0220ea",
-      "title": "In more good news for Amazon, Snowflake signs $6B deal with AWS for AI CPU chips",
-      "excerpt": "Snowflake has signed a new, enormous five-year deal with Amazon to secure chips for AI usage. Nvidia is once again being put on notice.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-27T20:10:00.000Z",
-      "url": "https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/",
-      "tags": [
-        "Enterprise",
-        "TC",
-        "AI",
-        "Amazon",
-        "AWS",
-        "Snowflake"
-      ]
     }
   ]
 }
