@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T15:39:03.167Z",
+  "generatedAt": "2026-05-30T03:35:50.901Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -52,6 +52,368 @@
   ],
   "posts": [
     {
+      "id": "b30f2d150f63",
+      "title": "How I get my solar generators storm-ready fast - after years of emergency prep",
+      "excerpt": "With severe weather becoming more common, you need a plan before the lights go out. Here's mine.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-30T01:00:48.000Z",
+      "url": "https://www.zdnet.com/article/how-to-prep-solar-power-stations-for-weather-emergencies/"
+    },
+    {
+      "id": "cb2eed698f61",
+      "title": "Nvidia, Microsoft, and Arm are all teasing Nvidia’s new N1X laptop processors",
+      "excerpt": "It's the world's worst kept secret that Nvidia is about to announce its own Arm-powered laptop chips at Computex this weekend, and now Microsoft, Nvidia, and Arm are all openly teasing the announcement. The Windows an...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-29T23:03:29.000Z",
+      "url": "https://www.theverge.com/news/940275/nvidia-n1x-laptop-processor-arm-microsoft-teaser",
+      "tags": [
+        "Computex",
+        "Gadgets",
+        "Laptops",
+        "Microsoft",
+        "News",
+        "Nvidia"
+      ]
+    },
+    {
+      "id": "8a0456fe9a34",
+      "title": "AWS reportedly to tuck Elon Musk's Grok into Bedrock, despite zero enterprise demand",
+      "excerpt": "The energy drink of frontier models",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-05-29T22:23:25.000Z",
+      "url": "https://www.theregister.com/ai-ml/2026/05/29/aws-reportedly-to-tuck-elon-musks-grok-into-bedrock-despite-zero-enterprise-demand/5248832",
+      "image": "https://image.theregister.com/?imageId=4093846&width=800",
+      "tags": [
+        "ai + ml"
+      ]
+    },
+    {
+      "id": "bfab3dca5f76",
+      "title": "Coders are refusing to work without AI — and that could come back to bite them",
+      "excerpt": "While AI is helping coders produce code faster, it may not be producing better code, researchers warn. And that could cause problems down the road for them.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-29T22:14:22.000Z",
+      "url": "https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/",
+      "tags": [
+        "AI",
+        "developers",
+        "tokenmaxxing"
+      ]
+    },
+    {
+      "id": "57cf4573e568",
+      "title": "SpaceX gets $4 billion contract to build missile-tracking ‘Golden Dome’ satellites",
+      "excerpt": "The Pentagon awarded SpaceX a $4.16 billion contract to build missile-tracking satellites linked with President Donald Trump's planned \"Golden Dome\" defense system, as reported earlier by Bloomberg. In an announcement...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-29T21:48:52.000Z",
+      "url": "https://www.theverge.com/science/940207/spacex-golden-dome-satellite-contract",
+      "tags": [
+        "Policy",
+        "Politics",
+        "Science",
+        "Space",
+        "SpaceX"
+      ]
+    },
+    {
+      "id": "61ef3d845a89",
+      "title": "Lone attacker published 14 malicious npm packages mimicking popular OpenSearch, Elasticsearch libraries",
+      "excerpt": "And then Microsoft busted them all",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-29T21:46:34.000Z",
+      "url": "https://www.theregister.com/security/2026/05/29/14-malicious-npm-packages-impersonated-opensearch-elasticsearch-libraries/5248792",
+      "image": "https://image.theregister.com/?imageId=5248815&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "7fa11da2cf04",
+      "title": "Okta writes its own license to kill rogue AI agents",
+      "excerpt": "CEO Todd McKinnon says customers including ServiceNow want an off switch",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-05-29T21:20:21.000Z",
+      "url": "https://www.theregister.com/ai-ml/2026/05/29/okta-writes-its-own-license-to-kill-rogue-ai-agents/5248766",
+      "image": "https://image.theregister.com/?imageId=5248788&width=800",
+      "tags": [
+        "ai + ml"
+      ]
+    },
+    {
+      "id": "026b8ef87ab3",
+      "title": "Amazon is selling this 75-inch Hisense TV for over $500 off - and I highly recommend it",
+      "excerpt": "The Hisense U6 Pro is a solid mid-range Mini LED TV, and an even better buy at this price.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-29T20:32:00.000Z",
+      "url": "https://www.zdnet.com/article/hisense-u6-pro-amazon-deal/"
+    },
+    {
+      "id": "1738fb8674cd",
+      "title": "ICE to keep an eye on your eyes under $25M biometric scanner deal",
+      "excerpt": "And you thought a face recognition app was intrusive?",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-29T19:35:45.000Z",
+      "url": "https://www.theregister.com/public-sector/2026/05/29/ice-awards-bi2-25m-contract-for-1570-biometric-scanners/5248733",
+      "image": "https://image.theregister.com/?imageId=5225489&width=800",
+      "tags": [
+        "public sector"
+      ]
+    },
+    {
+      "id": "215bd58dad95",
+      "title": "Acer’s launching a Linux handheld for streaming your PC games",
+      "excerpt": "The Acer Nitro Blaze Link might run on Linux, but it's no Steam Deck. Acer says it's a \"streaming-first handheld and companion device,\" like a PlayStation Portal for your PC. Announced ahead of Computex on Friday, it'...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-29T19:01:48.000Z",
+      "url": "https://www.theverge.com/games/940091/acer-nitro-blaze-link-linux-handheld",
+      "tags": [
+        "Gaming",
+        "News",
+        "PC Gaming",
+        "Tech"
+      ]
+    },
+    {
+      "id": "944dd86b3cac",
+      "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+      "excerpt": "We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "publishedAt": "2026-05-29T19:00:00.000Z",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
+      "tags": [
+        "Developer tools",
+        "AI"
+      ]
+    },
+    {
+      "id": "b59d5931a7bb",
+      "title": "So you’ve heard these AI terms and nodded along; let’s fix that",
+      "excerpt": "The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-29T18:49:19.000Z",
+      "url": "https://techcrunch.com/2026/05/29/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
+      "tags": [
+        "AI",
+        "artificial intelligence",
+        "evergreens",
+        "Glossary"
+      ]
+    },
+    {
+      "id": "db56f286ea45",
+      "title": "Botnet of more than 17 million devices dismantled",
+      "excerpt": "The botnet was reportedly tied to a Russia-based residential proxy network.",
+      "source": "Ars Technica",
+      "category": "IT",
+      "publishedAt": "2026-05-29T18:46:33.000Z",
+      "url": "https://arstechnica.com/security/2026/05/botnet-of-more-than-17-million-devices-dismantled/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2020/04/botnet6.jpg",
+      "tags": [
+        "Biz & IT",
+        "Security",
+        "botnets",
+        "crime",
+        "residential proxy networks"
+      ]
+    },
+    {
+      "id": "52246e9a188f",
+      "title": "No fix yet for critical RCE bug in open-source Git service Gogs - exploit module is out",
+      "excerpt": "Researcher reported the vuln in March. Maintainers haven't responded to his messages since",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-29T18:26:48.000Z",
+      "url": "https://www.theregister.com/security/2026/05/29/no-fix-yet-for-critical-gogs-rce-bug-exploit-module-is-out/5248691",
+      "image": "https://image.theregister.com/?imageId=5248726&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "74e8a7cb166f",
+      "title": "What happens when companies become too AI-pilled?",
+      "excerpt": "The people deciding that AI can replace your job are also the ones least likely to understand what your job truly involves, according to Box founder Aaron Levie, who pointed to this as an example of “AI psychosis.” In...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-29T17:57:05.000Z",
+      "url": "https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled/",
+      "tags": [
+        "AI",
+        "Aaron Levie",
+        "AI agents",
+        "AI layoffs",
+        "ai psychosis",
+        "Amazon competition"
+      ]
+    },
+    {
+      "id": "7cf4cb4b6cfd",
+      "title": "Tech companies desperately want to film you doing chores",
+      "excerpt": "This week, an AI training startup called Shift said it would clean New Yorkers' homes for free. It has plans to expand into other cities as well, including London, and looking around my flat, I get the appeal. But the...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-05-29T17:37:43.000Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/940007/ai-companies-will-pay-for-robot-training-data",
+      "tags": [
+        "AI",
+        "Report",
+        "Robot",
+        "Tech"
+      ]
+    },
+    {
+      "id": "bf7abda633b2",
+      "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+      "excerpt": "Watch 9 videos showing the capabilities of Gemini Omni and Gemini 3.5, announced at Google I/O 2026.",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "publishedAt": "2026-05-29T17:30:00.000Z",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
+      "tags": [
+        "Gemini models",
+        "Google DeepMind",
+        "AI"
+      ]
+    },
+    {
+      "id": "dd03918bf539",
+      "title": "After Nvidia’s $20B not-acqui-hire, AI chip startup Groq reportedly raising $650M",
+      "excerpt": "Chipmaker Groq is looking to raise $650 million in internal funding as it pivots from hardware to focus more on AI inference, the process of refining the way AI models respond to prompted requests, per Axios.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-29T17:27:13.000Z",
+      "url": "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/",
+      "tags": [
+        "AI",
+        "Startups",
+        "Venture",
+        "AI chips",
+        "groq",
+        "In Brief"
+      ]
+    },
+    {
+      "id": "ff2dc1a00fda",
+      "title": "The Verge’s 2026 high school graduation gift guide",
+      "excerpt": "High school graduation is a time of change that might be felt more deeply by family members than by the grads themselves. While some grads may immediately embark on a career path, many continue their education and del...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-29T17:00:00.000Z",
+      "url": "https://www.theverge.com/gadgets/932602/best-high-school-graduation-gift-ideas",
+      "tags": [
+        "Gadgets",
+        "Gift Guides",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "7d1c63939c8e",
+      "title": "QEMU mulls relaxing AI contribution ban",
+      "excerpt": "Red Hat engineer reckons the balance of risk has shifted, but core code stays off limits",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-05-29T16:55:00.000Z",
+      "url": "https://www.theregister.com/ai-ml/2026/05/29/qemu-mulls-relaxing-ai-contribution-ban/5248638",
+      "image": "https://image.theregister.com/?imageId=260175&width=800",
+      "tags": [
+        "ai + ml"
+      ]
+    },
+    {
+      "id": "d0a9b8562b13",
+      "title": "Microsoft delays Fable (again) to avoid GTA VI",
+      "excerpt": "Microsoft has delayed its upcoming Fable reboot once again. The game was set to launch in autumn 2026, but Microsoft now says that Fable will come out in February 2027. However, it will show a \"new look\" at the game a...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-29T16:51:08.000Z",
+      "url": "https://www.theverge.com/games/939991/microsoft-fable-xbox-delay-gta-vi",
+      "tags": [
+        "Entertainment",
+        "Gaming",
+        "News",
+        "Xbox"
+      ]
+    },
+    {
+      "id": "4b3f15d1603d",
+      "title": "After using this Windows laptop for work and play, I'm wondering why I still need my PC tower",
+      "excerpt": "The MSI Raider 16 Max HX combines powerful current-gen hardware with a revamped cooling system and a stunning 240Hz OLED screen.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-29T16:26:00.000Z",
+      "url": "https://www.zdnet.com/article/msi-raider-16-max-hx-review/"
+    },
+    {
+      "id": "b071f5534353",
+      "title": "Open-source security is a mess - IBM and Red Hat bet $5 billion and 20,000 engineers can fix it",
+      "excerpt": "Project Lightwell is an AI‑powered initiative to find and fix vulnerabilities in open-source software at an industrial scale. Here's what we know so far.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-05-29T16:26:00.000Z",
+      "url": "https://www.zdnet.com/article/open-source-security-is-a-mess-ibm-and-red-hat-bet-5-billion-to-fix-it/"
+    },
+    {
+      "id": "70c91df384c9",
+      "title": "Microsoft teases new Surface hardware and ‘a new era of PC’",
+      "excerpt": "I pondered the other day what's next for Microsoft's Surface PC lineup, and it looks like we're about to find out. Windows and Surface chief Pavan Davuluri has just teased \"something new is coming for developers,\" com...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-29T16:21:22.000Z",
+      "url": "https://www.theverge.com/news/939960/microsoft-computex-teaser-surface-nvidia-windows-rumors",
+      "tags": [
+        "Computex",
+        "Microsoft",
+        "Microsoft Build",
+        "News",
+        "Tech",
+        "Windows"
+      ]
+    },
+    {
+      "id": "82d27a9e2c10",
+      "title": "Cognition’s Scott Wu says AI coding agents shouldn’t replace humans",
+      "excerpt": "Cognition makes Devin, the first and arguably most successful AI coding agent. But famed coder Wu says it isn't designed to supplant human programmers.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-29T16:13:47.000Z",
+      "url": "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans/",
+      "tags": [
+        "AI",
+        "Startups",
+        "TC",
+        "AI agents",
+        "ai coding",
+        "cognition"
+      ]
+    },
+    {
+      "id": "2c63a67b177a",
+      "title": "23andMe inherits lawsuit over 'disturbing' DNA data breach",
+      "excerpt": "California AG claims genetics biz downplayed 2023 mega-leak while paying ransom to attacker",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-29T16:12:26.000Z",
+      "url": "https://www.theregister.com/legal/2026/05/29/rob-bonta-sues-23andmes-new-owners-over-2023-breach/5248565",
+      "image": "https://image.theregister.com/?imageId=260962&width=800",
+      "tags": [
+        "legal"
+      ]
+    },
+    {
       "id": "9d9b5af7fe5f",
       "title": "I've used Gemini in Android Auto for 2 months now, and it's transformed my daily drive in 4 ways",
       "excerpt": "Gemini has made voice control in my car fun and useful, and I'm still discovering new ways to use it.",
@@ -59,6 +421,19 @@
       "category": "AI",
       "publishedAt": "2026-05-29T15:26:51.000Z",
       "url": "https://www.zdnet.com/article/how-gemini-in-android-auto-is-changing-my-daily-drive/"
+    },
+    {
+      "id": "748fe20e06cc",
+      "title": "UCLA seeks pre-litigation resolution with Oracle",
+      "excerpt": "Discussion understood to concern delayed SaaS transformation project",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-05-29T15:21:20.000Z",
+      "url": "https://www.theregister.com/software/2026/05/29/ucla-seeks-pre-litigation-resolution-with-oracle/5248474",
+      "image": "https://image.theregister.com/?imageId=5248522&width=800",
+      "tags": [
+        "software"
+      ]
     },
     {
       "id": "0110e1e4b218",
@@ -71,7 +446,7 @@
     },
     {
       "id": "e6f7428c280a",
-      "title": "Trump’s mass deportations are impossible without racial profiling",
+      "title": "Trump’s mass deportations are only possible with racial profiling",
       "excerpt": "Border security czar Tom Homan keeps threatening to \"flood\" New York City with ICE agents. But a new investigation shows that ICE has been quietly ramping up arrests in the New York area already - and disproportionate...",
       "source": "The Verge",
       "category": "IT",
@@ -155,16 +530,16 @@
       "title": "Today is the last day to apply to speak at TechCrunch Disrupt 2026",
       "excerpt": "Submit your session topic before today ends for a chance to speak at TechCrunch Disrupt 2026. Apply now to share your insight and help shape the conversations defining the tech industry.",
       "source": "TechCrunch AI",
-      "category": "IT",
+      "category": "AI",
       "publishedAt": "2026-05-29T14:15:00.000Z",
       "url": "https://techcrunch.com/2026/05/29/today-is-the-last-day-to-apply-to-speak-at-techcrunch-disrupt-2026/",
       "tags": [
-        "Enterprise",
-        "TC",
-        "Startups",
-        "Transportation",
-        "Hardware",
-        "Crypto"
+        "AI",
+        "Apps",
+        "Biotech & Health",
+        "Climate",
+        "Crypto",
+        "Enterprise"
       ]
     },
     {
@@ -172,16 +547,33 @@
       "title": "Final 24 hours to save up to $410 on your TechCrunch Disrupt 2026 ticket",
       "excerpt": "You now have until tonight at 11:59 p.m. PT to lock in Early Bird savings of up to $410 for TechCrunch Disrupt 2026 before prices increase. Join 10,000+ tech leaders in October for one of the most anticipated tech eve...",
       "source": "TechCrunch AI",
-      "category": "IT",
+      "category": "AI",
       "publishedAt": "2026-05-29T14:00:00.000Z",
       "url": "https://techcrunch.com/2026/05/29/final-24-hours-to-save-up-to-410-on-your-techcrunch-disrupt-2026-ticket/",
       "tags": [
-        "TC",
+        "AI",
+        "Apps",
+        "Biotech & Health",
+        "Climate",
+        "Crypto",
+        "Fintech"
+      ]
+    },
+    {
+      "id": "78d00f9679ba",
+      "title": "Does your CEO have AI psychosis? Aaron Levie thinks most of them do.",
+      "excerpt": "The people deciding that AI can replace your job are also the ones least likely to understand what your job truly involves, according to Box founder Aaron Levie, who pointed to this as an example of “AI psychosis.” In...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-05-29T14:00:00.000Z",
+      "url": "https://techcrunch.com/podcast/does-your-ceo-have-ai-psychosis-aaron-levie-thinks-most-of-them-do/",
+      "tags": [
+        "AI",
         "Startups",
-        "Transportation",
-        "Security",
-        "Hardware",
-        "Crypto"
+        "Aaron Levie",
+        "AI agents",
+        "AI layoffs",
+        "ai psychosis"
       ]
     },
     {
@@ -216,15 +608,6 @@
         "Optimizer",
         "Science"
       ]
-    },
-    {
-      "id": "4b3f15d1603d",
-      "title": "This is the gaming laptop that makes desktops obsolete for me",
-      "excerpt": "The MSI Raider 16 Max HX combines powerful current-gen hardware with a revamped cooling system and a stunning 240Hz OLED screen.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-29T13:15:40.000Z",
-      "url": "https://www.zdnet.com/article/msi-raider-16-max-hx-review/"
     },
     {
       "id": "61b89f19552e",
@@ -318,7 +701,7 @@
       "excerpt": "There aren't many weather apps for Android Auto, but the ones I found work very well.",
       "source": "ZDNET",
       "category": "IT",
-      "publishedAt": "2026-05-29T12:01:03.000Z",
+      "publishedAt": "2026-05-29T12:01:00.000Z",
       "url": "https://www.zdnet.com/article/best-android-auto-weather-apps/"
     },
     {
@@ -329,370 +712,6 @@
       "category": "IT",
       "publishedAt": "2026-05-29T12:00:45.000Z",
       "url": "https://www.zdnet.com/article/5-best-practices-for-migrating-to-a-new-crm/"
-    },
-    {
-      "id": "daac52c1ca42",
-      "title": "Check out real-life AI prototypes from the Futures Lab.",
-      "excerpt": "University of Waterloo students develop AI prototypes like sign language tutors to reshape the future of education and work.",
-      "source": "Google AI Blog",
-      "category": "AI",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
-      "tags": [
-        "Learning & Education",
-        "AI"
-      ]
-    },
-    {
-      "id": "b87402dcad4d",
-      "title": "This chip startup just raised $135M on a bet that AI’s biggest bottleneck isn’t compute — it’s memory",
-      "excerpt": "South Korean chip startup XCENA is betting that AI's real bottleneck is not compute, but memory.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "url": "https://techcrunch.com/2026/05/29/xcena-secures-135m-at-570m-valuation-betting-on-memory-as-ais-real-bottleneck/",
-      "tags": [
-        "AI",
-        "Startups",
-        "dram",
-        "memory chip shortage",
-        "memory chips",
-        "Samsung Electronics"
-      ]
-    },
-    {
-      "id": "2eb52fd30363",
-      "title": "ChatGPT blindly trusts browser content, turning the page into a payload",
-      "excerpt": "You and me go ChatGPhish-ing in the dark",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "url": "https://www.theregister.com/research/2026/05/29/chatgpt-prompt-injection-turns-web-pages-into-phishing-lures/5248137",
-      "image": "https://image.theregister.com/?imageId=5248172&width=800",
-      "tags": [
-        "research"
-      ]
-    },
-    {
-      "id": "ee2f520aff6c",
-      "title": "Russia-linked threat group put ChatGPT to work from lure to payload",
-      "excerpt": "Researchers say 'GREYVIBE' crew used AI tools throughout a campaign targeting Ukrainian military and government",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-29T11:49:45.000Z",
-      "url": "https://www.theregister.com/research/2026/05/29/russia-linked-threat-group-put-chatgpt-to-work-from-lure-to-payload/5248368",
-      "image": "https://image.theregister.com/?imageId=5248389&width=800",
-      "tags": [
-        "research"
-      ]
-    },
-    {
-      "id": "67363e2960f6",
-      "title": "Blue Origin's New Glenn makes a crater-sized dent in Artemis plans",
-      "excerpt": "Explosion wrecks rocket and pad, leaving NASA's lunar ambitions looking less than launch-ready",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-29T11:28:31.000Z",
-      "url": "https://www.theregister.com/science/2026/05/29/blue-origins-new-glenn-makes-a-crater-sized-dent-in-artemis-plans/5248336",
-      "image": "https://image.theregister.com/?imageId=5248404&width=800",
-      "tags": [
-        "science"
-      ]
-    },
-    {
-      "id": "8a3bff489dc6",
-      "title": "This Lenovo laptop I tested rivals the MacBook Air in ways Windows PCs once struggled in",
-      "excerpt": "The Slim 7x (2026) has impressive performance improvements, but its target user - the modern professional - remains the same.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-29T11:00:38.000Z",
-      "url": "https://www.zdnet.com/article/lenovo-yoga-slim-7x-review/"
-    },
-    {
-      "id": "27d82c09f7fe",
-      "title": "ShinyHunters adds Charter to trophy shelf after 4.9M customer records leak",
-      "excerpt": "Telco giant says no sensitive data was taken, though names, addresses, phones, and emails are now out there",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-29T10:22:31.000Z",
-      "url": "https://www.theregister.com/cyber-crime/2026/05/29/shinyhunters-adds-charter-to-trophy-shelf-after-49m-customer-records-leak/5248281",
-      "image": "https://image.theregister.com/?imageId=260501&width=800",
-      "tags": [
-        "cyber-crime"
-      ]
-    },
-    {
-      "id": "8337eeb248ea",
-      "title": "Strengthening societal resilience with Rosalind Biodefense",
-      "excerpt": "OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI.",
-      "source": "OpenAI News",
-      "category": "AI",
-      "publishedAt": "2026-05-29T03:00:00.000Z",
-      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
-      "tags": [
-        "Product"
-      ]
-    },
-    {
-      "id": "aad485663242",
-      "title": "4 Android Auto developer settings that make driving so much easier - how to enable them",
-      "excerpt": "These developer settings can completely change how your Android Auto looks and operates.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-29T01:44:00.000Z",
-      "url": "https://www.zdnet.com/article/android-auto-hidden-developer-settings-my-favorites/"
-    },
-    {
-      "id": "504d920ffaee",
-      "title": "Sony's most premium ANC headphones yet made luxury audio click for me",
-      "excerpt": "The special-edition pair of 1000X-series headphones strikes a balance between modern style and functionality.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-29T01:39:00.000Z",
-      "url": "https://www.zdnet.com/article/sony-1000-x-the-collexion-review/"
-    },
-    {
-      "id": "5471d9492ea3",
-      "title": "Glean’s top line crosses $300M as AI budget cutting becomes its major selling point",
-      "excerpt": "The enterprise AI search startup tripled its annual revenue even as tech giants entered the category.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-29T00:44:37.000Z",
-      "url": "https://techcrunch.com/2026/05/28/gleans-top-line-crosses-300m-as-ai-budget-cutting-becomes-its-major-selling-point/",
-      "tags": [
-        "AI",
-        "Enterprise",
-        "Startups",
-        "AI search",
-        "Glean",
-        "revenue"
-      ]
-    },
-    {
-      "id": "e157285d39dc",
-      "title": "Troops’ phones gave away location data to foreign adversaries",
-      "excerpt": "Lawmakers push DoD to tighten smartphone controls after adversaries exploited commercial tracking data",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-28T21:35:36.000Z",
-      "url": "https://www.theregister.com/security/2026/05/28/troops-phones-leaked-location-data-to-foreign-adversaries/5248108",
-      "image": "https://image.theregister.com/?imageId=225434&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "12919de6dcce",
-      "title": "The internet is being rebuilt for machines",
-      "excerpt": "As AI agents move from experiments to production, AWS, Cloudflare, and others are redesigning cloud infrastructure for a future dominated by machine-generated internet traffic instead of human users.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-28T21:24:01.000Z",
-      "url": "https://techcrunch.com/2026/05/28/the-internet-is-being-rebuilt-for-machines/",
-      "tags": [
-        "AI",
-        "agentic search",
-        "AI agents",
-        "AWS",
-        "aws opensearch serverless"
-      ]
-    },
-    {
-      "id": "7aa8f8a40756",
-      "title": "AI Model Release Tracker: Opus 4.8's misalignment rates similar to Claude Mythos Preview",
-      "excerpt": "Not every new model is all it's cracked up to be. Our tracker keeps each release in context with its peers, so you know which models are worth your time.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-05-28T21:11:11.000Z",
-      "url": "https://www.zdnet.com/article/ai-model-release-tracker/"
-    },
-    {
-      "id": "7f647e57ab8a",
-      "title": "Perplexity launches Bumblebee: How its new read-only dev scanner differs from Chainguard",
-      "excerpt": "The AI company's Bumblebee tool tackles your most urgent question after any supply‑chain advisory: Do your programmers have this malware installed?",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-05-28T21:01:24.000Z",
-      "url": "https://www.zdnet.com/article/perplexity-launches-bumblebee-how-its-new-read-only-dev-scanner-differs-from-chainguard/"
-    },
-    {
-      "id": "bc3ca44337a2",
-      "title": "Fed up with vibe coders, dev sneaks data-nuking prompt injection into their code",
-      "excerpt": "Undisclosed addition in jqwik instructed AI coding agents to delete app output.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "publishedAt": "2026-05-28T20:29:53.000Z",
-      "url": "https://arstechnica.com/security/2026/05/fed-up-with-vibe-coders-dev-sneaks-data-nuking-prompt-injection-into-their-code/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/01/coding_robots_agents-1152x648.jpg",
-      "tags": [
-        "AI",
-        "Biz & IT",
-        "Security",
-        "AI agents",
-        "prompt injections",
-        "vibe coding"
-      ]
-    },
-    {
-      "id": "c34309c86f48",
-      "title": "Disgruntled 0-day hunter 'humiliated' by Microsoft pledges 'bone shattering drop' as Redmond calls cops",
-      "excerpt": "Six 0-days, three under active exploitation, more to come on July 14?",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-28T20:19:09.000Z",
-      "url": "https://www.theregister.com/security/2026/05/28/microsoft-0-day-feud-escalates-as-researcher-threatens-another-windows-exploit-dump/5248085",
-      "image": "https://image.theregister.com/?imageId=254471&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "69f6900cd4b0",
-      "title": "Nintendo’s newest WarioWare is a weirdo smartphone app",
-      "excerpt": "A decade ago, Nintendo made a big splash into the world of mobile gaming with a new Super Mario platformer directed by none other than Shigeru Miyamoto. But even though the game proved popular, it wasn't the success t...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-28T20:16:16.000Z",
-      "url": "https://www.theverge.com/games/939283/pictonico-nintendo-mobile-game",
-      "tags": [
-        "Analysis",
-        "Entertainment",
-        "Gaming",
-        "Nintendo",
-        "Report"
-      ]
-    },
-    {
-      "id": "11e6e2adfb18",
-      "title": "Microsoft 365 Copilot gets a speed boost and cleaner design",
-      "excerpt": "Microsoft is launching a revamped version of Microsoft 365 Copilot, offering a cleaner design that the company claims loads twice as fast. As part of this update, Copilot will provide more reliable and structured resp...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-05-28T20:14:07.000Z",
-      "url": "https://www.theverge.com/tech/939273/microsoft-365-copilot-redesign",
-      "tags": [
-        "AI",
-        "Microsoft",
-        "News",
-        "Tech"
-      ]
-    },
-    {
-      "id": "8f55d62b8b18",
-      "title": "Amazon’s last-gen Paperwhite is on sale for less than the entry-level Kindle",
-      "excerpt": "If you like to read by the pool or at the beach, the 2021 Kindle Paperwhite remains one of the best e-readers available despite its age. That’s because, unlike Amazon’s latest entry-level Kindle, the last-gen Paperwhi...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-28T20:10:09.000Z",
-      "url": "https://www.theverge.com/gadgets/939259/amazon-kindle-paperwhite-2021-woot-dad-tech-sale",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Tech",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "e14094841cd1",
-      "title": "Asana acquires no-code agent-builder StackAI",
-      "excerpt": "Asana will incorporate StackAI into its growing suite of AI workflow tools.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-28T20:06:07.000Z",
-      "url": "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/",
-      "tags": [
-        "AI",
-        "acquisition",
-        "Asana",
-        "Automation",
-        "Stack AI"
-      ]
-    },
-    {
-      "id": "15b3d2f4d2c6",
-      "title": "Snowflake buys Natoma to help freeze out rogue agents",
-      "excerpt": "It is the database titan’s sixth acquisition announcement since June 2025",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-28T19:52:47.000Z",
-      "url": "https://www.theregister.com/ai-ml/2026/05/28/snowflake-buys-natoma-to-help-freeze-out-rogue-agents/5248062",
-      "image": "https://image.theregister.com/?imageId=5248082&width=800",
-      "tags": [
-        "ai + ml"
-      ]
-    },
-    {
-      "id": "dc040f131c1f",
-      "title": "Disabled ACR on your TV? I set up a router-based VPN for further protection - here's how",
-      "excerpt": "Installing a VPN on your smart TV blocks hackers from accessing your network and stealing your data. But there are benefits to the content, too.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-28T19:00:48.000Z",
-      "url": "https://www.zdnet.com/article/how-to-add-a-vpn-to-your-smart-tv/"
-    },
-    {
-      "id": "7270867c0523",
-      "title": "Google, Canonical team up to certify Ubuntu images for TPU VMs",
-      "excerpt": "Chocolate Factory shifts Tensor Processing Unit Ubuntu support back upstream",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-28T19:00:00.000Z",
-      "url": "https://www.theregister.com/off-prem/2026/05/28/google-canonical-team-up-to-certify-ubuntu-images-for-tpu-vms/5248028",
-      "image": "https://image.theregister.com/?imageId=261674&width=800",
-      "tags": [
-        "off-prem"
-      ]
-    },
-    {
-      "id": "9ee607688cc2",
-      "title": "Anthropic raises $65 billion, nears $1T valuation ahead of IPO",
-      "excerpt": "Anthropic has closed a $65 billion Series H round at a $965 billion post-money valuation, marking what could be the AI startup's final private fundraise before a highly anticipated IPO.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-28T18:52:51.000Z",
-      "url": "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/",
-      "tags": [
-        "AI",
-        "Fundraising",
-        "Anthropic",
-        "Claude",
-        "OpenAI"
-      ]
-    },
-    {
-      "id": "cc1088edb6ae",
-      "title": "Motorola’s last-gen Razr Ultra is almost half off",
-      "excerpt": "Motorola’s latest Razr Ultra proves that its flip foldable format has evolved to become more than just a nostalgic gimmick. I’d understand if you’re not interested in shelling out $1,499.99 for the 2026 model, but the...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-28T18:33:08.000Z",
-      "url": "https://www.theverge.com/gadgets/938621/razr-ultra-roborock-qrevo-curv-2-robot-vacuum-deal-sale",
-      "tags": [
-        "Deals",
-        "Foldable Phones",
-        "Gadgets",
-        "Mobile",
-        "Tech",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "350fe0bcb65e",
-      "title": "Just like gold and oil, we’ll soon be able to trade AI token futures",
-      "excerpt": "Large exchanges are designing derivative products around AI tokens, which are increasingly being considered less a computational output and more a raw material input, like electricity or bandwidth.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-28T18:32:25.000Z",
-      "url": "https://techcrunch.com/2026/05/28/just-like-gold-and-oil-well-soon-be-able-to-trade-ai-token-futures/",
-      "tags": [
-        "AI",
-        "AI futures",
-        "ai tokens",
-        "CME Group",
-        "commodities",
-        "Intercontinental Exchange"
-      ]
     }
   ]
 }
