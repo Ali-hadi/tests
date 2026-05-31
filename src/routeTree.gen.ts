@@ -22,6 +22,16 @@ import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AiSolutionsRouteImport } from './routes/ai-solutions'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ToolsWebsiteGeneratorRouteImport } from './routes/tools.website-generator'
+import { Route as ToolsThumbnailGeneratorRouteImport } from './routes/tools.thumbnail-generator'
+import { Route as ToolsResumeBuilderRouteImport } from './routes/tools.resume-builder'
+import { Route as ToolsProposalGeneratorRouteImport } from './routes/tools.proposal-generator'
+import { Route as ToolsPortfolioBuilderRouteImport } from './routes/tools.portfolio-builder'
+import { Route as ToolsDomainGeneratorRouteImport } from './routes/tools.domain-generator'
+import { Route as ToolsChatbotSaasRouteImport } from './routes/tools.chatbot-saas'
+import { Route as ToolsCaptionGeneratorRouteImport } from './routes/tools.caption-generator'
+import { Route as ToolsAiHumanizerRouteImport } from './routes/tools.ai-humanizer'
+import { Route as ToolsAiDetectorRouteImport } from './routes/tools.ai-detector'
 import { Route as ToolsToolIdRouteImport } from './routes/tools.$toolId'
 
 const ToolsRoute = ToolsRouteImport.update({
@@ -89,6 +99,56 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ToolsWebsiteGeneratorRoute = ToolsWebsiteGeneratorRouteImport.update({
+  id: '/website-generator',
+  path: '/website-generator',
+  getParentRoute: () => ToolsRoute,
+} as any)
+const ToolsThumbnailGeneratorRoute = ToolsThumbnailGeneratorRouteImport.update({
+  id: '/thumbnail-generator',
+  path: '/thumbnail-generator',
+  getParentRoute: () => ToolsRoute,
+} as any)
+const ToolsResumeBuilderRoute = ToolsResumeBuilderRouteImport.update({
+  id: '/resume-builder',
+  path: '/resume-builder',
+  getParentRoute: () => ToolsRoute,
+} as any)
+const ToolsProposalGeneratorRoute = ToolsProposalGeneratorRouteImport.update({
+  id: '/proposal-generator',
+  path: '/proposal-generator',
+  getParentRoute: () => ToolsRoute,
+} as any)
+const ToolsPortfolioBuilderRoute = ToolsPortfolioBuilderRouteImport.update({
+  id: '/portfolio-builder',
+  path: '/portfolio-builder',
+  getParentRoute: () => ToolsRoute,
+} as any)
+const ToolsDomainGeneratorRoute = ToolsDomainGeneratorRouteImport.update({
+  id: '/domain-generator',
+  path: '/domain-generator',
+  getParentRoute: () => ToolsRoute,
+} as any)
+const ToolsChatbotSaasRoute = ToolsChatbotSaasRouteImport.update({
+  id: '/chatbot-saas',
+  path: '/chatbot-saas',
+  getParentRoute: () => ToolsRoute,
+} as any)
+const ToolsCaptionGeneratorRoute = ToolsCaptionGeneratorRouteImport.update({
+  id: '/caption-generator',
+  path: '/caption-generator',
+  getParentRoute: () => ToolsRoute,
+} as any)
+const ToolsAiHumanizerRoute = ToolsAiHumanizerRouteImport.update({
+  id: '/ai-humanizer',
+  path: '/ai-humanizer',
+  getParentRoute: () => ToolsRoute,
+} as any)
+const ToolsAiDetectorRoute = ToolsAiDetectorRouteImport.update({
+  id: '/ai-detector',
+  path: '/ai-detector',
+  getParentRoute: () => ToolsRoute,
+} as any)
 const ToolsToolIdRoute = ToolsToolIdRouteImport.update({
   id: '/$toolId',
   path: '/$toolId',
@@ -110,6 +170,16 @@ export interface FileRoutesByFullPath {
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/tools': typeof ToolsRouteWithChildren
   '/tools/$toolId': typeof ToolsToolIdRoute
+  '/tools/ai-detector': typeof ToolsAiDetectorRoute
+  '/tools/ai-humanizer': typeof ToolsAiHumanizerRoute
+  '/tools/caption-generator': typeof ToolsCaptionGeneratorRoute
+  '/tools/chatbot-saas': typeof ToolsChatbotSaasRoute
+  '/tools/domain-generator': typeof ToolsDomainGeneratorRoute
+  '/tools/portfolio-builder': typeof ToolsPortfolioBuilderRoute
+  '/tools/proposal-generator': typeof ToolsProposalGeneratorRoute
+  '/tools/resume-builder': typeof ToolsResumeBuilderRoute
+  '/tools/thumbnail-generator': typeof ToolsThumbnailGeneratorRoute
+  '/tools/website-generator': typeof ToolsWebsiteGeneratorRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -126,6 +196,16 @@ export interface FileRoutesByTo {
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/tools': typeof ToolsRouteWithChildren
   '/tools/$toolId': typeof ToolsToolIdRoute
+  '/tools/ai-detector': typeof ToolsAiDetectorRoute
+  '/tools/ai-humanizer': typeof ToolsAiHumanizerRoute
+  '/tools/caption-generator': typeof ToolsCaptionGeneratorRoute
+  '/tools/chatbot-saas': typeof ToolsChatbotSaasRoute
+  '/tools/domain-generator': typeof ToolsDomainGeneratorRoute
+  '/tools/portfolio-builder': typeof ToolsPortfolioBuilderRoute
+  '/tools/proposal-generator': typeof ToolsProposalGeneratorRoute
+  '/tools/resume-builder': typeof ToolsResumeBuilderRoute
+  '/tools/thumbnail-generator': typeof ToolsThumbnailGeneratorRoute
+  '/tools/website-generator': typeof ToolsWebsiteGeneratorRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -143,6 +223,16 @@ export interface FileRoutesById {
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/tools': typeof ToolsRouteWithChildren
   '/tools/$toolId': typeof ToolsToolIdRoute
+  '/tools/ai-detector': typeof ToolsAiDetectorRoute
+  '/tools/ai-humanizer': typeof ToolsAiHumanizerRoute
+  '/tools/caption-generator': typeof ToolsCaptionGeneratorRoute
+  '/tools/chatbot-saas': typeof ToolsChatbotSaasRoute
+  '/tools/domain-generator': typeof ToolsDomainGeneratorRoute
+  '/tools/portfolio-builder': typeof ToolsPortfolioBuilderRoute
+  '/tools/proposal-generator': typeof ToolsProposalGeneratorRoute
+  '/tools/resume-builder': typeof ToolsResumeBuilderRoute
+  '/tools/thumbnail-generator': typeof ToolsThumbnailGeneratorRoute
+  '/tools/website-generator': typeof ToolsWebsiteGeneratorRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -161,6 +251,16 @@ export interface FileRouteTypes {
     | '/terms-and-conditions'
     | '/tools'
     | '/tools/$toolId'
+    | '/tools/ai-detector'
+    | '/tools/ai-humanizer'
+    | '/tools/caption-generator'
+    | '/tools/chatbot-saas'
+    | '/tools/domain-generator'
+    | '/tools/portfolio-builder'
+    | '/tools/proposal-generator'
+    | '/tools/resume-builder'
+    | '/tools/thumbnail-generator'
+    | '/tools/website-generator'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -177,6 +277,16 @@ export interface FileRouteTypes {
     | '/terms-and-conditions'
     | '/tools'
     | '/tools/$toolId'
+    | '/tools/ai-detector'
+    | '/tools/ai-humanizer'
+    | '/tools/caption-generator'
+    | '/tools/chatbot-saas'
+    | '/tools/domain-generator'
+    | '/tools/portfolio-builder'
+    | '/tools/proposal-generator'
+    | '/tools/resume-builder'
+    | '/tools/thumbnail-generator'
+    | '/tools/website-generator'
   id:
     | '__root__'
     | '/'
@@ -193,6 +303,16 @@ export interface FileRouteTypes {
     | '/terms-and-conditions'
     | '/tools'
     | '/tools/$toolId'
+    | '/tools/ai-detector'
+    | '/tools/ai-humanizer'
+    | '/tools/caption-generator'
+    | '/tools/chatbot-saas'
+    | '/tools/domain-generator'
+    | '/tools/portfolio-builder'
+    | '/tools/proposal-generator'
+    | '/tools/resume-builder'
+    | '/tools/thumbnail-generator'
+    | '/tools/website-generator'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -304,6 +424,76 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/website-generator': {
+      id: '/tools/website-generator'
+      path: '/website-generator'
+      fullPath: '/tools/website-generator'
+      preLoaderRoute: typeof ToolsWebsiteGeneratorRouteImport
+      parentRoute: typeof ToolsRoute
+    }
+    '/tools/thumbnail-generator': {
+      id: '/tools/thumbnail-generator'
+      path: '/thumbnail-generator'
+      fullPath: '/tools/thumbnail-generator'
+      preLoaderRoute: typeof ToolsThumbnailGeneratorRouteImport
+      parentRoute: typeof ToolsRoute
+    }
+    '/tools/resume-builder': {
+      id: '/tools/resume-builder'
+      path: '/resume-builder'
+      fullPath: '/tools/resume-builder'
+      preLoaderRoute: typeof ToolsResumeBuilderRouteImport
+      parentRoute: typeof ToolsRoute
+    }
+    '/tools/proposal-generator': {
+      id: '/tools/proposal-generator'
+      path: '/proposal-generator'
+      fullPath: '/tools/proposal-generator'
+      preLoaderRoute: typeof ToolsProposalGeneratorRouteImport
+      parentRoute: typeof ToolsRoute
+    }
+    '/tools/portfolio-builder': {
+      id: '/tools/portfolio-builder'
+      path: '/portfolio-builder'
+      fullPath: '/tools/portfolio-builder'
+      preLoaderRoute: typeof ToolsPortfolioBuilderRouteImport
+      parentRoute: typeof ToolsRoute
+    }
+    '/tools/domain-generator': {
+      id: '/tools/domain-generator'
+      path: '/domain-generator'
+      fullPath: '/tools/domain-generator'
+      preLoaderRoute: typeof ToolsDomainGeneratorRouteImport
+      parentRoute: typeof ToolsRoute
+    }
+    '/tools/chatbot-saas': {
+      id: '/tools/chatbot-saas'
+      path: '/chatbot-saas'
+      fullPath: '/tools/chatbot-saas'
+      preLoaderRoute: typeof ToolsChatbotSaasRouteImport
+      parentRoute: typeof ToolsRoute
+    }
+    '/tools/caption-generator': {
+      id: '/tools/caption-generator'
+      path: '/caption-generator'
+      fullPath: '/tools/caption-generator'
+      preLoaderRoute: typeof ToolsCaptionGeneratorRouteImport
+      parentRoute: typeof ToolsRoute
+    }
+    '/tools/ai-humanizer': {
+      id: '/tools/ai-humanizer'
+      path: '/ai-humanizer'
+      fullPath: '/tools/ai-humanizer'
+      preLoaderRoute: typeof ToolsAiHumanizerRouteImport
+      parentRoute: typeof ToolsRoute
+    }
+    '/tools/ai-detector': {
+      id: '/tools/ai-detector'
+      path: '/ai-detector'
+      fullPath: '/tools/ai-detector'
+      preLoaderRoute: typeof ToolsAiDetectorRouteImport
+      parentRoute: typeof ToolsRoute
+    }
     '/tools/$toolId': {
       id: '/tools/$toolId'
       path: '/$toolId'
@@ -316,10 +506,30 @@ declare module '@tanstack/react-router' {
 
 interface ToolsRouteChildren {
   ToolsToolIdRoute: typeof ToolsToolIdRoute
+  ToolsAiDetectorRoute: typeof ToolsAiDetectorRoute
+  ToolsAiHumanizerRoute: typeof ToolsAiHumanizerRoute
+  ToolsCaptionGeneratorRoute: typeof ToolsCaptionGeneratorRoute
+  ToolsChatbotSaasRoute: typeof ToolsChatbotSaasRoute
+  ToolsDomainGeneratorRoute: typeof ToolsDomainGeneratorRoute
+  ToolsPortfolioBuilderRoute: typeof ToolsPortfolioBuilderRoute
+  ToolsProposalGeneratorRoute: typeof ToolsProposalGeneratorRoute
+  ToolsResumeBuilderRoute: typeof ToolsResumeBuilderRoute
+  ToolsThumbnailGeneratorRoute: typeof ToolsThumbnailGeneratorRoute
+  ToolsWebsiteGeneratorRoute: typeof ToolsWebsiteGeneratorRoute
 }
 
 const ToolsRouteChildren: ToolsRouteChildren = {
   ToolsToolIdRoute: ToolsToolIdRoute,
+  ToolsAiDetectorRoute: ToolsAiDetectorRoute,
+  ToolsAiHumanizerRoute: ToolsAiHumanizerRoute,
+  ToolsCaptionGeneratorRoute: ToolsCaptionGeneratorRoute,
+  ToolsChatbotSaasRoute: ToolsChatbotSaasRoute,
+  ToolsDomainGeneratorRoute: ToolsDomainGeneratorRoute,
+  ToolsPortfolioBuilderRoute: ToolsPortfolioBuilderRoute,
+  ToolsProposalGeneratorRoute: ToolsProposalGeneratorRoute,
+  ToolsResumeBuilderRoute: ToolsResumeBuilderRoute,
+  ToolsThumbnailGeneratorRoute: ToolsThumbnailGeneratorRoute,
+  ToolsWebsiteGeneratorRoute: ToolsWebsiteGeneratorRoute,
 }
 
 const ToolsRouteWithChildren = ToolsRoute._addFileChildren(ToolsRouteChildren)
