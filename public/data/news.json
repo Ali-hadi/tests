@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T04:01:47.895Z",
+  "generatedAt": "2026-05-31T13:48:11.521Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,122 @@
     }
   ],
   "posts": [
+    {
+      "id": "e1869b4f20a6",
+      "title": "A meteor exploded off the coast of Boston",
+      "excerpt": "On Saturday, at around 2:06 pm ET, a meteor streaked over the northeastern US and exploded north of Cape Cod Bay. The fireball was caught on camera by several people, shook houses, and can even be seen clearly in sate...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-31T13:44:46.000Z",
+      "url": "https://www.theverge.com/science/940467/meteor-exploded-new-england",
+      "tags": [
+        "News",
+        "Science",
+        "Space"
+      ]
+    },
+    {
+      "id": "cc4e5089991f",
+      "title": "How I turned my old Android phone into a Wi-Fi extender - and fixed dead spots at home",
+      "excerpt": "The process is free, easy to set up, and doesn't use mobile data while helping you avoid upgrading to a mesh network.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-31T13:00:37.000Z",
+      "url": "https://www.zdnet.com/article/how-to-turn-android-phone-into-wifi-extender-for-free/"
+    },
+    {
+      "id": "2fb8fa2bf432",
+      "title": "I went looking for the AI weed vape that gives you Bitcoin for smoking",
+      "excerpt": "The crypto weed vape found me on 4/20, the high holiday of cannabis enthusiasts everywhere. It arrived over Slack with the thumbnail of a man exhaling a plume of vapor, the words \"every hit delivers Bitcoin\" emblazone...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-05-31T13:00:00.000Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/933916/ai-powered-crypto-cannabis-vape",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "31772f0558f4",
+      "title": "User-replaceable batteries are coming back in a big way",
+      "excerpt": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more news about gadgets and smartphones, follow Dominic Preston. The Stepback arrives in our subscribers' inboxes at...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-31T12:00:00.000Z",
+      "url": "https://www.theverge.com/column/939026/user-replaceable-batteries-eu-european-union-legislation",
+      "tags": [
+        "Column",
+        "Gadgets",
+        "Tech",
+        "The Stepback"
+      ]
+    },
+    {
+      "id": "c2ad6977ccb5",
+      "title": "Your TV's RS-232 port is a versatile automation tool - how to unlock its full potential",
+      "excerpt": "The RS-232 serial port on your smart TV isn't just for professional diagnostics. Here's how to use it for more advanced programming.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-31T11:00:41.000Z",
+      "url": "https://www.zdnet.com/article/what-is-the-tvs-rss232-serial-port-and-what-it-can-do/"
+    },
+    {
+      "id": "f17ce0571875",
+      "title": "The Mercedes CLA offers great EV specs for an average price",
+      "excerpt": "Despite headwinds from the current administration, automakers continue to release well-equipped EVs with bigger battery packs and increasingly faster charging speeds. For those who want to travel further between plugg...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-05-31T11:00:00.000Z",
+      "url": "https://www.theverge.com/transportation/940387/mercedes-cla-350-ev-review-price-specs",
+      "tags": [
+        "Cars",
+        "Electric Cars",
+        "Hands-on",
+        "Mercedes-Benz",
+        "Reviews",
+        "Tech"
+      ]
+    },
+    {
+      "id": "bc0512029aea",
+      "title": "Quantum computing looms, and your security is nowhere near ready",
+      "excerpt": "Quantum is coming soon to an enterprise near you. But that shift brings significant security concerns.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-31T10:00:49.000Z",
+      "url": "https://www.zdnet.com/article/as-quantum-computing-emerges-some-hard-deadlines-loom/"
+    },
+    {
+      "id": "2d07247a2430",
+      "title": "This hidden FaceTime feature is incredibly useful - and surprised my own family",
+      "excerpt": "If someone missed your FaceTime call, try leaving them a video message. Here's how.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-31T10:00:36.000Z",
+      "url": "https://www.zdnet.com/article/facetime-voicemail-feature-incredibly-useful-surprised-family/"
+    },
+    {
+      "id": "96ed1a1ad5ba",
+      "title": "Why I switched to MyRadar as my main Android Auto weather app for road trip storm tracking",
+      "excerpt": "There aren't many weather apps for Android Auto, but there's one that easily rises above the rest.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-05-31T09:00:00.000Z",
+      "url": "https://www.zdnet.com/article/best-android-auto-weather-apps/"
+    },
+    {
+      "id": "49b161d12bd5",
+      "title": "Netflix wiz creates app to slash AI bills, then open sources it",
+      "excerpt": "Project Headroom could save you big money, too",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-05-31T07:00:00.000Z",
+      "url": "https://www.theregister.com/ai-ml/2026/05/31/netflix-wiz-creates-app-to-slash-ai-bills-then-open-sources-it/5248702",
+      "image": "https://image.theregister.com/?imageId=5248730&width=800",
+      "tags": [
+        "ai + ml"
+      ]
+    },
     {
       "id": "fd118d380717",
       "title": "I'm an iPhone user who switches to Gemini with Android Auto in the car - why I don't regret it",
@@ -560,151 +676,6 @@
         "evergreens",
         "Glossary"
       ]
-    },
-    {
-      "id": "db56f286ea45",
-      "title": "Botnet of more than 17 million devices dismantled",
-      "excerpt": "The botnet was reportedly tied to a Russia-based residential proxy network.",
-      "source": "Ars Technica",
-      "category": "IT",
-      "publishedAt": "2026-05-29T18:46:33.000Z",
-      "url": "https://arstechnica.com/security/2026/05/botnet-of-more-than-17-million-devices-dismantled/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2020/04/botnet6.jpg",
-      "tags": [
-        "Biz & IT",
-        "Security",
-        "botnets",
-        "crime",
-        "residential proxy networks"
-      ]
-    },
-    {
-      "id": "52246e9a188f",
-      "title": "No fix yet for critical RCE bug in open-source Git service Gogs - exploit module is out",
-      "excerpt": "Researcher reported the vuln in March. Maintainers haven't responded to his messages since",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-05-29T18:26:48.000Z",
-      "url": "https://www.theregister.com/security/2026/05/29/no-fix-yet-for-critical-gogs-rce-bug-exploit-module-is-out/5248691",
-      "image": "https://image.theregister.com/?imageId=5248726&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "74e8a7cb166f",
-      "title": "What happens when companies become too AI-pilled?",
-      "excerpt": "The people deciding that AI can replace your job are also the ones least likely to understand what your job truly involves, according to Box founder Aaron Levie, who pointed to this as an example of “AI psychosis.” In...",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-29T17:57:05.000Z",
-      "url": "https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled/",
-      "tags": [
-        "AI",
-        "Aaron Levie",
-        "AI agents",
-        "AI layoffs",
-        "ai psychosis",
-        "Amazon competition"
-      ]
-    },
-    {
-      "id": "7cf4cb4b6cfd",
-      "title": "Tech companies desperately want to film you doing chores",
-      "excerpt": "This week, an AI training startup called Shift said it would clean New Yorkers' homes for free. It has plans to expand into other cities as well, including London, and looking around my flat, I get the appeal. But the...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-05-29T17:37:43.000Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/940007/ai-companies-will-pay-for-robot-training-data",
-      "tags": [
-        "AI",
-        "Report",
-        "Robot",
-        "Tech"
-      ]
-    },
-    {
-      "id": "bf7abda633b2",
-      "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
-      "excerpt": "Watch 9 videos showing the capabilities of Gemini Omni and Gemini 3.5, announced at Google I/O 2026.",
-      "source": "Google AI Blog",
-      "category": "AI",
-      "publishedAt": "2026-05-29T17:30:00.000Z",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
-      "tags": [
-        "Gemini models",
-        "Google DeepMind",
-        "AI"
-      ]
-    },
-    {
-      "id": "dd03918bf539",
-      "title": "After Nvidia’s $20B not-acqui-hire, AI chip startup Groq reportedly raising $650M",
-      "excerpt": "Chipmaker Groq is looking to raise $650 million in internal funding as it pivots from hardware to focus more on AI inference, the process of refining the way AI models respond to prompted requests, per Axios.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-05-29T17:27:13.000Z",
-      "url": "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/",
-      "tags": [
-        "AI",
-        "Startups",
-        "Venture",
-        "AI chips",
-        "groq",
-        "In Brief"
-      ]
-    },
-    {
-      "id": "ff2dc1a00fda",
-      "title": "The Verge’s 2026 high school graduation gift guide",
-      "excerpt": "High school graduation is a time of change that might be felt more deeply by family members than by the grads themselves. While some grads may immediately embark on a career path, many continue their education and del...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-29T17:00:00.000Z",
-      "url": "https://www.theverge.com/gadgets/932602/best-high-school-graduation-gift-ideas",
-      "tags": [
-        "Gadgets",
-        "Gift Guides",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "7d1c63939c8e",
-      "title": "QEMU mulls relaxing AI contribution ban",
-      "excerpt": "Red Hat engineer reckons the balance of risk has shifted, but core code stays off limits",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-05-29T16:55:00.000Z",
-      "url": "https://www.theregister.com/ai-ml/2026/05/29/qemu-mulls-relaxing-ai-contribution-ban/5248638",
-      "image": "https://image.theregister.com/?imageId=260175&width=800",
-      "tags": [
-        "ai + ml"
-      ]
-    },
-    {
-      "id": "d0a9b8562b13",
-      "title": "Microsoft delays Fable (again) to avoid GTA VI",
-      "excerpt": "Microsoft has delayed its upcoming Fable reboot once again. The game was set to launch in autumn 2026, but Microsoft now says that Fable will come out in February 2027. However, it will show a \"new look\" at the game a...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-05-29T16:51:08.000Z",
-      "url": "https://www.theverge.com/games/939991/microsoft-fable-xbox-delay-gta-vi",
-      "tags": [
-        "Entertainment",
-        "Gaming",
-        "News",
-        "Xbox"
-      ]
-    },
-    {
-      "id": "4b3f15d1603d",
-      "title": "After using this Windows laptop for work and play, I'm wondering why I still need my PC tower",
-      "excerpt": "The MSI Raider 16 Max HX combines powerful current-gen hardware with a revamped cooling system and a stunning 240Hz OLED screen.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-05-29T16:26:00.000Z",
-      "url": "https://www.zdnet.com/article/msi-raider-16-max-hx-review/"
     }
   ]
 }
