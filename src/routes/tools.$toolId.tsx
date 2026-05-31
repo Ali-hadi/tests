@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Activity,
@@ -14,6 +15,7 @@ import {
 import { motion } from "motion/react";
 import { useEffect, useMemo, useState } from "react";
 import { Reveal } from "@/components/site/Reveal";
+import { AiDetectorPage } from "@/components/tools/AiDetectorPage";
 import { createSeo } from "@/lib/seo";
 import {
   accentClasses,
@@ -28,37 +30,61 @@ import {
   type ToolTone,
 } from "./tools";
 
-export const Route = createFileRoute("/tools/$toolId")({
-  head: ({ params }) => {
-    const tool = tools.find((item) => item.id === params.toolId);
-    const title = tool
-      ? `${tool.name} | AItouchSolutions AI Tools`
-      : "AI Tool Workspace | AItouchSolutions";
-    const description = tool
-      ? `${tool.summary} Use ${tool.name} with a dedicated workspace, live preview, copy, download, share, history, and production-ready workflow structure.`
-      : "Use a dedicated AItouchSolutions AI tool page with unique UI, live preview, copy, download, share, history, and production-ready workflow structure.";
-
+export function getToolRouteHead(toolId: string) {
+  if (toolId === "ai-detector") {
     return createSeo({
-      title,
-      description,
-      path: tool ? `/tools/${tool.id}` : `/tools/${params.toolId}`,
-      keywords: tool
-        ? [
-            tool.name,
-            `${tool.shortName} tool`,
-            ...tool.features,
-            ...tool.outputs,
-            "AI tool workspace",
-            "AI SaaS tools",
-          ]
-        : ["AI tool workspace", "AI tools", "AI SaaS tools", "AI productivity tools"],
+      title: "Free AI Detector: Check ChatGPT, Gemini & More with AI Checker",
+      description:
+        "Paste any text and run AI Touch Solutions' free AI checker to review ChatGPT, Gemini, Claude, and other AI-generated writing patterns.",
+      path: "/tools/ai-detector",
+      keywords: [
+        "AI detector",
+        "free AI detector",
+        "AI checker",
+        "ChatGPT detector",
+        "Gemini detector",
+        "AI Touch Solutions AI detector",
+      ],
     });
-  },
-  component: ToolPage,
+  }
+
+  const tool = tools.find((item) => item.id === toolId);
+  const title = tool
+    ? `${tool.name} | AItouchSolutions AI Tools`
+    : "AI Tool Workspace | AItouchSolutions";
+  const description = tool
+    ? `${tool.summary} Use ${tool.name} with a dedicated workspace, live preview, copy, download, share, history, and production-ready workflow structure.`
+    : "Use a dedicated AItouchSolutions AI tool page with unique UI, live preview, copy, download, share, history, and production-ready workflow structure.";
+
+  return createSeo({
+    title,
+    description,
+    path: tool ? `/tools/${tool.id}` : `/tools/${toolId}`,
+    keywords: tool
+      ? [
+          tool.name,
+          `${tool.shortName} tool`,
+          ...tool.features,
+          ...tool.outputs,
+          "AI tool workspace",
+          "AI SaaS tools",
+        ]
+      : ["AI tool workspace", "AI tools", "AI SaaS tools", "AI productivity tools"],
+  });
+}
+
+export const Route = createFileRoute("/tools/$toolId")({
+  head: ({ params }) => getToolRouteHead(params.toolId),
+  component: DynamicToolPage,
 });
 
-function ToolPage() {
+function DynamicToolPage() {
   const { toolId } = Route.useParams();
+
+  return <ToolPageForId toolId={toolId} />;
+}
+
+export function ToolPageForId({ toolId }: { toolId: string }) {
   const foundTool = tools.find((item) => item.id === toolId);
   const tool = foundTool ?? tools[0];
   const Icon = tool.icon;
@@ -159,6 +185,10 @@ function ToolPage() {
     );
   }
 
+  if (tool.id === "ai-detector") {
+    return <AiDetectorPage />;
+  }
+
   return (
     <>
       <section className="relative overflow-hidden pt-36 pb-16 lg:pt-48 lg:pb-24">
@@ -200,30 +230,6 @@ function ToolPage() {
               </div>
             </div>
           </Reveal>
-        </div>
-      </section>
-
-      <section className="border-y border-border bg-ink py-4">
-        <div className="max-w-[1400px] mx-auto grid grid-cols-2 gap-3 px-6 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-10 lg:px-10">
-          {tools.map((item) => {
-            const ItemIcon = item.icon;
-            const isActive = item.id === tool.id;
-            return (
-              <Link
-                key={item.id}
-                to="/tools/$toolId"
-                params={{ toolId: item.id }}
-                className={`flex min-h-20 w-full flex-col items-start justify-between gap-3 rounded-md border px-3 py-3 text-left text-[10px] font-bold uppercase tracking-[0.12em] transition-all ${
-                  isActive
-                    ? `${accentClasses[item.accent]} glow-teal`
-                    : "border-border bg-background/70 text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                <ItemIcon className="h-4 w-4" />
-                {item.shortName}
-              </Link>
-            );
-          })}
         </div>
       </section>
 

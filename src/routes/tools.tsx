@@ -1,7 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 import { createFileRoute, Link, Outlet, useChildMatches } from "@tanstack/react-router";
 import {
-  Activity,
   ArrowRight,
   BarChart3,
   Bot,
@@ -9,7 +8,6 @@ import {
   BriefcaseBusiness,
   Check,
   Clipboard,
-  Copy,
   Download,
   FileText,
   Globe2,
@@ -17,18 +15,13 @@ import {
   Layers3,
   LineChart,
   Megaphone,
-  Moon,
   PenLine,
   SearchCheck,
-  Share2,
   ShieldCheck,
   Sparkles,
-  Sun,
   WandSparkles,
   type LucideIcon,
 } from "lucide-react";
-import { motion } from "motion/react";
-import { useMemo, useState } from "react";
 import { Reveal } from "@/components/site/Reveal";
 import { createSeo } from "@/lib/seo";
 
@@ -350,6 +343,23 @@ export const tools: Tool[] = [
   },
 ];
 
+const toolPagePaths = {
+  "ai-humanizer": "/tools/ai-humanizer",
+  "ai-detector": "/tools/ai-detector",
+  "resume-builder": "/tools/resume-builder",
+  "thumbnail-generator": "/tools/thumbnail-generator",
+  "proposal-generator": "/tools/proposal-generator",
+  "website-generator": "/tools/website-generator",
+  "caption-generator": "/tools/caption-generator",
+  "domain-generator": "/tools/domain-generator",
+  "portfolio-builder": "/tools/portfolio-builder",
+  "chatbot-saas": "/tools/chatbot-saas",
+} as const;
+
+export function getToolPagePath(toolId: string) {
+  return toolPagePaths[toolId as keyof typeof toolPagePaths] ?? "/tools";
+}
+
 const highlights = [
   { label: "AI tools", value: "10", icon: BrainCircuit },
   { label: "Reusable modules", value: "40+", icon: Layers3 },
@@ -543,98 +553,6 @@ function ToolsPage() {
 }
 
 function ToolsHubPage() {
-  const [activeId, setActiveId] = useState(tools[0].id);
-  const [input, setInput] = useState(tools[0].sample);
-  const [tone, setTone] = useState<ToolTone>("Professional");
-  const [theme, setTheme] = useState<"dark" | "light">("dark");
-  const [history, setHistory] = useState<string[]>([
-    "Humanizer draft saved",
-    "Detector scan exported",
-  ]);
-  const [notice, setNotice] = useState("");
-
-  const activeTool = tools.find((tool) => tool.id === activeId) ?? tools[0];
-  const hasInput = input.trim().length > 0;
-  const output = useMemo(
-    () => (hasInput ? generateOutput(activeTool, input, tone) : ""),
-    [activeTool, hasInput, input, tone],
-  );
-  const score = useMemo(
-    () => (hasInput ? buildScore(input, activeTool) : 0),
-    [activeTool, hasInput, input],
-  );
-  const aiScore = hasInput ? Math.max(2, 100 - score) : 0;
-  const words = countWords(input);
-  const characters = countCharacters(input);
-  const workspaceIsLight = theme === "light";
-
-  const switchTool = (tool: Tool, openWorkspace = false) => {
-    setActiveId(tool.id);
-    setInput(tool.sample);
-    setNotice("");
-
-    if (openWorkspace) {
-      window.setTimeout(() => {
-        document.getElementById("workspace")?.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }, 50);
-    }
-  };
-
-  const flash = (message: string) => {
-    setNotice(message);
-    window.setTimeout(() => setNotice(""), 2200);
-  };
-
-  const copyOutput = async () => {
-    await navigator.clipboard.writeText(output);
-    flash("Copied to clipboard");
-  };
-
-  const downloadOutput = () => {
-    const blob = new Blob([output], { type: "text/plain;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const anchor = document.createElement("a");
-    anchor.href = url;
-    anchor.download = `${activeTool.id}-report.txt`;
-    anchor.click();
-    URL.revokeObjectURL(url);
-    flash("Download started");
-  };
-
-  const shareOutput = async () => {
-    if (navigator.share) {
-      await navigator.share({ title: activeTool.name, text: output });
-      flash("Share sheet opened");
-      return;
-    }
-    await navigator.clipboard.writeText(output);
-    flash("Share text copied");
-  };
-
-  const submitTool = () => {
-    if (!input.trim()) {
-      flash("Add text before submitting");
-      return;
-    }
-    setHistory((items) =>
-      [`${activeTool.shortName} ${new Date().toLocaleTimeString()} submitted`, ...items].slice(
-        0,
-        6,
-      ),
-    );
-    flash(`${activeTool.shortName} submitted`);
-  };
-
-  const saveHistory = () => {
-    setHistory((items) =>
-      [`${activeTool.shortName} ${new Date().toLocaleTimeString()} saved`, ...items].slice(0, 6),
-    );
-    flash("Added to history");
-  };
-
   return (
     <>
       <section className="relative overflow-hidden pt-36 pb-20 lg:pt-48 lg:pb-28">
@@ -658,10 +576,10 @@ function ToolsHubPage() {
                 </p>
                 <div className="mt-10 flex flex-wrap gap-3">
                   <a
-                    href="#workspace"
+                    href="#tool-pages"
                     className="inline-flex items-center gap-2 rounded-md bg-teal px-5 py-3 text-xs font-bold uppercase tracking-[0.18em] text-ink transition-colors hover:bg-teal-glow"
                   >
-                    Open tools <ArrowRight className="h-4 w-4" />
+                    View tool pages <ArrowRight className="h-4 w-4" />
                   </a>
                   <Link
                     to="/contact"
@@ -690,182 +608,7 @@ function ToolsHubPage() {
         </div>
       </section>
 
-      <section className="border-y border-border bg-ink py-6">
-        <div className="max-w-[1400px] mx-auto grid grid-cols-2 gap-3 px-6 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-10 lg:px-10">
-          {tools.map((tool) => {
-            const Icon = tool.icon;
-            const isActive = activeTool.id === tool.id;
-            return (
-              <Link
-                key={tool.id}
-                to="/tools/$toolId"
-                params={{ toolId: tool.id }}
-                className={`flex min-h-20 w-full flex-col items-start justify-between gap-3 rounded-md border px-3 py-3 text-left text-[10px] font-bold uppercase tracking-[0.12em] transition-all ${
-                  isActive
-                    ? `${accentClasses[tool.accent]} glow-teal`
-                    : "border-border bg-background/70 text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                <Icon className="h-4 w-4" />
-                {tool.shortName}
-              </Link>
-            );
-          })}
-        </div>
-      </section>
-
-      <section id="workspace" className="py-24 lg:py-32">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-            <Reveal>
-              <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-teal">
-                Live workspace
-              </p>
-              <h2 className="mt-4 font-display text-4xl font-bold tracking-tight lg:text-6xl">
-                {activeTool.name}
-              </h2>
-              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground lg:text-base">
-                {activeTool.summary}
-              </p>
-            </Reveal>
-            <div className="flex w-fit rounded-md border border-border p-1">
-              <button
-                onClick={() => setTheme("dark")}
-                className={`grid h-10 w-10 place-items-center rounded-md ${
-                  theme === "dark" ? "bg-teal text-ink" : "text-muted-foreground"
-                }`}
-                aria-label="Dark workspace"
-              >
-                <Moon className="h-4 w-4" />
-              </button>
-              <button
-                onClick={() => setTheme("light")}
-                className={`grid h-10 w-10 place-items-center rounded-md ${
-                  theme === "light" ? "bg-teal text-ink" : "text-muted-foreground"
-                }`}
-                aria-label="Light workspace"
-              >
-                <Sun className="h-4 w-4" />
-              </button>
-            </div>
-          </div>
-
-          <div
-            className={`grid gap-px overflow-hidden rounded-md border ${
-              workspaceIsLight
-                ? "border-slate-200 bg-slate-200 text-slate-950"
-                : "border-border bg-border text-foreground"
-            } lg:grid-cols-[minmax(0,1fr)_380px]`}
-          >
-            <div className={workspaceIsLight ? "bg-white p-5 lg:p-8" : "bg-background p-5 lg:p-8"}>
-              <ToolExperience
-                tool={activeTool}
-                input={input}
-                setInput={setInput}
-                output={output}
-                tone={tone}
-                setTone={setTone}
-                words={words}
-                characters={characters}
-                score={score}
-                aiScore={aiScore}
-                light={workspaceIsLight}
-              />
-
-              <div className="mt-5 flex flex-wrap gap-3">
-                <button
-                  onClick={submitTool}
-                  className="inline-flex items-center gap-2 rounded-md bg-orange px-4 py-3 text-xs font-bold uppercase tracking-[0.16em] text-ink hover:bg-orange-glow"
-                >
-                  <WandSparkles className="h-4 w-4" />
-                  Submit
-                </button>
-                <button
-                  onClick={copyOutput}
-                  className="inline-flex items-center gap-2 rounded-md bg-teal px-4 py-3 text-xs font-bold uppercase tracking-[0.16em] text-ink hover:bg-teal-glow"
-                >
-                  <Copy className="h-4 w-4" />
-                  Copy
-                </button>
-                <button
-                  onClick={downloadOutput}
-                  className={`inline-flex items-center gap-2 rounded-md border px-4 py-3 text-xs font-bold uppercase tracking-[0.16em] ${
-                    workspaceIsLight
-                      ? "border-slate-200 text-slate-700 hover:bg-slate-50"
-                      : "border-border text-foreground hover:bg-foreground/10"
-                  }`}
-                >
-                  <Download className="h-4 w-4" />
-                  Download
-                </button>
-                <button
-                  onClick={shareOutput}
-                  className={`inline-flex items-center gap-2 rounded-md border px-4 py-3 text-xs font-bold uppercase tracking-[0.16em] ${
-                    workspaceIsLight
-                      ? "border-slate-200 text-slate-700 hover:bg-slate-50"
-                      : "border-border text-foreground hover:bg-foreground/10"
-                  }`}
-                >
-                  <Share2 className="h-4 w-4" />
-                  Share
-                </button>
-                <button
-                  onClick={saveHistory}
-                  className={`inline-flex items-center gap-2 rounded-md border px-4 py-3 text-xs font-bold uppercase tracking-[0.16em] ${
-                    workspaceIsLight
-                      ? "border-slate-200 text-slate-700 hover:bg-slate-50"
-                      : "border-border text-foreground hover:bg-foreground/10"
-                  }`}
-                >
-                  <Check className="h-4 w-4" />
-                  Save
-                </button>
-              </div>
-              {notice && (
-                <motion.div
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="mt-4 rounded-md border border-teal/30 bg-teal/10 px-4 py-3 text-sm text-teal"
-                >
-                  {notice}
-                </motion.div>
-              )}
-            </div>
-
-            <aside className={workspaceIsLight ? "bg-slate-50 p-5 lg:p-6" : "bg-ink p-5 lg:p-6"}>
-              <div className="grid gap-px overflow-hidden rounded-md bg-current/10">
-                <ScoreRing label={activeTool.metricLabel} value={score} light={workspaceIsLight} />
-                <ScoreRing label="AI score" value={aiScore} inverse light={workspaceIsLight} />
-              </div>
-
-              <div className="mt-5 rounded-md border border-current/10 p-5">
-                <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em]">History</p>
-                <div className="space-y-3">
-                  {history.map((item) => (
-                    <div key={item} className="flex items-center gap-3 text-sm text-current/70">
-                      <Activity className="h-4 w-4 text-teal" />
-                      <span className="break-words">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="mt-5 rounded-md border border-current/10 p-5">
-                <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em]">Exports</p>
-                <div className="grid grid-cols-3 gap-2 text-center text-[11px] font-bold uppercase tracking-[0.12em]">
-                  {["TXT", "PDF", "JSON"].map((item) => (
-                    <span key={item} className="rounded-md border border-current/10 px-2 py-3">
-                      {item}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </aside>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-border bg-ink py-24 lg:py-32">
+      <section id="tool-pages" className="border-y border-border bg-ink py-24 lg:py-32">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
           <Reveal>
             <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-orange">
@@ -1092,8 +835,7 @@ export function ToolCatalogCard({ tool }: { tool: Tool }) {
 
   return (
     <Link
-      to="/tools/$toolId"
-      params={{ toolId: tool.id }}
+      to={getToolPagePath(tool.id)}
       className={`group relative flex h-full min-h-[390px] w-full flex-col overflow-hidden rounded-lg border border-border bg-background/85 p-6 text-left shadow-[0_24px_80px_-70px_rgba(0,0,0,0.9)] transition-all duration-300 hover:-translate-y-1 hover:bg-ink-2/95 hover:shadow-[0_28px_90px_-58px] ${accent.border} ${accent.ring}`}
     >
       <div className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${accent.bar}`} />
