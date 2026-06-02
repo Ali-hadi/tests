@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T04:09:26.270Z",
+  "generatedAt": "2026-06-02T16:28:54.380Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -52,6 +52,409 @@
   ],
   "posts": [
     {
+      "id": "ec28701a10d3",
+      "title": "Trump signs narrower executive order on AI oversight after industry objections",
+      "excerpt": "After industry objections, President Trump signed a revised AI executive order requiring only voluntary prerelease government reviews of advanced models.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-02T16:23:08.000Z",
+      "url": "https://techcrunch.com/2026/06/02/trump-signs-narrower-executive-order-on-ai-oversight-after-industry-objections/",
+      "tags": [
+        "AI",
+        "Government & Policy",
+        "ai evaluations",
+        "ai executive order",
+        "Trump"
+      ]
+    },
+    {
+      "id": "a26e6fdd7b56",
+      "title": "Cricut’s Joy 2 helps you personalize Father’s Day gifts, and it’s at its lowest price yet",
+      "excerpt": "If you’re looking for a way to add a personal touch to Father’s Day or graduation gifts, the Cricut Joy 2 can help you customize everything from water bottles and bookmarks to greeting cards and gift cards. The Cricut...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-02T16:11:07.000Z",
+      "url": "https://www.theverge.com/gadgets/941696/cricut-joy-2-rainbow-essential-bundle-deal-sale",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Tech",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "31f39eabff83",
+      "title": "OpenAI launches new Codex tools for white-collar work",
+      "excerpt": "OpenAI is getting serious about courting enterprise users. On Tuesday, the AI lab released a new set of capabilities for Codex, meant to expand the agentic tool’s uses in the workplace. Together with the new tools, th...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-02T16:00:00.000Z",
+      "url": "https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "233303198687",
+      "title": "Microsoft Build 2026: All the news about Windows, AI, RTX Spark and more",
+      "excerpt": "Microsoft’s annual developer conference is kicking off on June 2nd in San Francisco with the keynote presentation streaming live at 12:30PM ET / 9:30AM PT, and we will be following along here with everything as it’s a...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-02T15:59:58.000Z",
+      "url": "https://www.theverge.com/tech/941668/microsoft-build-may-2026-live-news-updates",
+      "tags": [
+        "AI",
+        "Microsoft",
+        "Microsoft Build",
+        "News",
+        "Tech",
+        "Windows"
+      ]
+    },
+    {
+      "id": "026b8ef87ab3",
+      "title": "Amazon has discounted this 75-inch Hisense TV by over $500 - and I highly recommend it",
+      "excerpt": "The Hisense U6 Pro is a solid midrange Mini LED TV, and an even better buy at this price.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-02T15:55:00.000Z",
+      "url": "https://www.zdnet.com/article/hisense-u6-pro-amazon-deal/"
+    },
+    {
+      "id": "2707353ca382",
+      "title": "Forget Amazon - these are the best Costco deals I've found this week",
+      "excerpt": "Prime Day may be coming soon, but Costco already has great discounts live on home essentials, top tech, and more.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-02T15:51:40.000Z",
+      "url": "https://www.zdnet.com/article/best-early-amazon-prime-day-costco-deals-2026/"
+    },
+    {
+      "id": "6b3313924d31",
+      "title": "Ableton is letting musicians build browser-style extensions for Live",
+      "excerpt": "Ableton already has Max for Live, which allows users to build MIDI effects, synths, and samplers for its digital audio workstation (DAW). But now with its Extensions SDK, features can be added to Ableton Live with com...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-02T15:48:20.000Z",
+      "url": "https://www.theverge.com/tech/941674/ableton-live-extensions-sdk-music-daw",
+      "tags": [
+        "Entertainment",
+        "Music",
+        "News",
+        "Tech"
+      ]
+    },
+    {
+      "id": "5995426a965b",
+      "title": "Marvell enters the AI network fray with 102.4 Tbps switch silicon",
+      "excerpt": "High radix, low latency and low power is what AI datacenters crave, the chipmaker says",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-02T15:45:00.000Z",
+      "url": "https://www.theregister.com/networks/2026/06/02/marvell-enters-the-ai-network-fray-with-1024-tbps-switch-silicon/5250180",
+      "image": "https://image.theregister.com/?imageId=4093879&width=800",
+      "tags": [
+        "networks"
+      ]
+    },
+    {
+      "id": "1a5064a6f3be",
+      "title": "I found 15 Amazon deals on editor-approved tech already live for Prime Day",
+      "excerpt": "Amazon's Prime Day sale returns this month. These are our favorite early deals you can shop now.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-02T15:00:18.000Z",
+      "url": "https://www.zdnet.com/article/best-early-amazon-prime-day-deals-2026/"
+    },
+    {
+      "id": "f008b26d7898",
+      "title": "The screenless Camp Snap 2 is slimmer and comes with more filters",
+      "excerpt": "After expanding its offerings to video with the CS-8 inspired by Kodak and Canon's retro Super 8mm film cameras, Camp Snap is returning to its roots. The Camp Snap 2 is a sequel to the company's first screenless digit...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-02T15:00:00.000Z",
+      "url": "https://www.theverge.com/tech/941427/camp-snap-2-digital-screenless-camera-filters-kid-lock",
+      "tags": [
+        "Cameras",
+        "Gadgets",
+        "News",
+        "Tech"
+      ]
+    },
+    {
+      "id": "8b24fb477ba5",
+      "title": "Enhanced performance for server consolidation with Intel Xeon 6+",
+      "excerpt": "SPONSORED POST: How Intel’s first 18A data center CPU delivers efficiency and TCO gains, with Intel's Kira Boyko",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-02T15:00:00.000Z",
+      "url": "https://www.theregister.com/systems/2026/06/02/enhanced-performance-for-server-consolidation-with-intel-xeon-6/5249881",
+      "image": "https://image.theregister.com/?imageId=5218918&width=800",
+      "tags": [
+        "systems"
+      ]
+    },
+    {
+      "id": "a61b738f020a",
+      "title": "Russian spy agency says foreign spies turned officials' smartphones into surveillance devices",
+      "excerpt": "FSB claims large-scale snoop op compromised phones of senior officials, but gives no technical evidence to back allegations",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-02T14:45:00.000Z",
+      "url": "https://www.theregister.com/security/2026/06/02/russian-spy-agency-says-foreign-spies-turned-officials-smartphones-into-surveillance-devices/5250099",
+      "image": "https://image.theregister.com/?imageId=230758&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "dcf96489a383",
+      "title": "Anthropic scales Claude Mythos to critical infrastructure in 15+ countries",
+      "excerpt": "Anthropic is expanding Project Glasswing, its security vulnerability program, and access to Mythos to 150 organizations across 15 countries — targeting critical infrastructure in power, water, healthcare, and communic...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-02T14:44:21.000Z",
+      "url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/",
+      "tags": [
+        "AI",
+        "Security",
+        "Anthropic",
+        "Claude",
+        "Mythos"
+      ]
+    },
+    {
+      "id": "5ea05c7be7dc",
+      "title": "I took 500 photos with Samsung and Vivo's Ultra camera phones - and the winner is not so obvious",
+      "excerpt": "I expected the Vivo X300 Ultra to wipe the floor with Samsung's Galaxy S26 Ultra, but the latter impressed me in ways I didn't expect.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-02T14:41:00.000Z",
+      "url": "https://www.zdnet.com/article/galaxy-s26-ultra-vs-vivo-x300-ultra-camera-comparison/"
+    },
+    {
+      "id": "44aec7c82662",
+      "title": "Amazon Prime Day is June 23-26: Everything to know about start times, deals, and more",
+      "excerpt": "Here's everything we know about Amazon's June Prime event - including confirmed dates, how to prep for early deals, and how it compares to previous July sales.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-02T14:16:58.000Z",
+      "url": "https://www.zdnet.com/article/amazon-prime-day-2026-everything-you-need-to-know/"
+    },
+    {
+      "id": "43ffc0f22777",
+      "title": "Ubuntu 26.04 is the OS for the AI agentic era, says Canonical's Mark Shuttleworth - here's why",
+      "excerpt": "Canonical's pitch starts with snaps and security.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-06-02T14:07:00.000Z",
+      "url": "https://www.zdnet.com/article/ubuntu-26-04-is-os-for-ai-agentic-era-says-canonical-mark-shuttleworth-why/"
+    },
+    {
+      "id": "f7190ea38f3a",
+      "title": "Why I never let my Android recycling bin sit full for 30 days - and how I empty it",
+      "excerpt": "Android keeps deleted files in the Trash for 30 days, but I don't wait that long. Here's why I clear them manually.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-02T14:04:44.000Z",
+      "url": "https://www.zdnet.com/article/never-let-android-recycling-bin-sit-full-how-to-empty/"
+    },
+    {
+      "id": "c8894d4f2a62",
+      "title": "Expect more of those DRAM price hikes as memory shortage continues to bite",
+      "excerpt": "Chip costs may rise another 63% this quarter, as effects feed through to PC pricing",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-02T14:02:00.000Z",
+      "url": "https://www.theregister.com/storage/2026/06/02/expect-more-of-those-dram-price-hikes-as-memory-shortage-continues-to-bite/5250049",
+      "image": "https://image.theregister.com/?imageId=258133&width=800",
+      "tags": [
+        "storage"
+      ]
+    },
+    {
+      "id": "2553beed9fea",
+      "title": "Best Buy slashed this 64GB Kingston DDR5 RAM kit by almost $200 - and I recommend it",
+      "excerpt": "This 64GB Kingston Fury Beast DDR5 RAM kit is the latest memory deal that I've actually considered at Best Buy.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-02T13:54:00.000Z",
+      "url": "https://www.zdnet.com/article/kingston-fury-beast-ddr5-ram-deal/"
+    },
+    {
+      "id": "45c9fa6ade20",
+      "title": "Lego’s Smart Play Pokémon can train and battle, but don’t do the one thing I wish they could",
+      "excerpt": "When Lego announced its tech-packed Smart Bricks at CES, we were impressed by the potential - enough to give it our Best in Show award. But when the first Star Wars sets actually launched in March, we were less enamor...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-02T13:28:27.000Z",
+      "url": "https://www.theverge.com/gadgets/941484/lego-pokemon-smart-play-brick-sets",
+      "tags": [
+        "Gadgets",
+        "Gaming",
+        "Hands-on",
+        "News",
+        "Pokemon",
+        "Report"
+      ]
+    },
+    {
+      "id": "917c33ba1fa1",
+      "title": "'Resistance is futile,' says Qualcomm CEO. AI agents will be become invisible, inescapable, follow you across devices",
+      "excerpt": "Your personal Jarvis or an end to privacy as we know it?",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-02T13:20:00.000Z",
+      "url": "https://www.theregister.com/personal-tech/2026/06/02/qualcomm-ai-agents-will-be-as-transparent-as-they-will-be-inescapable/5249894",
+      "image": "https://image.theregister.com/?imageId=5249938&width=800",
+      "tags": [
+        "personal tech"
+      ]
+    },
+    {
+      "id": "1294a2b82e66",
+      "title": "Thermacell’s latest smart mosquito system is bigger and more expensive",
+      "excerpt": "Thermacell has launched Liv 2.0, the next generation of its Wi-Fi-connected smart mosquito protection system. It features new hardware and can cover a larger area, and Thermacell says its formula can now deter no-see-...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-02T13:00:00.000Z",
+      "url": "https://www.theverge.com/tech/941146/liv-2-dot-0-smart-mosquito-repellent-system-thermacell",
+      "tags": [
+        "News",
+        "Smart Home",
+        "Tech"
+      ]
+    },
+    {
+      "id": "4634d966d73c",
+      "title": "Amazon’s four-day Prime Day begins on June 23rd",
+      "excerpt": "Amazon bucked its usual tradition of having Prime Day in July. Prime Day 2026 is happening in June, kicking off in just a few weeks. Prime members will get access to many deals starting June 23rd at 3:01AM ET through...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-02T12:38:59.000Z",
+      "url": "https://www.theverge.com/gadgets/940021/amazon-prime-day-2026-june-dates-deals",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "News",
+        "Prime Day",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "a983a21ac4cf",
+      "title": "Gemini Spark is the most impressive and terrifying AI experience I’ve had yet",
+      "excerpt": "According to every product demo from the last four years, planning a trip is a killer use case for AI. Just tell it where you're going, they all promise, and your chatbot / agent / other buzzword will exhaustively sea...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-02T12:38:08.000Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/941388/gemini-spark-ai-agent-trip-planning",
+      "tags": [
+        "AI",
+        "Google",
+        "Tech"
+      ]
+    },
+    {
+      "id": "789b56ebbbc5",
+      "title": "Microsoft reaches for olive branch after public dustup with 0-day researcher",
+      "excerpt": "Following days of criticism from the security community, Redmond dials back rhetoric, insists vulnerability hunters not in its legal crosshairs",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-02T12:37:00.000Z",
+      "url": "https://www.theregister.com/security/2026/06/02/microsoft-reaches-for-olive-branch-after-public-dustup-with-0-day-researcher/5249945",
+      "image": "https://image.theregister.com/?imageId=1626449&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "ce28044b9514",
+      "title": "ZeroDrift raises $10M to protect AI models from themselves",
+      "excerpt": "A new AI compliance service sits between AI models and end users to flag and replace any messages that might present a compliance problem.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-02T12:32:59.000Z",
+      "url": "https://techcrunch.com/2026/06/02/zerodrift-raises-10-million-to-protect-ai-models-from-themselves/",
+      "tags": [
+        "AI",
+        "compliance",
+        "Zerodrift"
+      ]
+    },
+    {
+      "id": "6421a7340260",
+      "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
+      "excerpt": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.",
+      "source": "OpenAI News",
+      "category": "AI",
+      "publishedAt": "2026-06-02T12:00:00.000Z",
+      "url": "https://openai.com/index/travelers"
+    },
+    {
+      "id": "5c441427ce07",
+      "title": "Rocket engine startup Impulse raises $500 million to hire people, not AI",
+      "excerpt": "Engineering physical systems still depends on human talent, according to Impulse Space president Eric Romo.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-02T12:00:00.000Z",
+      "url": "https://techcrunch.com/2026/06/02/rocket-engine-startup-impulse-raises-500-million-to-hire-people-not-ai/",
+      "tags": [
+        "Space",
+        "AI"
+      ]
+    },
+    {
+      "id": "4ad5ed43238d",
+      "title": "Claude celebrates Anthropic's stock market float with blockbuster ... outage",
+      "excerpt": "Chatbot has no respect for timing of its maker's financial announcement",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-02T11:54:08.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/02/claude-celebrates-anthropics-stock-market-float-with-blockbuster-outage/5250071",
+      "image": "https://image.theregister.com/?imageId=261351&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "a34b861d73de",
+      "title": "HPE declares Juniper deal a 'home run' as AI and networking fuel record quarter",
+      "excerpt": "Networking orders surged, AI demand showed little sign of slowing, and HPE used the occasion to take a victory lap over its $14 billion Juniper bet",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-02T11:29:00.000Z",
+      "url": "https://www.theregister.com/on-prem/2026/06/02/hpe-declares-juniper-deal-a-home-run-as-ai-and-networking-fuel-record-quarter/5250021",
+      "image": "https://image.theregister.com/?imageId=5250046&width=800",
+      "tags": [
+        "on-prem"
+      ]
+    },
+    {
+      "id": "597005b4447f",
+      "title": "Codex for every role, tool, and workflow",
+      "excerpt": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI.",
+      "source": "OpenAI News",
+      "category": "AI",
+      "publishedAt": "2026-06-02T09:00:00.000Z",
+      "url": "https://openai.com/index/codex-for-every-role-tool-workflow",
+      "tags": [
+        "Product"
+      ]
+    },
+    {
+      "id": "00e733aa1592",
+      "title": "Advancing youth safety and opportunity through global leadership",
+      "excerpt": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people.",
+      "source": "OpenAI News",
+      "category": "AI",
+      "publishedAt": "2026-06-02T07:00:00.000Z",
+      "url": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
+      "tags": [
+        "Global Affairs"
+      ]
+    },
+    {
       "id": "6ec282ebea01",
       "title": "Should you switch to a Wi-Fi 7 mesh router? My home testing reveals what got better (and what didn't)",
       "excerpt": "The Tenda BE5100 mesh Wi-Fi system is an accessibly priced, high-speed, easy-to-use package that kills wireless dead spots.",
@@ -68,6 +471,18 @@
       "category": "IT",
       "publishedAt": "2026-06-02T02:00:45.000Z",
       "url": "https://www.zdnet.com/article/how-i-built-cyberdeck-from-80s-sci-fi-why/"
+    },
+    {
+      "id": "8c810ea5d0c7",
+      "title": "Codex is becoming a productivity tool for everyone",
+      "excerpt": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
+      "source": "OpenAI News",
+      "category": "AI",
+      "publishedAt": "2026-06-02T02:00:00.000Z",
+      "url": "https://openai.com/index/codex-for-knowledge-work",
+      "tags": [
+        "Global Affairs"
+      ]
     },
     {
       "id": "be238d9b22a0",
@@ -244,452 +659,6 @@
         "Hands-on",
         "Report",
         "Reviews"
-      ]
-    },
-    {
-      "id": "ef00d1c30fec",
-      "title": "Dozens of Red Hat packages backdoored through its official NPM channel",
-      "excerpt": "Anyone who has downloaded affected Red Hat packages should investigate immediately.",
-      "source": "Ars Technica",
-      "category": "IT",
-      "publishedAt": "2026-06-01T19:49:09.000Z",
-      "url": "https://arstechnica.com/security/2026/06/dozens-of-red-hat-packages-backdoored-through-its-offical-npm-channel/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/redhat-1152x648.jpg",
-      "tags": [
-        "Biz & IT",
-        "Security",
-        "npm",
-        "red hat",
-        "supply chain attacks"
-      ]
-    },
-    {
-      "id": "84af61da993d",
-      "title": "Election interlopers register 5K+ domains, hope to catch some voting phish",
-      "excerpt": "Hacking voting machines is so 2017. Phishing, impersonation pose the real election risks",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-01T19:46:47.000Z",
-      "url": "https://www.theregister.com/security/2026/06/01/5k-election-domains-registered-ahead-of-us-midterms/5249764",
-      "image": "https://image.theregister.com/?imageId=222504&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "dc040f131c1f",
-      "title": "Why I just connected my living room TV to a router VPN (and you should, too)",
-      "excerpt": "Installing a VPN on your smart TV blocks hackers from accessing your network and stealing your data. But there are other benefits, too.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-01T19:38:00.000Z",
-      "url": "https://www.zdnet.com/article/how-to-add-a-vpn-to-your-smart-tv/"
-    },
-    {
-      "id": "a4b75e4f5f78",
-      "title": "Meta’s own AI was exploited to hijack Instagram accounts",
-      "excerpt": "Meta's AI support chatbot helped hackers hijack Instagram accounts, as reported earlier by 404 Media. In a video shared on Telegram, a hacker shows how they could take over an account by asking Meta's chatbot to switc...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-01T19:20:47.000Z",
-      "url": "https://www.theverge.com/tech/941179/meta-instagram-ai-support-chatbot-exploit-hacked",
-      "tags": [
-        "AI",
-        "Meta",
-        "News",
-        "Security",
-        "Tech"
-      ]
-    },
-    {
-      "id": "e0cc9e19500d",
-      "title": "Casey Neistat’s guide to posting every day",
-      "excerpt": "Some news: The Vergecast is now a daily podcast! Starting today, we'll be posting every weekday, with even more gadgets and rankings and conversations and feelings and podcasts-within-podcasts. We're excited for all t...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-01T19:07:03.000Z",
-      "url": "https://www.theverge.com/podcast/941140/casey-neistat-daily-vergecast",
-      "tags": [
-        "Podcasts",
-        "Social Media",
-        "Tech",
-        "Vergecast"
-      ]
-    },
-    {
-      "id": "51848875b5ce",
-      "title": "This $4 router reboot timer is the cheap internet fix I didn't know I needed - and it works reliably",
-      "excerpt": "I've tried so many methods to reboot my router, but the best solution costs less than a cup of Joe.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-01T18:50:00.000Z",
-      "url": "https://www.zdnet.com/article/router-rebooter-review/"
-    },
-    {
-      "id": "f8a25912a86e",
-      "title": "Water access is now a risk factor in SpaceX’s IPO",
-      "excerpt": "The company says it needs \"significant\" water resources to cool its data centers, and that access to abundant, affordable water is a challenge.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-01T18:19:53.000Z",
-      "url": "https://techcrunch.com/2026/06/01/water-access-is-now-a-risk-factor-in-spacexs-ipo/",
-      "tags": [
-        "AI",
-        "Space",
-        "artificial intelligence",
-        "data centers",
-        "Elon Musk",
-        "SpaceX"
-      ]
-    },
-    {
-      "id": "85d825677bf0",
-      "title": "Anthropic, now atop the AI bubble, files for its IPO",
-      "excerpt": "First it tops OpenAI's valuation, then it beats Altman to the IPO punch",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-01T18:12:22.000Z",
-      "url": "https://www.theregister.com/ai-and-ml/2026/06/01/anthropic-now-atop-the-ai-bubble-files-for-its-ipo/5249753",
-      "image": "https://image.theregister.com/?imageId=4093866&width=800",
-      "tags": [
-        "ai and ml"
-      ]
-    },
-    {
-      "id": "4b3f15d1603d",
-      "title": "I ditched my office desktop PC for a gaming laptop, and it's a serious productivity upgrade",
-      "excerpt": "The MSI Raider 16 Max HX combines powerful hardware with a revamped cooling system and a 240Hz OLED screen.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-01T17:00:40.000Z",
-      "url": "https://www.zdnet.com/article/msi-raider-16-max-hx-review/"
-    },
-    {
-      "id": "c8b9a6b007c1",
-      "title": "Our views on AI policy and political advocacy",
-      "excerpt": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
-      "source": "OpenAI News",
-      "category": "AI",
-      "publishedAt": "2026-06-01T17:00:00.000Z",
-      "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
-      "tags": [
-        "Global Affairs"
-      ]
-    },
-    {
-      "id": "835af53f5388",
-      "title": "Anthropic has officially filed to go public",
-      "excerpt": "After months of speculation about whether OpenAI or Anthropic would be first in their race to IPO, Anthropic on Monday reached a key milestone: filing to kick off the process with the U.S. Securities and Exchange Comm...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-01T16:40:38.000Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/941016/anthropic-has-officially-filed-to-go-public",
-      "tags": [
-        "AI",
-        "Anthropic",
-        "News"
-      ]
-    },
-    {
-      "id": "14ca8e9e17c2",
-      "title": "Anthropic files to go public",
-      "excerpt": "Anthropic, now an AI powerhouse that has landed top-tier enterprise customers, was once considered an underdog in the emerging world of large language models.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-01T16:36:55.000Z",
-      "url": "https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/",
-      "tags": [
-        "AI",
-        "TC",
-        "Anthropic",
-        "IPO",
-        "OpenAI",
-        "SpaceX"
-      ]
-    },
-    {
-      "id": "33b6f0b1d9ef",
-      "title": "Sony’s new fight stick and gaming monitor launch in August",
-      "excerpt": "Sony is sharing new details about some of its upcoming gaming-focused hardware, including pricing and August launch dates for its FlexStrike fight stick and its 27-inch monitor. The FlexStrike fight stick will be avai...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-01T16:36:18.000Z",
-      "url": "https://www.theverge.com/games/941031/sony-playstation-flexstrike-fight-stick-gaming-monitor-pulse-elevate-speakers-launch-date-price",
-      "tags": [
-        "Gadgets",
-        "Gaming",
-        "News",
-        "PC Gaming",
-        "PlayStation"
-      ]
-    },
-    {
-      "id": "40d468857b51",
-      "title": "My top 7 laptop-bag essentials now, after decades of remote work",
-      "excerpt": "Have gear, will travel: Here are the gadgets powering my mobile office this summer.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-01T16:29:17.000Z",
-      "url": "https://www.zdnet.com/article/my-tech-laptop-bag-essentials/"
-    },
-    {
-      "id": "619bfb9c85bd",
-      "title": "US firms still dominate chip subsidies",
-      "excerpt": "China's support is greater relative to semiconductor industry revenue",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-01T16:21:06.000Z",
-      "url": "https://www.theregister.com/systems/2026/06/01/us-firms-still-dominate-chip-subsidies/5249668",
-      "image": "https://image.theregister.com/?imageId=1673877&width=800",
-      "tags": [
-        "systems"
-      ]
-    },
-    {
-      "id": "4e4360776d53",
-      "title": "How we used Gemini to build Google I/O 2026",
-      "excerpt": "Learn how Googlers used AI to produce Google I/O 2026.",
-      "source": "Google AI Blog",
-      "category": "AI",
-      "publishedAt": "2026-06-01T16:00:00.000Z",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_IO.max-600x600.format-webp.webp",
-      "tags": [
-        "Gemini models",
-        "Google Labs",
-        "Developer tools",
-        "AI"
-      ]
-    },
-    {
-      "id": "fe21b03da870",
-      "title": "This AI weather startup is out-forecasting government agencies",
-      "excerpt": "WindBorne benefits from its unique combination of model-building and data collection. The company now has about 400 balloons in flight gathering sensor readings at any given time, launched from 15 sites around the glo...",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-01T16:00:00.000Z",
-      "url": "https://techcrunch.com/2026/06/01/this-ai-weather-startup-is-out-forecasting-government-agencies/",
-      "tags": [
-        "AI",
-        "Exclusive",
-        "Windborne Systems"
-      ]
-    },
-    {
-      "id": "c2548499a072",
-      "title": "You can leave FaceTime video voicemails, and a lot of people don't know it - here's how",
-      "excerpt": "If someone missed your FaceTime call, try leaving them a video message.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-01T15:46:00.000Z",
-      "url": "https://www.zdnet.com/article/facetime-video-voicemail-feature-ios-apple-iphone/"
-    },
-    {
-      "id": "a72fb55f260b",
-      "title": "Agentic AI arrives for Delphi and C++ Builder",
-      "excerpt": "Kai is an extension for RAD Studio (Delphi and C++ Builder) that integrates with external AI providers",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-01T15:45:00.000Z",
-      "url": "https://www.theregister.com/devops/2026/06/01/agentic-ai-arrives-for-delphi-and-c-builder/5249638",
-      "image": "https://image.theregister.com/?imageId=5249692&width=800",
-      "tags": [
-        "devops"
-      ]
-    },
-    {
-      "id": "6c8e883ce48e",
-      "title": "Why I happily paid for the Transmit MacOS app - and it's not just the 16x faster file transfer speed",
-      "excerpt": "If you spend a good amount of time transferring files to and from your MacOS machine, do yourself a favor and grab a copy of Transmit.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-01T15:41:11.000Z",
-      "url": "https://www.zdnet.com/article/transmit-is-one-of-the-best-macos-file-transfer-tools-on-the-market/"
-    },
-    {
-      "id": "6b9d39a21edf",
-      "title": "Summer Game Fest 2026: All the news from gaming’s busiest week",
-      "excerpt": "Get ready for some gaming news. It’s officially June, which means splashy new events from PlayStation, Xbox, and gaming hype man Geoff Keighley. But this season doesn’t just feature the big tentpole shows; there will...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-01T15:30:00.000Z",
-      "url": "https://www.theverge.com/games/939206/summer-game-fest-playstation-xbox-gaming-events-2026",
-      "tags": [
-        "Entertainment",
-        "Gaming",
-        "News",
-        "Nintendo",
-        "PC Gaming",
-        "PlayStation"
-      ]
-    },
-    {
-      "id": "a6949e5a6093",
-      "title": "An affordable, long-lasting AirTag alternative is $15 right now",
-      "excerpt": "There are many solid Bluetooth trackers for iPhones that tap into Apple’s expansive Find My network. Some are thin, some are a bit chunkier. And, evidently, some look like tiny soccer balls. Ugreen’s FineTrack 2 glows...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-01T15:24:32.000Z",
-      "url": "https://www.theverge.com/gadgets/940830/find-my-bluetooth-tracker-bose-qc-ultra-google-pixel-buds-deal-sale",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "55e6ca6ffec2",
-      "title": "The next big career move for young Hollywood? Reading audio smut",
-      "excerpt": "Though Gen Z has developed a reputation for being so disinterested in sex that they don't even want to see it on TV, the popularity of series like Heated Rivalry and The Summer I Turned Pretty has made it very clear t...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-01T15:00:12.000Z",
-      "url": "https://www.theverge.com/entertainment/940869/quinn-erotica-rent-free-ember-and-ice-heated-rivalry-off-campus",
-      "tags": [
-        "Entertainment",
-        "Health",
-        "Science",
-        "Sex",
-        "TV Shows"
-      ]
-    },
-    {
-      "id": "51fa35b4a4ed",
-      "title": "Ohio hits pause on datacenter tax breaks draining its coffers",
-      "excerpt": "Buckeye State found it had inadvertently joined the billion dollar losers' club",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-01T15:00:00.000Z",
-      "url": "https://www.theregister.com/on-prem/2026/06/01/ohio-hits-pause-on-datacenter-tax-breaks-draining-its-coffers/5249137",
-      "image": "https://image.theregister.com/?imageId=4094165&width=800",
-      "tags": [
-        "on-prem"
-      ]
-    },
-    {
-      "id": "eb0e7b34874b",
-      "title": "Your guide to June’s biggest gaming events",
-      "excerpt": "It's early June, which means it's video game event season once again. Now that E3 has been gone for a few years, a bunch of showcases and presentations have started to fill the void, including big productions like Sum...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-01T15:00:00.000Z",
-      "url": "https://www.theverge.com/games/939238/video-game-gaming-events-summer-game-fest-schedule-2026",
-      "tags": [
-        "Entertainment",
-        "Gaming",
-        "News"
-      ]
-    },
-    {
-      "id": "d0eeabe5782c",
-      "title": "DuckDuckGo makes its ‘no-AI’ search engine easier to access as its traffic booms",
-      "excerpt": "Alternative search engine DuckDuckGo launches 'no AI' web extensions for Chrome and Firefox users.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-01T14:49:10.000Z",
-      "url": "https://techcrunch.com/2026/06/01/duckduckgo-makes-its-no-ai-search-engine-easier-to-access-as-its-traffic-booms/",
-      "tags": [
-        "AI",
-        "Apps",
-        "Chrome",
-        "DuckDuckGo",
-        "Firefox",
-        "Google"
-      ]
-    },
-    {
-      "id": "b88ad20ba6c9",
-      "title": "Microsoft to unveil new AI models and Windows improvements at Build",
-      "excerpt": "Microsoft is heading to San Francisco this week in a bid to win back developers at its Build conference. I've been attending Build since the days when Microsoft called it the Professional Developers Conference, and I...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-01T14:39:03.000Z",
-      "url": "https://www.theverge.com/report/940861/microsoft-build-ai-models-windows-dev-mode-what-to-expect",
-      "tags": [
-        "AI",
-        "Microsoft",
-        "Microsoft Build",
-        "Report",
-        "Tech",
-        "Windows"
-      ]
-    },
-    {
-      "id": "d92a1f9681ea",
-      "title": "Computex 2026: All the news and announcements",
-      "excerpt": "Computex 2026 is kicking off in Taipei, Taiwan this week, where Nvidia, AMD, Qualcomm, Intel, and other tech brands are announcing new laptops, handhelds, chips, and more. Nvidia unveiled RTX Spark, its first family o...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-01T14:33:02.000Z",
-      "url": "https://www.theverge.com/tech/940844/computex-2026",
-      "tags": [
-        "AMD",
-        "Computex",
-        "Microsoft",
-        "News",
-        "Nvidia",
-        "Tech"
-      ]
-    },
-    {
-      "id": "a8690ec0b9ce",
-      "title": "Chrome stops hackers from stealing your browser cookies now - how its new security feature works",
-      "excerpt": "Now available for all Windows users, Chrome's security feature will thwart attackers who try to impersonate you by using your stolen browser cookies on their own devices.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-01T14:18:00.000Z",
-      "url": "https://www.zdnet.com/article/chrome-protects-hackers-steal-browser-cookies/"
-    },
-    {
-      "id": "6c30250e41fd",
-      "title": "GTA cheat service Atlas Menu hacked as attacker alleges screenshot spying",
-      "excerpt": "A database containing 64,000 user records was published to GitHub after an attacker claimed to have compromised all Atlas systems",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-01T14:15:00.000Z",
-      "url": "https://www.theregister.com/security/2026/06/01/gta-cheat-service-atlas-menu-hacked-as-attacker-alleges-screenshot-spying/5249192",
-      "image": "https://image.theregister.com/?imageId=259706&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "c10a0e3ab5bc",
-      "title": "California passes bill declaring death-by-algorithm to 3D-printed ghost guns",
-      "excerpt": "Last-hour amendments aim to allay privacy concerns, but broad scepticism about feasibility remains",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-01T13:30:00.000Z",
-      "url": "https://www.theregister.com/personal-tech/2026/06/01/california-passes-ban-on-3d-printed-firearms/5249148",
-      "image": "https://image.theregister.com/?imageId=163911&width=800",
-      "tags": [
-        "personal tech"
-      ]
-    },
-    {
-      "id": "02f5a3bde62c",
-      "title": "Agent-led devs need serverless OpenSearch, Amazon claims",
-      "excerpt": "System relies on a proprietary storage layer as AWS moves to separate storage and compute to fit mega AI demands",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-01T12:45:00.000Z",
-      "url": "https://www.theregister.com/databases/2026/06/01/agent-led-devs-need-serverless-opensearch-amazon-claims/5249033",
-      "image": "https://image.theregister.com/?imageId=5249081&width=800",
-      "tags": [
-        "databases"
-      ]
-    },
-    {
-      "id": "a19decc7a8d2",
-      "title": "Palo Alto VPN bug graduates from advisory to active exploitation",
-      "excerpt": "Rapid7: Attackers exploit authentication bypass flaw in the wild, meaning more emergency patching for PAN-OS users",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-01T12:15:00.000Z",
-      "url": "https://www.theregister.com/cyber-crime/2026/06/01/palo-alto-vpn-bug-graduates-from-advisory-to-active-exploitation/5249114",
-      "image": "https://image.theregister.com/?imageId=5249134&width=800",
-      "tags": [
-        "cyber-crime"
       ]
     }
   ]
