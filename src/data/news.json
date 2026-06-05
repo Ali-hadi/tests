@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T15:19:43.785Z",
+  "generatedAt": "2026-06-05T03:57:29.391Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -52,13 +52,434 @@
   ],
   "posts": [
     {
-      "id": "3cc691e4cab4",
-      "title": "This 65-inch Hisense TV is already on sale for Prime Day - and I recommend it",
-      "excerpt": "Multiple screen sizes of this Hisense 4K Smart TV are on sale right now. Be sure to grab one while the deal lasts.",
+      "id": "e41a99a68674",
+      "title": "A day later with Oura Ring 5, I can't believe how much of an upgrade it's been from Ring 4",
+      "excerpt": "The Oura Ring 5's best upgrade is also the most subtle one.",
       "source": "ZDNET",
       "category": "IT",
-      "publishedAt": "2026-06-04T15:11:28.000Z",
+      "publishedAt": "2026-06-05T00:32:00.000Z",
+      "url": "https://www.zdnet.com/article/oura-ring-5-hands-on-review/"
+    },
+    {
+      "id": "f65ec72d9ee8",
+      "title": "'It would be good for the world' to slow down AI sprints, Anthropic says",
+      "excerpt": "The plea for caution comes the same week it beat AI archrival OpenAI to filing for an IPO",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-04T23:46:31.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/05/it-would-be-good-for-the-world-to-slow-down-ai-sprints-anthropic-says/5251460",
+      "image": "https://image.theregister.com/?imageId=257058&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "270777511a4f",
+      "title": "Valve says it’s ready to launch the Steam Machine this summer",
+      "excerpt": "Valve now says that the delayed Steam Machine PC and Steam Frame VR headset are set to launch sometime this summer. In a Thursday blog post detailing its Verified programs for both pieces of hardware, Valve concludes...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-04T22:48:53.000Z",
+      "url": "https://www.theverge.com/games/943657/valve-steam-machine-frame-summer-launch-verified",
+      "tags": [
+        "Entertainment",
+        "Gaming",
+        "News",
+        "PC Gaming"
+      ]
+    },
+    {
+      "id": "1858a5daeecf",
+      "title": "Ahead of its IPO, Anthropic’s Daniela Amodei shrugs off doubts about AI’s returns",
+      "excerpt": "Anthropic has been growing at a breakneck pace. The company announced that annualized revenue crossed $47 billion in May, up dramatically from roughly $9 billion at the end of 2025. That trajectory faces a real test,...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-04T22:43:26.000Z",
+      "url": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "IPO"
+      ]
+    },
+    {
+      "id": "6e07b148513b",
+      "title": "Airbnb’s Brian Chesky plans to launch a new AI lab",
+      "excerpt": "The Airbnb CEO said last year it hasn't struck an LLM partnership because existing products weren't quite ready.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-04T22:29:50.000Z",
+      "url": "https://techcrunch.com/2026/06/04/airbnbs-brian-chesky-plans-to-launch-a-new-ai-lab/",
+      "tags": [
+        "AI",
+        "Airbnb",
+        "brian chesky",
+        "In Brief",
+        "sam altman"
+      ]
+    },
+    {
+      "id": "8de89bc40424",
+      "title": "Pink is the latest goon squad to use fake helpdesk calls to steal creds",
+      "excerpt": "A familiar tactic popularized by chaotic crime crew Lapsus$",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-04T22:16:55.000Z",
+      "url": "https://www.theregister.com/cyber-crime/2026/06/04/pink-is-the-latest-goon-squad-to-use-fake-helpdesk-calls-to-steal-creds/5251434",
+      "image": "https://image.theregister.com/?imageId=5251457&width=800",
+      "tags": [
+        "cyber-crime"
+      ]
+    },
+    {
+      "id": "bddd4cbde36c",
+      "title": "Canada wants to make its own AI, break free from US bots",
+      "excerpt": "Another ally questions reliance on American AI",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-04T21:56:58.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/04/canada-wants-its-own-ai-less-reliance-on-us-tech/5251404",
+      "image": "https://image.theregister.com/?imageId=246631&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "e2bf1cd7a69c",
+      "title": "Defense tech, AI, and fundraising take center stage at StrictlyVC Los Angeles on June 18",
+      "excerpt": "On Thursday, June 18, at The Aerospace Corporation Campus, investors, founders, and tech leaders will gather for an evening of conversation exploring some of the most consequential shifts taking place across venture c...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-04T21:30:00.000Z",
+      "url": "https://techcrunch.com/2026/06/04/defense-tech-ai-and-fundraising-take-center-stage-at-strictlyvc-los-angeles-on-june-18/",
+      "tags": [
+        "AI",
+        "Fundraising",
+        "Security",
+        "Space",
+        "Startups",
+        "Venture"
+      ]
+    },
+    {
+      "id": "12be199a6f76",
+      "title": "Cyberdecks used to look like little laptops, but now they’re getting more personal",
+      "excerpt": "DIYer and TikTok user Annike Tan, who goes by @ubeboobey, can carry her cyberdeck around without anyone noticing because it doesn't look like a computer at all. Tan, who has been featured in The Cut and Wired, went vi...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-04T20:07:31.000Z",
+      "url": "https://www.theverge.com/tech/943445/cyberdeck-tiktok",
+      "tags": [
+        "Creators",
+        "Gadgets",
+        "News",
+        "Social Media",
+        "Tech",
+        "TikTok"
+      ]
+    },
+    {
+      "id": "63c408166619",
+      "title": "Dashlane explains how attackers managed to download encrypted password vaults",
+      "excerpt": "By targeting large numbers of users, attackers increased their chances of success.",
+      "source": "Ars Technica",
+      "category": "IT",
+      "publishedAt": "2026-06-04T20:02:04.000Z",
+      "url": "https://arstechnica.com/security/2026/06/dashlane-explains-how-attackers-managed-to-download-encrypted-password-vaults/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2022/07/password-login-1000x648.jpeg",
+      "tags": [
+        "Biz & IT",
+        "Security",
+        "dashlane",
+        "password managers",
+        "password spraying"
+      ]
+    },
+    {
+      "id": "3cc691e4cab4",
+      "title": "This 65-inch Hisense TV is $130 off ahead of Prime Day - and I highly recommend it",
+      "excerpt": "Multiple screen sizes of one of Hisense's latest 4K Smart TVs are on sale right now.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-04T19:54:00.000Z",
       "url": "https://www.zdnet.com/article/hisense-u6-mini-led-tv-amazon-prime-day-deal-2026/"
+    },
+    {
+      "id": "7e9ba7f52ed2",
+      "title": "Amazon is selling a 2TB Samsung SSD for nearly 40% off right now - and it's plenty fast for PC",
+      "excerpt": "Samsung's flagship 990 Pro SSD just dropped to a near-record low price.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-04T19:34:00.000Z",
+      "url": "https://www.zdnet.com/article/samsung-990-pro-ssd-deal-2026/"
+    },
+    {
+      "id": "de6475a399e0",
+      "title": "Meta steals a tactic from Tesla and builds data centers in tents",
+      "excerpt": "Meta may have found one way to slash its massive data center bill: tents.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-04T19:33:09.000Z",
+      "url": "https://techcrunch.com/2026/06/04/meta-steals-a-tactic-from-tesla-and-builds-data-centers-in-tents/",
+      "tags": [
+        "AI",
+        "Climate",
+        "Social",
+        "data centers",
+        "Meta",
+        "Tents"
+      ]
+    },
+    {
+      "id": "74b95bcee00a",
+      "title": "Apple approves Poke as the first AI agent on its Messages for Business platform",
+      "excerpt": "Poke, the startup that lets people use AI agents through simple text messages, has become the first AI agent approved for Apple’s Messages for Business platform.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-04T19:20:58.000Z",
+      "url": "https://techcrunch.com/2026/06/04/apple-approves-poke-as-the-first-ai-agent-on-its-messages-for-business-platform/",
+      "tags": [
+        "AI",
+        "Apps",
+        "ai agent",
+        "Apple",
+        "Poke"
+      ]
+    },
+    {
+      "id": "8a54af0ada85",
+      "title": "OpenAI's agent chained decade-old DoS attacks to crash web servers in seconds",
+      "excerpt": "Codex drops an HTTP/2 Bomb",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-04T19:08:00.000Z",
+      "url": "https://www.theregister.com/security/2026/06/04/openais-codex-chains-decade-old-dos-techniques-into-http/2-bomb/5251377",
+      "image": "https://image.theregister.com/?imageId=5251401&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "0ee176f6c206",
+      "title": "How to clear your Android phone cache - the 30-second routine every user should be doing",
+      "excerpt": "This simple adjustment can effectively boost speed and responsiveness on almost any device - Google and Samsung included.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-04T19:04:00.000Z",
+      "url": "https://www.zdnet.com/article/how-to-clear-android-phone-cache/"
+    },
+    {
+      "id": "9b2993a562b7",
+      "title": "Kevin O’Leary agrees to downsize massive Utah data center",
+      "excerpt": "Kevin O'Leary agreed to halve the size of his planned 40,000-acre data center in Utah amid mounting pressure from residents and activists, as reported earlier by local affiliate ABC4. The Shark Tank star sent a letter...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-04T18:38:04.000Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/943234/kevin-oleary-agrees-to-downsize-massive-utah-data-center",
+      "tags": [
+        "AI",
+        "News",
+        "Policy",
+        "Politics"
+      ]
+    },
+    {
+      "id": "aecdbb2d2548",
+      "title": "Google is letting social media stars customize their search result page",
+      "excerpt": "Google now lets big creators and publishers in the US claim dedicated profiles in Search to highlight things like videos, articles, and their other profiles online. But this feature won't be available to most people o...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-04T18:32:23.000Z",
+      "url": "https://www.theverge.com/tech/943233/google-search-profiles-custom-page",
+      "tags": [
+        "Creators",
+        "Google",
+        "News",
+        "Tech"
+      ]
+    },
+    {
+      "id": "992bba7d4906",
+      "title": "I tried Google Drive's new AI cleanup tool to fix 14 years of storage clutter - here's the result",
+      "excerpt": "With Organize My Files, can Gemini clean up my messy Google Drive and save me money on storage? Let's see.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-06-04T18:04:43.000Z",
+      "url": "https://www.zdnet.com/article/i-tried-google-drives-new-ai-cleanup-tool-storage-clutter/"
+    },
+    {
+      "id": "2c3a016aacea",
+      "title": "Amazon’s new plan for games: James Bond and AI Snoop Dogg",
+      "excerpt": "Amazon's gaming strategy has never really been clear. It's been very active in the space: acquiring Twitch, launching its Luna cloud gaming service nearly six years ago, investing heavily in MMOs during the peak of li...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-04T17:01:15.000Z",
+      "url": "https://www.theverge.com/games/943147/amazon-gaming-strategy-james-bond-snoop-dogg-luna",
+      "tags": [
+        "Entertainment",
+        "Gaming",
+        "Report"
+      ]
+    },
+    {
+      "id": "fc67a378cf15",
+      "title": "Motorola Razr Fold vs. Razr Ultra: I tested both phones for a month - this one's better",
+      "excerpt": "The Razr Fold offers a more premium experience, while the Razr Ultra is more compact and stylish. Here's how to choose between them.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-04T16:50:23.000Z",
+      "url": "https://www.zdnet.com/article/2026-motorola-razr-fold-vs-razr-ultra/"
+    },
+    {
+      "id": "9b5ded1c8f23",
+      "title": "AI heavyweights warn their tech could help terrorists develop bioweapons",
+      "excerpt": "Scientists and industry leaders push for mandatory DNA synthesis screening",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-04T16:48:23.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/04/ai-heavyweights-warn-their-tech-could-erode-barriers-to-bioweapons/5251340",
+      "image": "https://image.theregister.com/?imageId=253623&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "4928803ff0ce",
+      "title": "Hate the right-click menu in Windows? Microsoft just promised to let you tweak it - soon",
+      "excerpt": "A top Microsoft VP is promising a faster, simpler, and more customizable context menu that appears when you right-click an item in File Explorer or on the Desktop.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-04T16:38:02.000Z",
+      "url": "https://www.zdnet.com/article/right-click-context-menu-windows-microsoft-tweak-it/"
+    },
+    {
+      "id": "0907209d74ad",
+      "title": "Meta rolls out a new AI creator assistant on Facebook",
+      "excerpt": "Creators often have to parse through charts and dashboards to understand their performance, but with the new AI assistant, they can get quick answers to questions like \"When should I post?\" and \"What are people saying...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-04T16:32:48.000Z",
+      "url": "https://techcrunch.com/2026/06/04/meta-rolls-out-a-new-ai-creator-assistant-on-facebook/",
+      "tags": [
+        "AI",
+        "Apps",
+        "Social",
+        "Creators",
+        "Meta"
+      ]
+    },
+    {
+      "id": "fc5cc02a8516",
+      "title": "What to expect from WWDC 2026: Siri’s highly anticipated revamp and Apple Intelligence updates",
+      "excerpt": "Apple's WWDC nears: Here's what you can look forward to.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-04T16:31:12.000Z",
+      "url": "https://techcrunch.com/2026/06/04/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/",
+      "tags": [
+        "AI",
+        "Apps",
+        "Hardware",
+        "Apple",
+        "Apple Intelligence",
+        "siri"
+      ]
+    },
+    {
+      "id": "be599a312de6",
+      "title": "Benevolent dictator Zuck will give Meta staff 30-minute breaks from keylogging privacy assault",
+      "excerpt": "Tech biz teaching AI to use computers by slurping staff activity",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-04T16:28:00.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/04/meta-to-allow-staff-breaks-from-keylogging-data-grab-scheme/5251237",
+      "image": "https://image.theregister.com/?imageId=5251362&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "1d0327fb7539",
+      "title": "I flew 2,700 miles with 4 headphones - this pair was the best travel companion",
+      "excerpt": "Air travel is the true test for headphones and earbuds. My multiple journeys revealed all the strengths and weaknesses of these latest models.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-04T16:24:18.000Z",
+      "url": "https://www.zdnet.com/article/i-flew-2700-miles-with-4-headphones-my-best-travel-companion/"
+    },
+    {
+      "id": "1e57062d29a3",
+      "title": "Belkin’s new Joy-Con grips also boost the Switch 2’s battery life",
+      "excerpt": "Most of Belkin's Switch 2 accessories are designed to either protect or power up Nintendo's latest handheld, like its Charging Case Pro that actually does both at the same time. Its new multitasking Charging Grip can...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-04T16:00:00.000Z",
+      "url": "https://www.theverge.com/tech/942617/belkin-gaming-charging-grip-nintendo-switch-2-joy-con-controller",
+      "tags": [
+        "Gadgets",
+        "Gaming",
+        "News",
+        "Nintendo",
+        "Tech"
+      ]
+    },
+    {
+      "id": "09c9d7c3ae2f",
+      "title": "Cash App made a magic wand for contactless payments",
+      "excerpt": "The convenience of contactless payments can already feel magical, but Cash App is really leaning into that with its latest accessory. The mobile payment service is launching the Cash App Wand: an NFC-enabled, iridesce...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-04T16:00:00.000Z",
+      "url": "https://www.theverge.com/tech/942897/cash-app-tags-magic-wand-contactless-payments-price-launch",
+      "tags": [
+        "Gadgets",
+        "News",
+        "Tech"
+      ]
+    },
+    {
+      "id": "4266a57d96c9",
+      "title": "Windows is back on the Microsoft menu",
+      "excerpt": "I can't remember the last time Microsoft kicked off a Build keynote with Windows front and center, but that's exactly what CEO Satya Nadella did this week. Nadella didn't address the issues Microsoft is trying to fix...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-04T16:00:00.000Z",
+      "url": "https://www.theverge.com/tech/943108/microsoft-build-2026-windows-love-notepad",
+      "tags": [
+        "Microsoft",
+        "Microsoft Build",
+        "Notepad",
+        "Tech"
+      ]
+    },
+    {
+      "id": "696899d55590",
+      "title": "AMD takes a third of server CPU market as shipments grow",
+      "excerpt": "Intel still owns the room, but Epyc keeps nicking the furniture",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-04T15:49:42.000Z",
+      "url": "https://www.theregister.com/systems/2026/06/04/amd-takes-a-third-of-server-cpu-market-as-shipments-grow/5251283",
+      "image": "https://image.theregister.com/?imageId=4094116&width=800",
+      "tags": [
+        "systems"
+      ]
+    },
+    {
+      "id": "c475957ccba4",
+      "title": "Is Silicon Valley ready to put robots in people’s homes? Hello Robot is.",
+      "excerpt": "The California startup released the fourth-generation of its home assistance robot, Stretch.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-04T15:05:00.000Z",
+      "url": "https://techcrunch.com/2026/06/04/is-silicon-valley-ready-to-put-robots-in-peoples-homes-hello-robot-is/",
+      "tags": [
+        "AI",
+        "Robotics",
+        "Startups",
+        "Exclusive",
+        "hello robot"
+      ]
     },
     {
       "id": "e53e2ba48f4e",
@@ -132,15 +553,6 @@
         "Podcasts",
         "Science"
       ]
-    },
-    {
-      "id": "e41a99a68674",
-      "title": "I wore the Oura Ring 5 for 24 hours - and it fixes my biggest issue with Ring 4",
-      "excerpt": "The Oura Ring 5's best upgrade is how little you notice it.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-04T14:00:00.000Z",
-      "url": "https://www.zdnet.com/article/oura-ring-5-hands-on-review/"
     },
     {
       "id": "c669c451d057",
@@ -265,403 +677,6 @@
       "category": "AI",
       "publishedAt": "2026-06-04T12:00:00.000Z",
       "url": "https://openai.com/index/endava-frontiers"
-    },
-    {
-      "id": "d8f722f74415",
-      "title": "Yes, the Oura Ring 5 is noticeably smaller",
-      "excerpt": "This is not an Oura Ring 5 review. That's coming later, once I've had enough time to really test the new durability and battery life claims, plus the new software updates that start rolling out today. In the meantime,...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-04T12:00:00.000Z",
-      "url": "https://www.theverge.com/gadgets/942616/oura-ring-5-size-comparison-first-impressions",
-      "tags": [
-        "Fitness",
-        "Gadgets",
-        "Hands-on",
-        "Reviews",
-        "Tech",
-        "Wearable"
-      ]
-    },
-    {
-      "id": "3e5d66a242f2",
-      "title": "This Google Photos update has saved your digital photo frame",
-      "excerpt": "Aura's digital photo frames will continue to automatically sync with your Google Photos albums, after API changes threatened to remove the feature. Aura is now rolling out a full migration to Google's new Ambient API,...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-04T12:00:00.000Z",
-      "url": "https://www.theverge.com/tech/942860/aura-frame-google-photos-api-update-auto-sync",
-      "tags": [
-        "Google",
-        "News",
-        "Tech"
-      ]
-    },
-    {
-      "id": "f992c889b8a6",
-      "title": "Five Eyes: Watch out for odd LinkedIn connection requests, China's back on the hunt for state secrets",
-      "excerpt": "Cash-for-intel tradecraft continues to concern intelligence officials years after it was first spotted",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-04T11:57:22.000Z",
-      "url": "https://www.theregister.com/security/2026/06/04/five-eyes-china-expanding-state-secret-recruitment-campaign/5250978",
-      "image": "https://image.theregister.com/?imageId=258591&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "cd0e18912094",
-      "title": "Duo who sold car crash victims' data must repay £118k",
-      "excerpt": "Fresh penalties secured after initial prison, community service sentences for RAC double act",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-04T11:13:05.000Z",
-      "url": "https://www.theregister.com/cyber-crime/2026/06/04/duo-who-sold-car-crash-victims-data-must-repay-118k/5251075",
-      "image": "https://image.theregister.com/?imageId=232641&width=800",
-      "tags": [
-        "cyber-crime"
-      ]
-    },
-    {
-      "id": "ec69f8c750cb",
-      "title": "GOV.UK goes Dutch on payments as it dumps Stripe",
-      "excerpt": "Means residents can skip the credit card and use 'pay by bank' for local authorities and services",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-04T09:47:00.000Z",
-      "url": "https://www.theregister.com/public-sector/2026/06/04/govuk-goes-dutch-on-payments-as-it-dumps-stripe/5250763",
-      "image": "https://image.theregister.com/?imageId=252660&width=800",
-      "tags": [
-        "public sector"
-      ]
-    },
-    {
-      "id": "450c01930989",
-      "title": "Amazon develops a warehouse robot that workers can speak to",
-      "excerpt": "Amazon has announced a new version of its fully autonomous warehouse robot, Proteus, that will interact using language instead of code. The expanded capabilities come as part of a growing pivot toward automation as th...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-04T09:31:14.000Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/942884/amazon-next-generation-warehouse-robot-proteus",
-      "tags": [
-        "AI",
-        "Amazon",
-        "News",
-        "Robot",
-        "Tech"
-      ]
-    },
-    {
-      "id": "c683b509e092",
-      "title": "UK tax collector hands Capgemini £600M contact center deal, delays start of £2.4B CRM contract",
-      "excerpt": "Another monster tech contract in the works for one of the usual suspects",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-04T08:30:00.000Z",
-      "url": "https://www.theregister.com/public-sector/2026/06/04/uk-tax-collector-hands-capgemini-600m-contact-center-deal-delays-start-of-24b-crm-contract/5250650",
-      "image": "https://image.theregister.com/?imageId=5250749&width=800",
-      "tags": [
-        "public sector"
-      ]
-    },
-    {
-      "id": "0a656e2d05ae",
-      "title": "Nobody needs Mythos or 0-days to build a chaos-causing computer worm – free open source models work just fine",
-      "excerpt": "'Attackers can now cheaply operationalize known vulnerabilities at scale,' boffins tell The Reg",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-04T07:09:00.000Z",
-      "url": "https://www.theregister.com/research/2026/06/04/free-ai-model-powers-self-spreading-worm-in-enterprise-test-network/5250918",
-      "image": "https://image.theregister.com/?imageId=258863&width=800",
-      "tags": [
-        "research"
-      ]
-    },
-    {
-      "id": "243df2d3444a",
-      "title": "I turned my Android Auto setup into a gaming hub with 4 free apps - and don't regret it",
-      "excerpt": "In addition to the built-in Gamesnacks, these titles will help time pass more quickly when you're parked.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-04T01:00:24.000Z",
-      "url": "https://www.zdnet.com/article/i-tried-android-auto-games-and-apps/"
-    },
-    {
-      "id": "2ec0db477dbd",
-      "title": "Using Rhino Linux's new Lomiri snapshot took me back to the glory days of Unity",
-      "excerpt": "Rhino Linux has always been a beautiful Linux distribution, and there are some major changes on the horizon that will converge mobile and desktop.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-04T00:28:00.000Z",
-      "url": "https://www.zdnet.com/article/rhino-linux-unveils-early-release-snapshot-with-new-lomiri-desktop/"
-    },
-    {
-      "id": "64d1f60fbef9",
-      "title": "Your MacOS Spotlight tool is seriously underrated - 6 ways I use it beyond basic searches",
-      "excerpt": "Once you see what this MacOS tool can do, Cmd+Space will become second nature.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-04T00:26:00.000Z",
-      "url": "https://www.zdnet.com/article/how-i-use-spotlight-on-mac-beyond-search/"
-    },
-    {
-      "id": "3db100d19500",
-      "title": "How I keep my phone cool while running Android Auto - 8 simple yet effective tips",
-      "excerpt": "Android Auto uses a lot of resources, which can make your phone hot. Here's how I prevent mine from overheating.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-04T00:19:00.000Z",
-      "url": "https://www.zdnet.com/article/how-to-cool-down-phone-overheating-android-auto/"
-    },
-    {
-      "id": "bc4d0268064c",
-      "title": "Nintendo confirms it will sell a new Switch 2 with replaceable battery in the EU",
-      "excerpt": "Nintendo is planning to launch versions of Switch 2 hardware in the EU that will let users easily replace the battery. To meet its obligations from a new EU regulation that's set to go into effect on February 18th, 20...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-04T00:04:04.000Z",
-      "url": "https://www.theverge.com/games/942808/nintendo-switch-2-replaceable-battery-eu",
-      "tags": [
-        "Entertainment",
-        "Gaming",
-        "News",
-        "Nintendo",
-        "Policy"
-      ]
-    },
-    {
-      "id": "759ab73fa9df",
-      "title": "I used this $170 smartwatch as my virtual training coach to help me avoid injuries",
-      "excerpt": "The Amazfit Active 3 Premium offers everything you need to create a custom training plan, track metrics during your runs, and improve your fitness in just weeks.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-03T23:05:00.000Z",
-      "url": "https://www.zdnet.com/article/amazfit-active-3-premium-review/"
-    },
-    {
-      "id": "ed66da0fc422",
-      "title": "Lovable signs multiyear deal with Google Cloud to up usage 5x, source says",
-      "excerpt": "Lovable and Google signed an expanded multiyear deal that involves a 5x expansion of Lovable's footprint on Google Cloud, and expanded access to Anthropic Claude.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-03T22:56:51.000Z",
-      "url": "https://techcrunch.com/2026/06/03/lovable-signs-multi-year-deal-with-google-cloud-to-up-usage-5x-source-says/",
-      "tags": [
-        "AI",
-        "Startups",
-        "Anthropic",
-        "google cloud",
-        "Lovable"
-      ]
-    },
-    {
-      "id": "a9ad9e164128",
-      "title": "How to use ChatGPT: A beginner's guide to mastering OpenAI's chatbot in 2026",
-      "excerpt": "Want to try ChatGPT? It's free and doesn't require an account. Here's how to get started quickly.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-06-03T22:51:00.000Z",
-      "url": "https://www.zdnet.com/article/how-to-use-chatgpt-ai-chatbot-beginners-guide/"
-    },
-    {
-      "id": "94426b78530b",
-      "title": "Frustrated with your Bluetooth? How multipoint works - and why it sometimes won't",
-      "excerpt": "Why is dual-device wireless connectivity for your headphones and earbuds so unreliable? It's the gaping chasm between actual product specs and marketing speak.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-03T22:46:00.000Z",
-      "url": "https://www.zdnet.com/article/bluetooth-mulitpoint-explained/"
-    },
-    {
-      "id": "6099b33fb79b",
-      "title": "Commvault says it's time to rethink resiliency as AI crooks leave victims in a 'dark, dead' state",
-      "excerpt": "Those backup plans need backup testing",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-03T22:31:29.000Z",
-      "url": "https://www.theregister.com/security/2026/06/03/commvault-says-its-time-to-rethink-resiliency-as-ai-crooks-leave-victims-in-a-dark-dead-state/5250894",
-      "image": "https://image.theregister.com/?imageId=5250915&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "edad6dec33f8",
-      "title": "Apple is bringing age verification to Texas this week",
-      "excerpt": "Apple will introduce age verification in the App Store for users in Texas starting on Thursday, June 4th. The move, as spotted by MacRumors, comes just days after a federal appeals court allowed Texas' App Store Accou...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-03T21:49:51.000Z",
-      "url": "https://www.theverge.com/tech/942761/apple-texas-age-verification-app-store",
-      "tags": [
-        "Apple",
-        "iPhone",
-        "News",
-        "Policy",
-        "Politics",
-        "Privacy"
-      ]
-    },
-    {
-      "id": "5440a1b4a991",
-      "title": "WiiM expands its whole-home ecosystem with a new soundbar",
-      "excerpt": "WiiM, the audio company that's challenged the idea that audiophile-level performance requires a small loan, is expanding its whole-home ecosystem with the WiiM Bar, which releases in July. Much like its other speakers...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-03T21:12:51.000Z",
-      "url": "https://www.theverge.com/tech/942748/wiim-releases-first-soundbar",
-      "tags": [
-        "News",
-        "Speakers",
-        "Tech"
-      ]
-    },
-    {
-      "id": "e17f9d89d13d",
-      "title": "Bend the beam like Beckham to defeat anti-jamming tech",
-      "excerpt": "It's hard to stop a signal jammer if you can't locate the source, say Rice University researchers",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-03T20:57:39.000Z",
-      "url": "https://www.theregister.com/networks/2026/06/03/curving-beams-could-fool-anti-jamming-tech/5250872",
-      "image": "https://image.theregister.com/?imageId=244838&width=800",
-      "tags": [
-        "networks"
-      ]
-    },
-    {
-      "id": "d0283be55bf8",
-      "title": "Nvidia is already planning N2X and N3X chips — the goal is the Star Trek computer",
-      "excerpt": "Just in case you were wondering, Nvidia's RTX Spark isn't supposed to be a one-off. The company is not just flirting with becoming the fifth high-profile vendor of consumer laptop chips to see if people bite. At Compu...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-03T20:03:50.000Z",
-      "url": "https://www.theverge.com/tech/942588/nvidia-rtx-spark-n2x-n3x-r2-d2-star-trek-star-wars-plan",
-      "tags": [
-        "Microsoft",
-        "News",
-        "Nvidia",
-        "Tech",
-        "Windows"
-      ]
-    },
-    {
-      "id": "57aad6f200fb",
-      "title": "Can't make sense of Dashlane's vault theft notification? You're not alone.",
-      "excerpt": "Security advisory leaves out key details. Dashlane maintains complete silence.",
-      "source": "Ars Technica",
-      "category": "IT",
-      "publishedAt": "2026-06-03T19:53:14.000Z",
-      "url": "https://arstechnica.com/security/2026/06/dashlane-issues-opaque-advisory-warning-20-encrypted-vaults-were-stolen/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/dashlane-app-1152x648-1780514208.webp",
-      "tags": [
-        "Biz & IT",
-        "Security",
-        "2fa",
-        "dashlane",
-        "mfa",
-        "multi factor authentication"
-      ]
-    },
-    {
-      "id": "b1148769570a",
-      "title": "Alphabet’s record-breaking $85B raise for Google’s AI business is a helluva good signal",
-      "excerpt": "If Alphabet's record-breaking $85 billion stock sale signals investor appetite for AI-related offerings, we can see that investors are ready to chow.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-03T19:38:32.000Z",
-      "url": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal/",
-      "tags": [
-        "AI",
-        "Enterprise",
-        "TC",
-        "Alphabet",
-        "capital expenditures",
-        "Google"
-      ]
-    },
-    {
-      "id": "f773a0a5b0f5",
-      "title": "This 8TB SanDisk SSD just got another price cut at Best Buy - here's why I'd recommend it",
-      "excerpt": "The price of SSDs has been skyrocketing, but you can still save nearly 64% on the 8TB SanDisk Desk Drive external SSD from Best Buy right now - the lowest price we've seen.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-03T19:30:23.000Z",
-      "url": "https://www.zdnet.com/article/sandisk-8tb-desk-drive-ssd-best-buy-deal/"
-    },
-    {
-      "id": "ef62746980cf",
-      "title": "Google’s Dreambeans, its weirdest-named AI tool to date, will turn your life into a cartoon",
-      "excerpt": "Dreambeans is a curated list of AI-illustrated \"stories\" culled from the personal data in your Google account.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-03T19:07:42.000Z",
-      "url": "https://techcrunch.com/2026/06/03/googles-dreambeans-its-weirdest-named-ai-tool-to-date-will-turn-your-life-into-a-cartoon/",
-      "tags": [
-        "AI",
-        "Dreambeans",
-        "Google"
-      ]
-    },
-    {
-      "id": "11c9e1e3a9bf",
-      "title": "Grep this: Microsoft grafts (most) Linux commands onto Windows",
-      "excerpt": "Coreutils serves over 75 Unix commands in Windows and PowerShell command lines",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-03T19:04:28.000Z",
-      "url": "https://www.theregister.com/os-platforms/2026/06/03/grep-this-microsoft-grafts-most-linux-commands-onto-windows/5250796",
-      "image": "https://image.theregister.com/?imageId=5250857&width=800",
-      "tags": [
-        "os platforms"
-      ]
-    },
-    {
-      "id": "eae3c09dccf0",
-      "title": "The best Bluetooth trackers for Apple and Android phones",
-      "excerpt": "Some people rarely lose things. Wallets are always exactly where they’re supposed to be, keys never go missing, and remotes never slip between the couch cushions. And then there’s the rest of us — the folks who can’t...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-03T19:00:00.000Z",
-      "url": "https://www.theverge.com/23769840/best-bluetooth-trackers",
-      "tags": [
-        "Buying Guides",
-        "Gadgets",
-        "Tech",
-        "Verge Shopping",
-        "Wearable"
-      ]
-    },
-    {
-      "id": "f93da4ee0d9e",
-      "title": "Ring gets buzzed by class action for collecting visitors' faces without consent",
-      "excerpt": "The latest in a series of raised eyebrows over Familiar Faces and other AI ventures",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-03T18:06:47.000Z",
-      "url": "https://www.theregister.com/personal-tech/2026/06/03/ring-faces-class-action-over-facial-recognition-feature/5250661",
-      "image": "https://image.theregister.com/?imageId=251982&width=800",
-      "tags": [
-        "personal tech"
-      ]
-    },
-    {
-      "id": "dedd4e4f3e07",
-      "title": "The best Qi2 batteries for iPhone and Pixel",
-      "excerpt": "Compact power banks have gotten a lot faster in the past year — and it’s not just their USB-C charging speeds that have received a boost. The newest Qi2.2-certified models can wirelessly charge an iPhone 16 or later a...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-03T18:00:00.000Z",
-      "url": "https://www.theverge.com/gadgets/939362/best-magsafe-qi2-2-batteries-power-banks",
-      "tags": [
-        "Apple",
-        "Buying Guides",
-        "Deals",
-        "Gadgets",
-        "Google",
-        "Google Pixel"
-      ]
     }
   ]
 }
