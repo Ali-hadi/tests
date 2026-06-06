@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T03:39:50.604Z",
+  "generatedAt": "2026-06-06T13:47:41.171Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,110 @@
     }
   ],
   "posts": [
+    {
+      "id": "3f4adb5c45b5",
+      "title": "The Apple Watch needs a better Siri more than the iPhone right now",
+      "excerpt": "Apple's partnership with Google could supercharge its own health suite and wearable. Here's how.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-06T13:00:48.000Z",
+      "url": "https://www.zdnet.com/article/the-apple-watch-needs-a-better-siri-more-than-the-iphone-right-now/"
+    },
+    {
+      "id": "099dcd49960a",
+      "title": "Kabuto Park captures the fleeting joy of summer vacation",
+      "excerpt": "There are a lot of games that remind me of summer - hot days in the backseat with a copy of Dragon Warrior III, cooling off in the basement while grinding Gran Turismo races - but there aren't a lot of games that are...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-06T13:00:00.000Z",
+      "url": "https://www.theverge.com/entertainment/944060/kabuto-park-review-xbox-nintendo-switch-steam",
+      "tags": [
+        "Entertainment",
+        "Games Review",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "efc7f0aa58df",
+      "title": "Here comes new Siri again",
+      "excerpt": "Apple has been on its back foot, AI-wise, for the past few years. But in a strange way, playing from behind might not be such a bad move. At WWDC on Monday, Apple appears to be getting ready to reintroduce us to the n...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-06T12:00:00.000Z",
+      "url": "https://www.theverge.com/tech/944245/apple-wwdc-2026-ai-siri-gemini",
+      "tags": [
+        "AI",
+        "Apple",
+        "Apple Event",
+        "Tech",
+        "WWDC 2026"
+      ]
+    },
+    {
+      "id": "9fbbf39f8048",
+      "title": "The next YouTube phenomenon hitting the big screen",
+      "excerpt": "Hi, friends! Welcome to Installer No. 131, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, happy last week of productivity before the World Cup starts, and also you can read all...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-06T12:00:00.000Z",
+      "url": "https://www.theverge.com/tech/944942/amazing-digital-circus-lego-pokemon-installer",
+      "tags": [
+        "Apps",
+        "Gadgets",
+        "Installer",
+        "Streaming",
+        "Tech"
+      ]
+    },
+    {
+      "id": "f4a6b670b60e",
+      "title": "The 7 coolest gadgets I saw at Computex 2026 (and when you can buy each one)",
+      "excerpt": "Nvidia announced its new RTX Spark processor at Computex 2026, launching a wave of new high-performance ultrabooks.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-06T11:00:53.000Z",
+      "url": "https://www.zdnet.com/article/computex-2026-coolest-gadgets/"
+    },
+    {
+      "id": "72b777386e96",
+      "title": "Acer Swift Air 14 vs. MacBook Neo: I compared both budget laptops - this model wins",
+      "excerpt": "Acer's new $699 Swift Air 14 is a direct response to the MacBook Neo. Here's how it compares, by the specs.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-06T11:00:52.000Z",
+      "url": "https://www.zdnet.com/article/acer-swift-air-14-vs-macbook-neo/"
+    },
+    {
+      "id": "b680f7a088fc",
+      "title": "I compared ChatGPT and Gemini's AI image generation - and a single prompt tweak made a big difference",
+      "excerpt": "Having trouble getting the right image out of ChatGPT, Gemini, or another AI tool? Follow this prompt for higher-impact results.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-06-06T11:00:37.000Z",
+      "url": "https://www.zdnet.com/article/beginner-ai-image-prompt-tip-chatgpt-gemini/"
+    },
+    {
+      "id": "b1e73c523e8e",
+      "title": "The quickest way to find blocked numbers on your iPhone - it's easy",
+      "excerpt": "You can find, manage, and add blocked numbers from the same place on your iPhone. Here's where to look.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-06T10:00:43.000Z",
+      "url": "https://www.zdnet.com/article/how-to-find-blocked-numbers-on-iphone/"
+    },
+    {
+      "id": "6cdf0684cedd",
+      "title": "Oxford Uni student data pwned yet again - this time via career platform breach",
+      "excerpt": "Totally different attack from the break-in last month. Oh so that's OK then",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-06T07:28:00.000Z",
+      "url": "https://www.theregister.com/security/2026/06/06/oxford-university-data-pwned-again-by-career-platform-breach/5251754",
+      "image": "https://image.theregister.com/?imageId=226360&width=800",
+      "tags": [
+        "security"
+      ]
+    },
     {
       "id": "9aa1c2b35e75",
       "title": "More than a decade later, the team behind N++ is back with a multiplayer sequel",
@@ -563,131 +667,6 @@
       "category": "AI",
       "publishedAt": "2026-06-05T13:29:05.000Z",
       "url": "https://www.zdnet.com/article/google-could-turn-siri-into-ai-health-coach-for-my-apple-watch/"
-    },
-    {
-      "id": "c09ad217df2a",
-      "title": "AirTrunk commits $30B to build 5GW of AI data centers in India",
-      "excerpt": "The Australian data center operator plans to set up 5GW of capacity in India.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-05T13:03:10.000Z",
-      "url": "https://techcrunch.com/2026/06/05/airtrunk-commits-30b-to-build-5gw-of-ai-data-centers-in-india/",
-      "tags": [
-        "AI",
-        "AirTrunk",
-        "data centers"
-      ]
-    },
-    {
-      "id": "ab69649e2c4e",
-      "title": "This chunky little tablet got my kid to clean up his toys",
-      "excerpt": "Never underestimate the power that a cheap tablet holds over a kid under six. The Skylight Buddy is a device with one job: to be a cute little guy that helps your kid track routines and chores. It's $139.99, plus an o...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-05T13:00:00.000Z",
-      "url": "https://www.theverge.com/tech/943219/skylight-buddy-kids-calendar-chore-tracker-review",
-      "tags": [
-        "Gadgets",
-        "Reviews",
-        "Smart Home",
-        "Smart Home Reviews",
-        "Tech"
-      ]
-    },
-    {
-      "id": "9a92e2e479c4",
-      "title": "World Food Programme breach exposes data of 600k vulnerable Gazan families",
-      "excerpt": "Those receiving aid in the famine-threatened, war-torn territory told support will remain",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-05T13:00:00.000Z",
-      "url": "https://www.theregister.com/security/2026/06/05/world-food-programme-breach-exposes-data-of-600k-vulnerable-gazan-families/5251605",
-      "image": "https://image.theregister.com/?imageId=244774&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "d456084555a9",
-      "title": "Gigabyte packs 40 Intel Lunar Lake PCs in a pizza box",
-      "excerpt": "Who needs one big CPU when you could have dozens of little ones?",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-05T12:15:00.000Z",
-      "url": "https://www.theregister.com/systems/2026/06/05/gigabyte-packs-40-intel-lunar-lake-pcs-in-a-pizza-box/5251500",
-      "image": "https://image.theregister.com/?imageId=5251526&width=800",
-      "tags": [
-        "systems"
-      ]
-    },
-    {
-      "id": "d3f06795d9d5",
-      "title": "I customized a MacBook Neo with colorful spare parts",
-      "excerpt": "The MacBook Neo is Apple's cheapest laptop, its most colorful, and its easiest to repair in years. That means owners can buy replacement parts in all four of its available colors and swap them in on their own. So that...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-05T12:00:00.000Z",
-      "url": "https://www.theverge.com/tech/942839/macbook-neo-customization-color-mods-official-parts-frankenlaptop",
-      "tags": [
-        "Apple",
-        "Gadgets",
-        "Hands-on",
-        "Laptops",
-        "macOS",
-        "Report"
-      ]
-    },
-    {
-      "id": "d980814ac8b6",
-      "title": "Raspberry Pi's profits are up. So is its DRAM bill",
-      "excerpt": "Forecasts earnings well ahead of expectations, even as it taps credit facilities to lock in memory supply",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-05T11:30:00.000Z",
-      "url": "https://www.theregister.com/personal-tech/2026/06/05/raspberry-pis-profits-are-up-so-is-its-dram-bill/5251661",
-      "image": "https://image.theregister.com/?imageId=5251673&width=800",
-      "tags": [
-        "personal tech"
-      ]
-    },
-    {
-      "id": "4bd53a771414",
-      "title": "I trusted Malwarebytes to secure my PC for a month - here's how it performed",
-      "excerpt": "Malwarebytes Premium combines excellent threat protection and helpful security tools in an easy-to-use package.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-05T11:00:52.000Z",
-      "url": "https://www.zdnet.com/article/malwarebytes-premium-review/"
-    },
-    {
-      "id": "23408a1994cc",
-      "title": "Porsche’s Cayenne Coupe Turbo will even make 911 owners nervous",
-      "excerpt": "Back in 2002, Porsche fans sputtered with rage as the Cayenne made its debut at the Paris Motor. More than 20 years later, Porsche now sells more SUVs than anything else in its lineup. Last year, the Macan and Cayenne...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-05T11:00:00.000Z",
-      "url": "https://www.theverge.com/transportation/943004/porsche-cayenne-coupe-turbo-review-specs-price",
-      "tags": [
-        "Cars",
-        "Electric Cars",
-        "Porsche",
-        "Reviews",
-        "Tech",
-        "Transportation"
-      ]
-    },
-    {
-      "id": "e35f47b27522",
-      "title": "Capita £370M bid 40% under UK.gov estimate for Oracle HR and finance system project, court case reveals",
-      "excerpt": "Cost model designed to protect against low-cost bid bias, claims rival",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-05T10:45:00.000Z",
-      "url": "https://www.theregister.com/saas/2026/06/05/capita-370m-bid-40-under-ukgov-estimate-for-oracle-hr-and-finance-system-project-court-case-reveals/5251226",
-      "image": "https://image.theregister.com/?imageId=5242833&width=800",
-      "tags": [
-        "saas"
-      ]
     }
   ]
 }
