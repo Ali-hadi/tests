@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09T14:55:45.979Z",
+  "generatedAt": "2026-06-10T03:55:04.132Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,468 @@
     }
   ],
   "posts": [
+    {
+      "id": "8e5818f35c39",
+      "title": "Google just fired a warning shot in the AI subscription price wars",
+      "excerpt": "Google just made it significantly cheaper to enjoy its budget AI subscription tier.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-10T00:26:10.000Z",
+      "url": "https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/",
+      "tags": [
+        "AI",
+        "google ai",
+        "Google AI Plus"
+      ]
+    },
+    {
+      "id": "f54ffc6fed2e",
+      "title": "I tried Siri AI, and so far it actually works",
+      "excerpt": "Parents want one thing, and one thing only, out of AI: to add a list of soccer games or \"spirit week\" theme days from an email or a poorly formatted flyer onto their calendar in one shot. And I have good news for pare...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-09T23:43:00.000Z",
+      "url": "https://www.theverge.com/tech/947432/siri-ai-apple-intelligence-ios-27-wwdc",
+      "tags": [
+        "AI",
+        "Apple",
+        "Hands-on",
+        "Reviews",
+        "Tech",
+        "WWDC 2026"
+      ]
+    },
+    {
+      "id": "59443428d032",
+      "title": "How Justin Ernest invested nearly $500M into hot startups without a traditional VC fund",
+      "excerpt": "Instead of spending a year raising a formal venture fund, the Sabertooth VC founder used a captive network of LPs to invest in startups like Anthropic, Anduril, and SpaceX.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-09T23:17:51.000Z",
+      "url": "https://techcrunch.com/2026/06/09/how-justin-ernest-invested-nearly-500m-into-hot-startups-without-a-traditional-vc-fund/",
+      "tags": [
+        "AI",
+        "Fundraising",
+        "Venture",
+        "anduril",
+        "Anthropic",
+        "playground global"
+      ]
+    },
+    {
+      "id": "b963156370e1",
+      "title": "I cracked open a '1,000W' portable charger after it failed me in minutes - and wished I hadn't",
+      "excerpt": "Meet the 'too good to be true' portable charger. Here's my general buying advice for these types of products.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-09T23:00:47.000Z",
+      "url": "https://www.zdnet.com/article/1000w-gan-charger-hands-on/"
+    },
+    {
+      "id": "0be241dd89ce",
+      "title": "AI is making Patch Tuesday (kinda) fun again",
+      "excerpt": "Unless you're an admin or vulnerability manager – then you're totally screwed",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-09T22:49:16.000Z",
+      "url": "https://www.theregister.com/patches/2026/06/09/ai-is-making-patch-tuesday-kinda-fun-again/5253225",
+      "image": "https://image.theregister.com/?imageId=5253245&width=800",
+      "tags": [
+        "patches"
+      ]
+    },
+    {
+      "id": "b382b799f629",
+      "title": "Salesforce cuts staff amid acquisition spree and $50 billion share buyback",
+      "excerpt": "The layoffs come after CEO Marc Benioff boasted of record revenue and 'incredible cashflow' two weeks ago",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-09T22:01:07.000Z",
+      "url": "https://www.theregister.com/saas/2026/06/09/salesforce-layoffs-hit-amid-m3ter-acquisition-and-stock-buyback/5253162",
+      "image": "https://image.theregister.com/?imageId=254426&width=800",
+      "tags": [
+        "saas"
+      ]
+    },
+    {
+      "id": "1baa1c8db1fc",
+      "title": "Congress just gave DHS another $70 billion",
+      "excerpt": "Congress narrowly voted to fund President Donald Trump's mass deportation agenda, giving the Department of Homeland Security $70 billion over the next three years. The house voted 214 to 212 in favor of the reconcilia...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-09T21:34:46.000Z",
+      "url": "https://www.theverge.com/policy/947146/dhs-funding-congress-budget-reconciliation",
+      "tags": [
+        "News",
+        "Policy",
+        "Politics"
+      ]
+    },
+    {
+      "id": "734dce701b84",
+      "title": "The App Store is going to add subscription bundles soon",
+      "excerpt": "Later this year, you will be able to get bundled subscriptions for iPhone apps, as Apple announced it's expanding App Store bundles so they can include offers from different companies. It's similar to streaming video...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-09T21:30:48.000Z",
+      "url": "https://www.theverge.com/tech/947365/apple-subscription-bundles-app-store",
+      "tags": [
+        "Apple",
+        "iOS",
+        "News",
+        "Tech"
+      ]
+    },
+    {
+      "id": "eb5ed5436e95",
+      "title": "GM thinks EVs can help offset AI’s energy suck with vehicle-to-grid tech",
+      "excerpt": "At an event in San Francisco today, General Motors made a series of announcements around EV batteries, energy storage, and grid resiliency in the face of growing electricity demand from AI data centers. The automaker...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-09T21:00:00.000Z",
+      "url": "https://www.theverge.com/transportation/946820/gm-energy-ev-v2g-storage-sodium-ion",
+      "tags": [
+        "AI",
+        "Electric Cars",
+        "Energy",
+        "GM",
+        "News",
+        "Science"
+      ]
+    },
+    {
+      "id": "d67a87154920",
+      "title": "Locked in heated rivalry with researcher, Microsoft fixes 0-day they disclosed",
+      "excerpt": "A separate zero-day also disclosed by Nightmare Eclipse appears to be patched as well.",
+      "source": "Ars Technica",
+      "category": "IT",
+      "publishedAt": "2026-06-09T20:56:52.000Z",
+      "url": "https://arstechnica.com/security/2026/06/locked-in-heated-rivalry-with-researcher-microsoft-fixes-0-day-they-disclosed/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/09/code-vulnerability-security-1000x648.jpg",
+      "tags": [
+        "Biz & IT",
+        "Security",
+        "microsoft",
+        "nightmare eclipse",
+        "vulnerabilities"
+      ]
+    },
+    {
+      "id": "d2f2eda77e66",
+      "title": "Hey, Siri, here’s what I actually want from AI",
+      "excerpt": "I'm desperate for a personal AI assistant, but do I really want to become the kind of person who can't function without the friendly robot voice in my phone?",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-09T20:50:17.000Z",
+      "url": "https://techcrunch.com/2026/06/09/hey-siri-heres-what-i-actually-want-from-ai/",
+      "tags": [
+        "AI",
+        "Apple",
+        "siri",
+        "WWDC 2026"
+      ]
+    },
+    {
+      "id": "dd70a04a27e5",
+      "title": "If your sex life is dead, you can blame Steve Jobs",
+      "excerpt": "Economists find signs of a ‘large and causal relationship between iPhones and fertility' in AT&T exclusivity-era data",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-09T20:49:03.000Z",
+      "url": "https://www.theregister.com/personal-tech/2026/06/09/study-links-iphone-rollout-to-decline-in-us-birth-rates/5253138",
+      "image": "https://image.theregister.com/?imageId=229069&width=800",
+      "tags": [
+        "personal tech"
+      ]
+    },
+    {
+      "id": "9b293761068a",
+      "title": "Anthropic’s Fable 5 can make weirdly fun video games with the click of a button",
+      "excerpt": "Anthropic's Claude Fable 5 is going to be a big hit with the web's vibe coders.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-09T20:37:49.000Z",
+      "url": "https://techcrunch.com/2026/06/09/anthropics-fable-5-can-make-weirdly-fun-video-games-with-the-click-of-a-button/",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "Claude",
+        "Fable 5",
+        "Mythos"
+      ]
+    },
+    {
+      "id": "a49dd2c601e9",
+      "title": "Microsoft AI head calls out Anthropic for acting like Claude is conscious",
+      "excerpt": "Microsoft AI CEO Mustafa Suleyman says it's \"really, really dangerous\" for Anthropic to speculate about Claude's consciousness inside its \"constitution,\" or the instructions that tell the model how to behave. During a...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-09T20:24:25.000Z",
+      "url": "https://www.theverge.com/tech/947197/microsoft-ai-mustafa-suleyman-anthropic-claude-conscious",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "Microsoft",
+        "News",
+        "Tech"
+      ]
+    },
+    {
+      "id": "fa2e163a5eae",
+      "title": "Anthropic spins a Fable of a tamer, safer Mythos",
+      "excerpt": "Company also changes data retention policy",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-09T19:32:13.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/09/anthropic-spins-a-fable-of-a-tamer-safer-mythos/5253106",
+      "image": "https://image.theregister.com/?imageId=5253132&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "ca97c3f14940",
+      "title": "Nintendo is playing things too safe",
+      "excerpt": "Tuesday's Nintendo Direct showcase felt like an important moment for the company. With the Switch 2 heading into its second holiday season, one in which the hardware will be even more expensive thanks to a price hike,...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-09T19:01:04.000Z",
+      "url": "https://www.theverge.com/entertainment/947120/nintendo-direct-june-2026-analysis",
+      "tags": [
+        "Entertainment",
+        "Gaming",
+        "Nintendo"
+      ]
+    },
+    {
+      "id": "d1f07b63f2d3",
+      "title": "Can tech companies learn to love cheaper AI models?",
+      "excerpt": "If those same AI workloads can be handled by cheaper models without affecting quality, it would mean a massive shift in the economics of AI.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-09T18:56:09.000Z",
+      "url": "https://techcrunch.com/2026/06/09/can-tech-companies-learn-to-love-cheaper-models/",
+      "tags": [
+        "AI",
+        "TC",
+        "ai models",
+        "Anthropic",
+        "Harvey",
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "1ee38b5b76b3",
+      "title": "Amazon just slashed SSD prices for Prime Day - these are the 5 best deals I've found",
+      "excerpt": "I track SSD deals, and found huge markdowns from top brands like WD, Samsung, and more ahead of Amazon Prime Day.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-09T18:17:35.000Z",
+      "url": "https://www.zdnet.com/article/best-early-amazon-prime-day-ssd-deals-2026/"
+    },
+    {
+      "id": "e9884aa672b6",
+      "title": "Miasma worms its way onto GitHub as attack kit goes open source",
+      "excerpt": "As if there weren't enough package poisonings to worry about",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-09T18:05:50.000Z",
+      "url": "https://www.theregister.com/cyber-crime/2026/06/09/miasma-supply-chain-attack-toolkit-goes-public-on-github/5253074",
+      "image": "https://image.theregister.com/?imageId=5242669&width=800",
+      "tags": [
+        "cyber-crime"
+      ]
+    },
+    {
+      "id": "c988e11851b7",
+      "title": "WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more",
+      "excerpt": "Apple primarily made the case for an improved experience with its long-standing Siri assistant, which like most other announcements had a hefty helping of AI.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-09T18:04:24.000Z",
+      "url": "https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/",
+      "tags": [
+        "AI",
+        "Apple",
+        "siri",
+        "wwdc",
+        "WWDC 2026"
+      ]
+    },
+    {
+      "id": "836b1bce1a47",
+      "title": "I just saved $180 a year on my Google AI plan without losing my Drive storage - here's how",
+      "excerpt": "Google AI Plus is cheaper now, and may be the easiest way to reduce my Google One bill without giving uo storage or AI.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-06-09T17:52:00.000Z",
+      "url": "https://www.zdnet.com/article/google-ai-plus-plan-save-annually-drive-cloud-storage-costs/"
+    },
+    {
+      "id": "6351e54e3b87",
+      "title": "Fitbit’s Charge 6 and Ace LTE are now as cheap as the new $100 Air",
+      "excerpt": "Whether you’re shopping for Father’s Day or trying to keep your kids entertained over summer break, you don’t need to spend a fortune to get a great Fitbit right now. You can currently pick up the Fitbit Charge 6 for...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-09T17:35:51.000Z",
+      "url": "https://www.theverge.com/gadgets/947063/fitbit-charge-6-ace-lte-air-deal-sale",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Tech",
+        "Verge Shopping",
+        "Wearable"
+      ]
+    },
+    {
+      "id": "2ec9e745398e",
+      "title": "MIT boffins take electrospray nozzles out of the cleanroom, into the 3D printer",
+      "excerpt": "Who said sub-millimeter, three-layer science juice had to be expensive to squirt?",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-09T17:31:47.000Z",
+      "url": "https://www.theregister.com/science/2026/06/09/mit-3d-prints-electrospray-nozzles-for-three-layer-drug-delivery/5253017",
+      "image": "https://image.theregister.com/?imageId=5253040&width=800",
+      "tags": [
+        "science"
+      ]
+    },
+    {
+      "id": "72bc438225ed",
+      "title": "Liquid Glass for Linux? PearOS makes another Mac move - how it looks now",
+      "excerpt": "PearOS has been promising to become the MacOS of Linux for some time now, and the latest release just might deliver.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-09T17:19:12.000Z",
+      "url": "https://www.zdnet.com/article/pearos-is-daring-to-go-the-liquid-glass-route-on-linux/"
+    },
+    {
+      "id": "4ffa8c72704a",
+      "title": "Apple wants Europe to blink",
+      "excerpt": "It took a few years, but Apple finally made its AI look useful. Now millions of iPhone users in Europe are being told they won't be getting Siri AI anytime soon, if ever - and Apple wants them to blame the EU. Apple s...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-09T17:13:14.000Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/947051/apple-europe-dma-siri-ai",
+      "tags": [
+        "Apple",
+        "Policy",
+        "Report",
+        "Tech"
+      ]
+    },
+    {
+      "id": "7efcaaa23c1c",
+      "title": "Anthropic’s Claude Fable 5 is a version of Mythos the public can access today",
+      "excerpt": "Anthropic is releasing Claude Fable 5, its first Mythos-class model available to the public. The model comes with guardrails that block responses in high-risk areas like cybersecurity and biology.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-09T17:00:00.000Z",
+      "url": "https://techcrunch.com/2026/06/09/anthropics-claude-fable-5-is-a-version-of-mythos-the-public-can-access-today/",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "Claude",
+        "cybersecurity",
+        "Mythos"
+      ]
+    },
+    {
+      "id": "8f1f93c964ec",
+      "title": "Anthropic's new Claude Fable 5 is the same base model as Mythos but with guardrails attached",
+      "excerpt": "Claude Fable 5 brings Mythos-class AI coding power to general users, but with cybersecurity guardrails, fallback models, and pricing that could make developers think twice.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-06-09T17:00:00.000Z",
+      "url": "https://www.zdnet.com/article/anthropiclaude-fable-5-nerfed-mythos-with-guardrails/"
+    },
+    {
+      "id": "0e0c12239053",
+      "title": "The best early Prime Day TV deals actually worth your time: Samsung, Sony, and more",
+      "excerpt": "Amazon's Prime Day sale is just two weeks away, but you can already save thousands on TVs from top brands we've tested.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-09T16:49:17.000Z",
+      "url": "https://www.zdnet.com/article/best-early-prime-day-tv-deals-2026/"
+    },
+    {
+      "id": "d853972be50f",
+      "title": "US workers are the world's biggest AI skeptics - and it's not just about job loss",
+      "excerpt": "More than half of US desk workers consider themselves AI skeptics, while emerging economies trust AI more, according to recent studies.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-06-09T16:34:11.000Z",
+      "url": "https://www.zdnet.com/article/us-workers-are-worlds-biggest-ai-skeptics/"
+    },
+    {
+      "id": "fffa890f17a8",
+      "title": "Apple’s iOS 27 goes all agentic on compromised passwords, promises to change them with one tap",
+      "excerpt": "iBiz might not win the AI race, but analysts say it's focusing on features people may actually use",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-09T16:13:31.000Z",
+      "url": "https://www.theregister.com/personal-tech/2026/06/09/apples-ios-27-goes-all-agentic-on-compromised-passwords/5252957",
+      "image": "https://image.theregister.com/?imageId=252544&width=800",
+      "tags": [
+        "personal tech"
+      ]
+    },
+    {
+      "id": "a148a093d4fb",
+      "title": "It’s not FAANG anymore. It’s MANGOS.",
+      "excerpt": "With SpaceX, Anthropic, and OpenAI all eyeing massive public debuts, the tech industry may soon have a new class of corporate overlords — and a new acronym to match. Say goodbye to FAANG and hello to MANGOS.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-09T16:09:14.000Z",
+      "url": "https://techcrunch.com/2026/06/09/its-not-faang-anymore-its-mangos/",
+      "tags": [
+        "AI",
+        "Startups",
+        "TC",
+        "big tech",
+        "FAANG",
+        "In Brief"
+      ]
+    },
+    {
+      "id": "f75faecbc553",
+      "title": "Amazon Prime members can buy a car online now - and get a $1,500 gift card",
+      "excerpt": "Amazon is now partnering with local dealerships to help you buy, sell, or lease your car - and Prime members can get a big gift card when they do.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-09T16:01:31.000Z",
+      "url": "https://www.zdnet.com/article/amazon-autos-1500-gift-card-prime-day-2026/"
+    },
+    {
+      "id": "14e1c3453299",
+      "title": "Neo4j plots Palantir alternative with GraphAware acquisition",
+      "excerpt": "Graph database biz says on-prem, air-gapped intel stack gives governments a no-kill-switch option",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-09T15:30:14.000Z",
+      "url": "https://www.theregister.com/databases/2026/06/09/neo4j-plots-palantir-alternative-with-graphaware-acquisition/5252913",
+      "image": "https://image.theregister.com/?imageId=5240668&width=800",
+      "tags": [
+        "databases"
+      ]
+    },
+    {
+      "id": "e81d9321a318",
+      "title": "High-severity vulnerability in Linux caused by a single faulty character",
+      "excerpt": "Use-after-free bug can be exploited to evade sandbox defenses.",
+      "source": "Ars Technica",
+      "category": "IT",
+      "publishedAt": "2026-06-09T15:12:43.000Z",
+      "url": "https://arstechnica.com/security/2026/06/a-single-errant-character-in-the-linux-kernel-allows-attacker-to-gain-root/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security.jpg",
+      "tags": [
+        "Biz & IT",
+        "Security",
+        "kernel",
+        "Linux",
+        "vulnerabilities"
+      ]
+    },
     {
       "id": "e1e6f3f88178",
       "title": "Microsoft AI chief walks back comments about AI taking over white-collar work",
@@ -207,464 +669,6 @@
       "image": "https://image.theregister.com/?imageId=5242008&width=800",
       "tags": [
         "devops"
-      ]
-    },
-    {
-      "id": "0d1ce8a78de3",
-      "title": "Apple’s best AI idea looks a lot like vibe coding",
-      "excerpt": "Most of Apple's current AI ideas are roughly the same as everyone else's AI ideas. A chatbot you can ask questions; quick ways to create or summarize text; bizarre, borderline creepy image-generation tools. The compan...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-09T13:34:48.000Z",
-      "url": "https://www.theverge.com/tech/946733/apple-shortcuts-ai-safari-tabs-vibe-code",
-      "tags": [
-        "AI",
-        "Apple",
-        "Tech"
-      ]
-    },
-    {
-      "id": "df6bf2a76af8",
-      "title": "Apple dials down Liquid Glass, and the Mac looks way better for it",
-      "excerpt": "MacOS 27 Golden Gate will usher in a bunch of changes to the Mac when it's released later this year, with its biggest new features revolving around Siri AI. But for now, using the first developer beta, Siri AI is only...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-09T13:04:39.000Z",
-      "url": "https://www.theverge.com/tech/946567/apple-macos-27-golden-gate-dev-beta-hands-on",
-      "tags": [
-        "Analysis",
-        "Apple",
-        "Desktops",
-        "Gadgets",
-        "Hands-on",
-        "Laptops"
-      ]
-    },
-    {
-      "id": "f4b3a7cbf676",
-      "title": "Lovable says it has hit $500M in annualized revenue, with 1 million new projects a week",
-      "excerpt": "Lovable says it has now surpassed $500 million in annualized run-rate revenue and its users are building businesses and replacing internal software.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-09T13:00:00.000Z",
-      "url": "https://techcrunch.com/2026/06/09/lovable-says-it-has-hit-500m-in-annualized-revenue-with-1-million-new-projects-a-week/",
-      "tags": [
-        "TC",
-        "AI",
-        "vibe coding",
-        "Lovable"
-      ]
-    },
-    {
-      "id": "507d990a2d74",
-      "title": "The Rivian R2 is too much fun to let drive itself",
-      "excerpt": "Rivian may be all in on robotaxis and autonomy, but it's still got human drivers - and EV buyers - to win over. The pricey R1S SUV and R1T pickup brought Rivian A-list media attention and cult-hit status, but the comp...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-09T13:00:00.000Z",
-      "url": "https://www.theverge.com/transportation/946398/rivian-r2-review-price-specs-ai-ev",
-      "tags": [
-        "Autonomous Cars",
-        "Electric Cars",
-        "Reviews",
-        "Tech",
-        "Transportation"
-      ]
-    },
-    {
-      "id": "7330b6170df4",
-      "title": "Apple’s AI pitch will live or die by its privacy promise",
-      "excerpt": "As expected, yesterday's WWDC keynote was mostly about AI. And also as expected, Apple tried to turn its late arrival into its sales pitch: It didn't rush into AI because it was taking its time to do things right. In...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-09T12:55:33.000Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/946705/apple-private-cloud-compute-ai-siri-intelligence-wwdc",
-      "tags": [
-        "AI",
-        "Anthropic",
-        "Apple",
-        "Apple Event",
-        "Google",
-        "OpenAI"
-      ]
-    },
-    {
-      "id": "732fdebbd07e",
-      "title": "Signal says UK plan to scan devices for nude images 'endangers us all'",
-      "excerpt": "Encrypted messaging app warns device-level checks could be repurposed for censorship",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-09T12:41:03.000Z",
-      "url": "https://www.theregister.com/security/2026/06/09/signal-uks-child-nude-block-threat-wont-protect-children/5252761",
-      "image": "https://image.theregister.com/?imageId=227546&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "8b848e86613a",
-      "title": "Chrome's zero-day Whac-A-Mole continues with fifth exploited bug of the year",
-      "excerpt": "Google paid researcher a tidy $55K bounty for its discovery",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-09T12:15:00.000Z",
-      "url": "https://www.theregister.com/security/2026/06/09/chromes-zero-day-whac-a-mole-continues-with-fifth-exploited-bug-of-the-year/5252689",
-      "image": "https://image.theregister.com/?imageId=256718&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "c47ad5ed1119",
-      "title": "How an e-scooter founder raised $5 million to build space data centers",
-      "excerpt": "Orbital founder Euwyn Poon built 250,000 scooters at Spin. Now he wants to launch 10,000 space data centers.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-09T12:00:00.000Z",
-      "url": "https://techcrunch.com/2026/06/09/how-an-e-scooter-founder-raised-5-million-to-build-space-data-centers/",
-      "tags": [
-        "Space",
-        "AI",
-        "Exclusive",
-        "Orbital"
-      ]
-    },
-    {
-      "id": "dff34620532b",
-      "title": "France probes compromise of gov messaging platform after account hijack",
-      "excerpt": "Authorities say the breach only exposed public chat rooms, but alleged attacker claims to have accessed far more data",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-09T11:27:55.000Z",
-      "url": "https://www.theregister.com/security/2026/06/09/france-probes-compromise-of-gov-messaging-platform-after-account-hijack/5252717",
-      "image": "https://image.theregister.com/?imageId=255787&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "6d2b0c58be4b",
-      "title": "Kyndryl showers execs with shares while staff ponder redundancy packages",
-      "excerpt": "IBM spin-off's top brass bag six-figure stock awards",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-09T10:45:00.000Z",
-      "url": "https://www.theregister.com/on-prem/2026/06/09/kyndryl-showers-execs-with-shares-while-staff-ponder-redundancy-packages/5252181",
-      "image": "https://image.theregister.com/?imageId=5252203&width=800",
-      "tags": [
-        "on-prem"
-      ]
-    },
-    {
-      "id": "b819b87394ad",
-      "title": "Next stop, C:\\ ... Paris Metro screen goes off the tracks",
-      "excerpt": "Prochain arrê: Gare du Bork! French capital city train does the tech can-can",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-09T10:00:00.000Z",
-      "url": "https://www.theregister.com/offbeat/2026/06/09/next-stop-c-paris-metro-screen-goes-off-the-tracks/5252136",
-      "image": "https://image.theregister.com/?imageId=5252166&width=800",
-      "tags": [
-        "offbeat"
-      ]
-    },
-    {
-      "id": "6ccdfb42ea45",
-      "title": "Qilin NHS breach tally grows as Essex trust confirms stolen records",
-      "excerpt": "Two years on from ransomware attack, hospitals are still trying to identify and warn patients",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-09T09:15:00.000Z",
-      "url": "https://www.theregister.com/cyber-crime/2026/06/09/qilin-nhs-breach-tally-grows-as-essex-trust-confirms-stolen-records/5252663",
-      "image": "https://image.theregister.com/?imageId=5252686&width=800",
-      "tags": [
-        "cyber-crime"
-      ]
-    },
-    {
-      "id": "7651b94c0924",
-      "title": "UK.gov warned that digital transformation hype is no substitute for delivery",
-      "excerpt": "Parliamentary committee says £45B savings claim risks undermining public sector tech reform rather than helping it",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-09T08:30:00.000Z",
-      "url": "https://www.theregister.com/public-sector/2026/06/09/ukgov-warned-that-digital-transformation-hype-is-no-substitute-for-delivery/5252344",
-      "image": "https://image.theregister.com/?imageId=5252428&width=800",
-      "tags": [
-        "public sector"
-      ]
-    },
-    {
-      "id": "e6392865bc29",
-      "title": "Why Apple’s slow-and-steady AI bet is starting to look pretty smart",
-      "excerpt": "Can Apple's new AI glow up put to bed accusations that it's losing an all-important industry race?",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-09T01:56:48.000Z",
-      "url": "https://techcrunch.com/2026/06/08/why-apples-slow-and-steady-ai-bet-is-starting-to-look-pretty-smart/",
-      "tags": [
-        "AI",
-        "Apple",
-        "iPhone",
-        "siri ai",
-        "WWDC 2026"
-      ]
-    },
-    {
-      "id": "08736f84b1c8",
-      "title": "The biggest announcements at Apple WWDC 2026 - including Siri, iOS 27 dev beta, and more",
-      "excerpt": "We're reporting live from Apple Park to cover the company's developer conference. Here are the latest updates.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-09T01:41:00.000Z",
-      "url": "https://www.zdnet.com/article/apple-wwdc-live-blog-06-08-2026/"
-    },
-    {
-      "id": "5d88cbcf693b",
-      "title": "Apple's new Siri AI comes with hidden costs that power users should know of",
-      "excerpt": "Apple unveiled a revamped Siri at WWDC, but is it enough to put the company back in the AI race?",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-06-09T01:39:00.000Z",
-      "url": "https://www.zdnet.com/article/the-new-siri-ai-could-cost-you-heres-why/"
-    },
-    {
-      "id": "844820f8a23b",
-      "title": "The two biggest iOS 27 features at WWDC for me had nothing to do with Siri AI",
-      "excerpt": "Enhancements to foundational technologies are always welcomed - and potentially more useful - than the flashier ones.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-06-09T01:27:00.000Z",
-      "url": "https://www.zdnet.com/article/ios-27-connectivity-upgrades/"
-    },
-    {
-      "id": "f5eb6351a58c",
-      "title": "How to download the iPadOS 27 developer beta right now - and which models support it",
-      "excerpt": "Apple has released the first iPadOS 27 beta, offering early access to an upgraded Siri, new Safari features, and more.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-09T01:24:00.000Z",
-      "url": "https://www.zdnet.com/article/how-to-download-ipados-27-developer-beta/"
-    },
-    {
-      "id": "21040c1567b6",
-      "title": "Uncle Sam considers buying a seat on the Titanic",
-      "excerpt": "L'etat, c'est AI",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-09T01:17:57.000Z",
-      "url": "https://www.theregister.com/ai-and-ml/2026/06/09/uncle-sam-considers-buying-a-seat-on-the-titanic/5252598",
-      "image": "https://image.theregister.com/?imageId=5252625&width=800",
-      "tags": [
-        "ai and ml"
-      ]
-    },
-    {
-      "id": "eaaedcc5225a",
-      "title": "This 4TB WD Black SSD is nearly $1,200 off at Best Buy - and you can still qualify for it",
-      "excerpt": "In the era of rising SSD prices, you can still save 65% on the 4TB WD Black SN850X SSD right now.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-09T01:12:00.000Z",
-      "url": "https://www.zdnet.com/article/wd-black-sn850x-4tb-best-buy-deal/"
-    },
-    {
-      "id": "b1e73c523e8e",
-      "title": "I found the quickest way to find blocked numbers on your iPhone - and it's so reliable",
-      "excerpt": "You can find, manage, and add blocked numbers from the same place on your iPhone. Here's how I do it.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-09T01:06:00.000Z",
-      "url": "https://www.zdnet.com/article/how-to-find-blocked-numbers-on-iphone/"
-    },
-    {
-      "id": "e53e2ba48f4e",
-      "title": "I took 200+ photos with two of the best Android camera phones - and it was dang close",
-      "excerpt": "I expected the Vivo X300 Ultra to wipe the floor with Samsung's Galaxy S26 Ultra, but it was closer than I'd thought.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-09T00:57:00.000Z",
-      "url": "https://www.zdnet.com/article/samsung-galaxy-s26-ultra-vs-vivo-x300-ultra-camera-comparison/"
-    },
-    {
-      "id": "406798b54a5f",
-      "title": "MacBook Neo vs. Acer Swift Air 14: I've used both budget laptops - this model clearly wins",
-      "excerpt": "Acer's new $699 Swift Air 14 is a direct response to the MacBook Neo. Here's how it compares, by the numbers.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-09T00:57:00.000Z",
-      "url": "https://www.zdnet.com/article/macbook-neo-vs-acer-swift-air-14/"
-    },
-    {
-      "id": "0e96c0434d62",
-      "title": "Mercor’s Brendan Foody calls out Sequoia, accusing it of ‘dual-pricing’ valuation tricks",
-      "excerpt": "Sequoia is just one of the top firms that sells same equity at two different prices.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-09T00:45:56.000Z",
-      "url": "https://techcrunch.com/2026/06/08/mercors-brendan-foody-calls-out-sequoia-over-dual-pricing-valuation-tricks/",
-      "tags": [
-        "AI",
-        "Venture",
-        "Mercor",
-        "Sequoia Partners",
-        "Valuations"
-      ]
-    },
-    {
-      "id": "bf6666ca1667",
-      "title": "Instagram is finally letting everyone reorganize their profile grid",
-      "excerpt": "Nearly a year after it was announced, Instagram says it's delivering the ability to rearrange the posts in your profile grid. It had been available to some people in test groups, but as of June 8th, it's rolling out w...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-08T23:58:30.000Z",
-      "url": "https://www.theverge.com/tech/946458/instagram-is-finally-letting-everyone-reorganize-their-grid",
-      "tags": [
-        "Apps",
-        "Instagram",
-        "Meta",
-        "News",
-        "Tech"
-      ]
-    },
-    {
-      "id": "35a86b29928a",
-      "title": "Apple’s Screen Time updates are too little, too late",
-      "excerpt": "Apple spending a big chunk of its WWDC keynote on parental controls was surprising for several reasons. But the biggest is that, despite all the airtime, it didn't announce much new beyond a redesigned interface. Almo...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-08T23:41:00.000Z",
-      "url": "https://www.theverge.com/tech/946446/apples-screen-time-updates-are-too-little-too-late",
-      "tags": [
-        "Analysis",
-        "Apple",
-        "Apple Event",
-        "Report",
-        "Tech"
-      ]
-    },
-    {
-      "id": "76a663cf026d",
-      "title": "5 things I already love from the iOS 27 beta",
-      "excerpt": "iOS 27 has only been out for a few hours, and I've been messing around with the developer beta on my iPhone 16 Pro. I was most interested in trying out the new Siri AI, but unfortunately, I'm still on Apple's waitlist...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-08T23:30:00.000Z",
-      "url": "https://www.theverge.com/tech/946391/apple-ios-27-developer-beta-1-wwdc-2026-5-things",
-      "tags": [
-        "Apple",
-        "Apple Event",
-        "iOS",
-        "News",
-        "Tech"
-      ]
-    },
-    {
-      "id": "a63d7234a616",
-      "title": "Apple courts developers with privacy and context in AI comeback bid",
-      "excerpt": "Apple Intelligence stumbled through 2024 and 2025. It's starting to look respectable",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-08T23:25:19.000Z",
-      "url": "https://www.theregister.com/devops/2026/06/09/apple-courts-developers-with-privacy-and-context-in-ai-comeback-bid/5252564",
-      "image": "https://image.theregister.com/?imageId=153859&width=800",
-      "tags": [
-        "devops"
-      ]
-    },
-    {
-      "id": "212c9c7cd1ad",
-      "title": "As OpenAI files for IPO, Sam Altman’s eye-scanning company is doing layoffs, report says",
-      "excerpt": "Tools for Humanity, Sam Altman's identity verification company, is reportedly struggling to generate revenue and will downsize its staff.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-08T22:41:45.000Z",
-      "url": "https://techcrunch.com/2026/06/08/as-openai-files-for-ipo-sam-altmans-eye-scanning-company-is-doing-layoffs-report-says/",
-      "tags": [
-        "AI",
-        "TC",
-        "In Brief",
-        "Layoffs",
-        "sam altman",
-        "tools for humanity"
-      ]
-    },
-    {
-      "id": "650cfbfdb4ba",
-      "title": "Apple’s WWDC AI demos looked more real after $250M false ad settlement",
-      "excerpt": "The vibe of Apple's 2026 WWDC keynote felt like a spouse proudly listing all the honey-do-list items tackled. One subtle example: the many AI demos of someone standing, phone in hand.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-08T22:39:57.000Z",
-      "url": "https://techcrunch.com/2026/06/08/apples-wwdc-ai-demos-looked-more-real-after-250m-false-ad-settlement/",
-      "tags": [
-        "AI",
-        "Apps",
-        "Gadgets",
-        "TC",
-        "apple intellignce",
-        "siri"
-      ]
-    },
-    {
-      "id": "c1f6b5f93fff",
-      "title": "Apple is using AI to fix Safari’s extension problem",
-      "excerpt": "Apple is trying to solve one of Safari's biggest weaknesses with AI. Safari has long lacked the robust library of extensions that its rivals have, mainly due to the stringent development requirements from Apple. But n...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-08T22:14:17.000Z",
-      "url": "https://www.theverge.com/tech/946345/apple-safari-ai-update-extensions",
-      "tags": [
-        "AI",
-        "Apple",
-        "News",
-        "Tech",
-        "Web",
-        "WWDC 2026"
-      ]
-    },
-    {
-      "id": "ce07a78675cc",
-      "title": "Norks blast 250+ fake job offers to developers over 6 weeks to try and snarf creds and crypto",
-      "excerpt": "When an unsolicited job offer sounds too good to be true …",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-08T22:13:20.000Z",
-      "url": "https://www.theregister.com/security/2026/06/08/suspected-norks-send-250-fake-dev-job-pitches-to-steal-crypto/5252526",
-      "image": "https://image.theregister.com/?imageId=260157&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "df94a136ce10",
-      "title": "Where was tvOS 27 at WWDC?",
-      "excerpt": "Every year, Apple's Worldwide Developers Conference gives us a first look at what's coming next to the company's many operating systems. But missing from today's keynote, apart from a single graphic listing all curren...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-08T22:04:42.000Z",
-      "url": "https://www.theverge.com/tech/946329/tvos-27-absent-wwdc",
-      "tags": [
-        "Apple",
-        "News",
-        "Tech"
-      ]
-    },
-    {
-      "id": "4f7c129012c0",
-      "title": "Apple’s new parental controls are for keeping Apple out of trouble",
-      "excerpt": "When Apple put child safety front and center at WWDC on Monday, its stated goal was helping parents fine-tune their kids' online experiences and avoid excessive screen time. But amid a global debate over internet regu...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-08T21:48:08.000Z",
-      "url": "https://www.theverge.com/policy/946331/apple-parental-controls-child-accounts-wwdc",
-      "tags": [
-        "Analysis",
-        "Apple",
-        "Apple Event",
-        "Policy",
-        "Report",
-        "Speech"
       ]
     }
   ]
