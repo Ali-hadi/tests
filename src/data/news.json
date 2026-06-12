@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T16:05:50.137Z",
+  "generatedAt": "2026-06-12T04:09:43.873Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -52,6 +52,406 @@
   ],
   "posts": [
     {
+      "id": "b612f2b2ad9c",
+      "title": "Theker just raised $85M to build the factory robot that doesn’t specialize in anything",
+      "excerpt": "Unlike humanoid robots designed around a fixed form — think Boston Dynamics — Theker's machines are built to be reconfigured.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-12T01:48:07.000Z",
+      "url": "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/",
+      "tags": [
+        "AI",
+        "Robotics",
+        "Startups",
+        "Automation",
+        "theker"
+      ]
+    },
+    {
+      "id": "041ff902bdab",
+      "title": "Jeff Bezos’s Prometheus raises $12B to build an ‘artificial general engineer’ for the physical world",
+      "excerpt": "The new round values the physical AI startup that aims to automate heavy engineering and drug design at $41 billion.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-12T01:04:38.000Z",
+      "url": "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/",
+      "tags": [
+        "AI",
+        "Biotech & Health",
+        "Hardware",
+        "jeff bezos",
+        "physical ai",
+        "Prometheus"
+      ]
+    },
+    {
+      "id": "a232773647c3",
+      "title": "Treat your AI agents like eager but misguided human interns - before you lose control",
+      "excerpt": "Think twice about what permissions you are providing your AI agents and what actions they can take on your behalf.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-06-12T01:00:48.000Z",
+      "url": "https://www.zdnet.com/article/treat-your-ai-agents-like-interns-before-you-lose-control/"
+    },
+    {
+      "id": "9fcf41bef820",
+      "title": "Claude is ready for its corporate close-up",
+      "excerpt": "IDC says recent moves show Anthropic racing to meet enterprise requirements",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-11T22:43:31.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/11/claude-is-ready-for-its-corporate-close-up/5254565",
+      "image": "https://image.theregister.com/?imageId=5254628&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "b2f3ed14d6da",
+      "title": "Amazon’s Echo Hub gets a customizable new look and Ring’s AI features",
+      "excerpt": "Amazon's rolling out a free software update for Echo Hub devices that gives the home screen a much-needed update to the interface it launched with in 2024. It had already added Alex Plus AI support, but the new interf...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-11T22:06:32.000Z",
+      "url": "https://www.theverge.com/tech/948814/amazon-echo-hub-homescreen-redesign",
+      "tags": [
+        "Amazon",
+        "Amazon Alexa",
+        "News",
+        "Smart Home",
+        "Tech"
+      ]
+    },
+    {
+      "id": "7cf23974475d",
+      "title": "Best Buy has a 98-inch Hisense TV on sale for nearly 60% off right now",
+      "excerpt": "Right now at Best Buy, you can snag a 98-inch Hisense QD5 QLED TV for just under $1,000.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-11T21:16:17.000Z",
+      "url": "https://www.zdnet.com/article/hisense-qd5-98-inch-deal-best-buy-amazon-prime-day-2026/"
+    },
+    {
+      "id": "e3f26caa1328",
+      "title": "Everyone hates frontier AI labs, says Palantir boss",
+      "excerpt": "'Enterprises are fed up,' says Alex Karp, because LLM makers 'want to tokenmax' instead of understanding enterprise needs",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-11T20:54:43.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/11/everyone-hates-frontier-ai-labs-says-palantir-boss/5254516",
+      "image": "https://image.theregister.com/?imageId=4094191&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "9691490157c1",
+      "title": "SpaceX officially prices shares at $135 in the largest IPO ever",
+      "excerpt": "Wits its official share pricing announcement, SpaceX's IPO has begun.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-11T20:33:10.000Z",
+      "url": "https://techcrunch.com/2026/06/11/spacex-officially-prices-shares-at-135-in-the-largest-ipo-ever/",
+      "tags": [
+        "AI",
+        "Space",
+        "Elon Musk",
+        "SpaceX",
+        "spacex ipo"
+      ]
+    },
+    {
+      "id": "03724ebf28de",
+      "title": "Our new community investments in Virginia support local jobs and expand energy affordability.",
+      "excerpt": "We’re helping build the state’s next-generation workforce and investing in energy programs.",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "publishedAt": "2026-06-11T20:00:00.000Z",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp",
+      "tags": [
+        "Google.org",
+        "Global Network",
+        "Creating opportunity",
+        "AI"
+      ]
+    },
+    {
+      "id": "dde368a1f955",
+      "title": "Logitech’s awesome MX Master 3S mouse drops to under $100",
+      "excerpt": "The platform-agnostic Logitech MX Master 3S wireless mouse is discounted to $89.99 at Amazon ($30 off), matching the best price we’ve seen so far this year. While it may look like a somewhat ordinary mouse, it has a u...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-11T20:00:00.000Z",
+      "url": "https://www.theverge.com/gadgets/948204/logitech-mx-master-3s-mouse-sale-deal",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "3d4b046ae295",
+      "title": "SpaceX SPV investors won’t know their true holdings until post-IPO lock-ups lift",
+      "excerpt": "After SpaceX makes its public debut, lower-tier SPV investors face hidden fees, lengthy payout delays, and the risk of outright fraud.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-11T19:58:01.000Z",
+      "url": "https://techcrunch.com/2026/06/11/spacex-spv-investors-wont-know-their-true-holdings-until-post-ipo-lock-ups-lift/",
+      "tags": [
+        "AI",
+        "Space",
+        "IPO",
+        "secondary shares",
+        "SpaceX",
+        "SPV"
+      ]
+    },
+    {
+      "id": "bd503ec89e53",
+      "title": "Anthropic recruits army to sell Claude to nonprofits",
+      "excerpt": "Join Claude Corps, see the world, spread the gospel of AI",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-11T19:29:14.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/11/anthropic-hires-1000-fellows-to-push-claude-into-nonprofits/5254489",
+      "image": "https://image.theregister.com/?imageId=178980&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "9f6bbb55b25e",
+      "title": "ShinyHunters hacked 100+ orgs by exploiting an Oracle PeopleSoft 0-day",
+      "excerpt": "University of Nottingham is first of many, Shiny tells The Reg",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-11T19:01:16.000Z",
+      "url": "https://www.theregister.com/cyber-crime/2026/06/11/shinyhunters-claims-oracle-peoplesoft-0-day-hit-100-orgs/5254443",
+      "image": "https://image.theregister.com/?imageId=5254486&width=800",
+      "tags": [
+        "cyber-crime"
+      ]
+    },
+    {
+      "id": "9723c0fc5ae1",
+      "title": "The cloud vs. clouded leopard: America's data center backlash on display at Nashville Zoo",
+      "excerpt": "As fights against data centers spring up around the country, the latest showdown in Nashville has a furry face.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-11T18:52:00.000Z",
+      "url": "https://www.zdnet.com/article/americans-data-center-backlash-nashville-zoo-clouded-leopard/"
+    },
+    {
+      "id": "01206f7212ca",
+      "title": "Google's new open-weights model brings image-generation tricks to AI text generation",
+      "excerpt": "Language model builds on diffusion tech to boost output performance by up to 4x, claims Chocolate Factory",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-11T18:31:31.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/11/googles-diffusiongemma-uses-diffusion-tech-to-speed-text-generation/5254406",
+      "image": "https://image.theregister.com/?imageId=5254430&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "44fbb63537a1",
+      "title": "I found the best early Prime Day Apple deals: MacBooks, iPads, AirPods, and more",
+      "excerpt": "Save on top Apple devices with these early Prime Day deals, hand-selected by experts who sleep, breathe, and eat Apple.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-11T18:07:45.000Z",
+      "url": "https://www.zdnet.com/article/best-early-prime-day-apple-deals-2026/"
+    },
+    {
+      "id": "7359a8d53ec4",
+      "title": "Blink’s six-piece outdoor camera kit is a great deal under $200",
+      "excerpt": "You can save on a big set of outdoor security cameras ahead of Prime Day. Amazon has a five-pack of Blink cameras with a video doorbell included that’s marked down to $166.99. The bundle includes a Blink Battery Doorb...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-11T18:04:43.000Z",
+      "url": "https://www.theverge.com/gadgets/948459/blink-camera-bundle-aeropress-deal-sale",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Smart Home",
+        "Tech",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "3e0211915d47",
+      "title": "Microsoft's worst 'Nightmare' unleashes BitLocker bypass 0-day",
+      "excerpt": "Another day, another Windows exploit code",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-11T17:51:52.000Z",
+      "url": "https://www.theregister.com/security/2026/06/11/nightmare-eclipse-drops-claimed-bitlocker-bypass-for-microsoft-windows/5254371",
+      "image": "https://image.theregister.com/?imageId=253694&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "32049b4f506e",
+      "title": "The best early Prime Day health and fitness deals I'd recommend",
+      "excerpt": "I'm a health and wearables editor, and these are some of the top smartwatch, smart ring, and wellness deals I've found ahead of Prime Day.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-11T17:47:03.000Z",
+      "url": "https://www.zdnet.com/article/early-prime-day-smartwatch-deals-2026/"
+    },
+    {
+      "id": "147820327c56",
+      "title": "Roborock’s Q10 S5 Plus robovac is over half off, matching its best price to date",
+      "excerpt": "Even at full price, the Roborock Q10 S5 Plus offers impressive value, boasting features typically reserved for pricier robovac models at a fraction of the price. That’s especially true today. It’s down to just $269.99...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-11T17:42:29.000Z",
+      "url": "https://www.theverge.com/gadgets/948529/roborock-q10-s5-plus-robot-vacuum-mop-deal-sale",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Tech",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "42e166c38b03",
+      "title": "Lenovo vs. Dell: I've tested both laptop brands for years, and here's my preference",
+      "excerpt": "Dell and Lenovo specialize in PCs, laptops, and other computing products, but which one is better? Here's how to decide based on your needs.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-11T17:35:00.000Z",
+      "url": "https://www.zdnet.com/article/lenovo-vs-dell-laptops/"
+    },
+    {
+      "id": "5acf956af1ca",
+      "title": "Amazon’s data centers used 2.5 billion gallons of water last year",
+      "excerpt": "Just after Seattle enacted a one-year data center moratorium that some of Amazon's own employees pushed for, Amazon shared how much water its data centers use, reportedly for the first time. With concerns about water...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-11T17:26:57.000Z",
+      "url": "https://www.theverge.com/tech/948534/amazon-data-centers-water-use",
+      "tags": [
+        "AI",
+        "Amazon",
+        "News",
+        "Tech"
+      ]
+    },
+    {
+      "id": "689ede1f66ef",
+      "title": "The bill that would let Jimmy Kimmel sue Brendan Carr is here",
+      "excerpt": "Under a new bipartisan bill, Americans could sue for damages if a government official illegally tries to coerce a social media, AI, or broadcasting company to remove their post - regardless of whether the platform act...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-11T17:23:02.000Z",
+      "url": "https://www.theverge.com/policy/948525/cruz-wyden-jawbone-act-censorship",
+      "tags": [
+        "Law",
+        "News",
+        "Policy",
+        "Politics",
+        "Social Media",
+        "Speech"
+      ]
+    },
+    {
+      "id": "6a0812c1091b",
+      "title": "Hand-cranked AI box lets you get a workout while you wait for answers",
+      "excerpt": "We're all familiar with AI cranks by now, but what about crank-powered AIs?",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-11T17:21:30.000Z",
+      "url": "https://www.theregister.com/offbeat/2026/06/11/hand-cranked-ai-box-lets-you-get-a-workout-while-you-wait-for-answers/5254333",
+      "image": "https://image.theregister.com/?imageId=5254403&width=800",
+      "tags": [
+        "offbeat"
+      ]
+    },
+    {
+      "id": "79b14488f38a",
+      "title": "Here are the price-matching policies for Best Buy, GameStop, and others",
+      "excerpt": "Nothing is more frustrating than buying a new pair of headphones, an OLED TV, or a laptop just to find out that you could have gotten it for cheaper somewhere else just a few days or weeks later. That’s why, in order...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-11T17:14:28.000Z",
+      "url": "https://www.theverge.com/21570383/price-matching-policy-apple-google-microsoft",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Prime Day",
+        "Tech",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "34028b0f5d1b",
+      "title": "10 useful smart home gadgets that make life so much easier (and are affordable)",
+      "excerpt": "After testing hundreds of smart home devices, I rounded up the best options to get started with your smart home without breaking the bank.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-11T17:11:15.000Z",
+      "url": "https://www.zdnet.com/article/smart-home-on-a-budget-2026/"
+    },
+    {
+      "id": "c4bf9985a24e",
+      "title": "How to watch the FIFA World Cup 2026: I found 10 ways to stream (including free options)",
+      "excerpt": "One of the biggest sporting events of all time kicks off this week - and you don't need an expensive cable package to watch.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-11T16:56:00.000Z",
+      "url": "https://www.zdnet.com/article/how-to-watch-the-world-cup-2026/"
+    },
+    {
+      "id": "eb1b4972fbc5",
+      "title": "Graviton 5 impresses, but please, for the love of all that's holy, stop calling them 'AI chips'",
+      "excerpt": "AWS better at running chip fabs than their mouths",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-11T16:54:30.000Z",
+      "url": "https://www.theregister.com/paas-and-iaas/2026/06/11/graviton-5-impresses-but-please-for-the-love-of-all-thats-holy-stop-calling-them-ai-chips/5254316",
+      "image": "https://image.theregister.com/?imageId=1684080&width=800",
+      "tags": [
+        "paas and iaas"
+      ]
+    },
+    {
+      "id": "4f9aae068b78",
+      "title": "Deezer’s new tool can identify AI music from Spotify, Apple Music, and others",
+      "excerpt": "Deezer introduced a tool that scans playlists from Spotify, Apple Music, and other platforms to identify AI music.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-11T16:36:20.000Z",
+      "url": "https://techcrunch.com/2026/06/11/deezers-new-tool-can-identify-ai-music-from-spotify-apple-music-and-others/",
+      "tags": [
+        "AI",
+        "Apps",
+        "Media & Entertainment",
+        "ai music",
+        "Deezer",
+        "Generative AI"
+      ]
+    },
+    {
+      "id": "85d473559ddf",
+      "title": "A warrantless wiretap law is about to expire — but surveillance networks aren’t actually ‘going dark’",
+      "excerpt": "Congress has failed to pass a three-week extension of Section 702 of the Foreign Intelligence Surveillance Act (FISA), with the House voting 218-198 against reauthorizing the controversial warrantless wiretapping auth...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-11T16:03:38.000Z",
+      "url": "https://www.theverge.com/tech/948451/fisa-702-reauthorization-vote-fails-congress-wiretapping-lapse",
+      "tags": [
+        "Law",
+        "News",
+        "Policy",
+        "Privacy",
+        "Tech"
+      ]
+    },
+    {
       "id": "fcdb3f95334c",
       "title": "Pool’s new app turns your screenshots into something useful",
       "excerpt": "Pool's new app automatically sorts screenshots into personalized collections, tracks down the original links behind saved content, and helps you rediscover products, recipes, travel ideas, and other things you meant t...",
@@ -60,12 +460,11 @@
       "publishedAt": "2026-06-11T15:30:00.000Z",
       "url": "https://techcrunch.com/2026/06/11/pools-new-app-turns-your-screenshots-into-a-searchable-memory-bank/",
       "tags": [
-        "TC",
         "AI",
         "Apps",
-        "pool",
         "ai apps",
-        "consumer AI"
+        "consumer AI",
+        "pool"
       ]
     },
     {
@@ -290,394 +689,6 @@
         "News",
         "Tech"
       ]
-    },
-    {
-      "id": "8060be85de81",
-      "title": "Anthropic apologizes for invisible Claude Fable guardrails",
-      "excerpt": "Anthropic has apologized for stealthily throttling its new AI model, Claude Fable 5, with hidden guardrails that undermine both researchers and rivals using it to develop competing systems. The company says it is reve...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-11T11:40:43.000Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail",
-      "tags": [
-        "AI",
-        "Anthropic",
-        "News"
-      ]
-    },
-    {
-      "id": "59016a13e029",
-      "title": "Malware scare keeps schoolkids home for a second day",
-      "excerpt": "Great Marlow restricts network access while it investigates suspected infection",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-11T10:30:00.000Z",
-      "url": "https://www.theregister.com/cyber-crime/2026/06/11/yet-another-uk-school-closure-owing-to-cyberattack/5253927",
-      "image": "https://image.theregister.com/?imageId=5253985&width=800",
-      "tags": [
-        "cyber-crime"
-      ]
-    },
-    {
-      "id": "89de0f6c5167",
-      "title": "NS&I dangles £220K salary for CEO willing to straighten out £3B IT mess",
-      "excerpt": "Comes with a corner office, government scrutiny, and the 'full-spectrum disaster' known as Project Rainbow",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-11T10:09:15.000Z",
-      "url": "https://www.theregister.com/public-sector/2026/06/11/nsi-dangles-220k-salary-for-ceo-willing-to-straighten-out-3b-it-mess/5253988",
-      "image": "https://image.theregister.com/?imageId=5254010&width=800",
-      "tags": [
-        "public sector"
-      ]
-    },
-    {
-      "id": "b1dd8be1a14c",
-      "title": "Buying a school laptop? 4 things I'd consider first (and my top 10 picks)",
-      "excerpt": "Your laptop can make or break or time in college, so you want to make sure you get the right one. Here's what to consider.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-11T09:30:15.000Z",
-      "url": "https://www.zdnet.com/article/how-to-pick-a-laptop-for-college/"
-    },
-    {
-      "id": "3dec1179650b",
-      "title": "Nottingham Uni says student records raided after ShinyHunters claims cyberattack",
-      "excerpt": "Crooks claim 40 GB haul as breach database pegs number of exposed email addresses at 455K",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-11T09:20:34.000Z",
-      "url": "https://www.theregister.com/cyber-crime/2026/06/11/shinyhunters-raids-nottingham-uni-for-student-alumni-data/5253961",
-      "image": "https://image.theregister.com/?imageId=213328&width=800",
-      "tags": [
-        "cyber-crime"
-      ]
-    },
-    {
-      "id": "7ed17399a2c6",
-      "title": "The best time-tracking software of 2026: Expert tested",
-      "excerpt": "We tested Toggl Track, Timely, 7pace, QuickBooks Time, and ActivityWatch to find the best time-tracking tools for freelancers and remote teams.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-11T09:00:43.000Z",
-      "url": "https://www.zdnet.com/article/best-time-tracking-software/"
-    },
-    {
-      "id": "a0f3bb2e3e23",
-      "title": "Opendoor’s India exit is fueling a bigger conversation about AI and outsourcing",
-      "excerpt": "The decision comes as India emerges as the world’s largest GCC market.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-11T04:02:19.000Z",
-      "url": "https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing/",
-      "tags": [
-        "AI",
-        "Startups",
-        "OpenDoor"
-      ]
-    },
-    {
-      "id": "fabef275aacc",
-      "title": "Anthropic’s Dario Amodei has just one direct report",
-      "excerpt": "If you doubted his genius, doubt no more.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-11T03:53:06.000Z",
-      "url": "https://techcrunch.com/2026/06/10/anthropics-dario-amodei-has-just-one-direct-report/",
-      "tags": [
-        "AI",
-        "Anthropic",
-        "dario amodei"
-      ]
-    },
-    {
-      "id": "2b3e94621f5c",
-      "title": "Bluesky is getting ‘communities’",
-      "excerpt": "Bluesky will be getting \"communities,\" which will function as smaller spaces where you can \"go deeper and hang out with people who care about the same stuff\" sometime this year, according to head of product Alex Benze...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-11T00:05:48.000Z",
-      "url": "https://www.theverge.com/tech/948215/bluesky-communities-at-protocol-atmosphere-reddit",
-      "tags": [
-        "News",
-        "Social Media",
-        "Tech"
-      ]
-    },
-    {
-      "id": "28927819170e",
-      "title": "Chinese agents caught rebuilding botnets and stirring the pot on AI datacenter debate",
-      "excerpt": "PRC eyes are watching you",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-11T00:00:45.000Z",
-      "url": "https://www.theregister.com/security/2026/06/11/china-linked-operators-revive-botnet-stir-ai-datacenter-debate/5253873",
-      "image": "https://image.theregister.com/?imageId=5226078&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "4a8906e34c79",
-      "title": "Alpine Linux is a crazy-fast distro for your desktop - with just one caveat",
-      "excerpt": "Known primarily for containers and servers, Alpine Linux isn't always considered for traditional desktop use. I think this lightweight distro could be your daily driver. Here's why.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-11T00:00:39.000Z",
-      "url": "https://www.zdnet.com/article/alpine-linux-crazy-fast-distro-for-your-desktop/"
-    },
-    {
-      "id": "8875a0080dac",
-      "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
-      "excerpt": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content.",
-      "source": "OpenAI News",
-      "category": "AI",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "url": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
-      "tags": [
-        "Global Affairs"
-      ]
-    },
-    {
-      "id": "436a674e3bf2",
-      "title": "How an astrophysicist uses Codex to help simulate black holes",
-      "excerpt": "Discover how astrophysicist Chi-kwan Chan uses Codex to build black hole simulations, helping scientists study extreme physics and test Einstein’s theory of general relativity.",
-      "source": "OpenAI News",
-      "category": "AI",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "url": "https://openai.com/index/using-codex-to-simulate-black-holes",
-      "tags": [
-        "Applied AI"
-      ]
-    },
-    {
-      "id": "787d1b05105f",
-      "title": "Memory and personalization make AI more likely to tell you what you want to hear",
-      "excerpt": "A little knowledge is a dangerous thing, particularly for enterprise applications",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-10T23:17:26.000Z",
-      "url": "https://www.theregister.com/ai-and-ml/2026/06/11/memory-and-personalization-make-ai-more-likely-to-tell-you-what-you-want-to-hear/5253850",
-      "image": "https://image.theregister.com/?imageId=249074&width=800",
-      "tags": [
-        "ai and ml"
-      ]
-    },
-    {
-      "id": "19fbd0e01cff",
-      "title": "Framework delays its first Laptop 13 Pro shipments by a month",
-      "excerpt": "The Framework Laptop 13 Pro is delayed. The new 13-inch Framework flagship was set to launch in June, but shipments from the first batch are now expected in July - and there's still a chance some shipments could slip...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-10T23:12:51.000Z",
-      "url": "https://www.theverge.com/gadgets/948044/framework-laptop-13-pro-delay-shipment-july-august",
-      "tags": [
-        "Gadgets",
-        "Intel",
-        "Laptops",
-        "News",
-        "Tech"
-      ]
-    },
-    {
-      "id": "c6f81cf2e322",
-      "title": "Apple’s new Siri AI knows when to shut up",
-      "excerpt": "Apple's new Siri AI is finally here, and so far, it seems like it works. I have access and have been messing around with it, and my biggest impression so far is that Siri AI is quite curt - which I mean as a complimen...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-10T22:52:17.000Z",
-      "url": "https://www.theverge.com/tech/948155/apple-siri-ai-chatbot-personality",
-      "tags": [
-        "Apple",
-        "Report",
-        "Tech"
-      ]
-    },
-    {
-      "id": "77660257b747",
-      "title": "xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims",
-      "excerpt": "A former xAI engineer is suing the company and SpaceX, alleging he was fired for raising AI safety concerns about Grok days before SpaceX's historic IPO.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-10T22:31:19.000Z",
-      "url": "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/",
-      "tags": [
-        "AI",
-        "ai safety",
-        "devin kim",
-        "Grok",
-        "SpaceX",
-        "xAI"
-      ]
-    },
-    {
-      "id": "429922c9a3b0",
-      "title": "Nearly a million passports and photo IDs were left unprotected on the public internet",
-      "excerpt": "Typing a few letters and numbers into my web browser, I find myself gaping at the identity documents of complete strangers. The passport of a young woman from Germany. The passport of a man from Spain with glasses res...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-10T21:55:00.000Z",
-      "url": "https://www.theverge.com/tech/947157/passports-data-breach-cannabis-club-systems-nefos-puffpal",
-      "tags": [
-        "Report",
-        "Security",
-        "Tech"
-      ]
-    },
-    {
-      "id": "9f4eff582e53",
-      "title": "Xbox warns of a ‘reset’ as it prepares for layoffs",
-      "excerpt": "Microsoft's Xbox division will be hit with significant layoffs next month, according to people familiar with Microsoft's plans. The company has been preparing for the layoffs internally for weeks, with Xbox CEO Asha S...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-10T21:28:53.000Z",
-      "url": "https://www.theverge.com/games/948142/microsoft-xbox-layoffs-reset-asha-sharma",
-      "tags": [
-        "Entertainment",
-        "Gaming",
-        "Microsoft",
-        "News",
-        "Tech",
-        "Xbox"
-      ]
-    },
-    {
-      "id": "e7a554f82f0e",
-      "title": "Blockbuster new Raspberry Pi project turns any screen into old-school VCR",
-      "excerpt": "Who needs fancy menus and high definition? 240-MP will play your media files like it's 1999",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-10T20:56:06.000Z",
-      "url": "https://www.theregister.com/offbeat/2026/06/10/raspberry-pi-project-gives-media-libraries-a-vcr-style-makeover/5253818",
-      "image": "https://image.theregister.com/?imageId=5253841&width=800",
-      "tags": [
-        "offbeat"
-      ]
-    },
-    {
-      "id": "bfee8b2a4f82",
-      "title": "Apple, Google add support for Thread 1.4",
-      "excerpt": "Apple and Google are updating their smart home streaming devices to Thread 1.4. As first spotted by Matter Alpha and 9to5 Google, the latest spec has arrived on compatible Apple TVs in the tvOS 27 developer beta and t...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-10T20:25:46.000Z",
-      "url": "https://www.theverge.com/tech/947888/apple-google-add-support-for-thread-1-4",
-      "tags": [
-        "Matter",
-        "News",
-        "Smart Home",
-        "Tech"
-      ]
-    },
-    {
-      "id": "26317629aae5",
-      "title": "It blocked us at 'hello!' Anthropic Fable 5 refusing innocuous prompts",
-      "excerpt": "Hyper-vigilant safety classifiers turn Fable into cautionary tale",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-10T20:20:38.000Z",
-      "url": "https://www.theregister.com/ai-and-ml/2026/06/10/anthropic-claude-fable-5-refuses-innocuous-prompts/5253754",
-      "image": "https://image.theregister.com/?imageId=5230481&width=800",
-      "tags": [
-        "ai and ml"
-      ]
-    },
-    {
-      "id": "9332a684c47a",
-      "title": "Fresh off bond sale, Amazon borrows $17.5B from banks as AI spending continues",
-      "excerpt": "Companies are burning through exorbitant sums of money to keep pace in the AI arms race. Debt is climbing.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-10T20:19:31.000Z",
-      "url": "https://techcrunch.com/2026/06/10/fresh-off-bond-sale-amazon-borrows-17-5-billion-from-banks-as-ai-spending-continues/",
-      "tags": [
-        "AI",
-        "Amazon",
-        "citigroup",
-        "In Brief"
-      ]
-    },
-    {
-      "id": "28577430d8a8",
-      "title": "Kalshi adds required employment verification for some prediction market bets",
-      "excerpt": "The CFTC is considering its first regulation for prediction markets, as arrests over \"insider trading\" on everything from military operations to Google Search data continue to stack up. As CoinDesk reports, a notice o...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-10T20:18:16.000Z",
-      "url": "https://www.theverge.com/business/948083/kalshi-prediction-markets-insider-trading",
-      "tags": [
-        "Business",
-        "News",
-        "Policy",
-        "Tech"
-      ]
-    },
-    {
-      "id": "4600462b11c1",
-      "title": "Access OpenAI models and Codex through your Oracle cloud commitment",
-      "excerpt": "Access OpenAI models and Codex through Oracle Cloud, using existing commitments to build and deploy AI with enterprise security and governance.",
-      "source": "OpenAI News",
-      "category": "AI",
-      "publishedAt": "2026-06-10T20:00:00.000Z",
-      "url": "https://openai.com/index/openai-on-oracle-cloud",
-      "tags": [
-        "Company"
-      ]
-    },
-    {
-      "id": "31dba94d0c9d",
-      "title": "The best early Prime Day Samsung deals: Save big on Galaxy phones, tablets, and more",
-      "excerpt": "Amazon Prime Day is still weeks away, but great deals on Samsung phones, smartwatches, and TVs are already live.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-10T19:54:38.000Z",
-      "url": "https://www.zdnet.com/article/best-early-amazon-prime-day-samsung-deals-2026/"
-    },
-    {
-      "id": "5d313803b059",
-      "title": "Everything announced at Apple WWDC 2026 - including Siri, iOS 27 dev beta, and more",
-      "excerpt": "We reported live from Apple Park to cover the company's developer conference. Here's everything you need to know.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-10T19:19:00.000Z",
-      "url": "https://www.zdnet.com/article/everything-announced-at-apple-wwdc-2026-including-siri-ios-27-dev-beta-and-more/"
-    },
-    {
-      "id": "9fa9bfb391b8",
-      "title": "Angry bug hunter with Microsoft beef drops new Windows 0-day",
-      "excerpt": "Revenge is a dish best served code",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-10T18:45:05.000Z",
-      "url": "https://www.theregister.com/security/2026/06/10/nightmare-eclipse-publishes-new-windows-defender-zero-day/5253725",
-      "image": "https://image.theregister.com/?imageId=5253747&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "a2aeb0bb039a",
-      "title": "Claude Fable won’t answer basic biology questions",
-      "excerpt": "Anthropic just released Claude Fable 5, calling it the most powerful AI model it has ever made widely available and praising its skills in biology, among others. But the model won't answer basic biology questions - th...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-10T18:43:34.000Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/947973/fable-wont-answer-basic-biology-questions",
-      "tags": [
-        "AI",
-        "Anthropic",
-        "Report",
-        "Science"
-      ]
-    },
-    {
-      "id": "4a0e4aafe27a",
-      "title": "Best early Amazon Prime Day phone deals: Save over 20% on Samsung and Google devices",
-      "excerpt": "Amazon Prime Day is coming soon, but top phone deals from Samsung, Google, and Motorola are already live.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-10T18:03:00.000Z",
-      "url": "https://www.zdnet.com/article/best-early-amazon-prime-day-phone-deals-2026/"
     }
   ]
 }
