@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T15:18:58.929Z",
+  "generatedAt": "2026-06-13T03:57:18.891Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,371 @@
     }
   ],
   "posts": [
+    {
+      "id": "60b23d1dd928",
+      "title": "Anthropic’s safety warnings may have just backfired — the government has pulled the plug on its most powerful AI",
+      "excerpt": "Anthropic isn't hiding its frustration. \"We disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\" the company wrote in...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-13T02:26:30.000Z",
+      "url": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "0b2c12e922ec",
+      "title": "Valve just imported 13 tons of VR headsets in one day",
+      "excerpt": "On June 10th, the German container ship Posen docked in Los Angeles after a two-week voyage from Shanghai. As Valve watcher Brad Lynch notes, it was almost certainly carrying the first mass production shipments of the...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-13T01:32:18.000Z",
+      "url": "https://www.theverge.com/news/949517/valve-vr-headset-import-records-steam-frame-steam-machine-game-console",
+      "tags": [
+        "Gaming",
+        "News",
+        "PC Gaming"
+      ]
+    },
+    {
+      "id": "a20670d1b674",
+      "title": "Watching sports at home? I'd change these 4 soundbar settings for the most optimal audio",
+      "excerpt": "Some of your favorite soundbar settings for music and movies aren't compatible with live sports broadcasts.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-13T00:00:46.000Z",
+      "url": "https://www.zdnet.com/article/soundbar-settings-sports-tips/"
+    },
+    {
+      "id": "1a8c6e1d7a12",
+      "title": "SpaceX IPO: Live updates on everything you need to know",
+      "excerpt": "TechCrunch has followed SpaceX's start, struggles, and successes from the early days. And we're here for what happens next too. This package of SpaceX IPO coverage includes who stands to win (and maybe some who won't)...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-12T23:15:14.000Z",
+      "url": "https://techcrunch.com/2026/06/12/spacex-ipo-live-updates-on-everything-you-need-to-know/",
+      "tags": [
+        "AI",
+        "Space",
+        "Transportation",
+        "Elon Musk",
+        "IPO",
+        "SpaceX"
+      ]
+    },
+    {
+      "id": "0b7c2835a800",
+      "title": "NanoClaw now armed with JFrog for safer packages",
+      "excerpt": "AI agents can't be trusted, so don't give them dangerous powers",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-12T23:07:31.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/13/nanoclaw-integrates-jfrog-registries-to-secure-ai-agent-downloads/5255189",
+      "image": "https://image.theregister.com/?imageId=5255209&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "d96369fb0eb3",
+      "title": "Meta’s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it",
+      "excerpt": "A new report suggests the unit, which employs 6,500 people, is on the verge of revolt.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-12T23:00:54.000Z",
+      "url": "https://techcrunch.com/2026/06/12/metas-months-old-ai-unit-is-a-soul-crushing-gulag-say-the-engineers-stuck-inside-it/",
+      "tags": [
+        "AI",
+        "Social",
+        "Meta"
+      ]
+    },
+    {
+      "id": "9ac4e2495171",
+      "title": "SK Hynix to boost memory production 3x ... you can wait another 8 years, right?",
+      "excerpt": "We're moving as fast as we can, says SK Group chair",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-12T21:05:22.000Z",
+      "url": "https://www.theregister.com/systems/2026/06/12/sk-hynix-to-triple-wafer-capacity-by-2034/5255151",
+      "image": "https://image.theregister.com/?imageId=257233&width=800",
+      "tags": [
+        "systems"
+      ]
+    },
+    {
+      "id": "beeabd3f03f0",
+      "title": "Chinese cybercrime operation that used AI to scam ‘hundreds of thousands of victims’ sued by Google",
+      "excerpt": "The tech giant said a group called \"Outsider Enterprise\" used AI to scam hundreds of thousands of victims, sending 2.5 million text messages over a span of two weeks.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-12T20:38:09.000Z",
+      "url": "https://techcrunch.com/2026/06/12/chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-of-thousands-of-victims-sued-by-google/",
+      "tags": [
+        "AI",
+        "Security",
+        "Android",
+        "cybercrime",
+        "cybersecurity",
+        "Google"
+      ]
+    },
+    {
+      "id": "e07865cc99dc",
+      "title": "Holy git! Microsoft code-sharing site suffers downtime, despite move to Azure",
+      "excerpt": "GitHub caught off guard by customers actually using the AI being evangelized",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-12T20:12:17.000Z",
+      "url": "https://www.theregister.com/software/2026/06/12/github-outages-persist-as-ai-coding-drives-traffic-surge/5255125",
+      "image": "https://image.theregister.com/?imageId=5255148&width=800",
+      "tags": [
+        "software"
+      ]
+    },
+    {
+      "id": "c4e2d8f11112",
+      "title": "Nothing CEO says phone prices are going to keep going up",
+      "excerpt": "If you're thinking about upgrading your phone, \"the best time was yesterday,\" according to Nothing CEO and co-founder Carl Pei, echoing a message we heard during MWC. As Android Authority reports, Pei said in a post o...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-12T20:02:48.000Z",
+      "url": "https://www.theverge.com/gadgets/949403/nothing-carl-pei-ram-phone-prices",
+      "tags": [
+        "Gadgets",
+        "News",
+        "Phones",
+        "Tech"
+      ]
+    },
+    {
+      "id": "137d5456640e",
+      "title": "PeopleSoft 0-day affecting hundreds of organizations steals gigabytes of data",
+      "excerpt": "Vulnerability in the Oracle-owned PeopleSoft software is about as critical as they come.",
+      "source": "Ars Technica",
+      "category": "IT",
+      "publishedAt": "2026-06-12T19:26:47.000Z",
+      "url": "https://arstechnica.com/security/2026/06/peoplesoft-0-day-affecting-hundreds-of-organizations-steals-gigabytes-of-data/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/12/GettyImages-1867844462-1152x648.jpg",
+      "tags": [
+        "Biz & IT",
+        "Security",
+        "oracle",
+        "PeopleSoft",
+        "ShinyHunters",
+        "zerodays"
+      ]
+    },
+    {
+      "id": "7665484f7e50",
+      "title": "MX Linux 25.2 provides possible refuge from AI as well as systemd",
+      "excerpt": "Plus, Raspberry Pi edition finally catches up",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-12T19:10:33.000Z",
+      "url": "https://www.theregister.com/software/2026/06/12/mx-linux-252-arrives-with-switchable-init-and-pi-refresh/5255017",
+      "image": "https://image.theregister.com/?imageId=5255113&width=800",
+      "tags": [
+        "software"
+      ]
+    },
+    {
+      "id": "08007632312d",
+      "title": "I used HyperDroid to make my Android devices look and feel like Windows 11 - and don't regret it",
+      "excerpt": "I've never been the biggest fan of Windows UI, but I made my Pixel 9 Pro and Nubia Pad Pro look like it anyway, and didn't mind it.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-12T19:05:00.000Z",
+      "url": "https://www.zdnet.com/article/hyperdroid-android-launcher-made-phone-tablet-look-like-windows-11/"
+    },
+    {
+      "id": "b6bd489e6063",
+      "title": "The world’s first trillionaire is a killer",
+      "excerpt": "Elon Musk's SpaceX IPO will probably make him the richest person to ever walk the planet. And while his mountain of horrible personal conduct could fill multiple books, one fact in particular stands out: A year ago, M...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-12T18:46:40.000Z",
+      "url": "https://www.theverge.com/tech/949259/the-worlds-first-trillionaire-is-a-killer",
+      "tags": [
+        "Elon Musk",
+        "Tech"
+      ]
+    },
+    {
+      "id": "774dab3f89ed",
+      "title": "Fired IT worker jailed for 21 months after sabotaging old school district",
+      "excerpt": "Iowan’s scheme undone after misplacing trust in former coworker",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-12T18:21:24.000Z",
+      "url": "https://www.theregister.com/security/2026/06/12/fired-it-worker-jailed-for-21-months-after-sabotaging-old-school-district/5254983",
+      "image": "https://image.theregister.com/?imageId=5252125&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "d9ba432db683",
+      "title": "This free Android app turned my phone into a 35-tool measuring tool - and I tested everything",
+      "excerpt": "Phyphox can do so much that explaining it all would take hours. The real fun starts once you begin testing the world around you.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-12T18:07:00.000Z",
+      "url": "https://www.zdnet.com/article/phyphox-science-lab-free-android-app-hands-on/"
+    },
+    {
+      "id": "9bea8e6d5615",
+      "title": "Mistral is rumored to be raising €3B at €20B valuation",
+      "excerpt": "The funding round would value the company at around €20 billion (about $23.15 billion), nearly double its Series C valuation of €11.7 billion.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-12T17:38:11.000Z",
+      "url": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/",
+      "tags": [
+        "AI",
+        "Fundraising",
+        "In Brief",
+        "Mistral AI"
+      ]
+    },
+    {
+      "id": "9559f3684b81",
+      "title": "Siri is good now??",
+      "excerpt": "You'd be forgiven for thinking this day would never come. Siri has spent a decade and half somewhere between \"sort of useful at a few things\" and \"utterly disastrous, why did I even try, can it honestly not even set a...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-12T17:17:04.000Z",
+      "url": "https://www.theverge.com/podcast/949079/siri-ai-good-vergecast",
+      "tags": [
+        "AI",
+        "Apple",
+        "Apple Event",
+        "Podcasts",
+        "Tech",
+        "Vergecast"
+      ]
+    },
+    {
+      "id": "618f853e4e14",
+      "title": "Claude Fable 5 secretly throttled AI researchers, and the internet went wild",
+      "excerpt": "Claude Fable 5 gave users access to Mythos-class power, but its hidden safeguards turned a safety feature into a trust problem for Anthropic.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-06-12T17:03:00.000Z",
+      "url": "https://www.zdnet.com/article/claude-fable-5-secretly-throttled/"
+    },
+    {
+      "id": "de8b11a9bef3",
+      "title": "A trillion dollars is a stupid amount of money",
+      "excerpt": "Elon Musk is now officially the world's first trillionaire. That is a colossal amount of wealth (and by proxy, power) for one individual to have. Its scale - a thousand times more than a billion - is difficult to fath...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-12T16:26:29.000Z",
+      "url": "https://www.theverge.com/tech/948917/elon-musk-trillionaire-how-much-visualization",
+      "tags": [
+        "Elon Musk",
+        "News",
+        "Science",
+        "Space",
+        "SpaceX",
+        "Tech"
+      ]
+    },
+    {
+      "id": "78d06705c392",
+      "title": "Elon Musk is the world’s first trillionaire",
+      "excerpt": "Elon Musk's net worth has passed the trillion-dollar mark after SpaceX's IPO. His net worth, which was hovering around $800 billion before the IPO, includes the value of his 4.8 billion shares in SpaceX, along with hi...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-12T16:24:39.000Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/948409/elon-musk-trillionaire-spacex-ipo",
+      "tags": [
+        "AI",
+        "Business",
+        "News",
+        "Science",
+        "Space",
+        "SpaceX"
+      ]
+    },
+    {
+      "id": "8dcc91b74984",
+      "title": "SpaceX, Anthropic, and OpenAI’s hot IPO summer",
+      "excerpt": "The IPO market is back, and it’s not the same companies leading the charge. FAANG had a good run, but a new acronym is taking over: MANGOS — Meta (or Microsoft, depending on who you ask), Anthropic, Nvidia, Google, Op...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-12T16:23:25.000Z",
+      "url": "https://techcrunch.com/video/spacex-anthropic-and-openais-hot-ipo-summer/",
+      "tags": [
+        "AI",
+        "Fundraising",
+        "ai infrastructure",
+        "Anthropic",
+        "Apple WWDC",
+        "ChatGPT"
+      ]
+    },
+    {
+      "id": "5598139f38d2",
+      "title": "40% of enterprises will scrap AI agents - 3 ways to ensure yours don't fail",
+      "excerpt": "How do you create real ROI from autonomous AI? Three digital leaders share lessons they've learned in the field.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-06-12T16:14:33.000Z",
+      "url": "https://www.zdnet.com/article/enterprises-scrapping-ai-agents-how-to-ensure-yours-dont-fail/"
+    },
+    {
+      "id": "a74fdf6c0c5e",
+      "title": "I held the Trump phone",
+      "excerpt": "Where's the Trump phone? We're going to keep talking about it every week. We've reached out, as usual, to ask about the Trump phone's whereabouts. We don't have the phones we preordered yet, but this week included an...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-12T16:05:00.000Z",
+      "url": "https://www.theverge.com/tech/948464/trump-phone-t1-hands-on",
+      "tags": [
+        "Gadgets",
+        "Tech"
+      ]
+    },
+    {
+      "id": "a841d556ac92",
+      "title": "It’s hot IPO summer, and the MANGOS are ripe",
+      "excerpt": "The IPO market is back, and it’s not the same companies leading the charge. FAANG had a good run, but a new acronym is taking over: MANGOS — Meta (or Microsoft, depending on who you ask), Anthropic, Nvidia, Google, Op...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-12T15:50:52.000Z",
+      "url": "https://techcrunch.com/podcast/its-hot-ipo-summer-and-the-mangos-are-ripe/",
+      "tags": [
+        "AI",
+        "Startups",
+        "ai infrastructure",
+        "Anthropic",
+        "Apple WWDC",
+        "ChatGPT"
+      ]
+    },
+    {
+      "id": "88111ecac3b3",
+      "title": "KPMG's AI report becomes an accidental demo of AI hallucinations",
+      "excerpt": "GPTZero claims only 5 of the report's 45 citations matched their sources, raising questions about how the Big Four's AI study was assembled",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-12T15:38:53.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/12/kpmgs-ai-report-turns-into-a-demo-of-ai-hallucinations/5255029",
+      "image": "https://image.theregister.com/?imageId=5255040&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "a7d517dcb340",
+      "title": "Your iPhone is getting enhanced Bluetooth tracking with iOS 27 - but there's a catch",
+      "excerpt": "One less-discussed iOS 27 feature announced at Apple's WWDC is support for Channel Sounding. Look for it whenever you see Bluetooth 6.3 devices.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-12T15:37:00.000Z",
+      "url": "https://www.zdnet.com/article/iphone-enhanced-bluetooth-tracking-with-ios-27-theres-a-catch/"
+    },
     {
       "id": "195a9116dae5",
       "title": "How I customized my Android Auto in 7 ways to make it more useful when I'm driving",
@@ -178,6 +543,19 @@
       ]
     },
     {
+      "id": "e8d7bd4c6a6f",
+      "title": "Novo Nordisk reports cyberattack as UK gives Wegovy pill the nod",
+      "excerpt": "Clinical trial participant data stolen, but pharma giant says exposed records were pseudonymized",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-12T13:54:35.000Z",
+      "url": "https://www.theregister.com/security/2026/06/12/novo-nordisk-says-hackers-stole-clinical-trial-data/5254812",
+      "image": "https://image.theregister.com/?imageId=5241525&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
       "id": "ea64142493eb",
       "title": "Sorry, the Ooni pizza oven is totally worth it",
       "excerpt": "Summer is approaching, which means it's time to enjoy some gloriously warm weather beside the grill. But let me pitch you on an alternative: Instead of the usual burgers, hot dogs, and kebabs, what if you made pizza?...",
@@ -187,6 +565,19 @@
       "url": "https://www.theverge.com/gadgets/943057/ooni-portable-pizza-oven-is-great-for-bbqs",
       "tags": [
         "Gadgets"
+      ]
+    },
+    {
+      "id": "79d273c29228",
+      "title": "Amazon owns up to using 2.5bn gallons of H2O in its bit barns last year",
+      "excerpt": "The West's biggest online shopping mall comes clean about its datacenter water usage",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-12T13:08:59.000Z",
+      "url": "https://www.theregister.com/on-prem/2026/06/12/amazon-owns-up-to-using-25bn-gallons-of-h2o-in-its-bit-barns-last-year/5254748",
+      "image": "https://image.theregister.com/?imageId=230800&width=800",
+      "tags": [
+        "on-prem"
       ]
     },
     {
@@ -287,380 +678,6 @@
       "category": "IT",
       "publishedAt": "2026-06-12T10:54:00.000Z",
       "url": "https://www.zdnet.com/article/hp-vs-dell-laptops-comparison/"
-    },
-    {
-      "id": "adca6604cbc9",
-      "title": "Met Police boss threatens to cut 700 frontline jobs after Palantir deal blocked",
-      "excerpt": "Commissioner Mark Rowley says automation savings are now 'at risk'",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-12T10:51:21.000Z",
-      "url": "https://www.theregister.com/ai-and-ml/2026/06/12/met-police-boss-threatens-to-cut-700-frontline-jobs-after-palantir-deal-blocked/5254722",
-      "image": "https://image.theregister.com/?imageId=242353&width=800",
-      "tags": [
-        "ai and ml"
-      ]
-    },
-    {
-      "id": "94bcf8ad80f4",
-      "title": "I've tested solar power at home for years - 12 myths you shouldn't fall for in 2026",
-      "excerpt": "Knowing the facts on home solar power can help you make better, informed choices, save money, and stay safe.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-12T10:51:00.000Z",
-      "url": "https://www.zdnet.com/article/home-solar-power-myths-debunked/"
-    },
-    {
-      "id": "8bea6f651874",
-      "title": "Plymouth council exposes hundreds in latest local government email gaffe",
-      "excerpt": "Authority admits mass message to home-schooling families revealed recipients' addresses, prompting ICO report and apology",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-12T10:32:49.000Z",
-      "url": "https://www.theregister.com/security/2026/06/12/plymouth-council-exposes-hundreds-in-latest-local-government-email-gaffe/5254707",
-      "image": "https://image.theregister.com/?imageId=5254719&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "b1b45d0a403b",
-      "title": "UK digital ID gets brain trust to 'challenge' ministers on policy",
-      "excerpt": "CEO of Mumsnet among the six-member team",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-12T10:13:24.000Z",
-      "url": "https://www.theregister.com/public-sector/2026/06/12/uk-digital-id-gets-brain-trust-to-challenge-ministers-on-policy/5254650",
-      "image": "https://image.theregister.com/?imageId=1683988&width=800",
-      "tags": [
-        "public sector"
-      ]
-    },
-    {
-      "id": "c503fd9f82b6",
-      "title": "BOFH: For one ambitious security type, chaos is a ladder",
-      "excerpt": "Mission Control sends its regards",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-12T09:17:13.000Z",
-      "url": "https://www.theregister.com/bofh/2026/06/12/bofh-for-one-ambitious-security-type-chaos-is-a-ladder/5254638",
-      "image": "https://image.theregister.com/?imageId=5254661&width=800",
-      "tags": [
-        "bofh"
-      ]
-    },
-    {
-      "id": "eb99a7746db3",
-      "title": "Windows bowls a BSOD at sports fans",
-      "excerpt": "It's just not cricket",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-12T08:30:00.000Z",
-      "url": "https://www.theregister.com/offbeat/2026/06/12/windows-bowls-a-bsod-at-sports-fans/5252870",
-      "image": "https://image.theregister.com/?imageId=5252883&width=800",
-      "tags": [
-        "offbeat"
-      ]
-    },
-    {
-      "id": "7908b068617e",
-      "title": "Cheaper, faster, and culturally aware, Avataar’s video AI is built for India’s scale",
-      "excerpt": "Avataar AI's distilled video model is priced at $0.005 for every second of generation",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-12T04:30:00.000Z",
-      "url": "https://techcrunch.com/2026/06/11/cheaper-faster-and-culturally-aware-avataars-video-ai-is-built-for-indias-scale/",
-      "tags": [
-        "AI",
-        "Avataar",
-        "India",
-        "india ai",
-        "Peak XV"
-      ]
-    },
-    {
-      "id": "b612f2b2ad9c",
-      "title": "Theker just raised $85M to build the factory robot that doesn’t specialize in anything",
-      "excerpt": "Unlike humanoid robots designed around a fixed form — think Boston Dynamics — Theker's machines are built to be reconfigured.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-12T01:48:07.000Z",
-      "url": "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/",
-      "tags": [
-        "AI",
-        "Robotics",
-        "Startups",
-        "Automation",
-        "theker"
-      ]
-    },
-    {
-      "id": "041ff902bdab",
-      "title": "Jeff Bezos’s Prometheus raises $12B to build an ‘artificial general engineer’ for the physical world",
-      "excerpt": "The new round values the physical AI startup that aims to automate heavy engineering and drug design at $41 billion.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-12T01:04:38.000Z",
-      "url": "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/",
-      "tags": [
-        "AI",
-        "Biotech & Health",
-        "Hardware",
-        "jeff bezos",
-        "physical ai",
-        "Prometheus"
-      ]
-    },
-    {
-      "id": "a232773647c3",
-      "title": "Treat your AI agents like eager but misguided human interns - before you lose control",
-      "excerpt": "Think twice about what permissions you are providing your AI agents and what actions they can take on your behalf.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-06-12T01:00:48.000Z",
-      "url": "https://www.zdnet.com/article/treat-your-ai-agents-like-interns-before-you-lose-control/"
-    },
-    {
-      "id": "dcc2fd07a9e8",
-      "title": "How Preply combines AI and human tutors to personalize learning",
-      "excerpt": "Preply uses OpenAI to launch AI-generated lesson summaries, providing personalised feedback and language learning exercises.",
-      "source": "OpenAI News",
-      "category": "AI",
-      "publishedAt": "2026-06-12T00:00:00.000Z",
-      "url": "https://openai.com/index/preply"
-    },
-    {
-      "id": "9fcf41bef820",
-      "title": "Claude is ready for its corporate close-up",
-      "excerpt": "IDC says recent moves show Anthropic racing to meet enterprise requirements",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-11T22:43:31.000Z",
-      "url": "https://www.theregister.com/ai-and-ml/2026/06/11/claude-is-ready-for-its-corporate-close-up/5254565",
-      "image": "https://image.theregister.com/?imageId=5254628&width=800",
-      "tags": [
-        "ai and ml"
-      ]
-    },
-    {
-      "id": "b2f3ed14d6da",
-      "title": "Amazon’s Echo Hub gets a customizable new look and Ring’s AI features",
-      "excerpt": "Amazon's rolling out a free software update for Echo Hub devices that gives the home screen a much-needed update to the interface it launched with in 2024. It had already added Alex Plus AI support, but the new interf...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-11T22:06:32.000Z",
-      "url": "https://www.theverge.com/tech/948814/amazon-echo-hub-homescreen-redesign",
-      "tags": [
-        "Amazon",
-        "Amazon Alexa",
-        "News",
-        "Smart Home",
-        "Tech"
-      ]
-    },
-    {
-      "id": "7cf23974475d",
-      "title": "Best Buy has a 98-inch Hisense TV on sale for nearly 60% off right now",
-      "excerpt": "Right now at Best Buy, you can snag a 98-inch Hisense QD5 QLED TV for just under $1,000.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-11T21:16:17.000Z",
-      "url": "https://www.zdnet.com/article/hisense-qd5-98-inch-deal-best-buy-amazon-prime-day-2026/"
-    },
-    {
-      "id": "e3f26caa1328",
-      "title": "Everyone hates frontier AI labs, says Palantir boss",
-      "excerpt": "'Enterprises are fed up,' says Alex Karp, because LLM makers 'want to tokenmax' instead of understanding enterprise needs",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-11T20:54:43.000Z",
-      "url": "https://www.theregister.com/ai-and-ml/2026/06/11/everyone-hates-frontier-ai-labs-says-palantir-boss/5254516",
-      "image": "https://image.theregister.com/?imageId=4094191&width=800",
-      "tags": [
-        "ai and ml"
-      ]
-    },
-    {
-      "id": "9691490157c1",
-      "title": "SpaceX officially prices shares at $135 in the largest IPO ever",
-      "excerpt": "Wits its official share pricing announcement, SpaceX's IPO has begun.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-11T20:33:10.000Z",
-      "url": "https://techcrunch.com/2026/06/11/spacex-officially-prices-shares-at-135-in-the-largest-ipo-ever/",
-      "tags": [
-        "AI",
-        "Space",
-        "Elon Musk",
-        "SpaceX",
-        "spacex ipo"
-      ]
-    },
-    {
-      "id": "03724ebf28de",
-      "title": "Our new community investments in Virginia support local jobs and expand energy affordability.",
-      "excerpt": "We’re helping build the state’s next-generation workforce and investing in energy programs.",
-      "source": "Google AI Blog",
-      "category": "AI",
-      "publishedAt": "2026-06-11T20:00:00.000Z",
-      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp",
-      "tags": [
-        "Google.org",
-        "Global Network",
-        "Creating opportunity",
-        "AI"
-      ]
-    },
-    {
-      "id": "dde368a1f955",
-      "title": "Logitech’s awesome MX Master 3S mouse drops to under $100",
-      "excerpt": "The platform-agnostic Logitech MX Master 3S wireless mouse is discounted to $89.99 at Amazon ($30 off), matching the best price we’ve seen so far this year. While it may look like a somewhat ordinary mouse, it has a u...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-11T20:00:00.000Z",
-      "url": "https://www.theverge.com/gadgets/948204/logitech-mx-master-3s-mouse-sale-deal",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "3d4b046ae295",
-      "title": "SpaceX SPV investors won’t know their true holdings until post-IPO lock-ups lift",
-      "excerpt": "After SpaceX makes its public debut, lower-tier SPV investors face hidden fees, lengthy payout delays, and the risk of outright fraud.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-11T19:58:01.000Z",
-      "url": "https://techcrunch.com/2026/06/11/spacex-spv-investors-wont-know-their-true-holdings-until-post-ipo-lock-ups-lift/",
-      "tags": [
-        "AI",
-        "Space",
-        "IPO",
-        "secondary shares",
-        "SpaceX",
-        "SPV"
-      ]
-    },
-    {
-      "id": "bd503ec89e53",
-      "title": "Anthropic recruits army to sell Claude to nonprofits",
-      "excerpt": "Join Claude Corps, see the world, spread the gospel of AI",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-11T19:29:14.000Z",
-      "url": "https://www.theregister.com/ai-and-ml/2026/06/11/anthropic-hires-1000-fellows-to-push-claude-into-nonprofits/5254489",
-      "image": "https://image.theregister.com/?imageId=178980&width=800",
-      "tags": [
-        "ai and ml"
-      ]
-    },
-    {
-      "id": "9f6bbb55b25e",
-      "title": "ShinyHunters hacked 100+ orgs by exploiting an Oracle PeopleSoft 0-day",
-      "excerpt": "University of Nottingham is first of many, Shiny tells The Reg",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-11T19:01:16.000Z",
-      "url": "https://www.theregister.com/cyber-crime/2026/06/11/shinyhunters-claims-oracle-peoplesoft-0-day-hit-100-orgs/5254443",
-      "image": "https://image.theregister.com/?imageId=5254486&width=800",
-      "tags": [
-        "cyber-crime"
-      ]
-    },
-    {
-      "id": "9723c0fc5ae1",
-      "title": "The cloud vs. clouded leopard: America's data center backlash on display at Nashville Zoo",
-      "excerpt": "As fights against data centers spring up around the country, the latest showdown in Nashville has a furry face.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-11T18:52:00.000Z",
-      "url": "https://www.zdnet.com/article/americans-data-center-backlash-nashville-zoo-clouded-leopard/"
-    },
-    {
-      "id": "01206f7212ca",
-      "title": "Google's new open-weights model brings image-generation tricks to AI text generation",
-      "excerpt": "Language model builds on diffusion tech to boost output performance by up to 4x, claims Chocolate Factory",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-11T18:31:31.000Z",
-      "url": "https://www.theregister.com/ai-and-ml/2026/06/11/googles-diffusiongemma-uses-diffusion-tech-to-speed-text-generation/5254406",
-      "image": "https://image.theregister.com/?imageId=5254430&width=800",
-      "tags": [
-        "ai and ml"
-      ]
-    },
-    {
-      "id": "44fbb63537a1",
-      "title": "I found the best early Prime Day Apple deals: MacBooks, iPads, AirPods, and more",
-      "excerpt": "Save on top Apple devices with these early Prime Day deals, hand-selected by experts who sleep, breathe, and eat Apple.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-11T18:07:45.000Z",
-      "url": "https://www.zdnet.com/article/best-early-prime-day-apple-deals-2026/"
-    },
-    {
-      "id": "7359a8d53ec4",
-      "title": "Blink’s six-piece outdoor camera kit is a great deal under $200",
-      "excerpt": "You can save on a big set of outdoor security cameras ahead of Prime Day. Amazon has a five-pack of Blink cameras with a video doorbell included that’s marked down to $166.99. The bundle includes a Blink Battery Doorb...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-11T18:04:43.000Z",
-      "url": "https://www.theverge.com/gadgets/948459/blink-camera-bundle-aeropress-deal-sale",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Smart Home",
-        "Tech",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "3e0211915d47",
-      "title": "Microsoft's worst 'Nightmare' unleashes BitLocker bypass 0-day",
-      "excerpt": "Another day, another Windows exploit code",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-11T17:51:52.000Z",
-      "url": "https://www.theregister.com/security/2026/06/11/nightmare-eclipse-drops-claimed-bitlocker-bypass-for-microsoft-windows/5254371",
-      "image": "https://image.theregister.com/?imageId=253694&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "32049b4f506e",
-      "title": "The best early Prime Day health and fitness deals I'd recommend",
-      "excerpt": "I'm a health and wearables editor, and these are some of the top smartwatch, smart ring, and wellness deals I've found ahead of Prime Day.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-11T17:47:03.000Z",
-      "url": "https://www.zdnet.com/article/early-prime-day-smartwatch-deals-2026/"
-    },
-    {
-      "id": "147820327c56",
-      "title": "Roborock’s Q10 S5 Plus robovac is over half off, matching its best price to date",
-      "excerpt": "Even at full price, the Roborock Q10 S5 Plus offers impressive value, boasting features typically reserved for pricier robovac models at a fraction of the price. That’s especially true today. It’s down to just $269.99...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-11T17:42:29.000Z",
-      "url": "https://www.theverge.com/gadgets/948529/roborock-q10-s5-plus-robot-vacuum-mop-deal-sale",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Tech",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "42e166c38b03",
-      "title": "Lenovo vs. Dell: I've tested both laptop brands for years, and here's my preference",
-      "excerpt": "Dell and Lenovo specialize in PCs, laptops, and other computing products, but which one is better? Here's how to decide based on your needs.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-11T17:35:00.000Z",
-      "url": "https://www.zdnet.com/article/lenovo-vs-dell-laptops/"
     }
   ]
 }
