@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T04:26:57.790Z",
+  "generatedAt": "2026-06-15T17:16:41.209Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,418 @@
     }
   ],
   "posts": [
+    {
+      "id": "3457752e850f",
+      "title": "Java's Project Valhalla finally lands a preview in JDK 28",
+      "excerpt": "Don't hold your breath, though – architect Brian Goetz warns devs it will likely still be preview in next LTS release",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-15T17:15:00.000Z",
+      "url": "https://www.theregister.com/devops/2026/06/15/javas-project-valhalla-finally-lands-a-preview-in-jdk-28/5255557",
+      "image": "https://image.theregister.com/?imageId=1683291&width=800",
+      "tags": [
+        "devops"
+      ]
+    },
+    {
+      "id": "f6f8c0ccb683",
+      "title": "Xbox turmoil continues with a studio closure and executive departures",
+      "excerpt": "Last week, Xbox boss Asha Sharma sent a memo warning of an Xbox \"reset\" ahead of expected layoffs, and today, Kotaku reported that Xbox plans to shut down Compulsion Games, the studio behind South of Midnight. Since t...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-15T17:08:35.000Z",
+      "url": "https://www.theverge.com/games/949964/xbox-compulsion-games-closure-craig-duncan-departure",
+      "tags": [
+        "Entertainment",
+        "Gaming",
+        "News",
+        "Xbox"
+      ]
+    },
+    {
+      "id": "ff640568fc79",
+      "title": "5 best Prime Day Anker deals: Chargers, power stations, and more we recommend",
+      "excerpt": "Our editors love Anker products for their reliability and affordability - especially when they're on sale for Prime Day.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-15T17:05:55.000Z",
+      "url": "https://www.zdnet.com/article/best-anker-deals-amazon-prime-day-2026/"
+    },
+    {
+      "id": "3b8844a01ff1",
+      "title": "Feds snooze as US datacenter law set to lapse with no replacement in site",
+      "excerpt": "Federal Data Center Enhancement Act (FDCEA) of 2023 covers standards including security and sustainability",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-15T16:47:00.000Z",
+      "url": "https://www.theregister.com/public-sector/2026/06/15/feds-snooze-as-us-datacenter-law-set-to-lapse-with-no-replacement-in-site/5255679",
+      "image": "https://image.theregister.com/?imageId=5255734&width=800",
+      "tags": [
+        "public sector"
+      ]
+    },
+    {
+      "id": "2d0459ee26a5",
+      "title": "RefreshOS is a top contender for new Linux users - here's why",
+      "excerpt": "There are so many great Linux distributions that are perfectly suitable for new users, but RefreshOS is quickly rising to the top of my list.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-15T16:41:36.000Z",
+      "url": "https://www.zdnet.com/article/refreshos-is-one-of-the-most-polished-linux-distributions-ive-used/"
+    },
+    {
+      "id": "8ce47d0d5b0d",
+      "title": "The Y2K bug is back! Danish dev digs up untimely flaw in old BSD build",
+      "excerpt": "26 years late and no threat unless you still run a PDP-11/70 and rely on short-wave timekeeping broadcasts",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-15T16:30:00.000Z",
+      "url": "https://www.theregister.com/offbeat/2026/06/15/the-y2k-bug-is-back-danish-dev-digs-up-untimely-flaw-in-old-bsd-build/5255645",
+      "image": "https://image.theregister.com/?imageId=5255668&width=800",
+      "tags": [
+        "offbeat"
+      ]
+    },
+    {
+      "id": "a20670d1b674",
+      "title": "I made 4 tweaks to my TV soundbar for drastically-improved audio when watching sports",
+      "excerpt": "Some of your favorite soundbar settings for music and movies aren't compatible with live sports broadcasts. Here's the fix.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-15T16:20:43.000Z",
+      "url": "https://www.zdnet.com/article/soundbar-settings-sports-tips/"
+    },
+    {
+      "id": "b6023556de08",
+      "title": "NASA management wants a word and won't say why",
+      "excerpt": "A mystery calendar event is certainly one way to find out about being selected for the Artemis III crew",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-15T16:15:00.000Z",
+      "url": "https://www.theregister.com/science/2026/06/15/nasa-management-wants-a-word-and-wont-say-why/5255702",
+      "image": "https://image.theregister.com/?imageId=1683213&width=800",
+      "tags": [
+        "science"
+      ]
+    },
+    {
+      "id": "9f4170c10ba5",
+      "title": "My power station always has these 3 devices connected - here's why",
+      "excerpt": "Here's how I leverage my power station's capabilities when it's not during an emergency.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-15T16:09:00.000Z",
+      "url": "https://www.zdnet.com/article/3-things-i-keep-permanently-connected-to-a-power-station-and-why/"
+    },
+    {
+      "id": "9e49ebe577bb",
+      "title": "Red Hat gives Ubuntu a bootc up the backside at Canonical shindig",
+      "excerpt": "Bootable containers pitch shows how distro can be managed with familiar OCI tooling",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-15T15:54:00.000Z",
+      "url": "https://www.theregister.com/software/2026/06/15/red-hat-gives-ubuntu-a-bootc-up-the-backside-at-canonical-shindig/5255608",
+      "image": "https://image.theregister.com/?imageId=252893&width=800",
+      "tags": [
+        "software"
+      ]
+    },
+    {
+      "id": "83ea92a12d4a",
+      "title": "Roblox exec says ticking a box for age verification is ‘not enough anymore’",
+      "excerpt": "Roblox's vice president of safety product policy, Eliza Jacobs, told NBC News that Roblox is \"optimistic\" that its new facial age estimation tech will \"continue to get better,\" saying, \"Ticking a box to say you're 13...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-15T15:52:17.000Z",
+      "url": "https://www.theverge.com/games/949853/roblox-age-verification-demo-nbc",
+      "tags": [
+        "Gaming",
+        "News",
+        "PC Gaming",
+        "Privacy",
+        "Tech"
+      ]
+    },
+    {
+      "id": "72709e9159e5",
+      "title": "Solid-state vs. graphene heat dissipation: Why my portable battery of choice is easy",
+      "excerpt": "The Momax Q.Mag X is one of the more reliable wireless battery packs I've tried, thanks to its enhanced heat dissipation.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-15T15:45:49.000Z",
+      "url": "https://www.zdnet.com/article/momax-q-mag-x-magsafe-power-bank-review/"
+    },
+    {
+      "id": "a69b3bb0dcf0",
+      "title": "Microsoft site throwing warnings after someone forgot to renew cert",
+      "excerpt": "Connectivity checker trips browser alarms thanks to lapsed security paperwork",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-15T15:33:35.000Z",
+      "url": "https://www.theregister.com/security/2026/06/15/microsoft-site-throwing-warnings-after-someone-forgot-to-renew-cert/5255597",
+      "image": "https://image.theregister.com/?imageId=5241525&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "2cf22b68fc62",
+      "title": "Cybersecurity vets protest ‘dangerous’ US government ban on Anthropic’s most powerful models",
+      "excerpt": "A group made up of dozens of cybersecurity experts urged the White House to remove export control restrictions on Anthropic’s models Fable and Mythos, arguing that the order is going to limit the ability of cybersecur...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-15T15:29:51.000Z",
+      "url": "https://techcrunch.com/2026/06/15/cybersecurity-vets-protest-dangerous-us-government-ban-on-anthropics-most-powerful-models/",
+      "tags": [
+        "AI",
+        "Security",
+        "Anthropic",
+        "Claude",
+        "Claude Fable 5",
+        "Claude Mythos"
+      ]
+    },
+    {
+      "id": "0425b9d1dea7",
+      "title": "This curved Samsung monitor is perfect for a WFH setup - and it's on sale",
+      "excerpt": "Ahead of Prime Day, Samsung's highly rated 27-inch Essential S3 curved monitor has dropped back down to the lowest price of the year.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-15T15:26:23.000Z",
+      "url": "https://www.zdnet.com/article/samsung-essential-s3-amazon-prime-day-deal-2026/"
+    },
+    {
+      "id": "d20bd99795ab",
+      "title": "Container made it easy to run Linux on my MacBook - here's how I set it up",
+      "excerpt": "If you're looking to get into developing for Linux, but you prefer using a Mac as your developer tool of choice, there's a new command-line tool that you should definitely look into.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-15T15:19:48.000Z",
+      "url": "https://www.zdnet.com/article/container-makes-it-easy-to-run-linux-on-apple-silicon/"
+    },
+    {
+      "id": "f06c5186a486",
+      "title": "We’re strengthening our presence in Alabama through new investments and community support.",
+      "excerpt": "Google has announced a $1.5 billion investment for 2026 and 2027 to expand its data center campus in Jackson County, Alabama. Operating since 2019 on a repurposed former…",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "publishedAt": "2026-06-15T15:00:00.000Z",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/alabama-investment-june-2026/",
+      "tags": [
+        "Global Network",
+        "Creating opportunity",
+        "AI"
+      ]
+    },
+    {
+      "id": "6a50aacdf331",
+      "title": "Europe's AI paralysis has a solution - and it starts with a semantic twin",
+      "excerpt": "PARTNER CONTENT: Onix's Wingspan platform promises to move enterprises from pilot purgatory to governed, enterprise-wide AI deployment in weeks, not years",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-15T15:00:00.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/15/europes-ai-paralysis-has-a-solution-and-it-starts-with-a-semantic-twin/5255303",
+      "image": "https://image.theregister.com/?imageId=237699&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "a635a5fe67e8",
+      "title": "6 underrated Android Auto apps that I heavily rely on during road trips - some are free",
+      "excerpt": "Android Auto isn't just for city streets anymore. Here are the apps that help me get more done when I'm off the city path.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-15T14:48:00.000Z",
+      "url": "https://www.zdnet.com/article/6-android-auto-apps-let-explore-the-outdoors/"
+    },
+    {
+      "id": "f7f0be93a5c9",
+      "title": "My favorite Qi2 power bank is cheaper than ever for Verge readers",
+      "excerpt": "I recently published a buying guide on the best Qi2 power banks. Out of seven feature-packed batteries, I really dug the Baseus AM52 10,000mAh power bank that has a built-in USB-C cable. It’s fast at Qi2.2 wireless ch...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-15T14:39:24.000Z",
+      "url": "https://www.theverge.com/gadgets/949766/baseus-am52-usbc-power-bank-magsafe-deal-sale",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "baa795f58d1e",
+      "title": "Salesforce acquires AI customer service platform Fin for $3.6 billion",
+      "excerpt": "Salesforce says it wants to use Fin's team and technology to improve Agentforce, its existing enterprise platform that businesses can use to build custom AI agents that automate tasks.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-15T14:34:45.000Z",
+      "url": "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b/",
+      "tags": [
+        "AI",
+        "Enterprise",
+        "Agentforce",
+        "AI agents",
+        "Fin",
+        "In Brief"
+      ]
+    },
+    {
+      "id": "0702581c5781",
+      "title": "Salesforce reels in customer support AI specialist Fin for $3.6B",
+      "excerpt": "Support bot maker claims its AI agents can resolve three-quarters of customer queries without human help",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-15T14:30:00.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/15/salesforce-reels-in-customer-support-ai-specialist-fin-for-36b/5255571",
+      "image": "https://image.theregister.com/?imageId=252462&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "c5cfd0eff2f9",
+      "title": "The Verge’s Father’s Day 2026 gift guide",
+      "excerpt": "With Father's Day on the horizon, happening June 21st, it's time to start thinking about what kind of gifts you want to buy for the fathers you care about. You know your dad best - he may be a man of simple pleasures...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-15T14:23:21.000Z",
+      "url": "https://www.theverge.com/gadgets/943212/best-fathers-day-gift-ideas",
+      "tags": [
+        "Gadgets",
+        "Gift Guides",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "65cc54343c39",
+      "title": "Happy birthday to the Trump phone",
+      "excerpt": "From the day it was announced, on June 16th, 2025, the Trump phone sounded ridiculous. The T1 Phone 8002 (gold version), as it was officially called, was a combination of contradictory specs, product images that were...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-15T14:15:00.000Z",
+      "url": "https://www.theverge.com/policy/949093/trump-mobile-t1-phone-one-year-anniversary",
+      "tags": [
+        "Gadgets",
+        "Mobile",
+        "Phones",
+        "Policy",
+        "Politics",
+        "Tech"
+      ]
+    },
+    {
+      "id": "f3e37047d492",
+      "title": "Skydio CEO Adam Bry on why Silicon Valley shouldn’t draw red lines for drone use",
+      "excerpt": "Today, I’m talking with Adam Bry, who is CEO of Skydio, the leading US maker of autonomous drones. Before we recorded this episode, I actually got to remotely operate one of Skydio’s drones in the Bay Area from Adam’s...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-15T14:00:00.000Z",
+      "url": "https://www.theverge.com/podcast/949195/skydio-ceo-adam-bry-autonmous-drones-china-red-lines-military",
+      "tags": [
+        "AI",
+        "Business",
+        "Decoder",
+        "Drones",
+        "Podcasts",
+        "Tech"
+      ]
+    },
+    {
+      "id": "9a32bff36420",
+      "title": "Sarvam becomes India’s newest AI unicorn with $234 million funding round led by HCLTech",
+      "excerpt": "Indian IT services company HCLTech is investing $150 million in the Bengaluru startup.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-15T13:46:08.000Z",
+      "url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech/",
+      "tags": [
+        "AI",
+        "Fundraising",
+        "Startups",
+        "Bessemer Venture Partners",
+        "HCLTech",
+        "Khosla Ventures"
+      ]
+    },
+    {
+      "id": "6651b62c8616",
+      "title": "Google Earth’s flight simulator is now available in your browser",
+      "excerpt": "On Friday Google announced it was making a relatively unknown feature of Google Earth available to a wider audience. The desktop version of Google Earth has had a hidden flight simulator mode since 2007, but it's now...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-15T13:13:23.000Z",
+      "url": "https://www.theverge.com/tech/949749/google-earth-flight-simulator-browser-experimental",
+      "tags": [
+        "Gaming",
+        "Google",
+        "News",
+        "Tech"
+      ]
+    },
+    {
+      "id": "bf4c56821442",
+      "title": "As AI agents become employees, NewCore emerges with $66M to give them identities",
+      "excerpt": "NewCore argues the next challenge in enterprise security will be managing AI agents, not people.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-15T13:00:00.000Z",
+      "url": "https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities/",
+      "tags": [
+        "AI",
+        "Security",
+        "Startups",
+        "AI agents",
+        "cyberstarts",
+        "NewCore"
+      ]
+    },
+    {
+      "id": "3df362228dbf",
+      "title": "A satellite just learned to find things on its own — here’s what that means",
+      "excerpt": "In April, for the first time ever, an Earth observation satellite found what it was looking for, all on its own.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-15T12:00:00.000Z",
+      "url": "https://techcrunch.com/2026/06/15/a-satellite-just-learned-to-find-things-on-its-own-heres-what-that-means/",
+      "tags": [
+        "AI",
+        "Space",
+        "Exclusive",
+        "loft orbital",
+        "satellite tech",
+        "Satellites"
+      ]
+    },
+    {
+      "id": "821007b137a1",
+      "title": "Fox is buying Roku",
+      "excerpt": "Fox has announced that it's acquiring Roku outright, in a deal that values the streaming company at $22 billion. Once the deal is complete, Fox content will be promoted more heavily than before on Roku streamers and s...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-15T11:44:08.000Z",
+      "url": "https://www.theverge.com/business/949727/fox-roku-acquisition-22-billion",
+      "tags": [
+        "Business",
+        "Entertainment",
+        "News",
+        "Streaming"
+      ]
+    },
+    {
+      "id": "dab97fb78859",
+      "title": "The AI layoff wave is becoming a powder keg",
+      "excerpt": "What makes this combustible: at the very moment that tens of thousands of workers are being shown the door, a small cohort of AI insiders is becoming wealthy on a scale that's hard to comprehend.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-15T07:25:41.000Z",
+      "url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/",
+      "tags": [
+        "AI",
+        "TC",
+        "layoff"
+      ]
+    },
     {
       "id": "8d30b72ffaab",
       "title": "Fire burns Google Cloud India’s network, which remains slow a week later",
@@ -214,15 +626,6 @@
       "url": "https://www.zdnet.com/article/signs-someone-is-using-your-wi-fi-how-to-kick-them-off/"
     },
     {
-      "id": "a635a5fe67e8",
-      "title": "Most drivers overlook these 6 Android Auto apps - but off-roaders definitely shouldn't",
-      "excerpt": "Android Auto isn't just for city streets anymore. Here are the apps that help me get more done when I'm off-road.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-14T12:00:47.000Z",
-      "url": "https://www.zdnet.com/article/6-android-auto-apps-let-explore-the-outdoors/"
-    },
-    {
       "id": "6f13a5c64659",
       "title": "Solid-state batteries still aren’t ready, but gels are",
       "excerpt": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on e-bikes, power stations, and how to work anywhere, follow Thomas Ricker. The Stepback arrives in our subscri...",
@@ -276,408 +679,6 @@
       "image": "https://image.theregister.com/?imageId=5252058&width=800",
       "tags": [
         "off-prem"
-      ]
-    },
-    {
-      "id": "02dce68b4b11",
-      "title": "Scientists pour cold water on claims phones are rewiring kids' brains",
-      "excerpt": "MPs told that while concerns over handsets and social media grows, evidence they're changing children's brains is limited",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-14T07:30:00.000Z",
-      "url": "https://www.theregister.com/personal-tech/2026/06/14/scientists-pour-cold-water-on-claims-phones-are-rewiring-kids-brains/5254792",
-      "image": "https://image.theregister.com/?imageId=5254823&width=800",
-      "tags": [
-        "personal tech"
-      ]
-    },
-    {
-      "id": "9f21cdd032f0",
-      "title": "As Anthropic suspends access to new models, India debates its AI future",
-      "excerpt": "Tech leaders debate whether the Anthropic episode is a wake-up call for India’s AI ambitions.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-14T03:00:00.000Z",
-      "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/",
-      "tags": [
-        "AI",
-        "Startups",
-        "Anthropic",
-        "india ai"
-      ]
-    },
-    {
-      "id": "cb3568a3265c",
-      "title": "Meta reportedly moves to unwind $2B Manus deal after Beijing’s demand",
-      "excerpt": "Meta starts dismantling its $2 billion Manus acquisition after Beijing ordered the deal reversed.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-14T00:03:49.000Z",
-      "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/",
-      "tags": [
-        "AI",
-        "Government & Policy",
-        "China",
-        "manus",
-        "Manus AI",
-        "Meta"
-      ]
-    },
-    {
-      "id": "52f69ed1634e",
-      "title": "Amazon security research reportedly led to the White House’s Anthropic Fable ban",
-      "excerpt": "According to the Wall Street Journal, the export control directive that led to Anthropic cutting off access to Fable 5 and Mythos 5 was triggered in part by cybersecurity research from Amazon and conversations between...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-13T21:39:26.000Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/949601/amazon-anthropic-fablemythos-government-ban",
-      "tags": [
-        "AI",
-        "Amazon",
-        "Anthropic",
-        "News",
-        "Policy",
-        "Politics"
-      ]
-    },
-    {
-      "id": "ae8100dd200d",
-      "title": "KPMG pulls report on AI usage due to apparent hallucinations",
-      "excerpt": "Once again, AI proves to be an unreliable source of information about AI.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-13T20:42:31.000Z",
-      "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
-      "tags": [
-        "AI",
-        "kpmg"
-      ]
-    },
-    {
-      "id": "2c3e6fc1d2c4",
-      "title": "X-Men ’97 has what Master of the Universe is missing",
-      "excerpt": "In 2026, Marvel and Mattel are both releasing projects designed to capitalize on people's love for iconic animated heroes from their childhoods. Masters of the Universe has put a live-action He-Man on the big screen,...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-13T20:00:00.000Z",
-      "url": "https://www.theverge.com/entertainment/947064/xmen-97-season-2-disney-plus-marvel-masters-of-the-universe-mattel",
-      "tags": [
-        "Analysis",
-        "Disney",
-        "Entertainment",
-        "Film",
-        "Report",
-        "Streaming"
-      ]
-    },
-    {
-      "id": "39908d3ea933",
-      "title": "Amazon CEO reportedly raised Anthropic model concerns before government crackdown",
-      "excerpt": "Amazon CEO Andy Jassy may have been the source of security concerns that led Anthropic to cut off worldwide access to two models on Friday.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-13T19:11:41.000Z",
-      "url": "https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/",
-      "tags": [
-        "AI",
-        "Government & Policy",
-        "Security",
-        "Amazon",
-        "Andy Jassy",
-        "Anthropic"
-      ]
-    },
-    {
-      "id": "8f9f737a500f",
-      "title": "Sealed Super Mario Bros. sells for a record $3 million",
-      "excerpt": "A copy of Super Mario Bros., still in the box and sealed with its original sticker, just sold at Heritage Auctions for $3 million. That absolutely crushes the previous record of $2 million, also for a copy of Super Ma...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-13T18:37:21.000Z",
-      "url": "https://www.theverge.com/games/949593/super-mario-bros-3-million-auction",
-      "tags": [
-        "Gaming",
-        "News",
-        "Nintendo"
-      ]
-    },
-    {
-      "id": "5b78e7e16d01",
-      "title": "OpenAI faces investigation from state attorneys general",
-      "excerpt": "It's not clear which states are involved, but they're asking about everything from OpenAI's ad policies to its handling of health data.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-13T16:47:18.000Z",
-      "url": "https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/",
-      "tags": [
-        "AI",
-        "Government & Policy",
-        "OpenAI"
-      ]
-    },
-    {
-      "id": "537f3ebf422a",
-      "title": "Microsoft hasn’t ruled out spinning off Xbox",
-      "excerpt": "Microsoft is preparing to lay off a significant chunk of its Xbox division and is reevaluating the plans for its next-generation Project Helix console. It's apparently also considering dramatically restructuring its r...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-13T16:29:47.000Z",
-      "url": "https://www.theverge.com/games/949584/microsoft-spinning-off-xbox",
-      "tags": [
-        "Business",
-        "Gaming",
-        "Microsoft",
-        "News",
-        "Tech",
-        "Xbox"
-      ]
-    },
-    {
-      "id": "07e490a3c102",
-      "title": "Bose’s latest QuietComfort Ultra are $70 off, marking a new low price",
-      "excerpt": "If you’re planning on traveling anytime soon, Bose’s second-generation QuietComfort Ultra headphones are a great companion for long flights and train rides. Not only do they offer excellent noise cancellation, but the...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-13T16:00:00.000Z",
-      "url": "https://www.theverge.com/gadgets/949190/bose-quietcomfort-ultra-headphones-deal-sale",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Headphones",
-        "Tech",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "5abd03335e81",
-      "title": "My first 24 hours with Siri AI on the Mac",
-      "excerpt": "I turned off Siri on the Mac years ago and never looked back. Similarly, I found Apple Intelligence so fruitless I never engage with it. But the new Siri AI coming to macOS 27 Golden Gate has at least got me slightly...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-13T15:00:00.000Z",
-      "url": "https://www.theverge.com/tech/949502/apple-macos-27-golden-gate-siri-ai-apple-intelligence",
-      "tags": [
-        "Analysis",
-        "Apple",
-        "Gadgets",
-        "Laptops",
-        "macOS",
-        "Report"
-      ]
-    },
-    {
-      "id": "83cefed8a477",
-      "title": "I read the fine print on at-home DNA and health tests - watch out for these risks",
-      "excerpt": "What's really in that DNA kit? It turns out, it's not just a spit tube, but a whole lot of fine print.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-13T14:00:36.000Z",
-      "url": "https://www.zdnet.com/article/what-are-biggest-risks-in-at-home-dna-tests/"
-    },
-    {
-      "id": "d068da0f2095",
-      "title": "Never Post’s Mike Rugnetta on the creative process and the value of reliable power",
-      "excerpt": "Mike Rugnetta is a writer, podcast host, producer, audio engineer, educator, musician, sound designer, and father. In short, the man wears a lot of hats. He's the cocreator and host of the award-winning Never Post, an...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-13T14:00:00.000Z",
-      "url": "https://www.theverge.com/report/949073/mike-rugnetta-youtube-never-post-podcast-questionnaire",
-      "tags": [
-        "Creators",
-        "Entertainment",
-        "Interview",
-        "Report",
-        "Tech"
-      ]
-    },
-    {
-      "id": "1cdbbfcd7cb4",
-      "title": "World Cup AI predictor now lets users ask daft what-ifs",
-      "excerpt": "Spoiler: It doesn't end well for Team Register",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-13T13:30:00.000Z",
-      "url": "https://www.theregister.com/offbeat/2026/06/13/world-cup-ai-predictor-now-lets-users-ask-daft-what-ifs/5254853",
-      "image": "https://image.theregister.com/?imageId=5220092&width=800",
-      "tags": [
-        "offbeat"
-      ]
-    },
-    {
-      "id": "0d22979d33f8",
-      "title": "The wearable health boom is creating a data overload for doctors - what happens next",
-      "excerpt": "Patients have never had more information about their health, but much of it is unusable. Here's why.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-13T13:00:58.000Z",
-      "url": "https://www.zdnet.com/article/the-wearable-health-boom-is-creating-a-data-overload-for-doctors-what-happens-next/"
-    },
-    {
-      "id": "4a8906e34c79",
-      "title": "I switched to Alpine Linux, and it's a crazy-fast distro with only one caveat",
-      "excerpt": "While known primarily for containers and servers, this lightweight distro could easily be your daily driver. Here's why.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-13T13:00:43.000Z",
-      "url": "https://www.zdnet.com/article/alpine-linux-crazy-fast-distro-for-your-desktop/"
-    },
-    {
-      "id": "283c8f534b53",
-      "title": "My yard is dying, so I made an app for that",
-      "excerpt": "When I returned to my computer five minutes after giving Gemini a lengthy prompt, I had two things: a functional app in a preview window, and a message about a bug. \"~ Channel is unrecoverably broken and will be dispo...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-13T13:00:00.000Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/942119/vibecoding-backyard-app-gardening-organizing",
-      "tags": [
-        "AI"
-      ]
-    },
-    {
-      "id": "9ba86552f51c",
-      "title": "Our favorite health trackers are disappearing - and that's the point",
-      "excerpt": "Tech companies are evolving their health trackers to make them smaller, thinner, and near-invisible. Here's why.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-13T12:00:43.000Z",
-      "url": "https://www.zdnet.com/article/health-trackers-are-disappearing-thats-the-point/"
-    },
-    {
-      "id": "6b5ef386182e",
-      "title": "Echo Isle is a pint-sized adventure inspired by classic Zelda",
-      "excerpt": "Echo Isle is heavily inspired by The Legend of Zelda, and it's not afraid to show it: The retro graphics bear a striking resemblance to Link's Awakening, the main character wears a blue tunic and wields a sword, and h...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-13T12:00:00.000Z",
-      "url": "https://www.theverge.com/games/947136/echo-isle-review-pc",
-      "tags": [
-        "Entertainment",
-        "Games Review",
-        "Gaming"
-      ]
-    },
-    {
-      "id": "7db5a9c52aa2",
-      "title": "Apple’s new AI photo editing tools mostly work, for better and worse",
-      "excerpt": "The most popular camera in the world just got its first set of serious AI photo editing features, and I don't think any of us are ready. As far as AI photo editing goes, the new features in iOS 27 are pretty tame comp...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-13T12:00:00.000Z",
-      "url": "https://www.theverge.com/tech/949360/apple-ai-photo-edit-reframe-extend-clean-up-hands-on",
-      "tags": [
-        "AI",
-        "Apple",
-        "iPhone",
-        "Tech",
-        "WWDC 2026"
-      ]
-    },
-    {
-      "id": "70d9e4eb64da",
-      "title": "A better way to manage all your screenshots",
-      "excerpt": "Hi, friends! Welcome to Installer No. 132, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, happy soccer, and also you can read all the old editions at the Installer homepage.) T...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-13T12:00:00.000Z",
-      "url": "https://www.theverge.com/tech/949465/pool-screenshots-app-disclosure-day-installer",
-      "tags": [
-        "Apps",
-        "Gadgets",
-        "Installer",
-        "Social Media",
-        "Tech"
-      ]
-    },
-    {
-      "id": "8d3171edd14c",
-      "title": "AWS rolls the dice for faster, more efficient networking",
-      "excerpt": "Honey, I flattened the datacenter network",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-13T11:00:00.000Z",
-      "url": "https://www.theregister.com/networks/2026/06/13/aws-rolls-the-dice-for-faster-more-efficient-networking/5253248",
-      "image": "https://image.theregister.com/?imageId=5239418&width=800",
-      "tags": [
-        "networks"
-      ]
-    },
-    {
-      "id": "6edfbdee00a0",
-      "title": "The future of Hollywood isn’t feeding prompts into vanilla gen AI models",
-      "excerpt": "For all the noise that's been made about how generative AI is poised to revolutionize the filmmaking industry, there haven't really been any projects created with the technology that felt like the sort of entertainmen...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-13T11:00:00.000Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/948425/tribeca-2026-dear-upstairs-neighbors-google-deepmind-openai",
-      "tags": [
-        "AI",
-        "Entertainment",
-        "Film",
-        "Google",
-        "OpenAI",
-        "Tech"
-      ]
-    },
-    {
-      "id": "9f4170c10ba5",
-      "title": "I always keep 3 devices connected to a power station - here's why",
-      "excerpt": "Using a portable power station to its full potential is ideal for getting your money's worth and enjoying uninterrupted power.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-13T10:01:10.000Z",
-      "url": "https://www.zdnet.com/article/3-things-i-keep-permanently-connected-to-a-power-station-and-why/"
-    },
-    {
-      "id": "249e22f47709",
-      "title": "NHS patients can't opt out of Palantir's data platform – but their hospital can",
-      "excerpt": "Minister says trusts can go it alone on procurement as Parliament mulls February 2027 FDP contract renewal",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-13T09:30:00.000Z",
-      "url": "https://www.theregister.com/databases/2026/06/13/nhs-patients-cant-opt-out-of-palantirs-data-platform-but-their-hospital-can/5254766",
-      "image": "https://image.theregister.com/?imageId=256922&width=800",
-      "tags": [
-        "databases"
-      ]
-    },
-    {
-      "id": "3bf54a8a65a2",
-      "title": "The best VPN routers of 2026: Expert tested and reviewed",
-      "excerpt": "Our guide lists the top routers on the market that provide VPN coverage throughout your entire home. We've ranked them based on speed, security, and reliability.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-13T09:01:02.000Z",
-      "url": "https://www.zdnet.com/article/best-vpn-router/"
-    },
-    {
-      "id": "be2e8726f83a",
-      "title": "Visa is handling AI-prompted transactions for OpenAI - but can you trust it?",
-      "excerpt": "A new partnership between Visa and OpenAI takes the next step in AI-led purchasing. Here's what an expert wants you to know.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-06-13T09:00:55.000Z",
-      "url": "https://www.zdnet.com/article/openai-and-visa-aim-to-secure-agentic-transactions-how-theyll-work/"
-    },
-    {
-      "id": "ed0cb608a54b",
-      "title": "I usually avoid on-ear headphones, but Marshall has me seriously reconsidering",
-      "excerpt": "Marshall revamped its midrange headphones with stellar comfort, repairability, and a marathon battery life.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-13T09:00:54.000Z",
-      "url": "https://www.zdnet.com/article/marshall-milton-anc-review/"
-    },
-    {
-      "id": "ecb9482d7b11",
-      "title": "XP-era Windows spotted haunting London's driverless railway",
-      "excerpt": "A blast from the past greets commuters",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-13T08:30:00.000Z",
-      "url": "https://www.theregister.com/offbeat/2026/06/13/xp-era-windows-spotted-haunting-londons-driverless-railway/5253651",
-      "image": "https://image.theregister.com/?imageId=5253686&width=800",
-      "tags": [
-        "offbeat"
       ]
     }
   ]
