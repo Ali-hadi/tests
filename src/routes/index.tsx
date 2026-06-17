@@ -23,31 +23,37 @@ export const Route = createFileRoute("/")({
 const services = [
   {
     n: "01",
+    slug: "ai-agent-development",
     t: "AI Agents",
     d: "Autonomous LLM agents that reason, plan, and execute end-to-end workflows for your business 24/7.",
   },
   {
     n: "02",
+    slug: "ai-automation",
     t: "Automation",
     d: "Custom workflow automation that replaces manual ops — from data pipelines to internal tools.",
   },
   {
     n: "03",
+    slug: "custom-saas-development",
     t: "Custom SaaS",
     d: "Scalable cloud-native platforms built with Next.js, TypeScript, and high-performance architectures.",
   },
   {
     n: "04",
+    slug: "web-application-development",
     t: "Web & Mobile",
     d: "Full-stack web apps, native iOS/Android, and cross-platform with React Native or Flutter.",
   },
   {
     n: "05",
+    slug: "crm-erp-development",
     t: "CRM / ERP",
     d: "Bespoke internal tooling for complex global operations with localized security and compliance.",
   },
   {
     n: "06",
+    slug: "cloud-devops-services",
     t: "Cloud & DevOps",
     d: "AWS, GCP, Azure, Docker, Kubernetes — production-grade infra with CI/CD pipelines.",
   },
@@ -282,7 +288,8 @@ function HomePage() {
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-8 text-sm">{s.d}</p>
                     <Link
-                      to="/services"
+                      to="/services/$serviceId"
+                      params={{ serviceId: s.slug }}
                       className="text-[10px] font-mono uppercase tracking-[0.3em] text-foreground inline-flex items-center gap-2 group-hover:text-teal transition-colors"
                     >
                       Explore <span>→</span>

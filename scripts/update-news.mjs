@@ -7,8 +7,52 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, "..");
 const srcNewsPath = path.join(rootDir, "src", "data", "news.json");
 const publicNewsPath = path.join(rootDir, "public", "data", "news.json");
+const sitemapPath = path.join(rootDir, "public", "sitemap.xml");
 const maxPosts = Number.parseInt(process.env.NEWS_MAX_POSTS ?? "48", 10);
 const perSourceLimit = Number.parseInt(process.env.NEWS_PER_SOURCE_LIMIT ?? "8", 10);
+const siteUrl = "https://aitouchsolutions.com";
+const fallbackImage = "/og-image.jpg";
+
+const sitemapStaticRoutes = [
+  { path: "/", changefreq: "weekly", priority: "1.0" },
+  { path: "/services", changefreq: "monthly", priority: "0.9" },
+  { path: "/services/ai-agent-development", changefreq: "monthly", priority: "0.86" },
+  { path: "/services/ai-automation", changefreq: "monthly", priority: "0.86" },
+  { path: "/services/ai-chatbot-development", changefreq: "monthly", priority: "0.86" },
+  { path: "/services/ai-saas-development", changefreq: "monthly", priority: "0.86" },
+  { path: "/services/custom-saas-development", changefreq: "monthly", priority: "0.86" },
+  { path: "/services/web-application-development", changefreq: "monthly", priority: "0.86" },
+  { path: "/services/mobile-app-development", changefreq: "monthly", priority: "0.86" },
+  { path: "/services/mvp-development", changefreq: "monthly", priority: "0.86" },
+  { path: "/services/ecommerce-development", changefreq: "monthly", priority: "0.86" },
+  { path: "/services/crm-erp-development", changefreq: "monthly", priority: "0.86" },
+  { path: "/services/data-dashboard-development", changefreq: "monthly", priority: "0.86" },
+  { path: "/services/cloud-devops-services", changefreq: "monthly", priority: "0.86" },
+  { path: "/services/cybersecurity-services", changefreq: "monthly", priority: "0.86" },
+  { path: "/services/dedicated-developers", changefreq: "monthly", priority: "0.86" },
+  { path: "/services/maintenance-support", changefreq: "monthly", priority: "0.86" },
+  { path: "/ai-solutions", changefreq: "monthly", priority: "0.9" },
+  { path: "/tools", changefreq: "weekly", priority: "0.95" },
+  { path: "/tools/ai-humanizer", changefreq: "weekly", priority: "0.9" },
+  { path: "/tools/ai-detector", changefreq: "weekly", priority: "0.9" },
+  { path: "/tools/resume-builder", changefreq: "weekly", priority: "0.88" },
+  { path: "/tools/thumbnail-generator", changefreq: "weekly", priority: "0.88" },
+  { path: "/tools/proposal-generator", changefreq: "weekly", priority: "0.88" },
+  { path: "/tools/website-generator", changefreq: "weekly", priority: "0.88" },
+  { path: "/tools/caption-generator", changefreq: "weekly", priority: "0.88" },
+  { path: "/tools/domain-generator", changefreq: "weekly", priority: "0.88" },
+  { path: "/tools/portfolio-builder", changefreq: "weekly", priority: "0.88" },
+  { path: "/tools/chatbot-saas", changefreq: "weekly", priority: "0.88" },
+  { path: "/pricing", changefreq: "monthly", priority: "0.8" },
+  { path: "/portfolio", changefreq: "monthly", priority: "0.8" },
+  { path: "/blog", changefreq: "daily", priority: "0.8" },
+  { path: "/technologies", changefreq: "monthly", priority: "0.7" },
+  { path: "/about", changefreq: "monthly", priority: "0.7" },
+  { path: "/contact", changefreq: "monthly", priority: "0.8" },
+  { path: "/privacy-policy", changefreq: "yearly", priority: "0.4" },
+  { path: "/terms-and-conditions", changefreq: "yearly", priority: "0.4" },
+  { path: "/refund-policy", changefreq: "yearly", priority: "0.4" },
+];
 
 const newsSources = [
   {
@@ -204,6 +248,158 @@ function postId(url, title) {
     .slice(0, 12);
 }
 
+function slugify(value = "") {
+  const slug = value
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 82)
+    .replace(/-+$/g, "");
+
+  return slug || "technology-brief";
+}
+
+function postSlug(post) {
+  const id = post.id || postId(post.url, post.title);
+  return `${slugify(post.title)}-${id}`;
+}
+
+function unique(values) {
+  return Array.from(
+    new Set(
+      values
+        .filter(Boolean)
+        .map((value) => cleanText(String(value)))
+        .filter(Boolean),
+    ),
+  );
+}
+
+function normalizeTags(post) {
+  const tags = unique([...(Array.isArray(post.tags) ? post.tags : []), post.category]);
+  return tags.slice(0, 8);
+}
+
+function sentence(value = "") {
+  const text = cleanText(value);
+  if (!text) return "";
+  return /[.!?]$/.test(text) ? text : `${text}.`;
+}
+
+function sourceDomain(value = "") {
+  try {
+    return new URL(value).hostname.replace(/^www\./, "");
+  } catch {
+    return "";
+  }
+}
+
+function buildKeyTakeaways(post, tags) {
+  const topic = tags.length > 0 ? tags.slice(0, 3).join(", ") : post.category;
+  const audience =
+    post.category === "AI"
+      ? "AI teams, product leaders, and operators"
+      : "engineering, security, and technology operations teams";
+
+  return [
+    `${post.source} is tracking this as a ${post.category} signal around ${topic}.`,
+    `${audience} should watch how the story affects roadmap planning, risk, and customer expectations.`,
+    "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site.",
+  ];
+}
+
+function buildArticleSections(post, tags) {
+  const topic = tags.length > 0 ? tags.slice(0, 4).join(", ") : post.category;
+  const categoryContext =
+    post.category === "AI"
+      ? "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision."
+      : "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.";
+  const sourceLabel = sourceDomain(post.url) || post.source;
+
+  return [
+    {
+      heading: "Overview",
+      body: [
+        sentence(post.excerpt),
+        `This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site.`,
+      ],
+    },
+    {
+      heading: "Why It Matters",
+      body: [
+        categoryContext,
+        `The useful signal is the connection between ${topic} and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services.`,
+      ],
+    },
+    {
+      heading: "What To Watch",
+      body: [
+        `Watch for follow-up movement from ${post.source}, competing vendors, enterprise buyers, developers, and regulators as the story develops.`,
+        "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value.",
+      ],
+    },
+    {
+      heading: "AItouchSolutions Take",
+      body: [
+        `For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from ${sourceLabel}.`,
+        "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling.",
+      ],
+    },
+  ];
+}
+
+function estimateReadTime(post) {
+  const words = [
+    post.title,
+    post.excerpt,
+    ...(post.keyTakeaways ?? []),
+    ...(post.content ?? []).flatMap((section) => [section.heading, ...(section.body ?? [])]),
+  ]
+    .join(" ")
+    .split(/\s+/)
+    .filter(Boolean).length;
+
+  return Math.max(2, Math.ceil(words / 190));
+}
+
+function hydratePost(input) {
+  const id = input.id || postId(input.url, input.title);
+  const post = {
+    id,
+    title: cleanText(input.title),
+    excerpt: sentence(input.excerpt || input.summary || input.title),
+    source: cleanText(input.source),
+    category: input.category === "AI" ? "AI" : "IT",
+    publishedAt: parseDate(input.publishedAt),
+    url: normalizeUrl(input.url || ""),
+    image: normalizeUrl(input.image || "") || fallbackImage,
+  };
+  const tags = normalizeTags({ ...input, ...post });
+  const content =
+    Array.isArray(input.content) && input.content.length > 0
+      ? input.content
+      : buildArticleSections(post, tags);
+  const keyTakeaways =
+    Array.isArray(input.keyTakeaways) && input.keyTakeaways.length > 0
+      ? input.keyTakeaways.map((item) => sentence(item))
+      : buildKeyTakeaways(post, tags);
+  const hydrated = {
+    ...post,
+    slug: input.slug || postSlug(post),
+    tags,
+    author: input.author || "AItouchSolutions Editorial",
+    readingTime: Number.isFinite(input.readingTime) ? input.readingTime : 0,
+    keyTakeaways,
+    content,
+  };
+
+  hydrated.readingTime = hydrated.readingTime || estimateReadTime(hydrated);
+  return hydrated;
+}
+
 function hasKeyword(text, patterns) {
   return patterns.some((pattern) => pattern.test(text));
 }
@@ -298,13 +494,50 @@ function mergePosts(fetchedPosts, existingPosts) {
   }
 
   return Array.from(byUrl.values())
+    .map(hydratePost)
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
     .slice(0, maxPosts);
+}
+
+function sitemapUrl(route, lastmod) {
+  return [
+    "  <url>",
+    `    <loc>${siteUrl}${route.path}</loc>`,
+    `    <lastmod>${lastmod}</lastmod>`,
+    `    <changefreq>${route.changefreq}</changefreq>`,
+    `    <priority>${route.priority}</priority>`,
+    "  </url>",
+  ].join("\n");
+}
+
+function buildSitemap(posts, generatedAt) {
+  const today = generatedAt.slice(0, 10);
+  const staticUrls = sitemapStaticRoutes.map((route) => sitemapUrl(route, today));
+  const blogUrls = posts.map((post) =>
+    sitemapUrl(
+      {
+        path: `/blog/${post.slug}`,
+        changefreq: "weekly",
+        priority: post.category === "AI" ? "0.75" : "0.7",
+      },
+      post.publishedAt.slice(0, 10),
+    ),
+  );
+
+  return [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ...staticUrls,
+    ...blogUrls,
+    "</urlset>",
+    "",
+  ].join("\n");
 }
 
 async function main() {
   const existing = await readExisting();
   const fetchedPosts = [];
+  const generatedAt = new Date().toISOString();
 
   for (const source of newsSources) {
     try {
@@ -317,7 +550,7 @@ async function main() {
   }
 
   const output = {
-    generatedAt: new Date().toISOString(),
+    generatedAt,
     sources: newsSources.map(({ name, category, url, feedUrl }) => ({
       name,
       category,
@@ -333,11 +566,15 @@ async function main() {
   const json = `${JSON.stringify(output, null, 2)}\n`;
   await writeFile(srcNewsPath, json, "utf8");
   await writeFile(publicNewsPath, json, "utf8");
+  await writeFile(sitemapPath, buildSitemap(output.posts, generatedAt), "utf8");
 
   console.log(
     `Stored ${output.posts.length} AI/IT posts in ${path.relative(rootDir, srcNewsPath)}`,
   );
   console.log(`Published JSON copy at ${path.relative(rootDir, publicNewsPath)}`);
+  console.log(
+    `Indexed ${output.posts.length} blog detail URLs in ${path.relative(rootDir, sitemapPath)}`,
+  );
 }
 
 main().catch((error) => {

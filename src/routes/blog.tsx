@@ -1,6 +1,14 @@
-import { createFileRoute } from "@tanstack/react-router";
-import newsData from "@/data/news.json";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowRight, Clock3 } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
+import {
+  formatNewsDate,
+  getNewsReadTime,
+  newsCategoryCounts,
+  newsGeneratedAt,
+  newsPosts,
+  newsSources,
+} from "@/lib/news";
 import { createSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/blog")({
@@ -8,68 +16,36 @@ export const Route = createFileRoute("/blog")({
     createSeo({
       title: "AI & IT Blog News | AItouchSolutions",
       description:
-        "Read the latest AI and IT news collected from trusted technology sources and stored in the AItouchSolutions news JSON feed.",
+        "Read AI and IT blog briefs stored in the AItouchSolutions JSON feed, with internal detail pages, images, tags, and indexed article links.",
       path: "/blog",
-      keywords: ["AI news", "IT news", "technology blog", "software news"],
+      keywords: ["AI news", "IT news", "technology blog", "software news", "AI blog"],
     }),
   component: BlogPage,
 });
 
-type NewsPost = {
-  id: string;
-  title: string;
-  excerpt: string;
-  source: string;
-  category: "AI" | "IT";
-  publishedAt: string;
-  url: string;
-  image?: string;
-  tags?: string[];
-};
-
-const posts = [...(newsData.posts as NewsPost[])].sort(
-  (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
-);
-
-const categoryCounts = posts.reduce(
-  (acc, post) => {
-    acc[post.category] += 1;
-    return acc;
-  },
-  { AI: 0, IT: 0 },
-);
-
-const sources = newsData.sources as Array<{ name: string; url: string; category: "AI" | "IT" }>;
-
-function formatDate(value: string) {
-  return new Intl.DateTimeFormat("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  }).format(new Date(value));
-}
-
 function BlogPage() {
-  const updatedAt = newsData.generatedAt ? formatDate(newsData.generatedAt) : "Pending";
+  const updatedAt = newsGeneratedAt ? formatNewsDate(newsGeneratedAt) : "Pending";
+  const featuredPost = newsPosts[0];
+  const remainingPosts = featuredPost ? newsPosts.slice(1) : newsPosts;
 
   return (
     <>
-      <section className="pt-40 lg:pt-52 pb-20 lg:pb-28">
+      <section className="pt-40 pb-16 lg:pt-52 lg:pb-24">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
           <Reveal>
             <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-teal mb-8">
               Blog News
             </p>
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end">
+            <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-end">
               <div className="lg:col-span-8">
-                <h1 className="font-display font-bold text-6xl md:text-8xl lg:text-9xl tracking-[-0.04em] leading-[0.9] max-w-5xl">
+                <h1 className="font-display max-w-5xl text-6xl font-bold leading-[0.9] tracking-[-0.04em] md:text-8xl lg:text-9xl">
                   AI and IT signals, <span className="gradient-text">kept current.</span>
                 </h1>
               </div>
               <div className="lg:col-span-4 lg:pb-4">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  A running briefing of artificial intelligence, software, cloud, security, and
-                  product engineering moves from technology sources teams actually watch.
+                <p className="text-lg leading-relaxed text-muted-foreground">
+                  Internal AItouchSolutions briefs for AI, software, cloud, security, devices, and
+                  product engineering news. Every story is stored in JSON and opens on this site.
                 </p>
               </div>
             </div>
@@ -78,21 +54,21 @@ function BlogPage() {
       </section>
 
       <section className="border-y border-border bg-ink">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 grid grid-cols-2 lg:grid-cols-4">
+        <div className="max-w-[1400px] mx-auto grid grid-cols-2 px-6 lg:grid-cols-4 lg:px-10">
           {[
-            { label: "Stories", value: posts.length.toString() },
-            { label: "AI posts", value: categoryCounts.AI.toString() },
-            { label: "IT posts", value: categoryCounts.IT.toString() },
+            { label: "Stories", value: newsPosts.length.toString() },
+            { label: "AI posts", value: newsCategoryCounts.AI.toString() },
+            { label: "IT posts", value: newsCategoryCounts.IT.toString() },
             { label: "Updated", value: updatedAt },
           ].map((item, index) => (
             <div
               key={item.label}
-              className={`p-7 lg:p-10 ${index < 3 ? "lg:border-r border-border" : ""} ${index < 2 ? "border-b lg:border-b-0 border-border" : ""}`}
+              className={`p-7 lg:p-10 ${index < 3 ? "lg:border-r border-border" : ""} ${index < 2 ? "border-b border-border lg:border-b-0" : ""}`}
             >
-              <p className="font-display text-2xl lg:text-4xl font-bold text-teal mb-3">
+              <p className="mb-3 font-display text-2xl font-bold text-teal lg:text-4xl">
                 {item.value}
               </p>
-              <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-muted-foreground">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
                 {item.label}
               </p>
             </div>
@@ -100,83 +76,148 @@ function BlogPage() {
         </div>
       </section>
 
-      <section className="py-24 lg:py-32">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          {posts.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-px bg-border">
-              {posts.map((post, index) => (
-                <Reveal key={post.id} delay={index % 6}>
-                  <article className="bg-background h-full p-7 lg:p-9 hover:bg-ink-2 transition-colors">
-                    {post.image ? (
-                      <a
-                        href={post.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="block aspect-[16/10] -m-7 lg:-m-9 mb-7 lg:mb-9 overflow-hidden bg-ink"
-                      >
-                        <img
-                          src={post.image}
-                          alt=""
-                          className="w-full h-full object-cover opacity-85 hover:opacity-100 transition-opacity"
-                          loading="lazy"
-                          referrerPolicy="no-referrer"
-                        />
-                      </a>
-                    ) : null}
-                    <div className="flex items-center justify-between gap-4 mb-8">
+      {featuredPost ? (
+        <section className="py-20 lg:py-28">
+          <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
+            <Reveal>
+              <Link
+                to="/blog/$slug"
+                params={{ slug: featuredPost.slug }}
+                className="grid overflow-hidden rounded-md border border-border bg-ink transition-colors hover:bg-ink-2 lg:grid-cols-[1.05fr_0.95fr]"
+              >
+                <div className="aspect-[16/10] bg-background lg:aspect-auto">
+                  <img
+                    src={featuredPost.image}
+                    alt={featuredPost.title}
+                    className="h-full w-full object-cover opacity-90 transition-opacity hover:opacity-100"
+                    loading="eager"
+                  />
+                </div>
+                <article className="flex min-h-[420px] flex-col p-7 lg:p-10">
+                  <div className="mb-8 flex flex-wrap items-center gap-3">
+                    <span
+                      className={`rounded-md px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.25em] ${
+                        featuredPost.category === "AI"
+                          ? "bg-teal/15 text-teal"
+                          : "bg-orange/15 text-orange"
+                      }`}
+                    >
+                      {featuredPost.category}
+                    </span>
+                    <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                      {formatNewsDate(featuredPost.publishedAt)}
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                      <Clock3 className="h-3.5 w-3.5" />
+                      {getNewsReadTime(featuredPost)} min
+                    </span>
+                  </div>
+                  <h2 className="font-display text-4xl font-bold leading-tight tracking-tight lg:text-6xl">
+                    {featuredPost.title}
+                  </h2>
+                  <p className="mt-6 text-base leading-relaxed text-muted-foreground lg:text-lg">
+                    {featuredPost.excerpt}
+                  </p>
+                  <div className="mt-7 flex flex-wrap gap-2">
+                    {featuredPost.tags.slice(0, 5).map((tag) => (
                       <span
-                        className={`px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-[0.25em] ${
-                          post.category === "AI"
-                            ? "bg-teal/15 text-teal"
-                            : "bg-orange/15 text-orange"
-                        }`}
+                        key={tag}
+                        className="rounded-md border border-border px-3 py-1.5 text-xs text-muted-foreground"
                       >
-                        {post.category}
+                        {tag}
                       </span>
-                      <time className="text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground">
-                        {formatDate(post.publishedAt)}
-                      </time>
-                    </div>
-                    <h2 className="font-display text-2xl lg:text-3xl font-bold leading-tight mb-5">
-                      <a
-                        href={post.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="hover:text-teal"
-                      >
-                        {post.title}
-                      </a>
-                    </h2>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-8">
-                      {post.excerpt}
+                    ))}
+                  </div>
+                  <div className="mt-auto flex items-center justify-between gap-4 border-t border-border pt-8">
+                    <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+                      {featuredPost.source}
                     </p>
-                    <div className="flex items-center justify-between gap-4 pt-6 border-t border-border">
-                      <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-muted-foreground">
-                        {post.source}
-                      </p>
-                      <a
-                        href={post.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-[10px] font-mono uppercase tracking-[0.25em] text-teal"
-                      >
-                        Read
-                      </a>
+                    <span className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.25em] text-teal">
+                      Read detail
+                      <ArrowRight className="h-4 w-4" />
+                    </span>
+                  </div>
+                </article>
+              </Link>
+            </Reveal>
+          </div>
+        </section>
+      ) : null}
+
+      <section className={featuredPost ? "pb-24 lg:pb-32" : "py-24 lg:py-32"}>
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
+          {newsPosts.length > 0 ? (
+            <div className="grid grid-cols-1 gap-px bg-border md:grid-cols-2 xl:grid-cols-3">
+              {remainingPosts.map((post, index) => (
+                <Reveal key={post.id} delay={index % 6}>
+                  <Link
+                    to="/blog/$slug"
+                    params={{ slug: post.slug }}
+                    className="group flex h-full flex-col bg-background transition-colors hover:bg-ink-2"
+                  >
+                    <div className="aspect-[16/10] overflow-hidden bg-ink">
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="h-full w-full object-cover opacity-85 transition duration-500 group-hover:scale-[1.03] group-hover:opacity-100"
+                        loading="lazy"
+                      />
                     </div>
-                  </article>
+                    <article className="flex h-full flex-col p-7 lg:p-9">
+                      <div className="mb-7 flex items-center justify-between gap-4">
+                        <span
+                          className={`rounded-md px-3 py-1 font-mono text-[10px] uppercase tracking-[0.25em] ${
+                            post.category === "AI"
+                              ? "bg-teal/15 text-teal"
+                              : "bg-orange/15 text-orange"
+                          }`}
+                        >
+                          {post.category}
+                        </span>
+                        <time className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                          {formatNewsDate(post.publishedAt)}
+                        </time>
+                      </div>
+                      <h2 className="mb-5 font-display text-2xl font-bold leading-tight lg:text-3xl">
+                        {post.title}
+                      </h2>
+                      <p className="mb-7 text-sm leading-relaxed text-muted-foreground">
+                        {post.excerpt}
+                      </p>
+                      <div className="mb-7 flex flex-wrap gap-2">
+                        {post.tags.slice(0, 3).map((tag) => (
+                          <span
+                            key={tag}
+                            className="rounded-md border border-border px-2.5 py-1 text-[11px] text-muted-foreground"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="mt-auto flex items-center justify-between gap-4 border-t border-border pt-6">
+                        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+                          {post.source}
+                        </p>
+                        <span className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.25em] text-teal">
+                          Open
+                          <ArrowRight className="h-3.5 w-3.5" />
+                        </span>
+                      </div>
+                    </article>
+                  </Link>
                 </Reveal>
               ))}
             </div>
           ) : (
             <Reveal>
               <div className="border border-border bg-ink p-10 lg:p-14">
-                <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-teal mb-5">
+                <p className="mb-5 font-mono text-[10px] uppercase tracking-[0.35em] text-teal">
                   Feed pending
                 </p>
-                <h2 className="font-display text-4xl lg:text-6xl font-bold tracking-[-0.03em] mb-6">
+                <h2 className="mb-6 font-display text-4xl font-bold tracking-[-0.03em] lg:text-6xl">
                   The news feed is ready for its first refresh.
                 </h2>
-                <p className="max-w-2xl text-muted-foreground leading-relaxed">
+                <p className="max-w-2xl leading-relaxed text-muted-foreground">
                   New AI and IT stories will appear here as soon as the feed has fresh items.
                 </p>
               </div>
@@ -185,32 +226,26 @@ function BlogPage() {
         </div>
       </section>
 
-      <section className="py-24 border-t border-border bg-ink">
+      <section className="border-t border-border bg-ink py-24">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
           <Reveal>
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+            <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
               <div className="lg:col-span-4">
-                <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-orange mb-5">
+                <p className="mb-5 font-mono text-[10px] uppercase tracking-[0.35em] text-orange">
                   Sources
                 </p>
-                <h2 className="font-display text-4xl lg:text-5xl font-bold tracking-tight">
+                <h2 className="font-display text-4xl font-bold tracking-tight lg:text-5xl">
                   Curated technology feeds.
                 </h2>
               </div>
-              <div className="lg:col-span-8 grid sm:grid-cols-2 gap-px bg-border">
-                {sources.map((source) => (
-                  <a
-                    key={source.name}
-                    href={source.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="bg-ink p-6 hover:bg-background transition-colors"
-                  >
-                    <p className="font-display text-xl font-bold mb-2">{source.name}</p>
-                    <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-muted-foreground">
-                      {source.category} feed
+              <div className="grid gap-px bg-border sm:grid-cols-2 lg:col-span-8">
+                {newsSources.map((source) => (
+                  <div key={source.name} className="bg-ink p-6">
+                    <p className="mb-2 font-display text-xl font-bold">{source.name}</p>
+                    <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+                      {source.category} feed stored in JSON
                     </p>
-                  </a>
+                  </div>
                 ))}
               </div>
             </div>

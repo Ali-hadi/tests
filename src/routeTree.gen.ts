@@ -33,6 +33,8 @@ import { Route as ToolsCaptionGeneratorRouteImport } from './routes/tools.captio
 import { Route as ToolsAiHumanizerRouteImport } from './routes/tools.ai-humanizer'
 import { Route as ToolsAiDetectorRouteImport } from './routes/tools.ai-detector'
 import { Route as ToolsToolIdRouteImport } from './routes/tools.$toolId'
+import { Route as ServicesServiceIdRouteImport } from './routes/services.$serviceId'
+import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
 const ToolsRoute = ToolsRouteImport.update({
   id: '/tools',
@@ -154,21 +156,33 @@ const ToolsToolIdRoute = ToolsToolIdRouteImport.update({
   path: '/$toolId',
   getParentRoute: () => ToolsRoute,
 } as any)
+const ServicesServiceIdRoute = ServicesServiceIdRouteImport.update({
+  id: '/$serviceId',
+  path: '/$serviceId',
+  getParentRoute: () => ServicesRoute,
+} as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => BlogRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/ai-solutions': typeof AiSolutionsRoute
-  '/blog': typeof BlogRoute
+  '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/portfolio': typeof PortfolioRoute
   '/pricing': typeof PricingRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/refund-policy': typeof RefundPolicyRoute
-  '/services': typeof ServicesRoute
+  '/services': typeof ServicesRouteWithChildren
   '/technologies': typeof TechnologiesRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/tools': typeof ToolsRouteWithChildren
+  '/blog/$slug': typeof BlogSlugRoute
+  '/services/$serviceId': typeof ServicesServiceIdRoute
   '/tools/$toolId': typeof ToolsToolIdRoute
   '/tools/ai-detector': typeof ToolsAiDetectorRoute
   '/tools/ai-humanizer': typeof ToolsAiHumanizerRoute
@@ -185,16 +199,18 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/ai-solutions': typeof AiSolutionsRoute
-  '/blog': typeof BlogRoute
+  '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/portfolio': typeof PortfolioRoute
   '/pricing': typeof PricingRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/refund-policy': typeof RefundPolicyRoute
-  '/services': typeof ServicesRoute
+  '/services': typeof ServicesRouteWithChildren
   '/technologies': typeof TechnologiesRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/tools': typeof ToolsRouteWithChildren
+  '/blog/$slug': typeof BlogSlugRoute
+  '/services/$serviceId': typeof ServicesServiceIdRoute
   '/tools/$toolId': typeof ToolsToolIdRoute
   '/tools/ai-detector': typeof ToolsAiDetectorRoute
   '/tools/ai-humanizer': typeof ToolsAiHumanizerRoute
@@ -212,16 +228,18 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/ai-solutions': typeof AiSolutionsRoute
-  '/blog': typeof BlogRoute
+  '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/portfolio': typeof PortfolioRoute
   '/pricing': typeof PricingRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/refund-policy': typeof RefundPolicyRoute
-  '/services': typeof ServicesRoute
+  '/services': typeof ServicesRouteWithChildren
   '/technologies': typeof TechnologiesRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/tools': typeof ToolsRouteWithChildren
+  '/blog/$slug': typeof BlogSlugRoute
+  '/services/$serviceId': typeof ServicesServiceIdRoute
   '/tools/$toolId': typeof ToolsToolIdRoute
   '/tools/ai-detector': typeof ToolsAiDetectorRoute
   '/tools/ai-humanizer': typeof ToolsAiHumanizerRoute
@@ -250,6 +268,8 @@ export interface FileRouteTypes {
     | '/technologies'
     | '/terms-and-conditions'
     | '/tools'
+    | '/blog/$slug'
+    | '/services/$serviceId'
     | '/tools/$toolId'
     | '/tools/ai-detector'
     | '/tools/ai-humanizer'
@@ -276,6 +296,8 @@ export interface FileRouteTypes {
     | '/technologies'
     | '/terms-and-conditions'
     | '/tools'
+    | '/blog/$slug'
+    | '/services/$serviceId'
     | '/tools/$toolId'
     | '/tools/ai-detector'
     | '/tools/ai-humanizer'
@@ -302,6 +324,8 @@ export interface FileRouteTypes {
     | '/technologies'
     | '/terms-and-conditions'
     | '/tools'
+    | '/blog/$slug'
+    | '/services/$serviceId'
     | '/tools/$toolId'
     | '/tools/ai-detector'
     | '/tools/ai-humanizer'
@@ -319,13 +343,13 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   AiSolutionsRoute: typeof AiSolutionsRoute
-  BlogRoute: typeof BlogRoute
+  BlogRoute: typeof BlogRouteWithChildren
   ContactRoute: typeof ContactRoute
   PortfolioRoute: typeof PortfolioRoute
   PricingRoute: typeof PricingRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   RefundPolicyRoute: typeof RefundPolicyRoute
-  ServicesRoute: typeof ServicesRoute
+  ServicesRoute: typeof ServicesRouteWithChildren
   TechnologiesRoute: typeof TechnologiesRoute
   TermsAndConditionsRoute: typeof TermsAndConditionsRoute
   ToolsRoute: typeof ToolsRouteWithChildren
@@ -501,8 +525,44 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsToolIdRouteImport
       parentRoute: typeof ToolsRoute
     }
+    '/services/$serviceId': {
+      id: '/services/$serviceId'
+      path: '/$serviceId'
+      fullPath: '/services/$serviceId'
+      preLoaderRoute: typeof ServicesServiceIdRouteImport
+      parentRoute: typeof ServicesRoute
+    }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof BlogRoute
+    }
   }
 }
+
+interface BlogRouteChildren {
+  BlogSlugRoute: typeof BlogSlugRoute
+}
+
+const BlogRouteChildren: BlogRouteChildren = {
+  BlogSlugRoute: BlogSlugRoute,
+}
+
+const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
+
+interface ServicesRouteChildren {
+  ServicesServiceIdRoute: typeof ServicesServiceIdRoute
+}
+
+const ServicesRouteChildren: ServicesRouteChildren = {
+  ServicesServiceIdRoute: ServicesServiceIdRoute,
+}
+
+const ServicesRouteWithChildren = ServicesRoute._addFileChildren(
+  ServicesRouteChildren,
+)
 
 interface ToolsRouteChildren {
   ToolsToolIdRoute: typeof ToolsToolIdRoute
@@ -538,13 +598,13 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   AiSolutionsRoute: AiSolutionsRoute,
-  BlogRoute: BlogRoute,
+  BlogRoute: BlogRouteWithChildren,
   ContactRoute: ContactRoute,
   PortfolioRoute: PortfolioRoute,
   PricingRoute: PricingRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   RefundPolicyRoute: RefundPolicyRoute,
-  ServicesRoute: ServicesRoute,
+  ServicesRoute: ServicesRouteWithChildren,
   TechnologiesRoute: TechnologiesRoute,
   TermsAndConditionsRoute: TermsAndConditionsRoute,
   ToolsRoute: ToolsRouteWithChildren,

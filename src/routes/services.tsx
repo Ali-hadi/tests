@@ -1,134 +1,105 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
-import { createSeo } from "@/lib/seo";
+import { organicServiceKeywords, serviceGroups, serviceLandingPages } from "@/lib/service-seo";
+import { absoluteUrl, createSeo, siteConfig } from "@/lib/seo";
 
 export const Route = createFileRoute("/services")({
   head: () =>
     createSeo({
       title: "AI & Software Development Services | AItouchSolutions",
       description:
-        "Explore AI agents, automation, custom SaaS, web and mobile app development, CRM/ERP, cloud, DevOps, and support from AItouchSolutions.",
+        "Explore AI agent development, AI automation, custom SaaS, web app development, mobile apps, CRM/ERP, e-commerce, dashboards, cloud, DevOps, cybersecurity, and dedicated developers.",
       path: "/services",
       keywords: [
         "AI development services",
         "custom SaaS development",
         "web app development",
         "mobile app development",
+        ...organicServiceKeywords.slice(0, 45),
       ],
     }),
   component: ServicesPage,
 });
 
-const groups = [
-  {
-    label: "AI & Intelligence",
-    items: [
-      {
-        t: "AI Agent Development",
-        d: "Autonomous LLM agents that reason and execute multi-step workflows.",
-      },
-      { t: "AI Automation", d: "Custom workflow automation across your business systems." },
-      { t: "AI Training", d: "Fine-tuning and proprietary model training on your data." },
-      {
-        t: "AI Chatbots",
-        d: "Production-grade conversational AI with RAG over your knowledge base.",
-      },
-      { t: "AI SaaS Platforms", d: "End-to-end AI products from concept to scale." },
-    ],
-  },
-  {
-    label: "Product Engineering",
-    items: [
-      { t: "Web Application Development", d: "Next.js / React full-stack apps." },
-      { t: "Mobile App Development", d: "Native iOS, Android, React Native, Flutter." },
-      { t: "Custom Software", d: "Bespoke systems tailored to your operations." },
-      { t: "SaaS Product Development", d: "From MVP to scaled multi-tenant platform." },
-      { t: "MVP Development", d: "Production-ready MVPs shipped in 4–8 weeks." },
-    ],
-  },
-  {
-    label: "Commerce & CMS",
-    items: [
-      { t: "WordPress Development", d: "Headless and traditional WP at scale." },
-      { t: "Shopify Development", d: "Custom themes, apps, and integrations." },
-      { t: "E-commerce Solutions", d: "Multi-channel commerce architecture." },
-      { t: "CRM / ERP Systems", d: "Custom business management systems." },
-    ],
-  },
-  {
-    label: "Design & Frontend",
-    items: [
-      { t: "UI/UX Design", d: "Product-led design with user research." },
-      { t: "Frontend Development", d: "Pixel-perfect, performant, accessible." },
-      { t: "Backend Development", d: "Node, Python, Go — scalable APIs." },
-      { t: "API Integration", d: "Connect any third-party service." },
-    ],
-  },
-  {
-    label: "Cloud & Operations",
-    items: [
-      { t: "Cloud Deployment", d: "AWS, GCP, Azure, Vercel, Cloudflare." },
-      { t: "DevOps", d: "CI/CD, containerization, observability." },
-      { t: "Cybersecurity", d: "Audits, hardening, compliance." },
-      { t: "Maintenance & Support", d: "Ongoing reliability and improvement." },
-    ],
-  },
-  {
-    label: "Engagement Models",
-    items: [
-      { t: "Dedicated Developers", d: "Embedded engineers for your team." },
-      { t: "Fixed-Price Projects", d: "Defined scope, defined cost." },
-      { t: "Hourly Development", d: "Flexible engagements from $45/hr." },
-      { t: "Data Dashboards", d: "Custom analytics and BI dashboards." },
-      { t: "Business Automation", d: "Replace manual ops with intelligent systems." },
-    ],
-  },
-];
-
 function ServicesPage() {
+  const servicesJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "AItouchSolutions service landing pages",
+    itemListElement: serviceLandingPages.map((service, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: absoluteUrl(`/services/${service.slug}`),
+      name: service.title,
+      description: service.summary,
+    })),
+  };
+
   return (
     <>
-      <section className="pt-40 lg:pt-52 pb-20 lg:pb-32">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(servicesJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+
+      <section className="pt-40 pb-20 lg:pt-52 lg:pb-32">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
           <Reveal>
-            <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-teal mb-8">
+            <p className="mb-8 font-mono text-[10px] uppercase tracking-[0.35em] text-teal">
               Services
             </p>
-            <h1 className="font-display font-bold text-6xl md:text-8xl lg:text-9xl tracking-[-0.04em] leading-[0.9] max-w-5xl">
+            <h1 className="font-display max-w-5xl text-6xl font-bold leading-[0.9] tracking-[-0.04em] md:text-8xl lg:text-9xl">
               Everything you need to build, <span className="gradient-text">launch & scale</span>.
             </h1>
-            <p className="mt-10 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-              A complete software studio across AI, product engineering, design, and cloud — engaged
-              on fixed-price or hourly terms, 24/7 globally.
+            <p className="mt-10 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+              Indexable service pages for AI agents, automation, SaaS, web apps, mobile apps,
+              CRM/ERP, commerce, dashboards, cloud, DevOps, cybersecurity, and dedicated developers.
             </p>
           </Reveal>
         </div>
       </section>
 
       <section className="pb-32">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 space-y-20 lg:space-y-32">
-          {groups.map((g, gi) => (
-            <Reveal key={g.label}>
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 border-t border-border pt-12">
-                <div className="lg:col-span-4 lg:sticky lg:top-32 h-fit">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-teal mb-4">
-                    / 0{gi + 1}
+        <div className="max-w-[1400px] mx-auto space-y-20 px-6 lg:space-y-32 lg:px-10">
+          {serviceGroups.map((group, groupIndex) => (
+            <Reveal key={group.slug}>
+              <div className="grid grid-cols-1 gap-10 border-t border-border pt-12 lg:grid-cols-12">
+                <div className="h-fit lg:sticky lg:top-32 lg:col-span-4">
+                  <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.3em] text-teal">
+                    / {String(groupIndex + 1).padStart(2, "0")}
                   </p>
-                  <h2 className="font-display text-4xl lg:text-5xl font-bold tracking-tight">
-                    {g.label}
+                  <h2 className="font-display text-4xl font-bold tracking-tight lg:text-5xl">
+                    {group.label}
                   </h2>
+                  <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
+                    {group.description}
+                  </p>
                 </div>
-                <div className="lg:col-span-8 grid sm:grid-cols-2 gap-px bg-border">
-                  {g.items.map((it) => (
-                    <div
-                      key={it.t}
-                      className="bg-background p-8 hover:bg-ink-2 transition-colors group"
+                <div className="grid gap-px bg-border sm:grid-cols-2 lg:col-span-8">
+                  {group.services.map((service) => (
+                    <Link
+                      key={service.slug}
+                      to="/services/$serviceId"
+                      params={{ serviceId: service.slug }}
+                      className="group flex min-h-[250px] flex-col bg-background p-8 transition-colors hover:bg-ink-2"
                     >
-                      <h3 className="font-display text-xl font-bold mb-3 group-hover:text-teal transition-colors">
-                        {it.t}
+                      <p className="mb-5 font-mono text-[10px] uppercase tracking-[0.24em] text-teal">
+                        {service.group}
+                      </p>
+                      <h3 className="mb-3 font-display text-xl font-bold transition-colors group-hover:text-teal">
+                        {service.title}
                       </h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{it.d}</p>
-                    </div>
+                      <p className="text-sm leading-relaxed text-muted-foreground">
+                        {service.summary}
+                      </p>
+                      <div className="mt-auto flex items-center gap-2 pt-8 font-mono text-[10px] uppercase tracking-[0.24em] text-teal">
+                        View service
+                        <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+                      </div>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -137,16 +108,23 @@ function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-32 border-t border-border bg-ink">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 text-center">
-          <h2 className="font-display text-5xl lg:text-7xl font-bold tracking-[-0.03em] mb-8 max-w-3xl mx-auto">
-            Not sure where to start?
+      <section className="border-t border-border bg-ink py-32">
+        <div className="max-w-[1400px] mx-auto px-6 text-center lg:px-10">
+          <p className="mb-5 font-mono text-[10px] uppercase tracking-[0.35em] text-orange">
+            Search-friendly service pages
+          </p>
+          <h2 className="mx-auto mb-8 max-w-3xl font-display text-5xl font-bold tracking-[-0.03em] lg:text-7xl">
+            Land directly from Google on the right service.
           </h2>
+          <p className="mx-auto mb-10 max-w-2xl text-muted-foreground">
+            Each service now has its own indexed URL, canonical metadata, structured data, and
+            internal links under {siteConfig.name}.
+          </p>
           <Link
             to="/contact"
-            className="inline-flex px-8 py-4 bg-teal text-ink rounded-full text-xs font-bold uppercase tracking-[0.2em] hover:bg-teal-glow"
+            className="inline-flex rounded-full bg-teal px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-ink hover:bg-teal-glow"
           >
-            Get a custom quote →
+            Get a custom quote
           </Link>
         </div>
       </section>

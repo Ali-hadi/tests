@@ -1,3 +1,5 @@
+import { organicServiceKeywords, serviceLandingPages } from "@/lib/service-seo";
+
 const SITE_URL = "https://aitouchsolutions.com";
 const SITE_NAME = "AItouchSolutions";
 const AUTHOR_NAME = "Jon";
@@ -19,6 +21,7 @@ const baseKeywords = [
   "web application development",
   "mobile app development",
   "MERN developer",
+  ...organicServiceKeywords,
 ];
 
 export const siteConfig = {
@@ -150,19 +153,13 @@ export const organizationJsonLd = {
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "AI and software development services",
-        itemListElement: [
-          "AI Agent Development",
-          "AI Automation",
-          "Custom SaaS Development",
-          "Web Application Development",
-          "Mobile App Development",
-          "CRM and ERP Systems",
-          "Cloud and DevOps",
-        ].map((name) => ({
+        itemListElement: serviceLandingPages.map((service) => ({
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name,
+            name: service.title,
+            url: absoluteUrl(`/services/${service.slug}`),
+            description: service.summary,
             provider: { "@id": `${SITE_URL}/#organization` },
           },
         })),
