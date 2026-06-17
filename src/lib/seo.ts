@@ -7,6 +7,8 @@ const CONTACT_EMAIL = "shahzad.mern.dev@gmail.com";
 const WHATSAPP_DISPLAY = "03244958672";
 const WHATSAPP_INTERNATIONAL = "+923244958672";
 const WHATSAPP_URL = "https://wa.me/923244958672";
+const LINKEDIN_URL = "https://www.linkedin.com/in/ai-touch-solutions-91b727417";
+const LINKEDIN_DISPLAY = "linkedin.com/in/ai-touch-solutions-91b727417";
 const DEFAULT_IMAGE = "/og-image.jpg";
 const FOUNDER_IMAGE = "/founder-jon.jpg";
 
@@ -32,6 +34,8 @@ export const siteConfig = {
   whatsappDisplay: WHATSAPP_DISPLAY,
   whatsappInternational: WHATSAPP_INTERNATIONAL,
   whatsappUrl: WHATSAPP_URL,
+  linkedinUrl: LINKEDIN_URL,
+  linkedinDisplay: LINKEDIN_DISPLAY,
   defaultImage: DEFAULT_IMAGE,
   founderImage: FOUNDER_IMAGE,
   defaultTitle: "AItouchSolutions | AI Software, Web Apps & Automation",
@@ -139,6 +143,7 @@ export const organizationJsonLd = {
       },
       email: CONTACT_EMAIL,
       telephone: WHATSAPP_INTERNATIONAL,
+      sameAs: [LINKEDIN_URL, WHATSAPP_URL],
       contactPoint: [
         {
           "@type": "ContactPoint",

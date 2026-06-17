@@ -133,6 +133,19 @@ function ContactPage() {
             </div>
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-teal mb-4">
+                LinkedIn
+              </p>
+              <a
+                href={siteConfig.linkedinUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="font-display text-2xl lg:text-3xl block hover:text-teal break-all"
+              >
+                {siteConfig.linkedinDisplay}
+              </a>
+            </div>
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-teal mb-4">
                 Operations
               </p>
               <p className="text-muted-foreground leading-relaxed">
