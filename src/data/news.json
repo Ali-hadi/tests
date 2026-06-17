@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T16:56:58.184Z",
+  "generatedAt": "2026-06-17T04:17:28.289Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -52,6 +52,378 @@
   ],
   "posts": [
     {
+      "id": "d0e9a4de3954",
+      "title": "Cyberattack sees crops kept in the ground",
+      "excerpt": "Bitter harvest for Australia's Mackay Sugar, attacked in peak cane crushing season",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-17T02:16:00.000Z",
+      "url": "https://www.theregister.com/cyber-crime/2026/06/17/cyberattack-sees-crops-kept-in-the-ground/5256321",
+      "image": "https://image.theregister.com/?imageId=5227626&width=800",
+      "tags": [
+        "cyber-crime"
+      ]
+    },
+    {
+      "id": "cd80b9e32346",
+      "title": "KDE Plasma 6.7 has way more useful features than I expected - and you'll likely get it soon",
+      "excerpt": "The latest release of one of the finest desktop environments on the market is here, and there's plenty to be excited about.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-17T01:00:49.000Z",
+      "url": "https://www.zdnet.com/article/kde-plasma-6-7/"
+    },
+    {
+      "id": "0e7406a58cca",
+      "title": "I've spent years with immutable Linux - RakuOS fixed my biggest annoyance",
+      "excerpt": "Immutable Linux is the future of OS security, but the current distributions do have one particular limitation that RakuOS has overcome.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-17T00:20:00.000Z",
+      "url": "https://www.zdnet.com/article/rakuos-fixes-my-biggest-problem-with-immutable-linux-distros/"
+    },
+    {
+      "id": "e1100e558501",
+      "title": "This 55-inch Fire TV on Amazon costs just $280 - and I can actually recommend it",
+      "excerpt": "You can snag a 55-inch Amazon Fire TV Omni QLED Series with this early Prime Day deal.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-17T00:14:00.000Z",
+      "url": "https://www.zdnet.com/article/amazon-fire-tv-omni-qled-4k-amazon-prime-day-deal-2026/"
+    },
+    {
+      "id": "ebf314f9858d",
+      "title": "Your Android phone keyboard may be tracking your inputs - how to check (and 2 ways to stop it)",
+      "excerpt": "Your Android keyboard may be collecting more than you realize. Here are two ways to take back your privacy, but I only trust one.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-17T00:10:00.000Z",
+      "url": "https://www.zdnet.com/article/how-to-prevent-your-android-phone-keyboard-from-tracking-you/"
+    },
+    {
+      "id": "50e9d86dbe42",
+      "title": "Amazon has discounted a Lenovo IdeaPad for 73% off, and it's actually worth considering",
+      "excerpt": "Over at Amazon, the Lenovo IdeaPad 1i has dropped to $300, making it one of the best laptop deals available on the platform.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-16T22:42:00.000Z",
+      "url": "https://www.zdnet.com/article/lenovo-ideapad-1i-amazon-prime-day-deal-2026/"
+    },
+    {
+      "id": "c0c4fce9f225",
+      "title": "Anthropic’s latest feud with the Trump admin may actually help it, sales data suggests",
+      "excerpt": "Anthropic's popularity with business users is growing so well that the latest beef with the government might actually boost it, data from Ramp suggests.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-16T22:34:17.000Z",
+      "url": "https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/",
+      "tags": [
+        "AI",
+        "Enterprise",
+        "Fintech",
+        "Startups",
+        "TC",
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "665e013b3059",
+      "title": "Year of free HPE software a “step in the correct direction” in VMware rivalry",
+      "excerpt": "Partner tells Ars that HPE should be giving out more free VM Essentials licenses.",
+      "source": "Ars Technica",
+      "category": "IT",
+      "publishedAt": "2026-06-16T22:11:15.000Z",
+      "url": "https://arstechnica.com/information-technology/2026/06/hpe-tempts-vmware-users-partners-with-year-of-free-virtualization-software/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-1166474639-1152x648.jpg",
+      "tags": [
+        "Biz & IT",
+        "Broadcom",
+        "hewlett packard enterprise",
+        "vmware"
+      ]
+    },
+    {
+      "id": "4d7abdbe0365",
+      "title": "AMD's Mext buy shows how AI could solve the RAM shortage it created",
+      "excerpt": "Running low on memory, can't afford more? The House of Zen's latest acquisition puts an AI spin on flash-based memory expansion",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-16T22:09:32.000Z",
+      "url": "https://www.theregister.com/systems/2026/06/16/amds-mext-buy-shows-how-ai-could-solve-the-ram-shortage-it-created/5257352",
+      "image": "https://image.theregister.com/?imageId=5257373&width=800",
+      "tags": [
+        "systems"
+      ]
+    },
+    {
+      "id": "a49c4e25a487",
+      "title": "The new Siri makes one of Apple's most convenient OS features a cumbersome mess",
+      "excerpt": "Goodbye, useful Spotlight; hello force-fed Apple intelligence bloatware that feels distressingly like Google AI Overviews",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-16T20:47:37.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/16/the-new-siri-makes-one-of-apples-most-convenient-os-features-a-cumbersome-mess/5256591",
+      "image": "https://image.theregister.com/?imageId=4093949&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "cb9e542bb9d3",
+      "title": "Python dev saved from disaster by intuition...and AI",
+      "excerpt": "I'm sorry, Dave. I can't install that repo that will totally hose your system.",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-16T20:15:06.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/16/python-dev-saved-from-disaster-by-intuitionand-ai/5256632",
+      "image": "https://image.theregister.com/?imageId=1683298&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "ca32e1d00158",
+      "title": "SpaceX valuation balloons to $2.6T, briefly passes Amazon",
+      "excerpt": "SpaceX's valuation has increased by $1 trillion since its shares started trading on Friday.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-16T20:11:00.000Z",
+      "url": "https://techcrunch.com/2026/06/16/spacex-valuation-balloons-to-2-6t-briefly-passes-amazon/",
+      "tags": [
+        "AI",
+        "Space",
+        "In Brief",
+        "IPO",
+        "SpaceX",
+        "spacex ipo"
+      ]
+    },
+    {
+      "id": "7860ac260392",
+      "title": "Intel-born networking tech resurfaces as InfiniBand alternative for DoE supers",
+      "excerpt": "Omni-Path lights up Lawrence Livermore system at 400 Gbps",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-16T20:03:59.000Z",
+      "url": "https://www.theregister.com/hpc/2026/06/16/intel-born-networking-tech-resurfaces-as-infiniband-alternative-for-doe-supers/5256535",
+      "image": "https://image.theregister.com/?imageId=145706&width=800",
+      "tags": [
+        "hpc"
+      ]
+    },
+    {
+      "id": "b5ee763759be",
+      "title": "The Complete Calvin and Hobbes is a great last-minute Father’s Day gift",
+      "excerpt": "Father’s Day is nearly here. Hopefully, you already got a gift for dads you care about, but if not, here’s a quick, easy recommendation for anyone who enjoys a good comic strip. The Complete Calvin and Hobbes contains...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-16T20:00:00.000Z",
+      "url": "https://www.theverge.com/gadgets/950958/calvin-and-hobbes-fathers-day-gift-idea-deal-sale",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "cb49e637bb5e",
+      "title": "How I'm using this $13 smart plug to automate my house with voice commands",
+      "excerpt": "Imagine turning your holiday lights, lamps, and fans on or off from anywhere in the house or outdoors for cheap. This plug - now on sale - makes it happen.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-16T19:15:03.000Z",
+      "url": "https://www.zdnet.com/article/amazon-smart-plug-deal-amazon-prime-day-deal-2026/"
+    },
+    {
+      "id": "4a0e4aafe27a",
+      "title": "These are the 11 best early Prime Day phone deals I'd actually buy myself",
+      "excerpt": "Prime Day 2026 is next week. Save hundreds right now on early phone deals, including the Google Pixel 10 Pro, Samsung Galaxy S26, and Motorola Edge.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-16T19:05:07.000Z",
+      "url": "https://www.zdnet.com/article/best-early-amazon-prime-day-phone-deals-2026/"
+    },
+    {
+      "id": "b36090a34b6d",
+      "title": "AI and brain-computer interface allow speechless ALS patient to work a full-time job",
+      "excerpt": "The hardware isn't new, but a UC Davis research team's machine learning-powered method of translating brain activity in an ALS patient into sentences with 92% accuracy is",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-16T18:44:12.000Z",
+      "url": "https://www.theregister.com/science/2026/06/16/ai-and-brain-computer-interface-allow-speechless-als-patient-to-work-a-full-time-job/5256492",
+      "image": "https://image.theregister.com/?imageId=5256515&width=800",
+      "tags": [
+        "science"
+      ]
+    },
+    {
+      "id": "20d4179499c5",
+      "title": "The 8 best early Prime Day headphone deals: Apple, Bose, Sony, and more deals I'd buy myself",
+      "excerpt": "Prime Day is right around the corner, and I've found the best headphone deals - many of which are recent, flagship releases from Apple, Sony, Bose, and more.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-16T18:43:00.000Z",
+      "url": "https://www.zdnet.com/article/best-early-prime-day-headphone-deals-2026/"
+    },
+    {
+      "id": "8589452c4eae",
+      "title": "All the latest news on Android 17, Wear OS 7, and Android XR",
+      "excerpt": "Google’s Android 17 update includes highlights like new floating “Bubble” app windows for easier multitasking, a Screen Reaction recording mode, and a 50/50 split gaming mode for foldable phones. Meanwhile, Wear OS 7...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-16T18:30:00.000Z",
+      "url": "https://www.theverge.com/tech/950936/google-android-17-wear-os-android-xr",
+      "tags": [
+        "Android",
+        "Apps",
+        "AR",
+        "Gadgets",
+        "Google",
+        "Google Pixel"
+      ]
+    },
+    {
+      "id": "e8cda68dd802",
+      "title": "Three critical Fortinet sandbox bugs splattered by unknown attackers",
+      "excerpt": "All have patches, so make sure you upgrade to a fixed version",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-16T18:27:12.000Z",
+      "url": "https://www.theregister.com/security/2026/06/16/three-critical-fortinet-sandbox-bugs-splattered-by-unknown-attackers/5256461",
+      "image": "https://image.theregister.com/?imageId=5256503&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "becbc194361c",
+      "title": "Commodore gets into the phone biz with Sailfish-powered retro 'Callback'",
+      "excerpt": "Ships sans email, web, or socials, but with plenty of beige plastic",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-16T18:01:00.000Z",
+      "url": "https://www.theregister.com/personal-tech/2026/06/16/commodore-gets-into-the-phone-biz-with-sailfish-powered-retro-callback/5256186",
+      "image": "https://image.theregister.com/?imageId=5256209&width=800",
+      "tags": [
+        "personal tech"
+      ]
+    },
+    {
+      "id": "38bbef9f5395",
+      "title": "Android 17 launches with new multitasking tools as Google expands Gemini features",
+      "excerpt": "Google has released Android 17 and Wear OS 7, introducing new multitasking features, parental controls, security tools, and smartwatch upgrades. The launch is also accompanied by a Pixel Drop that brings Google’s late...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-16T18:00:00.000Z",
+      "url": "https://techcrunch.com/2026/06/16/android-17-launches-with-new-multitasking-tools-as-google-expands-gemini-features/",
+      "tags": [
+        "AI",
+        "Apps",
+        "android 17",
+        "Google",
+        "Pixel Drop"
+      ]
+    },
+    {
+      "id": "2ffe5bbe76c6",
+      "title": "Android 17 arrives on Pixel phones today",
+      "excerpt": "Following its official debut last month, Google is now rolling out Android 17 to compatible Pixel phones, alongside additional exclusive features as part of the June Pixel Drop. Not every feature announced alongside t...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-16T18:00:00.000Z",
+      "url": "https://www.theverge.com/tech/950651/android-17-release-pixel-drop-google-bubble-screen-reaction",
+      "tags": [
+        "Android",
+        "Foldable Phones",
+        "Gadgets",
+        "Google",
+        "Mobile",
+        "Phones"
+      ]
+    },
+    {
+      "id": "59317d17ea84",
+      "title": "Google launches Wear OS 7 with Live Updates and a battery life boost",
+      "excerpt": "Google's Wear OS 7 update is starting to roll out today for the Pixel Watch 2, 3, and 4, adding a new Live Updates feature that tracks live events from your Android smartwatch. Live Updates will now sync with Wear OS...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-16T18:00:00.000Z",
+      "url": "https://www.theverge.com/gadgets/950671/wear-os-7-pixel-watches-launch",
+      "tags": [
+        "Gadgets",
+        "Google",
+        "Google Pixel",
+        "News",
+        "Tech",
+        "Wearable"
+      ]
+    },
+    {
+      "id": "f8d6bceb62b5",
+      "title": "Verizon’s ‘Simplicity’ flat-rate plan starts at $30 per month for new customers",
+      "excerpt": "Verizon is launching a new Simplicity plan that starts at $30 / month for new customers, or $45 / month for existing ones. In its announcement, Verizon says the plan drops activation and upgrade fees, while offering o...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-16T17:19:35.000Z",
+      "url": "https://www.theverge.com/tech/950881/verizon-simplicity-plan-launch",
+      "tags": [
+        "Mobile",
+        "News",
+        "Tech",
+        "Verizon"
+      ]
+    },
+    {
+      "id": "a40339eb8bd7",
+      "title": "Apple 2027 rumors: AirPods with cameras for AI and the second folding iPhone",
+      "excerpt": "Now that we're clear of WWDC and all of the new AI-powered features coming to Apple's platforms, Bloomberg reporter Mark Gurman has more details about rumored new hardware, like the camera-equipped AirPods he'd previo...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-16T17:04:05.000Z",
+      "url": "https://www.theverge.com/tech/950826/apple-airpod-camera-ai-foldable-iphone-rumor",
+      "tags": [
+        "AI",
+        "Apple",
+        "Apple Rumors",
+        "Audio",
+        "Foldable Phones",
+        "Gadgets"
+      ]
+    },
+    {
+      "id": "350c6ceab2a9",
+      "title": "Qualcomm’s latest chip hints that more powerful smart glasses could be on the way",
+      "excerpt": "Smart glasses are still a nascent category, but chipmaker Qualcomm is hard at work upgrading the silicon to power the next wave of XR devices: the Snapdragon Reality Elite. Although Qualcomm is announcing the chip tod...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-16T17:00:00.000Z",
+      "url": "https://www.theverge.com/gadgets/950229/qualcomm-snapdragon-reality-elite-xr-smart-glasses-wearables",
+      "tags": [
+        "AI",
+        "Gadgets",
+        "News",
+        "Tech",
+        "Wearable"
+      ]
+    },
+    {
+      "id": "edfb4f13a3c5",
+      "title": "The Google / Xreal Aura XR glasses are now available to preorder",
+      "excerpt": "The Project Aura glasses collaboration between Xreal and Google is now one step closer to being something you can buy. Reservations for the second Android XR device, now dubbed the Xreal Aura, are available for $99 st...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-16T17:00:00.000Z",
+      "url": "https://www.theverge.com/gadgets/950597/xreal-google-aura-xr-glasses-deposit-scheme",
+      "tags": [
+        "Android",
+        "Gadgets",
+        "Google",
+        "News",
+        "Tech",
+        "Virtual Reality"
+      ]
+    },
+    {
       "id": "7c490f95f4c1",
       "title": "Snap’s first consumer AR glasses are coming this fall for $2,195",
       "excerpt": "Snap is finally launching augmented glasses for the public. Specs, which Snap describes as \"a wearable computer built into see-through augmented reality glasses,\" will cost $2,195. You can preorder a pair of Specs now...",
@@ -70,7 +442,7 @@
     },
     {
       "id": "6157dadc5b13",
-      "title": "Sixty percent of U.S. consumers say ‘AI’ in brand messaging is a turnoff, survey finds",
+      "title": "Sixty percent of US consumers say ‘AI’ in brand messaging is a turnoff, survey finds",
       "excerpt": "WordPress VIP’s latest survey suggests consumers are wary of AI-generated answers even as companies increasingly view AI search as an important referral channel.",
       "source": "TechCrunch AI",
       "category": "AI",
@@ -167,33 +539,6 @@
       ]
     },
     {
-      "id": "e1100e558501",
-      "title": "Amazon just dropped this 55-inch QLED TV to under $300 - and I highly recommend it",
-      "excerpt": "Only $280 gets you a 55-inch Amazon Fire TV Omni QLED Series with this great early Prime Day deal.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-16T15:42:43.000Z",
-      "url": "https://www.zdnet.com/article/amazon-fire-tv-omni-qled-4k-amazon-prime-day-deal-2026/"
-    },
-    {
-      "id": "cd80b9e32346",
-      "title": "KDE Plasma 6.7 might be a point release - but it's packed with new features",
-      "excerpt": "The latest release of one of the finest desktop environments on the market is here, and there's plenty to be excited about.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-16T15:31:51.000Z",
-      "url": "https://www.zdnet.com/article/kde-plasma-6-7/"
-    },
-    {
-      "id": "0e7406a58cca",
-      "title": "Immutable Linux distros always frustrated me for one reason - until RakuOS",
-      "excerpt": "Immutable Linux is the future of OS security, but the current distributions do have one particular limitation that RakuOS has resolved.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-16T15:30:40.000Z",
-      "url": "https://www.zdnet.com/article/rakuos-fixes-my-biggest-problem-with-immutable-linux-distros/"
-    },
-    {
       "id": "88444d2d285a",
       "title": "We now know how DJI’s dual camera Osmo Pocket 4P compares to Insta360’s",
       "excerpt": "After a brief debut at the Cannes film festival last month, DJI announced all the details of its Osmo Pocket 4P stabilized camera today as part of its initial launch in China. While it doesn't match the 8K capabilitie...",
@@ -207,15 +552,6 @@
         "News",
         "Tech"
       ]
-    },
-    {
-      "id": "ebf314f9858d",
-      "title": "How to prevent your Android phone keyboard from tracking you: 2 options",
-      "excerpt": "Your Android keyboard may be collecting more than you realize. Here are two ways to take back your privacy, but I only trust one.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-16T15:07:00.000Z",
-      "url": "https://www.zdnet.com/article/how-to-prevent-your-android-phone-keyboard-from-tracking-you/"
     },
     {
       "id": "500b9c34e8da",
@@ -366,342 +702,6 @@
         "Policy",
         "Tech",
         "TikTok"
-      ]
-    },
-    {
-      "id": "d819a7372529",
-      "title": "Linux kernel 7.1 sends Intel 486 support to silicon heaven",
-      "excerpt": "More than 140,000 lines of code bite the dust as ancient CPUs, bus mice, and other legacy leftovers face the chop",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-16T14:03:00.000Z",
-      "url": "https://www.theregister.com/os-platforms/2026/06/16/linux-kernel-71-sends-intel-486-support-to-silicon-heaven/5256260",
-      "image": "https://image.theregister.com/?imageId=222528&width=800",
-      "tags": [
-        "os platforms"
-      ]
-    },
-    {
-      "id": "4734620988ed",
-      "title": "Amazon’s capable sound system is over $100 off ahead of Prime Day",
-      "excerpt": "Built-in television speakers are almost always underwhelming, so getting a soundbar is the best way to elevate any and all content. If you want to get the most for your money, Amazon’s Fire TV Soundbar Plus with a sub...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-16T14:00:00.000Z",
-      "url": "https://www.theverge.com/gadgets/950210/amazon-fire-tv-plus-subwoofer-satellite-deal-sale",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Prime Day",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "6ee796e5082f",
-      "title": "SpaceX passes Amazon as valuation balloons to $2.7T",
-      "excerpt": "SpaceX's valuation has increased by $1 trillion since its shares started trading on Friday.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-16T13:48:37.000Z",
-      "url": "https://techcrunch.com/2026/06/16/spacex-passes-amazon-as-valuation-balloons-to-2-7t/",
-      "tags": [
-        "AI",
-        "Space",
-        "IPO",
-        "SpaceX",
-        "In Brief",
-        "spacex ipo"
-      ]
-    },
-    {
-      "id": "c55c2c044bca",
-      "title": "Non-x86 servers now nearly half the market, IDC says",
-      "excerpt": "Demand for AI systems plus the shortage of DRAM and NAND are shaping the global market",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-16T13:31:23.000Z",
-      "url": "https://www.theregister.com/systems/2026/06/16/non-x86-servers-now-nearly-half-the-market-idc-says/5256248",
-      "image": "https://image.theregister.com/?imageId=225049&width=800",
-      "tags": [
-        "systems"
-      ]
-    },
-    {
-      "id": "c59f94edba03",
-      "title": "Probably raises $9M to build a more reliable kind of AI",
-      "excerpt": "Probably wants to prevent hallucinations and factual errors from reaching users, and achieve accuracy on par with deterministic systems.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-16T13:15:09.000Z",
-      "url": "https://techcrunch.com/2026/06/16/probably-raises-9m-to-build-a-more-reliable-kind-of-ai/",
-      "tags": [
-        "Startups",
-        "AI",
-        "Andreessen Horowitz",
-        "hallucinations",
-        "Probably"
-      ]
-    },
-    {
-      "id": "16d1ad46d4a9",
-      "title": "NHS Palantir claims face scrutiny after data suggests uneven results",
-      "excerpt": "Campaign group says FOI figures show some trusts carried out fewer procedures than before",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-16T12:32:30.000Z",
-      "url": "https://www.theregister.com/public-sector/2026/06/16/nhs-palantir-claims-face-scrutiny-after-data-suggests-uneven-results/5256198",
-      "image": "https://image.theregister.com/?imageId=5240357&width=800",
-      "tags": [
-        "public sector"
-      ]
-    },
-    {
-      "id": "30199ad7197b",
-      "title": "NASA said nyet to Roscosmos plan to cut into leaky ISS segment",
-      "excerpt": "Crew sheltered in SpaceX Dragon as aging Zvezda segment's cracks continue to test orbital nerve",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-16T12:00:00.000Z",
-      "url": "https://www.theregister.com/science/2026/06/16/nasa-said-nyet-to-roscosmos-plan-to-cut-into-leaky-iss-segment/5252739",
-      "image": "https://image.theregister.com/?imageId=146254&width=800",
-      "tags": [
-        "science"
-      ]
-    },
-    {
-      "id": "160b810ea818",
-      "title": "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO",
-      "excerpt": "The deal is supposed to help SpaceX's struggling AI division. The company told IPO investors it sees a $26 trillion addressable market in AI.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-16T11:21:41.000Z",
-      "url": "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/",
-      "tags": [
-        "AI",
-        "Space",
-        "artificial intelligence",
-        "cursor",
-        "Mergers and Acquisitions",
-        "SpaceX"
-      ]
-    },
-    {
-      "id": "4dabfdd6b9ef",
-      "title": "Critical Copilot vulnerability allowed hackers to seal 2FA code from users",
-      "excerpt": "SearchLeak exploit shows why the industry's approach to LLM security fails over and over.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "publishedAt": "2026-06-16T11:15:46.000Z",
-      "url": "https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2242817595-1152x648.jpg",
-      "tags": [
-        "AI",
-        "Biz & IT",
-        "Security",
-        "copilot",
-        "LLMs",
-        "parameter to prompt injection"
-      ]
-    },
-    {
-      "id": "e24d6d5bbe56",
-      "title": "Inside the fight over Claude Mythos 5",
-      "excerpt": "As the rest of the country celebrated the USA's first World Cup win and the New York Knicks championship, Anthropic spent its weekend fighting the Trump administration over its latest model release. At 5:21 PM on Frid...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-16T03:00:00.000Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/950412/anthropic-trump-adminstration-claude-mythos-fable-5-export-controls",
-      "tags": [
-        "AI",
-        "Anthropic",
-        "Policy",
-        "Report"
-      ]
-    },
-    {
-      "id": "f491c6fd6540",
-      "title": "I modified my PC setup with a 15-in-1 docking station, and the benefits go beyond more ports",
-      "excerpt": "The Baseus Spacemate RD1 Pro has unique features that make it the centerpiece of a modern office station.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-16T01:00:47.000Z",
-      "url": "https://www.zdnet.com/article/baseus-spacemate-rd1-pro-15-in-1-review/"
-    },
-    {
-      "id": "a7d517dcb340",
-      "title": "Your iPhone may support Channel Sounding via Bluetooth with iOS 27 - and it's a big deal",
-      "excerpt": "One less-discussed iOS 27 feature unveiled at Apple's WWDC is support for Channel Sounding. It'll be bigger news when Bluetooth 6.3 officially releases.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-16T00:00:47.000Z",
-      "url": "https://www.zdnet.com/article/iphone-enhanced-bluetooth-tracking-with-ios-27-theres-a-catch/"
-    },
-    {
-      "id": "c1e50742f221",
-      "title": "Sundar Pichai faces boos, walkout at Stanford graduation ceremony over Google’s Israel, ICE ties",
-      "excerpt": "AI is once again at the heart of a college graduation protest — this time for the technology's use in Google's defense contracts.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-15T23:51:44.000Z",
-      "url": "https://techcrunch.com/2026/06/15/sundar-pichai-faces-boos-walkout-at-stanford-graduation-ceremony-over-googles-israel-ice-ties/",
-      "tags": [
-        "AI",
-        "Google",
-        "ICE",
-        "Israel",
-        "Sundar Pichai"
-      ]
-    },
-    {
-      "id": "4beaebe0e6f2",
-      "title": "A modest proposal: Reformat everything to make documents more palatable to AI",
-      "excerpt": "What's up, DocLang?",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-15T23:23:21.000Z",
-      "url": "https://www.theregister.com/ai-and-ml/2026/06/16/a-modest-proposal-reformat-everything-to-make-documents-more-palatable-to-ai/5255938",
-      "image": "https://image.theregister.com/?imageId=5255961&width=800",
-      "tags": [
-        "ai and ml"
-      ]
-    },
-    {
-      "id": "8950f2be00f1",
-      "title": "The US government’s Anthropic models ban was never about an AI jailbreak",
-      "excerpt": "The Trump administration's decision that forced Anthropic to pull its latest cybersecurity models could be reactionary, retaliatory, or both, but the message is clear: The AI industry isn't immune from U.S. government...",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-15T21:50:21.000Z",
-      "url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/",
-      "tags": [
-        "AI",
-        "Government & Policy",
-        "Security",
-        "Anthropic",
-        "cybersecurity",
-        "fable"
-      ]
-    },
-    {
-      "id": "7f4176931b99",
-      "title": "Cisco SD-WAN make-me-root bug under attack",
-      "excerpt": "Second Catalyst SD-WAN Manager flaw exploited as an 0-day this month",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-15T21:48:25.000Z",
-      "url": "https://www.theregister.com/patches/2026/06/15/cisco-sd-wan-make-me-root-bug-under-attack/5255916",
-      "image": "https://image.theregister.com/?imageId=5244089&width=800",
-      "tags": [
-        "patches"
-      ]
-    },
-    {
-      "id": "4ae1016c8cf8",
-      "title": "Facebook’s new AI Mode search gets its info from public posts",
-      "excerpt": "Your public Facebook posts could help inform AI-generated results in Meta's new AI Mode. When you search on Facebook, the \"AI Mode\" option will appear alongside the usual search modes like \"People\" and \"Marketplace.\"...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-15T21:15:08.000Z",
-      "url": "https://www.theverge.com/tech/950264/meta-ai-mode-search-facebook",
-      "tags": [
-        "AI",
-        "Facebook",
-        "Meta",
-        "News",
-        "Social Media",
-        "Tech"
-      ]
-    },
-    {
-      "id": "31fcb5576a86",
-      "title": "Xbox is closing down Hellblade creator Ninja Theory",
-      "excerpt": "Xbox is closing down Ninja Theory, the studio behind the Hellblade series, a source tells The Verge. Staffers were told on a call on Monday about the closure, but they are hoping the studio will find a buyer. The clos...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-15T21:13:35.000Z",
-      "url": "https://www.theverge.com/games/950204/xbox-ninja-theory-shutdown-hellblade-senua",
-      "tags": [
-        "Gaming",
-        "News",
-        "Xbox"
-      ]
-    },
-    {
-      "id": "f3f9cb6b7251",
-      "title": "Feds freaked over Fable 5 after simple 'fix this code' prompt, not jailbreak, says researcher",
-      "excerpt": "According to the one person who actually read the research paper",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-15T21:07:26.000Z",
-      "url": "https://www.theregister.com/security/2026/06/15/feds-freaked-over-fable-5-after-simple-fix-this-code-prompt-not-jailbreak-says-researcher/5255827",
-      "image": "https://image.theregister.com/?imageId=5255863&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "57526f9b02bc",
-      "title": "DARPA seeks swappable satellites to help with future star wars",
-      "excerpt": "Worried that an unexpected strike could take out critical orbital systems, Pentagon researchers want to know how fast the industry thinks it could launch replacements",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-15T20:17:07.000Z",
-      "url": "https://www.theregister.com/offbeat/2026/06/15/darpa-seeks-swappable-satellites-to-help-with-future-star-wars/5255839",
-      "image": "https://image.theregister.com/?imageId=262824&width=800",
-      "tags": [
-        "offbeat"
-      ]
-    },
-    {
-      "id": "2809348b24bf",
-      "title": "Fox wants to take over your TV — and the tech inside it",
-      "excerpt": "Fox is about to take over the TVs in more than 100 million homes worldwide. On Monday, Fox announced that it's acquiring Roku, the streaming middleman that serves as a portal for viewers to hop into services like Netf...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-15T20:04:29.000Z",
-      "url": "https://www.theverge.com/streaming/950116/fox-roku-takeover",
-      "tags": [
-        "Entertainment",
-        "Report",
-        "Streaming"
-      ]
-    },
-    {
-      "id": "28e7fd49a5a3",
-      "title": "iOS 27 envy? 4 features you can already use on an Android phone (including Samsung models)",
-      "excerpt": "If you're a believer in 'Android had it first,' wait until you see iOS 27.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-15T19:57:00.000Z",
-      "url": "https://www.zdnet.com/article/android-has-ios-27-features-but-i-want-these-next/"
-    },
-    {
-      "id": "3b776516c21e",
-      "title": "Anthropic reserves right to check ID for Claude subs",
-      "excerpt": "How can I help you today? Present your papers to begin",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-15T19:39:42.000Z",
-      "url": "https://www.theregister.com/ai-and-ml/2026/06/15/anthropic-reserves-right-to-check-id-for-claude-subs/5255804",
-      "image": "https://image.theregister.com/?imageId=5235229&width=800",
-      "tags": [
-        "ai and ml"
-      ]
-    },
-    {
-      "id": "d87e4321e957",
-      "title": "Amazon’s Smart Thermostat is on sale for just $58",
-      "excerpt": "If your electricity bill climbs every summer, a smart thermostat could help keep cooling costs in check. The Amazon Smart Thermostat is an excellent option for its price, especially today. It’s down to just $57.99 at...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-15T19:33:28.000Z",
-      "url": "https://www.theverge.com/gadgets/950043/amazon-smart-thermostat-early-prime-day-deal-sale",
-      "tags": [
-        "Amazon",
-        "Deals",
-        "Gadgets",
-        "Tech",
-        "Verge Shopping"
       ]
     }
   ]
