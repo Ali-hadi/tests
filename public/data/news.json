@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T15:22:31.558Z",
+  "generatedAt": "2026-06-20T03:52:27.933Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -52,6 +52,160 @@
   ],
   "posts": [
     {
+      "id": "15935a3d1452",
+      "title": "Encryption, spyware, and now Mythos: History shows why cyber export control doesn’t work",
+      "excerpt": "For the last 30 years, stopping the flow of cybersecurity-related software has proven to be ineffective. It's unclear why it would work now with Anthropic’s cybersecurity model Mythos.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-19T22:40:14.000Z",
+      "url": "https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work/",
+      "tags": [
+        "AI",
+        "Security",
+        "Anthropic",
+        "artificial intelligence",
+        "cybersecurity",
+        "export controls"
+      ]
+    },
+    {
+      "id": "c126d20085a8",
+      "title": "This HP Omen gaming laptop is $700 off on Amazon - and it's a serious powerhouse",
+      "excerpt": "HP's Omen gaming laptop has dropped to $1,599, making it a great early deal for gamers on a budget.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-19T22:39:00.000Z",
+      "url": "https://www.zdnet.com/article/hp-omen-gaming-laptop-amazon-prime-day-deal-2026/"
+    },
+    {
+      "id": "06126a666c5d",
+      "title": "Nothing cancels this year’s CMF phone due to RAM prices",
+      "excerpt": "Nothing's next budget phone is the latest victim of RAMageddon. As 9to5Google reports, Nothing co-founder Akis Evangelidis announced in a post on X that a follow-up to the CMF Phone 2 Pro won't be coming this year: We...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-19T21:28:39.000Z",
+      "url": "https://www.theverge.com/gadgets/953066/nothing-cmf-phone-delayed-ram-prices",
+      "tags": [
+        "Gadgets",
+        "Mobile",
+        "News",
+        "Phones",
+        "Tech"
+      ]
+    },
+    {
+      "id": "1f05ef4df2b5",
+      "title": "NASA selects Eric Schmidt’s rocket company for a 2028 mission to Mars",
+      "excerpt": "Relativity Space, the rocket company led by former Google executive Eric Schmidt, was picked to launch NASA's Aeolus payload to Mars in 2028, as reported earlier by TechCrunch. Under a new public-private partnership,...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-19T18:41:48.000Z",
+      "url": "https://www.theverge.com/science/952988/nasa-relativity-space-eric-schmidt-mars",
+      "tags": [
+        "NASA",
+        "News",
+        "Science",
+        "Space"
+      ]
+    },
+    {
+      "id": "383e06344a66",
+      "title": "Hue’s wired wall modules bring non-smart lights into its ecosystem",
+      "excerpt": "Smart lighting company Philips Hue has launched its first wired wall modules. Installed behind existing wall switches, the new devices bring non-smart lights into the Hue ecosystem for the first time. Hue also announc...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-19T17:24:45.000Z",
+      "url": "https://www.theverge.com/tech/952953/phillips-hue-wired-wall-module-play-lamp-candle-bulb",
+      "tags": [
+        "News",
+        "Smart Home",
+        "Tech"
+      ]
+    },
+    {
+      "id": "c67282832407",
+      "title": "Is the US government’s Anthropic ban accidentally helping the brand?",
+      "excerpt": "Just as last week was ending, the US government forced Anthropic to pull its two newest models, Fable 5 and Mythos 5, citing national security concerns after Amazon researchers allegedly found a way to bypass Fable 5’...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-19T16:08:17.000Z",
+      "url": "https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand/",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "cybersecurity",
+        "Equity podcast",
+        "jeff bezos",
+        "Social media ban"
+      ]
+    },
+    {
+      "id": "7f6e57bda841",
+      "title": "Researchers drop checkm8-style BootROM exploit for A12 and A13 iPhones",
+      "excerpt": "Owners of affected iPhones can stop checking for patches now: the fix for this SecureROM bug comes in a new handset",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-19T16:02:00.000Z",
+      "url": "https://www.theregister.com/security/2026/06/19/researchers-drop-checkm8-style-bootrom-exploit-for-a12-and-a13-iphones/5259028",
+      "image": "https://image.theregister.com/?imageId=5241038&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "3d079fe17c33",
+      "title": "The US banned Anthropic’s Fable 5 release, but the numbers don’t seem to care",
+      "excerpt": "Just as last week was ending, the US government forced Anthropic to pull its two newest models, Fable 5 and Mythos 5, citing national security concerns after Amazon researchers allegedly found a way to bypass Fable 5’...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-19T16:01:03.000Z",
+      "url": "https://techcrunch.com/podcast/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care/",
+      "tags": [
+        "AI",
+        "Startups",
+        "acquisition",
+        "Anthropic",
+        "cursor",
+        "cybersecurity"
+      ]
+    },
+    {
+      "id": "cf0cfab775fa",
+      "title": "Tensordyne makes a big bet on log math to beat Nvidia",
+      "excerpt": "Who needs compute-hungry multiplications when you can just add logarithms",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-19T15:30:00.000Z",
+      "url": "https://www.theregister.com/systems/2026/06/19/tensordyne-makes-a-big-bet-on-log-math-to-beat-nvidia/5258662",
+      "image": "https://image.theregister.com/?imageId=5258676&width=800",
+      "tags": [
+        "systems"
+      ]
+    },
+    {
+      "id": "c585f7de2a2f",
+      "title": "Billionaire Ambani wants AI in every call, app, and home",
+      "excerpt": "Reliance is weaving AI into telecom services used by more than 500 million people.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-19T15:23:28.000Z",
+      "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/",
+      "tags": [
+        "AI",
+        "Mukesh Ambani",
+        "Reliance Jio Platforms"
+      ]
+    },
+    {
+      "id": "e09f4627e2dc",
+      "title": "The Ninja Creami just dropped to an all time low price for Prime Day - and I recommend one",
+      "excerpt": "Make your own ice cream, gelato, sorbet, and smoothie bowls with the Ninja Creami, now 22% off for Amazon Prime Day.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-19T15:21:00.000Z",
+      "url": "https://www.zdnet.com/article/ninja-creami-amazon-prime-day-2026-deal/"
+    },
+    {
       "id": "6eb646889b2d",
       "title": "The NTS Radio Player brings the best of internet radio to your hi-fi",
       "excerpt": "NTS Radio and Swedish audio company Atonemo have teamed up on a dedicated player that brings NTS's genre-defying mixes and streaming stations to almost any stereo or speaker setup. And, like Atonemo's existing Streamp...",
@@ -69,6 +223,19 @@
       ]
     },
     {
+      "id": "f7dc987322f7",
+      "title": "Bcachefs exits experimental status in new 'performance release'",
+      "excerpt": "More Rust, but more trouble with AI slop, too",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-19T14:47:00.000Z",
+      "url": "https://www.theregister.com/software/2026/06/19/bcachefs-exits-experimental-status-in-new-performance-release/5258801",
+      "image": "https://image.theregister.com/?imageId=230365&width=800",
+      "tags": [
+        "software"
+      ]
+    },
+    {
       "id": "26ba1457d23d",
       "title": "The film about Sam Altman has been dropped by Amazon MGM",
       "excerpt": "Luca Guadagnino's film about OpenAI CEO Sam Altman, Artificial, has reportedly been dropped by Amazon MGM. The film, which stars Andrew Garfield and covers the rollercoaster five days in 2023 spanning Altman's termina...",
@@ -80,6 +247,19 @@
         "AI",
         "News",
         "OpenAI"
+      ]
+    },
+    {
+      "id": "c8c137480331",
+      "title": "Waymo hits the brakes after robotaxis keep missing the signs for freeway construction zones",
+      "excerpt": "Nearly 4,000 vehicles recalled for driving past closure warnings and between cones marking shut lanes",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-19T14:03:00.000Z",
+      "url": "https://www.theregister.com/offbeat/2026/06/19/waymo-hits-the-brakes-after-robotaxis-keep-missing-the-signs-for-freeway-construction-zones/5258951",
+      "image": "https://image.theregister.com/?imageId=223701&width=800",
+      "tags": [
+        "offbeat"
       ]
     },
     {
@@ -98,8 +278,34 @@
       ]
     },
     {
+      "id": "945fad94d738",
+      "title": "Telegram founder accuses Meta of sabotaging access in India with BGP hijacks",
+      "excerpt": "Allegations of fake routes are fake news, says Indian telco Jio",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-19T13:31:00.000Z",
+      "url": "https://www.theregister.com/networks/2026/06/19/telegram-founder-accuses-meta-of-sabotaging-access-in-india-with-bgp-hijacks/5258866",
+      "image": "https://image.theregister.com/?imageId=4094169&width=800",
+      "tags": [
+        "networks"
+      ]
+    },
+    {
+      "id": "0a7d1080e36d",
+      "title": "Everything's bigger and better in Texas – even data breaches",
+      "excerpt": "Hunting and fishing license incident catches 3M residents",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-19T13:01:00.000Z",
+      "url": "https://www.theregister.com/security/2026/06/19/texas-gov-vendor-breach-exposes-data-of-3m-hunters-anglers/5258815",
+      "image": "https://image.theregister.com/?imageId=4093857&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
       "id": "50b104eb1175",
-      "title": "The CEO of Allbirds’ new AI biz has a plan, but no employees",
+      "title": "The CEO of Allbirds’ new AI biz has a plan, but no team",
       "excerpt": "Call it a startup with a sole founder and a very large seed round, but what's next is less clear.",
       "source": "TechCrunch AI",
       "category": "AI",
@@ -107,6 +313,7 @@
       "url": "https://techcrunch.com/2026/06/19/the-ceo-of-allbirds-new-ai-biz-has-a-plan-but-no-employees/",
       "tags": [
         "AI",
+        "allbirds",
         "Exclusive"
       ]
     },
@@ -126,6 +333,41 @@
         "Politics",
         "Tech"
       ]
+    },
+    {
+      "id": "e3572338e79c",
+      "title": "Vercel debuts eve open source agent framework, tries to fix shadow AI with Passport",
+      "excerpt": "Cost premium of using AWS indirectly via Vercel is mitigated by more efficient use of compute resources, CTO claims",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-19T12:35:00.000Z",
+      "url": "https://www.theregister.com/devops/2026/06/19/vercel-debuts-eve-open-source-agent-framework-tries-to-fix-shadow-ai-with-passport/5258726",
+      "image": "https://image.theregister.com/?imageId=5258776&width=800",
+      "tags": [
+        "devops"
+      ]
+    },
+    {
+      "id": "f28cbf0d86a1",
+      "title": "Microsoft's latest Windows bug belongs in the Recycle Bin",
+      "excerpt": "File deletion dialog swaps recognizable names for internal gibberish",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-19T12:06:04.000Z",
+      "url": "https://www.theregister.com/personal-tech/2026/06/19/microsofts-latest-windows-bug-belongs-in-the-recycle-bin/5258779",
+      "image": "https://image.theregister.com/?imageId=5258862&width=800",
+      "tags": [
+        "personal tech"
+      ]
+    },
+    {
+      "id": "3f6ee5237766",
+      "title": "I flew 2,700 miles with Apple, Sony, and Sennheiser headphones - this pair had the best audio",
+      "excerpt": "Air travel is the true test for ANC headphones and earbuds. My multiple journeys revealed key strengths and weaknesses of the latest models.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-19T12:00:54.000Z",
+      "url": "https://www.zdnet.com/article/i-traveled-with-4-headphones-this-pair-was-the-best/"
     },
     {
       "id": "867719c30be2",
@@ -161,8 +403,35 @@
       ]
     },
     {
+      "id": "1ff1d3a41ced",
+      "title": "The weirdest Bluetooth tracker I've tested also has one big advantage over the AirTag",
+      "excerpt": "The Ugreen FineTrack 2 has several unique features that set it apart from competing trackers. Just look at it!",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-19T11:01:10.000Z",
+      "url": "https://www.zdnet.com/article/ugreen-finetrack-2-tracker-tag-review/"
+    },
+    {
+      "id": "b3b5874bf8e9",
+      "title": "5 reasons I'm using Android Auto instead of my car's own infotainment system - and can't go back",
+      "excerpt": "Your car's built-in screen may look modern, but Android Auto is still the easier, smarter way to drive. Here's why.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-19T11:00:47.000Z",
+      "url": "https://www.zdnet.com/article/reasons-to-use-android-auto-over-your-car-infotainment-system/"
+    },
+    {
+      "id": "c488acd74aae",
+      "title": "You can get Amazon Prime totally free for 6 months if you're age 18-24 - what to know",
+      "excerpt": "Amazon's Prime for Young Adults plan gets college students and young people a big break on the membership. Here's how to get it.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-19T10:00:38.000Z",
+      "url": "https://www.zdnet.com/article/how-to-get-amazon-prime-for-young-adults/"
+    },
+    {
       "id": "70dd8a7d7069",
-      "title": "The US says ASML’s top chip tool may be in China. ASML says it isn’t",
+      "title": "The US says ASML’s top chip tool may be in China, but how?",
       "excerpt": "There's a commercial logic that cuts against the idea that ASML would risk its export license to arm a Chinese customer.",
       "source": "TechCrunch AI",
       "category": "AI",
@@ -171,6 +440,7 @@
       "tags": [
         "AI",
         "ASML",
+        "Christophe Fouquet",
         "Howard Lutnick"
       ]
     },
@@ -190,8 +460,8 @@
     },
     {
       "id": "1fbdc3ff0b9d",
-      "title": "Source: Elastic agrees to buy CRV-backed DeductiveAI for up to $85M",
-      "excerpt": "DeductiveAI, a startup that uses AI to catch and resolve bugs in software, was founded just three years ago.",
+      "title": "Source: Elastic agrees to buy CRV-backed Deductive AI for up to $85M",
+      "excerpt": "Deductive AI, a startup that uses AI to catch and resolve bugs in software, was founded just three years ago.",
       "source": "TechCrunch AI",
       "category": "AI",
       "publishedAt": "2026-06-19T00:51:11.000Z",
@@ -200,9 +470,9 @@
         "AI",
         "Enterprise",
         "Startups",
+        "AI SRE",
         "CRV",
-        "Exclusive",
-        "Elastic"
+        "DeductiveAI"
       ]
     },
     {
@@ -446,277 +716,6 @@
         "AWS",
         "nvidia"
       ]
-    },
-    {
-      "id": "91fea236df74",
-      "title": "I tested a $15 smart switch and uncovered a $1,500-a-year energy waste in the kitchen",
-      "excerpt": "The SwitchBot Relay 1PM Switch turns a device on and off and tells you how much power it's using.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-18T18:22:00.000Z",
-      "url": "https://www.zdnet.com/article/switchbot-relay-switch-review/"
-    },
-    {
-      "id": "65c536f2a624",
-      "title": "Midjourney pivots from AI image generation to body scanning medical spa where patients bathe in 'golden light'",
-      "excerpt": "The underlying technology is real...and borrowed from a partner the company failed to mention",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-18T18:18:25.000Z",
-      "url": "https://www.theregister.com/ai-and-ml/2026/06/18/midjourney-pivots-from-ai-image-generation-to-body-scanning-medical-spa-where-patients-bathe-in-golden-light/5258429",
-      "image": "https://image.theregister.com/?imageId=5258466&width=800",
-      "tags": [
-        "ai and ml"
-      ]
-    },
-    {
-      "id": "afebbaf90c38",
-      "title": "This robotic self-driving toilet comes to you",
-      "excerpt": "During a recent expo in Shanghai that focuses on elderly care, assistive devices, and rehabilitation medicine, a Chinese company called Yueban debuted a smart toilet that does something we haven't seen before; it come...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-18T18:08:17.000Z",
-      "url": "https://www.theverge.com/tech/952441/yueban-xiaoban-self-driving-autonomous-toilet",
-      "tags": [
-        "Gadgets",
-        "News",
-        "Tech"
-      ]
-    },
-    {
-      "id": "1177b8e7015b",
-      "title": "AI data centers just got a government-mandated fast lane to the grid",
-      "excerpt": "FERC told grid operators to give data centers a fast lane for interconnections, but it failed to address electricity supply shortages.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-18T17:49:23.000Z",
-      "url": "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/",
-      "tags": [
-        "AI",
-        "Climate",
-        "data centers",
-        "electrical agrid",
-        "Trump Administration"
-      ]
-    },
-    {
-      "id": "a37c0274de30",
-      "title": "Before SpaceX IPO, investors in China secretly acquired stakes",
-      "excerpt": "One previously unreported SpaceX investor has ties to Chinese military contractors.",
-      "source": "Ars Technica",
-      "category": "IT",
-      "publishedAt": "2026-06-18T17:42:18.000Z",
-      "url": "https://arstechnica.com/information-technology/2026/06/before-spacex-ipo-investors-in-china-secretly-acquired-stakes/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2281248250-1024x648.jpg",
-      "tags": [
-        "Biz & IT",
-        "Chinese",
-        "spacex",
-        "spacex ipo",
-        "syndication"
-      ]
-    },
-    {
-      "id": "8c226af07351",
-      "title": "A year of Walmart Plus is half off ahead of Prime Day",
-      "excerpt": "Do you often find yourself shopping at the big blue, or perhaps you’re just looking for an alternative to Amazon? Either way, Walmart is currently offering a year of its Walmart Plus subscription for $49, which typica...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-18T17:33:00.000Z",
-      "url": "https://www.theverge.com/gadgets/952283/walmart-plus-half-off-deal-sale",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Prime Day",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "2ce8c6f0261c",
-      "title": "This $17 solar panel effectively gave my doorbell camera infinite battery life - how I set it up",
-      "excerpt": "I didn't think that this would work, but the EverExceed 5V solar panel has done wonders for my security cameras.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-18T17:30:45.000Z",
-      "url": "https://www.zdnet.com/article/everexceed-5v-solar-panel-review/"
-    },
-    {
-      "id": "0a498b3cd7a1",
-      "title": "Committed skeptic finds himself warming to new Amazon AI products that actually don't suck",
-      "excerpt": "Ed's note to Corey: Blink once if you're safe, twice if you're in danger",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-18T17:30:00.000Z",
-      "url": "https://www.theregister.com/ai-and-ml/2026/06/18/committed-skeptic-finds-himself-warming-to-new-amazon-ai-products-that-actually-dont-suck/5258414",
-      "image": "https://image.theregister.com/?imageId=5258559&width=800",
-      "tags": [
-        "ai and ml"
-      ]
-    },
-    {
-      "id": "edb4ac989fe3",
-      "title": "Firefox’s new home page widgets are helping me focus",
-      "excerpt": "I launched Firefox this morning to find some new blocks on my home page. The widgets that are currently rolling out add sports scores, time zones, a focus timer, and a checklist, which are already some of my favorite...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-18T17:29:50.000Z",
-      "url": "https://www.theverge.com/tech/952354/firefox-home-page-widgets",
-      "tags": [
-        "News",
-        "Tech",
-        "Web"
-      ]
-    },
-    {
-      "id": "3dc770837b43",
-      "title": "The smartphone era created an attention crisis — slow tech is fixing it",
-      "excerpt": "“People just really want to take back control of their time, their lives, their attention... They’re down for whatever helps them do that.”",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-18T17:16:30.000Z",
-      "url": "https://techcrunch.com/2026/06/18/the-smartphone-era-created-an-attention-crisis-slowtech-is-fixing-it/",
-      "tags": [
-        "AI",
-        "Hardware",
-        "austin murray",
-        "iPod",
-        "joy howard",
-        "screen time"
-      ]
-    },
-    {
-      "id": "217d8a1a56f1",
-      "title": "New usage analytics and updated spend controls for enterprises",
-      "excerpt": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence.",
-      "source": "OpenAI News",
-      "category": "AI",
-      "publishedAt": "2026-06-18T17:00:00.000Z",
-      "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
-      "tags": [
-        "Product"
-      ]
-    },
-    {
-      "id": "8ef0b438d010",
-      "title": "Citrix now lets you run virtual desktops like a cost-conscious private equityeer",
-      "excerpt": "Soaring PC prices make alternatives to hardware refreshes interesting",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-18T16:59:51.000Z",
-      "url": "https://www.theregister.com/virtualization/2026/06/18/citrixs-daas-flex-aims-to-delay-pricey-pc-upgrades/5258476",
-      "image": "https://image.theregister.com/?imageId=252868&width=800",
-      "tags": [
-        "virtualization"
-      ]
-    },
-    {
-      "id": "2e3c75cc98ac",
-      "title": "Get a Walmart Plus membership for 50% off right now",
-      "excerpt": "Ahead of Walmart Deals next week, you can save $49 on an annual Walmart Plus membership, free delivery, and free shipping.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-18T16:56:08.000Z",
-      "url": "https://www.zdnet.com/article/walmart-plus-membership-amazon-prime-day-deal-2026/"
-    },
-    {
-      "id": "ef3f9ff887ba",
-      "title": "The best early Prime Day robot vacuum deals I'd buy now, after testing dozens of them",
-      "excerpt": "Skip the fake sales: Check out our expert-vetted list of the absolute best early Prime Day 2026 robot vacuum and mop deals worth your money today.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-18T16:56:04.000Z",
-      "url": "https://www.zdnet.com/article/best-early-amazon-prime-day-robot-vacuum-deals-2026/"
-    },
-    {
-      "id": "194769778996",
-      "title": "Canonical reveals Myna, its local speech-to-text app",
-      "excerpt": "Bird-branded AI will ride on Stonking Stingray",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-18T16:04:09.000Z",
-      "url": "https://www.theregister.com/os-platforms/2026/06/18/canonical-unveils-myna-speech-to-text-app-for-ubuntu-2610/5258376",
-      "image": "https://image.theregister.com/?imageId=5211372&width=800",
-      "tags": [
-        "os platforms"
-      ]
-    },
-    {
-      "id": "930f1881c80e",
-      "title": "NASA payload to ride commercial Mars orbiter from rocket biz yet to reach orbit",
-      "excerpt": "Aeolus mission promises better Martian weather models, assuming Relativity Space can get its Terran R off the ground",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-18T15:25:15.000Z",
-      "url": "https://www.theregister.com/science/2026/06/18/nasa-payload-to-ride-commercial-mars-orbiter-from-rocket-biz-yet-to-reach-orbit/5258341",
-      "image": "https://image.theregister.com/?imageId=228006&width=800",
-      "tags": [
-        "science"
-      ]
-    },
-    {
-      "id": "47f3505fb2f4",
-      "title": "ZTE and China Telecom Guangdong advance cross‑vendor IP network simulation pilots, paving the way for intelligent network operations",
-      "excerpt": "PARTNER CONTENT: Leveraging >95% digital twin fidelity and multi-vendor collaboration to eliminate network change risks and achieve zero-error O&M",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-18T15:21:55.000Z",
-      "url": "https://www.theregister.com/networks/2026/06/18/zte-and-china-telecom-guangdong-advance-crossvendor-ip-network-simulation-pilots-paving-the-way-for-intelligent-network-operations/5258361",
-      "image": "https://image.theregister.com/?imageId=5258440&width=800",
-      "tags": [
-        "networks"
-      ]
-    },
-    {
-      "id": "5c7999edca0f",
-      "title": "This Bluetooth tracker uses LoRa mesh networks to find things - and I couldn't believe the accuracy",
-      "excerpt": "Seeed Studio's SenseCAP T1000-E tracker card also doesn't use cell towers or Wi-Fi. Here's how it works in the real world.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-18T15:21:00.000Z",
-      "url": "https://www.zdnet.com/article/sensecap-t1000-e-tracker-card-airtag-alternative-review/"
-    },
-    {
-      "id": "cfe995d8af6b",
-      "title": "General Intuition in talks to raise $300M at around $2B valuation",
-      "excerpt": "General Intuition is in talks to raise around $300 million at a roughly $2 billion valuation from backers including Jeff Bezos. The startup trains AI agents on spatial-temporal reasoning.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-18T15:20:37.000Z",
-      "url": "https://techcrunch.com/2026/06/18/general-intuition-in-talks-to-raise-300m-at-around-2b-valuation/",
-      "tags": [
-        "AI",
-        "Fundraising",
-        "ai agent",
-        "Exclusive",
-        "general intuition",
-        "world models"
-      ]
-    },
-    {
-      "id": "3edeec6c8d16",
-      "title": "A tech worker-backed PAC is bringing a $5M knife to Big Tech’s $100M gunfight",
-      "excerpt": "Guardrails positions itself as a populist political movement that runs on small donations from people in the trenches of the AI boom.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-18T15:13:21.000Z",
-      "url": "https://techcrunch.com/2026/06/18/a-tech-worker-backed-pac-is-bringing-a-5m-knife-to-big-techs-100m-gunfight/",
-      "tags": [
-        "AI",
-        "Government & Policy",
-        "AI legislation",
-        "ai super pac",
-        "guardrails alliance",
-        "leading the future"
-      ]
-    },
-    {
-      "id": "b29d2b0a2d7e",
-      "title": "I put Siri AI through the same tests I use for ChatGPT and Gemini on MacOS 27 - here's how it did",
-      "excerpt": "I tried the new Siri on my Mac, and although it's off to a promising start, Apple still has more work to do.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-06-18T15:00:48.000Z",
-      "url": "https://www.zdnet.com/article/new-siri-ai-apple-intelligence-test-on-mac/"
     }
   ]
 }
