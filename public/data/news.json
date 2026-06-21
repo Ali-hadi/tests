@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T14:07:55.449Z",
+  "generatedAt": "2026-06-21T04:23:11.122Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,83 @@
     }
   ],
   "posts": [
+    {
+      "id": "a8b7179eed63",
+      "title": "Signal’s Meredith Whittaker wants you to remember that AI chatbots ‘are not your friends’",
+      "excerpt": "\"These are not your friends. These are not conscious beings. These are not sentient interlocutors.”",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-20T20:32:29.000Z",
+      "url": "https://techcrunch.com/2026/06/20/signals-meredith-whittaker-wants-you-to-remember-that-ai-chatbots-are-not-your-friends/",
+      "tags": [
+        "AI",
+        "Security",
+        "Meredith Whittaker",
+        "signal"
+      ]
+    },
+    {
+      "id": "af08cad5eb0b",
+      "title": "In the Weights is your new AI-centric vanity search",
+      "excerpt": "So ... what's your In the Weights score?",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-20T19:41:11.000Z",
+      "url": "https://techcrunch.com/2026/06/20/in-the-weights-is-your-new-ai-centric-vanity-search/",
+      "tags": [
+        "AI",
+        "in th weights",
+        "Joey Flynn",
+        "thomas dimson"
+      ]
+    },
+    {
+      "id": "4eab1815f90a",
+      "title": "The Atlantic created a searchable database of the music used to train AI",
+      "excerpt": "Atlantic reporter Alex Reisner recently uncovered four datasets of music being used to train AI models and made them fully searchable for the public. Two of the sets are absolutely enormous at 12 million and 9 million...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-20T18:46:48.000Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data",
+      "tags": [
+        "AI",
+        "Entertainment",
+        "Music",
+        "News"
+      ]
+    },
+    {
+      "id": "2c1e718513ec",
+      "title": "Nobel laureate John Jumper is leaving DeepMind for rival Anthropic",
+      "excerpt": "Jumper isn't the only big name leaving Google DeepMind.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-20T16:39:57.000Z",
+      "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "Google",
+        "John Jumper"
+      ]
+    },
+    {
+      "id": "d25e750f6e2c",
+      "title": "Musician and YouTuber Hainbach on ‘Breath of the Wild’ and Swiss Army Knives",
+      "excerpt": "Stefan Paul Goetsch, better known as Hainbach, is a German experimental composer, artist, and YouTuber who is perhaps most famous for making music with laboratory equipment and scientific instruments. He describes it...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-20T15:20:00.000Z",
+      "url": "https://www.theverge.com/report/953116/experimental-musician-youtuber-hainbach-interview",
+      "tags": [
+        "Creators",
+        "Entertainment",
+        "Interview",
+        "Music",
+        "Report",
+        "Streaming"
+      ]
+    },
     {
       "id": "c81ce3ef5a3b",
       "title": "Moves of the Diamond Hand is an unfinished, irresistibly weird dice-based RPG",
@@ -627,69 +704,6 @@
       "category": "IT",
       "publishedAt": "2026-06-18T21:11:31.000Z",
       "url": "https://www.zdnet.com/article/amazon-prime-day-2026-security-camera-deals/"
-    },
-    {
-      "id": "a78cfdcf0d6f",
-      "title": "Snap spins off AI video team into new company, Dotmo, due to costs",
-      "excerpt": "The Snapchat maker is spinning off yet another internal unit. Dotmo will be composed of current Snap staff who are leaving the social media company to focus on AI video development.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-18T20:30:00.000Z",
-      "url": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/",
-      "tags": [
-        "AI",
-        "Dotmo",
-        "Snap",
-        "Snapchat"
-      ]
-    },
-    {
-      "id": "edf1b4a3d9d3",
-      "title": "Valve is so behind on Steam Controller orders that some won’t ship until 2027",
-      "excerpt": "Valve has some good news and bad news about Steam Controllers. The good news: If you make a reservation for a Steam Controller, the company will now show you one of three estimates of when you'll be able to actually o...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-18T20:26:06.000Z",
-      "url": "https://www.theverge.com/games/952582/valve-steam-controller-reservations-orders-behind-estimated-date",
-      "tags": [
-        "Entertainment",
-        "Gaming",
-        "News",
-        "PC Gaming"
-      ]
-    },
-    {
-      "id": "7291fb6e4be3",
-      "title": "You can now use the Game Boy Camera with your phone",
-      "excerpt": "The $50 GB Operator is an accessory that lets you connect, play, and authenticate Game Boy, Game Boy Color, and Game Boy Advance cartridges on PCs and other devices. Now it's getting some new functionality for the Gam...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-18T20:22:46.000Z",
-      "url": "https://www.theverge.com/tech/952173/epilogue-gb-operator-game-boy-camera-ios-android-app-iphone",
-      "tags": [
-        "Gadgets",
-        "Gaming",
-        "News",
-        "Tech"
-      ]
-    },
-    {
-      "id": "237656ae0ccd",
-      "title": "I recommend these Garmin smartwatches for almost every situation (and price range)",
-      "excerpt": "Plus, many of Garmin's signature smartwatches are on sale ahead of Amazon Prime Day.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-18T20:19:50.000Z",
-      "url": "https://www.zdnet.com/article/garmin-smartwatch-deals-roundup-prime-day/"
-    },
-    {
-      "id": "94bcf8ad80f4",
-      "title": "I've lived with solar power at home for years - 12 myths you can safely ignore in 2026",
-      "excerpt": "Knowing the facts on home solar power can help you make better, informed choices, save money, and stay safe.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-18T20:00:00.000Z",
-      "url": "https://www.zdnet.com/article/home-solar-power-myths-debunked/"
     }
   ]
 }
