@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T04:23:11.122Z",
+  "generatedAt": "2026-06-21T14:14:42.320Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,92 @@
     }
   ],
   "posts": [
+    {
+      "id": "8617498ef8a3",
+      "title": "How Roomba started a robot revolution",
+      "excerpt": "If you had a Roomba, especially in the early days of the robot vacuum, it was in many ways a fairly unsophisticated machine. It would just bump around your house, looking for something to suck up, until its battery di...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-21T12:29:01.000Z",
+      "url": "https://www.theverge.com/podcast/953275/roomba-robot-vacuum-version-history",
+      "tags": [
+        "Gadgets",
+        "Podcasts",
+        "Smart Home",
+        "Tech",
+        "Version History"
+      ]
+    },
+    {
+      "id": "2ce8c6f0261c",
+      "title": "How I set up this $17 solar panel to give my doorbell camera unlimited battery life",
+      "excerpt": "I didn't think that this would work, but the EverExceed 5V solar panel has done wonders for my security cameras.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-21T12:00:59.000Z",
+      "url": "https://www.zdnet.com/article/everexceed-5v-solar-panel-review/"
+    },
+    {
+      "id": "36a6f8b5d2c5",
+      "title": "I always change these 7 phone privacy settings on every new device - here's why",
+      "excerpt": "Your phone holds a lot of personal information, from where you go to who you talk to every day. Here's how to limit who can access your data and when.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-21T12:00:43.000Z",
+      "url": "https://www.zdnet.com/article/phone-privacy-settings-to-disable-review-avoid-exposing-data/"
+    },
+    {
+      "id": "f1f58e735a72",
+      "title": "Electric air taxis are stuck in the courtroom",
+      "excerpt": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on aviation, air taxis, and Wi-Fi speeds at 30,000 feet, follow Andrew J. Hawkins. The Stepback arrives in our...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-21T12:00:00.000Z",
+      "url": "https://www.theverge.com/column/950975/electric-air-taxis-lawsuits",
+      "tags": [
+        "Column",
+        "Law",
+        "Policy",
+        "Tech",
+        "The Stepback",
+        "Transportation"
+      ]
+    },
+    {
+      "id": "f21eb6a2b065",
+      "title": "Sennheiser just gave me a compelling reason to retire my Bose and Sony headphones",
+      "excerpt": "As audio quality reaches technological limits, brands are exploring alternative features.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-21T11:00:09.000Z",
+      "url": "https://www.zdnet.com/article/sennheiser-momentum-5-battery-repair/"
+    },
+    {
+      "id": "ded5a32c57ac",
+      "title": "Sony’s Xperia 1 VIII is still a phone for the fans",
+      "excerpt": "The Xperia 1 VIII marks an attempt at a step change for Sony's flagship phone line. Not only has it had an aesthetic overhaul, but Sony has also revamped the camera system, dropping the continuous optical zoom telepho...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-21T11:00:00.000Z",
+      "url": "https://www.theverge.com/tech/952245/sony-xperia-1-viii-review",
+      "tags": [
+        "Gadgets",
+        "Mobile",
+        "Phone Reviews",
+        "Phones",
+        "Reviews",
+        "Sony"
+      ]
+    },
+    {
+      "id": "000d3b90c727",
+      "title": "I tested the new modular ThinkPad, and it's the repairable future I'm hoping for",
+      "excerpt": "Unveiled at CES, the 14th-gen Lenovo ThinkPad X1 Carbon Aura Edition features a redesigned double-sided motherboard and modular components.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-21T10:00:43.000Z",
+      "url": "https://www.zdnet.com/article/thinkpad-x1-carbon-gen-14-aura-edition-review/"
+    },
     {
       "id": "a8b7179eed63",
       "title": "Signal’s Meredith Whittaker wants you to remember that AI chatbots ‘are not your friends’",
@@ -609,101 +695,6 @@
         "Christophe Fouquet",
         "Howard Lutnick"
       ]
-    },
-    {
-      "id": "1c5754d82196",
-      "title": "Barret Zoph is out at OpenAI again after just five months",
-      "excerpt": "Five months after returning to OpenAI, Barret Zoph - the company's head of enterprise AI sales - has departed, The Verge has learned. Zoph returned to OpenAI in mid-January after a stint as co-founder and CTO of Think...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-19T04:49:33.000Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab",
-      "tags": [
-        "AI",
-        "OpenAI",
-        "Report"
-      ]
-    },
-    {
-      "id": "1fbdc3ff0b9d",
-      "title": "Source: Elastic agrees to buy CRV-backed Deductive AI for up to $85M",
-      "excerpt": "Deductive AI, a startup that uses AI to catch and resolve bugs in software, was founded just three years ago.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-19T00:51:11.000Z",
-      "url": "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/",
-      "tags": [
-        "AI",
-        "Enterprise",
-        "Startups",
-        "AI SRE",
-        "CRV",
-        "DeductiveAI"
-      ]
-    },
-    {
-      "id": "224487881da8",
-      "title": "Microsoft discovers new lightweight backdoor that steals cryptocurrency",
-      "excerpt": "Crypto Clipper spreads over USB and communicates over Tor.",
-      "source": "Ars Technica",
-      "category": "IT",
-      "publishedAt": "2026-06-18T23:28:52.000Z",
-      "url": "https://arstechnica.com/security/2026/06/microsoft-spots-new-self-propagating-malware-for-stealing-cryptocurrency/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/cryptocurrency-theft-heist-1152x648.jpg",
-      "tags": [
-        "Biz & IT",
-        "Security",
-        "crypto stealer",
-        "cryptocurrency",
-        "malware",
-        "worm"
-      ]
-    },
-    {
-      "id": "002340642bdf",
-      "title": "2,000 retired Google Pixel phones get a second life as a private cloud",
-      "excerpt": "You might say the system packs two kilapixels of compute",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-18T21:39:28.000Z",
-      "url": "https://www.theregister.com/on-prem/2026/06/18/2000-retired-google-pixel-phones-get-a-second-life-as-a-private-cloud/5258035",
-      "image": "https://image.theregister.com/?imageId=228123&width=800",
-      "tags": [
-        "on-prem"
-      ]
-    },
-    {
-      "id": "3d5da6d1201a",
-      "title": "AI inference startup Baseten reportedly raising $1.5B months after its last mega-round",
-      "excerpt": "Startup Baseten is reportedly close to finalizing a $1.5 billion round at a $13 billion as the “inference gold rush\" marches on.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-18T21:20:13.000Z",
-      "url": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/",
-      "tags": [
-        "AI",
-        "Fundraising",
-        "Startups",
-        "AI inference"
-      ]
-    },
-    {
-      "id": "b255609ccb3f",
-      "title": "Google Home Speaker vs. Amazon Echo Dot Max: I compared the $99 smart hubs by the specs",
-      "excerpt": "Both Google and Amazon have generative AI-powered smart speakers for under $100, so which one stands out?",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-06-18T21:13:31.000Z",
-      "url": "https://www.zdnet.com/article/google-home-speaker-vs-amazon-echo-dot-max/"
-    },
-    {
-      "id": "64d0b06cb6a0",
-      "title": "I'm a smart home reviewer, and these are the only deals I'm shopping this Prime Day",
-      "excerpt": "It's Amazon Prime Day, and smart home deals are everywhere. But don't fall for any deal: these are the ones worth your time and money.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-18T21:11:31.000Z",
-      "url": "https://www.zdnet.com/article/amazon-prime-day-2026-security-camera-deals/"
     }
   ]
 }
