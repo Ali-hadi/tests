@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T14:14:42.320Z",
+  "generatedAt": "2026-06-22T04:25:38.896Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,104 @@
     }
   ],
   "posts": [
+    {
+      "id": "dce1774a13fc",
+      "title": "Sony WH-1000XM6 vs. Sennheiser Momentum 5: I used both pairs for months, and here's my pick",
+      "excerpt": "Sony's and Sennheiser's flagship headphones are objectively good, but how you plan to use them determines whether they're great.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-22T02:43:00.000Z",
+      "url": "https://www.zdnet.com/article/sennheiser-momentum-5-vs-sony-wh-1000xm6/"
+    },
+    {
+      "id": "eebdb7f63bb5",
+      "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+      "excerpt": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts.",
+      "source": "OpenAI News",
+      "category": "AI",
+      "publishedAt": "2026-06-21T23:00:00.000Z",
+      "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+      "tags": [
+        "Company"
+      ]
+    },
+    {
+      "id": "10e2a90e87fa",
+      "title": "Bose thinks it can be a media company for some reason",
+      "excerpt": "The history books are littered with the corpses of corporate record labels started by companies that had no business being in the music industry. Bose thinks it can be the exception to the rule. It thinks it can be Re...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-21T18:53:50.000Z",
+      "url": "https://www.theverge.com/entertainment/953324/bose-studios-record-label-media-company",
+      "tags": [
+        "Business",
+        "Entertainment",
+        "Music",
+        "News",
+        "Report"
+      ]
+    },
+    {
+      "id": "bd52143ffce3",
+      "title": "Cold Court’s debut EP is an infectious, glitchy genre mashup",
+      "excerpt": "Cold Court is a brother-sister duo from Philly that seems to love nothing more than shoving all of their influences together in a messy soup that at least superficially resembles the hyperpop you've come to expect fro...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-21T17:00:33.000Z",
+      "url": "https://www.theverge.com/entertainment/953303/cold-court-hands-up-ep-music-review",
+      "tags": [
+        "Column",
+        "Entertainment",
+        "Music",
+        "Music Review"
+      ]
+    },
+    {
+      "id": "144aa3376897",
+      "title": "When the Trump administration cracks down on Anthropic, who benefits?",
+      "excerpt": "On the new episode of Equity, we discussed what actually prompted the administration's latest moves against Anthropic, and what this might mean for the AI ecosystem.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-21T15:28:17.000Z",
+      "url": "https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/",
+      "tags": [
+        "AI",
+        "Government & Policy",
+        "Anthropic",
+        "Donald Trump",
+        "Equity podcast"
+      ]
+    },
+    {
+      "id": "5e4c01a2f8b5",
+      "title": "Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27",
+      "excerpt": "Siri’s AI overhaul may have grabbed the headlines at WWDC, but some of Apple’s most useful AI features are arriving elsewhere in iOS 27.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-21T14:40:28.000Z",
+      "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/",
+      "tags": [
+        "AI",
+        "Apps",
+        "Hardware",
+        "Apple",
+        "Apple Intelligence",
+        "iOS 27"
+      ]
+    },
+    {
+      "id": "c498f2bcaae7",
+      "title": "Polymarket reportedly paid people to post fake videos of themselves placing bets",
+      "excerpt": "According to a Wall Street Journal investigation, Polymarket has been paying people to film themselves placing fake bets and celebrating fake wins on social media. WSJ identified over 1,100 deceptive clips and talked...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-21T14:19:46.000Z",
+      "url": "https://www.theverge.com/tech/953285/polymarket-fake-viral-video-bets",
+      "tags": [
+        "News",
+        "Tech"
+      ]
+    },
     {
       "id": "8617498ef8a3",
       "title": "How Roomba started a robot revolution",
@@ -130,11 +228,11 @@
     },
     {
       "id": "000d3b90c727",
-      "title": "I tested the new modular ThinkPad, and it's the repairable future I'm hoping for",
+      "title": "I tested the new modular ThinkPad, and it's the repairable future I've been hoping for",
       "excerpt": "Unveiled at CES, the 14th-gen Lenovo ThinkPad X1 Carbon Aura Edition features a redesigned double-sided motherboard and modular components.",
       "source": "ZDNET",
       "category": "IT",
-      "publishedAt": "2026-06-21T10:00:43.000Z",
+      "publishedAt": "2026-06-21T10:00:00.000Z",
       "url": "https://www.zdnet.com/article/thinkpad-x1-carbon-gen-14-aura-edition-review/"
     },
     {
@@ -610,90 +708,6 @@
       "image": "https://image.theregister.com/?imageId=5258862&width=800",
       "tags": [
         "personal tech"
-      ]
-    },
-    {
-      "id": "3f6ee5237766",
-      "title": "I flew 2,700 miles with Apple, Sony, and Sennheiser headphones - this pair had the best audio",
-      "excerpt": "Air travel is the true test for ANC headphones and earbuds. My multiple journeys revealed key strengths and weaknesses of the latest models.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-19T12:00:54.000Z",
-      "url": "https://www.zdnet.com/article/i-traveled-with-4-headphones-this-pair-was-the-best/"
-    },
-    {
-      "id": "867719c30be2",
-      "title": "In season 2 of Sugar, Colin Farrell’s quirky detective becomes much more human",
-      "excerpt": "When Colin Farrell was doing press for the first season of the detective series Sugar, he had to be very careful with how he spoke. Sugar is a story about a quirky private detective, but it's also secretly a work of s...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-19T12:00:00.000Z",
-      "url": "https://www.theverge.com/entertainment/951638/sugar-season-2-colin-farrell-interview-apple-tv",
-      "tags": [
-        "Apple",
-        "Entertainment",
-        "Interview",
-        "Report",
-        "Streaming",
-        "Tech"
-      ]
-    },
-    {
-      "id": "a714e934e710",
-      "title": "Kaleidescape’s movie player blows streaming, and your wallet, away",
-      "excerpt": "We've lost something in the past 15 years. Netflix, Amazon, Disney, Apple; they've all convinced us that streaming is the best way to watch movies and shows at home. With everything at our fingertips, there's no need...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-19T12:00:00.000Z",
-      "url": "https://www.theverge.com/tech/951718/kaleidescape-strato-e-review",
-      "tags": [
-        "Accessory Reviews",
-        "Gadgets",
-        "Reviews",
-        "Tech",
-        "TVs"
-      ]
-    },
-    {
-      "id": "1ff1d3a41ced",
-      "title": "The weirdest Bluetooth tracker I've tested also has one big advantage over the AirTag",
-      "excerpt": "The Ugreen FineTrack 2 has several unique features that set it apart from competing trackers. Just look at it!",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-19T11:01:10.000Z",
-      "url": "https://www.zdnet.com/article/ugreen-finetrack-2-tracker-tag-review/"
-    },
-    {
-      "id": "b3b5874bf8e9",
-      "title": "5 reasons I'm using Android Auto instead of my car's own infotainment system - and can't go back",
-      "excerpt": "Your car's built-in screen may look modern, but Android Auto is still the easier, smarter way to drive. Here's why.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-19T11:00:47.000Z",
-      "url": "https://www.zdnet.com/article/reasons-to-use-android-auto-over-your-car-infotainment-system/"
-    },
-    {
-      "id": "c488acd74aae",
-      "title": "You can get Amazon Prime totally free for 6 months if you're age 18-24 - what to know",
-      "excerpt": "Amazon's Prime for Young Adults plan gets college students and young people a big break on the membership. Here's how to get it.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-19T10:00:38.000Z",
-      "url": "https://www.zdnet.com/article/how-to-get-amazon-prime-for-young-adults/"
-    },
-    {
-      "id": "70dd8a7d7069",
-      "title": "The US says ASML’s top chip tool may be in China, but how?",
-      "excerpt": "There's a commercial logic that cuts against the idea that ASML would risk its export license to arm a Chinese customer.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-19T07:59:12.000Z",
-      "url": "https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/",
-      "tags": [
-        "AI",
-        "ASML",
-        "Christophe Fouquet",
-        "Howard Lutnick"
       ]
     }
   ]
