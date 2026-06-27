@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T03:36:43.997Z",
+  "generatedAt": "2026-06-27T13:46:07.589Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,172 @@
     }
   ],
   "posts": [
+    {
+      "id": "6dd187eb4f1f",
+      "title": "This Garmin smartwatch is a top-selling Prime Day deal (that's still live) - here's why I recommend it",
+      "excerpt": "The Garmin Fenix 8 Pro is a luxury smartwatch with rugged features - and ZDNET readers are taking advantage of the current all-time low price, even though Prime Day is over.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-27T13:37:34.000Z",
+      "url": "https://www.zdnet.com/article/garmin-fenix-8-pro-smartwatch-deal-prime-day-2026/"
+    },
+    {
+      "id": "e063e5db7e65",
+      "title": "Prime Day is over, but these 60+ top deals are still live (for now): Apple, Garmin, LG, more",
+      "excerpt": "Amazon Prime Day 2026 deals have come and gone, but we're still seeing some of the same discounts live on editor-approved products like TVs, laptops, and more.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-27T13:35:01.000Z",
+      "url": "https://www.zdnet.com/article/amazon-june-prime-day-live-blog-06-27-2026/"
+    },
+    {
+      "id": "67f7fa5d1b27",
+      "title": "Why is Apple asking me to pay more for Big Tech’s AI obsession?",
+      "excerpt": "Tim Cook recently said price increases were \"unavoidable\" and described the company's pricing as \"unsustainable.\" The 16-inch MacBook Pro saw its price go up by $300. The 11-inch iPad Air went from $599 to $749. Even...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-27T13:30:00.000Z",
+      "url": "https://www.theverge.com/report/958678/apple-consumer-price-increase-ai-big-tech",
+      "tags": [
+        "AI",
+        "Apple",
+        "Business",
+        "Report",
+        "Tech"
+      ]
+    },
+    {
+      "id": "39a2f03d25ba",
+      "title": "How I turned my old Android phone into a streaming stick for free - in 6 easy steps",
+      "excerpt": "Skip the streaming stick - here's how I used a spare Pixel phone to watch movies on my TV.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-27T13:00:41.000Z",
+      "url": "https://www.zdnet.com/article/how-to-turn-android-phone-into-streaming-stick-roku-fire-tv/"
+    },
+    {
+      "id": "d0922290e8b2",
+      "title": "Inside the room where the smart home industry is still betting on Matter",
+      "excerpt": "Four years ago, overlooking a canal in Amsterdam, the smart home industry collectively launched Matter, the one interoperability standard to rule them all. Heralded as the solution to the industry's struggles, Matter...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-27T13:00:00.000Z",
+      "url": "https://www.theverge.com/tech/958008/matter-unify-conference-csa-apple-google-amazon-samsung-smart-home-interoperability",
+      "tags": [
+        "Analysis",
+        "Matter",
+        "Report",
+        "Smart Home",
+        "Tech"
+      ]
+    },
+    {
+      "id": "eb1f31d9e5e7",
+      "title": "Asian AI startups launch Mythos-like models as Anthropic’s export ban drags on",
+      "excerpt": "New models are launching in Asia that promise Mythos-like capabilities without fear of an export ban. U.S. AI labs may never recover this enormous market.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-27T12:00:00.000Z",
+      "url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
+      "tags": [
+        "TC",
+        "Startups",
+        "AI",
+        "Asia",
+        "Anthropic",
+        "Mythos"
+      ]
+    },
+    {
+      "id": "2faf43c0c32f",
+      "title": "This puzzle game’s simple premise hides surprising depth",
+      "excerpt": "What's the Password? has a simple concept: To solve each of the game's more than 100 puzzles, you have to type in the right four-digit password on a number pad. That might sound like a limited constraint. But the simp...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-27T12:00:00.000Z",
+      "url": "https://www.theverge.com/games/957474/whats-the-password-review-pc-ios-android",
+      "tags": [
+        "Entertainment",
+        "Games Review",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "c2e78faec5b4",
+      "title": "This might be the new best smart speaker",
+      "excerpt": "Hi, friends! Welcome to Installer No. 134, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, hope you're okay in all this heat, and also you can read all the old editions at the I...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-27T12:00:00.000Z",
+      "url": "https://www.theverge.com/tech/958127/google-home-speaker-star-fox-installer",
+      "tags": [
+        "Gadgets",
+        "Installer",
+        "Streaming",
+        "Tech"
+      ]
+    },
+    {
+      "id": "332c88cd4457",
+      "title": "13 Google Photos settings I always change on every new device - and why",
+      "excerpt": "Before I let Google Photos loose on my Android or iPhone camera roll, I check these backup, privacy, and AI settings first.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-06-27T10:01:04.000Z",
+      "url": "https://www.zdnet.com/article/google-photos-settings-i-change-on-new-android-iphone-why/"
+    },
+    {
+      "id": "e0d60d69c742",
+      "title": "I made Linux look like Windows 11 for free - with a few simple tweaks to Zorin OS",
+      "excerpt": "If you fancy a Windows 11 layout, but want to use Linux, you're in luck.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-27T10:01:02.000Z",
+      "url": "https://www.zdnet.com/article/i-made-linux-look-like-windows-11-for-free-simple-tweaks-to-zorin-os/"
+    },
+    {
+      "id": "6a529638c576",
+      "title": "Linux Mint vs RefreshOS: I found the best distro for new users",
+      "excerpt": "These two user-friendly distributions take different routes to the 'best Linux' crown. In the end, it all comes down to the desktop.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-27T10:00:45.000Z",
+      "url": "https://www.zdnet.com/article/linux-mint-vs-refreshos-best-distro-for-new-users/"
+    },
+    {
+      "id": "62ce42e63d2b",
+      "title": "Prime Day is almost over, but these are still the best Apple deals I’ve seen",
+      "excerpt": "Amazon’s Prime Day is now in its final hours, but whether you’re looking for a new pair of wireless earbuds or a smartwatch, there’s a good chance you’ll still find a discount. The Apple Watch Series 11 remains at its...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-27T02:56:52.000Z",
+      "url": "https://www.theverge.com/gadgets/949350/amazon-prime-day-sale-best-apple-deals-2026",
+      "tags": [
+        "Apple",
+        "Deals",
+        "Gadgets",
+        "Prime Day",
+        "Tech",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "5b384779df8c",
+      "title": "It’s the last day of Prime Day — here are over 140 great deals to choose from",
+      "excerpt": "We’ve arrived at the final day of Prime Day, which at this point should probably be called “Prime Week.” We’ve found discounts on all manner of gadgets, including TVs, smart home tech, chargers, headphones, and more....",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-27T02:54:45.000Z",
+      "url": "https://www.theverge.com/gadgets/957435/prime-day-2026-best-tech-deals-sale-day-four",
+      "tags": [
+        "Amazon",
+        "Amazon Alexa",
+        "Apple",
+        "Deals",
+        "Gadgets",
+        "Headphones"
+      ]
+    },
     {
       "id": "4b542d67aff3",
       "title": "24 Prime Day deals Verge readers are grabbing before Prime Day ends",
@@ -164,40 +330,6 @@
         "Smart Home",
         "Tech",
         "Verge Shopping"
-      ]
-    },
-    {
-      "id": "62ce42e63d2b",
-      "title": "Prime Day is almost over, but these are still the best Apple deals I’ve seen",
-      "excerpt": "Amazon’s Prime Day is now in its final hours, but whether you’re looking for a new pair of wireless earbuds or a smartwatch, there’s a good chance you’ll still find a discount. The Apple Watch Series 11 remains at its...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-26T23:41:12.000Z",
-      "url": "https://www.theverge.com/gadgets/949350/amazon-prime-day-sale-best-apple-deals-2026",
-      "tags": [
-        "Apple",
-        "Deals",
-        "Gadgets",
-        "Prime Day",
-        "Tech",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "5b384779df8c",
-      "title": "It’s the last day of Prime Day — here are over 140 great deals to choose from",
-      "excerpt": "We’ve arrived at the final day of Prime Day, which at this point should probably be called “Prime Week.” We’ve found discounts on all manner of gadgets, including TVs, smart home tech, chargers, headphones, and more....",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-26T23:26:09.000Z",
-      "url": "https://www.theverge.com/gadgets/957435/prime-day-2026-best-tech-deals-sale-day-four",
-      "tags": [
-        "Amazon",
-        "Amazon Alexa",
-        "Apple",
-        "Deals",
-        "Gadgets",
-        "Headphones"
       ]
     },
     {
@@ -532,145 +664,6 @@
       "tags": [
         "security"
       ]
-    },
-    {
-      "id": "c65a07fd1920",
-      "title": "ZTE and Tianyi Digital Life jointly unveil flagship home AI router",
-      "excerpt": "PARTNER CONTENT: Collaborating to advance China Telecom's “Better Home” ecosystem, the joint launch introduces a 2000 Mbps Wi-Fi 7 hub driven by core AI connection, sensing, and control capabilities",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-26T12:17:29.000Z",
-      "url": "https://www.theregister.com/networks/2026/06/26/zte-and-tianyi-digital-life-jointly-unveil-flagship-home-ai-router/5263090",
-      "image": "https://image.theregister.com/?imageId=5263094&width=800",
-      "tags": [
-        "networks"
-      ]
-    },
-    {
-      "id": "004e300457cc",
-      "title": "ZTE showcases practical path to Level-4 autonomous networks through agentic AI and cross-domain innovation at DTW Ignite 2026",
-      "excerpt": "PARTNER CONTENT: Highlighting Level-4 autonomous network solutions, TM Forum Excellence Award finalists, and joint operator trials powering cross-domain fault management and Dynamic 5G Slicing",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-26T12:09:35.000Z",
-      "url": "https://www.theregister.com/networks/2026/06/26/zte-showcases-practical-path-to-level-4-autonomous-networks-through-agentic-ai-and-cross-domain-innovation-at-dtw-ignite-2026/5263080",
-      "image": "https://image.theregister.com/?imageId=5263084&width=800",
-      "tags": [
-        "networks"
-      ]
-    },
-    {
-      "id": "5e67c5d93249",
-      "title": "With GTA looming, consoles are getting expensive at the worst possible time",
-      "excerpt": "The release of Grand Theft Auto VI is a singular moment, the kind of massive cultural phenomenon that makes people want to go out and buy a console to play it. It is the preeminent modern example of what's known as a...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-26T12:00:00.000Z",
-      "url": "https://www.theverge.com/entertainment/957288/gta-6-xbox-ps5-price-hikes",
-      "tags": [
-        "Analysis",
-        "Entertainment",
-        "Gaming",
-        "Report"
-      ]
-    },
-    {
-      "id": "9197362da019",
-      "title": "ZTE presents full-stack intelligent energy storage solutions at the Smarter E Europe 2026, powering Europe's energy transition",
-      "excerpt": "PARTNER CONTENT: ZTE introduces full-stack, AI-driven energy storage solutions in Munich to address the rising power demands of the digital infrastructure era",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-26T11:56:10.000Z",
-      "url": "https://www.theregister.com/ai-and-ml/2026/06/26/zte-presents-full-stack-intelligent-energy-storage-solutions-at-the-smarter-e-europe-2026-powering-europes-energy-transition/5263063",
-      "image": "https://image.theregister.com/?imageId=5263067&width=800",
-      "tags": [
-        "ai and ml"
-      ]
-    },
-    {
-      "id": "939f55ae0441",
-      "title": "ZTE advances \"AI and Gaming\" strategy at MWC Shanghai 2026 with nubia Neo 5 Series leading the way",
-      "excerpt": "PARTNER CONTENT: Showcasing the latest evolution of its \"AI+Gaming\" strategy alongside an expanded Full-Scenario AI Ecosystem featuring the agent-powered nubia M153 with Doubao AI Assistant",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-26T11:45:29.000Z",
-      "url": "https://www.theregister.com/personal-tech/2026/06/26/zte-advances-ai-and-gaming-strategy-at-mwc-shanghai-2026-with-nubia-neo-5-series-leading-the-way/5263035",
-      "image": "https://image.theregister.com/?imageId=5263045&width=800",
-      "tags": [
-        "personal tech"
-      ]
-    },
-    {
-      "id": "b1901119d080",
-      "title": "Samsung will soon start charging to access its smart home API",
-      "excerpt": "From October this year Samsung will roll out a variety of new paid tiers for access to its SmartThings API, including a $4.99 monthly plan for \"non-commercial, individual developers.\" It won't just be developers that...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-26T11:38:11.000Z",
-      "url": "https://www.theverge.com/tech/957597/samsung-smartthings-api-charges",
-      "tags": [
-        "News",
-        "Samsung",
-        "Smart Home",
-        "Tech"
-      ]
-    },
-    {
-      "id": "31009695dc9e",
-      "title": "Apple’s most powerful Macs might be waiting until 2027 for big processor upgrades",
-      "excerpt": "Apple is expected to shake up its usual Mac silicon release strategy, with Bloomberg's Mark Gurman reporting that there won't be Pro or Max versions of the upcoming M6 chip. Instead, Apple wants to \"fast-track technol...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-26T11:14:44.000Z",
-      "url": "https://www.theverge.com/tech/957561/apple-m6-m7-ai-chip-release-timeline-gurman",
-      "tags": [
-        "Apple",
-        "News",
-        "Tech"
-      ]
-    },
-    {
-      "id": "adbd50c1b1db",
-      "title": "Previewing GPT-5.6 Sol: a next-generation model",
-      "excerpt": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack.",
-      "source": "OpenAI News",
-      "category": "AI",
-      "publishedAt": "2026-06-26T10:00:00.000Z",
-      "url": "https://openai.com/index/previewing-gpt-5-6-sol",
-      "tags": [
-        "Product"
-      ]
-    },
-    {
-      "id": "92d9320c11dd",
-      "title": "Chinese cybersecurity company claims it’s built a better-than-Mythos bug finder",
-      "excerpt": "Qihoo 360, which the US has banned, says it’s needed as a deterrent to weaponized Anthropic models",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-26T01:49:35.000Z",
-      "url": "https://www.theregister.com/security/2026/06/26/chinese-cybersecurity-company-claims-its-built-a-better-than-mythos-bug-finder/5262642",
-      "image": "https://image.theregister.com/?imageId=245535&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "9b435e0c844f",
-      "title": "The $25 Fire TV Stick is my favorite Prime Day purchase yet",
-      "excerpt": "Amazon Prime Day has many good deals, but the 50% off Fire TV Stick 4K Plus is one of the best.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-26T01:38:11.000Z",
-      "url": "https://www.zdnet.com/article/the-25-fire-tv-stick-is-my-favorite-prime-day-purchase-yet/"
-    },
-    {
-      "id": "fc31f09d2d08",
-      "title": "Prime Day ends soon: We hand-picked the 95+ best deals still live, before they disappear",
-      "excerpt": "LIVE: Amazon Prime Day 2026 deals are here. Follow our live blog for real-time tracking on editor-approved products like TVs, MacBooks, Samsung devices, SSDs, and more before the sale ends tomorrow.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-26T00:47:00.000Z",
-      "url": "https://www.zdnet.com/article/amazon-june-prime-day-live-blog-06-25-2026/"
     }
   ]
 }
