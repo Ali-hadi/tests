@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T03:59:48.050Z",
+  "generatedAt": "2026-06-28T13:49:42.585Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,118 @@
     }
   ],
   "posts": [
+    {
+      "id": "94bcf8ad80f4",
+      "title": "Years of living with solar power taught me these 12 myths are simply wrong",
+      "excerpt": "Knowing the facts about home solar power can help you make better-informed choices, save money, and stay safe.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-28T13:00:46.000Z",
+      "url": "https://www.zdnet.com/article/home-solar-power-myths-debunked/"
+    },
+    {
+      "id": "7702efacb9aa",
+      "title": "Thermal cameras can spot problems you can't see - what I've learned after years of testing",
+      "excerpt": "Thermal cameras have saved me thousands over the years. Just the other day, one simple check saved me $1,000.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-28T12:30:37.000Z",
+      "url": "https://www.zdnet.com/article/why-you-must-get-a-thermal-camera/"
+    },
+    {
+      "id": "d185f27ce078",
+      "title": "Nest’s quest to fix your thermostat",
+      "excerpt": "The founding story of Nest is pretty much a perfect tech myth. A legendary product maker (in this case, Tony Fadell) helps create one of the most successful products ever (the iPhone) and then rides off into the sunse...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-28T12:02:44.000Z",
+      "url": "https://www.theverge.com/podcast/958735/nest-thermostat-version-history",
+      "tags": [
+        "Gadgets",
+        "Podcasts",
+        "Tech",
+        "Version History"
+      ]
+    },
+    {
+      "id": "1da9d88f7250",
+      "title": "I looked into OBD2 fuel savers, and found a much safer solution to save car gas instead",
+      "excerpt": "No, there's no cheap dongle that you can plug into your car to save you money. Here's the truth.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-28T12:00:54.000Z",
+      "url": "https://www.zdnet.com/article/dont-buy-fake-fuel-savers/"
+    },
+    {
+      "id": "df87f9bd69ef",
+      "title": "Ad-free streaming is a luxury now",
+      "excerpt": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more news about the streaming industry, follow Emma Roth. The Stepback arrives in our subscribers' inboxes at 8AM ET...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-28T12:00:00.000Z",
+      "url": "https://www.theverge.com/column/958379/streaming-industry-ads",
+      "tags": [
+        "Column",
+        "Streaming",
+        "The Stepback"
+      ]
+    },
+    {
+      "id": "13762c42732a",
+      "title": "I tested two of the best location-sharing apps for a month - this one was most accurate",
+      "excerpt": "Surfshark's HeyPolo is taking on the popular Life360. Here's how this latest contender in the location-sharing space competes.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-28T11:00:41.000Z",
+      "url": "https://www.zdnet.com/article/heypolo-vs-life360-location-sharing-apps/"
+    },
+    {
+      "id": "a7948bde0a90",
+      "title": "I tested MSI's Windows handheld PC, and it beats the Legion Go in a major way",
+      "excerpt": "MSI's Claw 8 EX AI+ is a worthy sequel, with stronger performance, better ergonomics, and highly effective cooling.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-06-28T10:45:44.000Z",
+      "url": "https://www.zdnet.com/article/msi-claw-8-ex-ai-review/"
+    },
+    {
+      "id": "5beb78d66fa6",
+      "title": "Use Android Auto? How to limit what information Gemini learns about you",
+      "excerpt": "Google's AI offers a lot of convenience in your car, but you're offering up a lot of sensitive information.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-06-28T10:00:57.000Z",
+      "url": "https://www.zdnet.com/article/stop-gemini-from-listening-in-android-auto/"
+    },
+    {
+      "id": "ccf02175bbf4",
+      "title": "Portuguese bank sign's storage is about to cash out",
+      "excerpt": "Time to switch back to paper and harvest that suddenly valuable RAM",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-28T10:00:00.000Z",
+      "url": "https://www.theregister.com/offbeat/2026/06/28/portuguese-bank-signs-storage-is-about-to-cash-out/5263175",
+      "image": "https://image.theregister.com/?imageId=5263199&width=800",
+      "tags": [
+        "offbeat"
+      ]
+    },
+    {
+      "id": "ef7cfa17ce46",
+      "title": "TMD’s keyless bike lock is a $280 solution to a $60 problem",
+      "excerpt": "I've seen lots of so-called \"smart\" bike locks over the years, but none so far could justify the added cost. A newcomer that got its start securing ATMs for banks is trying to change that. There's nothing wholly uniqu...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-28T07:00:00.000Z",
+      "url": "https://www.theverge.com/tech/957603/tmd-smart-keyless-bike-lock-review",
+      "tags": [
+        "Electric Bikes",
+        "Reviews",
+        "Rideables",
+        "Tech",
+        "Transportation"
+      ]
+    },
     {
       "id": "e55e00bd4a6a",
       "title": "Teenage Engineering adds lo-fi mode, USB audio, and more to its KO II sampler",
@@ -350,6 +462,32 @@
       "url": "https://www.zdnet.com/article/linux-mint-vs-refreshos-best-distro-for-new-users/"
     },
     {
+      "id": "480c32c38705",
+      "title": "NASA tests AI medic for astronauts too far from Earth to call a doctor",
+      "excerpt": "Please state the nature of the medical emergency",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-27T09:20:00.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/27/nasa-tests-ai-medic-for-astronauts-too-far-from-earth-to-call-a-doctor/5262828",
+      "image": "https://image.theregister.com/?imageId=5240526&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "43000e6b801e",
+      "title": "It's looking like a hot, messy summer for security teams as AI finds countless previously hidden vulns",
+      "excerpt": "Time to start praying to the goddess of wisdom and war",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-27T06:59:00.000Z",
+      "url": "https://www.theregister.com/security/2026/06/27/its-looking-like-a-hot-messy-summer-for-security-teams-as-ai-finds-countless-previously-hidden-vulns/5260478",
+      "image": "https://image.theregister.com/?imageId=5260521&width=800",
+      "tags": [
+        "security"
+      ]
+    },
+    {
       "id": "62ce42e63d2b",
       "title": "Prime Day is almost over, but these are still the best Apple deals I’ve seen",
       "excerpt": "Amazon’s Prime Day is now in its final hours, but whether you’re looking for a new pair of wireless earbuds or a smartwatch, there’s a good chance you’ll still find a discount. The Apple Watch Series 11 remains at its...",
@@ -506,165 +644,6 @@
       "category": "IT",
       "publishedAt": "2026-06-26T22:56:32.000Z",
       "url": "https://www.zdnet.com/article/top-sellers-amazon-prime-day-2026-day-4/"
-    },
-    {
-      "id": "b9cf1045a7c3",
-      "title": "My favorite Govee smart lamps are at their lowest prices ever for Prime Day",
-      "excerpt": "We’ve already rounded up the best Philips Hue deals of Prime Day, but if you’re looking for something a little more budget-friendly, Govee’s latest sale is worth checking out. The company has heavily discounted severa...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-26T22:51:28.000Z",
-      "url": "https://www.theverge.com/gadgets/958313/govee-table-lamp-2-classic-floor-uplighter-prime-day-2026-deal-sale",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Prime Day",
-        "Smart Home",
-        "Tech",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "c41aaa2a2164",
-      "title": "Our lab tests prove the deals on these 5 Prime Day winners are worth the money",
-      "excerpt": "These five products were the tops in our lab testing, and some have discounts of up to 50% off on Amazon right now.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-26T22:28:40.000Z",
-      "url": "https://www.zdnet.com/article/lab-award-winner-product-deals-amazon-prime-day-2026/"
-    },
-    {
-      "id": "df127f5d321f",
-      "title": "The Apple Watch Series 11 is still under $280 on Amazon - but not for much longer",
-      "excerpt": "The Apple Watch Series 11 arrived last year with a full suite of health-tracking features and an extended battery life, and it's on sale for 30% off for a few more hours.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-26T22:21:11.000Z",
-      "url": "https://www.zdnet.com/article/apple-watch-series-11-deal-amazon-prime-day-2026/"
-    },
-    {
-      "id": "5625454603d3",
-      "title": "After covering Prime Day for 36 hours over four days, this is the one thing I bought",
-      "excerpt": "We’ve covered so many deals during Prime Day that my head is spinning. But after four days of doing our damndest to try and help folks save money, the thing I’m most hyped for is a simple tool for fixing my most egreg...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-26T22:09:46.000Z",
-      "url": "https://www.theverge.com/gadgets/958179/prime-day-what-i-bought-vampliers-stripped-screw-extractor",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Prime Day",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "a7ebc940a08f",
-      "title": "My favorite Prime Day streaming stick deal will be gone soon - here's why you need it",
-      "excerpt": "Amazon Prime Day ends tonight, and this $25 Fire TV Stick 4K Plus is one deal you won't want to miss.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-26T21:59:00.000Z",
-      "url": "https://www.zdnet.com/article/amazon-prime-day-2026-fire-tv-stick-4k-plus-deal/"
-    },
-    {
-      "id": "7d08c86e2e27",
-      "title": "OpenAI limits GPT-5.6 rollout after government request, says restrictions shouldn’t be the norm",
-      "excerpt": "“We don’t believe this kind of government access process should become the long-term default,” says OpenAI. “It keeps the best tools from users, developers, enterprises, cyber defenders, and global partners who need t...",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-26T18:32:14.000Z",
-      "url": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/",
-      "tags": [
-        "AI",
-        "Government & Policy",
-        "gpt-5.6",
-        "gpt-5.6 sol",
-        "OpenAI",
-        "Trump"
-      ]
-    },
-    {
-      "id": "ad7d1a547c13",
-      "title": "OpenAI poaches Uber India chief to lead its biggest market outside the US",
-      "excerpt": "The hire marks OpenAI's latest push into India, expanding offices, partnerships and hiring.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-26T18:19:36.000Z",
-      "url": "https://techcrunch.com/2026/06/26/openai-poaches-uber-india-chief-to-lead-its-biggest-market-outside-the-u-s/",
-      "tags": [
-        "AI",
-        "Startups",
-        "Transportation",
-        "OpenAI",
-        "Prabhjeet Singh",
-        "Uber"
-      ]
-    },
-    {
-      "id": "3d6448258e8a",
-      "title": "Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidia)",
-      "excerpt": "Nvidia has dominated the AI chip market for years, but the era of total dependence might be ending. OpenAI just shared its plans to spice things up with Jalapeño, its custom inference chip built with Broadcom, joining...",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-26T17:43:22.000Z",
-      "url": "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/",
-      "tags": [
-        "AI",
-        "a24",
-        "agility",
-        "AI chips",
-        "AI loops",
-        "Anthropic"
-      ]
-    },
-    {
-      "id": "5a79be9e8d84",
-      "title": "It’s not about Anthropic vs. OpenAI anymore",
-      "excerpt": "AI models have progressed to the point where their capabilities have real political consequences. Dealing with those consequences will require collective action.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-26T16:24:47.000Z",
-      "url": "https://techcrunch.com/2026/06/26/its-not-about-anthropic-vs-openai-anymore/",
-      "tags": [
-        "AI",
-        "Government & Policy",
-        "Anthropic",
-        "OpenAI"
-      ]
-    },
-    {
-      "id": "894a0eef321d",
-      "title": "Best Amazon Prime Day deals under $25: Top deals on cheap gadgets I've tested",
-      "excerpt": "Check out our curated list of the top cheap Prime Day 2026 device deals, with discounts of up to 55% off. But hurry, the sale ends tonight.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-26T14:25:00.000Z",
-      "url": "https://www.zdnet.com/article/best-last-minute-amazon-prime-day-deals-under-25-2026/"
-    },
-    {
-      "id": "ccdbf8e2a0f8",
-      "title": "5 all-time low Prime Day prices that are still live (but not for long)",
-      "excerpt": "We compared the price histories of the products that ZDNET experts recommend to help you find the best deals while shopping during the final day of Amazon's Prime Day sale.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-26T14:18:22.000Z",
-      "url": "https://www.zdnet.com/article/5-all-time-low-amazon-prime-day-2026-prices-that-are-still-live-but-not-for-long/"
-    },
-    {
-      "id": "3115d90b2f48",
-      "title": "Of course Meta thinks gambling is the future",
-      "excerpt": "Meta is, by and large, a company built on other companies' ideas. It has almost perfected the strategy: wait for a new platform or social mechanic to take off, then either buy or clone it, put it next to Meta's unmatc...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-26T14:16:29.000Z",
-      "url": "https://www.theverge.com/podcast/957673/meta-polymarket-apple-prices-vergecast",
-      "tags": [
-        "Apple",
-        "Meta",
-        "Podcasts",
-        "Tech",
-        "Vergecast"
-      ]
     }
   ]
 }
