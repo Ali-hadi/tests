@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T03:50:17.837Z",
+  "generatedAt": "2026-06-30T14:22:21.695Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -52,9 +52,302 @@
   ],
   "posts": [
     {
+      "id": "31a55cf04819",
+      "title": "Netflix vs. Peacock: Which one deserves your money in 2026?",
+      "excerpt": "Netflix has award-winning originals and a smart algorithm, but Peacock counters with live sports and a lower price.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-30T14:10:00.000Z",
+      "url": "https://www.zdnet.com/article/netflix-vs-peacock-streaming-services/"
+    },
+    {
+      "id": "f39ca35c8549",
+      "title": "Lumo, Proton’s privacy-focused AI chatbot, gets an upgrade",
+      "excerpt": "Proton's Lumo 2.0 is dropping this week, giving users a broader variety of capabilities.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-30T14:00:00.000Z",
+      "url": "https://techcrunch.com/2026/06/30/lumo-protons-privacy-focused-ai-chatbot-gets-an-upgrade/",
+      "tags": [
+        "AI",
+        "lumo",
+        "ProtonMail",
+        "Proton"
+      ]
+    },
+    {
+      "id": "f5414c1cbd2e",
+      "title": "iPhone 18 Pro ‘drop test’ leaks get yanked from X",
+      "excerpt": "Videos purporting to show the iPhone 18 Pro undergoing a drop test were removed from X shortly after they surfaced, as spotted earlier by MacRumors. An account imitating leaker EvLeaks was suspended from X after shari...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-30T13:57:41.000Z",
+      "url": "https://www.theverge.com/tech/959474/iphone-18-pro-leaked-videos-pulled",
+      "tags": [
+        "Apple",
+        "Apple Rumors",
+        "iPhone",
+        "Mobile",
+        "News",
+        "Tech"
+      ]
+    },
+    {
+      "id": "b936dd02ee9b",
+      "title": "UK regulator wants Apple and Google to let devs steer clear of app store fees",
+      "excerpt": "Proposals could open cheaper routes for purchases made through third parties",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-30T13:52:09.000Z",
+      "url": "https://www.theregister.com/applications/2026/06/30/uk-regulator-wants-apple-and-google-to-let-devs-steer-clear-of-app-store-fees/5264370",
+      "image": "https://image.theregister.com/?imageId=258917&width=800",
+      "tags": [
+        "applications"
+      ]
+    },
+    {
+      "id": "0b8117e2e851",
+      "title": "Apple rushed to squash 29 bugs because AI is supercharging hackers - update ASAP",
+      "excerpt": "Software updates are rolling out now for iPhone, iPad, and Mac, bringing fixes that weren't supposed to arrive so soon. Here's why.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-06-30T13:43:00.000Z",
+      "url": "https://www.zdnet.com/article/apple-rushed-software-fixes-over-ai-threats-update-iphone-asap/"
+    },
+    {
+      "id": "6ec8874ee24f",
+      "title": "61% of US adults use AI for health information now - up from 2% in 2024",
+      "excerpt": "Patients are also three times more likely to trust AI in their doctor's secure portal than a public chatbot.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-06-30T12:52:25.000Z",
+      "url": "https://www.zdnet.com/article/us-adults-use-ai-for-health-information-now/"
+    },
+    {
+      "id": "29536d5ce28f",
+      "title": "Former Microsoft engineer shrinks Notepad down to size",
+      "excerpt": "Rolling back the years and the bloat for veteran text editor",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-30T12:14:00.000Z",
+      "url": "https://www.theregister.com/os-platforms/2026/06/30/former-microsoft-engineer-shrinks-notepad-down-to-size/5264319",
+      "image": "https://image.theregister.com/?imageId=234966&width=800",
+      "tags": [
+        "os platforms"
+      ]
+    },
+    {
+      "id": "3d35f2b1b965",
+      "title": "Meet the lawyer who beat Elon Musk — twice",
+      "excerpt": "Watching Elon Musk fulminate at Bill Savitt during Musk v. Altman - the case in which Musk sued Sam Altman and OpenAI instead of seeing a therapist about his AI failures - was a bit like watching a toddler have a temp...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-30T12:00:00.000Z",
+      "url": "https://www.theverge.com/column/959270/elon-musk-open-ai-bill-savitt-twitter",
+      "tags": [
+        "AI",
+        "Column",
+        "Elon Musk",
+        "Law",
+        "OpenAI",
+        "Policy"
+      ]
+    },
+    {
+      "id": "d52522236677",
+      "title": "Where there's a will, AI still has work to do",
+      "excerpt": "Probate lawyer finds generated document looked the part but missed many of the questions that matter",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-06-30T11:30:00.000Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/30/where-theres-a-will-ai-still-has-work-to-do/5264033",
+      "image": "https://image.theregister.com/?imageId=5264058&width=800",
+      "tags": [
+        "ai and ml"
+      ]
+    },
+    {
+      "id": "d0d0d16d888d",
+      "title": "Raspberry Pi OS gets a new kernel but apparently not a new version number",
+      "excerpt": "Linux 6.18 arrives with a few desktop tweaks, while the neglected x86 edition remains stuck on Debian 11",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-30T10:45:00.000Z",
+      "url": "https://www.theregister.com/os-platforms/2026/06/30/raspberry-pi-os-gets-a-new-kernel-but-apparently-not-a-new-version-number/5263609",
+      "image": "https://image.theregister.com/?imageId=5217992&width=800",
+      "tags": [
+        "os platforms"
+      ]
+    },
+    {
+      "id": "90866748fdf1",
+      "title": "This motor could be the future of e-bikes",
+      "excerpt": "Imagine an e-bike motor that lets you select your preferred pedaling cadence and then automatically adjusts the gears to keep your legs spinning at that exact speed, no matter how steep the hill gets - all without a f...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-30T10:30:04.000Z",
+      "url": "https://www.theverge.com/news/959382/avinox-mg-concept-gobao-mgu-ecvt",
+      "tags": [
+        "Electric Bikes",
+        "News",
+        "Rideables",
+        "Transportation"
+      ]
+    },
+    {
+      "id": "ab8149128937",
+      "title": "Why 'countdown mode' is the task manager feature I can't live without",
+      "excerpt": "This setting meshes perfectly with how my brain works, and I don't miss deadlines anymore.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-30T10:16:29.000Z",
+      "url": "https://www.zdnet.com/article/ticktick-task-manager-feature-countdown-mode/"
+    },
+    {
+      "id": "6c17ff9400f9",
+      "title": "No more Java refills for Intel Macs after JDK 27, says Oracle",
+      "excerpt": "Apple's final break with Chipzilla leaves another platform preparing to wind down support",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-30T10:00:00.000Z",
+      "url": "https://www.theregister.com/software/2026/06/30/no-more-java-refills-for-intel-macs-after-jdk-27-says-oracle/5263667",
+      "image": "https://image.theregister.com/?imageId=251786&width=800",
+      "tags": [
+        "software"
+      ]
+    },
+    {
+      "id": "d9e8b6224a04",
+      "title": "Our best look yet at Samsung’s new wide foldable",
+      "excerpt": "Samsung is expected to unveil its next generation of foldables at a Galaxy Unpacked event next month, but now we know what they might look like, courtesy of some leaked images published by Android Headlines. Images sh...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-30T09:54:44.000Z",
+      "url": "https://www.theverge.com/tech/959372/samsung-galaxy-z-fold-wide-image-leaks",
+      "tags": [
+        "Foldable Phones",
+        "Mobile",
+        "News",
+        "Samsung",
+        "Tech"
+      ]
+    },
+    {
+      "id": "b0d80fad9c05",
+      "title": "HS2's latest reset ditches autonomous train tech to get project back on track",
+      "excerpt": "Britain's most expensive train set loses some of its best toys in bid to actually leave the station",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-30T09:15:00.000Z",
+      "url": "https://www.theregister.com/offbeat/2026/06/30/hs2s-latest-reset-ditches-autonomous-train-tech-to-get-project-back-on-track/5264000",
+      "image": "https://image.theregister.com/?imageId=5244900&width=800",
+      "tags": [
+        "offbeat"
+      ]
+    },
+    {
+      "id": "cca05a20a29e",
+      "title": "Too many junk files on your Windows PC? This free tool can remove them in one click",
+      "excerpt": "A utility called Fluent Cleaner will analyze your Windows environment to find and remove junk files, temp files, unused Registry entries, and other clutter - for free. Here's how to use it.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-30T09:10:16.000Z",
+      "url": "https://www.zdnet.com/article/junk-files-windows-free-fluent-cleaner/"
+    },
+    {
+      "id": "e8d3d9ca34f9",
+      "title": "I tried the 'Plus Five' rule to fix my iPhone's slow wireless charging - here's what happened",
+      "excerpt": "Wireless charging is a helpful feature, but you may not be getting the optimal speed with your accessories.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-30T09:00:30.000Z",
+      "url": "https://www.zdnet.com/article/plus-five-wireless-charging-rule-iphone-android-faster-speeds/"
+    },
+    {
+      "id": "908c8779dea8",
+      "title": "AI agents are your new colleagues - how to get the best results",
+      "excerpt": "The future of work is likely to require a careful blend of human skills and AI agents. Here's how to work successfully with your agentic counterparts.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-06-30T09:00:14.000Z",
+      "url": "https://www.zdnet.com/article/how-to-create-great-results-with-your-agentic-work-colleagues-in-the-autonomous-business/"
+    },
+    {
+      "id": "7feee9f011d7",
+      "title": "Crypto exchange OKX wants AI agents to hire and pay each other",
+      "excerpt": "OKX is bringing together payments, identity, and reputation into a marketplace for AI agents.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-30T09:00:00.000Z",
+      "url": "https://techcrunch.com/2026/06/30/crypto-exchange-okx-wants-ai-agents-to-hire-and-pay-each-other/",
+      "tags": [
+        "AI",
+        "Crypto",
+        "Exclusive",
+        "OKX",
+        "OKX AI",
+        "agent marketplace"
+      ]
+    },
+    {
+      "id": "9355cbde8f74",
+      "title": "Atlas shrugs: New UK asylum seeker IT system failed to help case workers learn from appeals",
+      "excerpt": "After several delays in development, Atlas went live without functionality Home Office case manager needed, inspectors say",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-30T08:30:00.000Z",
+      "url": "https://www.theregister.com/public-sector/2026/06/30/atlas-shrugs-new-uk-asylum-seeker-it-system-failed-to-help-case-workers-learn-from-appeals/5263557",
+      "image": "https://image.theregister.com/?imageId=5251800&width=800",
+      "tags": [
+        "public sector"
+      ]
+    },
+    {
+      "id": "d6370a007f8c",
+      "title": "Microsoft builds a bouncer to keep bots out of Teams meetings",
+      "excerpt": "Allows ISVs to put their names on the door so desirable bots always get in",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-06-30T06:11:03.000Z",
+      "url": "https://www.theregister.com/software/2026/06/30/microsoft-builds-a-bouncer-to-keep-bots-out-of-teams-meetings/5264199",
+      "image": "https://image.theregister.com/?imageId=5225031&width=800",
+      "tags": [
+        "software"
+      ]
+    },
+    {
+      "id": "5f09b3919a81",
+      "title": "Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers",
+      "excerpt": "Google UK shares its latest Economic Impact Report and how to enable more people to unlock the benefits of AI-powered technologies.",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "publishedAt": "2026-06-30T06:00:00.000Z",
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Generated_Image_k2dxu1k2.max-600x600.format-webp.webp",
+      "tags": [
+        "UK",
+        "AI"
+      ]
+    },
+    {
+      "id": "3c82ab124c4b",
+      "title": "The AI jobs debate just got messier",
+      "excerpt": "A new report finds \"high-intensity AI adopters” saw headcount increase 10.2%. Among those companies, entry-level headcount rose by 12%, countering the rhetoric that AI kills junior jobs.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-30T04:01:00.000Z",
+      "url": "https://techcrunch.com/2026/06/29/the-ai-jobs-debate-just-got-messier/",
+      "tags": [
+        "AI",
+        "Ramp",
+        "ai job loss",
+        "revelio labs"
+      ]
+    },
+    {
       "id": "534a67ec1d1b",
-      "title": "Vibe coding platform Base44 launches own model as AI startups seek defensibility",
-      "excerpt": "Wix-owned vibe coding platform Base44 has started rolling out its own AI model — with hopes that it will eventually outperform frontier models.",
+      "title": "Vibe-coding platform Base44 launches own model as AI startups seek defensibility",
+      "excerpt": "Wix-owned vibe-coding platform Base44 has started rolling out its own AI model — with hopes that it will eventually outperform frontier models.",
       "source": "TechCrunch AI",
       "category": "AI",
       "publishedAt": "2026-06-30T02:28:41.000Z",
@@ -63,6 +356,7 @@
         "AI",
         "Base44",
         "LLMs",
+        "vibe coding",
         "Wix"
       ]
     },
@@ -162,7 +456,7 @@
     },
     {
       "id": "fe7194ed402b",
-      "title": "Tidal won’t pay royalties on AI-generated music but isn’t banning it outright",
+      "title": "Tidal won’t pay royalties on AI-generated music, but isn’t banning it outright",
       "excerpt": "Tidal shared its new policies regarding AI-generated music today and how the platform plans to \"protect artists\" and \"inform listeners.\" Instead of banning it outright, starting on July 15th Tidal will label tracks it...",
       "source": "The Verge",
       "category": "AI",
@@ -407,298 +701,6 @@
         "Policy",
         "Politics"
       ]
-    },
-    {
-      "id": "dc623bd61b9a",
-      "title": "Chrome vs. Edge vs. Firefox: I tested each browser's AI, but I'm only sticking with one",
-      "excerpt": "Looking to use AI while you browse the web? Here's how the AI tools in Chrome, Edge, and Firefox compare.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-06-29T14:52:00.000Z",
-      "url": "https://www.zdnet.com/article/chrome-vs-edge-vs-firefox-ai-browsers/"
-    },
-    {
-      "id": "7a7f746c301a",
-      "title": "Six months later, this small gadget is my secret weapon against doomscrolling",
-      "excerpt": "Brick is one of the few new devices that positively changed my daily content consumption. You can finally buy it on Amazon.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-29T14:49:47.000Z",
-      "url": "https://www.zdnet.com/article/brick-iphone-review/"
-    },
-    {
-      "id": "471119d76fe8",
-      "title": "Microsoft to assist European Commission in defense of EU-US data-sharing agreement",
-      "excerpt": "Court says Redmond can file briefs, take part in hearings amid challenge to the current path Big Tech's data spice uses to legally flow",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-29T14:29:00.000Z",
-      "url": "https://www.theregister.com/networks/2026/06/29/microsoft-to-assist-european-commission-in-defense-of-eu-us-data-sharing-agreement/5263737",
-      "image": "https://image.theregister.com/?imageId=224821&width=800",
-      "tags": [
-        "networks"
-      ]
-    },
-    {
-      "id": "4a54fd56cc74",
-      "title": "Robot hand company settles Tesla trade secret suit and announces $11M raise",
-      "excerpt": "The startup, Proception, is taking a unique approach to collecting training data to tackle one of the hardest problems in robotics: hands.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-29T14:00:08.000Z",
-      "url": "https://techcrunch.com/2026/06/29/robot-hand-company-settles-tesla-trade-secret-suit-and-announces-11m-raise/",
-      "tags": [
-        "AI",
-        "Robotics",
-        "Exclusive",
-        "proception",
-        "robotics"
-      ]
-    },
-    {
-      "id": "7f784f659a04",
-      "title": "Let him cook: How Weber Blackstone CEO Roger Dahle went from upstart to the biggest name in grilling",
-      "excerpt": "It’s time for our annual Fourth of July grill episode here at Decoder. This is when we invite the CEOs of outdoor cooking companies onto the show to explain just how their businesses kind of look like every other busi...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-29T14:00:00.000Z",
-      "url": "https://www.theverge.com/podcast/958790/weber-blackstone-ceo-roger-dahle-grilling-griddles-merger-outdoor-cooking",
-      "tags": [
-        "Business",
-        "Decoder",
-        "Podcasts",
-        "Smart Home",
-        "Tech"
-      ]
-    },
-    {
-      "id": "3344ff5c691d",
-      "title": "Rocket Lab is buying Iridium’s satellite network for $8 billion to take on SpaceX",
-      "excerpt": "Rocket Lab, the space company best known for its small satellite launcher Electron, has announced plans to acquire Iridium Communications for $8 billion. The deal will combine Rocket Lab's launch services and spacecra...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-29T13:51:24.000Z",
-      "url": "https://www.theverge.com/science/958891/rocket-lab-iridium-acquisition-satellite-communications",
-      "tags": [
-        "Business",
-        "News",
-        "Science",
-        "Space",
-        "SpaceX"
-      ]
-    },
-    {
-      "id": "dfc5424dbc83",
-      "title": "AI may be good at finding security vulnerabilities, but it can't beat human stupidity",
-      "excerpt": "You don't need Mythos or GPT-5.5-Cyber to find a vuln to exploit when the world's password habits are so sloppy",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-29T13:45:00.000Z",
-      "url": "https://www.theregister.com/security/2026/06/29/ai-may-be-good-at-finding-security-vulnerabilities-but-it-cant-beat-human-stupidity/5263262",
-      "image": "https://image.theregister.com/?imageId=229744&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "7702efacb9aa",
-      "title": "What years of testing thermal cameras taught me about the problems hiding in plain sight",
-      "excerpt": "Thermal cameras have saved me thousands over the years. Just the other day, one simple check saved me $1,000.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-29T13:25:00.000Z",
-      "url": "https://www.zdnet.com/article/why-you-must-get-a-thermal-camera/"
-    },
-    {
-      "id": "ea0dd8d08503",
-      "title": "You can still buy last year's Sony Bravia OLED TV for $600 off - and I can't recommend it enough",
-      "excerpt": "Sony's Bravia 8 II might be a generation behind, but it still offers plenty of reasons to buy - especially with this discount.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-29T13:14:00.000Z",
-      "url": "https://www.zdnet.com/article/best-buy-sony-bravia-8-ii-deal-prime-day/"
-    },
-    {
-      "id": "132af78715f3",
-      "title": "Omen AI’s plan to optimize data centers is all wet",
-      "excerpt": "Omen AI raised a $31 million Series A to monitor chip coolant and stop bacterial outbreaks in data centers.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-29T13:00:00.000Z",
-      "url": "https://techcrunch.com/2026/06/29/omen-ais-plan-to-optimize-data-centers-is-all-wet/",
-      "tags": [
-        "AI",
-        "Fundraising",
-        "Startups",
-        "Exclusive",
-        "Nava Ventures",
-        "omen ai"
-      ]
-    },
-    {
-      "id": "3098edd18def",
-      "title": "The Flipper Zero creators’ Busy Bar productivity display will go on sale next month",
-      "excerpt": "First announced over a year ago in April 2025, the Busy Bar will be available for purchase starting on July 14th when the device also starts shipping. Created by the same team behind the Flipper Zero wireless multitoo...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-29T13:00:00.000Z",
-      "url": "https://www.theverge.com/tech/957784/flipper-devices-busy-bar-productivity-multitool-timer-led-display-presale",
-      "tags": [
-        "Gadgets",
-        "Matter",
-        "News",
-        "Smart Home",
-        "Tech"
-      ]
-    },
-    {
-      "id": "26b422468f18",
-      "title": "Microsoft keeps Windows Server 2022 hotpatching alive into 2027",
-      "excerpt": "In the Azure Edition, of course",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-29T13:00:00.000Z",
-      "url": "https://www.theregister.com/security/2026/06/29/microsoft-keeps-windows-server-2022-hotpatching-alive-into-2027/5263688",
-      "image": "https://image.theregister.com/?imageId=4093838&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "ccc602d7a780",
-      "title": "Want a big tech job? Startups may be your best shot now - here's why",
-      "excerpt": "AI is reshaping tech hiring, and smaller companies may offer some of the best opportunities today.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-06-29T12:31:00.000Z",
-      "url": "https://www.zdnet.com/article/want-big-tech-job-startups-may-be-best-shot-why/"
-    },
-    {
-      "id": "a1696a028810",
-      "title": "Blue Origin insists New Glenn will rise from the ashes this year after explosion deleted launchpad",
-      "excerpt": "CEO says reconstruction has begun, though the timetable looks ambitious",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-29T12:30:00.000Z",
-      "url": "https://www.theregister.com/offbeat/2026/06/29/blue-origin-insists-new-glenn-will-rise-from-the-ashes-this-year-after-explosion-deleted-launchpad/5263571",
-      "image": "https://image.theregister.com/?imageId=5248404&width=800",
-      "tags": [
-        "offbeat"
-      ]
-    },
-    {
-      "id": "dce1774a13fc",
-      "title": "Sony WH-1000XM6 vs. Sennheiser Momentum 5: I wore both pairs for months, and prefer this one",
-      "excerpt": "Sony's and Sennheiser's flagship headphones are best in their class, but how you plan to use them determines whether they're top one.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-29T12:00:38.000Z",
-      "url": "https://www.zdnet.com/article/sennheiser-momentum-5-vs-sony-wh-1000xm6/"
-    },
-    {
-      "id": "5e6916dc9209",
-      "title": "How to end a TV show",
-      "excerpt": "Ending any story is hard, but that's especially true of mystery-packed TV shows. Series like Lost initially hook viewers with constantly building secrets and questions, to the point that they can often seem incomprehe...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-29T12:00:00.000Z",
-      "url": "https://www.theverge.com/entertainment/957707/from-season-4-finale-tv-show-endings",
-      "tags": [
-        "Entertainment",
-        "Report",
-        "TV Shows"
-      ]
-    },
-    {
-      "id": "114b1465b007",
-      "title": "BT and Verizon spin off international networking arms into $4B joint venture",
-      "excerpt": "Enterprise networking gets another consolidation play as firms pool their overseas operations",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-29T11:45:00.000Z",
-      "url": "https://www.theregister.com/networks/2026/06/29/bt-and-verizon-spin-off-international-networking-arms-into-4b-joint-venture/5263655",
-      "image": "https://image.theregister.com/?imageId=257235&width=800",
-      "tags": [
-        "networks"
-      ]
-    },
-    {
-      "id": "69ef71127ca8",
-      "title": "Comcast is splitting in two",
-      "excerpt": "Comcast has announced plans to separate itself into two publicly traded companies, spinning off its NBCUniversal and Sky broadcasting arms. The shake up aims to protect the media conglomerate's profitable broadband an...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-29T11:29:40.000Z",
-      "url": "https://www.theverge.com/tech/958849/comcast-nbcuniversal-company-spinoff-announcement",
-      "tags": [
-        "Business",
-        "Comcast",
-        "News",
-        "Streaming",
-        "Tech"
-      ]
-    },
-    {
-      "id": "4bc6c7689d3c",
-      "title": "Nissan says Oracle PeopleSoft break-in may have spilled payroll records, SSNs",
-      "excerpt": "Carmaker points finger at an 'unknown' flaw as customer fallout continues",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-29T11:14:00.000Z",
-      "url": "https://www.theregister.com/security/2026/06/29/nissan-says-oracle-peoplesoft-break-in-may-have-spilled-payroll-records-ssns/5263534",
-      "image": "https://image.theregister.com/?imageId=5263546&width=800",
-      "tags": [
-        "security"
-      ]
-    },
-    {
-      "id": "d70f89da1e47",
-      "title": "The war against ‘woke’ could end US science as we know it",
-      "excerpt": "A sneaky rule change has the potential to blow up scientific research in the United States. But there's still time to fight it. On May 29th, the Office of Management and Budget (OMB) issued a 412-page proposal to revi...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-29T11:00:00.000Z",
-      "url": "https://www.theverge.com/science/957630/omb-killing-science-budget-grants-research",
-      "tags": [
-        "Health",
-        "Policy",
-        "Science"
-      ]
-    },
-    {
-      "id": "7c623fe00ce4",
-      "title": "Zuck saves Meta bucks by reusing memory from old servers with a custom CXL ASIC",
-      "excerpt": "In production on millions of boxes and the payoff is a 25% reduction in machines needed for some inference workloads",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-06-29T10:43:00.000Z",
-      "url": "https://www.theregister.com/systems/2026/06/29/zuck-saves-meta-bucks-by-reusing-memory-from-old-servers-with-a-custom-cxl-asic/5263483",
-      "image": "https://image.theregister.com/?imageId=246935&width=800",
-      "tags": [
-        "systems"
-      ]
-    },
-    {
-      "id": "352a1186cb29",
-      "title": "ZTE released all-in-one FTTR-B solution for SME AI and connectivity at MWC Shanghai 2026",
-      "excerpt": "PARTNER CONTENT: • Supporting on-premise local AI large model operation, the solution cuts cloud costs and secures sensitive corporate data for SMEs",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-06-29T10:10:41.000Z",
-      "url": "https://www.theregister.com/ai-and-ml/2026/06/29/zte-released-all-in-one-fttr-b-solution-for-sme-ai-and-connectivity-at-mwc-shanghai-2026/5263601",
-      "image": "https://image.theregister.com/?imageId=5263605&width=800",
-      "tags": [
-        "ai and ml"
-      ]
-    },
-    {
-      "id": "e7f1f16d8bb8",
-      "title": "8 plug-in gadgets that take your outlets from basic to better (including a lifesaver)",
-      "excerpt": "These plug-in gadgets make your home's routine easier. Here's why I recommend them.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-29T10:00:39.000Z",
-      "url": "https://www.zdnet.com/article/best-wall-outlet-gadgets/"
     }
   ]
 }
