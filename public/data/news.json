@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T14:22:21.695Z",
+  "generatedAt": "2026-07-01T04:03:48.071Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -52,13 +52,319 @@
   ],
   "posts": [
     {
+      "id": "e2256bc7303d",
+      "title": "The “Father of the Internet” is finally retiring",
+      "excerpt": "Vinton Cerf, one of the creators of the protocols underlying the internet, will step down as Google's chief internet evangelist next week.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-07-01T03:15:37.000Z",
+      "url": "https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/",
+      "tags": [
+        "AI",
+        "Exclusive"
+      ]
+    },
+    {
+      "id": "466d3082150a",
+      "title": "Trump drops restrictions on Anthropic’s Mythos and Fable models",
+      "excerpt": "Anthropic said it would begin restoring access to the Fable on July 1.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-07-01T02:16:06.000Z",
+      "url": "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "59d48f179766",
+      "title": "Wayve launches $85M employee tender offer at $8.5B valuation",
+      "excerpt": "Wayve’s offering is part of a growing trend of AI startups using employee tenders as a strategic tool to attract and retain talent.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-07-01T02:04:40.000Z",
+      "url": "https://techcrunch.com/2026/06/30/wayve-launches-85m-employee-tender-offer-at-8-5b-valuation/",
+      "tags": [
+        "AI",
+        "Transportation",
+        "liquidity",
+        "secondary offerings",
+        "wayve"
+      ]
+    },
+    {
+      "id": "f41e358c00ca",
+      "title": "How to disable ACR on your TV (and why it makes such a big difference when you do)",
+      "excerpt": "Samsung, LG, and Sony TVs can pose data privacy risks - here's how to avoid one of the biggest.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-07-01T01:00:41.000Z",
+      "url": "https://www.zdnet.com/article/how-to-disable-acr-tv/"
+    },
+    {
+      "id": "1846168d8f42",
+      "title": "Meta is adding ridiculous ‘rate limits’ and a soft paywall to its smart glasses",
+      "excerpt": "Would you pay $20 a month for access to AI hardware you already own? That appears to be one of Meta's next bets. This week, it quietly announced that your glasses' Conversation Focus feature will soon be limited to th...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-07-01T00:51:03.000Z",
+      "url": "https://www.theverge.com/gadgets/959899/meta-ai-glasses-paywall-rate-limit",
+      "tags": [
+        "Gadgets",
+        "Meta",
+        "Tech",
+        "Wearable"
+      ]
+    },
+    {
+      "id": "c5e612bf83f7",
+      "title": "Anthropic’s long-sidelined Fable 5 is greenlit to return",
+      "excerpt": "After weeks of negotiating with the Trump administration, Anthropic is finally going to be able to bring Claude Fable 5 back online. In a post on X, Anthropic said it plans to begin restoring access tomorrow to users...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-07-01T00:03:55.000Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "News",
+        "Policy"
+      ]
+    },
+    {
+      "id": "3e74ba82793d",
+      "title": "Dish files for bankruptcy, but not shutting down",
+      "excerpt": "Dish, the company that operates Dish TV and Sling TV, has filed for Chapter 11 bankruptcy,\" as reported earlier by Reuters. The plan will allow the EchoStar-owned company to continue to wind down its wireless operatio...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-30T22:46:52.000Z",
+      "url": "https://www.theverge.com/tech/959894/dish-chapter-11-bankruptcy",
+      "tags": [
+        "Business",
+        "Mobile",
+        "News",
+        "Tech"
+      ]
+    },
+    {
+      "id": "9a596b657038",
+      "title": "OpenClaw is finally available on Android and iOS",
+      "excerpt": "The free open source agentic program is finally invading your phone.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-30T21:53:28.000Z",
+      "url": "https://techcrunch.com/2026/06/30/openclaw-is-finally-available-on-android-and-ios/",
+      "tags": [
+        "AI",
+        "TC",
+        "agents",
+        "In Brief",
+        "moltbook",
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "e6e8abfea2d2",
+      "title": "Amazon fined $2.25 million for failing to help identity theft victims",
+      "excerpt": "The Federal Trade Commission fined Amazon $2.25 million to settle claims that the company failed to help customers who fell victim to identity theft, as reported earlier by Bloomberg. In its complaint, the FTC accuses...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-30T21:20:01.000Z",
+      "url": "https://www.theverge.com/tech/959847/amazon-ftc-identity-theft-fine",
+      "tags": [
+        "Amazon",
+        "News",
+        "Policy",
+        "Tech"
+      ]
+    },
+    {
+      "id": "cb5bd9cc1bfa",
+      "title": "The DeepMind trio who built a poker AI are now making money for quant hedge funds",
+      "excerpt": "EquiLibre Technologies, a Prague-based AI lab founded by three ex-DeepMind researchers, is now valued at more than $500 million.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-30T20:33:48.000Z",
+      "url": "https://techcrunch.com/2026/06/30/the-deepmind-trio-who-built-a-poker-ai-are-now-making-money-for-quant-hedge-funds/",
+      "tags": [
+        "AI",
+        "Startups",
+        "Venture",
+        "Creandum",
+        "equilibre technologies",
+        "Exclusive"
+      ]
+    },
+    {
+      "id": "f31b8dc6fe46",
+      "title": "I brought a Bose, Sony, and JBL speaker to the beach - this one's my new outdoor essential",
+      "excerpt": "All three brands make great Bluetooth speakers, but an unpredictable beach environment exposes their true strengths and weaknesses.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-30T20:31:00.000Z",
+      "url": "https://www.zdnet.com/article/bose-sonos-and-jbl-bluetooth-speaker-beach-comparison/"
+    },
+    {
+      "id": "f5072de3053d",
+      "title": "New attack provides one more reason why AI browsers are a bad idea",
+      "excerpt": "Telling an LLM that 2 + 2 = 5 is enough to make it follow forbidden instructions.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "publishedAt": "2026-06-30T20:03:14.000Z",
+      "url": "https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/broken-ai-robot-browser-404-1152x648.jpg",
+      "tags": [
+        "AI",
+        "Biz & IT",
+        "Security",
+        "browsers",
+        "jailbreaks",
+        "LLMs"
+      ]
+    },
+    {
+      "id": "7f5ca8e971f7",
+      "title": "Acer’s Swift Go 16 is a lot of laptop for $900",
+      "excerpt": "As high memory and storage prices have driven up the cost of everything from consoles to computers, finding a competent laptop for under $1,000 has become a challenge. Thankfully, the Acer Swift Go 16 AI is on sale fo...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-30T20:00:00.000Z",
+      "url": "https://www.theverge.com/gadgets/959687/acer-swift-go-16-ai-deal-sale",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Verge Shopping"
+      ]
+    },
+    {
+      "id": "31d023a3663d",
+      "title": "Google’s NotebookLM can sum up your research in a TikTok-style clip",
+      "excerpt": "Google's NotebookLM is adding a new way to catch up on your notes: TikTok-style AI videos. The new feature is rolling out to Google AI Ultra and Pro subscribers, allowing NotebookLM to generate 60-second vertical AI c...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-06-30T19:24:51.000Z",
+      "url": "https://www.theverge.com/tech/959778/google-notebooklm-ai-clips",
+      "tags": [
+        "AI",
+        "Apps",
+        "Google",
+        "News",
+        "Tech"
+      ]
+    },
+    {
+      "id": "68c5b27d665c",
+      "title": "Google introduces a faster, cheaper image generator with Nano Banana 2 Lite",
+      "excerpt": "Google is updating its image generator to make it faster and cheaper, making it a more useful tool for creators looking to make AI content.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-30T19:02:38.000Z",
+      "url": "https://techcrunch.com/2026/06/30/google-introduces-a-faster-cheaper-image-generator-with-nano-banana-2-lite/",
+      "tags": [
+        "AI",
+        "AI videos",
+        "gemini omni flash",
+        "Google",
+        "Nano Banana 2 Lite"
+      ]
+    },
+    {
+      "id": "4f937777063a",
+      "title": "LG’s 27-inch Tandem OLED gaming monitor is cheaper than ever",
+      "excerpt": "The price of LG’s UltraGear 27GX700A-B 1440p gaming monitor that came out last August has dropped to nearly its best price yet. You can grab it at Amazon for $484.99 or at LG for $499.99 (originally $599.99). That’s a...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-30T18:42:00.000Z",
+      "url": "https://www.theverge.com/gadgets/906880/lg-ultragear-tandem-oled-1440p-gaming-monitor-deal-sale",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Gaming",
+        "PC Gaming",
+        "Verge Shopping"
+      ]
+    },
+    {
       "id": "31a55cf04819",
-      "title": "Netflix vs. Peacock: Which one deserves your money in 2026?",
+      "title": "Netflix vs. Peacock: I've subscribed to both streaming services for years - this one's more worth it",
       "excerpt": "Netflix has award-winning originals and a smart algorithm, but Peacock counters with live sports and a lower price.",
       "source": "ZDNET",
       "category": "IT",
-      "publishedAt": "2026-06-30T14:10:00.000Z",
+      "publishedAt": "2026-06-30T18:17:00.000Z",
       "url": "https://www.zdnet.com/article/netflix-vs-peacock-streaming-services/"
+    },
+    {
+      "id": "65f9679377d9",
+      "title": "How I turned my old Android phone into a dashcam for free - in 5 easy steps",
+      "excerpt": "Want a dashcam? Before buying one, repurpose an old phone. It's free, takes minutes, and works well.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-30T18:16:00.000Z",
+      "url": "https://www.zdnet.com/article/how-to-turn-phone-into-dashcam-for-free/"
+    },
+    {
+      "id": "06aaacd6d3da",
+      "title": "007 First Light’s developer lays off staff but claims its next franchise will continue",
+      "excerpt": "IO Interactive, the studio behind the Hitman series and 007 First Light, announced that it is laying off staff after a relationship with an \"external partner\" on its next big franchise, Project Fantasy, \"has come to a...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-06-30T18:14:05.000Z",
+      "url": "https://www.theverge.com/games/959713/io-interactive-project-fantasy-layoffs",
+      "tags": [
+        "Entertainment",
+        "Gaming",
+        "News"
+      ]
+    },
+    {
+      "id": "dc11ecaf49b3",
+      "title": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip",
+      "excerpt": "Nvidia AI chip competitor Etched says it has already booked $1 billion under contract for the inference systems powered by its chip.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-30T18:13:02.000Z",
+      "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/",
+      "tags": [
+        "AI",
+        "Startups",
+        "TC",
+        "AI chips",
+        "etched"
+      ]
+    },
+    {
+      "id": "a258af33ca85",
+      "title": "Anthropic launches Claude Sonnet 5 as a cheaper way to run agents",
+      "excerpt": "Anthropic’s Claude Sonnet 5 brings stronger agentic capabilities, lower pricing, and improved safety, positioning the model as a cheaper alternative to Opus, GPT-5.5, and Gemini Pro.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-06-30T18:00:00.000Z",
+      "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+      "tags": [
+        "AI",
+        "AI agents",
+        "Anthropic",
+        "Claude",
+        "sonnet 5"
+      ]
+    },
+    {
+      "id": "7aa8f8a40756",
+      "title": "AI Model Release Tracker: Anthropic releases Sonnet 5",
+      "excerpt": "Not every new model is all it's cracked up to be. Our tracker keeps each release in context with its peers, so you know which models are worth your time.",
+      "source": "ZDNET",
+      "category": "AI",
+      "publishedAt": "2026-06-30T18:00:00.000Z",
+      "url": "https://www.zdnet.com/article/ai-model-release-tracker/"
+    },
+    {
+      "id": "e8f167e71996",
+      "title": "Why I switched to wireless security cameras after years of testing wired models",
+      "excerpt": "After using multiple security cameras from Ring, Blink, and more, I've found the best arrangement for my home.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-06-30T14:33:00.000Z",
+      "url": "https://www.zdnet.com/article/why-i-use-wireless-security-cameras-at-home-versus-wired/"
     },
     {
       "id": "f39ca35c8549",
@@ -273,6 +579,18 @@
       "url": "https://www.zdnet.com/article/how-to-create-great-results-with-your-agentic-work-colleagues-in-the-autonomous-business/"
     },
     {
+      "id": "fb435a036a32",
+      "title": "How ChatGPT adoption has expanded",
+      "excerpt": "New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages.",
+      "source": "OpenAI News",
+      "category": "AI",
+      "publishedAt": "2026-06-30T09:00:00.000Z",
+      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+      "tags": [
+        "Global Affairs"
+      ]
+    },
+    {
       "id": "7feee9f011d7",
       "title": "Crypto exchange OKX wants AI agents to hire and pay each other",
       "excerpt": "OKX is bringing together payments, identity, and reputation into a marketplace for AI agents.",
@@ -361,345 +679,15 @@
       ]
     },
     {
-      "id": "ffa49a7f7314",
-      "title": "US offers $10 million for info on group behind Signal and WhatsApp hacking spree",
-      "excerpt": "Operation by two Russia-state groups has been ongoing since at least March.",
-      "source": "Ars Technica",
-      "category": "IT",
-      "publishedAt": "2026-06-29T22:05:33.000Z",
-      "url": "https://arstechnica.com/information-technology/2026/06/us-offers-10-million-for-info-on-group-behind-signal-and-whatsapp-hacking-spree/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/russia-hacking-binary-1152x648.jpg",
-      "tags": [
-        "Biz & IT",
-        "Security",
-        "phishing",
-        "russia state",
-        "signal messenger",
-        "whatsapp"
-      ]
-    },
-    {
-      "id": "7e32ef097cb8",
-      "title": "T-Mobile is booting customers from its oldest plans",
-      "excerpt": "Earlier today, T-Mobile started notifying customers that it will be retiring many legacy plans and moving subscribers onto one of its current rate plans. This move includes plans that date back to the 3G era, and it's...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-29T21:06:14.000Z",
-      "url": "https://www.theverge.com/tech/959144/t-mobile-legacy-plan-retire-sprint",
-      "tags": [
-        "5G",
-        "Mobile",
-        "Sprint",
-        "T-Mobile",
-        "Tech"
-      ]
-    },
-    {
-      "id": "c806cfc7db36",
-      "title": "After a great start, DC’s new cinematic universe is already slowing down",
-      "excerpt": "While Kara Zor-El's appearance at the end of James Gunn's Superman was a very pleasant surprise, Warner Bros. Discovery's plan to fast-track a standalone Supergirl feature always felt a little dubious. It seemed odd t...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-29T21:00:00.000Z",
-      "url": "https://www.theverge.com/entertainment/958953/supergirl-dcu-warner-bros-discovery-box-office-flop",
-      "tags": [
-        "Analysis",
-        "Comics",
-        "DC Comics",
-        "Entertainment",
-        "Film",
-        "Report"
-      ]
-    },
-    {
-      "id": "4786f999bfd9",
-      "title": "Leaked iPhone 18 Pro photos reportedly wound up on the dark web",
-      "excerpt": "Leaked iPhone 18 Pro photos and parts lists appeared on the dark web following a data breach affecting one of Apple's key suppliers, according to a report from Reuters. The leaked images show a drop test of what a sou...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-29T20:18:26.000Z",
-      "url": "https://www.theverge.com/tech/959229/iphone-18-pro-leak-apple-dark-web",
-      "tags": [
-        "Apple",
-        "Apple Rumors",
-        "iOS",
-        "iPhone",
-        "Mobile",
-        "News"
-      ]
-    },
-    {
-      "id": "5b59cc183adb",
-      "title": "Gemini’s personalized AI image generation is now free for US users",
-      "excerpt": "Google is expanding Gemini’s personalized AI image generation to eligible free users in the U.S., allowing the chatbot to create images based on your interests and data from connected Google apps.",
-      "source": "TechCrunch AI",
+      "id": "3c923494434c",
+      "title": "Introducing GeneBench-Pro",
+      "excerpt": "Introducing GeneBench-Pro, a new benchmark testing AI performance in genomics, biology, and scientific research using complex, real-world datasets.",
+      "source": "OpenAI News",
       "category": "AI",
-      "publishedAt": "2026-06-29T20:12:59.000Z",
-      "url": "https://techcrunch.com/2026/06/29/geminis-personalized-ai-image-generation-is-now-free-for-u-s-users/",
+      "publishedAt": "2026-06-30T00:00:00.000Z",
+      "url": "https://openai.com/index/introducing-genebench-pro",
       "tags": [
-        "AI",
-        "Apps",
-        "gemini",
-        "Gemini Nano",
-        "Generative AI",
-        "Google"
-      ]
-    },
-    {
-      "id": "5c117454433b",
-      "title": "I always keep these 3 devices plugged into my power station - here's why",
-      "excerpt": "Here's how to leverage your power station's capabilities when it's not during an emergency.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-29T19:58:00.000Z",
-      "url": "https://www.zdnet.com/article/3-things-i-keep-permanently-connected-to-a-power-station/"
-    },
-    {
-      "id": "fe7194ed402b",
-      "title": "Tidal won’t pay royalties on AI-generated music, but isn’t banning it outright",
-      "excerpt": "Tidal shared its new policies regarding AI-generated music today and how the platform plans to \"protect artists\" and \"inform listeners.\" Instead of banning it outright, starting on July 15th Tidal will label tracks it...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-29T19:47:35.000Z",
-      "url": "https://www.theverge.com/tech/959211/tidal-ai-music-policy-demonetizingdetect-label",
-      "tags": [
-        "AI",
-        "Entertainment",
-        "Music",
-        "News",
-        "Tech",
-        "Tidal"
-      ]
-    },
-    {
-      "id": "fbb8546f8bb6",
-      "title": "Sony’s next-gen PlayStation will go ‘beyond the living room’",
-      "excerpt": "Sony hinted in a recent Q&A with investors that the next generation PlayStation will offer some kind of experience that lets you play games outside of your living room. Here's the relevant portion from the transcript,...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-29T19:12:15.000Z",
-      "url": "https://www.theverge.com/games/959191/sony-next-generation-playstation-ps6-beyond-the-living-room",
-      "tags": [
-        "Entertainment",
-        "Gaming",
-        "News",
-        "PlayStation"
-      ]
-    },
-    {
-      "id": "c65afa644321",
-      "title": "I replaced my iPhone battery at the Apple store for the first time ever - and learned a valuable lesson",
-      "excerpt": "A few weeks ago, I replaced my iPhone 14 Pro battery at the Apple store - and was pleasantly surprised by the results.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-29T19:06:00.000Z",
-      "url": "https://www.zdnet.com/article/i-replaced-iphone-battery-at-apple-store-what-i-learned/"
-    },
-    {
-      "id": "811accb0367a",
-      "title": "OpenAI is teasing new hardware… for Codex",
-      "excerpt": "OpenAI is releasing some sort of device related to its AI-powered coding tool, Codex, on July 15th. In a video posted to X on Monday, OpenAI shows a square-shaped device with several buttons, alongside the caption, \"Y...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-06-29T18:52:03.000Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/959174/openai-codex-hardware-work-louder",
-      "tags": [
-        "AI",
-        "News",
-        "OpenAI"
-      ]
-    },
-    {
-      "id": "7fc9333d0392",
-      "title": "Anthropic and Gov. Newsom forge deal allowing California government to use Claude at half price",
-      "excerpt": "As Anthropic forges a closer relationship with the state of California, the federal government has made an enemy out of the OpenAI rival.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-29T18:10:26.000Z",
-      "url": "https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/",
-      "tags": [
-        "AI",
-        "Government & Policy",
-        "Anthropic",
-        "california",
-        "Gavin Newsom"
-      ]
-    },
-    {
-      "id": "5442c22415cc",
-      "title": "South Korean tech giants commit over $550B to ease ‘RAMageddon’",
-      "excerpt": "The world's two largest memory chip companies vow to build more memory lab fabs as South Korea positions itself as an AI tech powerhouse country.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-29T18:07:48.000Z",
-      "url": "https://techcrunch.com/2026/06/29/south-korean-tech-giants-commit-over-550b-to-ease-ramageddon/",
-      "tags": [
-        "AI",
-        "Hardware",
-        "TC",
-        "memory tech",
-        "RAMaggedon",
-        "Samsung"
-      ]
-    },
-    {
-      "id": "a7948bde0a90",
-      "title": "I tried a Windows handheld PC, and its docking system made it my ideal travel companion",
-      "excerpt": "MSI's Claw 8 EX AI+ is a worthy sequel, with stronger performance, better ergonomics, and highly effective cooling.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-06-29T17:50:00.000Z",
-      "url": "https://www.zdnet.com/article/msi-claw-8-ex-ai-review/"
-    },
-    {
-      "id": "a3a8685c3f81",
-      "title": "At $499, Apple’s M3-powered iPad Air is a good deal",
-      "excerpt": "Most of Apple’s price increases have gone into effect, resulting in iPads and other products costing hundreds more than they did a few days ago. If last week’s Prime Day sale wasn’t a good time to consider buying an i...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-29T17:49:12.000Z",
-      "url": "https://www.theverge.com/gadgets/959080/ipad-air-m3-5g-wifi-deal-sale",
-      "tags": [
-        "Apple",
-        "Deals",
-        "Gadgets",
-        "iPad",
-        "Tech",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "091a37e5961c",
-      "title": "After testing Thread, Zigbee, and Matter, here's how I'm building my smart home differently",
-      "excerpt": "All three are related to smart home connectivity, and it's critical that you understand their differences.",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-29T17:46:00.000Z",
-      "url": "https://www.zdnet.com/article/thread-vs-zigbee-vs-matter/"
-    },
-    {
-      "id": "84554f2bc1eb",
-      "title": "Arena, the AI leaderboard everyone uses, is now a $100M business",
-      "excerpt": "The startup, which runs a popular free AI leaderboard, launched its commercial service just last September.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-29T17:39:17.000Z",
-      "url": "https://techcrunch.com/2026/06/29/arena-the-ai-leaderboard-everyone-uses-is-now-a-100m-business/",
-      "tags": [
-        "AI",
-        "Startups",
-        "Arena",
-        "LMArena",
-        "revenue"
-      ]
-    },
-    {
-      "id": "9665bc4af006",
-      "title": "Cursor now has a mobile app for guiding your coding agent on the go",
-      "excerpt": "Cursor has launched a new mobile app for remote oversight over coding agents.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-29T17:03:50.000Z",
-      "url": "https://techcrunch.com/2026/06/29/cursor-now-has-a-mobile-app-for-guiding-your-coding-agent-on-the-go/",
-      "tags": [
-        "AI",
-        "ai coding",
-        "cursor",
-        "In Brief"
-      ]
-    },
-    {
-      "id": "dbb27520994d",
-      "title": "Internet down? 3 ways I use an old Android phone as a backup connection for my home router",
-      "excerpt": "I needed a way to connect my phone to my router, and have it work reliably. Turns out, I have 3 options (and I saved the best for last).",
-      "source": "ZDNET",
-      "category": "IT",
-      "publishedAt": "2026-06-29T16:54:48.000Z",
-      "url": "https://www.zdnet.com/article/how-to-use-old-android-phone-as-backup-internet-connection-for-home-router/"
-    },
-    {
-      "id": "808f4f5d28d0",
-      "title": "The best July 4th sales we found so far",
-      "excerpt": "July 4th sales are typically a precursor to what we’d see during a mid-July Prime Day, but obviously things are flipped around this year. Last week’s big Prime Day sale is over, yet there are a number of familiar deal...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-29T16:42:48.000Z",
-      "url": "https://www.theverge.com/gadgets/958906/best-july-4th-tech-deal-sale",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "5beb78d66fa6",
-      "title": "I changed these Android Auto settings to limit what Gemini learns about me - here's why",
-      "excerpt": "Google's AI offers a lot of convenience in your car, but you're offering up a lot of sensitive information. Here's how to put a lock on it.",
-      "source": "ZDNET",
-      "category": "AI",
-      "publishedAt": "2026-06-29T16:38:00.000Z",
-      "url": "https://www.zdnet.com/article/stop-gemini-from-listening-in-android-auto/"
-    },
-    {
-      "id": "3537f0ce1820",
-      "title": "TIDAL cracks down on AI music by cutting off monetization",
-      "excerpt": "In addition, TIDAL will use automated tools to remove AI-generated music that attempts to impersonate an artist or a group, the company said.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-06-29T16:29:04.000Z",
-      "url": "https://techcrunch.com/2026/06/29/tidal-cracks-down-on-ai-music-by-cutting-off-monetization/",
-      "tags": [
-        "AI",
-        "Apps",
-        "Media & Entertainment",
-        "ai music",
-        "Music",
-        "streaming music"
-      ]
-    },
-    {
-      "id": "d65fb3c703ae",
-      "title": "Ask an AI expert: What exactly is the full stack?",
-      "excerpt": "A Google expert explains what it means to take a full-stack approach to AI and why it’s been the foundation of our AI work for so long.",
-      "source": "Google AI Blog",
-      "category": "AI",
-      "publishedAt": "2026-06-29T16:00:00.000Z",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/full-stack-ai-explainer/",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Full_Stack.max-600x600.format-webp.webp",
-      "tags": [
-        "Developer tools",
-        "AI"
-      ]
-    },
-    {
-      "id": "2b3974e7d8a3",
-      "title": "These camera-free smart glasses made me feel like Tony Stark",
-      "excerpt": "Xgimi, the Chinese company known for its all-in-one smart projectors, is expanding its portfolio with a new line of screen-equipped smart glasses that first debuted at CES 2026. Unlike AR glasses from companies like M...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-29T15:16:24.000Z",
-      "url": "https://www.theverge.com/tech/957933/xgimi-memomind-one-ai-smart-glasses-kickstarter-hands-on",
-      "tags": [
-        "Deals",
-        "Gadgets",
-        "Hands-on",
-        "Reviews",
-        "Tech",
-        "Verge Shopping"
-      ]
-    },
-    {
-      "id": "d95370e6c36f",
-      "title": "Supreme Court allows firing of FTC commissioners, ends agency independence",
-      "excerpt": "The Supreme Court just placed once-independent agencies more firmly under presidential control. The court ruled in Slaughter v. Trump with a 6-3 vote that President Donald Trump had the authority to fire the Federal T...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-06-29T15:10:45.000Z",
-      "url": "https://www.theverge.com/policy/958974/supreme-court-slaughter-trump-decision-ftc-agency-independence",
-      "tags": [
-        "News",
-        "Policy",
-        "Politics"
+        "Research"
       ]
     }
   ]
