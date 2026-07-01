@@ -7,21 +7,36 @@ import {
   getNewsReadTime,
   getRelatedNewsPosts,
   newsGeneratedAt,
+  type NewsArticleSection,
+  type NewsArticleSubsection,
 } from "@/lib/news";
 import { absoluteUrl, createSeo, siteConfig } from "@/lib/seo";
 
 function getBlogRouteHead(slug: string) {
   const post = getNewsPost(slug);
+  const keywords = post
+    ? [
+        post.focusKeyword,
+        post.title,
+        post.category,
+        post.source,
+        ...post.tags,
+        ...(post.secondaryKeywords ?? []),
+        ...(post.longTailKeywords ?? []),
+      ].filter((keyword): keyword is string => Boolean(keyword))
+    : ["AI blog", "IT blog"];
 
   return createSeo({
-    title: post ? `${post.title} | AItouchSolutions Blog` : "Blog Article | AItouchSolutions",
-    description: post ? post.excerpt : "Read AI and IT blog details from AItouchSolutions.",
+    title: post
+      ? post.seoTitle || `${post.title} | AItouchSolutions Blog`
+      : "Blog Article | AItouchSolutions",
+    description: post
+      ? post.metaDescription || post.excerpt
+      : "Read AI and IT blog details from AItouchSolutions.",
     path: post ? `/blog/${post.slug}` : `/blog/${slug}`,
     image: post?.image,
     type: "article",
-    keywords: post
-      ? [post.title, post.category, post.source, ...post.tags]
-      : ["AI blog", "IT blog"],
+    keywords,
   });
 }
 
@@ -62,12 +77,12 @@ function BlogDetailPage() {
   const relatedPosts = getRelatedNewsPosts(post, 3);
   const articleJsonLd = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": post.contentType === "pillar" ? "Article" : "BlogPosting",
     headline: post.title,
     description: post.excerpt,
     image: [absoluteUrl(post.image)],
     datePublished: post.publishedAt,
-    dateModified: newsGeneratedAt ?? post.publishedAt,
+    dateModified: post.updatedAt ?? newsGeneratedAt ?? post.publishedAt,
     author: {
       "@type": "Organization",
       name: post.author,
@@ -85,6 +100,21 @@ function BlogDetailPage() {
     keywords: post.tags.join(", "),
     articleSection: post.category,
   };
+  const faqJsonLd =
+    post.faq && post.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: post.faq.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer,
+            },
+          })),
+        }
+      : null;
 
   return (
     <>
@@ -94,6 +124,14 @@ function BlogDetailPage() {
           __html: JSON.stringify(articleJsonLd).replace(/</g, "\\u003c"),
         }}
       />
+      {faqJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
+      ) : null}
 
       <section className="pt-32 pb-12 lg:pt-44 lg:pb-16">
         <div className="max-w-[1200px] mx-auto px-6 lg:px-10">
@@ -147,7 +185,10 @@ function BlogDetailPage() {
                   { label: "Source", value: post.source },
                   { label: "Author", value: post.author },
                   { label: "Category", value: post.category },
-                  { label: "Stored", value: "JSON article" },
+                  {
+                    label: "Stored",
+                    value: post.contentType === "pillar" ? "Pillar guide" : "JSON article",
+                  },
                 ].map((item) => (
                   <div key={item.label} className="bg-ink p-5">
                     <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
@@ -183,24 +224,49 @@ function BlogDetailPage() {
             <div className="space-y-12">
               {post.content.map((section, index) => (
                 <Reveal key={section.heading} delay={index % 4}>
-                  <section>
-                    <h2 className="mb-5 font-display text-3xl font-bold tracking-tight lg:text-4xl">
-                      {section.heading}
-                    </h2>
-                    <div className="space-y-5">
-                      {section.body.map((paragraph) => (
-                        <p
-                          key={paragraph}
-                          className="text-base leading-8 text-muted-foreground lg:text-lg"
-                        >
-                          {paragraph}
-                        </p>
-                      ))}
-                    </div>
-                  </section>
+                  <ArticleSection section={section} />
                 </Reveal>
               ))}
             </div>
+
+            {post.faq && post.faq.length > 0 ? (
+              <Reveal>
+                <section className="mt-14 border-t border-border pt-12">
+                  <h2 className="mb-7 font-display text-3xl font-bold tracking-tight lg:text-4xl">
+                    Frequently Asked Questions
+                  </h2>
+                  <div className="space-y-6">
+                    {post.faq.map((faq) => (
+                      <div key={faq.question}>
+                        <h3 className="mb-2 font-display text-xl font-bold leading-tight">
+                          {faq.question}
+                        </h3>
+                        <p className="text-base leading-8 text-muted-foreground lg:text-lg">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              </Reveal>
+            ) : null}
+
+            {post.cta ? (
+              <Reveal>
+                <div className="mt-14 border-l-2 border-orange bg-ink p-6 lg:p-8">
+                  <p className="mb-5 text-base leading-8 text-muted-foreground lg:text-lg">
+                    {post.cta.text}
+                  </p>
+                  <a
+                    href={post.cta.href}
+                    className="inline-flex items-center gap-2 rounded-md bg-teal px-5 py-3 text-xs font-bold uppercase tracking-[0.18em] text-ink"
+                  >
+                    {post.cta.label}
+                    <ArrowRight className="h-4 w-4" />
+                  </a>
+                </div>
+              </Reveal>
+            ) : null}
           </article>
 
           <aside className="space-y-6 lg:sticky lg:top-28 lg:self-start">
@@ -230,8 +296,9 @@ function BlogDetailPage() {
                   <p className="font-mono text-[10px] uppercase tracking-[0.25em]">Editorial</p>
                 </div>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  This brief is stored and rendered by AItouchSolutions with internal routes, so
-                  readers stay on the site while search engines can index the detail page.
+                  {post.contentType === "pillar"
+                    ? "This editorial guide is rendered with internal routes, article schema, FAQ schema, tags, and metadata for search visibility."
+                    : "This brief is stored and rendered by AItouchSolutions with internal routes, so readers stay on the site while search engines can index the detail page."}
                 </p>
               </div>
             </Reveal>
@@ -277,5 +344,122 @@ function BlogDetailPage() {
         </section>
       ) : null}
     </>
+  );
+}
+
+function ArticleSection({ section }: { section: NewsArticleSection }) {
+  return (
+    <section>
+      <h2 className="mb-5 font-display text-3xl font-bold tracking-tight lg:text-4xl">
+        {section.heading}
+      </h2>
+      <ArticleBody body={section.body} />
+      <ArticleList items={section.items} ordered={section.ordered} />
+      {section.table ? <ArticleTable table={section.table} /> : null}
+      {section.subsections && section.subsections.length > 0 ? (
+        <div className="mt-8 space-y-8">
+          {section.subsections.map((subsection) => (
+            <ArticleSubsection key={subsection.heading} subsection={subsection} />
+          ))}
+        </div>
+      ) : null}
+    </section>
+  );
+}
+
+function ArticleSubsection({ subsection }: { subsection: NewsArticleSubsection }) {
+  return (
+    <section>
+      <h3 className="mb-3 font-display text-2xl font-bold leading-tight tracking-tight">
+        {subsection.heading}
+      </h3>
+      <ArticleBody body={subsection.body} />
+      <ArticleList items={subsection.items} ordered={subsection.ordered} />
+    </section>
+  );
+}
+
+function ArticleBody({ body }: { body?: string[] }) {
+  if (!body || body.length === 0) return null;
+
+  return (
+    <div className="space-y-5">
+      {body.map((paragraph, index) => (
+        <p
+          key={`${paragraph}-${index}`}
+          className="text-base leading-8 text-muted-foreground lg:text-lg"
+        >
+          {paragraph}
+        </p>
+      ))}
+    </div>
+  );
+}
+
+function ArticleList({ items, ordered }: { items?: string[]; ordered?: boolean }) {
+  if (!items || items.length === 0) return null;
+
+  const className = "mt-5 space-y-3 pl-5 text-base leading-8 text-muted-foreground lg:text-lg";
+
+  if (ordered) {
+    return (
+      <ol className={`${className} list-decimal`}>
+        {items.map((item, index) => (
+          <li key={`${item}-${index}`} className="pl-2">
+            {item}
+          </li>
+        ))}
+      </ol>
+    );
+  }
+
+  return (
+    <ul className={`${className} list-disc marker:text-teal`}>
+      {items.map((item, index) => (
+        <li key={`${item}-${index}`} className="pl-2">
+          {item}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function ArticleTable({ table }: { table: NewsArticleSection["table"] }) {
+  if (!table) return null;
+
+  return (
+    <div className="mt-7 overflow-x-auto rounded-md border border-border bg-ink">
+      <table className="min-w-[760px] w-full border-collapse text-left text-sm">
+        <thead>
+          <tr className="border-b border-border">
+            {table.columns.map((column) => (
+              <th
+                key={column}
+                className="px-4 py-3 font-mono text-[10px] uppercase tracking-[0.2em] text-teal"
+              >
+                {column}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {table.rows.map((row, rowIndex) => (
+            <tr
+              key={`${row.join("-")}-${rowIndex}`}
+              className="border-b border-border last:border-b-0"
+            >
+              {row.map((cell, cellIndex) => (
+                <td
+                  key={`${cell}-${cellIndex}`}
+                  className="px-4 py-3 leading-relaxed text-muted-foreground"
+                >
+                  {cell}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }

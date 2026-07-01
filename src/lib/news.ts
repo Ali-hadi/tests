@@ -1,27 +1,65 @@
 import newsData from "@/data/news.json";
+import editorialData from "@/data/editorial-posts.json";
 
 export type NewsCategory = "AI" | "IT";
 
+export type NewsArticleTable = {
+  columns: string[];
+  rows: string[][];
+};
+
+export type NewsArticleSubsection = {
+  heading: string;
+  body?: string[];
+  items?: string[];
+  ordered?: boolean;
+};
+
 export type NewsArticleSection = {
   heading: string;
-  body: string[];
+  body?: string[];
+  items?: string[];
+  ordered?: boolean;
+  subsections?: NewsArticleSubsection[];
+  table?: NewsArticleTable;
+};
+
+export type NewsFaq = {
+  question: string;
+  answer: string;
+};
+
+export type NewsCta = {
+  text: string;
+  label: string;
+  href: string;
 };
 
 export type NewsPost = {
   id: string;
   slug: string;
   title: string;
+  seoTitle?: string;
+  metaDescription?: string;
   excerpt: string;
   source: string;
   category: NewsCategory;
   publishedAt: string;
+  updatedAt?: string;
   url?: string;
   image: string;
   tags: string[];
+  focusKeyword?: string;
+  secondaryKeywords?: string[];
+  longTailKeywords?: string[];
+  searchIntent?: string;
+  contentType?: "news" | "pillar";
   author: string;
   readingTime: number;
   keyTakeaways: string[];
   content: NewsArticleSection[];
+  faq?: NewsFaq[];
+  cta?: NewsCta;
 };
 
 export type NewsSource = {
@@ -105,11 +143,25 @@ function defaultSections(post: {
 }
 
 function estimateReadTime(post: Pick<NewsPost, "title" | "excerpt" | "keyTakeaways" | "content">) {
+  function sectionText(section: NewsArticleSection): string[] {
+    return [
+      section.heading,
+      ...(section.body ?? []),
+      ...(section.items ?? []),
+      ...(section.table ? [section.table.columns.join(" "), ...section.table.rows.flat()] : []),
+      ...(section.subsections ?? []).flatMap((subsection) => [
+        subsection.heading,
+        ...(subsection.body ?? []),
+        ...(subsection.items ?? []),
+      ]),
+    ];
+  }
+
   const words = [
     post.title,
     post.excerpt,
     ...post.keyTakeaways,
-    ...post.content.flatMap((section) => [section.heading, ...section.body]),
+    ...post.content.flatMap(sectionText),
   ]
     .join(" ")
     .split(/\s+/)
@@ -118,13 +170,93 @@ function estimateReadTime(post: Pick<NewsPost, "title" | "excerpt" | "keyTakeawa
   return Math.max(2, Math.ceil(words / 190));
 }
 
-function normalizeSection(section: unknown): NewsArticleSection | null {
+function normalizeTable(value: unknown): NewsArticleTable | undefined {
+  if (!value || typeof value !== "object") return undefined;
+  const item = value as { columns?: unknown; rows?: unknown };
+  const columns = toStringArray(item.columns);
+  const rows = Array.isArray(item.rows)
+    ? item.rows
+        .map((row) => toStringArray(row))
+        .filter((row) => row.length > 0)
+        .map((row) => columns.map((_, index) => row[index] ?? ""))
+    : [];
+
+  if (columns.length === 0 || rows.length === 0) return undefined;
+  return { columns, rows };
+}
+
+function normalizeSubsection(section: unknown): NewsArticleSubsection | null {
   if (!section || typeof section !== "object") return null;
-  const item = section as { heading?: unknown; body?: unknown };
+  const item = section as { heading?: unknown; body?: unknown; items?: unknown; ordered?: unknown };
   const heading = cleanText(String(item.heading ?? ""));
   const body = toStringArray(item.body);
-  if (!heading || body.length === 0) return null;
-  return { heading, body };
+  const items = toStringArray(item.items);
+
+  if (!heading || (body.length === 0 && items.length === 0)) return null;
+
+  return {
+    heading,
+    ...(body.length > 0 ? { body } : {}),
+    ...(items.length > 0 ? { items } : {}),
+    ...(item.ordered === true ? { ordered: true } : {}),
+  };
+}
+
+function normalizeSection(section: unknown): NewsArticleSection | null {
+  if (!section || typeof section !== "object") return null;
+  const item = section as {
+    heading?: unknown;
+    body?: unknown;
+    items?: unknown;
+    ordered?: unknown;
+    subsections?: unknown;
+    table?: unknown;
+  };
+  const heading = cleanText(String(item.heading ?? ""));
+  const body = toStringArray(item.body);
+  const items = toStringArray(item.items);
+  const subsections = Array.isArray(item.subsections)
+    ? item.subsections
+        .map(normalizeSubsection)
+        .filter((subsection): subsection is NewsArticleSubsection => Boolean(subsection))
+    : [];
+  const table = normalizeTable(item.table);
+
+  if (!heading || (body.length === 0 && items.length === 0 && subsections.length === 0 && !table)) {
+    return null;
+  }
+
+  return {
+    heading,
+    ...(body.length > 0 ? { body } : {}),
+    ...(items.length > 0 ? { items } : {}),
+    ...(item.ordered === true ? { ordered: true } : {}),
+    ...(subsections.length > 0 ? { subsections } : {}),
+    ...(table ? { table } : {}),
+  };
+}
+
+function normalizeFaq(value: unknown): NewsFaq[] {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      if (!item || typeof item !== "object") return null;
+      const faq = item as { question?: unknown; answer?: unknown };
+      const question = cleanText(String(faq.question ?? ""));
+      const answer = cleanText(String(faq.answer ?? ""));
+      return question && answer ? { question, answer } : null;
+    })
+    .filter((item): item is NewsFaq => Boolean(item));
+}
+
+function normalizeCta(value: unknown): NewsCta | undefined {
+  if (!value || typeof value !== "object") return undefined;
+  const item = value as { text?: unknown; label?: unknown; href?: unknown };
+  const text = cleanText(String(item.text ?? ""));
+  const label = cleanText(String(item.label ?? ""));
+  const href = cleanText(String(item.href ?? ""));
+  if (!text || !label || !href) return undefined;
+  return { text, label, href };
 }
 
 function normalizePost(rawPost: unknown): NewsPost {
@@ -138,6 +270,7 @@ function normalizePost(rawPost: unknown): NewsPost {
     source: cleanText(raw.source ?? "AItouchSolutions"),
     category,
     publishedAt: raw.publishedAt ?? new Date(0).toISOString(),
+    updatedAt: raw.updatedAt,
     url: raw.url,
     image: raw.image || fallbackImage,
     tags: tags.length > 0 ? tags : [category],
@@ -150,9 +283,19 @@ function normalizePost(rawPost: unknown): NewsPost {
           .filter((section): section is NewsArticleSection => Boolean(section))
       : defaultSections(base);
   const keyTakeaways = toStringArray(raw.keyTakeaways);
+  const secondaryKeywords = toStringArray(raw.secondaryKeywords);
+  const longTailKeywords = toStringArray(raw.longTailKeywords);
+  const faq = normalizeFaq(raw.faq);
   const post = {
     ...base,
     slug: postSlug({ id: base.id, slug: raw.slug, title: base.title }),
+    seoTitle: cleanText(raw.seoTitle ?? ""),
+    metaDescription: sentence(raw.metaDescription ?? ""),
+    focusKeyword: cleanText(raw.focusKeyword ?? ""),
+    searchIntent: cleanText(raw.searchIntent ?? ""),
+    secondaryKeywords,
+    longTailKeywords,
+    contentType: raw.contentType === "pillar" ? "pillar" : "news",
     keyTakeaways:
       keyTakeaways.length > 0
         ? keyTakeaways
@@ -161,6 +304,8 @@ function normalizePost(rawPost: unknown): NewsPost {
             "The brief stays internal, so readers can review it without being redirected.",
           ],
     content: content.length > 0 ? content : defaultSections(base),
+    faq: faq.length > 0 ? faq : undefined,
+    cta: normalizeCta(raw.cta),
     readingTime: Number.isFinite(raw.readingTime) ? Number(raw.readingTime) : 0,
   };
 
@@ -172,7 +317,10 @@ function normalizePost(rawPost: unknown): NewsPost {
 
 export const newsGeneratedAt = newsData.generatedAt as string | undefined;
 
-export const newsPosts = [...(newsData.posts as unknown[])]
+export const newsPosts = [
+  ...((editorialData as { posts?: unknown[] }).posts ?? []),
+  ...(newsData.posts as unknown[]),
+]
   .map(normalizePost)
   .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 

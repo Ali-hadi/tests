@@ -186,7 +186,7 @@ export function AiDetectorPage() {
       <ToolkitSection />
       <CtaSection />
       <FaqSection />
-      <EthicalUsePolicySection />
+      {/* <EthicalUsePolicySection /> */}
     </div>
   );
 }

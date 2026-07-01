@@ -6,6 +6,7 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, "..");
 const srcNewsPath = path.join(rootDir, "src", "data", "news.json");
+const editorialPostsPath = path.join(rootDir, "src", "data", "editorial-posts.json");
 const publicNewsPath = path.join(rootDir, "public", "data", "news.json");
 const sitemapPath = path.join(rootDir, "public", "sitemap.xml");
 const maxPosts = Number.parseInt(process.env.NEWS_MAX_POSTS ?? "48", 10);
@@ -484,6 +485,15 @@ async function readExisting() {
   }
 }
 
+async function readEditorialPosts() {
+  try {
+    const data = JSON.parse(await readFile(editorialPostsPath, "utf8"));
+    return Array.isArray(data.posts) ? data.posts.map(hydratePost) : [];
+  } catch {
+    return [];
+  }
+}
+
 function mergePosts(fetchedPosts, existingPosts) {
   const byUrl = new Map();
 
@@ -536,6 +546,7 @@ function buildSitemap(posts, generatedAt) {
 
 async function main() {
   const existing = await readExisting();
+  const editorialPosts = await readEditorialPosts();
   const fetchedPosts = [];
   const generatedAt = new Date().toISOString();
 
@@ -566,14 +577,18 @@ async function main() {
   const json = `${JSON.stringify(output, null, 2)}\n`;
   await writeFile(srcNewsPath, json, "utf8");
   await writeFile(publicNewsPath, json, "utf8");
-  await writeFile(sitemapPath, buildSitemap(output.posts, generatedAt), "utf8");
+  await writeFile(
+    sitemapPath,
+    buildSitemap([...editorialPosts, ...output.posts], generatedAt),
+    "utf8",
+  );
 
   console.log(
     `Stored ${output.posts.length} AI/IT posts in ${path.relative(rootDir, srcNewsPath)}`,
   );
   console.log(`Published JSON copy at ${path.relative(rootDir, publicNewsPath)}`);
   console.log(
-    `Indexed ${output.posts.length} blog detail URLs in ${path.relative(rootDir, sitemapPath)}`,
+    `Indexed ${editorialPosts.length + output.posts.length} blog detail URLs in ${path.relative(rootDir, sitemapPath)}`,
   );
 }
 

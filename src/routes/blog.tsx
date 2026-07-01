@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, Outlet, useChildMatches } from "@tanstack/react-router";
 import { ArrowRight, Clock3 } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import {
@@ -12,18 +12,27 @@ import {
 import { createSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/blog")({
-  head: () =>
-    createSeo({
-      title: "AI & IT Blog News | AItouchSolutions",
+  head: ({ matches }) => {
+    const currentMatch = matches[matches.length - 1];
+    if (currentMatch?.fullPath !== "/blog") return {};
+
+    return createSeo({
+      title: "AI & IT Blog | AItouchSolutions",
       description:
-        "Read AI and IT blog briefs stored in the AItouchSolutions JSON feed, with internal detail pages, images, tags, and indexed article links.",
+        "Read AItouchSolutions AI and IT guides, pillar articles, and technology briefs with internal detail pages, images, tags, and indexed article links.",
       path: "/blog",
-      keywords: ["AI news", "IT news", "technology blog", "software news", "AI blog"],
-    }),
-  component: BlogPage,
+      keywords: ["AI blog", "IT blog", "technology guides", "software news", "AI articles"],
+    });
+  },
+  component: BlogRoutePage,
 });
 
-function BlogPage() {
+function BlogRoutePage() {
+  const childMatches = useChildMatches();
+  return childMatches.length ? <Outlet /> : <BlogIndexPage />;
+}
+
+function BlogIndexPage() {
   const updatedAt = newsGeneratedAt ? formatNewsDate(newsGeneratedAt) : "Pending";
   const featuredPost = newsPosts[0];
   const remainingPosts = featuredPost ? newsPosts.slice(1) : newsPosts;
@@ -33,9 +42,7 @@ function BlogPage() {
       <section className="pt-40 pb-16 lg:pt-52 lg:pb-24">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
           <Reveal>
-            <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-teal mb-8">
-              Blog News
-            </p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-teal mb-8">Blog</p>
             <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-end">
               <div className="lg:col-span-8">
                 <h1 className="font-display max-w-5xl text-6xl font-bold leading-[0.9] tracking-[-0.04em] md:text-8xl lg:text-9xl">
@@ -44,8 +51,9 @@ function BlogPage() {
               </div>
               <div className="lg:col-span-4 lg:pb-4">
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  Internal AItouchSolutions briefs for AI, software, cloud, security, devices, and
-                  product engineering news. Every story is stored in JSON and opens on this site.
+                  AItouchSolutions guides and briefs for AI, software, cloud, security, automation,
+                  and product engineering. Every article opens on this site with its own indexed
+                  detail page.
                 </p>
               </div>
             </div>

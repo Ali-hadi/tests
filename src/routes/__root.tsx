@@ -14,6 +14,29 @@ import { Footer } from "@/components/site/Footer";
 import { Jarvis } from "@/components/site/Jarvis";
 import { organizationJsonLd, siteConfig } from "@/lib/seo";
 
+const googleAnalyticsId = "G-KLM7KSPV8R";
+const googleAnalyticsSnippet = `
+window.dataLayer = window.dataLayer || [];
+function gtag(){window.dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", "${googleAnalyticsId}");
+`.trim();
+
+function GoogleAnalytics() {
+  if (!import.meta.env.PROD) return null;
+
+  return (
+    <>
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`} />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: googleAnalyticsSnippet,
+        }}
+      />
+    </>
+  );
+}
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -89,6 +112,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300..800&family=JetBrains+Mono:wght@400..700&family=Manrope:wght@300..800&family=Space+Grotesk:wght@300..700&display=swap",
       },
+      { rel: "preconnect", href: "https://www.googletagmanager.com" },
       { rel: "stylesheet", href: appCss },
       { rel: "icon", type: "image/png", href: "/favicon.png" },
       { rel: "shortcut icon", type: "image/png", href: "/favicon.png" },
@@ -107,6 +131,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
     <html lang="en" className="dark">
       <head>
         <HeadContent />
+        <GoogleAnalytics />
         <script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="NNFzdIesb8QG3anhp9+4Sg"
