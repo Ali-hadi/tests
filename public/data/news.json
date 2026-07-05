@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T03:34:39.684Z",
+  "generatedAt": "2026-07-05T13:42:37.305Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,170 @@
     }
   ],
   "posts": [
+    {
+      "id": "51f0c4620a58",
+      "title": "Vizio accidentally made the best dumb TV on the market",
+      "excerpt": "When I first started testing Vizio's 65-inch Mini LED Quantum TV, I thought the big story was that Vizio was back and that it had a quantum-dot TV for under $398 - the cheapest on the market. Vizio's been pretty quiet...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-07-05T13:00:00.000Z",
+      "url": "https://www.theverge.com/tech/960916/vizio-mini-led-quantum-tv-review",
+      "image": "/og-image.jpg",
+      "slug": "vizio-accidentally-made-the-best-dumb-tv-on-the-market-51f0c4620a58",
+      "tags": [
+        "Gadgets",
+        "Reviews",
+        "Tech",
+        "TVs",
+        "IT"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Verge is tracking this as a IT signal around Gadgets, Reviews, Tech.",
+        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "When I first started testing Vizio's 65-inch Mini LED Quantum TV, I thought the big story was that Vizio was back and that it had a quantum-dot TV for under $398 - the cheapest on the market. Vizio's been pretty quiet...",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
+            "The useful signal is the connection between Gadgets, Reviews, Tech, TVs and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Verge, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theverge.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4a0ccb50bebe",
+      "title": "Xbox is a disaster",
+      "excerpt": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the bleak state of the video game industry, follow Andrew Webster. The Stepback arrives in our subscribers'...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-07-05T12:00:00.000Z",
+      "url": "https://www.theverge.com/column/960600/xbox-is-a-disaster",
+      "image": "/og-image.jpg",
+      "slug": "xbox-is-a-disaster-4a0ccb50bebe",
+      "tags": [
+        "Column",
+        "Entertainment",
+        "Gaming",
+        "Microsoft",
+        "Tech",
+        "The Stepback",
+        "IT"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Verge is tracking this as a IT signal around Column, Entertainment, Gaming.",
+        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the bleak state of the video game industry, follow Andrew Webster. The Stepback arrives in our subscribers'...",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
+            "The useful signal is the connection between Column, Entertainment, Gaming, Microsoft and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Verge, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theverge.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f2214687c4d4",
+      "title": "C programmers commit fresh crimes against readability",
+      "excerpt": "Prepare to be befuddled and bamboozled – and probably bewitched.",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-07-05T12:00:00.000Z",
+      "url": "https://www.theregister.com/offbeat/2026/07/05/c-programmers-commit-fresh-crimes-against-readability/5265981",
+      "image": "https://image.theregister.com/?imageId=5266043&width=800",
+      "slug": "c-programmers-commit-fresh-crimes-against-readability-f2214687c4d4",
+      "tags": [
+        "offbeat",
+        "IT"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Register is tracking this as a IT signal around offbeat, IT.",
+        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "Prepare to be befuddled and bamboozled – and probably bewitched.",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
+            "The useful signal is the connection between offbeat, IT and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
     {
       "id": "8573d500219a",
       "title": "New Google commercial imagines a Declaration of Independence written with help from AI",
@@ -2436,162 +2600,6 @@
           "body": [
             "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
             "The useful signal is the connection between databases, IT and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "1191baacf280",
-      "title": "User swore hacker called General Failure had invaded his PC",
-      "excerpt": "Maybe they were looking for Private Data.",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-07-03T06:30:00.000Z",
-      "url": "https://www.theregister.com/personal-tech/2026/07/03/user-swore-hacker-called-general-failure-had-invaded-his-pc/5265548",
-      "image": "https://image.theregister.com/?imageId=5265570&width=800",
-      "slug": "user-swore-hacker-called-general-failure-had-invaded-his-pc-1191baacf280",
-      "tags": [
-        "personal tech",
-        "IT"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "The Register is tracking this as a IT signal around personal tech, IT.",
-        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "Maybe they were looking for Private Data.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
-            "The useful signal is the connection between personal tech, IT and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "e5dbecc69acb",
-      "title": "Failed blockchain project ends with big fine for fibs about it being on track",
-      "excerpt": "A final humiliation for Australia’s Securities Exchange and its attempts to run a bourse on distributed ledgers.",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-07-03T04:35:52.000Z",
-      "url": "https://www.theregister.com/software/2026/07/03/failed-blockchain-project-ends-with-big-fine-for-fibs-about-it-being-on-track/5266297",
-      "image": "https://image.theregister.com/?imageId=223353&width=800",
-      "slug": "failed-blockchain-project-ends-with-big-fine-for-fibs-about-it-being-on-track-e5dbecc69acb",
-      "tags": [
-        "software",
-        "IT"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "The Register is tracking this as a IT signal around software, IT.",
-        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "A final humiliation for Australia’s Securities Exchange and its attempts to run a bourse on distributed ledgers.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
-            "The useful signal is the connection between software, IT and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "39cdbdf52b82",
-      "title": "Amazon’s Mechanical Turk to stop accepting new customers – and not even AI can save it",
-      "excerpt": "Workers who use OG crowdsourcing platform say AWS is closing accounts.",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-07-03T02:22:36.000Z",
-      "url": "https://www.theregister.com/off-prem/2026/07/03/amazons-mechanical-turk-to-stop-accepting-new-customers-and-not-even-ai-can-save-it/5266274",
-      "image": "https://image.theregister.com/?imageId=5266294&width=800",
-      "slug": "amazon-s-mechanical-turk-to-stop-accepting-new-customers-and-not-even-ai-can-save-39cdbdf52b82",
-      "tags": [
-        "off-prem",
-        "AI"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "The Register is tracking this as a AI signal around off-prem, AI.",
-        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "Workers who use OG crowdsourcing platform say AWS is closing accounts.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
-            "The useful signal is the connection between off-prem, AI and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
           ]
         },
         {
