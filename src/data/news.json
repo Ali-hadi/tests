@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T01:49:35.070Z",
+  "generatedAt": "2026-08-09T12:52:51.428Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -52,6 +52,110 @@
   ],
   "posts": [
     {
+      "id": "7c16bfed4c64",
+      "title": "AI detectors are creating a new era of distrust",
+      "excerpt": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more news about how AI is changing our daily lives, follow Emma Roth. The Stepback arrives in our subscribers' inbox...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-08-09T12:00:00.000Z",
+      "url": "https://www.theverge.com/column/976690/ai-writing-detectors-suspicion",
+      "image": "/og-image.jpg",
+      "slug": "ai-detectors-are-creating-a-new-era-of-distrust-7c16bfed4c64",
+      "tags": [
+        "AI",
+        "Column",
+        "The Stepback"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Verge is tracking this as a AI signal around AI, Column, The Stepback.",
+        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more news about how AI is changing our daily lives, follow Emma Roth. The Stepback arrives in our subscribers' inbox...",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
+            "The useful signal is the connection between AI, Column, The Stepback and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Verge, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theverge.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3ce3b3725ccd",
+      "title": "Made by Google 2026: How to watch and what to expect from at the Pixel 11 event",
+      "excerpt": "Google is set to announce its Pixel 11 series phones - here's what we know.",
+      "source": "ZDNET",
+      "category": "IT",
+      "publishedAt": "2026-08-09T10:15:22.000Z",
+      "url": "https://www.zdnet.com/article/what-to-expect-rumors-made-by-google-2026/",
+      "image": "/og-image.jpg",
+      "slug": "made-by-google-2026-how-to-watch-and-what-to-expect-from-at-the-pixel-11-event-3ce3b3725ccd",
+      "tags": [
+        "IT"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "ZDNET is tracking this as a IT signal around IT.",
+        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "Google is set to announce its Pixel 11 series phones - here's what we know.",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
+            "The useful signal is the connection between IT and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from ZDNET, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from zdnet.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
       "id": "2b6c4338169a",
       "title": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
       "excerpt": "As part of a planned Texas data center, Amazon is investing in an on-site power plant that could reportedly become the largest source of climate pollution in the United States.",
@@ -99,6 +203,62 @@
           "heading": "AItouchSolutions Take",
           "body": [
             "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from techcrunch.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cf74cdee3f08",
+      "title": "X replaces its revenue-sharing program with ‘Original Content Rewards’",
+      "excerpt": "X is ending its controversial revenue-sharing program for content creators, which has seen numerous revisions under Elon Musk's reign. In its place, it's launching a new Original Content Rewards program on September 8...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-08-08T21:15:12.000Z",
+      "url": "https://www.theverge.com/tech/977143/x-revenue-sharing-original-content-rewards",
+      "image": "/og-image.jpg",
+      "slug": "x-replaces-its-revenue-sharing-program-with-original-content-rewards-cf74cdee3f08",
+      "tags": [
+        "Creators",
+        "News",
+        "Social Media",
+        "Tech",
+        "Twitter - X",
+        "IT"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Verge is tracking this as a IT signal around Creators, News, Social Media.",
+        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "X is ending its controversial revenue-sharing program for content creators, which has seen numerous revisions under Elon Musk's reign. In its place, it's launching a new Original Content Rewards program on September 8...",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
+            "The useful signal is the connection between Creators, News, Social Media, Tech and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Verge, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theverge.com.",
             "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
           ]
         }
@@ -2436,163 +2596,6 @@
           "heading": "AItouchSolutions Take",
           "body": [
             "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from zdnet.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "5d2f329784e3",
-      "title": "New Mexico court orders Meta to pay additional $567M in child safety case",
-      "excerpt": "Meta's total fine has racked up to $942 million in this case.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-08-07T11:40:37.000Z",
-      "url": "https://techcrunch.com/2026/08/07/new-mexico-court-orders-meta-to-pay-additional-567m-in-child-safety-case/",
-      "image": "/og-image.jpg",
-      "slug": "new-mexico-court-orders-meta-to-pay-additional-567m-in-child-safety-case-5d2f329784e3",
-      "tags": [
-        "AI",
-        "child safety",
-        "Meta"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "TechCrunch AI is tracking this as a AI signal around AI, child safety, Meta.",
-        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "Meta's total fine has racked up to $942 million in this case.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
-            "The useful signal is the connection between AI, child safety, Meta and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from TechCrunch AI, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from techcrunch.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "d7c8866f0fb7",
-      "title": "Attacker phished way into US defense supplier's Microsoft 365 account",
-      "excerpt": "Intruder gained access to engineering files and potentially export-controlled technical data.",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-08-07T11:32:00.000Z",
-      "url": "https://www.theregister.com/security/2026/08/07/ieh-corp-says-phished-staffer-opened-gates-to-company-m365/5284523",
-      "image": "https://image.theregister.com/?imageId=5284669&width=800",
-      "slug": "attacker-phished-way-into-us-defense-supplier-s-microsoft-365-account-d7c8866f0fb7",
-      "tags": [
-        "security",
-        "IT"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "The Register is tracking this as a IT signal around security, IT.",
-        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "Intruder gained access to engineering files and potentially export-controlled technical data.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
-            "The useful signal is the connection between security, IT and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "08201652c2df",
-      "title": "Intrusion at US healthcare software provider puts 3.8M people's data at risk",
-      "excerpt": "Unlimited Technology Systems says names, Social Security numbers, diagnoses, and insurance details may have been swiped.",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-08-07T10:45:00.000Z",
-      "url": "https://www.theregister.com/cyber-crime/2026/08/07/intrusion-at-us-healthcare-software-provider-puts-38m-peoples-data-at-risk/5284609",
-      "image": "https://image.theregister.com/?imageId=5276624&width=800",
-      "slug": "intrusion-at-us-healthcare-software-provider-puts-3-8m-people-s-data-at-risk-08201652c2df",
-      "tags": [
-        "cyber-crime",
-        "IT"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "The Register is tracking this as a IT signal around cyber-crime, IT.",
-        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "Unlimited Technology Systems says names, Social Security numbers, diagnoses, and insurance details may have been swiped.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
-            "The useful signal is the connection between cyber-crime, IT and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
             "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
           ]
         }
