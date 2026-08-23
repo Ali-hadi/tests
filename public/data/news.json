@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T01:23:48.955Z",
+  "generatedAt": "2026-08-23T12:41:21.428Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,58 @@
     }
   ],
   "posts": [
+    {
+      "id": "20dffac77ac6",
+      "title": "An ultra-rare piece of Microsoft history could be hiding on your shelf",
+      "excerpt": "Red Tetris stickers and shirtless Windows 95 tots - accidental collectibles gathering dust.",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-08-23T12:32:00.000Z",
+      "url": "https://www.theregister.com/offbeat/2026/08/23/an-ultra-rare-piece-of-microsoft-history-could-be-hiding-on-your-shelf/5291118",
+      "image": "https://image.theregister.com/?imageId=1682578&width=800",
+      "slug": "an-ultra-rare-piece-of-microsoft-history-could-be-hiding-on-your-shelf-20dffac77ac6",
+      "tags": [
+        "offbeat",
+        "IT"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Register is tracking this as a IT signal around offbeat, IT.",
+        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "Red Tetris stickers and shirtless Windows 95 tots - accidental collectibles gathering dust.",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
+            "The useful signal is the connection between offbeat, IT and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
     {
       "id": "6024a826f303",
       "title": "Harvard’s $699 startup bootcamp offers AI avatars of its instructors",
@@ -2523,59 +2575,6 @@
           "heading": "AItouchSolutions Take",
           "body": [
             "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "897ae96f35ff",
-      "title": "The DOJ is investigating a16z. What does this mean for venture capital?",
-      "excerpt": "Andreessen Horowitz has two partners sitting on the boards of companies that now compete with each other: Ben Horowitz at Databricks and Martin Casado at Fivetran. Nothing too scandalous on the surface, except the Dep...",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-08-21T14:00:00.000Z",
-      "url": "https://techcrunch.com/podcast/the-doj-is-investigating-a16z-what-does-this-mean-for-venture-capital/",
-      "image": "/og-image.jpg",
-      "slug": "the-doj-is-investigating-a16z-what-does-this-mean-for-venture-capital-897ae96f35ff",
-      "tags": [
-        "Startups",
-        "Venture",
-        "AI"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "TechCrunch AI is tracking this as a AI signal around Startups, Venture, AI.",
-        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "Andreessen Horowitz has two partners sitting on the boards of companies that now compete with each other: Ben Horowitz at Databricks and Martin Casado at Fivetran. Nothing too scandalous on the surface, except the Dep...",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
-            "The useful signal is the connection between Startups, Venture, AI and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from TechCrunch AI, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from techcrunch.com.",
             "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
           ]
         }
