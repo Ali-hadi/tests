@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T21:47:13.568Z",
+  "generatedAt": "2026-08-29T06:04:05.314Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,115 @@
     }
   ],
   "posts": [
+    {
+      "id": "0f7298102c93",
+      "title": "Google further buries search results under AI mode",
+      "excerpt": "Google is now automatically expanding its AI search summaries at the top of the results page for some searches, as reported by Search Engine Roundtable. The change, when it kicks in, pushes the typical list of links f...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-08-28T22:48:11.000Z",
+      "url": "https://www.theverge.com/tech/986364/google-search-ai-overviews-auto-expand",
+      "image": "/og-image.jpg",
+      "slug": "google-further-buries-search-results-under-ai-mode-0f7298102c93",
+      "tags": [
+        "Google",
+        "News",
+        "Tech",
+        "AI"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Verge is tracking this as a AI signal around Google, News, Tech.",
+        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "Google is now automatically expanding its AI search summaries at the top of the results page for some searches, as reported by Search Engine Roundtable. The change, when it kicks in, pushes the typical list of links f...",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
+            "The useful signal is the connection between Google, News, Tech, AI and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Verge, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theverge.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ed173e46c20b",
+      "title": "Xbox CEO calls Project Helix a ‘family of devices’",
+      "excerpt": "According to Xbox CEO Asha Sharma, Project Helix, which she announced in March as a codename for Microsoft's \"next generation console\" - phrasing that seemingly implied a singular device - will actually be a \"family\"...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-08-28T22:03:13.000Z",
+      "url": "https://www.theverge.com/games/986337/xbox-ceo-asha-sharma-project-helix-family-of-devices",
+      "image": "/og-image.jpg",
+      "slug": "xbox-ceo-calls-project-helix-a-family-of-devices-ed173e46c20b",
+      "tags": [
+        "Entertainment",
+        "Gaming",
+        "News",
+        "Xbox",
+        "IT"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Verge is tracking this as a IT signal around Entertainment, Gaming, News.",
+        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "According to Xbox CEO Asha Sharma, Project Helix, which she announced in March as a codename for Microsoft's \"next generation console\" - phrasing that seemingly implied a singular device - will actually be a \"family\"...",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
+            "The useful signal is the connection between Entertainment, Gaming, News, Xbox and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Verge, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theverge.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
     {
       "id": "8b749efc7a6f",
       "title": "Researcher shows how Claude Code can be tricked simply by asking it to summarize a website",
@@ -1793,6 +1902,58 @@
       ]
     },
     {
+      "id": "092c8de02e8b",
+      "title": "Our decision on Cursor following its acquisition by SpaceX",
+      "excerpt": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.",
+      "source": "OpenAI News",
+      "category": "AI",
+      "publishedAt": "2026-08-28T06:00:00.000Z",
+      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+      "image": "/og-image.jpg",
+      "slug": "our-decision-on-cursor-following-its-acquisition-by-spacex-092c8de02e8b",
+      "tags": [
+        "Company",
+        "AI"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "OpenAI News is tracking this as a AI signal around Company, AI.",
+        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
+            "The useful signal is the connection between Company, AI and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from OpenAI News, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from openai.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
       "id": "415d1fddbe61",
       "title": "Print management outfit PaperCut is under 0-day attack, and it’s drawing customers’ blood",
       "excerpt": "The fix is either an unvalidated and unofficial emergency patch or taking the server offline.",
@@ -2420,169 +2581,6 @@
           "heading": "AItouchSolutions Take",
           "body": [
             "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "d4f56c043d4a",
-      "title": "Police investigating possible forgery at AFRINIC election",
-      "excerpt": "The regional internet registry is also trying to make it easier to terminate members.",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-08-27T20:38:04.000Z",
-      "url": "https://www.theregister.com/networks/2026/08/27/police-investigating-possible-forgery-at-afrinic-election/5293100",
-      "image": "https://image.theregister.com/?imageId=5292279&width=800",
-      "slug": "police-investigating-possible-forgery-at-afrinic-election-d4f56c043d4a",
-      "tags": [
-        "networks",
-        "IT"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "The Register is tracking this as a IT signal around networks, IT.",
-        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "The regional internet registry is also trying to make it easier to terminate members.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
-            "The useful signal is the connection between networks, IT and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "438d57e3ec53",
-      "title": "GTA VI: all the news on Rockstar’s next entry in the Grand Theft Auto series",
-      "excerpt": "It’s been over a decade and two console generations since GTA V came out, and its sequel is still a work in progress. GTA VI has faced multiple delays, with developer Rockstar Games bumping back its predicted release...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-08-27T20:01:56.000Z",
-      "url": "https://www.theverge.com/23987993/gta-6-news-trailers-rockstar-games",
-      "image": "/og-image.jpg",
-      "slug": "gta-vi-all-the-news-on-rockstar-s-next-entry-in-the-grand-theft-auto-series-438d57e3ec53",
-      "tags": [
-        "Entertainment",
-        "Gaming",
-        "News",
-        "Tech",
-        "IT"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "The Verge is tracking this as a IT signal around Entertainment, Gaming, News.",
-        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "It’s been over a decade and two console generations since GTA V came out, and its sequel is still a work in progress. GTA VI has faced multiple delays, with developer Rockstar Games bumping back its predicted release...",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
-            "The useful signal is the connection between Entertainment, Gaming, News, Tech and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from The Verge, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theverge.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "9d531c3266a9",
-      "title": "Barret Zoph, the Thinking Machines co-founder ousted before joining OpenAI, is now at Google",
-      "excerpt": "Zoph, who co-founded Thinking Machines Lab alongside Mira Murati and also served as the startup's CTO, led a brief stint at OpenAI and is now at Google.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-08-27T19:52:52.000Z",
-      "url": "https://techcrunch.com/2026/08/27/barret-zoph-the-thinking-machines-co-founder-who-defected-to-openai-is-now-at-google/",
-      "image": "/og-image.jpg",
-      "slug": "barret-zoph-the-thinking-machines-co-founder-ousted-before-joining-openai-is-now-a-9d531c3266a9",
-      "tags": [
-        "AI",
-        "Barret Zoph",
-        "Google",
-        "In Brief",
-        "OpenAI",
-        "Thinking Machines Lab"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "TechCrunch AI is tracking this as a AI signal around AI, Barret Zoph, Google.",
-        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "Zoph, who co-founded Thinking Machines Lab alongside Mira Murati and also served as the startup's CTO, led a brief stint at OpenAI and is now at Google.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
-            "The useful signal is the connection between AI, Barret Zoph, Google, In Brief and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from TechCrunch AI, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from techcrunch.com.",
             "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
           ]
         }
