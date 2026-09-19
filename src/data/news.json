@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T03:37:44.267Z",
+  "generatedAt": "2026-09-19T15:31:36.253Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,656 @@
     }
   ],
   "posts": [
+    {
+      "id": "66fb6faf12d4",
+      "title": "Gemini went rogue, hacked three companies, and Google hid it",
+      "excerpt": "In May, Gemini broke containment and hacked three different companies, but Google didn't disclose the incident until the Wall Street Journal approached the company. The hacks happened during a test of the model's cybe...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-09-19T15:25:03.000Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack",
+      "image": "/og-image.jpg",
+      "slug": "gemini-went-rogue-hacked-three-companies-and-google-hid-it-66fb6faf12d4",
+      "tags": [
+        "AI",
+        "Google",
+        "News",
+        "Security",
+        "Tech"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Verge is tracking this as a AI signal around AI, Google, News.",
+        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "In May, Gemini broke containment and hacked three different companies, but Google didn't disclose the incident until the Wall Street Journal approached the company. The hacks happened during a test of the model's cybe...",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
+            "The useful signal is the connection between AI, Google, News, Security and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Verge, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theverge.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fe6a92ce8180",
+      "title": "AI safety conversations have gotten unbelievable",
+      "excerpt": "This week two conversations about AI safety went viral that demonstrate just how hard it is to discern AI fact from fiction.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-09-19T15:00:00.000Z",
+      "url": "https://techcrunch.com/2026/09/19/ai-safety-conversations-have-gotten-unbelievable/",
+      "image": "/og-image.jpg",
+      "slug": "ai-safety-conversations-have-gotten-unbelievable-fe6a92ce8180",
+      "tags": [
+        "TC",
+        "AI",
+        "OpenAI",
+        "Anthropic",
+        "alignment"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "TechCrunch AI is tracking this as a AI signal around TC, AI, OpenAI.",
+        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "This week two conversations about AI safety went viral that demonstrate just how hard it is to discern AI fact from fiction.",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
+            "The useful signal is the connection between TC, AI, OpenAI, Anthropic and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from TechCrunch AI, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from techcrunch.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9973ec65aabe",
+      "title": "Petlibro’s new AI-powered feeder is a game changer for multi-cat homes",
+      "excerpt": "Petlibro's new Granary 2 smart feeders use a built-in scale and (on pricier models) an AI camera to track exactly how much your cat is eating and when — though the fanciest health-monitoring features will cost you an...",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-09-19T15:00:00.000Z",
+      "url": "https://techcrunch.com/2026/09/19/petlibros-new-ai-powered-feeder-is-a-game-changer-for-multi-cat-homes/",
+      "image": "/og-image.jpg",
+      "slug": "petlibro-s-new-ai-powered-feeder-is-a-game-changer-for-multi-cat-homes-9973ec65aabe",
+      "tags": [
+        "Hardware",
+        "AI",
+        "pet tech"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "TechCrunch AI is tracking this as a AI signal around Hardware, AI, pet tech.",
+        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "Petlibro's new Granary 2 smart feeders use a built-in scale and (on pricier models) an AI camera to track exactly how much your cat is eating and when — though the fanciest health-monitoring features will cost you an...",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
+            "The useful signal is the connection between Hardware, AI, pet tech and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from TechCrunch AI, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from techcrunch.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0c66b98edea6",
+      "title": "Anamanaguchi has ‘too goddamn many’ browser tabs open right now",
+      "excerpt": "Anamanaguchi, the band consisting of Peter Berkman, James DeVito, Luke Silas, and Ary Warnaar, are most known for their chiptune music. Like me, you might have first heard them in game soundtracks like 2010's Scott Pi...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-09-19T15:00:00.000Z",
+      "url": "https://www.theverge.com/entertainment/996855/anamanaguchi-anyway-yeah-i-guess-interview-music",
+      "image": "/og-image.jpg",
+      "slug": "anamanaguchi-has-too-goddamn-many-browser-tabs-open-right-now-0c66b98edea6",
+      "tags": [
+        "Entertainment",
+        "Interview",
+        "Music",
+        "Report",
+        "IT"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Verge is tracking this as a IT signal around Entertainment, Interview, Music.",
+        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "Anamanaguchi, the band consisting of Peter Berkman, James DeVito, Luke Silas, and Ary Warnaar, are most known for their chiptune music. Like me, you might have first heard them in game soundtracks like 2010's Scott Pi...",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
+            "The useful signal is the connection between Entertainment, Interview, Music, Report and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Verge, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theverge.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e56e57fc8de6",
+      "title": "The colorful, unique Hyte X50 PC case is $50 off",
+      "excerpt": "The Hyte X50 is a PC case that really stands out from the typical black box design, and it’s $50 off at the company’s site until September 21st, 2026, bringing the price down to $99.99. This attractive case supports m...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-09-19T15:00:00.000Z",
+      "url": "https://www.theverge.com/gadgets/997467/hyte-x50-pc-case-deal-sale",
+      "image": "/og-image.jpg",
+      "slug": "the-colorful-unique-hyte-x50-pc-case-is-50-off-e56e57fc8de6",
+      "tags": [
+        "Deals",
+        "Gadgets",
+        "Gaming",
+        "PC Gaming",
+        "Verge Shopping",
+        "IT"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Verge is tracking this as a IT signal around Deals, Gadgets, Gaming.",
+        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "The Hyte X50 is a PC case that really stands out from the typical black box design, and it’s $50 off at the company’s site until September 21st, 2026, bringing the price down to $99.99. This attractive case supports m...",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
+            "The useful signal is the connection between Deals, Gadgets, Gaming, PC Gaming and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Verge, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theverge.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "663f5a6aab61",
+      "title": "Agentic security is the billion-dollar challenge for some clever startup to solve",
+      "excerpt": "High time to stop kicking the security can down the road, investor tells The Reg.",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-09-19T14:25:00.000Z",
+      "url": "https://www.theregister.com/security/2026/09/19/agentic-security-is-the-billion-dollar-challenge-for-some-clever-startup-to-solve/5297546",
+      "image": "https://image.theregister.com/?imageId=5297576&width=800",
+      "slug": "agentic-security-is-the-billion-dollar-challenge-for-some-clever-startup-to-solve-663f5a6aab61",
+      "tags": [
+        "security",
+        "IT"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Register is tracking this as a IT signal around security, IT.",
+        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "High time to stop kicking the security can down the road, investor tells The Reg.",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
+            "The useful signal is the connection between security, IT and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "373f3d22cfc0",
+      "title": "Does AI need an antitrust exemption so it doesn’t kill everyone????",
+      "excerpt": "Today on Decoder, we’ve got the first of a two-part series on the future of business, and I’m talking with Jonathan Kanter, the former antitrust chief for the US Department of Justice in the Biden administration. Thes...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-09-19T14:00:00.000Z",
+      "url": "https://www.theverge.com/podcast/997382/openai-microsoft-anthropic-elon-musk-cartel-ai-competition",
+      "image": "/og-image.jpg",
+      "slug": "does-ai-need-an-antitrust-exemption-so-it-doesn-t-kill-everyone-373f3d22cfc0",
+      "tags": [
+        "AI",
+        "Antitrust",
+        "Decoder",
+        "Podcasts",
+        "Policy",
+        "Politics"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Verge is tracking this as a AI signal around AI, Antitrust, Decoder.",
+        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "Today on Decoder, we’ve got the first of a two-part series on the future of business, and I’m talking with Jonathan Kanter, the former antitrust chief for the US Department of Justice in the Biden administration. Thes...",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
+            "The useful signal is the connection between AI, Antitrust, Decoder, Podcasts and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Verge, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theverge.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4fba674367d1",
+      "title": "AI boom could leave an e-waste trail that wraps 6 times around Earth",
+      "excerpt": "Report says estimates focused on GPUs miss the mountains of power, cooling, and networking gear destined for scrap.",
+      "source": "The Register",
+      "category": "AI",
+      "publishedAt": "2026-09-19T13:30:00.000Z",
+      "url": "https://www.theregister.com/off-prem/2026/09/19/ai-boom-could-leave-an-e-waste-trail-that-wraps-6-times-around-earth/5297451",
+      "image": "https://image.theregister.com/?imageId=237024&width=800",
+      "slug": "ai-boom-could-leave-an-e-waste-trail-that-wraps-6-times-around-earth-4fba674367d1",
+      "tags": [
+        "off-prem",
+        "AI"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Register is tracking this as a AI signal around off-prem, AI.",
+        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "Report says estimates focused on GPUs miss the mountains of power, cooling, and networking gear destined for scrap.",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
+            "The useful signal is the connection between off-prem, AI and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17c3769d3608",
+      "title": "Vals, backed by Andreessen Horowitz, is looking to become the gold standard for AI benchmarking",
+      "excerpt": "Vals AI is hoping to make AI benchmarking a more neutral and trustworthy resource in a world increasingly inundated by AI models.",
+      "source": "TechCrunch AI",
+      "category": "AI",
+      "publishedAt": "2026-09-19T13:00:00.000Z",
+      "url": "https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking/",
+      "image": "/og-image.jpg",
+      "slug": "vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-b-17c3769d3608",
+      "tags": [
+        "AI",
+        "Andreessen Horowitz",
+        "Startups"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "TechCrunch AI is tracking this as a AI signal around AI, Andreessen Horowitz, Startups.",
+        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "Vals AI is hoping to make AI benchmarking a more neutral and trustworthy resource in a world increasingly inundated by AI models.",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
+            "The useful signal is the connection between AI, Andreessen Horowitz, Startups and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from TechCrunch AI, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from techcrunch.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "68172c845ac1",
+      "title": "It’s not just LG. Every TV company is spying on you",
+      "excerpt": "The TV world has been a pot of controversy thanks to a two-hour-and-15-minute video from Gamers Nexus claiming LG TVs are nefariously spying on everything you do. They can record and store audio even when they seem to...",
+      "source": "The Verge",
+      "category": "IT",
+      "publishedAt": "2026-09-19T13:00:00.000Z",
+      "url": "https://www.theverge.com/tech/997682/every-tv-company-is-spying",
+      "image": "/og-image.jpg",
+      "slug": "it-s-not-just-lg-every-tv-company-is-spying-on-you-68172c845ac1",
+      "tags": [
+        "Gadgets",
+        "LG",
+        "Tech",
+        "TVs",
+        "IT"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Verge is tracking this as a IT signal around Gadgets, LG, Tech.",
+        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "The TV world has been a pot of controversy thanks to a two-hour-and-15-minute video from Gamers Nexus claiming LG TVs are nefariously spying on everything you do. They can record and store audio even when they seem to...",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
+            "The useful signal is the connection between Gadgets, LG, Tech, TVs and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Verge, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theverge.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a864cdf7e10a",
+      "title": "The AI regulation smackdown isn’t over",
+      "excerpt": "At the start of this week, the who's-who of AI seemed - at least tentatively - on the side of AI regulation. Over the weekend, Anthropic CEO Dario Amodei had proposed a three-step plan for slowing AI development, incl...",
+      "source": "The Verge",
+      "category": "AI",
+      "publishedAt": "2026-09-19T13:00:00.000Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
+      "image": "/og-image.jpg",
+      "slug": "the-ai-regulation-smackdown-isn-t-over-a864cdf7e10a",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "Elon Musk",
+        "Google",
+        "Law",
+        "OpenAI"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Verge is tracking this as a AI signal around AI, Anthropic, Elon Musk.",
+        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "At the start of this week, the who's-who of AI seemed - at least tentatively - on the side of AI regulation. Over the weekend, Anthropic CEO Dario Amodei had proposed a three-step plan for slowing AI development, incl...",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
+            "The useful signal is the connection between AI, Anthropic, Elon Musk, Google and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Verge, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theverge.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0b318afac799",
+      "title": "Firefox 156 arrives with a forest of forks in its wake",
+      "excerpt": "From Waterfox to LibreWolf and Pale Moon, there's a browser for almost every Mozilla dissenter.",
+      "source": "The Register",
+      "category": "IT",
+      "publishedAt": "2026-09-19T07:28:00.000Z",
+      "url": "https://www.theregister.com/software/2026/09/19/firefox-156-arrives-with-a-forest-of-forks-in-its-wake/5297194",
+      "image": "https://image.theregister.com/?imageId=4093944&width=800",
+      "slug": "firefox-156-arrives-with-a-forest-of-forks-in-its-wake-0b318afac799",
+      "tags": [
+        "software",
+        "IT"
+      ],
+      "author": "AItouchSolutions Editorial",
+      "readingTime": 2,
+      "keyTakeaways": [
+        "The Register is tracking this as a IT signal around software, IT.",
+        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
+        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
+      ],
+      "content": [
+        {
+          "heading": "Overview",
+          "body": [
+            "From Waterfox to LibreWolf and Pale Moon, there's a browser for almost every Mozilla dissenter.",
+            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
+          ]
+        },
+        {
+          "heading": "Why It Matters",
+          "body": [
+            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
+            "The useful signal is the connection between software, IT and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
+          ]
+        },
+        {
+          "heading": "What To Watch",
+          "body": [
+            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
+            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
+          ]
+        },
+        {
+          "heading": "AItouchSolutions Take",
+          "body": [
+            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
+            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
+          ]
+        }
+      ]
+    },
     {
       "id": "a193c15e98fb",
       "title": "India forces caller-ID apps to feed spam reports to telcos",
@@ -1966,639 +2616,6 @@
           "heading": "AItouchSolutions Take",
           "body": [
             "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from techcrunch.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "fb6c06f99696",
-      "title": "Microsoft fixes the fix that broke Excel paste – partly",
-      "excerpt": "Hotfix covers only Excel 2016 and may still come unstuck around conditional formatting.",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-09-18T13:22:00.000Z",
-      "url": "https://www.theregister.com/software/2026/09/18/microsoft-fixes-the-fix-that-broke-excel-paste-partly/5297467",
-      "image": "https://image.theregister.com/?imageId=244387&width=800",
-      "slug": "microsoft-fixes-the-fix-that-broke-excel-paste-partly-fb6c06f99696",
-      "tags": [
-        "software",
-        "IT"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "The Register is tracking this as a IT signal around software, IT.",
-        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "Hotfix covers only Excel 2016 and may still come unstuck around conditional formatting.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
-            "The useful signal is the connection between software, IT and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "13d62ca6fcfd",
-      "title": "Co-creating the future of fashion with Google",
-      "excerpt": "Google worked side-by-side with designers Jane Wade and Sergio Hudson to custom-design Google Flow tools to prep for NYFW.",
-      "source": "Google AI Blog",
-      "category": "AI",
-      "publishedAt": "2026-09-18T13:00:00.000Z",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week/",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_Header_V2.max-600x600.format-webp.webp",
-      "slug": "co-creating-the-future-of-fashion-with-google-13d62ca6fcfd",
-      "tags": [
-        "AI"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "Google AI Blog is tracking this as a AI signal around AI.",
-        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "Google worked side-by-side with designers Jane Wade and Sergio Hudson to custom-design Google Flow tools to prep for NYFW.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
-            "The useful signal is the connection between AI and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from Google AI Blog, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from blog.google.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "b80f6f3e3398",
-      "title": "The ideal database for AI agents doesn't exist yet, says Percona CEO",
-      "excerpt": "Iterative workloads caught vendors off guard, but requirements for a clean-slate solution remain unclear.",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-09-18T12:34:00.000Z",
-      "url": "https://www.theregister.com/databases/2026/09/18/the-ideal-database-for-ai-agents-doesnt-exist-yet-says-percona-ceo/5296906",
-      "image": "https://image.theregister.com/?imageId=5296909&width=800",
-      "slug": "the-ideal-database-for-ai-agents-doesn-t-exist-yet-says-percona-ceo-b80f6f3e3398",
-      "tags": [
-        "databases",
-        "AI"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "The Register is tracking this as a AI signal around databases, AI.",
-        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "Iterative workloads caught vendors off guard, but requirements for a clean-slate solution remain unclear.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
-            "The useful signal is the connection between databases, AI and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "11bca7caa03c",
-      "title": "Former Labour deputy Tom Watson joins Palantir as £330M NHS deal nears break point",
-      "excerpt": "US spy-tech firm insists its new UK senior vice president is there to 'build things, not to open doors'.",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-09-18T11:48:15.000Z",
-      "url": "https://www.theregister.com/public-sector/2026/09/18/former-labour-deputy-tom-watson-joins-palantir-as-330m-nhs-deal-nears-break-point/5297426",
-      "image": "https://image.theregister.com/?imageId=5297443&width=800",
-      "slug": "former-labour-deputy-tom-watson-joins-palantir-as-330m-nhs-deal-nears-break-point-11bca7caa03c",
-      "tags": [
-        "public sector",
-        "IT"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "The Register is tracking this as a IT signal around public sector, IT.",
-        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "US spy-tech firm insists its new UK senior vice president is there to 'build things, not to open doors'.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
-            "The useful signal is the connection between public sector, IT and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "82da9e642a08",
-      "title": "Flash floods can strike without warning — this new technology could change that",
-      "excerpt": "On the morning of June 9th, Laura Lin was working from her home in Lanesville, a rural southern Indiana town about 15 miles from the Kentucky border. She was on a Zoom call, unaware that the heavy rain outside was beg...",
-      "source": "The Verge",
-      "category": "AI",
-      "publishedAt": "2026-09-18T11:00:00.000Z",
-      "url": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
-      "image": "/og-image.jpg",
-      "slug": "flash-floods-can-strike-without-warning-this-new-technology-could-change-that-82da9e642a08",
-      "tags": [
-        "AI",
-        "Climate",
-        "Report",
-        "Science"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "The Verge is tracking this as a AI signal around AI, Climate, Report.",
-        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "On the morning of June 9th, Laura Lin was working from her home in Lanesville, a rural southern Indiana town about 15 miles from the Kentucky border. She was on a Zoom call, unaware that the heavy rain outside was beg...",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
-            "The useful signal is the connection between AI, Climate, Report, Science and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from The Verge, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theverge.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "a2164889f4c3",
-      "title": "KPMG tech cuts come with a severance sum some staff call insulting",
-      "excerpt": "AI, Cyber, SAP and Testing teams caught in latest reshaping of Big Four consultancy's Advisory arm.",
-      "source": "The Register",
-      "category": "AI",
-      "publishedAt": "2026-09-18T10:32:00.000Z",
-      "url": "https://www.theregister.com/channel/2026/09/18/kpmg-tech-cuts-come-with-a-severance-sum-some-staff-call-insulting/5296942",
-      "image": "https://image.theregister.com/?imageId=259352&width=800",
-      "slug": "kpmg-tech-cuts-come-with-a-severance-sum-some-staff-call-insulting-a2164889f4c3",
-      "tags": [
-        "channel",
-        "AI"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "The Register is tracking this as a AI signal around channel, AI.",
-        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "AI, Cyber, SAP and Testing teams caught in latest reshaping of Big Four consultancy's Advisory arm.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
-            "The useful signal is the connection between channel, AI and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "33d851adbf87",
-      "title": "British Army spends £16M on 1,000 pocket-sized eyes in the sky",
-      "excerpt": "Surveillance and training drone systems will come through three UK suppliers, though some are built overseas.",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-09-18T09:29:00.000Z",
-      "url": "https://www.theregister.com/offbeat/2026/09/18/british-army-spends-16m-on-1000-pocket-sized-eyes-in-the-sky/5297248",
-      "image": "https://image.theregister.com/?imageId=5297253&width=800",
-      "slug": "british-army-spends-16m-on-1-000-pocket-sized-eyes-in-the-sky-33d851adbf87",
-      "tags": [
-        "offbeat",
-        "IT"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "The Register is tracking this as a IT signal around offbeat, IT.",
-        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "Surveillance and training drone systems will come through three UK suppliers, though some are built overseas.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
-            "The useful signal is the connection between offbeat, IT and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "c62de313e548",
-      "title": "Royal Society slams UK.gov science shake-up",
-      "excerpt": "Whitehall changes a 'big mistake' as anything going in with Business department gets squeezed.",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-09-18T08:30:00.000Z",
-      "url": "https://www.theregister.com/public-sector/2026/09/18/royal-society-slams-ukgov-science-shake-up/5296913",
-      "image": "https://image.theregister.com/?imageId=254057&width=800",
-      "slug": "royal-society-slams-uk-gov-science-shake-up-c62de313e548",
-      "tags": [
-        "public sector",
-        "IT"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "The Register is tracking this as a IT signal around public sector, IT.",
-        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "Whitehall changes a 'big mistake' as anything going in with Business department gets squeezed.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
-            "The useful signal is the connection between public sector, IT and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "1c01993b54d3",
-      "title": "Waymo says Singapore will be its next international robotaxi city",
-      "excerpt": "Waymo says it will launch a robotaxi service in Singapore in 2028, as the Alphabet-owned company continues to eye overseas markets for expansion. Waymo's vehicles will begin arriving in Singapore in \"the coming months...",
-      "source": "The Verge",
-      "category": "IT",
-      "publishedAt": "2026-09-18T02:00:00.000Z",
-      "url": "https://www.theverge.com/transportation/997091/waymo-singapore-robotaxi-launch-2027",
-      "image": "/og-image.jpg",
-      "slug": "waymo-says-singapore-will-be-its-next-international-robotaxi-city-1c01993b54d3",
-      "tags": [
-        "Autonomous Cars",
-        "News",
-        "Transportation",
-        "Waymo",
-        "IT"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "The Verge is tracking this as a IT signal around Autonomous Cars, News, Transportation.",
-        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "Waymo says it will launch a robotaxi service in Singapore in 2028, as the Alphabet-owned company continues to eye overseas markets for expansion. Waymo's vehicles will begin arriving in Singapore in \"the coming months...",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
-            "The useful signal is the connection between Autonomous Cars, News, Transportation, Waymo and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from The Verge, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theverge.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "ddc3e4450e0b",
-      "title": "Crusoe raises $3.9B to build massive data centers and small modular ‘AI factories’",
-      "excerpt": "The round values the data center giant at $30.9 billion.",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-09-17T23:25:52.000Z",
-      "url": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/",
-      "image": "/og-image.jpg",
-      "slug": "crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories-ddc3e4450e0b",
-      "tags": [
-        "AI",
-        "Hardware",
-        "Venture",
-        "data centers",
-        "crusoe"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "TechCrunch AI is tracking this as a AI signal around AI, Hardware, Venture.",
-        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "The round values the data center giant at $30.9 billion.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
-            "The useful signal is the connection between AI, Hardware, Venture, data centers and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from TechCrunch AI, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from techcrunch.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "2b6047d138bf",
-      "title": "Google DeepMind launches institute to widen the AGI debate",
-      "excerpt": "The new institute aims to surface differing views between Google, Google DeepMind, and the broader global research community around AGI. \"They will not always agree, and they will likely change their minds, as more da...",
-      "source": "TechCrunch AI",
-      "category": "AI",
-      "publishedAt": "2026-09-17T23:21:17.000Z",
-      "url": "https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/",
-      "image": "/og-image.jpg",
-      "slug": "google-deepmind-launches-institute-to-widen-the-agi-debate-2b6047d138bf",
-      "tags": [
-        "AI",
-        "artificial general intelligence",
-        "Google",
-        "google deepmind"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "TechCrunch AI is tracking this as a AI signal around AI, artificial general intelligence, Google.",
-        "AI teams, product leaders, and operators should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "The new institute aims to surface differing views between Google, Google DeepMind, and the broader global research community around AGI. \"They will not always agree, and they will likely change their minds, as more da...",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "AI adoption is moving from experimentation into practical systems, which makes timing, trust, infrastructure, and governance important for every technical decision.",
-            "The useful signal is the connection between AI, artificial general intelligence, Google, google deepmind and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from TechCrunch AI, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from techcrunch.com.",
-            "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "8f5dfa90c17e",
-      "title": "Marvell pushes GlobalFoundries to light up wafer production",
-      "excerpt": "It might be the next trillion-dollar company, but it'll need some help on the supply side to do it.",
-      "source": "The Register",
-      "category": "IT",
-      "publishedAt": "2026-09-17T23:16:53.000Z",
-      "url": "https://www.theregister.com/systems/2026/09/18/marvell-pushes-globalfoundries-to-light-up-wafer-production/5297340",
-      "image": "https://image.theregister.com/?imageId=5263102&width=800",
-      "slug": "marvell-pushes-globalfoundries-to-light-up-wafer-production-8f5dfa90c17e",
-      "tags": [
-        "systems",
-        "IT"
-      ],
-      "author": "AItouchSolutions Editorial",
-      "readingTime": 2,
-      "keyTakeaways": [
-        "The Register is tracking this as a IT signal around systems, IT.",
-        "engineering, security, and technology operations teams should watch how the story affects roadmap planning, risk, and customer expectations.",
-        "AItouchSolutions keeps the brief internal so readers can review the context without being sent to another site."
-      ],
-      "content": [
-        {
-          "heading": "Overview",
-          "body": [
-            "It might be the next trillion-dollar company, but it'll need some help on the supply side to do it.",
-            "This AItouchSolutions brief stores the story in JSON with its image, tags, source label, category, publish date, and internal blog URL so the article can be indexed on the site."
-          ]
-        },
-        {
-          "heading": "Why It Matters",
-          "body": [
-            "IT teams are under pressure to modernize infrastructure while keeping reliability, security, cost, and user experience under control.",
-            "The useful signal is the connection between systems, IT and the day-to-day decisions teams make about products, automation, infrastructure, security, and customer-facing digital services."
-          ]
-        },
-        {
-          "heading": "What To Watch",
-          "body": [
-            "Watch for follow-up movement from The Register, competing vendors, enterprise buyers, developers, and regulators as the story develops.",
-            "The next practical questions are adoption speed, integration cost, reliability, privacy, security posture, and whether the change creates measurable business value."
-          ]
-        },
-        {
-          "heading": "AItouchSolutions Take",
-          "body": [
-            "For teams building software, AI agents, automation workflows, or cloud systems, this is worth reading as a planning signal rather than isolated news from theregister.com.",
             "The safest next step is to connect the trend to a specific workflow, define the business outcome, and validate it with a small pilot before scaling."
           ]
         }
