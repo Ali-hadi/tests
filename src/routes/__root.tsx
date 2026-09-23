@@ -100,6 +100,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "application-name", content: siteConfig.name },
       { name: "creator", content: siteConfig.author },
       { name: "publisher", content: siteConfig.name },
+      { name: "google-adsense-account", content: "ca-pub-6895557702371391" },
       {
         name: "ahrefs-site-verification",
         content: "798fd0c885df993ef4f46ca9172ab7122913d4215ac428bfe3436cc3212f12a7",
