@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { EmailAction } from "@/components/site/EmailAction";
 import logo from "@/assets/logo-white.png";
 import { siteConfig } from "@/lib/seo";
 
@@ -99,9 +100,7 @@ export function Footer() {
               </p>
               <ul className="space-y-3 text-muted-foreground">
                 <li>
-                  <a href={`mailto:${siteConfig.email}`} className="hover:text-teal break-all">
-                    {siteConfig.email}
-                  </a>
+                  <EmailAction className="text-left hover:text-teal">Email our team</EmailAction>
                 </li>
                 <li>
                   <a

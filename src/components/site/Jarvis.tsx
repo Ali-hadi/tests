@@ -27,7 +27,7 @@ const knowledge: { keywords: string[]; answer: string }[] = [
   },
   {
     keywords: ["contact", "talk", "call", "consult", "book"],
-    answer: `Easiest path: book a consultation via the Contact page, email ${siteConfig.email}, or WhatsApp ${siteConfig.whatsappDisplay}. Shahzad's team replies within 24h.`,
+    answer: `Easiest path: book a consultation via the Contact page or WhatsApp ${siteConfig.whatsappDisplay}. Shahzad's team replies within 24h.`,
   },
   {
     keywords: ["who", "founder", "shahzad"],
@@ -46,7 +46,7 @@ function answerFor(text: string): string {
   for (const item of knowledge) {
     if (item.keywords.some((k) => lower.includes(k))) return item.answer;
   }
-  return `I don't have that exact answer yet, but Shahzad's team can help. Email ${siteConfig.email}, WhatsApp ${siteConfig.whatsappDisplay}, or visit /contact and we'll get back within 24 hours.`;
+  return `I don't have that exact answer yet, but Shahzad's team can help. WhatsApp ${siteConfig.whatsappDisplay}, or visit /contact and we'll get back within 24 hours.`;
 }
 
 export function Jarvis() {

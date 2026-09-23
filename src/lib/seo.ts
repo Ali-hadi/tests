@@ -117,8 +117,6 @@ export function createSeo({
     ],
     links: [
       { rel: "canonical", href: canonical },
-      { rel: "alternate", hrefLang: "en", href: canonical },
-      { rel: "alternate", hrefLang: "x-default", href: canonical },
     ],
   };
 }

@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
+import { EmailAction } from "@/components/site/EmailAction";
 import { createSeo, siteConfig } from "@/lib/seo";
 
 export const Route = createFileRoute("/refund-policy")({
@@ -97,10 +98,8 @@ function RefundPolicyPage() {
                 <Link to="/contact" className="text-teal hover:text-teal-glow">
                   contact page
                 </Link>{" "}
-                or by email at{" "}
-                <a href={`mailto:${siteConfig.email}`} className="text-teal hover:text-teal-glow">
-                  {siteConfig.email}
-                </a>
+                or by email to{" "}
+                <EmailAction className="text-teal hover:text-teal-glow">our team</EmailAction>
                 .
               </p>
             </div>

@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
+import { EmailAction } from "@/components/site/EmailAction";
 import { useState } from "react";
 import { createSeo, siteConfig } from "@/lib/seo";
 
@@ -111,12 +112,9 @@ function ContactPage() {
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-teal mb-4">
                 Email
               </p>
-              <a
-                href={`mailto:${siteConfig.email}`}
-                className="font-display text-2xl lg:text-3xl block hover:text-teal break-all"
-              >
-                {siteConfig.email}
-              </a>
+              <EmailAction className="font-display text-2xl lg:text-3xl block hover:text-teal break-all">
+                Email our team
+              </EmailAction>
             </div>
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-teal mb-4">

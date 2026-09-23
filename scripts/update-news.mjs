@@ -9,7 +9,6 @@ const srcNewsPath = path.join(rootDir, "src", "data", "news.json");
 const editorialPostsPath = path.join(rootDir, "src", "data", "editorial-posts.json");
 const publicNewsPath = path.join(rootDir, "public", "data", "news.json");
 const sitemapPath = path.join(rootDir, "public", "sitemap.xml");
-const maxPosts = Number.parseInt(process.env.NEWS_MAX_POSTS ?? "48", 10);
 const perSourceLimit = Number.parseInt(process.env.NEWS_PER_SOURCE_LIMIT ?? "8", 10);
 const siteUrl = "https://aitouchsolutions.com";
 const fallbackImage = "/og-image.jpg";
@@ -505,8 +504,7 @@ function mergePosts(fetchedPosts, existingPosts) {
 
   return Array.from(byUrl.values())
     .map(hydratePost)
-    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
-    .slice(0, maxPosts);
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 }
 
 function sitemapUrl(route, lastmod) {

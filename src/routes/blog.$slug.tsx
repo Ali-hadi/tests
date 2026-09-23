@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, CalendarDays, Clock3, Tag, UserRound } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import {
@@ -42,37 +42,16 @@ function getBlogRouteHead(slug: string) {
 
 export const Route = createFileRoute("/blog/$slug")({
   head: ({ params }) => getBlogRouteHead(params.slug),
+  loader: ({ params }) => {
+    const post = getNewsPost(params.slug);
+    if (!post) throw notFound();
+    return { post };
+  },
   component: BlogDetailPage,
 });
 
 function BlogDetailPage() {
-  const { slug } = Route.useParams();
-  const post = getNewsPost(slug);
-
-  if (!post) {
-    return (
-      <section className="pt-40 pb-24 lg:pt-52">
-        <div className="max-w-[900px] mx-auto px-6 text-center lg:px-10">
-          <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.35em] text-orange">
-            Article not found
-          </p>
-          <h1 className="font-display text-5xl font-bold tracking-tight lg:text-7xl">
-            This blog brief is not available.
-          </h1>
-          <p className="mx-auto mt-5 max-w-xl text-muted-foreground">
-            The feed may have refreshed. Open the blog index for the latest indexed articles.
-          </p>
-          <Link
-            to="/blog"
-            className="mt-9 inline-flex items-center gap-2 rounded-md bg-teal px-5 py-3 text-xs font-bold uppercase tracking-[0.18em] text-ink"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to blog
-          </Link>
-        </div>
-      </section>
-    );
-  }
+  const { post } = Route.useLoaderData();
 
   const relatedPosts = getRelatedNewsPosts(post, 3);
   const articleJsonLd = {

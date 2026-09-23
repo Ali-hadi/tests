@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
+import { EmailAction } from "@/components/site/EmailAction";
 import { createSeo, siteConfig } from "@/lib/seo";
 
 export const Route = createFileRoute("/terms-and-conditions")({
@@ -108,9 +109,7 @@ function TermsPage() {
                   contact page
                 </Link>{" "}
                 or email{" "}
-                <a href={`mailto:${siteConfig.email}`} className="text-teal hover:text-teal-glow">
-                  {siteConfig.email}
-                </a>
+                <EmailAction className="text-teal hover:text-teal-glow">our team</EmailAction>
                 .
               </p>
             </div>

@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
+import { EmailAction } from "@/components/site/EmailAction";
 import { createSeo, siteConfig } from "@/lib/seo";
 
 export const Route = createFileRoute("/privacy-policy")({
@@ -94,11 +95,8 @@ function PrivacyPolicyPage() {
             <div className="border-t border-border pt-8">
               <h2 className="font-display text-3xl lg:text-4xl font-bold mb-4">Contact</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Privacy requests can be sent to{" "}
-                <a href={`mailto:${siteConfig.email}`} className="text-teal hover:text-teal-glow">
-                  {siteConfig.email}
-                </a>
-                .
+                Privacy requests can be emailed to{" "}
+                <EmailAction className="text-teal hover:text-teal-glow">our team</EmailAction>.
               </p>
             </div>
           </Reveal>
