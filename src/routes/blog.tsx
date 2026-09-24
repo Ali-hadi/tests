@@ -1,7 +1,13 @@
 import { createFileRoute, Link, Outlet, useChildMatches } from "@tanstack/react-router";
 import { ArrowRight, Clock3 } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
-import { formatNewsDate, getNewsReadTime, indexableNewsPosts, newsSources } from "@/lib/news";
+import {
+  formatNewsDate,
+  getNewsReadTime,
+  indexableNewsPosts,
+  newsSources,
+  visibleNewsPosts,
+} from "@/lib/news";
 import { createSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/blog")({
@@ -12,7 +18,7 @@ export const Route = createFileRoute("/blog")({
     return createSeo({
       title: "AI & IT Blog | AiTouchSolutions",
       description:
-        "Read AiTouchSolutions AI and IT guides, pillar articles, and technology briefs with internal detail pages, images, tags, and indexed article links.",
+        "Read original AiTouchSolutions AI and IT guides alongside source-attributed technology news briefs.",
       path: "/blog",
       keywords: ["AI blog", "IT blog", "technology guides", "software news", "AI articles"],
     });
@@ -30,7 +36,7 @@ function BlogIndexPage() {
   const updatedAt = featuredPost
     ? formatNewsDate(featuredPost.updatedAt ?? featuredPost.publishedAt)
     : "Pending";
-  const remainingPosts = featuredPost ? indexableNewsPosts.slice(1) : indexableNewsPosts;
+  const remainingPosts = visibleNewsPosts.filter((post) => post.id !== featuredPost?.id);
 
   return (
     <>
@@ -46,9 +52,10 @@ function BlogIndexPage() {
               </div>
               <div className="lg:col-span-4 lg:pb-4">
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  AiTouchSolutions guides and briefs for AI, software, cloud, security, automation,
-                  and product engineering. Every article opens on this site with its own indexed
-                  detail page.
+                  Original AiTouchSolutions guides alongside source-attributed briefs on AI,
+                  software, cloud, security, automation, and product engineering. News briefs link
+                  to their publisher and are kept out of search indexes until independently
+                  reviewed.
                 </p>
               </div>
             </div>
@@ -59,14 +66,14 @@ function BlogIndexPage() {
       <section className="border-y border-border bg-ink">
         <div className="max-w-[1400px] mx-auto grid grid-cols-2 px-6 lg:grid-cols-4 lg:px-10">
           {[
-            { label: "Stories", value: indexableNewsPosts.length.toString() },
+            { label: "Stories", value: visibleNewsPosts.length.toString() },
             {
               label: "AI posts",
-              value: indexableNewsPosts.filter((post) => post.category === "AI").length.toString(),
+              value: visibleNewsPosts.filter((post) => post.category === "AI").length.toString(),
             },
             {
               label: "IT posts",
-              value: indexableNewsPosts.filter((post) => post.category === "IT").length.toString(),
+              value: visibleNewsPosts.filter((post) => post.category === "IT").length.toString(),
             },
             { label: "Updated", value: updatedAt },
           ].map((item, index) => (
@@ -155,7 +162,7 @@ function BlogIndexPage() {
 
       <section className={featuredPost ? "pb-24 lg:pb-32" : "py-24 lg:py-32"}>
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          {indexableNewsPosts.length > 0 ? (
+          {visibleNewsPosts.length > 0 ? (
             <div className="grid grid-cols-1 gap-px bg-border md:grid-cols-2 xl:grid-cols-3">
               {remainingPosts.map((post, index) => (
                 <Reveal key={post.id} delay={index % 6}>
@@ -164,14 +171,16 @@ function BlogIndexPage() {
                     params={{ slug: post.slug }}
                     className="group flex h-full flex-col bg-background transition-colors hover:bg-ink-2"
                   >
-                    <div className="aspect-[16/10] overflow-hidden bg-ink">
-                      <img
-                        src={post.image}
-                        alt={post.title}
-                        className="h-full w-full object-cover opacity-85 transition duration-500 group-hover:scale-[1.03] group-hover:opacity-100"
-                        loading="lazy"
-                      />
-                    </div>
+                    {post.indexable ? (
+                      <div className="aspect-[16/10] overflow-hidden bg-ink">
+                        <img
+                          src={post.image}
+                          alt={post.imageAlt || post.title}
+                          className="h-full w-full object-cover opacity-85 transition duration-500 group-hover:scale-[1.03] group-hover:opacity-100"
+                          loading="lazy"
+                        />
+                      </div>
+                    ) : null}
                     <article className="flex h-full flex-col p-7 lg:p-9">
                       <div className="mb-7 flex items-center justify-between gap-4">
                         <span

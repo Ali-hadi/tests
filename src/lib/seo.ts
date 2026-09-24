@@ -38,7 +38,7 @@ type SeoOptions = {
   type?: "website" | "article";
   keywords?: string[];
   noIndex?: boolean;
-  author?: string;
+  author?: string | null;
   publishedAt?: string;
   updatedAt?: string;
 };
@@ -66,7 +66,7 @@ export function createSeo({
     meta: [
       { title },
       { name: "description", content: description },
-      { name: "author", content: author },
+      ...(author ? [{ name: "author", content: author }] : []),
       {
         name: "robots",
         content: noIndex

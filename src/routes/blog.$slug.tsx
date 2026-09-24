@@ -37,7 +37,7 @@ function getBlogRouteHead(slug: string) {
     type: "article",
     keywords,
     noIndex: post ? !post.indexable : true,
-    author: post?.author,
+    author: post?.indexable ? post.author : null,
     publishedAt: post?.publishedAt,
     updatedAt: post?.updatedAt,
   });
@@ -57,41 +57,43 @@ function BlogDetailPage() {
   const { post } = Route.useLoaderData();
 
   const relatedPosts = getRelatedNewsPosts(post, 3);
-  const articleJsonLd = {
-    "@context": "https://schema.org",
-    "@type": post.contentType === "pillar" ? "Article" : "BlogPosting",
-    headline: post.title,
-    description: post.excerpt,
-    image: [absoluteUrl(post.image)],
-    datePublished: post.publishedAt,
-    dateModified: post.updatedAt ?? post.publishedAt,
-    author: {
-      "@type": "Organization",
-      name: post.author,
-      url: siteConfig.url,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      logo: {
-        "@type": "ImageObject",
-        url: absoluteUrl("/logo-white.png"),
-      },
-    },
-    mainEntityOfPage: absoluteUrl(`/blog/${post.slug}`),
-    keywords: post.tags.join(", "),
-    articleSection: post.category,
-    isPartOf: { "@id": `${siteConfig.url}/#website` },
-    ...(post.supportingSources?.length
-      ? {
-          citation: post.supportingSources.map((source) => ({
-            "@type": "CreativeWork",
-            name: source.name,
-            url: source.url,
-          })),
-        }
-      : {}),
-  };
+  const articleJsonLd = post.indexable
+    ? {
+        "@context": "https://schema.org",
+        "@type": post.contentType === "pillar" ? "Article" : "BlogPosting",
+        headline: post.title,
+        description: post.excerpt,
+        image: [absoluteUrl(post.image)],
+        datePublished: post.publishedAt,
+        dateModified: post.updatedAt ?? post.publishedAt,
+        author: {
+          "@type": "Organization",
+          name: post.author,
+          url: siteConfig.url,
+        },
+        publisher: {
+          "@type": "Organization",
+          name: siteConfig.name,
+          logo: {
+            "@type": "ImageObject",
+            url: absoluteUrl("/logo-white.png"),
+          },
+        },
+        mainEntityOfPage: absoluteUrl(`/blog/${post.slug}`),
+        keywords: post.tags.join(", "),
+        articleSection: post.category,
+        isPartOf: { "@id": `${siteConfig.url}/#website` },
+        ...(post.supportingSources?.length
+          ? {
+              citation: post.supportingSources.map((source) => ({
+                "@type": "CreativeWork",
+                name: source.name,
+                url: source.url,
+              })),
+            }
+          : {}),
+      }
+    : null;
   const faqJsonLd =
     post.faq && post.faq.length > 0
       ? {
@@ -124,12 +126,14 @@ function BlogDetailPage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(articleJsonLd).replace(/</g, "\\u003c"),
-        }}
-      />
+      {articleJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(articleJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
+      ) : null}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -202,38 +206,40 @@ function BlogDetailPage() {
         </div>
       </section>
 
-      <section className="pb-16">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          <Reveal>
-            <div className="overflow-hidden rounded-md border border-border bg-ink">
-              <img
-                src={post.image}
-                alt={post.imageAlt || post.title}
-                className="h-[340px] w-full object-cover opacity-90 md:h-[520px]"
-                loading="eager"
-              />
-              <div className="grid gap-px bg-border md:grid-cols-4">
-                {[
-                  { label: "Source", value: post.source },
-                  { label: "Author", value: post.author },
-                  { label: "Category", value: post.category },
-                  {
-                    label: "Stored",
-                    value: post.contentType === "pillar" ? "Pillar guide" : "JSON article",
-                  },
-                ].map((item) => (
-                  <div key={item.label} className="bg-ink p-5">
-                    <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-                      {item.label}
-                    </p>
-                    <p className="font-display text-xl font-bold">{item.value}</p>
-                  </div>
-                ))}
+      {post.indexable ? (
+        <section className="pb-16">
+          <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
+            <Reveal>
+              <div className="overflow-hidden rounded-md border border-border bg-ink">
+                <img
+                  src={post.image}
+                  alt={post.imageAlt || post.title}
+                  className="h-[340px] w-full object-cover opacity-90 md:h-[520px]"
+                  loading="eager"
+                />
+                <div className="grid gap-px bg-border md:grid-cols-4">
+                  {[
+                    { label: "Source", value: post.source },
+                    ...(post.indexable ? [{ label: "Author", value: post.author }] : []),
+                    { label: "Category", value: post.category },
+                    {
+                      label: "Stored",
+                      value: post.contentType === "pillar" ? "Pillar guide" : "JSON article",
+                    },
+                  ].map((item) => (
+                    <div key={item.label} className="bg-ink p-5">
+                      <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+                        {item.label}
+                      </p>
+                      <p className="font-display text-xl font-bold">{item.value}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
+            </Reveal>
+          </div>
+        </section>
+      ) : null}
 
       <section className="pb-24 lg:pb-32">
         <div className="max-w-[1200px] mx-auto grid gap-12 px-6 lg:grid-cols-[minmax(0,1fr)_340px] lg:px-10">
@@ -369,7 +375,7 @@ function BlogDetailPage() {
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   {post.contentType === "pillar"
                     ? "This editorial guide is rendered with internal routes, article schema, FAQ schema, tags, and metadata for search visibility."
-                    : "This brief is stored and rendered by AiTouchSolutions with internal routes, so readers stay on the site while search engines can index the detail page."}
+                    : "This feed brief is retained for readers and URL compatibility, attributed to its source, and excluded from search indexes pending editorial review."}
                 </p>
               </div>
             </Reveal>

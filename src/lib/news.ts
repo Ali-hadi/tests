@@ -293,6 +293,12 @@ export const newsPosts = [
 
 export const indexableNewsPosts = newsPosts.filter((post) => post.indexable);
 
+// Source-attributed feed briefs stay visible to readers, while only reviewed
+// editorial posts are indexable and eligible for the sitemap.
+export const visibleNewsPosts = newsPosts.filter(
+  (post) => post.indexable || (post.contentType === "news" && Boolean(post.url && post.excerpt)),
+);
+
 export const newsSources = newsData.sources as NewsSource[];
 
 export const newsCategoryCounts = newsPosts.reduce(

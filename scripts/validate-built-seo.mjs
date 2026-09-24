@@ -34,6 +34,21 @@ const routes = new Set(
 const indexableTitles = new Set();
 const indexableDescriptions = new Set();
 
+const newsData = JSON.parse(await readFile("src/data/news.json", "utf8"));
+const editorialData = JSON.parse(await readFile("src/data/editorial-posts.json", "utf8"));
+const visibleNews = [...(editorialData.posts ?? []), ...(newsData.posts ?? [])].filter(
+  (post) => post.indexable === true || (post.url && post.excerpt),
+);
+const blogHtml = await readFile(path.join(root, "blog", "index.html"), "utf8");
+assert.ok(visibleNews.length > 20, "more than 20 sourced or editorial posts are available");
+for (const post of visibleNews) {
+  assert.ok(post.slug, `visible post ${post.title} has a stable slug`);
+  assert.ok(
+    blogHtml.includes(`href="/blog/${post.slug}"`),
+    `blog index displays the post ${post.slug}`,
+  );
+}
+
 function localPathExists(pathname) {
   const relative = decodeURIComponent(pathname).replace(/^\/+/, "");
   const target = path.join(root, relative);
