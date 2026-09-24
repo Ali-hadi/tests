@@ -3,8 +3,7 @@ import { organicServiceKeywords, serviceLandingPages } from "@/lib/service-seo";
 const SITE_URL = "https://aitouchsolutions.com";
 const SITE_NAME = "AiTouchSolutions";
 const AUTHOR_NAME = "Jon";
-const CONTACT_EMAIL = "shahzad.mern.dev@gmail.com";
-const WHATSAPP_DISPLAY = "03244958672";
+const CONTACT_EMAIL = "info@aitouchsolutions.com";
 const WHATSAPP_INTERNATIONAL = "+923244958672";
 const WHATSAPP_URL = "https://wa.me/923244958672";
 const LINKEDIN_URL = "https://www.linkedin.com/in/ai-touch-solutions-91b727417";
@@ -17,7 +16,6 @@ export const siteConfig = {
   url: SITE_URL,
   author: AUTHOR_NAME,
   email: CONTACT_EMAIL,
-  whatsappDisplay: WHATSAPP_DISPLAY,
   whatsappInternational: WHATSAPP_INTERNATIONAL,
   whatsappUrl: WHATSAPP_URL,
   linkedinUrl: LINKEDIN_URL,

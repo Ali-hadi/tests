@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { BarChart3, ShieldCheck, Sparkles } from "lucide-react";
+import { useMemo, useState } from "react";
 import { Reveal } from "@/components/site/Reveal";
 import case1 from "@/assets/case-1.jpg";
 import case2 from "@/assets/case-2.jpg";
@@ -12,8 +13,11 @@ import {
 import { createSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/portfolio")({
-  head: () =>
-    createSeo({
+  head: ({ matches }) => {
+    const currentMatch = matches[matches.length - 1];
+    if (currentMatch?.fullPath !== "/portfolio") return {};
+
+    return createSeo({
       title: "Software Solution Concepts | AiTouchSolutions",
       description:
         "Explore illustrative software solution concepts across CRM, ERP, AI automation, e-commerce, mobile apps, and SaaS. These examples are not client case studies.",
@@ -26,7 +30,8 @@ export const Route = createFileRoute("/portfolio")({
         "SaaS dashboard examples",
         "enterprise software projects",
       ],
-    }),
+    });
+  },
   component: PortfolioPage,
 });
 
@@ -75,6 +80,21 @@ const snapshotLabels = [
 ];
 
 function PortfolioPage() {
+  const [category, setCategory] = useState("All concepts");
+  const [query, setQuery] = useState("");
+  const visibleProjects = useMemo(() => {
+    const normalizedQuery = query.trim().toLowerCase();
+    return enterpriseProjects.filter((project) => {
+      const matchesCategory = category === "All concepts" || project.category === category;
+      const matchesQuery =
+        !normalizedQuery ||
+        `${project.name} ${project.description} ${project.category} ${project.industry}`
+          .toLowerCase()
+          .includes(normalizedQuery);
+      return matchesCategory && matchesQuery;
+    });
+  }, [category, query]);
+
   return (
     <>
       <section className="pt-40 lg:pt-52 pb-20 overflow-hidden relative">
@@ -99,7 +119,7 @@ function PortfolioPage() {
           </Reveal>
 
           <Reveal>
-            <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-px bg-border">
+            <div className="mt-12 grid max-w-3xl grid-cols-1 gap-px bg-border sm:grid-cols-2">
               {[
                 {
                   icon: Sparkles,
@@ -180,6 +200,13 @@ function PortfolioPage() {
                       <InfoRow label="Stack" value={project.stack} />
                       <InfoRow label="Result" value={project.result} strong />
                     </div>
+                    <Link
+                      to="/contact"
+                      search={{ service: "Custom Software", project: project.title }}
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-teal hover:text-teal-glow"
+                    >
+                      Discuss a similar concept <span aria-hidden="true">→</span>
+                    </Link>
                   </div>
                 </div>
               </Reveal>
@@ -211,25 +238,71 @@ function PortfolioPage() {
           </Reveal>
 
           <Reveal>
-            <div className="mb-10 flex gap-2 overflow-x-auto pb-2">
-              {projectCategories.map((category) => (
-                <span
-                  key={category.name}
-                  className="shrink-0 px-4 py-2 rounded-full border border-border bg-background/60 text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground"
+            <div className="mb-10 space-y-5">
+              <label className="block max-w-xl">
+                <span className="sr-only">Search product concepts</span>
+                <input
+                  type="search"
+                  value={query}
+                  onChange={(event) => setQuery(event.target.value)}
+                  placeholder="Search systems, workflows, or industries"
+                  className="w-full rounded-xl border border-border bg-background px-5 py-4 text-sm outline-none transition focus:border-teal focus:ring-2 focus:ring-teal/20"
+                />
+              </label>
+              <div
+                className="flex gap-2 overflow-x-auto pb-2"
+                aria-label="Filter concepts by category"
+              >
+                <button
+                  type="button"
+                  aria-pressed={category === "All concepts"}
+                  onClick={() => setCategory("All concepts")}
+                  className={`shrink-0 rounded-full border px-4 py-2 text-[10px] font-mono uppercase tracking-[0.16em] transition ${category === "All concepts" ? "border-teal bg-teal/10 text-teal" : "border-border bg-background/60 text-muted-foreground hover:border-teal/50 hover:text-foreground"}`}
                 >
-                  {category.name} ({category.count})
-                </span>
-              ))}
+                  All concepts ({enterpriseProjects.length})
+                </button>
+                {projectCategories.map((item) => (
+                  <button
+                    key={item.name}
+                    type="button"
+                    aria-pressed={category === item.name}
+                    onClick={() => setCategory(item.name)}
+                    className={`shrink-0 rounded-full border px-4 py-2 text-[10px] font-mono uppercase tracking-[0.16em] transition ${category === item.name ? "border-teal bg-teal/10 text-teal" : "border-border bg-background/60 text-muted-foreground hover:border-teal/50 hover:text-foreground"}`}
+                  >
+                    {item.name} ({item.count})
+                  </button>
+                ))}
+              </div>
+              <p className="text-sm text-muted-foreground" aria-live="polite">
+                Showing {visibleProjects.length} of {enterpriseProjects.length} product concepts
+              </p>
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-            {enterpriseProjects.map((project, index) => (
-              <Reveal key={project.id} delay={index % 6}>
-                <ProjectCard project={project} index={index} />
-              </Reveal>
-            ))}
-          </div>
+          {visibleProjects.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+              {visibleProjects.map((project, index) => (
+                <Reveal key={project.id} delay={index % 6}>
+                  <ProjectCard project={project} index={index} />
+                </Reveal>
+              ))}
+            </div>
+          ) : (
+            <div className="rounded-2xl border border-border bg-background p-10 text-center">
+              <h3 className="font-display text-2xl font-bold">No matching concepts</h3>
+              <p className="mt-3 text-muted-foreground">Try another phrase or clear your search.</p>
+              <button
+                type="button"
+                onClick={() => {
+                  setQuery("");
+                  setCategory("All concepts");
+                }}
+                className="mt-6 rounded-full border border-teal/40 px-5 py-3 text-xs font-bold uppercase tracking-[0.16em] text-teal hover:bg-teal/10"
+              >
+                Clear filters
+              </button>
+            </div>
+          )}
         </div>
       </section>
 
@@ -240,13 +313,13 @@ function PortfolioPage() {
               <div className="absolute inset-0 grid-overlay opacity-20" />
               <div className="relative max-w-4xl">
                 <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-orange mb-6">
-                  Client conversion section
+                  Start with your product idea
                 </p>
                 <h2 className="font-display text-5xl lg:text-7xl font-bold tracking-[-0.03em] leading-[0.95]">
                   Pick a system, then let us turn it into your business engine.
                 </h2>
                 <p className="mt-8 text-muted-foreground text-lg leading-relaxed max-w-2xl">
-                  These are implementation-ready product directions. AiTouchSolutions can scope the
+                  These illustrative product directions can help AiTouchSolutions scope the
                   workflows, dashboard UX, database model, automation logic, and deployment plan for
                   your industry.
                 </p>
@@ -272,7 +345,7 @@ function ProjectCard({ project, index }: { project: EnterpriseProject; index: nu
       : "border-orange/30 bg-orange/10 text-orange";
 
   return (
-    <article className="group h-full overflow-hidden rounded-2xl border border-border bg-background hover:border-teal/40 transition-colors">
+    <article className="group h-full overflow-hidden rounded-2xl border border-border bg-background transition-all duration-300 hover:-translate-y-1 hover:border-teal/50 hover:shadow-[0_24px_80px_-48px_rgba(14,140,142,0.6)]">
       <ProjectSnapshot project={project} index={index} />
       <div className="p-6">
         <div className="flex items-start justify-between gap-4 mb-4">
@@ -297,6 +370,13 @@ function ProjectCard({ project, index }: { project: EnterpriseProject; index: nu
             strong
           />
         </div>
+        <Link
+          to="/portfolio/$projectId"
+          params={{ projectId: project.id }}
+          className="mt-7 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-teal"
+        >
+          Open concept blueprint <span aria-hidden="true">→</span>
+        </Link>
       </div>
     </article>
   );
@@ -320,9 +400,9 @@ function ProjectSnapshot({ project, index }: { project: EnterpriseProject; index
             <span className="h-2.5 w-2.5 rounded-full bg-white/30" />
           </div>
           <p className="truncate text-[10px] font-mono uppercase tracking-[0.22em] text-muted-foreground">
-            {label} OS
+            {label} concept UI
           </p>
-          <span className="h-2 w-2 rounded-full bg-teal animate-pulse-glow" />
+          <span className="h-2 w-2 rounded-full bg-teal/70" aria-hidden="true" />
         </div>
 
         <div className="grid h-[calc(100%-45px)] grid-cols-12 gap-3 p-4">
@@ -349,7 +429,7 @@ function ProjectSnapshot({ project, index }: { project: EnterpriseProject; index
               </div>
             </div>
             <div className="grid grid-cols-3 gap-2">
-              {["Live", "Secure", "AI"].map((tag, tagIndex) => (
+              {["Roles", "Workflow", "Reports"].map((tag, tagIndex) => (
                 <div key={tag} className="rounded-md border border-white/10 bg-white/[0.03] p-2">
                   <p className="text-[9px] font-mono uppercase tracking-[0.18em] text-muted-foreground">
                     {tag}

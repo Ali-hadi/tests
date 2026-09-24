@@ -354,7 +354,7 @@ function ServiceDetailPage() {
       <section className="border-t border-border bg-ink py-24">
         <div className="max-w-[1100px] mx-auto px-6 text-center lg:px-10">
           <p className="mb-5 font-mono text-[10px] uppercase tracking-[0.35em] text-teal">
-            Ready to rank and convert
+            Ready to scope your project
           </p>
           <h2 className="font-display text-5xl font-bold tracking-[-0.03em] lg:text-7xl">
             Start {service.shortTitle} with {siteConfig.name}.
@@ -365,6 +365,7 @@ function ServiceDetailPage() {
           </p>
           <Link
             to="/contact"
+            search={{ service: service.shortTitle, project: "" }}
             className="mt-10 inline-flex rounded-full bg-teal px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-ink hover:bg-teal-glow"
           >
             Start project

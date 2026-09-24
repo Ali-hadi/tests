@@ -114,7 +114,7 @@ export function Footer() {
                     rel="noreferrer"
                     className="hover:text-teal"
                   >
-                    WhatsApp {siteConfig.whatsappDisplay}
+                    WhatsApp us
                   </a>
                 </li>
                 <li>Fixed-price and hourly</li>

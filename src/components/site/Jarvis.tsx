@@ -2,71 +2,53 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { siteConfig } from "@/lib/seo";
 
-type Msg = { role: "user" | "jarvis"; text: string };
+type Msg = { role: "user" | "assistant"; text: string };
 
-const knowledge: { keywords: string[]; answer: string }[] = [
-  {
-    keywords: ["price", "pricing", "cost", "rate", "hourly", "fixed"],
-    answer:
-      "We offer both fixed-price project quotes and hourly engagements starting at $45/hr. For a tailored quote, share your project type and budget on the Contact page or request a quote here.",
-  },
-  {
-    keywords: ["service", "what do you do", "offer"],
-    answer:
-      "AiTouchSolutions discusses AI agents, automation, custom SaaS, web and mobile apps, CRM/ERP systems, and cloud/DevOps. See the Services page for current offerings.",
-  },
-  {
-    keywords: ["ai", "agent", "automation", "chatbot", "llm"],
-    answer:
-      "We build production AI agents (LangChain, RAG, custom tools), workflow automation, and custom-trained LLMs on your data. Want to scope an AI project?",
-  },
-  {
-    keywords: ["tech", "stack", "technology", "use"],
-    answer:
-      "Technology choices depend on project requirements. The Technologies page lists tools the team may use across web, AI, data, mobile, and cloud work.",
-  },
-  {
-    keywords: ["contact", "talk", "call", "consult", "book"],
-    answer: `Easiest path: book a consultation via the Contact page or WhatsApp ${siteConfig.whatsappDisplay}. Shahzad's team replies within 24h.`,
-  },
-  {
-    keywords: ["who", "founder", "shahzad"],
-    answer:
-      "AiTouchSolutions is a software and AI services studio. Visit the About page to learn about its approach and project process.",
-  },
-  {
-    keywords: ["portfolio", "project", "case", "work"],
-    answer:
-      "We've delivered AI dashboards, automation platforms, and custom mobile apps. See live case studies on the Portfolio page.",
-  },
+const welcomeMessages = [
+  "Hi, I’m Jarvis, AiTouchSolutions’ AI assistant. Ask about our services, pricing approach, or how we build products.",
+  "Welcome. I’m Jarvis, the AiTouchSolutions AI assistant. What are you hoping to build?",
+  "Hello, I’m Jarvis. I can explain AiTouchSolutions’ services and project process. What would you like to know?",
 ];
-
-function answerFor(text: string): string {
-  const lower = text.toLowerCase();
-  for (const item of knowledge) {
-    if (item.keywords.some((k) => lower.includes(k))) return item.answer;
-  }
-  return `I don't have that exact answer yet, but Shahzad's team can help. WhatsApp ${siteConfig.whatsappDisplay}, or visit /contact and we'll get back within 24 hours.`;
-}
 
 export function Jarvis() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<Msg[]>([
-    {
-      role: "jarvis",
-      text: "Hello, I'm Jarvis — AiTouchSolutions' AI assistant. Ask me about services, pricing, AI agents, or our process.",
-    },
+    { role: "assistant", text: welcomeMessages[0] },
   ]);
   const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const send = (text: string) => {
-    const t = text.trim();
-    if (!t) return;
-    setMessages((m) => [...m, { role: "user", text: t }]);
+  const send = async (text: string) => {
+    const question = text.trim();
+    if (!question || loading) return;
+    const nextMessages: Msg[] = [...messages, { role: "user", text: question }];
+    setMessages(nextMessages);
     setInput("");
-    setTimeout(() => {
-      setMessages((m) => [...m, { role: "jarvis", text: answerFor(t) }]);
-    }, 450);
+    setLoading(true);
+    try {
+      const response = await fetch("/api/jarvis", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          messages: nextMessages.slice(-10).map(({ role, text: content }) => ({ role, content })),
+        }),
+      });
+      const result = (await response.json()) as { answer?: string; error?: string };
+      if (!response.ok || !result.answer) {
+        throw new Error(result.error || "The assistant is unavailable.");
+      }
+      setMessages((current) => [...current, { role: "assistant", text: result.answer! }]);
+    } catch {
+      setMessages((current) => [
+        ...current,
+        {
+          role: "assistant",
+          text: "I’m unable to answer with the AI assistant right now. You can contact us directly on WhatsApp or email, and include your question or project details.",
+        },
+      ]);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -93,82 +75,100 @@ export function Jarvis() {
                 <div>
                   <p className="font-display text-sm font-bold">JARVIS</p>
                   <p className="text-[10px] font-mono uppercase tracking-[0.2em] text-teal">
-                    Online · AI Assistant
+                    AI assistant
                   </p>
                 </div>
               </div>
               <button
+                type="button"
                 onClick={() => setOpen(false)}
+                aria-label="Close Jarvis"
                 className="text-muted-foreground hover:text-foreground text-xl leading-none"
               >
                 ×
               </button>
             </div>
-            <div className="flex-1 overflow-y-auto p-5 space-y-3 min-h-[300px] max-h-[360px]">
-              {messages.map((m, i) => (
+            <div
+              className="flex-1 overflow-y-auto p-5 space-y-3 min-h-[300px] max-h-[360px]"
+              aria-live="polite"
+              aria-busy={loading}
+            >
+              {messages.map((message, index) => (
                 <div
-                  key={i}
-                  className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}
+                  key={`${index}-${message.role}`}
+                  className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
                 >
                   <div
-                    className={`max-w-[85%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed ${
-                      m.role === "user"
+                    className={`max-w-[85%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed whitespace-pre-wrap ${
+                      message.role === "user"
                         ? "bg-teal text-ink rounded-br-sm"
                         : "bg-ink-2 text-foreground rounded-bl-sm border border-border"
                     }`}
                   >
-                    {m.text}
+                    {message.text}
                   </div>
                 </div>
               ))}
+              {loading && (
+                <p className="text-xs text-muted-foreground" role="status">
+                  Jarvis is thinking…
+                </p>
+              )}
             </div>
             <div className="px-5 pb-3 flex gap-2 flex-wrap">
               <a
-                href="/contact"
+                href={siteConfig.whatsappUrl}
+                target="_blank"
+                rel="noreferrer"
                 className="text-[10px] font-mono uppercase tracking-widest px-3 py-1.5 bg-orange/10 text-orange border border-orange/30 rounded-full hover:bg-orange hover:text-ink"
               >
-                Request Quote
+                WhatsApp us
               </a>
               <a
-                href="/contact"
+                href={`mailto:${siteConfig.email}`}
                 className="text-[10px] font-mono uppercase tracking-widest px-3 py-1.5 bg-teal/10 text-teal border border-teal/30 rounded-full hover:bg-teal hover:text-ink"
               >
-                Book Consultation
+                Email us
               </a>
             </div>
             <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                send(input);
+              onSubmit={(event) => {
+                event.preventDefault();
+                void send(input);
               }}
               className="border-t border-border p-3 flex gap-2 bg-ink/60"
             >
               <input
                 value={input}
-                onChange={(e) => setInput(e.target.value)}
-                placeholder="Ask Jarvis anything…"
-                className="flex-1 bg-transparent px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none"
+                onChange={(event) => setInput(event.target.value)}
+                maxLength={1500}
+                disabled={loading}
+                placeholder="Ask Jarvis about our services…"
+                aria-label="Ask Jarvis a question"
+                className="flex-1 bg-transparent px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none disabled:opacity-60"
               />
               <button
                 type="submit"
-                className="px-4 py-2 bg-teal text-ink rounded-lg text-xs font-bold uppercase tracking-widest"
+                disabled={loading || !input.trim()}
+                className="px-4 py-2 bg-teal text-ink rounded-lg text-xs font-bold uppercase tracking-widest disabled:opacity-50"
               >
-                Send
+                {loading ? "…" : "Send"}
               </button>
             </form>
           </motion.div>
         )}
       </AnimatePresence>
       <button
+        type="button"
         onClick={() => setOpen(!open)}
-        aria-label="Open Jarvis AI"
+        aria-label={open ? "Close Jarvis AI assistant" : "Open Jarvis AI assistant"}
         className="fixed bottom-6 right-4 sm:right-8 z-[100] group"
       >
         <span className="absolute inset-0 rounded-full bg-teal blur-2xl opacity-40 group-hover:opacity-70 transition-opacity" />
         <span className="relative flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-tr from-teal to-orange p-[2px] hover:scale-105 active:scale-95 transition-transform">
           <span className="w-full h-full rounded-full bg-ink grid place-items-center">
             <span className="font-display font-bold text-sm text-foreground">
-              {open ? "—" : "AI"}
+              {open ? "×" : "Jarvis"}
             </span>
           </span>
         </span>

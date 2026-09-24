@@ -136,7 +136,9 @@ export function Nav() {
           <button
             onClick={() => setOpen(!open)}
             className={`lg:hidden w-10 h-10 grid place-items-center rounded-full border ${mobileButtonClass}`}
-            aria-label="Menu"
+            aria-label={open ? "Close navigation" : "Open navigation"}
+            aria-expanded={open}
+            aria-controls="mobile-navigation"
           >
             <div className="flex flex-col gap-1.5">
               <span
@@ -151,6 +153,7 @@ export function Nav() {
       </div>
       {open && (
         <div
+          id="mobile-navigation"
           className={`lg:hidden backdrop-blur-xl border-t px-6 py-8 flex flex-col gap-4 ${mobileMenuClass}`}
         >
           {links.map((l) =>

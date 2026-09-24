@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion, useScroll, useTransform } from "motion/react";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
 import case1 from "@/assets/case-1.jpg";
 import case2 from "@/assets/case-2.jpg";
@@ -124,6 +124,33 @@ const projects = [
   },
 ];
 
+const welcomeMessages = [
+  "Welcome. What are you hoping to build?",
+  "Good to have you here. Tell us what needs to work better.",
+  "Have a product idea? Let's explore what it could become.",
+  "Welcome to AiTouchSolutions. Start with the problem you want to solve.",
+  "New project or existing product, there is a good place to start.",
+  "Looking for a technology partner? Explore how we work.",
+  "Thanks for stopping by. What would you like to make possible?",
+  "A workflow to improve, an app to launch, or an idea to test?",
+];
+
+function WelcomeMessage() {
+  const [message, setMessage] = useState(welcomeMessages[0]);
+  useEffect(() => {
+    try {
+      const previous = sessionStorage.getItem("ats-welcome-message");
+      const options = welcomeMessages.filter((item) => item !== previous);
+      const next = options[Math.floor(Math.random() * options.length)];
+      sessionStorage.setItem("ats-welcome-message", next);
+      setMessage(next);
+    } catch {
+      setMessage(welcomeMessages[Math.floor(Math.random() * welcomeMessages.length)]);
+    }
+  }, []);
+  return <span aria-live="polite">{message}</span>;
+}
+
 function HomePage() {
   const heroRef = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
@@ -160,7 +187,7 @@ function HomePage() {
               <span className="absolute inline-flex h-full w-full rounded-full bg-teal opacity-75 animate-ping" />
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-teal" />
             </span>
-            Founded by Jon
+            <WelcomeMessage />
           </motion.div>
 
           <h1 className="font-display font-bold text-[clamp(2.6rem,9vw,9rem)] leading-[0.9] tracking-[-0.04em] max-w-[18ch]">
@@ -266,7 +293,11 @@ function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
             {services.map((s, i) => (
               <Reveal key={s.n} delay={i}>
-                <div className="group bg-background p-10 lg:p-12 h-full hover:bg-ink-2 transition-colors duration-500 cursor-pointer relative overflow-hidden">
+                <Link
+                  to="/services/$serviceId"
+                  params={{ serviceId: s.slug }}
+                  className="group block bg-background p-10 lg:p-12 h-full hover:bg-ink-2 transition-colors duration-500 relative overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-teal"
+                >
                   <div className="absolute top-0 right-0 w-32 h-32 bg-teal/0 group-hover:bg-teal/10 blur-3xl transition-all duration-700" />
                   <div className="relative">
                     <p className="font-mono text-xs text-teal mb-8">{s.n}</p>
@@ -274,15 +305,11 @@ function HomePage() {
                       {s.t}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-8 text-sm">{s.d}</p>
-                    <Link
-                      to="/services/$serviceId"
-                      params={{ serviceId: s.slug }}
-                      className="text-[10px] font-mono uppercase tracking-[0.3em] text-foreground inline-flex items-center gap-2 group-hover:text-teal transition-colors"
-                    >
-                      Explore <span>→</span>
-                    </Link>
+                    <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-foreground inline-flex items-center gap-2 group-hover:text-teal transition-colors">
+                      Explore service <span aria-hidden="true">→</span>
+                    </span>
                   </div>
-                </div>
+                </Link>
               </Reveal>
             ))}
           </div>
@@ -357,7 +384,10 @@ function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {projects.map((p, i) => (
               <Reveal key={i} delay={i} className={i === 0 ? "lg:col-span-8" : "lg:col-span-4"}>
-                <div className="group cursor-pointer">
+                <Link
+                  to="/portfolio"
+                  className="group block focus-visible:outline focus-visible:outline-2 focus-visible:outline-teal"
+                >
                   <div className="aspect-[4/3] overflow-hidden rounded-2xl mb-5 relative bg-ink-2">
                     <img
                       src={p.img}
@@ -376,7 +406,7 @@ function HomePage() {
                     {p.t}
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{p.d}</p>
-                </div>
+                </Link>
               </Reveal>
             ))}
           </div>

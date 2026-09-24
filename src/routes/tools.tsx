@@ -22,6 +22,7 @@ import {
   WandSparkles,
   type LucideIcon,
 } from "lucide-react";
+import { useState } from "react";
 import { Reveal } from "@/components/site/Reveal";
 import { createSeo } from "@/lib/seo";
 
@@ -924,6 +925,16 @@ type ToolExperienceProps = {
   light: boolean;
 };
 
+function downloadTextFile(filename: string, content: string) {
+  const file = new Blob([content], { type: "text/plain;charset=utf-8" });
+  const url = URL.createObjectURL(file);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  link.click();
+  URL.revokeObjectURL(url);
+}
+
 export function ToolExperience({
   tool,
   input,
@@ -937,6 +948,11 @@ export function ToolExperience({
   aiScore,
   light,
 }: ToolExperienceProps) {
+  const [resumeTemplate, setResumeTemplate] = useState("Modern");
+  const [thumbnailStyle, setThumbnailStyle] = useState("Tutorial");
+  const [captionPlatform, setCaptionPlatform] = useState("LinkedIn");
+  const [savedDomains, setSavedDomains] = useState<string[]>([]);
+  const [domainActionMessage, setDomainActionMessage] = useState("");
   const panel = light ? "border-slate-200 bg-slate-50" : "border-border bg-ink";
   const card = light ? "border-slate-200 bg-white" : "border-border bg-background";
   const mutedText = light ? "text-slate-500" : "text-muted-foreground";
@@ -1107,23 +1123,35 @@ export function ToolExperience({
           />
           <div className="mt-4 grid grid-cols-2 gap-2">
             {["Modern", "ATS", "Executive", "Creative"].map((item) => (
-              <button key={item} className={`rounded-md border p-3 text-xs font-bold ${card}`}>
+              <button
+                key={item}
+                type="button"
+                aria-pressed={resumeTemplate === item}
+                onClick={() => setResumeTemplate(item)}
+                className={`rounded-md border p-3 text-xs font-bold ${card} ${resumeTemplate === item ? "border-teal text-teal" : ""}`}
+              >
                 {item}
               </button>
             ))}
           </div>
           <div className="mt-4 rounded-md border border-teal/30 bg-teal/10 p-4 text-sm text-teal">
-            ATS match: {score}% | Cover letter ready
+            {resumeTemplate} preview selected · Sample match indicator: {score}%
           </div>
         </div>
-        <div className={`rounded-md border p-6 ${card}`}>
+        <div
+          className={`rounded-md border p-6 ${card} ${resumeTemplate === "Creative" ? "border-orange/40" : ""}`}
+        >
           <div className="flex flex-col gap-4 border-b border-current/10 pb-5 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="font-display text-3xl font-bold">Alex Morgan</p>
+              <p
+                className={`font-display text-3xl font-bold ${resumeTemplate === "Creative" ? "gradient-text" : ""}`}
+              >
+                {resumeTemplate === "Executive" ? "Sample executive profile" : "Sample profile"}
+              </p>
               <p className={`mt-1 text-sm ${mutedText}`}>AI Product Engineer</p>
             </div>
             <span className="rounded-md bg-teal px-3 py-2 text-xs font-bold uppercase tracking-[0.16em] text-ink">
-              ATS {score}%
+              Sample score {score}%
             </span>
           </div>
           <div className="mt-6 grid gap-6 md:grid-cols-[1fr_240px]">
@@ -1174,7 +1202,10 @@ export function ToolExperience({
             {["Shock", "Tutorial", "Luxury", "Viral"].map((item) => (
               <button
                 key={item}
-                className={`flex w-full items-center justify-between rounded-md border p-3 text-sm ${card}`}
+                type="button"
+                aria-pressed={thumbnailStyle === item}
+                onClick={() => setThumbnailStyle(item)}
+                className={`flex w-full items-center justify-between rounded-md border p-3 text-sm ${card} ${thumbnailStyle === item ? "border-teal text-teal" : ""}`}
               >
                 {item}
                 <ArrowRight className="h-4 w-4 text-teal" />
@@ -1183,11 +1214,13 @@ export function ToolExperience({
           </div>
         </div>
         <div className={`rounded-md border p-5 ${card}`}>
-          <div className="aspect-video overflow-hidden rounded-md border border-current/10 bg-gradient-to-br from-orange/80 via-ink to-teal/80 p-6">
+          <div
+            className={`aspect-video overflow-hidden rounded-md border border-current/10 p-6 ${thumbnailStyle === "Luxury" ? "bg-gradient-to-br from-amber-700 via-ink to-orange/60" : thumbnailStyle === "Shock" ? "bg-gradient-to-br from-fuchsia-700 via-ink to-orange" : thumbnailStyle === "Viral" ? "bg-gradient-to-br from-teal-500 via-ink to-blue-700" : "bg-gradient-to-br from-orange/80 via-ink to-teal/80"}`}
+          >
             <div className="flex h-full flex-col justify-between">
               <div className="flex justify-between">
                 <span className="rounded-md bg-ink px-3 py-2 text-xs font-bold uppercase tracking-[0.14em] text-orange">
-                  YouTube
+                  {thumbnailStyle} concept
                 </span>
                 <span className="rounded-md bg-white px-3 py-2 text-xs font-bold text-ink">4K</span>
               </div>
@@ -1330,7 +1363,13 @@ export function ToolExperience({
           />
           <div className="mt-4 grid grid-cols-2 gap-2">
             {["Instagram", "TikTok", "YouTube", "LinkedIn"].map((item) => (
-              <button key={item} className={`rounded-md border p-3 text-xs font-bold ${card}`}>
+              <button
+                key={item}
+                type="button"
+                aria-pressed={captionPlatform === item}
+                onClick={() => setCaptionPlatform(item)}
+                className={`rounded-md border p-3 text-xs font-bold ${card} ${captionPlatform === item ? "border-teal text-teal" : ""}`}
+              >
                 {item}
               </button>
             ))}
@@ -1339,7 +1378,9 @@ export function ToolExperience({
         <div className="grid gap-4 md:grid-cols-[270px_1fr]">
           <div className={`rounded-[28px] border p-4 ${card}`}>
             <div className={`rounded-[20px] border p-4 ${panel}`}>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-teal">New post</p>
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-teal">
+                {captionPlatform} preview
+              </p>
               <p className="mt-5 font-display text-2xl font-bold leading-tight">
                 Most teams are using AI the slow way.
               </p>
@@ -1356,8 +1397,8 @@ export function ToolExperience({
           <div className="grid gap-3">
             {[
               "Stop scrolling if your team still repeats this task.",
-              "This AI workflow saves 10 hours every week.",
-              "The simplest automation is usually the most profitable one.",
+              "Explain the repetitive step your product is designed to simplify.",
+              "Show how a clearer workflow could help a team move work forward.",
             ].map((hook) => (
               <div key={hook} className={`rounded-md border p-4 text-sm ${card}`}>
                 <Megaphone className="mb-3 h-4 w-4 text-orange" />
@@ -1396,6 +1437,16 @@ export function ToolExperience({
               </span>
             ))}
           </div>
+          {domainActionMessage ? (
+            <p className="mt-4 text-xs text-teal" role="status">
+              {domainActionMessage}
+            </p>
+          ) : null}
+          {savedDomains.length > 0 ? (
+            <p className="mt-2 text-xs text-muted-foreground">
+              Saved this session: {savedDomains.join(", ")}
+            </p>
+          ) : null}
         </div>
         <div className="grid gap-3 sm:grid-cols-2">
           {domains.map((domain, index) => (
@@ -1404,18 +1455,42 @@ export function ToolExperience({
                 <div>
                   <p className="font-display text-2xl font-bold">{domain}</p>
                   <p className={`mt-2 text-sm ${mutedText}`}>
-                    {index % 2 === 0 ? "Available check ready" : "Premium-like brand fit"}
+                    Generated name idea · availability not checked
                   </p>
                 </div>
-                <span className={index % 2 === 0 ? "text-teal" : "text-orange"}>
-                  {index % 2 === 0 ? "Open" : "Check"}
-                </span>
+                <span className="text-teal">Suggestion {index + 1}</span>
               </div>
               <div className="mt-5 flex gap-2">
-                <button className="rounded-md bg-teal px-3 py-2 text-xs font-bold text-ink">
-                  Save
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSavedDomains((current) =>
+                      current.includes(domain)
+                        ? current.filter((saved) => saved !== domain)
+                        : [...current, domain],
+                    );
+                    setDomainActionMessage(
+                      savedDomains.includes(domain)
+                        ? `${domain} removed from saved ideas.`
+                        : `${domain} saved in this session.`,
+                    );
+                  }}
+                  className="rounded-md bg-teal px-3 py-2 text-xs font-bold text-ink"
+                >
+                  {savedDomains.includes(domain) ? "Saved · remove" : "Save idea"}
                 </button>
-                <button className={`rounded-md border px-3 py-2 text-xs ${panel}`}>Export</button>
+                <button
+                  type="button"
+                  onClick={() =>
+                    downloadTextFile(
+                      `${domain}-name-idea.txt`,
+                      `${domain}\nGenerated suggestion only. Availability has not been checked.\n`,
+                    )
+                  }
+                  className={`rounded-md border px-3 py-2 text-xs ${panel}`}
+                >
+                  Export idea
+                </button>
               </div>
             </div>
           ))}

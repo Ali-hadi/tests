@@ -1,9 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
-import { EmailAction } from "@/components/site/EmailAction";
 import { createSeo, siteConfig } from "@/lib/seo";
 
 export const Route = createFileRoute("/contact")({
+  validateSearch: (search: Record<string, unknown>) => ({
+    service: typeof search.service === "string" ? search.service.slice(0, 80) : "",
+    project: typeof search.project === "string" ? search.project.slice(0, 100) : "",
+  }),
   head: () =>
     createSeo({
       title: "Contact Jon | AiTouchSolutions",
@@ -21,6 +24,9 @@ export const Route = createFileRoute("/contact")({
 });
 
 function ContactPage() {
+  const { service, project } = Route.useSearch();
+  const projectContext = project ? `I would like to discuss a product similar to ${project}.` : "";
+
   return (
     <>
       <section className="pt-40 lg:pt-52 pb-16">
@@ -96,6 +102,7 @@ function ContactPage() {
                     "Custom Software",
                     "Other",
                   ]}
+                  defaultValue={service}
                 />
                 <SelectField
                   label="Project type"
@@ -150,6 +157,7 @@ function ContactPage() {
                   name="description"
                   aria-label="Project description"
                   placeholder="What do you need to build? Include key features, users, integrations, and constraints."
+                  defaultValue={projectContext}
                   className="w-full bg-transparent border-b border-border focus:border-teal py-3 outline-none text-foreground placeholder:text-muted-foreground/50 resize-none"
                 />
               </div>
@@ -171,9 +179,12 @@ function ContactPage() {
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-teal mb-4">
                 Email
               </p>
-              <EmailAction className="font-display text-2xl lg:text-3xl block hover:text-teal break-all">
-                Email our team
-              </EmailAction>
+              <a
+                href={`mailto:${siteConfig.email}`}
+                className="font-display text-2xl lg:text-3xl block hover:text-teal break-all"
+              >
+                {siteConfig.email}
+              </a>
             </div>
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-teal mb-4">
@@ -185,7 +196,7 @@ function ContactPage() {
                 rel="noreferrer"
                 className="font-display text-2xl lg:text-3xl block hover:text-teal"
               >
-                {siteConfig.whatsappDisplay}
+                Chat with us on WhatsApp
               </a>
             </div>
             <div>
@@ -259,7 +270,17 @@ function Field({
   );
 }
 
-function SelectField({ label, name, options }: { label: string; name: string; options: string[] }) {
+function SelectField({
+  label,
+  name,
+  options,
+  defaultValue = "",
+}: {
+  label: string;
+  name: string;
+  options: string[];
+  defaultValue?: string;
+}) {
   return (
     <div className="border-b border-border pb-2 focus-within:border-teal transition-colors">
       <label
@@ -271,10 +292,13 @@ function SelectField({ label, name, options }: { label: string; name: string; op
       <select
         id={name}
         name={name}
-        defaultValue=""
+        defaultValue={defaultValue}
         className="w-full bg-background py-2 text-foreground outline-none"
       >
         <option value="">Choose an option</option>
+        {defaultValue && !options.includes(defaultValue) ? (
+          <option value={defaultValue}>{defaultValue}</option>
+        ) : null}
         {options.map((option) => (
           <option key={option} value={option}>
             {option}

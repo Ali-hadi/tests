@@ -35,6 +35,7 @@ import { Route as ToolsAiHumanizerRouteImport } from './routes/tools.ai-humanize
 import { Route as ToolsAiDetectorRouteImport } from './routes/tools.ai-detector'
 import { Route as ToolsToolIdRouteImport } from './routes/tools.$toolId'
 import { Route as ServicesServiceIdRouteImport } from './routes/services.$serviceId'
+import { Route as PortfolioProjectIdRouteImport } from './routes/portfolio.$projectId'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
 const WhatWeBuildRoute = WhatWeBuildRouteImport.update({
@@ -167,6 +168,11 @@ const ServicesServiceIdRoute = ServicesServiceIdRouteImport.update({
   path: '/$serviceId',
   getParentRoute: () => ServicesRoute,
 } as any)
+const PortfolioProjectIdRoute = PortfolioProjectIdRouteImport.update({
+  id: '/$projectId',
+  path: '/$projectId',
+  getParentRoute: () => PortfolioRoute,
+} as any)
 const BlogSlugRoute = BlogSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
@@ -179,7 +185,7 @@ export interface FileRoutesByFullPath {
   '/ai-solutions': typeof AiSolutionsRoute
   '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
-  '/portfolio': typeof PortfolioRoute
+  '/portfolio': typeof PortfolioRouteWithChildren
   '/pricing': typeof PricingRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/refund-policy': typeof RefundPolicyRoute
@@ -189,6 +195,7 @@ export interface FileRoutesByFullPath {
   '/tools': typeof ToolsRouteWithChildren
   '/what-we-build': typeof WhatWeBuildRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/portfolio/$projectId': typeof PortfolioProjectIdRoute
   '/services/$serviceId': typeof ServicesServiceIdRoute
   '/tools/$toolId': typeof ToolsToolIdRoute
   '/tools/ai-detector': typeof ToolsAiDetectorRoute
@@ -208,7 +215,7 @@ export interface FileRoutesByTo {
   '/ai-solutions': typeof AiSolutionsRoute
   '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
-  '/portfolio': typeof PortfolioRoute
+  '/portfolio': typeof PortfolioRouteWithChildren
   '/pricing': typeof PricingRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/refund-policy': typeof RefundPolicyRoute
@@ -218,6 +225,7 @@ export interface FileRoutesByTo {
   '/tools': typeof ToolsRouteWithChildren
   '/what-we-build': typeof WhatWeBuildRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/portfolio/$projectId': typeof PortfolioProjectIdRoute
   '/services/$serviceId': typeof ServicesServiceIdRoute
   '/tools/$toolId': typeof ToolsToolIdRoute
   '/tools/ai-detector': typeof ToolsAiDetectorRoute
@@ -238,7 +246,7 @@ export interface FileRoutesById {
   '/ai-solutions': typeof AiSolutionsRoute
   '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
-  '/portfolio': typeof PortfolioRoute
+  '/portfolio': typeof PortfolioRouteWithChildren
   '/pricing': typeof PricingRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/refund-policy': typeof RefundPolicyRoute
@@ -248,6 +256,7 @@ export interface FileRoutesById {
   '/tools': typeof ToolsRouteWithChildren
   '/what-we-build': typeof WhatWeBuildRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/portfolio/$projectId': typeof PortfolioProjectIdRoute
   '/services/$serviceId': typeof ServicesServiceIdRoute
   '/tools/$toolId': typeof ToolsToolIdRoute
   '/tools/ai-detector': typeof ToolsAiDetectorRoute
@@ -279,6 +288,7 @@ export interface FileRouteTypes {
     | '/tools'
     | '/what-we-build'
     | '/blog/$slug'
+    | '/portfolio/$projectId'
     | '/services/$serviceId'
     | '/tools/$toolId'
     | '/tools/ai-detector'
@@ -308,6 +318,7 @@ export interface FileRouteTypes {
     | '/tools'
     | '/what-we-build'
     | '/blog/$slug'
+    | '/portfolio/$projectId'
     | '/services/$serviceId'
     | '/tools/$toolId'
     | '/tools/ai-detector'
@@ -337,6 +348,7 @@ export interface FileRouteTypes {
     | '/tools'
     | '/what-we-build'
     | '/blog/$slug'
+    | '/portfolio/$projectId'
     | '/services/$serviceId'
     | '/tools/$toolId'
     | '/tools/ai-detector'
@@ -357,7 +369,7 @@ export interface RootRouteChildren {
   AiSolutionsRoute: typeof AiSolutionsRoute
   BlogRoute: typeof BlogRouteWithChildren
   ContactRoute: typeof ContactRoute
-  PortfolioRoute: typeof PortfolioRoute
+  PortfolioRoute: typeof PortfolioRouteWithChildren
   PricingRoute: typeof PricingRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   RefundPolicyRoute: typeof RefundPolicyRoute
@@ -552,6 +564,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesServiceIdRouteImport
       parentRoute: typeof ServicesRoute
     }
+    '/portfolio/$projectId': {
+      id: '/portfolio/$projectId'
+      path: '/$projectId'
+      fullPath: '/portfolio/$projectId'
+      preLoaderRoute: typeof PortfolioProjectIdRouteImport
+      parentRoute: typeof PortfolioRoute
+    }
     '/blog/$slug': {
       id: '/blog/$slug'
       path: '/$slug'
@@ -571,6 +590,18 @@ const BlogRouteChildren: BlogRouteChildren = {
 }
 
 const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
+
+interface PortfolioRouteChildren {
+  PortfolioProjectIdRoute: typeof PortfolioProjectIdRoute
+}
+
+const PortfolioRouteChildren: PortfolioRouteChildren = {
+  PortfolioProjectIdRoute: PortfolioProjectIdRoute,
+}
+
+const PortfolioRouteWithChildren = PortfolioRoute._addFileChildren(
+  PortfolioRouteChildren,
+)
 
 interface ServicesRouteChildren {
   ServicesServiceIdRoute: typeof ServicesServiceIdRoute
@@ -620,7 +651,7 @@ const rootRouteChildren: RootRouteChildren = {
   AiSolutionsRoute: AiSolutionsRoute,
   BlogRoute: BlogRouteWithChildren,
   ContactRoute: ContactRoute,
-  PortfolioRoute: PortfolioRoute,
+  PortfolioRoute: PortfolioRouteWithChildren,
   PricingRoute: PricingRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   RefundPolicyRoute: RefundPolicyRoute,
