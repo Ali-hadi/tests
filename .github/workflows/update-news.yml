@@ -2,11 +2,15 @@ name: Update AI and IT News
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */3 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: verified-content-publishing
+  cancel-in-progress: false
 
 jobs:
   update-news:
@@ -21,16 +25,20 @@ jobs:
           node-version: "22"
 
       - name: Refresh news JSON
-        run: node scripts/update-news.mjs
+        run: node scripts/publish-content.mjs
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          NEWS_ALLOWED_IMAGE_HOSTS: ${{ secrets.NEWS_ALLOWED_IMAGE_HOSTS }}
 
       - name: Commit updated feed
         run: |
           if git diff --quiet -- src/data/news.json public/data/news.json public/sitemap.xml; then
-            echo "No news changes."
+            echo "No verified article passed publication checks."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add src/data/news.json public/data/news.json public/sitemap.xml
-          git commit -m "Update AI and IT news feed"
+          git commit -m "Publish verified technology article"
           git push

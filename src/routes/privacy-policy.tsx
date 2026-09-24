@@ -6,12 +6,12 @@ import { createSeo, siteConfig } from "@/lib/seo";
 export const Route = createFileRoute("/privacy-policy")({
   head: () =>
     createSeo({
-      title: "Privacy Policy | AItouchSolutions",
+      title: "Privacy Policy | AiTouchSolutions",
       description:
-        "Read the AItouchSolutions privacy policy covering services, subscriptions, digital tools, billing, AI products, and account data.",
+        "Read the AiTouchSolutions privacy policy covering services, subscriptions, digital tools, billing, AI products, and account data.",
       path: "/privacy-policy",
       keywords: [
-        "AItouchSolutions privacy policy",
+        "AiTouchSolutions privacy policy",
         "subscription privacy policy",
         "AI tools privacy",
       ],

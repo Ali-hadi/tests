@@ -47,7 +47,10 @@ export type NewsPost = {
   publishedAt: string;
   updatedAt?: string;
   url?: string;
+  indexable: boolean;
+  supportingSources?: { name: string; url: string }[];
   image: string;
+  imageAlt?: string;
   tags: string[];
   focusKeyword?: string;
   secondaryKeywords?: string[];
@@ -103,43 +106,6 @@ function toStringArray(value: unknown): string[] {
 
 function postSlug(post: { id: string; slug?: string; title: string }) {
   return post.slug || `${slugify(post.title)}-${post.id}`;
-}
-
-function defaultSections(post: {
-  title: string;
-  excerpt: string;
-  source: string;
-  category: NewsCategory;
-  tags: string[];
-}) {
-  const topic = post.tags.length > 0 ? post.tags.slice(0, 4).join(", ") : post.category;
-  const categoryContext =
-    post.category === "AI"
-      ? "AI adoption is moving from experiments into practical systems, so timing, trust, infrastructure, and governance matter."
-      : "IT teams are balancing modernization with reliability, security, cost, and user experience.";
-
-  return [
-    {
-      heading: "Overview",
-      body: [
-        sentence(post.excerpt),
-        "This brief is stored locally in JSON with article metadata, image, tags, and an internal detail URL.",
-      ],
-    },
-    {
-      heading: "Why It Matters",
-      body: [
-        categoryContext,
-        `The important signal is how ${topic} affects real product, automation, infrastructure, and customer-facing decisions.`,
-      ],
-    },
-    {
-      heading: "AItouchSolutions Take",
-      body: [
-        `Treat this ${post.source} story as a planning signal, then validate the impact with a focused workflow or pilot.`,
-      ],
-    },
-  ];
 }
 
 function estimateReadTime(post: Pick<NewsPost, "title" | "excerpt" | "keyTakeaways" | "content">) {
@@ -266,22 +232,29 @@ function normalizePost(rawPost: unknown): NewsPost {
   const base = {
     id: cleanText(raw.id ?? ""),
     title: cleanText(raw.title ?? "Technology brief"),
-    excerpt: sentence(raw.excerpt ?? raw.title ?? "A technology update from AItouchSolutions."),
-    source: cleanText(raw.source ?? "AItouchSolutions"),
+    excerpt: sentence(raw.excerpt ?? raw.title ?? "A technology update from AiTouchSolutions."),
+    source: cleanText(raw.source ?? "AiTouchSolutions"),
     category,
     publishedAt: raw.publishedAt ?? new Date(0).toISOString(),
     updatedAt: raw.updatedAt,
     url: raw.url,
     image: raw.image || fallbackImage,
+    imageAlt: cleanText(raw.imageAlt ?? raw.title ?? "AiTouchSolutions article image"),
+    indexable: raw.indexable === true || (raw.indexable !== false && raw.contentType === "pillar"),
+    supportingSources: Array.isArray(raw.supportingSources)
+      ? raw.supportingSources.filter(
+          (source): source is { name: string; url: string } =>
+            !!source && typeof source.name === "string" && typeof source.url === "string",
+        )
+      : [],
     tags: tags.length > 0 ? tags : [category],
-    author: cleanText(raw.author ?? "AItouchSolutions Editorial"),
+    author: cleanText(raw.author ?? "AiTouchSolutions Editorial"),
   };
-  const content =
-    Array.isArray(raw.content) && raw.content.length > 0
-      ? raw.content
-          .map(normalizeSection)
-          .filter((section): section is NewsArticleSection => Boolean(section))
-      : defaultSections(base);
+  const content = Array.isArray(raw.content)
+    ? raw.content
+        .map(normalizeSection)
+        .filter((section): section is NewsArticleSection => Boolean(section))
+    : [];
   const keyTakeaways = toStringArray(raw.keyTakeaways);
   const secondaryKeywords = toStringArray(raw.secondaryKeywords);
   const longTailKeywords = toStringArray(raw.longTailKeywords);
@@ -296,14 +269,8 @@ function normalizePost(rawPost: unknown): NewsPost {
     secondaryKeywords,
     longTailKeywords,
     contentType: raw.contentType === "pillar" ? "pillar" : "news",
-    keyTakeaways:
-      keyTakeaways.length > 0
-        ? keyTakeaways
-        : [
-            `${base.source} is tracking this as a ${base.category} signal.`,
-            "The brief stays internal, so readers can review it without being redirected.",
-          ],
-    content: content.length > 0 ? content : defaultSections(base),
+    keyTakeaways,
+    content,
     faq: faq.length > 0 ? faq : undefined,
     cta: normalizeCta(raw.cta),
     readingTime: Number.isFinite(raw.readingTime) ? Number(raw.readingTime) : 0,
@@ -323,6 +290,8 @@ export const newsPosts = [
 ]
   .map(normalizePost)
   .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+
+export const indexableNewsPosts = newsPosts.filter((post) => post.indexable);
 
 export const newsSources = newsData.sources as NewsSource[];
 
@@ -352,7 +321,7 @@ export function getNewsReadTime(post: NewsPost) {
 
 export function getRelatedNewsPosts(post: NewsPost, limit = 3) {
   return newsPosts
-    .filter((item) => item.id !== post.id)
+    .filter((item) => item.indexable && item.id !== post.id)
     .map((item) => {
       const sharedTags = item.tags.filter((tag) => post.tags.includes(tag)).length;
       const categoryScore = item.category === post.category ? 2 : 0;

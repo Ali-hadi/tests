@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { BarChart3, DatabaseZap, ShieldCheck, Sparkles } from "lucide-react";
+import { BarChart3, ShieldCheck, Sparkles } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import case1 from "@/assets/case-1.jpg";
 import case2 from "@/assets/case-2.jpg";
@@ -14,10 +14,11 @@ import { createSeo } from "@/lib/seo";
 export const Route = createFileRoute("/portfolio")({
   head: () =>
     createSeo({
-      title: "100+ CRM, ERP, AI & SaaS Project Portfolio | AItouchSolutions",
+      title: "Software Solution Concepts | AiTouchSolutions",
       description:
-        "Explore 100+ realistic enterprise project concepts and dashboard snapshots across CRM, ERP, AI automation, fintech, healthcare, logistics, real estate, and SaaS platforms.",
+        "Explore illustrative software solution concepts across CRM, ERP, AI automation, e-commerce, mobile apps, and SaaS. These examples are not client case studies.",
       path: "/portfolio",
+      noIndex: true,
       keywords: [
         "CRM portfolio",
         "ERP project examples",
@@ -38,7 +39,7 @@ const featuredProjects = [
     description:
       "A predictive operations dashboard concept for logistics teams, combining live events, route health, inventory signals, and AI recommendations.",
     stack: "React / Python / PostgreSQL / OpenAI",
-    result: "Real-time decision layer",
+    result: "Illustrative dashboard view",
   },
   {
     img: case2,
@@ -48,7 +49,7 @@ const featuredProjects = [
     description:
       "An automation platform pattern for approvals, reconciliation, team queues, audit trails, and exception handling at enterprise scale.",
     stack: "Node.js / LangChain / Redis / AWS",
-    result: "Ops automation blueprint",
+    result: "Workflow design concept",
   },
   {
     img: case3,
@@ -58,7 +59,7 @@ const featuredProjects = [
     description:
       "A healthcare product interface for appointments, wellness insights, reminders, patient history, and secure care-team messaging.",
     stack: "React Native / Supabase / AI Assistants",
-    result: "Mobile health product pattern",
+    result: "Mobile app concept",
   },
 ];
 
@@ -85,15 +86,15 @@ function PortfolioPage() {
         <div className="relative max-w-[1400px] mx-auto px-6 lg:px-10">
           <Reveal>
             <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-teal mb-8">
-              Enterprise project catalog
+              Illustrative solution concepts
             </p>
             <h1 className="font-display font-bold text-6xl md:text-8xl lg:text-9xl tracking-[-0.04em] leading-[0.9] max-w-6xl">
-              100+ big-system ideas that look ready to ship.
+              Examples of systems businesses may need.
             </h1>
             <p className="mt-10 max-w-3xl text-lg text-muted-foreground leading-relaxed">
-              CRM, ERP, AI automation, fintech, healthcare, logistics, real estate, e-commerce,
-              public-sector, and SaaS systems with realistic dashboard snapshots. The goal is
-              simple: clients should instantly see the scale AItouchSolutions can build.
+              The following screens are illustrative product concepts, not client projects or
+              evidence of delivered results. Use them to start a conversation about the workflows,
+              integrations, and features your own product may need.
             </p>
           </Reveal>
 
@@ -103,9 +104,8 @@ function PortfolioPage() {
                 {
                   icon: Sparkles,
                   value: `${enterpriseProjects.length}+`,
-                  label: "Project patterns",
+                  label: "Illustrative concepts",
                 },
-                { icon: DatabaseZap, value: "12", label: "Enterprise verticals" },
                 { icon: ShieldCheck, value: "CRM / ERP", label: "Core business systems" },
               ].map((item) => (
                 <div key={item.label} className="bg-background p-8">
@@ -127,10 +127,10 @@ function PortfolioPage() {
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 mb-12">
               <div>
                 <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-orange mb-5">
-                  Showcase snapshots
+                  Visual concepts
                 </p>
                 <h2 className="font-display text-4xl lg:text-6xl font-bold tracking-[-0.03em]">
-                  Premium client-facing visuals.
+                  Illustrative screen directions, not screenshots of delivered client work.
                 </h2>
               </div>
               <p className="max-w-md text-muted-foreground leading-relaxed">
@@ -194,10 +194,11 @@ function PortfolioPage() {
             <div className="flex flex-col lg:flex-row justify-between gap-8 mb-12">
               <div>
                 <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-teal mb-5">
-                  100+ project library
+                  Solution concept library
                 </p>
                 <h2 className="font-display text-4xl lg:text-7xl font-bold tracking-[-0.03em] max-w-4xl">
-                  Real-world systems clients already understand and need.
+                  Illustrative patterns for common business workflows. These are not client case
+                  studies.
                 </h2>
               </div>
               <Link
@@ -245,7 +246,7 @@ function PortfolioPage() {
                   Pick a system, then let us turn it into your business engine.
                 </h2>
                 <p className="mt-8 text-muted-foreground text-lg leading-relaxed max-w-2xl">
-                  These are implementation-ready product directions. AItouchSolutions can scope the
+                  These are implementation-ready product directions. AiTouchSolutions can scope the
                   workflows, dashboard UX, database model, automation logic, and deployment plan for
                   your industry.
                 </p>
@@ -290,7 +291,11 @@ function ProjectCard({ project, index }: { project: EnterpriseProject; index: nu
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{project.description}</p>
         <div className="mt-6 space-y-3">
           <InfoRow label="Stack" value={project.stack} />
-          <InfoRow label="Metric" value={project.metrics[index % project.metrics.length]} strong />
+          <InfoRow
+            label="Concept focus"
+            value={project.metrics[index % project.metrics.length]}
+            strong
+          />
         </div>
       </div>
     </article>

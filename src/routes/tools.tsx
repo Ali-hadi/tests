@@ -31,9 +31,9 @@ export const Route = createFileRoute("/tools")({
     if (currentMatch?.fullPath !== "/tools") return {};
 
     return createSeo({
-      title: "AI Tools Suite | AItouchSolutions",
+      title: "AI Tools Suite | AiTouchSolutions",
       description:
-        "Explore AItouchSolutions AI tools for humanizing text, AI detection, resumes, thumbnails, proposals, websites, captions, domains, portfolios, and chatbots.",
+        "Explore AiTouchSolutions AI tools for humanizing text, AI detection, resumes, thumbnails, proposals, websites, captions, domains, portfolios, and chatbots.",
       path: "/tools",
       keywords: [
         "AI tools",
@@ -83,7 +83,7 @@ export const tools: Tool[] = [
     shortName: "Humanizer",
     category: "Writing",
     summary:
-      "Turn robotic AI text into natural, SEO-friendly, plagiarism-safe copy while preserving the original meaning and formatting.",
+      "Revise AI-assisted text for more natural phrasing and readability while preserving the original meaning and formatting.",
     icon: Sparkles,
     accent: "teal",
     metricLabel: "Human score",
@@ -362,7 +362,7 @@ export function getToolPagePath(toolId: string) {
 
 const highlights = [
   { label: "AI tools", value: "10", icon: BrainCircuit },
-  { label: "Reusable modules", value: "40+", icon: Layers3 },
+  { label: "Interface modules", value: "Reusable", icon: Layers3 },
   { label: "Export formats", value: "PDF/TXT/CSV", icon: Download },
   { label: "Built for scale", value: "MERN ready", icon: ShieldCheck },
 ];
@@ -813,7 +813,7 @@ function ToolsHubPage() {
               Want these tools connected to real AI APIs?
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground lg:text-base">
-              AItouchSolutions can wire this interface to authentication, subscriptions, MongoDB,
+              AiTouchSolutions can wire this interface to authentication, subscriptions, MongoDB,
               Redis, analytics, OpenAI, Claude, Gemini, image generation, and admin dashboards.
             </p>
             <Link

@@ -1,0 +1,30 @@
+{
+  "purpose": "Keyword-to-page planning inventory. These are working topics, not a promise of demand or a list to publish verbatim.",
+  "clusters": [
+    { "topic": "AI agent development", "primary": "AI agent development company", "secondary": ["custom AI agents", "AI workflow agents", "LLM agent development"], "intent": "commercial", "target": "/services/ai-agent-development", "supportingContent": ["What is an AI agent?", "When should a business automate a workflow with an agent?"] },
+    { "topic": "AI automation", "primary": "AI automation services", "secondary": ["business process automation", "AI workflow automation", "document automation"], "intent": "commercial", "target": "/services/ai-automation", "supportingContent": ["How to identify a workflow that is ready for automation", "AI automation vs. rules-based automation"] },
+    { "topic": "AI chatbot and RAG", "primary": "AI chatbot development", "secondary": ["RAG chatbot development", "custom AI assistant", "business knowledge search"], "intent": "commercial", "target": "/services/ai-chatbot-development", "supportingContent": ["What retrieval-augmented generation means for business knowledge", "How to scope an internal knowledge assistant"] },
+    { "topic": "AI SaaS", "primary": "AI SaaS development", "secondary": ["custom AI SaaS platform", "AI product development", "AI MVP development"], "intent": "commercial", "target": "/services/ai-saas-development", "supportingContent": ["Planning an AI SaaS MVP", "AI product evaluation and operating costs"] },
+    { "topic": "Custom SaaS and MVP", "primary": "custom SaaS development company", "secondary": ["startup MVP development", "SaaS product development", "custom SaaS platform"], "intent": "commercial", "target": "/services/custom-saas-development", "supportingContent": ["How to scope a first SaaS release", "SaaS architecture decisions for an MVP"] },
+    { "topic": "Web applications", "primary": "web application development company", "secondary": ["custom web application development", "web platform development", "business web application"], "intent": "commercial", "target": "/services/web-application-development", "supportingContent": ["Choosing a custom web app architecture", "Planning integrations for a business portal"] },
+    { "topic": "Mobile apps", "primary": "mobile app development company", "secondary": ["iOS app development", "Android app development", "React Native app development"], "intent": "commercial", "target": "/services/mobile-app-development", "supportingContent": ["Native vs. cross-platform mobile apps", "Planning an app backend and integrations"] },
+    { "topic": "E-commerce and Shopify", "primary": "ecommerce development company", "secondary": ["Shopify development company", "custom ecommerce website", "headless commerce development"], "intent": "commercial", "target": "/services/ecommerce-development", "supportingContent": ["Shopify vs. custom commerce architecture", "E-commerce integrations and inventory planning"] },
+    { "topic": "CRM and ERP", "primary": "CRM and ERP development", "secondary": ["custom CRM development", "custom ERP software", "business management system"], "intent": "commercial", "target": "/services/crm-erp-development", "supportingContent": ["How to scope a custom CRM", "Build or adapt an ERP workflow"] },
+    { "topic": "Business dashboards", "primary": "data dashboard development", "secondary": ["custom analytics dashboard", "business reporting software", "operational dashboard development"], "intent": "commercial", "target": "/services/data-dashboard-development", "supportingContent": ["Planning metrics and data sources for a dashboard", "Dashboard design for operational decisions"] },
+    { "topic": "Cloud and DevOps", "primary": "cloud DevOps services", "secondary": ["cloud application development", "CI/CD implementation", "cloud migration planning"], "intent": "commercial", "target": "/services/cloud-devops-services", "supportingContent": ["Cloud deployment tradeoffs for a growing product", "A practical CI/CD checklist"] },
+    { "topic": "Cybersecurity", "primary": "cybersecurity services for software", "secondary": ["application security review", "secure software development", "API security assessment"], "intent": "commercial", "target": "/services/cybersecurity-services", "supportingContent": ["Security review checklist for a web application", "Common API authorization design questions"] },
+    { "topic": "Solution discovery", "primary": "what software can be built for my business", "secondary": ["custom business software", "software for business workflows", "technology solution planning"], "intent": "informational and commercial", "target": "/what-we-build", "supportingContent": ["How to turn a business problem into a software brief", "Questions to answer before requesting a software estimate"] }
+  ],
+  "taxonomy": {
+    "technology": ["AI", "software", "web", "mobile", "cloud", "SaaS", "automation"],
+    "service": ["development", "design", "integration", "migration", "maintenance", "consulting"],
+    "product": ["CRM", "ERP", "POS", "e-commerce", "marketplace", "SaaS", "mobile app"],
+    "platform": ["Shopify", "WooCommerce", "WordPress", "React", "React Native", "Next.js", "Node.js", "MERN"],
+    "intent": ["informational", "commercial", "transactional", "navigational"],
+    "geography": {
+      "candidateMarkets": ["USA", "UK", "Canada", "Australia", "UAE", "Saudi Arabia", "Europe", "Pakistan"],
+      "publishedLocationPages": [],
+      "policy": "Do not publish location-targeted pages until a genuine service, team, office, client, or market basis and distinct localized value are verified."
+    }
+  }
+}

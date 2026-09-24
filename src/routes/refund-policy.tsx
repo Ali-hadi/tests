@@ -6,12 +6,12 @@ import { createSeo, siteConfig } from "@/lib/seo";
 export const Route = createFileRoute("/refund-policy")({
   head: () =>
     createSeo({
-      title: "Refund Policy | AItouchSolutions",
+      title: "Refund Policy | AiTouchSolutions",
       description:
-        "Read the AItouchSolutions refund policy for custom services, subscriptions, digital tools, licenses, setup fees, and support plans.",
+        "Read the AiTouchSolutions refund policy for custom services, subscriptions, digital tools, licenses, setup fees, and support plans.",
       path: "/refund-policy",
       keywords: [
-        "AItouchSolutions refund policy",
+        "AiTouchSolutions refund policy",
         "subscription refund policy",
         "digital tools refund",
       ],

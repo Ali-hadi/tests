@@ -6,11 +6,11 @@ import { createSeo, siteConfig } from "@/lib/seo";
 export const Route = createFileRoute("/terms-and-conditions")({
   head: () =>
     createSeo({
-      title: "Terms of Service | AItouchSolutions",
+      title: "Terms of Service | AiTouchSolutions",
       description:
-        "Read the AItouchSolutions terms of service for software services, subscriptions, digital tools, AI products, and website use.",
+        "Read the AiTouchSolutions terms of service for software services, subscriptions, digital tools, AI products, and website use.",
       path: "/terms-and-conditions",
-      keywords: ["AItouchSolutions terms", "terms of service", "software subscription terms"],
+      keywords: ["AiTouchSolutions terms", "terms of service", "software subscription terms"],
     }),
   component: TermsPage,
 });
@@ -18,7 +18,7 @@ export const Route = createFileRoute("/terms-and-conditions")({
 const terms = [
   {
     title: "Scope of These Terms",
-    body: "These terms apply when you use the AItouchSolutions website, request custom services, purchase digital tools, access AI products, or subscribe to any monthly, yearly, or usage-based plan. A separate signed agreement, invoice, order form, or proposal may add project-specific terms.",
+    body: "These terms apply when you use the AiTouchSolutions website, request custom services, purchase digital tools, access AI products, or subscribe to any monthly, yearly, or usage-based plan. A separate signed agreement, invoice, order form, or proposal may add project-specific terms.",
   },
   {
     title: "Services and Project Work",
@@ -50,7 +50,7 @@ const terms = [
   },
   {
     title: "Intellectual Property",
-    body: "Ownership of custom deliverables is handled in the project agreement. AItouchSolutions may retain rights to pre-existing code, tools, templates, libraries, workflows, prompts, models, product ideas, and general know-how unless agreed otherwise.",
+    body: "Ownership of custom deliverables is handled in the project agreement. AiTouchSolutions may retain rights to pre-existing code, tools, templates, libraries, workflows, prompts, models, product ideas, and general know-how unless agreed otherwise.",
   },
   {
     title: "Third-Party Services",
@@ -66,7 +66,7 @@ const terms = [
   },
   {
     title: "Disclaimers and Liability",
-    body: "Services, subscriptions, tools, and content are provided as available and without guaranteed business results unless written in a signed agreement. To the maximum extent allowed by law, AItouchSolutions is not liable for indirect, incidental, special, consequential, or punitive damages.",
+    body: "Services, subscriptions, tools, and content are provided as available and without guaranteed business results unless written in a signed agreement. To the maximum extent allowed by law, AiTouchSolutions is not liable for indirect, incidental, special, consequential, or punitive damages.",
   },
 ];
 

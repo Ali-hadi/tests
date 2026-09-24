@@ -6,6 +6,7 @@ import logoWhite from "@/assets/logo-white.png";
 
 const links = [
   { to: "/services", label: "Services" },
+  { to: "/what-we-build", label: "Solutions" },
   { to: "/ai-solutions", label: "AI Solutions" },
   { to: "/tools", label: "Tools" },
   { to: "/technologies", label: "Technologies" },
@@ -65,14 +66,14 @@ export function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
-    <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${headerClass}`}
-    >
+    <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${headerClass}`}>
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10 h-16 lg:h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
-          <img src={logo} alt="AItouchSolutions" className="h-7 lg:h-8 w-auto" />
+          <img src={logo} alt="AiTouchSolutions" className="h-7 lg:h-8 w-auto" />
         </Link>
-        <nav className={`hidden lg:flex items-center gap-8 text-[13px] font-medium ${navBaseClass}`}>
+        <nav
+          className={`hidden lg:flex items-center gap-8 text-[13px] font-medium ${navBaseClass}`}
+        >
           {links.map((l) =>
             l.to === "/tools" ? (
               <div key={l.to} className="group relative">

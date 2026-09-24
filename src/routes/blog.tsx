@@ -1,14 +1,7 @@
 import { createFileRoute, Link, Outlet, useChildMatches } from "@tanstack/react-router";
 import { ArrowRight, Clock3 } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
-import {
-  formatNewsDate,
-  getNewsReadTime,
-  newsCategoryCounts,
-  newsGeneratedAt,
-  newsPosts,
-  newsSources,
-} from "@/lib/news";
+import { formatNewsDate, getNewsReadTime, indexableNewsPosts, newsSources } from "@/lib/news";
 import { createSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/blog")({
@@ -17,9 +10,9 @@ export const Route = createFileRoute("/blog")({
     if (currentMatch?.fullPath !== "/blog") return {};
 
     return createSeo({
-      title: "AI & IT Blog | AItouchSolutions",
+      title: "AI & IT Blog | AiTouchSolutions",
       description:
-        "Read AItouchSolutions AI and IT guides, pillar articles, and technology briefs with internal detail pages, images, tags, and indexed article links.",
+        "Read AiTouchSolutions AI and IT guides, pillar articles, and technology briefs with internal detail pages, images, tags, and indexed article links.",
       path: "/blog",
       keywords: ["AI blog", "IT blog", "technology guides", "software news", "AI articles"],
     });
@@ -33,9 +26,11 @@ function BlogRoutePage() {
 }
 
 function BlogIndexPage() {
-  const updatedAt = newsGeneratedAt ? formatNewsDate(newsGeneratedAt) : "Pending";
-  const featuredPost = newsPosts[0];
-  const remainingPosts = featuredPost ? newsPosts.slice(1) : newsPosts;
+  const featuredPost = indexableNewsPosts[0];
+  const updatedAt = featuredPost
+    ? formatNewsDate(featuredPost.updatedAt ?? featuredPost.publishedAt)
+    : "Pending";
+  const remainingPosts = featuredPost ? indexableNewsPosts.slice(1) : indexableNewsPosts;
 
   return (
     <>
@@ -51,7 +46,7 @@ function BlogIndexPage() {
               </div>
               <div className="lg:col-span-4 lg:pb-4">
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  AItouchSolutions guides and briefs for AI, software, cloud, security, automation,
+                  AiTouchSolutions guides and briefs for AI, software, cloud, security, automation,
                   and product engineering. Every article opens on this site with its own indexed
                   detail page.
                 </p>
@@ -64,9 +59,15 @@ function BlogIndexPage() {
       <section className="border-y border-border bg-ink">
         <div className="max-w-[1400px] mx-auto grid grid-cols-2 px-6 lg:grid-cols-4 lg:px-10">
           {[
-            { label: "Stories", value: newsPosts.length.toString() },
-            { label: "AI posts", value: newsCategoryCounts.AI.toString() },
-            { label: "IT posts", value: newsCategoryCounts.IT.toString() },
+            { label: "Stories", value: indexableNewsPosts.length.toString() },
+            {
+              label: "AI posts",
+              value: indexableNewsPosts.filter((post) => post.category === "AI").length.toString(),
+            },
+            {
+              label: "IT posts",
+              value: indexableNewsPosts.filter((post) => post.category === "IT").length.toString(),
+            },
             { label: "Updated", value: updatedAt },
           ].map((item, index) => (
             <div
@@ -154,7 +155,7 @@ function BlogIndexPage() {
 
       <section className={featuredPost ? "pb-24 lg:pb-32" : "py-24 lg:py-32"}>
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          {newsPosts.length > 0 ? (
+          {indexableNewsPosts.length > 0 ? (
             <div className="grid grid-cols-1 gap-px bg-border md:grid-cols-2 xl:grid-cols-3">
               {remainingPosts.map((post, index) => (
                 <Reveal key={post.id} delay={index % 6}>

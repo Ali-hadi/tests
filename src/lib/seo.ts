@@ -1,7 +1,7 @@
 import { organicServiceKeywords, serviceLandingPages } from "@/lib/service-seo";
 
 const SITE_URL = "https://aitouchsolutions.com";
-const SITE_NAME = "AItouchSolutions";
+const SITE_NAME = "AiTouchSolutions";
 const AUTHOR_NAME = "Jon";
 const CONTACT_EMAIL = "shahzad.mern.dev@gmail.com";
 const WHATSAPP_DISPLAY = "03244958672";
@@ -11,20 +11,6 @@ const LINKEDIN_URL = "https://www.linkedin.com/in/ai-touch-solutions-91b727417";
 const LINKEDIN_DISPLAY = "linkedin.com/in/ai-touch-solutions-91b727417";
 const DEFAULT_IMAGE = "/og-image.jpg";
 const FOUNDER_IMAGE = "/founder-jon.jpg";
-
-const baseKeywords = [
-  "AItouchSolutions",
-  "Jon",
-  "AI software company",
-  "AI agent development",
-  "workflow automation",
-  "custom software development",
-  "SaaS development",
-  "web application development",
-  "mobile app development",
-  "MERN developer",
-  ...organicServiceKeywords,
-];
 
 export const siteConfig = {
   name: SITE_NAME,
@@ -38,10 +24,10 @@ export const siteConfig = {
   linkedinDisplay: LINKEDIN_DISPLAY,
   defaultImage: DEFAULT_IMAGE,
   founderImage: FOUNDER_IMAGE,
-  defaultTitle: "AItouchSolutions | AI Software, Web Apps & Automation",
+  defaultTitle: "AiTouchSolutions | AI Software, Web Apps & Automation",
   defaultDescription:
-    "AItouchSolutions builds AI agents, automation systems, custom SaaS, web apps, mobile apps, and scalable digital products for global clients. Founded by Jon.",
-  keywords: baseKeywords,
+    "AiTouchSolutions builds AI agents, automation systems, custom SaaS, web apps, mobile apps, and scalable digital products for global clients. Founded by Jon.",
+  keywords: organicServiceKeywords,
 };
 
 type SeoOptions = {
@@ -52,6 +38,9 @@ type SeoOptions = {
   type?: "website" | "article";
   keywords?: string[];
   noIndex?: boolean;
+  author?: string;
+  publishedAt?: string;
+  updatedAt?: string;
 };
 
 export function absoluteUrl(path = "/") {
@@ -65,19 +54,19 @@ export function createSeo({
   path = "/",
   image = DEFAULT_IMAGE,
   type = "website",
-  keywords = [],
   noIndex = false,
+  author = AUTHOR_NAME,
+  publishedAt,
+  updatedAt,
 }: SeoOptions) {
   const canonical = absoluteUrl(path);
   const imageUrl = absoluteUrl(image);
-  const keywordContent = [...baseKeywords, ...keywords].join(", ");
 
   return {
     meta: [
       { title },
       { name: "description", content: description },
-      { name: "author", content: AUTHOR_NAME },
-      { name: "keywords", content: keywordContent },
+      { name: "author", content: author },
       {
         name: "robots",
         content: noIndex
@@ -105,19 +94,20 @@ export function createSeo({
       { property: "og:description", content: description },
       { property: "og:url", content: canonical },
       { property: "og:image", content: imageUrl },
-      { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: `${SITE_NAME} AI software and automation services` },
+      { property: "og:image:alt", content: title },
+      ...(type === "article" && publishedAt
+        ? [{ property: "article:published_time", content: publishedAt }]
+        : []),
+      ...(type === "article" && updatedAt
+        ? [{ property: "article:modified_time", content: updatedAt }]
+        : []),
+      ...(type === "article" && author ? [{ property: "article:author", content: author }] : []),
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: `@${SITE_NAME}` },
-      { name: "twitter:creator", content: AUTHOR_NAME },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
       { name: "twitter:image", content: imageUrl },
     ],
-    links: [
-      { rel: "canonical", href: canonical },
-    ],
+    links: [{ rel: "canonical", href: canonical }],
   };
 }
 

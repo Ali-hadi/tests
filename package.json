@@ -12,7 +12,10 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
-    "update:news": "node scripts/update-news.mjs",
+    "update:news": "node scripts/publish-content.mjs",
+    "triage:legacy-content": "node scripts/triage-legacy-content.mjs",
+    "test:content": "node scripts/test-content-gate.mjs",
+    "validate:seo": "node scripts/validate-built-seo.mjs",
     "lint": "eslint .",
     "format": "prettier --write ."
   },

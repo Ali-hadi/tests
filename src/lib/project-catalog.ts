@@ -24,7 +24,7 @@ const groups: ProjectGroup[] = [
     industry: "Sales, service, real estate, healthcare",
     stack: "React, Node.js, PostgreSQL, WhatsApp API, OpenAI",
     accent: "teal" as const,
-    metrics: ["42% faster response", "3.8x lead visibility", "24/7 pipeline"],
+    metrics: ["Lead response workflow", "Sales pipeline visibility", "Follow-up automation"],
     projects: [
       [
         "Enterprise CRM Command Center",
@@ -69,7 +69,7 @@ const groups: ProjectGroup[] = [
     industry: "Manufacturing, wholesale, retail, field teams",
     stack: "Next.js, NestJS, PostgreSQL, Redis, AWS",
     accent: "orange" as const,
-    metrics: ["31% less manual work", "99.9% audit trail", "12 modules"],
+    metrics: ["Operations workflows", "Audit trail concept", "Inventory modules"],
     projects: [
       [
         "Manufacturing ERP Suite",
@@ -114,7 +114,7 @@ const groups: ProjectGroup[] = [
     industry: "Lending, payments, wallets, risk",
     stack: "React, Node.js, PostgreSQL, Kafka, Plaid, Stripe",
     accent: "teal" as const,
-    metrics: ["2 min approvals", "100% traceability", "8 risk layers"],
+    metrics: ["Approval workflows", "Traceability concept", "Risk controls"],
     projects: [
       [
         "Loan Origination Platform",
@@ -157,9 +157,9 @@ const groups: ProjectGroup[] = [
   {
     category: "Healthcare Platforms",
     industry: "Hospitals, clinics, labs, insurance",
-    stack: "React, Node.js, PostgreSQL, HIPAA-ready cloud, Twilio",
+    stack: "React, Node.js, PostgreSQL, cloud hosting, Twilio",
     accent: "orange" as const,
-    metrics: ["28% fewer no-shows", "360 patient view", "HIPAA-ready"],
+    metrics: ["Patient overview", "Appointments and messaging", "Access controls"],
     projects: [
       [
         "Hospital CRM & HIS",
@@ -204,7 +204,7 @@ const groups: ProjectGroup[] = [
     industry: "Fleet, warehouse, courier, cold chain",
     stack: "React, Node.js, PostGIS, Redis, Google Maps, AWS",
     accent: "teal" as const,
-    metrics: ["18% route savings", "Live fleet map", "60 sec alerts"],
+    metrics: ["Route planning", "Fleet overview", "Operations alerts"],
     projects: [
       [
         "Fleet Control Tower",
@@ -249,7 +249,7 @@ const groups: ProjectGroup[] = [
     industry: "Schools, universities, coaching, edtech",
     stack: "React, Node.js, PostgreSQL, WebRTC, Stripe",
     accent: "orange" as const,
-    metrics: ["95% attendance view", "Live classes", "Parent portal"],
+    metrics: ["Attendance overview", "Class management", "Parent portal"],
     projects: [
       [
         "Learning Management SaaS",
@@ -294,7 +294,7 @@ const groups: ProjectGroup[] = [
     industry: "Marketplaces, D2C brands, retail chains",
     stack: "Next.js, Shopify, WooCommerce, Node.js, PostgreSQL",
     accent: "teal" as const,
-    metrics: ["2.4x conversion lift", "Omnichannel stock", "Real-time orders"],
+    metrics: ["Product catalog", "Inventory workflow", "Order management"],
     projects: [
       [
         "Multi-Vendor Marketplace",
@@ -339,7 +339,7 @@ const groups: ProjectGroup[] = [
     industry: "Operations, support, HR, finance",
     stack: "OpenAI, LangChain, Python, Node.js, Vector DB",
     accent: "orange" as const,
-    metrics: ["70% task automation", "RAG-ready", "Human review"],
+    metrics: ["Task automation", "Knowledge retrieval", "Human review"],
     projects: [
       [
         "AI Agent Operations Desk",
@@ -384,7 +384,7 @@ const groups: ProjectGroup[] = [
     industry: "Builders, brokers, facilities, contractors",
     stack: "React, Node.js, PostgreSQL, Maps, S3",
     accent: "teal" as const,
-    metrics: ["Live site view", "Cost controls", "Deal tracking"],
+    metrics: ["Property overview", "Cost tracking", "Deal workflow"],
     projects: [
       [
         "Property Sales CRM",
@@ -429,7 +429,7 @@ const groups: ProjectGroup[] = [
     industry: "Hotels, restaurants, agencies, rentals",
     stack: "React, Node.js, PostgreSQL, Stripe, Maps",
     accent: "orange" as const,
-    metrics: ["Direct bookings", "Guest 360", "Revenue view"],
+    metrics: ["Direct bookings", "Guest profiles", "Revenue overview"],
     projects: [
       [
         "Hotel PMS Platform",
@@ -474,7 +474,7 @@ const groups: ProjectGroup[] = [
     industry: "Agencies, SaaS, creators, service brands",
     stack: "React, Node.js, PostgreSQL, Meta API, Google Ads",
     accent: "teal" as const,
-    metrics: ["Full funnel view", "Campaign ROI", "Lead attribution"],
+    metrics: ["Campaign funnel", "Campaign reporting", "Lead attribution"],
     projects: [
       [
         "Marketing Automation CRM",
@@ -519,7 +519,7 @@ const groups: ProjectGroup[] = [
     industry: "Large organizations, utilities, government",
     stack: "React, Node.js, PostgreSQL, SSO, Audit logs",
     accent: "orange" as const,
-    metrics: ["Role-based access", "Enterprise audit", "Mission control"],
+    metrics: ["Role-based access", "Audit trail concept", "Operations dashboard"],
     projects: [
       [
         "Citizen Service Portal",

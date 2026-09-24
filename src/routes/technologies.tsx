@@ -5,9 +5,9 @@ import { createSeo } from "@/lib/seo";
 export const Route = createFileRoute("/technologies")({
   head: () =>
     createSeo({
-      title: "Technologies We Use | AItouchSolutions",
+      title: "Technologies We Use | AiTouchSolutions",
       description:
-        "See the 100+ technologies AItouchSolutions uses across React, Next.js, Node.js, Python, AI/ML, cloud, mobile, CMS, and e-commerce projects.",
+        "Explore technologies AiTouchSolutions may use across web, mobile, AI, cloud, data, and e-commerce projects, selected to fit project requirements.",
       path: "/technologies",
       keywords: [
         "React developers",
@@ -113,7 +113,7 @@ function TechPage() {
               Technologies
             </p>
             <h1 className="font-display font-bold text-6xl md:text-8xl lg:text-9xl tracking-[-0.04em] leading-[0.9]">
-              100+ technologies. <br />
+              Technology choices. <br />
               <span className="gradient-text">One studio.</span>
             </h1>
           </Reveal>

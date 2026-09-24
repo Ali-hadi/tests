@@ -6,11 +6,11 @@ import { createSeo } from "@/lib/seo";
 export const Route = createFileRoute("/about")({
   head: () =>
     createSeo({
-      title: "About Jon | AItouchSolutions",
+      title: "About AiTouchSolutions | AI and Software Development",
       description:
-        "Learn about Jon, founder of AItouchSolutions, an AI and custom software studio building agents, automation, SaaS products, web apps, and mobile apps.",
+        "Learn how AiTouchSolutions approaches AI, automation, custom software, web and mobile apps, and SaaS product development.",
       path: "/about",
-      keywords: ["Jon", "AItouchSolutions founder", "AI software founder"],
+      keywords: ["AiTouchSolutions", "AI development", "custom software development"],
     }),
   component: AboutPage,
 });
@@ -24,7 +24,10 @@ const values = [
     t: "AI-first by default",
     d: "We embed intelligence into every layer — not as an afterthought.",
   },
-  { t: "Global, 24/7", d: "Timezone coverage from a distributed senior team." },
+  {
+    t: "Clear collaboration",
+    d: "We make scope, tradeoffs, milestones, and open questions visible throughout a project.",
+  },
   { t: "Transparent partnership", d: "Clear scope, clear cost, clear communication." },
 ];
 
@@ -60,13 +63,65 @@ function AboutPage() {
               Jon
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Jon founded AItouchSolutions with a simple thesis: the next generation of software
-              isn't just built — it thinks. After a decade shipping production systems for global
-              clients, he assembled a senior team to deliver AI-first products at enterprise scale.
+              AiTouchSolutions works with businesses to scope and build software products,
+              applications, and automation. We start by understanding the users, business process,
+              constraints, and outcome a project needs to support.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Under his leadership, the studio operates 24/7 across continents, delivering both
-              fixed-price builds and embedded engineering pods for ambitious teams worldwide.
+              The team can help shape an MVP, design an application architecture, integrate AI where
+              it is useful, test and deploy a product, and continue improving it after launch.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="border-t border-border py-24">
+        <div className="mx-auto max-w-[1100px] px-6 lg:px-10">
+          <Reveal>
+            <h2 className="mb-10 font-display text-4xl font-bold lg:text-6xl">How we build</h2>
+            <ol className="grid gap-px bg-border md:grid-cols-2">
+              {[
+                [
+                  "01",
+                  "Requirement discovery",
+                  "Understand the business model, users, problems, features, integrations, budget, and timeline.",
+                ],
+                [
+                  "02",
+                  "Product strategy",
+                  "Define an MVP, roadmap, technology choices, architecture, data, APIs, and security needs.",
+                ],
+                [
+                  "03",
+                  "UI and UX",
+                  "Map user flows and create responsive interfaces with accessibility in mind.",
+                ],
+                [
+                  "04",
+                  "Development and AI",
+                  "Build the product and add AI, retrieval, agents, or automation where they fit the problem.",
+                ],
+                [
+                  "05",
+                  "Testing and deployment",
+                  "Check functionality, security, performance, mobile behavior, APIs, and edge cases before release.",
+                ],
+                [
+                  "06",
+                  "Maintenance",
+                  "Plan updates, monitoring, fixes, scaling, and product improvements after launch.",
+                ],
+              ].map(([number, title, description]) => (
+                <li key={number} className="bg-background p-7 lg:p-9">
+                  <p className="mb-5 font-mono text-xs text-teal">{number}</p>
+                  <h3 className="mb-3 font-display text-2xl font-bold">{title}</h3>
+                  <p className="leading-relaxed text-muted-foreground">{description}</p>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-10 text-lg leading-relaxed text-muted-foreground">
+              Tell us what you need to build. We’ll help turn the requirement into a technology
+              solution.
             </p>
           </Reveal>
         </div>

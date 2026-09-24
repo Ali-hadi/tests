@@ -41,9 +41,9 @@ export const serviceGroups: ServiceGroup[] = [
         shortTitle: "AI Agents",
         summary:
           "Autonomous AI agents that reason, call tools, use business data, and execute multi-step workflows across your stack.",
-        metaTitle: "AI Agent Development Company | AItouchSolutions",
+        metaTitle: "AI Agent Development Company | AiTouchSolutions",
         metaDescription:
-          "Hire AItouchSolutions for AI agent development, autonomous workflow agents, tool-calling LLM apps, RAG agents, and business automation systems.",
+          "Hire AiTouchSolutions for AI agent development, autonomous workflow agents, tool-calling LLM apps, RAG agents, and business automation systems.",
         keywords: [
           "AI agent development company",
           "AI agent development services",
@@ -99,9 +99,9 @@ export const serviceGroups: ServiceGroup[] = [
         shortTitle: "AI Automation",
         summary:
           "AI-powered automation for operations, support, sales, reporting, document workflows, and internal decision support.",
-        metaTitle: "AI Automation Agency for Business Workflows | AItouchSolutions",
+        metaTitle: "AI Automation Agency for Business Workflows | AiTouchSolutions",
         metaDescription:
-          "Automate business workflows with AI. AItouchSolutions builds AI automation for documents, customer support, sales ops, reporting, and internal tools.",
+          "Automate business workflows with AI. AiTouchSolutions builds AI automation for documents, customer support, sales ops, reporting, and internal tools.",
         keywords: [
           "AI automation agency",
           "AI automation services",
@@ -157,9 +157,9 @@ export const serviceGroups: ServiceGroup[] = [
         shortTitle: "AI Chatbots",
         summary:
           "Custom chatbots and support assistants trained on your knowledge base, website, product docs, and business rules.",
-        metaTitle: "AI Chatbot Development Services | AItouchSolutions",
+        metaTitle: "AI Chatbot Development Services | AiTouchSolutions",
         metaDescription:
-          "Build custom AI chatbots for websites, SaaS apps, support teams, sales, onboarding, and knowledge-base search with AItouchSolutions.",
+          "Build custom AI chatbots for websites, SaaS apps, support teams, sales, onboarding, and knowledge-base search with AiTouchSolutions.",
         keywords: [
           "AI chatbot development",
           "custom AI chatbot",
@@ -215,9 +215,9 @@ export const serviceGroups: ServiceGroup[] = [
         shortTitle: "AI SaaS",
         summary:
           "End-to-end AI SaaS products with subscriptions, usage limits, billing, dashboards, AI workflows, and scalable infrastructure.",
-        metaTitle: "AI SaaS Development Company | AItouchSolutions",
+        metaTitle: "AI SaaS Development Company | AiTouchSolutions",
         metaDescription:
-          "Launch an AI SaaS platform with AItouchSolutions. We build AI products with auth, billing, usage tracking, dashboards, APIs, and cloud deployment.",
+          "Launch an AI SaaS platform with AiTouchSolutions. We build AI products with auth, billing, usage tracking, dashboards, APIs, and cloud deployment.",
         keywords: [
           "AI SaaS development",
           "AI SaaS development company",
@@ -281,9 +281,9 @@ export const serviceGroups: ServiceGroup[] = [
         shortTitle: "Custom SaaS",
         summary:
           "Multi-tenant SaaS platforms, dashboards, admin panels, billing flows, APIs, and scalable cloud foundations.",
-        metaTitle: "Custom SaaS Development Company | AItouchSolutions",
+        metaTitle: "Custom SaaS Development Company | AiTouchSolutions",
         metaDescription:
-          "Build custom SaaS platforms with AItouchSolutions. We develop SaaS MVPs, multi-tenant apps, dashboards, APIs, billing, and cloud deployment.",
+          "Build custom SaaS platforms with AiTouchSolutions. We develop SaaS MVPs, multi-tenant apps, dashboards, APIs, billing, and cloud deployment.",
         keywords: [
           "custom SaaS development",
           "SaaS development company",
@@ -339,9 +339,9 @@ export const serviceGroups: ServiceGroup[] = [
         shortTitle: "Web Apps",
         summary:
           "Fast, secure, SEO-aware web applications with modern frontend, backend APIs, dashboards, and integrations.",
-        metaTitle: "Web Application Development Company | AItouchSolutions",
+        metaTitle: "Web Application Development Company | AiTouchSolutions",
         metaDescription:
-          "AItouchSolutions builds custom web applications, React apps, dashboards, portals, admin panels, APIs, and full-stack business software.",
+          "AiTouchSolutions builds custom web applications, React apps, dashboards, portals, admin panels, APIs, and full-stack business software.",
         keywords: [
           "web application development",
           "custom web app development",
@@ -397,9 +397,9 @@ export const serviceGroups: ServiceGroup[] = [
         shortTitle: "Mobile Apps",
         summary:
           "iOS, Android, React Native, and Flutter apps with clean UX, APIs, authentication, notifications, and analytics.",
-        metaTitle: "Mobile App Development Services | AItouchSolutions",
+        metaTitle: "Mobile App Development Services | AiTouchSolutions",
         metaDescription:
-          "Build iOS, Android, React Native, and Flutter mobile apps with AItouchSolutions. We create mobile products, APIs, dashboards, and app launches.",
+          "Build iOS, Android, React Native, and Flutter mobile apps with AiTouchSolutions. We create mobile products, APIs, dashboards, and app launches.",
         keywords: [
           "mobile app development",
           "iOS app development",
@@ -455,9 +455,9 @@ export const serviceGroups: ServiceGroup[] = [
         shortTitle: "MVPs",
         summary:
           "Focused MVP planning, design, engineering, and launch support for startups and teams validating new products.",
-        metaTitle: "MVP Development Services for Startups | AItouchSolutions",
+        metaTitle: "MVP Development Services for Startups | AiTouchSolutions",
         metaDescription:
-          "Launch a production-ready MVP with AItouchSolutions. We build SaaS MVPs, AI MVPs, web apps, mobile apps, dashboards, and startup products.",
+          "Launch a production-ready MVP with AiTouchSolutions. We build SaaS MVPs, AI MVPs, web apps, mobile apps, dashboards, and startup products.",
         keywords: [
           "MVP development",
           "startup MVP development",
@@ -521,9 +521,9 @@ export const serviceGroups: ServiceGroup[] = [
         shortTitle: "E-commerce",
         summary:
           "Custom online stores, Shopify builds, checkout flows, product catalogs, inventory logic, and commerce integrations.",
-        metaTitle: "E-commerce Development Services | AItouchSolutions",
+        metaTitle: "E-commerce Development Services | AiTouchSolutions",
         metaDescription:
-          "Build e-commerce websites, Shopify stores, custom storefronts, payment integrations, product catalogs, and commerce dashboards with AItouchSolutions.",
+          "Build e-commerce websites, Shopify stores, custom storefronts, payment integrations, product catalogs, and commerce dashboards with AiTouchSolutions.",
         keywords: [
           "ecommerce development",
           "ecommerce website development",
@@ -579,7 +579,7 @@ export const serviceGroups: ServiceGroup[] = [
         shortTitle: "CRM / ERP",
         summary:
           "Custom CRM, ERP, internal tools, workflow dashboards, role-based portals, reporting, and business management systems.",
-        metaTitle: "Custom CRM & ERP Development Company | AItouchSolutions",
+        metaTitle: "Custom CRM & ERP Development Company | AiTouchSolutions",
         metaDescription:
           "Build custom CRM, ERP, internal dashboards, workflow systems, admin portals, reporting tools, and business automation software.",
         keywords: [
@@ -637,7 +637,7 @@ export const serviceGroups: ServiceGroup[] = [
         shortTitle: "Dashboards",
         summary:
           "Custom analytics dashboards, KPI portals, data pipelines, reporting tools, and business intelligence interfaces.",
-        metaTitle: "Data Dashboard Development Services | AItouchSolutions",
+        metaTitle: "Data Dashboard Development Services | AiTouchSolutions",
         metaDescription:
           "Create custom dashboards, KPI reporting portals, analytics tools, business intelligence apps, and data visualization systems.",
         keywords: [
@@ -703,9 +703,9 @@ export const serviceGroups: ServiceGroup[] = [
         shortTitle: "Cloud & DevOps",
         summary:
           "Cloud deployment, CI/CD, containers, monitoring, release automation, infrastructure hardening, and DevOps support.",
-        metaTitle: "Cloud & DevOps Services | AItouchSolutions",
+        metaTitle: "Cloud & DevOps Services | AiTouchSolutions",
         metaDescription:
-          "AItouchSolutions provides cloud deployment, DevOps, CI/CD pipelines, Docker, Kubernetes, AWS, GCP, Azure, Vercel, and monitoring services.",
+          "AiTouchSolutions provides cloud deployment, DevOps, CI/CD pipelines, Docker, Kubernetes, AWS, GCP, Azure, Vercel, and monitoring services.",
         keywords: [
           "cloud deployment services",
           "DevOps services",
@@ -761,9 +761,9 @@ export const serviceGroups: ServiceGroup[] = [
         shortTitle: "Cybersecurity",
         summary:
           "Security audits, application hardening, authentication reviews, access control, vulnerability fixes, and safer deployments.",
-        metaTitle: "Cybersecurity Services for Web Apps & SaaS | AItouchSolutions",
+        metaTitle: "Cybersecurity Services for Web Apps & SaaS | AiTouchSolutions",
         metaDescription:
-          "Improve web app, SaaS, API, and cloud security with AItouchSolutions. We provide audits, hardening, vulnerability fixes, and access control.",
+          "Improve web app, SaaS, API, and cloud security with AiTouchSolutions. We provide audits, hardening, vulnerability fixes, and access control.",
         keywords: [
           "cybersecurity services",
           "web application security",
@@ -819,9 +819,9 @@ export const serviceGroups: ServiceGroup[] = [
         shortTitle: "Dedicated Devs",
         summary:
           "Hire dedicated frontend, backend, MERN, mobile, AI, and DevOps developers for ongoing product delivery.",
-        metaTitle: "Hire Dedicated Developers | AItouchSolutions",
+        metaTitle: "Hire Dedicated Developers | AiTouchSolutions",
         metaDescription:
-          "Hire dedicated developers from AItouchSolutions for MERN, React, Node.js, AI, mobile apps, SaaS, DevOps, maintenance, and product delivery.",
+          "Hire dedicated developers from AiTouchSolutions for MERN, React, Node.js, AI, mobile apps, SaaS, DevOps, maintenance, and product delivery.",
         keywords: [
           "hire dedicated developers",
           "dedicated MERN developers",
@@ -877,7 +877,7 @@ export const serviceGroups: ServiceGroup[] = [
         shortTitle: "Support",
         summary:
           "Ongoing website, web app, SaaS, mobile app, cloud, bug fixing, performance, and feature support.",
-        metaTitle: "Software Maintenance & Support Services | AItouchSolutions",
+        metaTitle: "Software Maintenance & Support Services | AiTouchSolutions",
         metaDescription:
           "Get software maintenance, bug fixes, performance optimization, cloud support, website support, SaaS support, and app improvements.",
         keywords: [

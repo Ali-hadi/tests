@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WhatWeBuildRouteImport } from './routes/what-we-build'
 import { Route as ToolsRouteImport } from './routes/tools'
 import { Route as TermsAndConditionsRouteImport } from './routes/terms-and-conditions'
 import { Route as TechnologiesRouteImport } from './routes/technologies'
@@ -36,6 +37,11 @@ import { Route as ToolsToolIdRouteImport } from './routes/tools.$toolId'
 import { Route as ServicesServiceIdRouteImport } from './routes/services.$serviceId'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
+const WhatWeBuildRoute = WhatWeBuildRouteImport.update({
+  id: '/what-we-build',
+  path: '/what-we-build',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ToolsRoute = ToolsRouteImport.update({
   id: '/tools',
   path: '/tools',
@@ -181,6 +187,7 @@ export interface FileRoutesByFullPath {
   '/technologies': typeof TechnologiesRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/tools': typeof ToolsRouteWithChildren
+  '/what-we-build': typeof WhatWeBuildRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/services/$serviceId': typeof ServicesServiceIdRoute
   '/tools/$toolId': typeof ToolsToolIdRoute
@@ -209,6 +216,7 @@ export interface FileRoutesByTo {
   '/technologies': typeof TechnologiesRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/tools': typeof ToolsRouteWithChildren
+  '/what-we-build': typeof WhatWeBuildRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/services/$serviceId': typeof ServicesServiceIdRoute
   '/tools/$toolId': typeof ToolsToolIdRoute
@@ -238,6 +246,7 @@ export interface FileRoutesById {
   '/technologies': typeof TechnologiesRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/tools': typeof ToolsRouteWithChildren
+  '/what-we-build': typeof WhatWeBuildRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/services/$serviceId': typeof ServicesServiceIdRoute
   '/tools/$toolId': typeof ToolsToolIdRoute
@@ -268,6 +277,7 @@ export interface FileRouteTypes {
     | '/technologies'
     | '/terms-and-conditions'
     | '/tools'
+    | '/what-we-build'
     | '/blog/$slug'
     | '/services/$serviceId'
     | '/tools/$toolId'
@@ -296,6 +306,7 @@ export interface FileRouteTypes {
     | '/technologies'
     | '/terms-and-conditions'
     | '/tools'
+    | '/what-we-build'
     | '/blog/$slug'
     | '/services/$serviceId'
     | '/tools/$toolId'
@@ -324,6 +335,7 @@ export interface FileRouteTypes {
     | '/technologies'
     | '/terms-and-conditions'
     | '/tools'
+    | '/what-we-build'
     | '/blog/$slug'
     | '/services/$serviceId'
     | '/tools/$toolId'
@@ -353,10 +365,18 @@ export interface RootRouteChildren {
   TechnologiesRoute: typeof TechnologiesRoute
   TermsAndConditionsRoute: typeof TermsAndConditionsRoute
   ToolsRoute: typeof ToolsRouteWithChildren
+  WhatWeBuildRoute: typeof WhatWeBuildRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/what-we-build': {
+      id: '/what-we-build'
+      path: '/what-we-build'
+      fullPath: '/what-we-build'
+      preLoaderRoute: typeof WhatWeBuildRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools': {
       id: '/tools'
       path: '/tools'
@@ -608,6 +628,7 @@ const rootRouteChildren: RootRouteChildren = {
   TechnologiesRoute: TechnologiesRoute,
   TermsAndConditionsRoute: TermsAndConditionsRoute,
   ToolsRoute: ToolsRouteWithChildren,
+  WhatWeBuildRoute: WhatWeBuildRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

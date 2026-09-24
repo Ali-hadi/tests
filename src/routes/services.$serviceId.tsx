@@ -16,10 +16,10 @@ function getServiceRouteHead(serviceId: string) {
   const service = getServiceLandingPage(serviceId);
 
   return createSeo({
-    title: service ? service.metaTitle : "Software Development Service | AItouchSolutions",
+    title: service ? service.metaTitle : "Software Development Service | AiTouchSolutions",
     description:
       service?.metaDescription ??
-      "Explore AItouchSolutions software development, AI, automation, SaaS, web, mobile, cloud, and DevOps services.",
+      "Explore AiTouchSolutions software development, AI, automation, SaaS, web, mobile, cloud, and DevOps services.",
     path: service ? `/services/${service.slug}` : `/services/${serviceId}`,
     keywords: service
       ? [service.title, service.group, ...service.keywords]
@@ -323,7 +323,7 @@ function ServiceDetailPage() {
                 Related services
               </p>
               <h2 className="mt-4 font-display text-4xl font-bold tracking-tight">
-                Keep exploring AItouchSolutions.
+                Keep exploring AiTouchSolutions.
               </h2>
             </div>
             <ArrowRight className="hidden h-7 w-7 text-orange md:block" />

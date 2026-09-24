@@ -13,7 +13,7 @@ const knowledge: { keywords: string[]; answer: string }[] = [
   {
     keywords: ["service", "what do you do", "offer"],
     answer:
-      "We deliver AI Agents, AI Automation, Custom SaaS, Web & Mobile apps, CRM/ERP systems, and Cloud/DevOps — globally, 24/7. See our Services page for the full list.",
+      "AiTouchSolutions discusses AI agents, automation, custom SaaS, web and mobile apps, CRM/ERP systems, and cloud/DevOps. See the Services page for current offerings.",
   },
   {
     keywords: ["ai", "agent", "automation", "chatbot", "llm"],
@@ -23,7 +23,7 @@ const knowledge: { keywords: string[]; answer: string }[] = [
   {
     keywords: ["tech", "stack", "technology", "use"],
     answer:
-      "We work across 100+ technologies — Next.js, React, Node, Python, Go, Postgres, MongoDB, AWS, OpenAI, LangChain, and more. See the Technologies page.",
+      "Technology choices depend on project requirements. The Technologies page lists tools the team may use across web, AI, data, mobile, and cloud work.",
   },
   {
     keywords: ["contact", "talk", "call", "consult", "book"],
@@ -32,7 +32,7 @@ const knowledge: { keywords: string[]; answer: string }[] = [
   {
     keywords: ["who", "founder", "shahzad"],
     answer:
-      "AItouchSolutions was founded by Shahzad Nazar — a senior engineer building intelligent software for global clients.",
+      "AiTouchSolutions is a software and AI services studio. Visit the About page to learn about its approach and project process.",
   },
   {
     keywords: ["portfolio", "project", "case", "work"],
@@ -54,7 +54,7 @@ export function Jarvis() {
   const [messages, setMessages] = useState<Msg[]>([
     {
       role: "jarvis",
-      text: "Hello, I'm Jarvis — AItouchSolutions' AI assistant. Ask me about services, pricing, AI agents, or our process.",
+      text: "Hello, I'm Jarvis — AiTouchSolutions' AI assistant. Ask me about services, pricing, AI agents, or our process.",
     },
   ]);
   const [input, setInput] = useState("");

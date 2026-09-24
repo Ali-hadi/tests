@@ -1,12 +1,11 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight, CalendarDays, Clock3, Tag, UserRound } from "lucide-react";
+import { ArrowRight, CalendarDays, Clock3, Tag, UserRound } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import {
   formatNewsDate,
   getNewsPost,
   getNewsReadTime,
   getRelatedNewsPosts,
-  newsGeneratedAt,
   type NewsArticleSection,
   type NewsArticleSubsection,
 } from "@/lib/news";
@@ -28,15 +27,19 @@ function getBlogRouteHead(slug: string) {
 
   return createSeo({
     title: post
-      ? post.seoTitle || `${post.title} | AItouchSolutions Blog`
-      : "Blog Article | AItouchSolutions",
+      ? post.seoTitle || `${post.title} | AiTouchSolutions Blog`
+      : "Blog Article | AiTouchSolutions",
     description: post
       ? post.metaDescription || post.excerpt
-      : "Read AI and IT blog details from AItouchSolutions.",
+      : "Read AI and IT blog details from AiTouchSolutions.",
     path: post ? `/blog/${post.slug}` : `/blog/${slug}`,
     image: post?.image,
     type: "article",
     keywords,
+    noIndex: post ? !post.indexable : true,
+    author: post?.author,
+    publishedAt: post?.publishedAt,
+    updatedAt: post?.updatedAt,
   });
 }
 
@@ -61,7 +64,7 @@ function BlogDetailPage() {
     description: post.excerpt,
     image: [absoluteUrl(post.image)],
     datePublished: post.publishedAt,
-    dateModified: post.updatedAt ?? newsGeneratedAt ?? post.publishedAt,
+    dateModified: post.updatedAt ?? post.publishedAt,
     author: {
       "@type": "Organization",
       name: post.author,
@@ -78,6 +81,16 @@ function BlogDetailPage() {
     mainEntityOfPage: absoluteUrl(`/blog/${post.slug}`),
     keywords: post.tags.join(", "),
     articleSection: post.category,
+    isPartOf: { "@id": `${siteConfig.url}/#website` },
+    ...(post.supportingSources?.length
+      ? {
+          citation: post.supportingSources.map((source) => ({
+            "@type": "CreativeWork",
+            name: source.name,
+            url: source.url,
+          })),
+        }
+      : {}),
   };
   const faqJsonLd =
     post.faq && post.faq.length > 0
@@ -94,6 +107,20 @@ function BlogDetailPage() {
           })),
         }
       : null;
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+      { "@type": "ListItem", position: 2, name: "Blog", item: absoluteUrl("/blog") },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: absoluteUrl(`/blog/${post.slug}`),
+      },
+    ],
+  };
 
   return (
     <>
@@ -101,6 +128,12 @@ function BlogDetailPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(articleJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
         }}
       />
       {faqJsonLd ? (
@@ -115,13 +148,28 @@ function BlogDetailPage() {
       <section className="pt-32 pb-12 lg:pt-44 lg:pb-16">
         <div className="max-w-[1200px] mx-auto px-6 lg:px-10">
           <Reveal>
-            <Link
-              to="/blog"
-              className="inline-flex items-center gap-2 rounded-md border border-border px-3 py-2 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground hover:text-foreground"
+            <nav
+              aria-label="Breadcrumb"
+              className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground"
             >
-              <ArrowLeft className="h-3.5 w-3.5" />
-              Blog index
-            </Link>
+              <ol className="flex flex-wrap items-center gap-2">
+                <li>
+                  <Link to="/" className="hover:text-teal">
+                    Home
+                  </Link>
+                </li>
+                <li aria-hidden="true">/</li>
+                <li>
+                  <Link to="/blog" className="hover:text-teal">
+                    Blog
+                  </Link>
+                </li>
+                <li aria-hidden="true">/</li>
+                <li aria-current="page" className="max-w-[32ch] truncate">
+                  {post.title}
+                </li>
+              </ol>
+            </nav>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <span
                 className={`rounded-md px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.25em] ${
@@ -138,6 +186,11 @@ function BlogDetailPage() {
                 <Clock3 className="h-3.5 w-3.5" />
                 {getNewsReadTime(post)} min read
               </span>
+              {post.updatedAt && post.updatedAt !== post.publishedAt ? (
+                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  Updated {formatNewsDate(post.updatedAt)}
+                </span>
+              ) : null}
             </div>
             <h1 className="mt-7 max-w-5xl font-display text-5xl font-bold leading-[0.95] tracking-[-0.04em] md:text-7xl lg:text-8xl">
               {post.title}
@@ -155,7 +208,7 @@ function BlogDetailPage() {
             <div className="overflow-hidden rounded-md border border-border bg-ink">
               <img
                 src={post.image}
-                alt={post.title}
+                alt={post.imageAlt || post.title}
                 className="h-[340px] w-full object-cover opacity-90 md:h-[520px]"
                 loading="eager"
               />
@@ -185,30 +238,69 @@ function BlogDetailPage() {
       <section className="pb-24 lg:pb-32">
         <div className="max-w-[1200px] mx-auto grid gap-12 px-6 lg:grid-cols-[minmax(0,1fr)_340px] lg:px-10">
           <article className="min-w-0">
-            <Reveal>
-              <div className="mb-10 border-l-2 border-teal bg-ink p-6 lg:p-8">
-                <p className="mb-5 font-mono text-[10px] uppercase tracking-[0.3em] text-teal">
-                  Key takeaways
-                </p>
-                <div className="grid gap-4">
-                  {post.keyTakeaways.map((takeaway) => (
-                    <p key={takeaway} className="text-base leading-relaxed text-muted-foreground">
-                      {takeaway}
-                    </p>
-                  ))}
+            {!post.indexable ? (
+              <p className="mb-10 border-l-2 border-border bg-ink p-6 text-sm leading-relaxed text-muted-foreground">
+                Archived feed entry. The article source is linked below; this page is retained for
+                URL compatibility and is not an AiTouchSolutions editorial article.
+              </p>
+            ) : null}
+
+            {post.keyTakeaways.length > 0 ? (
+              <Reveal>
+                <div className="mb-10 border-l-2 border-teal bg-ink p-6 lg:p-8">
+                  <p className="mb-5 font-mono text-[10px] uppercase tracking-[0.3em] text-teal">
+                    Key takeaways
+                  </p>
+                  <div className="grid gap-4">
+                    {post.keyTakeaways.map((takeaway) => (
+                      <p key={takeaway} className="text-base leading-relaxed text-muted-foreground">
+                        {takeaway}
+                      </p>
+                    ))}
+                  </div>
                 </div>
+              </Reveal>
+            ) : null}
+
+            {post.content.length > 0 ? (
+              <div className="space-y-12">
+                {post.content.map((section, index) => (
+                  <Reveal key={section.heading} delay={index % 4}>
+                    <ArticleSection section={section} />
+                  </Reveal>
+                ))}
               </div>
-            </Reveal>
+            ) : null}
 
-            <div className="space-y-12">
-              {post.content.map((section, index) => (
-                <Reveal key={section.heading} delay={index % 4}>
-                  <ArticleSection section={section} />
-                </Reveal>
-              ))}
-            </div>
+            <section
+              className="mt-14 border-t border-border pt-10"
+              aria-labelledby="article-sources"
+            >
+              <h2 id="article-sources" className="mb-5 font-display text-2xl font-bold">
+                Sources and further reading
+              </h2>
+              <ul className="space-y-3 text-sm leading-relaxed text-muted-foreground">
+                {[{ name: post.source, url: post.url }, ...(post.supportingSources ?? [])]
+                  .filter(
+                    (source, index, all) =>
+                      source.url && all.findIndex((item) => item.url === source.url) === index,
+                  )
+                  .map((source) => (
+                    <li key={source.url}>
+                      <a
+                        href={source.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-teal underline underline-offset-4"
+                      >
+                        {source.name}
+                      </a>
+                    </li>
+                  ))}
+              </ul>
+            </section>
 
-            {post.faq && post.faq.length > 0 ? (
+            {post.indexable && post.faq && post.faq.length > 0 ? (
               <Reveal>
                 <section className="mt-14 border-t border-border pt-12">
                   <h2 className="mb-7 font-display text-3xl font-bold tracking-tight lg:text-4xl">
@@ -277,7 +369,7 @@ function BlogDetailPage() {
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   {post.contentType === "pillar"
                     ? "This editorial guide is rendered with internal routes, article schema, FAQ schema, tags, and metadata for search visibility."
-                    : "This brief is stored and rendered by AItouchSolutions with internal routes, so readers stay on the site while search engines can index the detail page."}
+                    : "This brief is stored and rendered by AiTouchSolutions with internal routes, so readers stay on the site while search engines can index the detail page."}
                 </p>
               </div>
             </Reveal>

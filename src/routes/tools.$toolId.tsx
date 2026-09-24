@@ -50,11 +50,11 @@ export function getToolRouteHead(toolId: string) {
 
   const tool = tools.find((item) => item.id === toolId);
   const title = tool
-    ? `${tool.name} | AItouchSolutions AI Tools`
-    : "AI Tool Workspace | AItouchSolutions";
+    ? `${tool.name} | AiTouchSolutions AI Tools`
+    : "AI Tool Workspace | AiTouchSolutions";
   const description = tool
     ? `${tool.summary} Use ${tool.name} with a dedicated workspace, live preview, copy, download, share, history, and production-ready workflow structure.`
-    : "Use a dedicated AItouchSolutions AI tool page with unique UI, live preview, copy, download, share, history, and production-ready workflow structure.";
+    : "Use a dedicated AiTouchSolutions AI tool page with unique UI, live preview, copy, download, share, history, and production-ready workflow structure.";
 
   return createSeo({
     title,

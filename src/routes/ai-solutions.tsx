@@ -5,9 +5,9 @@ import { createSeo } from "@/lib/seo";
 export const Route = createFileRoute("/ai-solutions")({
   head: () =>
     createSeo({
-      title: "AI Agent & Automation Solutions | AItouchSolutions",
+      title: "AI Agent & Automation Solutions | AiTouchSolutions",
       description:
-        "Build production AI agents, RAG systems, custom LLM workflows, computer vision tools, and intelligent automation with AItouchSolutions.",
+        "Build production AI agents, RAG systems, custom LLM workflows, computer vision tools, and intelligent automation with AiTouchSolutions.",
       path: "/ai-solutions",
       keywords: ["AI agents", "RAG systems", "custom LLM", "AI automation", "computer vision"],
     }),

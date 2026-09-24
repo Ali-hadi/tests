@@ -10,7 +10,7 @@ export function Footer() {
       <div className="relative max-w-[1400px] mx-auto px-6 lg:px-10 py-20 lg:py-28">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
-            <img src={logo} alt="AItouchSolutions" className="h-8 w-auto mb-8" />
+            <img src={logo} alt="AiTouchSolutions" className="h-8 w-auto mb-8" />
             <h3 className="font-display text-3xl lg:text-5xl leading-[0.95] tracking-tight mb-8 max-w-md">
               Let's build the <span className="text-teal">intelligence layer</span> of your
               business.
@@ -33,6 +33,11 @@ export function Footer() {
                 <li>
                   <Link to="/services" className="hover:text-teal">
                     Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/what-we-build" className="hover:text-teal">
+                    What we build
                   </Link>
                 </li>
                 <li>
@@ -112,24 +117,16 @@ export function Footer() {
                     WhatsApp {siteConfig.whatsappDisplay}
                   </a>
                 </li>
-                <li>24/7 Global</li>
-                <li>Fixed-price</li>
-                <li>Hourly engagements</li>
+                <li>Fixed-price and hourly</li>
               </ul>
             </div>
           </div>
         </div>
         <div className="mt-20 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-[11px] font-mono uppercase tracking-[0.25em] text-muted-foreground">
           <p>
-            Copyright {new Date().getFullYear()} AItouchSolutions - Founded by {siteConfig.author}
+            Copyright {new Date().getFullYear()} AiTouchSolutions - Founded by {siteConfig.author}
           </p>
-          <p className="flex items-center gap-2">
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full rounded-full bg-teal opacity-75 animate-ping" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-teal" />
-            </span>
-            Operations active
-          </p>
+          <p>AI · Software · Digital products</p>
         </div>
       </div>
     </footer>

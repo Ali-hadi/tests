@@ -5,9 +5,12 @@ import { organicServiceKeywords, serviceGroups, serviceLandingPages } from "@/li
 import { absoluteUrl, createSeo, siteConfig } from "@/lib/seo";
 
 export const Route = createFileRoute("/services")({
-  head: () =>
-    createSeo({
-      title: "AI & Software Development Services | AItouchSolutions",
+  head: ({ matches }) => {
+    const currentMatch = matches[matches.length - 1];
+    if (currentMatch?.fullPath !== "/services") return {};
+
+    const seo = createSeo({
+      title: "AI & Software Development Services | AiTouchSolutions",
       description:
         "Explore AI agent development, AI automation, custom SaaS, web app development, mobile apps, CRM/ERP, e-commerce, dashboards, cloud, DevOps, cybersecurity, and dedicated developers.",
       path: "/services",
@@ -18,7 +21,9 @@ export const Route = createFileRoute("/services")({
         "mobile app development",
         ...organicServiceKeywords.slice(0, 45),
       ],
-    }),
+    });
+    return seo;
+  },
   component: ServicesPage,
 });
 
@@ -26,7 +31,7 @@ function ServicesPage() {
   const servicesJsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "AItouchSolutions service landing pages",
+    name: "AiTouchSolutions service landing pages",
     itemListElement: serviceLandingPages.map((service, index) => ({
       "@type": "ListItem",
       position: index + 1,

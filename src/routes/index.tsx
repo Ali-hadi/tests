@@ -6,7 +6,6 @@ import case1 from "@/assets/case-1.jpg";
 import case2 from "@/assets/case-2.jpg";
 import case3 from "@/assets/case-3.jpg";
 import { Reveal } from "@/components/site/Reveal";
-import { Counter } from "@/components/site/Counter";
 import { createSeo, siteConfig } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
@@ -25,7 +24,7 @@ const services = [
     n: "01",
     slug: "ai-agent-development",
     t: "AI Agents",
-    d: "Autonomous LLM agents that reason, plan, and execute end-to-end workflows for your business 24/7.",
+    d: "AI agents that can use tools and business data to support defined, multi-step workflows.",
   },
   {
     n: "02",
@@ -109,19 +108,19 @@ const projects = [
     img: case1,
     tag: "Enterprise AI",
     t: "NeuralCore Analytics",
-    d: "Real-time predictive modeling dashboard for global logistics — 84% ops reduction.",
+    d: "Illustrative logistics dashboard concept for route health, inventory signals, and operational planning.",
   },
   {
     img: case2,
     tag: "Automation",
     t: "AutoFlow Engine",
-    d: "End-to-end workflow automation platform serving 12k+ users across 4 continents.",
+    d: "Illustrative workflow automation concept for approvals, task routing, and operational visibility.",
   },
   {
     img: case3,
     tag: "Mobile · iOS/Android",
     t: "Pulse Health App",
-    d: "AI-driven wellness companion with on-device inference and HIPAA-grade security.",
+    d: "Illustrative mobile health product concept for appointments, reminders, and patient communication.",
   },
 ];
 
@@ -197,9 +196,9 @@ function HomePage() {
             transition={{ delay: 0.4, duration: 0.7 }}
             className="mt-10 max-w-xl text-base lg:text-lg text-muted-foreground leading-relaxed"
           >
-            AItouchSolutions builds intelligent web apps, AI agents, automation systems, and
-            scalable digital products for global clients — engineered for 24/7 mission-critical
-            delivery.
+            AiTouchSolutions helps businesses turn ideas, problems, and opportunities into modern
+            software, AI, and digital products. Tell us what you need to build and we will discuss
+            whether our team is a fit.
           </motion.p>
 
           <motion.div
@@ -234,27 +233,15 @@ function HomePage() {
         <div className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-transparent via-teal to-transparent opacity-40 animate-pulse-glow" />
       </section>
 
-      {/* COUNTERS */}
-      <section className="relative border-y border-border bg-ink">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 grid grid-cols-2 lg:grid-cols-4">
-          {[
-            { v: 100, s: "+", l: "Technologies mastered" },
-            { v: 24, s: "/7", l: "Global delivery" },
-            { v: 150, s: "+", l: "AI deployments" },
-            { v: 40, s: "+", l: "Enterprise clients" },
-          ].map((c, i) => (
-            <div
-              key={i}
-              className={`p-8 lg:p-12 ${i < 3 ? "lg:border-r border-border" : ""} ${i < 2 ? "border-r border-b lg:border-b-0 border-border" : ""} ${i === 2 ? "border-r lg:border-r border-border" : ""}`}
-            >
-              <div className="font-display font-bold text-5xl lg:text-7xl text-teal mb-3">
-                <Counter to={c.v} suffix={c.s} />
-              </div>
-              <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-muted-foreground">
-                {c.l}
+      <section className="border-y border-border bg-ink py-12">
+        <div className="mx-auto grid max-w-[1400px] grid-cols-2 gap-6 px-6 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground md:grid-cols-4 lg:px-10">
+          {["AI and automation", "Web and mobile apps", "Business software", "SaaS products"].map(
+            (label) => (
+              <p key={label} className="py-3">
+                {label}
               </p>
-            </div>
-          ))}
+            ),
+          )}
         </div>
       </section>
 
@@ -310,7 +297,7 @@ function HomePage() {
               / 02 — Stack
             </p>
             <h2 className="font-display font-bold text-5xl lg:text-7xl tracking-[-0.03em] max-w-3xl">
-              100+ technologies. <br />
+              Technologies selected for the project. <br />
               <span className="text-foreground/40">One integrated brain.</span>
             </h2>
           </Reveal>
@@ -362,7 +349,7 @@ function HomePage() {
                 to="/portfolio"
                 className="text-[10px] font-mono uppercase tracking-[0.3em] text-teal border-b border-teal/30 pb-1"
               >
-                View 100+ project catalog →
+                View solution concepts →
               </Link>
             </div>
           </Reveal>
@@ -405,18 +392,18 @@ function HomePage() {
             <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-orange mb-6">
               / 04 — Founding vision
             </p>
-            <blockquote className="font-display text-3xl md:text-5xl lg:text-6xl leading-[1.1] tracking-[-0.02em] max-w-5xl">
+            <p className="font-display text-3xl md:text-5xl lg:text-6xl leading-[1.1] tracking-[-0.02em] max-w-5xl">
               "We don't just write code. We architect{" "}
               <span className="gradient-text">intelligent ecosystems</span> where every human
               touchpoint is enhanced — building the bridge between human logic and machine
               intelligence."
-            </blockquote>
+            </p>
             <div className="mt-12 flex items-center gap-5">
               <div className="w-14 h-px bg-teal" />
               <div>
                 <p className="font-display font-bold text-lg">Jon</p>
                 <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-muted-foreground mt-1">
-                  Founder · AItouchSolutions
+                  Founder · AiTouchSolutions
                 </p>
               </div>
             </div>
@@ -437,7 +424,8 @@ function HomePage() {
                 Start the <span className="gradient-text">sequence</span>.
               </h2>
               <p className="mt-8 max-w-xl mx-auto text-muted-foreground text-lg">
-                Fixed-price or hourly. AI-first. Global delivery, 24/7. Let's scope what's possible.
+                Fixed-price or hourly engagements. Let’s discuss the scope and delivery approach
+                that fit your project.
               </p>
               <div className="mt-12 flex flex-wrap justify-center gap-3">
                 <Link

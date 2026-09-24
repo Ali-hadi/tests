@@ -1,18 +1,17 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { EmailAction } from "@/components/site/EmailAction";
-import { useState } from "react";
 import { createSeo, siteConfig } from "@/lib/seo";
 
 export const Route = createFileRoute("/contact")({
   head: () =>
     createSeo({
-      title: "Contact Jon | AItouchSolutions",
+      title: "Contact Jon | AiTouchSolutions",
       description:
-        "Contact Jon and AItouchSolutions for AI agents, automation, SaaS, web apps, and mobile apps. Email or WhatsApp for a project quote.",
+        "Contact Jon and AiTouchSolutions for AI agents, automation, SaaS, web apps, and mobile apps. Email or WhatsApp for a project quote.",
       path: "/contact",
       keywords: [
-        "contact AItouchSolutions",
+        "contact AiTouchSolutions",
         "hire Jon",
         "AI project quote",
         "WhatsApp software developer",
@@ -22,7 +21,6 @@ export const Route = createFileRoute("/contact")({
 });
 
 function ContactPage() {
-  const [sent, setSent] = useState(false);
   return (
     <>
       <section className="pt-40 lg:pt-52 pb-16">
@@ -36,7 +34,8 @@ function ContactPage() {
               <span className="gradient-text">something intelligent.</span>
             </h1>
             <p className="mt-10 max-w-xl text-lg text-muted-foreground leading-relaxed">
-              Tell us about your project. We respond within 24 hours, globally.
+              Tell us about the problem you want to solve, the people who will use the product, and
+              any systems or deadlines we should understand.
             </p>
           </Reveal>
         </div>
@@ -45,66 +44,126 @@ function ContactPage() {
       <section className="pb-32">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-12 gap-16">
           <Reveal className="lg:col-span-7">
-            {sent ? (
-              <div className="glass rounded-2xl p-12 text-center">
-                <div className="w-16 h-16 rounded-full bg-teal/20 grid place-items-center mx-auto mb-6">
-                  <span className="text-3xl text-teal">✓</span>
-                </div>
-                <h2 className="font-display text-3xl font-bold mb-4">Message received.</h2>
-                <p className="text-muted-foreground">Jon's team will respond within 24 hours.</p>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                const form = e.currentTarget;
+                const data = new FormData(form);
+                const body = Array.from(data.entries())
+                  .filter(([, value]) => String(value).trim())
+                  .map(([key, value]) => `${key}: ${String(value).trim()}`)
+                  .join("\n");
+                const message = `Project inquiry: ${String(data.get("service") || "New project")}\n\n${body}`;
+                if (data.get("preferredContact") === "Email") {
+                  const subject = encodeURIComponent(
+                    `Project inquiry: ${String(data.get("service") || "New project")}`,
+                  );
+                  window.location.href = `mailto:${siteConfig.email}?subject=${subject}&body=${encodeURIComponent(message)}`;
+                  return;
+                }
+                window.location.href = `${siteConfig.whatsappUrl}?text=${encodeURIComponent(message)}`;
+              }}
+              aria-label="Project inquiry form"
+              className="space-y-6"
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <Field label="Name" name="name" required />
+                <Field label="Email" name="email" type="email" required />
               </div>
-            ) : (
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setSent(true);
-                }}
-                className="space-y-6"
-              >
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <Field label="Name" name="name" required />
-                  <Field label="Email" name="email" type="email" required />
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <Field label="Phone / WhatsApp" name="phone" />
-                  <Field label="Country" name="country" />
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <Field label="Service needed" name="service" placeholder="AI Agent, Web App…" />
-                  <Field label="Budget range" name="budget" placeholder="$5k — $50k" />
-                </div>
-                <div className="border-b border-border pb-6">
-                  <label className="block font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3">
-                    Engagement
-                  </label>
-                  <div className="flex gap-3">
-                    {["Fixed-price", "Hourly", "Not sure yet"].map((o) => (
-                      <label key={o} className="flex items-center gap-2 cursor-pointer">
-                        <input type="radio" name="model" className="accent-teal" />
-                        <span className="text-sm">{o}</span>
-                      </label>
-                    ))}
-                  </div>
-                </div>
-                <div>
-                  <label className="block font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3">
-                    Message
-                  </label>
-                  <textarea
-                    rows={5}
-                    required
-                    placeholder="Tell us what you're building…"
-                    className="w-full bg-transparent border-b border-border focus:border-teal py-3 outline-none text-foreground placeholder:text-muted-foreground/50 resize-none"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="inline-flex items-center gap-3 px-8 py-4 bg-teal text-ink rounded-full text-xs font-bold uppercase tracking-[0.2em] hover:bg-teal-glow transition-all"
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <Field label="Company" name="company" />
+                <Field label="Country" name="country" />
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <SelectField
+                  label="Service needed"
+                  name="service"
+                  options={[
+                    "AI Development",
+                    "AI Automation",
+                    "AI Agent",
+                    "Chatbot",
+                    "RAG",
+                    "Web Application",
+                    "Mobile App",
+                    "CRM",
+                    "ERP",
+                    "POS",
+                    "Shopify",
+                    "WooCommerce",
+                    "E-commerce",
+                    "SaaS",
+                    "Custom Software",
+                    "Other",
+                  ]}
+                />
+                <SelectField
+                  label="Project type"
+                  name="projectType"
+                  options={[
+                    "New product",
+                    "Existing product improvement",
+                    "Integration",
+                    "Automation",
+                    "Not sure yet",
+                  ]}
+                />
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <SelectField
+                  label="Budget range"
+                  name="budget"
+                  options={[
+                    "Not decided",
+                    "Under $5,000",
+                    "$5,000–$15,000",
+                    "$15,000–$50,000",
+                    "$50,000+",
+                    "Prefer to discuss",
+                  ]}
+                />
+                <Field label="Target timeline" name="timeline" placeholder="e.g. planning for Q1" />
+              </div>
+              <Field
+                label="Existing website or app"
+                name="existingProduct"
+                type="url"
+                placeholder="https://"
+              />
+              <SelectField
+                label="Preferred contact method"
+                name="preferredContact"
+                options={["Email", "WhatsApp", "Either"]}
+              />
+              <Field label="Phone or WhatsApp (optional)" name="phone" type="tel" />
+              <div>
+                <label
+                  htmlFor="description"
+                  className="block font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3"
                 >
-                  Send message →
-                </button>
-              </form>
-            )}
+                  Message
+                </label>
+                <textarea
+                  rows={5}
+                  required
+                  id="description"
+                  name="description"
+                  aria-label="Project description"
+                  placeholder="What do you need to build? Include key features, users, integrations, and constraints."
+                  className="w-full bg-transparent border-b border-border focus:border-teal py-3 outline-none text-foreground placeholder:text-muted-foreground/50 resize-none"
+                />
+              </div>
+              <button
+                type="submit"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-teal text-ink rounded-full text-xs font-bold uppercase tracking-[0.2em] hover:bg-teal-glow transition-all"
+              >
+                Continue to contact method
+              </button>
+              <p className="text-xs leading-relaxed text-muted-foreground">
+                This opens your selected contact method with your project details filled in. Review
+                the message and press Send in WhatsApp or your email app to contact us.
+              </p>
+            </form>
           </Reveal>
 
           <Reveal className="lg:col-span-5 lg:pl-10 space-y-12">
@@ -147,7 +206,7 @@ function ContactPage() {
                 Operations
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                24/7 global delivery <br />
+                Remote project discussions <br />
                 Fixed-price · Hourly · Dedicated
               </p>
             </div>
@@ -182,16 +241,46 @@ function Field({
 }) {
   return (
     <div className="border-b border-border pb-2 focus-within:border-teal transition-colors">
-      <label className="block font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2">
+      <label
+        htmlFor={name}
+        className="block font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2"
+      >
         {label}
       </label>
       <input
+        id={name}
         type={type}
         name={name}
         required={required}
         placeholder={placeholder}
         className="w-full bg-transparent py-2 outline-none text-foreground placeholder:text-muted-foreground/50"
       />
+    </div>
+  );
+}
+
+function SelectField({ label, name, options }: { label: string; name: string; options: string[] }) {
+  return (
+    <div className="border-b border-border pb-2 focus-within:border-teal transition-colors">
+      <label
+        htmlFor={name}
+        className="mb-2 block font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground"
+      >
+        {label}
+      </label>
+      <select
+        id={name}
+        name={name}
+        defaultValue=""
+        className="w-full bg-background py-2 text-foreground outline-none"
+      >
+        <option value="">Choose an option</option>
+        {options.map((option) => (
+          <option key={option} value={option}>
+            {option}
+          </option>
+        ))}
+      </select>
     </div>
   );
 }

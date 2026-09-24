@@ -5,9 +5,9 @@ import { createSeo } from "@/lib/seo";
 export const Route = createFileRoute("/pricing")({
   head: () =>
     createSeo({
-      title: "Pricing for AI & Software Projects | AItouchSolutions",
+      title: "Pricing for AI & Software Projects | AiTouchSolutions",
       description:
-        "Review AItouchSolutions pricing for hourly development, fixed-price projects, dedicated teams, AI automation packages, and custom enterprise work.",
+        "Review AiTouchSolutions pricing for hourly development, fixed-price projects, dedicated teams, AI automation packages, and custom enterprise work.",
       path: "/pricing",
       keywords: [
         "AI project pricing",
@@ -49,7 +49,7 @@ const tiers = [
     price: "From $6,500",
     unit: "/ month",
     desc: "Embedded engineering pod operating as an extension of your team.",
-    features: ["Full-stack pod", "Daily standups", "Quarterly OKRs", "24/7 timezone coverage"],
+    features: ["Full-stack pod", "Daily standups", "Quarterly planning"],
     cta: "Build a pod",
     accent: "teal" as const,
   },
