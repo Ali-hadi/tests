@@ -49,3 +49,50 @@ Live HTTP codes, canonical/redirect behavior at the CDN, HTTPS enforcement, resp
 3. Repair the contact inquiry flow and remove unverified company claims.
 4. Add a focused problem-to-solution service page and a mapped keyword/content inventory; do not mass-generate service or location pages.
 5. Add reproducible build, content-gate, and generated-site SEO checks; complete live performance/security checks after deployment access is available.
+
+## Remediation log — 2026-11-13
+
+Verified in the current checkout (commit 556072c) before changing anything:
+
+- Contact form: no false-success state existed any more — the form opened
+  mailto/WhatsApp with a pre-filled message. Remaining gaps were fixed:
+  "Either" silently opened WhatsApp, there was no on-page confirmation, and
+  a failed mailto/WhatsApp open left the visitor with nothing.
+- Business claims: the audit's examples (40 enterprise clients, 12k+ users,
+  delivery across four continents, 100+ technologies) are not present in
+  site copy, structured data, or the portfolio. The portfolio already labels
+  its entries "illustrative product concepts, not client projects". The one
+  inexact count, `108+` illustrative concepts, was corrected to the exact
+  catalog count, 108.
+- Blog/RSS: the triage had already run — all 178 RSS posts are
+  `indexable: false` with empty content, the sitemap lists 39 URLs with only
+  1 blog URL, robots.txt already disallows /api/, /admin/, /login/ and
+  /search, and `scripts/publish-content.mjs` only publishes a new article
+  after two-source verification, an original draft, and image-rights checks.
+  Remaining gap fixed: the blog index linked every archived brief to an
+  internal noindex page and counted them as "Stories".
+
+Changes in this round:
+
+1. `src/routes/contact.tsx` — "Either" now opens email (documented in the
+   form note); after submit an on-page status says the message "has not been
+   sent yet", shows the full message, and offers a Copy button (the message
+   is also copied to the clipboard automatically). No server send was added
+   because no email service is configured for this site; adding one needs
+   credentials the owner must supply.
+2. `src/routes/portfolio.tsx` — `108+` illustrative concepts corrected to
+   `108`.
+3. `src/routes/blog.tsx` — the "Stories" stat is now an honest "News briefs"
+   count (178, excluding the 1 indexable editorial guide). An earlier
+   attempt to link archived briefs straight to their publisher was reverted:
+   the repo's own `scripts/validate-built-seo.mjs` requires the blog index
+   to link every visible brief to its internal archive page, and those pages
+   are noindex with an "Archived feed entry" notice, so that internal
+   linking is the intended design, not a bug.
+4. `src/routes/blog.$slug.tsx` — archived pages now show a prominent
+   "Read the original at <source>" button at the top.
+
+Not fixed here (needs the owner): the 2-hourly `update-news` workflow has
+not published since 2026-09-24 — it skips without an approved image host
+(`NEWS_ALLOWED_IMAGE_HOSTS` secret) and a working OpenRouter key, so no new
+verified article has passed the gate since then.
