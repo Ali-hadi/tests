@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T18:56:45.181936Z",
+  "generatedAt": "2026-11-13T21:23:16.465Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,96 @@
     }
   ],
   "posts": [
+    {
+      "category": "AI",
+      "content": [
+        {
+          "body": [
+            "Google introduced Gemini 4 Hydrogen on November 12, 2026, as a speed-focused member of the Gemini 4 family built for everyday coding and agentic workflows. While the frontier models Gemini 4 Carbon and Gemini 4 Argon handle deep, long-horizon reasoning on the hardest problems, Hydrogen is positioned as the rapid execution model for the work teams do every day.",
+            "Hydrogen launched the same day across Google's developer, enterprise and consumer surfaces: the Gemini API, Google AI Studio, the Gemini app, Google Search, Gemini for business, and Google Antigravity for paid Google AI Pro and Ultra subscribers. It is also the new default model in Search AI Mode.",
+            "The model offers four thinking levels, low, medium, high as the default, and a new xhigh tier, so teams can trade reasoning depth against latency and cost depending on the task instead of paying for maximum reasoning on every request."
+          ],
+          "heading": "What Google announced on November 12"
+        },
+        {
+          "body": [
+            "According to Google, Hydrogen finishes tasks 2.5 times faster than Gemini 3.8 Flash at its high default setting, and more than triples Terminal-Bench 4.1 scores, from 18.2 percent to 57 percent. Google also reports that Hydrogen cuts fabricated claims by more than five times compared with the previous Flash model.",
+            "On the Artificial Analysis Intelligence Index, Google reports Hydrogen scoring 51 against Argon at 50 at its default high thinking level, reaching 54 at the highest xhigh setting. These are vendor-reported benchmark figures, and teams should treat them as directional until they are confirmed against their own workloads.",
+            "Pricing is flat across the full 1 million-token context window at $1.50 per million input tokens and $7.50 per million output tokens. Hydrogen supports 1 million tokens of input and up to 1 million tokens of output, which suits long documents, large codebases and multi-file analysis."
+          ],
+          "heading": "Speed, price and the benchmarks Google reports"
+        },
+        {
+          "body": [
+            "Google also introduced Orchestrator in Google Antigravity, which switches between models such as Carbon and Hydrogen within the same session instead of running one model from start to finish. Routine steps can move to Hydrogen while deeper reasoning stays with Carbon.",
+            "Google reports that on Terminal-Bench 4.0, Orchestrator reached near-Carbon task success rates while consuming 24 percent less quota on average and completing work 19 percent faster. For parallel agent work, Carbon can act as coordinator while Hydrogen powers worker and verifier agents that build and test changes at the same time in isolated workspaces.",
+            "This split matters for cost control. Execution-heavy steps such as writing code, running tests and verifying changes are where most tokens are spent, so moving them to a faster, cheaper model can cut the bill for an agentic workflow without giving up the frontier model where judgment is needed."
+          ],
+          "heading": "The multi-model play: Orchestrator in Antigravity"
+        },
+        {
+          "body": [
+            "Robby Stein, Google's vice president of product for Search, called Hydrogen the biggest model upgrade to Search yet. Hydrogen is now the default model in AI Mode and is used for the hardest questions in AI Overviews, putting it on two of Google's highest-traffic surfaces from day one rather than in an opt-in tier.",
+            "Google says Hydrogen understands questions asked in a natural flow, including questions with multiple parts, hard-to-understand typos and highly specific requests, by breaking a question into its components and answering each part. Responses are also more visual and surface a wider range of relevant links.",
+            "Independent testing of the new Search answers was not part of the coverage reviewed for this article, so teams that depend on Search traffic should watch how AI Mode answers and link surfacing behave in practice rather than taking the improvement as measured fact."
+          ],
+          "heading": "Search gets its biggest model upgrade"
+        },
+        {
+          "body": [
+            "Start with a small pilot on execution-heavy work: code review, test runs, bug fixes and verification steps inside an existing repository. Measure completion time, token spend and defect rates against the current setup before widening the rollout.",
+            "Keep frontier models for architecture decisions, subtle bugs and long-horizon reasoning, and let Hydrogen handle the high-volume steps. That split mirrors how Google positions the family, and it is the fastest way to see whether the speed and price advantage holds on real code.",
+            "Finally, check the rollout surfaces your team already uses. Hydrogen is available through the Gemini API and AI Studio, so an existing integration can try it without a platform change, and teams building AI agents or automation can test whether a faster execution model improves their own workflows."
+          ],
+          "heading": "What software teams should do next"
+        }
+      ],
+      "excerpt": "Google has released Gemini 4 Hydrogen, a fast execution-focused AI model now powering Search AI Mode, coding agents and everyday workflows. Here is what software teams should know before adopting it.",
+      "focusKeyword": "Gemini 4 Hydrogen",
+      "keyTakeaways": [
+        "Gemini 4 Hydrogen is Google's fast execution model for coding and agentic work, now the default in Search AI Mode and available across the Gemini API, AI Studio and the Gemini app.",
+        "Google reports task completion 2.5 times faster than Gemini 3.8 Flash, with flat pricing of $1.50 input and $7.50 output per million tokens across a 1 million-token window.",
+        "Teams should pilot Hydrogen on execution-heavy work such as code review and testing, keep deeper models for architecture, and verify benchmark claims against their own workloads."
+      ],
+      "metaDescription": "Google's Gemini 4 Hydrogen brings fast, low-cost AI to coding agents, Search AI Mode and everyday work. What it changes for software teams.",
+      "searchIntent": "Informational and commercial research",
+      "seoTitle": "Gemini 4 Hydrogen: Fast AI for Agents & Search | AiTouchSolutions",
+      "supportingSources": [
+        {
+          "name": "Google Blog",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+        },
+        {
+          "name": "9to5Google",
+          "url": "https://9to5google.com/2026/11/12/gemini-4-hydrogen-launch/?extended-comments=1"
+        }
+      ],
+      "tags": [
+        "Gemini 4 Hydrogen",
+        "Google AI",
+        "AI agents",
+        "AI models",
+        "Software development"
+      ],
+      "title": "Gemini 4 Hydrogen: Google's Fast AI Model for Agents and Search",
+      "id": "1932554d2092",
+      "slug": "gemini-4-hydrogen-google-s-fast-ai-model-for-agents-and-search-1932554d2092",
+      "source": "Google Blog",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "image": "/og-image.jpg",
+      "imageAlt": "Gemini 4 Hydrogen: Google's Fast AI Model for Agents and Search",
+      "publishedAt": "2026-11-13T21:23:16.465Z",
+      "updatedAt": "2026-11-13T21:23:16.465Z",
+      "author": "AiTouchSolutions Editorial",
+      "cta": {
+        "text": "Discuss how this topic may affect a AI agent development project.",
+        "label": "Explore AI agent development",
+        "href": "/services/ai-agent-development"
+      },
+      "readingTime": 4,
+      "contentType": "news",
+      "indexable": true
+    },
     {
       "category": "AI",
       "content": [

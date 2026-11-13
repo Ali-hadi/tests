@@ -37,6 +37,11 @@ function BlogIndexPage() {
     ? formatNewsDate(featuredPost.updatedAt ?? featuredPost.publishedAt)
     : "Pending";
   const remainingPosts = visibleNewsPosts.filter((post) => post.id !== featuredPost?.id);
+  // Full cards are reserved for reviewed, indexable articles. Archived feed
+  // briefs stay linked (the SEO validator requires every visible post to be
+  // linked from this page) but render as compact rows so the page stays light.
+  const articlePosts = remainingPosts.filter((post) => post.indexable);
+  const archivedPosts = remainingPosts.filter((post) => !post.indexable);
 
   return (
     <>
@@ -165,25 +170,23 @@ function BlogIndexPage() {
 
       <section className={featuredPost ? "pb-24 lg:pb-32" : "py-24 lg:py-32"}>
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          {visibleNewsPosts.length > 0 ? (
+          {articlePosts.length > 0 ? (
             <div className="grid grid-cols-1 gap-px bg-border md:grid-cols-2 xl:grid-cols-3">
-              {remainingPosts.map((post, index) => (
+              {articlePosts.map((post, index) => (
                 <Reveal key={post.id} delay={index % 6}>
                   <Link
                     to="/blog/$slug"
                     params={{ slug: post.slug }}
                     className="group flex h-full flex-col bg-background transition-colors hover:bg-ink-2"
                   >
-                    {post.indexable ? (
-                      <div className="aspect-[16/10] overflow-hidden bg-ink">
-                        <img
-                          src={post.image}
-                          alt={post.imageAlt || post.title}
-                          className="h-full w-full object-cover opacity-85 transition duration-500 group-hover:scale-[1.03] group-hover:opacity-100"
-                          loading="lazy"
-                        />
-                      </div>
-                    ) : null}
+                    <div className="aspect-[16/10] overflow-hidden bg-ink">
+                      <img
+                        src={post.image}
+                        alt={post.imageAlt || post.title}
+                        className="h-full w-full object-cover opacity-85 transition duration-500 group-hover:scale-[1.03] group-hover:opacity-100"
+                        loading="lazy"
+                      />
+                    </div>
                     <article className="flex h-full flex-col p-7 lg:p-9">
                       <div className="mb-7 flex items-center justify-between gap-4">
                         <span
@@ -229,7 +232,48 @@ function BlogIndexPage() {
                 </Reveal>
               ))}
             </div>
-          ) : (
+          ) : null}
+
+          {archivedPosts.length > 0 ? (
+            <div className="mt-16">
+              <div className="mb-6 flex items-baseline justify-between gap-4">
+                <h2 className="font-display text-2xl font-bold tracking-tight lg:text-3xl">
+                  News briefs archive
+                </h2>
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+                  {archivedPosts.length} source-attributed briefs
+                </p>
+              </div>
+              <p className="mb-8 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                Archived feed entries are kept for readers and URL compatibility. They link to
+                their original publisher and are excluded from search indexes until
+                independently reviewed.
+              </p>
+              <ul className="divide-y divide-border border-y border-border">
+                {archivedPosts.map((post) => (
+                  <li key={post.id}>
+                    <Link
+                      to="/blog/$slug"
+                      params={{ slug: post.slug }}
+                      className="group flex flex-wrap items-baseline gap-x-4 gap-y-1 py-3 transition-colors hover:text-teal"
+                    >
+                      <time className="w-28 shrink-0 font-mono text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
+                        {formatNewsDate(post.publishedAt)}
+                      </time>
+                      <span className="min-w-0 flex-1 font-display text-base font-bold leading-snug lg:text-lg">
+                        {post.title}
+                      </span>
+                      <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+                        {post.source}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+
+          {visibleNewsPosts.length === 0 ? (
             <Reveal>
               <div className="border border-border bg-ink p-10 lg:p-14">
                 <p className="mb-5 font-mono text-[10px] uppercase tracking-[0.35em] text-teal">
@@ -243,7 +287,7 @@ function BlogIndexPage() {
                 </p>
               </div>
             </Reveal>
-          )}
+          ) : null}
         </div>
       </section>
 

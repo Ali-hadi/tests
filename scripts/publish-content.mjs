@@ -237,18 +237,41 @@ async function draftArticle(group, existingPosts) {
   return safeJson(content);
 }
 
-function buildSitemap(previousXml, posts, date) {
-  const staticUrls = [
-    ...previousXml.matchAll(/<loc>(https:\/\/aitouchsolutions\.com[^<]+)<\/loc>/g),
-  ]
+// A post belongs in the sitemap when it is an indexable article. Editorial
+// pillar guides are indexable by default (same rule as src/lib/news.ts), so a
+// pillar without an explicit `indexable` field must never drop out of the
+// sitemap on the next publish.
+export function isSitemapPost(post) {
+  return post.indexable === true || (post.indexable !== false && post.contentType === "pillar");
+}
+
+export function buildSitemap(previousXml, posts, date) {
+  const previousEntries = [
+    ...previousXml.matchAll(
+      /<url>\s*<loc>(https:\/\/aitouchsolutions\.com[^<]+)<\/loc>(?:\s*<lastmod>([^<]+)<\/lastmod>)?\s*<\/url>/g,
+    ),
+  ];
+  const previousLastmod = new Map(
+    previousEntries.map(([, url, lastmod]) => [url.replace(siteUrl, ""), lastmod]),
+  );
+  const staticUrls = previousEntries
     .map(([, url]) => url.replace(siteUrl, ""))
     .filter((url) => !url.startsWith("/blog/") && !url.includes("?") && !url.endsWith(".xml"));
   if (!staticUrls.includes("/what-we-build")) staticUrls.push("/what-we-build");
   const urls = new Set(staticUrls);
-  for (const post of posts) if (post.indexable) urls.add(`/blog/${post.slug}`);
-  const entries = [...urls].map(
-    (route) => `  <url><loc>${siteUrl}${route}</loc><lastmod>${date.slice(0, 10)}</lastmod></url>`,
-  );
+  const lastmodByRoute = new Map();
+  for (const post of posts) {
+    if (!isSitemapPost(post)) continue;
+    const route = `/blog/${post.slug}`;
+    urls.add(route);
+    const stamp = post.updatedAt || post.publishedAt;
+    if (stamp) lastmodByRoute.set(route, stamp.slice(0, 10));
+  }
+  const entries = [...urls].map((route) => {
+    const lastmod =
+      lastmodByRoute.get(route) ?? previousLastmod.get(route) ?? date.slice(0, 10);
+    return `  <url><loc>${siteUrl}${route}</loc><lastmod>${lastmod}</lastmod></url>`;
+  });
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join("\n")}\n</urlset>\n`;
 }
 
@@ -365,7 +388,14 @@ async function main() {
     return;
   }
 
-  const posts = existingPosts.map((post) => ({ ...post, indexable: false }));
+  // Keep a rolling 90-day window of published articles indexable instead of
+  // demoting everything on each publish; older articles and raw feed briefs
+  // (never indexable) stay out of the sitemap.
+  const indexableCutoff = now.getTime() - 90 * 24 * 60 * 60 * 1000;
+  const posts = existingPosts.map((post) => ({
+    ...post,
+    indexable: post.indexable === true && Date.parse(post.publishedAt) >= indexableCutoff,
+  }));
   posts.unshift(published);
   const output = { ...stored, generatedAt: now.toISOString(), posts };
   const xml = await readFile(sitemapPath, "utf8");
