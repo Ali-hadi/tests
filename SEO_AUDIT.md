@@ -96,3 +96,43 @@ Not fixed here (needs the owner): the 2-hourly `update-news` workflow has
 not published since 2026-09-24 — it skips without an approved image host
 (`NEWS_ALLOWED_IMAGE_HOSTS` secret) and a working OpenRouter key, so no new
 verified article has passed the gate since then.
+
+## Remediation log — 2026-11-14 (P2 SEO, branch `seo-organic-traffic`)
+
+Pillar-sitemap bug fixed: the pillar post `best-ai-resume-builder-2026` had
+no explicit `indexable` field, while `scripts/publish-content.mjs`
+`buildSitemap` read the raw JSON flag, so the next publish would have
+dropped the pillar from the sitemap and failed validation. The pillar now
+has `"indexable": true`, and `buildSitemap` uses the same pillar-safe rule
+as `src/lib/news.ts` (`isSitemapPost`), exported for reuse.
+
+Other P2 fixes on this branch:
+
+- Sitemap now carries `lastmod` on all 41 URLs (was 1 of 40), taken from
+  each post's `updatedAt || publishedAt`, with previous static-URL values
+  preserved.
+- `publish-content.mjs` no longer demotes every article on each publish:
+  a 90-day rolling window keeps `indexable: true` only for reviewed
+  articles published in the last 90 days.
+- Blog index no longer renders 178 full cards for archived noindex briefs:
+  indexable articles get full cards, archived briefs get compact one-line
+  rows (title + date + source) under a "News briefs archive" heading, with
+  all internal links kept. Built page fell from ~370 KB to 148 KB.
+- Indexable articles now show a "Related services" block
+  (`getRelatedServices` in `src/lib/news.ts`), keyword-mapped to verified
+  service slugs, up to 3 links.
+- New viral article published on this branch: "Gemini 4 Hydrogen: Google's
+  Fast AI Model for Agents and Search" (749 words, 5 sections, sources
+  Google Blog + 9to5Google, 2026-11-12 announcement). Passes
+  `test-content-gate.mjs`, `bun run build` and `validate-built-seo.mjs`
+  (328 pages, 41 sitemap URLs).
+
+Deliberate decision — portfolio stays noindex: `/portfolio` and the 108
+`/portfolio/$projectId` pages are illustrative product concepts, not
+verified client work. Their routes already carry `noIndex: true` and they
+are correctly excluded from the sitemap. Do NOT add them to the sitemap
+until the entries are real, evidenced client projects.
+
+Still needs the owner: repo secrets `OPENROUTER_API_KEY` +
+`NEWS_ALLOWED_IMAGE_HOSTS` (2-hourly `update-news` workflow blocked
+without them); Google Search Console verification.
