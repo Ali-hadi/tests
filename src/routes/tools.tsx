@@ -84,24 +84,22 @@ export const tools: Tool[] = [
     shortName: "Humanizer",
     category: "Writing",
     summary:
-      "Revise AI-assisted text for more natural phrasing and readability while preserving the original meaning and formatting.",
+      "Demo: try simple word-swap rewriting on pasted text. No live AI model is connected yet.",
     icon: Sparkles,
     accent: "teal",
-    metricLabel: "Human score",
-    metricValue: "92%",
+    metricLabel: "Status",
+    metricValue: "Demo",
     placeholder: "Paste AI generated text to humanize it...",
     sample:
       "Our platform leverages artificial intelligence to optimize business workflows and improve operational productivity across departments.",
     features: [
       "Tone rewriting",
-      "Human score indicator",
-      "AI score detection",
       "Formatting preservation",
       "Multi-language support",
       "History and exports",
     ],
     workflows: ["Paste AI text", "Choose tone", "Humanize", "Compare", "Copy or download"],
-    outputs: ["Rewritten content", "AI/Human score", "SEO notes", "History item"],
+    outputs: ["Demo rewrite", "SEO notes", "History item"],
     backend: ["LLM rewrite API", "MongoDB history", "JWT + rate limits", "Prompt safety layer"],
   },
   {
@@ -110,24 +108,20 @@ export const tools: Tool[] = [
     shortName: "Detector",
     category: "Analysis",
     summary:
-      "Scan content, estimate AI probability, highlight suspicious phrases, and generate shareable reports for editorial review.",
+      "Demo checker: highlights a few generic phrases in pasted text. It does not measure AI probability — no detector backend is connected yet.",
     icon: SearchCheck,
     accent: "orange",
-    metricLabel: "Detection score",
-    metricValue: "78%",
+    metricLabel: "Status",
+    metricValue: "Demo",
     placeholder: "Paste content to scan for AI patterns...",
     sample:
       "In conclusion, it is important to note that this comprehensive solution can significantly enhance productivity and efficiency.",
     features: [
-      "AI percentage score",
-      "Human probability",
       "Sentence analysis",
       "Suspicious text highlights",
-      "PDF-ready reports",
-      "Usage analytics",
     ],
     workflows: ["Paste text", "Run scan", "Review highlighted terms", "Export report"],
-    outputs: ["Detection score", "Sentence flags", "Report summary", "Scan statistics"],
+    outputs: ["Demo report", "Sentence flags", "Report summary"],
     backend: ["Detection API", "Report generator", "Admin analytics", "Secure scan storage"],
   },
   {
@@ -136,11 +130,11 @@ export const tools: Tool[] = [
     shortName: "Resume",
     category: "Career",
     summary:
-      "Build ATS-ready resumes, cover letters, role-specific summaries, skill recommendations, and polished PDF exports.",
+      "Draft a resume with templates, cover letters, and a print / save-as-PDF export. No ATS scoring — the keyword checklist is a demo.",
     icon: BriefcaseBusiness,
     accent: "blue",
-    metricLabel: "ATS match",
-    metricValue: "88%",
+    metricLabel: "Status",
+    metricValue: "Demo",
     placeholder: "Enter your target role, experience, achievements, and skills...",
     sample:
       "Frontend developer with 4 years of React, TypeScript, dashboards, performance optimization, and SaaS product experience.",
@@ -149,11 +143,11 @@ export const tools: Tool[] = [
       "Live preview",
       "Cover letters",
       "Skills suggestions",
-      "PDF export",
+      "Print / save as PDF",
       "Saved resumes",
     ],
-    workflows: ["Add profile", "Pick template", "Optimize for job", "Export PDF"],
-    outputs: ["Resume draft", "Cover letter", "ATS score", "Skill gaps"],
+    workflows: ["Add profile", "Pick template", "Optimize for job", "Print / PDF"],
+    outputs: ["Resume draft", "Cover letter", "Keyword checklist", "Skill gaps"],
     backend: ["Resume database", "PDF renderer", "Subscriptions", "LinkedIn import queue"],
   },
   {
@@ -162,11 +156,11 @@ export const tools: Tool[] = [
     shortName: "Thumbnail",
     category: "Creator",
     summary:
-      "Generate YouTube thumbnails with prompt enhancement, editable overlays, style presets, background removal, and HD export.",
+      "Demo: get a thumbnail concept and text prompt for your video idea. No image is generated — no image model is connected yet.",
     icon: Image,
     accent: "violet",
-    metricLabel: "CTR lift",
-    metricValue: "34%",
+    metricLabel: "Status",
+    metricValue: "Demo",
     placeholder: "Describe your video topic, niche, emotion, colors, and main text...",
     sample:
       "A bold YouTube thumbnail for a video about building a profitable AI automation agency in 30 days.",
@@ -174,12 +168,9 @@ export const tools: Tool[] = [
       "Prompt enhancement",
       "Text overlay editor",
       "Trending templates",
-      "Background remover",
-      "One-click resize",
-      "Creator analytics",
     ],
-    workflows: ["Describe video", "Select style", "Edit overlay", "Export HD"],
-    outputs: ["Image prompt", "Overlay copy", "Template match", "Export sizes"],
+    workflows: ["Describe video", "Select style", "Edit overlay", "Copy prompt"],
+    outputs: ["Image prompt", "Overlay copy", "Template match"],
     backend: ["Image generation API", "Object storage", "CDN optimization", "Template service"],
   },
   {
@@ -188,11 +179,11 @@ export const tools: Tool[] = [
     shortName: "Proposal",
     category: "Sales",
     summary:
-      "Create customized Upwork, Fiverr, and agency proposals with smart CTAs, keyword targeting, and proposal scoring.",
+      "Demo: draft a proposal outline from a client brief. No scoring — the output is a fixed template example.",
     icon: FileText,
     accent: "teal",
-    metricLabel: "Win score",
-    metricValue: "81%",
+    metricLabel: "Status",
+    metricValue: "Demo",
     placeholder: "Paste the client brief, budget, project details, and your relevant experience...",
     sample:
       "Client needs a MERN developer to build an AI chatbot dashboard with admin panel and Stripe subscription support.",
@@ -200,12 +191,11 @@ export const tools: Tool[] = [
       "Marketplace templates",
       "Client personalization",
       "Tone selection",
-      "Proposal scoring",
       "Keyword optimization",
       "Saved library",
     ],
     workflows: ["Paste brief", "Choose marketplace", "Personalize", "Copy or export"],
-    outputs: ["Proposal draft", "CTA options", "Score", "Keyword notes"],
+    outputs: ["Proposal draft", "CTA options", "Keyword notes"],
     backend: ["Proposal database", "Template library", "Analytics events", "Prompt guardrails"],
   },
   {
@@ -214,24 +204,24 @@ export const tools: Tool[] = [
     shortName: "Website",
     category: "Build",
     summary:
-      "Generate multi-page website plans, React/Next.js components, Tailwind design systems, SEO structure, and live preview specs.",
+      "Demo: get a multi-page website plan outline from a description. No code is generated yet.",
     icon: Globe2,
     accent: "orange",
-    metricLabel: "Pages ready",
-    metricValue: "6",
+    metricLabel: "Status",
+    metricValue: "Demo",
     placeholder:
       "Describe the website, audience, pages, offer, tone, colors, and required integrations...",
     sample:
       "Create a premium landing page for an AI automation agency with services, pricing, case studies, and contact form.",
     features: [
-      "Prompt-to-site",
-      "Multi-page output",
+      "Prompt-to-plan",
+      "Multi-page plan",
       "Tailwind support",
       "SEO structure",
-      "Live preview",
-      "Source export",
+      "Preview mockup",
+      "Plan export",
     ],
-    workflows: ["Describe product", "Generate layout", "Preview pages", "Export code"],
+    workflows: ["Describe product", "Generate layout", "Preview pages", "Copy plan"],
     outputs: ["Sitemap", "Components", "Color palette", "SEO checklist"],
     backend: ["Code generation worker", "Preview sandbox", "Hosting integration", "Export builder"],
   },
@@ -241,11 +231,11 @@ export const tools: Tool[] = [
     shortName: "Captions",
     category: "Social",
     summary:
-      "Generate viral hooks, platform-specific captions, hashtags, emoji suggestions, and engagement-focused social copy.",
+      "Demo: see example hooks, captions, and hashtags for a post idea. Outputs are fixed examples, not AI-generated.",
     icon: Megaphone,
     accent: "blue",
-    metricLabel: "Hook score",
-    metricValue: "95%",
+    metricLabel: "Status",
+    metricValue: "Demo",
     placeholder: "Describe your post, platform, audience, offer, and desired tone...",
     sample:
       "A LinkedIn post about how small businesses can use AI automation to save 10 hours per week.",
@@ -267,11 +257,11 @@ export const tools: Tool[] = [
     shortName: "Domains",
     category: "Naming",
     summary:
-      "Discover short, brandable, SEO-friendly domain names with niche analysis, favorites, exports, and availability hooks.",
+      "Demo: see brandable name ideas from your keywords. Availability is not checked.",
     icon: Clipboard,
     accent: "violet",
-    metricLabel: "Names found",
-    metricValue: "42",
+    metricLabel: "Status",
+    metricValue: "Demo",
     placeholder:
       "Enter your startup idea, niche, keywords, target market, and preferred domain extensions...",
     sample:
@@ -279,13 +269,12 @@ export const tools: Tool[] = [
     features: [
       "Brandable names",
       "SEO keywords",
-      "Availability checker",
       "Niche filters",
       "Favorites",
-      "Export list",
+      "Save ideas",
     ],
     workflows: ["Add keywords", "Pick niche", "Review names", "Save favorites"],
-    outputs: ["Domain ideas", "Taglines", "SEO angle", "Availability queue"],
+    outputs: ["Domain ideas", "Taglines", "SEO angle"],
     backend: ["Domain API", "Favorites database", "Keyword analyzer", "CSV export"],
   },
   {
@@ -294,24 +283,24 @@ export const tools: Tool[] = [
     shortName: "Portfolio",
     category: "Creator",
     summary:
-      "Generate developer, agency, and creative portfolio structures with animated sections, SEO content, resumes, and contact forms.",
+      "Demo: see a portfolio outline for your profile. No site is built or deployed.",
     icon: Layers3,
     accent: "teal",
-    metricLabel: "Sections",
-    metricValue: "9",
+    metricLabel: "Status",
+    metricValue: "Demo",
     placeholder:
       "Tell us your role, projects, skills, audience, preferred style, and contact goals...",
     sample:
       "Full-stack MERN developer portfolio with AI projects, SaaS dashboards, client testimonials, and contact form.",
     features: [
       "Portfolio generation",
-      "Animated sections",
+      "Section preview",
       "Resume integration",
       "Contact forms",
       "SEO setup",
       "Deploy handoff",
     ],
-    workflows: ["Add profile", "Choose style", "Generate sections", "Deploy"],
+    workflows: ["Add profile", "Choose style", "Generate sections", "Copy outline"],
     outputs: ["Portfolio outline", "Case study copy", "SEO metadata", "Contact CTA"],
     backend: ["Portfolio database", "Deploy integration", "Form handling", "Asset storage"],
   },
@@ -321,25 +310,23 @@ export const tools: Tool[] = [
     shortName: "Chatbot",
     category: "Platform",
     summary:
-      "A multi-model chat SaaS blueprint with streaming, history, files, voice input, team workspaces, memory, and admin controls.",
+      "Demo: a static mock of a chatbot SaaS conversation and architecture outline. No live chat or model is connected.",
     icon: Bot,
     accent: "orange",
-    metricLabel: "Latency target",
-    metricValue: "1.2s",
+    metricLabel: "Status",
+    metricValue: "Demo",
     placeholder:
       "Describe your chatbot use case, data sources, models, users, and workflow requirements...",
     sample:
       "A customer support chatbot for a SaaS company that can answer from docs, create tickets, and escalate to humans.",
     features: [
-      "Streaming chat",
-      "Multi-model support",
-      "Chat history",
-      "File uploads",
-      "Team spaces",
-      "Admin dashboard",
+      "Demo conversation",
+      "Architecture outline",
+      "Integration list",
+      "Model routing plan",
     ],
-    workflows: ["Connect data", "Choose model", "Chat and stream", "Analyze usage"],
-    outputs: ["Bot strategy", "Memory plan", "Integration list", "Admin metrics"],
+    workflows: ["Describe use case", "Review demo chat", "Copy plan"],
+    outputs: ["Bot strategy", "Memory plan", "Integration list"],
     backend: ["WebSocket gateway", "Vector memory", "AI key vault", "Tenant analytics"],
   },
 ];
@@ -364,35 +351,14 @@ export function getToolPagePath(toolId: string) {
 const highlights = [
   { label: "AI tools", value: "10", icon: BrainCircuit },
   { label: "Interface modules", value: "Reusable", icon: Layers3 },
-  { label: "Export formats", value: "PDF/TXT/CSV", icon: Download },
+  { label: "Export format", value: "TXT", icon: Download },
   { label: "Built for scale", value: "MERN ready", icon: ShieldCheck },
-];
-
-const pricing = [
-  {
-    name: "Starter",
-    price: "$19",
-    description: "For creators testing AI tools and lightweight exports.",
-    features: ["2,000 credits", "History", "Copy/download", "Basic analytics"],
-  },
-  {
-    name: "Pro",
-    price: "$49",
-    description: "For freelancers, marketers, and teams shipping weekly.",
-    features: ["15,000 credits", "PDF reports", "Saved templates", "Priority speed"],
-  },
-  {
-    name: "Scale",
-    price: "Custom",
-    description: "For SaaS platforms, agencies, and enterprise workflows.",
-    features: ["API access", "Admin panel", "SSO/JWT", "Dedicated AI key routing"],
-  },
 ];
 
 const faqs = [
   {
     q: "Can these tools connect to OpenAI, Claude, or Gemini?",
-    a: "Yes. The page is structured around secure model routing, API key management, rate limiting, and prompt guardrails.",
+    a: "No — not yet. The tools on this page are interface demos; they do not call OpenAI, Claude, or Gemini. Live model connections are planned — contact us to discuss wiring them up.",
   },
   {
     q: "Is the layout Adsense and SEO friendly?",
@@ -400,27 +366,11 @@ const faqs = [
   },
   {
     q: "Can users save history?",
-    a: "The interface includes a history flow. In production it can persist through MongoDB with JWT authentication.",
+    a: "History is kept only in this browser session. Nothing is saved to an account — there is no login or database connected yet.",
   },
   {
     q: "Does it support mobile users?",
     a: "Every section is responsive, touch-friendly, and avoids layout shifts across small and large viewports.",
-  },
-];
-
-const testimonials = [
-  {
-    quote:
-      "The tool suite feels like a complete AI product catalog instead of a simple landing page.",
-    name: "SaaS Founder",
-  },
-  {
-    quote: "The proposal and caption workflows are exactly what a creator team needs every day.",
-    name: "Growth Lead",
-  },
-  {
-    quote: "Clean UI, clear exports, and a backend plan our engineers can actually implement.",
-    name: "Agency CTO",
   },
 ];
 
@@ -473,11 +423,6 @@ export function countCharacters(value: string) {
   return value.length;
 }
 
-export function buildScore(input: string, tool: Tool) {
-  const seed = input.length + tool.name.length * 9;
-  return Math.min(98, Math.max(58, (seed % 41) + 58));
-}
-
 export function generateOutput(tool: Tool, input: string, tone: ToolTone) {
   const source = input.trim() || tool.sample;
 
@@ -495,10 +440,7 @@ export function generateOutput(tool: Tool, input: string, tone: ToolTone) {
           })[match.toLowerCase()] ?? match,
       )}\n\nSEO note: clearer verbs, less robotic phrasing, and a more natural reader flow.`;
     case "ai-detector":
-      return `AI detection report:\n\nAI probability: ${Math.max(12, 100 - buildScore(source, tool))}%\nHuman probability: ${buildScore(
-        source,
-        tool,
-      )}%\n\nFlagged patterns: repeated generic claims, overly formal transitions, and low specificity.\nRecommended fix: add examples, concrete numbers, and personal context.`;
+      return `Demo detection report (no real detection):\n\nThis example output lists generic patterns only. It does not measure AI probability — no detector backend is connected yet.\n\nFlagged patterns (example): repeated generic claims, overly formal transitions, and low specificity.\nRecommended fix: add examples, concrete numbers, and personal context.`;
     case "resume-builder":
       return `ATS resume draft:\n\nTarget summary: ${tone} ${source}\n\nImpact bullets:\n- Built scalable product workflows with measurable business outcomes.\n- Improved performance, reliability, and delivery speed across product teams.\n- Collaborated with stakeholders to convert requirements into shipped features.\n\nSuggested skills: React, TypeScript, APIs, analytics, automation, communication.`;
     case "thumbnail-generator":
@@ -568,7 +510,7 @@ function ToolsHubPage() {
             <div className="mt-8 grid gap-10 lg:grid-cols-[1fr_420px] lg:items-end">
               <div>
                 <h1 className="font-display max-w-5xl text-5xl font-bold leading-[0.94] tracking-[-0.04em] md:text-7xl lg:text-8xl">
-                  Ten premium AI tools in one <span className="gradient-text">production hub</span>.
+                  Ten AI tool demos in one <span className="gradient-text">demo hub</span>.
                 </h1>
                 <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground lg:text-lg">
                   Humanizer, detector, resume builder, thumbnail generator, proposal writer, website
@@ -616,7 +558,7 @@ function ToolsHubPage() {
               Complete catalog
             </p>
             <h2 className="mt-4 max-w-4xl font-display text-4xl font-bold tracking-tight lg:text-6xl">
-              Every tool has its own workflow, metrics, exports, and backend path.
+              Every tool has its own workflow, demo output, and planned backend path.
             </h2>
           </Reveal>
           <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -639,7 +581,7 @@ function ToolsHubPage() {
                 Production architecture
               </p>
               <h2 className="mt-4 font-display text-4xl font-bold tracking-tight lg:text-6xl">
-                Ready for MERN, AI APIs, subscriptions, and analytics.
+                Planned architecture for MERN, AI APIs, subscriptions, and analytics.
               </h2>
               <p className="mt-6 text-sm leading-relaxed text-muted-foreground lg:text-base">
                 This page keeps the existing app safe while mapping the full backend required for
@@ -724,38 +666,6 @@ function ToolsHubPage() {
         </div>
       </section>
 
-      <section className="py-24 lg:py-32">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          <Reveal>
-            <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-teal">Pricing</p>
-            <h2 className="mt-4 font-display text-4xl font-bold tracking-tight lg:text-6xl">
-              Plans for creators, freelancers, and SaaS teams.
-            </h2>
-          </Reveal>
-          <div className="mt-14 grid gap-px bg-border lg:grid-cols-3">
-            {pricing.map((plan) => (
-              <div key={plan.name} className="bg-background p-8">
-                <h3 className="font-display text-3xl font-bold">{plan.name}</h3>
-                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                  {plan.description}
-                </p>
-                <div className="mt-8 font-display text-5xl font-bold text-teal">{plan.price}</div>
-                <div className="mt-8 space-y-3">
-                  {plan.features.map((feature) => (
-                    <div
-                      key={feature}
-                      className="flex items-center gap-3 text-sm text-muted-foreground"
-                    >
-                      <Check className="h-4 w-4 text-teal" />
-                      {feature}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="border-y border-border bg-ink py-24 lg:py-32">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
@@ -781,30 +691,6 @@ function ToolsHubPage() {
         </div>
       </section>
 
-      <section className="py-24 lg:py-32">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          <Reveal>
-            <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-teal">
-              Testimonials
-            </p>
-            <h2 className="mt-4 font-display text-4xl font-bold tracking-tight lg:text-6xl">
-              Designed for real product workflows.
-            </h2>
-          </Reveal>
-          <div className="mt-14 grid gap-px bg-border lg:grid-cols-3">
-            {testimonials.map((item) => (
-              <figure key={item.name} className="bg-background p-8">
-                <blockquote className="font-display text-2xl font-bold leading-snug">
-                  "{item.quote}"
-                </blockquote>
-                <figcaption className="mt-6 text-[10px] font-mono uppercase tracking-[0.25em] text-teal">
-                  {item.name}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="border-t border-border bg-ink py-24 lg:py-32">
         <div className="max-w-[1400px] mx-auto px-6 text-center lg:px-10">
@@ -920,8 +806,6 @@ type ToolExperienceProps = {
   setTone: (value: ToolTone) => void;
   words: number;
   characters: number;
-  score: number;
-  aiScore: number;
   light: boolean;
 };
 
@@ -944,8 +828,6 @@ export function ToolExperience({
   setTone,
   words,
   characters,
-  score,
-  aiScore,
   light,
 }: ToolExperienceProps) {
   const [resumeTemplate, setResumeTemplate] = useState("Modern");
@@ -1017,27 +899,9 @@ export function ToolExperience({
           <div className="mt-4">
             <ToneButtons />
           </div>
-          <div className="mt-6 space-y-4">
-            {[
-              ["Human", score, "bg-teal"],
-              ["AI", aiScore, "bg-orange"],
-            ].map(([label, value, color]) => (
-              <div key={label as string}>
-                <div className="mb-2 flex justify-between text-xs font-bold uppercase tracking-[0.16em]">
-                  <span>{label}</span>
-                  <span>{value}%</span>
-                </div>
-                <div className={`h-2 rounded-full ${light ? "bg-slate-200" : "bg-foreground/10"}`}>
-                  <div
-                    className={`h-full rounded-full ${color as string}`}
-                    style={{ width: `${value}%` }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
           <div className="mt-6 rounded-md border border-teal/30 bg-teal/10 p-4 text-sm text-teal">
-            Natural phrasing, varied rhythm, SEO-safe structure.
+            Demo rewrite — simple word swaps only. No AI model is connected, so no score is
+            shown.
           </div>
         </div>
         <div className={`rounded-md border p-5 ${card}`}>
@@ -1057,7 +921,7 @@ export function ToolExperience({
           <div className="flex items-center justify-between gap-3">
             <p className="text-xs font-bold uppercase tracking-[0.2em]">Scanner input</p>
             <span className="rounded-md bg-orange/10 px-2 py-1 text-[10px] font-mono uppercase tracking-[0.18em] text-orange">
-              Live scan
+              Demo
             </span>
           </div>
           <textarea
@@ -1081,10 +945,10 @@ export function ToolExperience({
         </div>
         <div className="grid gap-4">
           <div className={`rounded-md border p-5 ${card}`}>
-            <div className="grid gap-4 sm:grid-cols-2">
-              <ScoreRing label="Human probability" value={score} light={light} />
-              <ScoreRing label="AI probability" value={aiScore} inverse light={light} />
-            </div>
+            <p className="text-sm leading-relaxed">
+              Demo scan — this page highlights a few generic phrases only. It does not measure
+              AI probability; no detector backend is connected yet.
+            </p>
           </div>
           <div className={`rounded-md border p-5 ${card}`}>
             <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em]">Sentence analysis</p>
@@ -1096,9 +960,6 @@ export function ToolExperience({
                 >
                   <div className="mb-2 flex items-center justify-between gap-3">
                     <span className="font-bold">Sentence {index + 1}</span>
-                    <span className={index % 2 === 0 ? "text-orange" : "text-teal"}>
-                      {index % 2 === 0 ? "Review" : "Likely human"}
-                    </span>
                   </div>
                   <p className={mutedText}>{sentence.trim()}.</p>
                 </div>
@@ -1135,7 +996,7 @@ export function ToolExperience({
             ))}
           </div>
           <div className="mt-4 rounded-md border border-teal/30 bg-teal/10 p-4 text-sm text-teal">
-            {resumeTemplate} preview selected · Sample match indicator: {score}%
+            {resumeTemplate} preview selected · Demo preview — no ATS scoring.
           </div>
         </div>
         <div
@@ -1151,7 +1012,7 @@ export function ToolExperience({
               <p className={`mt-1 text-sm ${mutedText}`}>AI Product Engineer</p>
             </div>
             <span className="rounded-md bg-teal px-3 py-2 text-xs font-bold uppercase tracking-[0.16em] text-ink">
-              Sample score {score}%
+              Demo preview
             </span>
           </div>
           <div className="mt-6 grid gap-6 md:grid-cols-[1fr_240px]">
@@ -1222,7 +1083,7 @@ export function ToolExperience({
                 <span className="rounded-md bg-ink px-3 py-2 text-xs font-bold uppercase tracking-[0.14em] text-orange">
                   {thumbnailStyle} concept
                 </span>
-                <span className="rounded-md bg-white px-3 py-2 text-xs font-bold text-ink">4K</span>
+                <span className="rounded-md bg-white px-3 py-2 text-xs font-bold text-ink">Concept</span>
               </div>
               <div>
                 <p className="max-w-[12ch] font-display text-4xl font-bold leading-none text-white md:text-6xl">
@@ -1232,8 +1093,8 @@ export function ToolExperience({
               </div>
             </div>
           </div>
-          <div className="mt-4 grid gap-3 sm:grid-cols-3">
-            {["Text overlay", "Background remove", "HD export"].map((item) => (
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            {["Text overlay", "Text export"].map((item) => (
               <div key={item} className={`rounded-md border p-3 text-sm ${panel}`}>
                 {item}
               </div>
@@ -1269,21 +1130,15 @@ export function ToolExperience({
           </pre>
         </div>
         <div className={`rounded-md border p-5 ${panel}`}>
-          <p className="text-xs font-bold uppercase tracking-[0.2em]">Proposal score</p>
-          <div className="mt-5 font-display text-6xl font-bold text-teal">{score}</div>
+          <p className="text-xs font-bold uppercase tracking-[0.2em]">Demo draft checklist</p>
+          <p className="mt-3 text-sm text-teal">
+            No scoring — this is a fixed template example.
+          </p>
           <div className="mt-5 space-y-3">
-            {["Personalization", "Proof", "CTA", "Keyword fit"].map((item, index) => (
-              <div key={item}>
-                <div className="mb-1 flex justify-between text-xs">
-                  <span>{item}</span>
-                  <span>{score - index * 6}%</span>
-                </div>
-                <div className={`h-2 rounded-full ${light ? "bg-slate-200" : "bg-foreground/10"}`}>
-                  <div
-                    className="h-full rounded-full bg-teal"
-                    style={{ width: `${score - index * 6}%` }}
-                  />
-                </div>
+            {["Personalization", "Proof", "CTA", "Keyword fit"].map((item) => (
+              <div key={item} className="flex items-center gap-3 text-sm">
+                <Check className="h-4 w-4 shrink-0 text-teal" />
+                <span>{item}</span>
               </div>
             ))}
           </div>
@@ -1554,10 +1409,10 @@ export function ToolExperience({
             <Bot className="h-5 w-5 text-teal" />
             <div>
               <p className="text-sm font-bold">Support AI</p>
-              <p className={`text-xs ${mutedText}`}>GPT-4.1 routing | Memory on</p>
+              <p className={`text-xs ${mutedText}`}>Demo conversation | No live model</p>
             </div>
           </div>
-          <span className="rounded-md bg-teal/10 px-2 py-1 text-xs text-teal">Streaming</span>
+          <span className="rounded-md bg-teal/10 px-2 py-1 text-xs text-teal">Demo</span>
         </div>
         <div className="space-y-4 p-5">
           <div className={`max-w-[78%] rounded-md border p-4 text-sm ${panel}`}>{source}</div>
@@ -1587,50 +1442,6 @@ export function ToolExperience({
               </div>
             ),
           )}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export function ScoreRing({
-  label,
-  value,
-  inverse = false,
-  light = false,
-}: {
-  label: string;
-  value: number;
-  inverse?: boolean;
-  light?: boolean;
-}) {
-  const color = inverse ? "var(--color-orange)" : "var(--color-teal)";
-  return (
-    <div className={light ? "bg-white p-5" : "bg-background/60 p-5"}>
-      <div className="flex items-center gap-4">
-        <div
-          className="grid h-20 w-20 shrink-0 place-items-center rounded-full"
-          style={{
-            background: `conic-gradient(${color} ${value * 3.6}deg, rgba(255,255,255,0.08) 0deg)`,
-          }}
-        >
-          <div
-            className={`grid h-14 w-14 place-items-center rounded-full text-sm font-bold ${
-              light ? "bg-white text-slate-950" : "bg-background"
-            }`}
-          >
-            {value}%
-          </div>
-        </div>
-        <div>
-          <p className="text-xs font-bold uppercase tracking-[0.18em]">{label}</p>
-          <p
-            className={light ? "mt-2 text-sm text-slate-500" : "mt-2 text-sm text-muted-foreground"}
-          >
-            {inverse
-              ? "Lower is better for authenticity checks."
-              : "Live estimate from the current input."}
-          </p>
         </div>
       </div>
     </div>

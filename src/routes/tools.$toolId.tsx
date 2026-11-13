@@ -19,11 +19,9 @@ import { AiDetectorPage } from "@/components/tools/AiDetectorPage";
 import { createSeo } from "@/lib/seo";
 import {
   accentClasses,
-  buildScore,
   countCharacters,
   countWords,
   generateOutput,
-  ScoreRing,
   ToolCatalogCard,
   ToolExperience,
   tools,
@@ -33,16 +31,14 @@ import {
 export function getToolRouteHead(toolId: string) {
   if (toolId === "ai-detector") {
     return createSeo({
-      title: "Free AI Detector: Check ChatGPT, Gemini & More with AI Checker",
+      title: "AI Detector Demo | AiTouchSolutions",
       description:
-        "Paste any text and run AI Touch Solutions' free AI checker to review ChatGPT, Gemini, Claude, and other AI-generated writing patterns.",
+        "Try the AI Touch Solutions detector demo: it highlights a few generic phrases in pasted text. It does not measure AI probability — no detector backend is connected yet.",
       path: "/tools/ai-detector",
       keywords: [
         "AI detector",
-        "free AI detector",
+        "AI detector demo",
         "AI checker",
-        "ChatGPT detector",
-        "Gemini detector",
         "AI Touch Solutions AI detector",
       ],
     });
@@ -53,8 +49,8 @@ export function getToolRouteHead(toolId: string) {
     ? `${tool.name} | AiTouchSolutions AI Tools`
     : "AI Tool Workspace | AiTouchSolutions";
   const description = tool
-    ? `${tool.summary} Use ${tool.name} with a dedicated workspace, live preview, copy, download, share, history, and production-ready workflow structure.`
-    : "Use a dedicated AiTouchSolutions AI tool page with unique UI, live preview, copy, download, share, history, and production-ready workflow structure.";
+    ? `${tool.summary} Demo workspace with copy, download, share, and history — no live AI connected yet.`
+    : "Use a dedicated AiTouchSolutions AI tool demo page with copy, download, share, and history — no live AI connected yet.";
 
   return createSeo({
     title,
@@ -94,13 +90,13 @@ export function ToolPageForId({ toolId }: { toolId: string }) {
   const [notice, setNotice] = useState("");
   const [history, setHistory] = useState<string[]>([
     `${tool.shortName} workspace opened`,
-    "Ready for production API wiring",
+    "Demo workspace — no live AI connected",
   ]);
 
   useEffect(() => {
     setInput(tool.sample);
     setNotice("");
-    setHistory([`${tool.shortName} workspace opened`, "Ready for production API wiring"]);
+    setHistory([`${tool.shortName} workspace opened`, "Demo workspace — no live AI connected"]);
   }, [tool]);
 
   const hasInput = input.trim().length > 0;
@@ -108,8 +104,6 @@ export function ToolPageForId({ toolId }: { toolId: string }) {
     () => (hasInput ? generateOutput(tool, input, tone) : ""),
     [hasInput, tool, input, tone],
   );
-  const score = useMemo(() => (hasInput ? buildScore(input, tool) : 0), [hasInput, tool, input]);
-  const aiScore = hasInput ? Math.max(2, 100 - score) : 0;
   const words = countWords(input);
   const characters = countCharacters(input);
   const workspaceIsLight = theme === "light";
@@ -283,8 +277,6 @@ export function ToolPageForId({ toolId }: { toolId: string }) {
                 setTone={setTone}
                 words={words}
                 characters={characters}
-                score={score}
-                aiScore={aiScore}
                 light={workspaceIsLight}
               />
 
@@ -349,9 +341,14 @@ export function ToolPageForId({ toolId }: { toolId: string }) {
             </div>
 
             <aside className={workspaceIsLight ? "bg-slate-50 p-5 lg:p-6" : "bg-ink p-5 lg:p-6"}>
-              <div className="grid gap-px overflow-hidden rounded-md bg-current/10">
-                <ScoreRing label={tool.metricLabel} value={score} light={workspaceIsLight} />
-                <ScoreRing label="AI score" value={aiScore} inverse light={workspaceIsLight} />
+              <div className="rounded-md border border-teal/30 bg-teal/10 p-5">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-teal">
+                  Demo workspace
+                </p>
+                <p className="mt-3 text-sm leading-relaxed">
+                  Outputs here are template examples. No live AI model is connected yet, so no
+                  scores are shown.
+                </p>
               </div>
 
               <div className="mt-5 rounded-md border border-current/10 p-5">
@@ -389,8 +386,11 @@ export function ToolPageForId({ toolId }: { toolId: string }) {
                 Tool backend
               </p>
               <h2 className="mt-4 font-display text-4xl font-bold tracking-tight lg:text-6xl">
-                Production modules for {tool.shortName}.
+                Planned backend modules for {tool.shortName}.
               </h2>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                These modules are planned, not connected yet — this page is a demo.
+              </p>
             </Reveal>
             <div className="grid gap-px bg-border md:grid-cols-2">
               {tool.backend.map((item) => (

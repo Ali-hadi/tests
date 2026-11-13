@@ -117,12 +117,8 @@ const FONT_PRESETS = [
   { id: 'merriweather', name: 'Merriweather', family: 'Merriweather, serif' }
 ];
 
-const INITIAL_JOBS_CRM = [
-  { id: 'job-1', company: 'Google', role: 'Staff ML Engineer', status: 'interview', salary: '$240,000', notes: 'Round 3: System Design scheduled on June 15.' },
-  { id: 'job-2', company: 'Anthropic', role: 'Senior AI Researcher', status: 'applied', salary: '$270,000', notes: 'Submitted resume optimized with the open ATS matcher.' },
-  { id: 'job-3', company: 'OpenAI', role: 'Solutions Architect', status: 'offer', salary: '$310,000', notes: 'Verbal offer received. Waiting for equity breakdown document.' },
-  { id: 'job-4', company: 'Stripe', role: 'Senior Frontend Engineer', status: 'saved', salary: '$190,000', notes: 'Referral requested through LinkedIn contact.' }
-];
+// No pre-filled applications: the tracker starts empty and the user adds their own.
+const INITIAL_JOBS_CRM = [];
 
 const generateWithOpenRouterServer = createServerFn({ method: 'POST' })
   .inputValidator((input) => input)
@@ -404,8 +400,8 @@ export function AiResumeBuilderPage() {
   // Resume Engine Data State
   const [resumeData, setResumeData] = useState(INITIAL_RESUME_DATA);
   const [savedResumes, setSavedResumes] = useState([
-    { id: 'res-default', name: 'Alexander Mercer - Principal AI Architect', date: '2026-05-28', template: 'ats', score: 94 },
-    { id: 'res-temp', name: 'Alexander Mercer - General Dev Manager', date: '2026-05-15', template: 'modern', score: 81 }
+    { id: 'res-default', name: 'SAMPLE — Alexander Mercer - Principal AI Architect', date: '2026-05-28', template: 'ats' },
+    { id: 'res-temp', name: 'SAMPLE — Alexander Mercer - General Dev Manager', date: '2026-05-15', template: 'modern' }
   ]);
   const [activeResumeId, setActiveResumeId] = useState('res-default');
 
@@ -500,14 +496,14 @@ Requirements:
     } catch (err) {
       setGlobalAiLoading(false);
       console.warn("OpenRouter API request failed or no key entered. Initializing local predictive generator.", err);
-      // Local open-source fallback generator
+      // Demo fallback: canned text only — the AI service is not connected.
+      showToast("AI service not connected — demo text shown.", "info");
       return runMockLocalAI(prompt);
     }
   };
 
   const runMockLocalAI = (prompt) => {
     return new Promise((resolve) => {
-      setTimeout(() => {
         const lowerPrompt = prompt.toLowerCase();
         
         if (lowerPrompt.includes('summary')) {
@@ -539,29 +535,29 @@ ${resumeData.personalInfo.fullName}`);
         else {
           resolve(`Optimized Open Result: Designed, implemented, and scaled a state-of-the-art software orchestration engine, resulting in a 35% decrease in developer configuration overhead and enabling frictionless API delivery.`);
         }
-      }, 1200);
     });
   };
 
+  // Demo keyword checklist: checks whether 10 common tech keywords appear in the
+  // resume text. This is NOT an ATS score — no ATS system is connected, and the
+  // pasted job description is not analyzed yet.
   const runATSAnalysis = async (isAuto = false) => {
     if (!isAuto) setIsAnalyzingATS(true);
-    
-    // Core Scoring Rule Engine
+
     const resumeText = JSON.stringify(resumeData).toLowerCase();
     const keywordsToTest = [
-      { name: 'pytorch', weight: 15 },
-      { name: 'kubernetes', weight: 15 },
-      { name: 'vector databases', alternate: 'pinecone', weight: 12 },
-      { name: 'llm', alternate: 'large language models', weight: 12 },
-      { name: 'aws', alternate: 'gcp', weight: 10 },
-      { name: 'docker', weight: 8 },
-      { name: 'ci/cd', weight: 8 },
-      { name: 'api', weight: 5 },
-      { name: 'typescript', weight: 5 },
-      { name: 'latency', weight: 10 }
+      { name: 'pytorch' },
+      { name: 'kubernetes' },
+      { name: 'vector databases', alternate: 'pinecone' },
+      { name: 'llm', alternate: 'large language models' },
+      { name: 'aws', alternate: 'gcp' },
+      { name: 'docker' },
+      { name: 'ci/cd' },
+      { name: 'api' },
+      { name: 'typescript' },
+      { name: 'latency' }
     ];
 
-    let currentScore = 40; // Base score
     const missingKeywords = [];
     const matchedKeywords = [];
 
@@ -569,7 +565,6 @@ ${resumeData.personalInfo.fullName}`);
       const mainFound = resumeText.includes(item.name);
       const altFound = item.alternate ? resumeText.includes(item.alternate) : false;
       if (mainFound || altFound) {
-        currentScore += item.weight;
         matchedKeywords.push(item.name);
       } else {
         missingKeywords.push(item.name);
@@ -580,15 +575,10 @@ ${resumeData.personalInfo.fullName}`);
     const summaryLength = resumeData.summary.split(/\s+/).length;
     let readabilityStatus = "Optimal";
     if (summaryLength > 150) {
-      currentScore -= 8;
       readabilityStatus = "Too Wordy";
     } else if (summaryLength < 30) {
-      currentScore -= 10;
       readabilityStatus = "Too Brief";
     }
-
-    if (currentScore > 100) currentScore = 100;
-    if (currentScore < 10) currentScore = 10;
 
     const strengths = [
       "Robust professional summary showing senior technological leadership.",
@@ -607,23 +597,15 @@ ${resumeData.personalInfo.fullName}`);
       improvements.push("Add at least 3 distinct roles in experience timeline to demonstrate historical seniority.");
     }
 
-    // AI booster option inside ATS panel
-    const prompt = `Analyze this resume content against the target job description. Suggest 5 high-impact bullet points to increase this ATS compatibility score.
-    Resume content: ${JSON.stringify(resumeData.personalInfo)} ${resumeData.summary}
-    Target job description: ${jobDescriptionInput}`;
-
-    setTimeout(() => {
-      setAtsAnalysisResult({
-        score: Math.round(currentScore),
-        matched: matchedKeywords,
-        missing: missingKeywords,
-        readability: readabilityStatus,
-        strengths,
-        improvements
-      });
-      setIsAnalyzingATS(false);
-      if (!isAuto) showToast("ATS compatibility audit calculated successfully!", "success");
-    }, 800);
+    setAtsAnalysisResult({
+      matched: matchedKeywords,
+      missing: missingKeywords,
+      readability: readabilityStatus,
+      strengths,
+      improvements
+    });
+    setIsAnalyzingATS(false);
+    if (!isAuto) showToast("Keyword checklist updated.", "success");
   };
 
   const handleUpdatePersonalInfo = (field, value) => {
@@ -797,7 +779,6 @@ ${resumeData.personalInfo.fullName}`);
         name,
         date: new Date().toISOString().slice(0, 10),
         template: selectedTemplate,
-        score: 88,
       },
       ...prev,
     ]);
@@ -988,7 +969,7 @@ ${sourceText.slice(0, 14000)}`;
         <head>
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>${mode === 'pdf' ? 'Export PDF' : 'Print Resume'} - ${candidateName}</title>
+          <title>${mode === 'pdf' ? 'Save as PDF' : 'Print Resume'} - ${candidateName}</title>
           <style>
             @page { size: A4; margin: 14mm; }
             * { box-sizing: border-box; }
@@ -1133,7 +1114,7 @@ ${sourceText.slice(0, 14000)}`;
               <Sparkles className="w-6 h-6 text-indigo-400 absolute inset-0 m-auto animate-pulse" />
             </div>
             <h3 className="text-xl font-bold text-white mb-2">Open Resume Engine</h3>
-            <p className="text-slate-400 text-sm">The community parser is refining, aligning, and boosting your resume variables for cleaner ATS delivery...</p>
+            <p className="text-slate-400 text-sm">The community parser is refining, aligning, and boosting your resume variables for a cleaner resume...</p>
           </div>
         </div>
       )}
@@ -1297,11 +1278,11 @@ ${sourceText.slice(0, 14000)}`;
           <div className="hidden lg:flex items-center gap-6">
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span className="text-xs font-medium text-slate-300">Local ATS Engine Active</span>
+              <span className="text-xs font-medium text-slate-300">Keyword checklist (demo)</span>
             </div>
             <div className="flex items-center gap-1.5">
               <span className="text-xs text-slate-400">Provider:</span>
-              <span className="text-xs font-bold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-full">OpenRouter GPT-5.2</span>
+              <span className="text-xs font-bold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-full">{openRouterApiKey ? "OpenRouter GPT-5.2" : "Demo mode — no AI key"}</span>
             </div>
           </div>
 
@@ -1332,13 +1313,13 @@ ${sourceText.slice(0, 14000)}`;
                 AM
               </div>
               <div>
-                <h4 className="text-sm font-bold text-white">Alexander Mercer</h4>
-                <p className="text-[11px] text-slate-400">Open Source Workspace</p>
+                <h4 className="text-sm font-bold text-white">Alexander Mercer <span className="ml-1 rounded bg-amber-500/20 px-1.5 py-0.5 text-[9px] font-black uppercase text-amber-300">Sample</span></h4>
+                <p className="text-[11px] text-slate-400">Sample data · Open Source Workspace</p>
               </div>
             </div>
             <div className="bg-slate-950 p-2.5 rounded-lg border border-slate-900 text-center">
-              <span className="text-[10px] text-slate-500 font-bold block mb-1">GLOBAL RESUME COMPATIBILITY</span>
-              <span className="text-xl font-black text-indigo-400">{atsAnalysisResult ? atsAnalysisResult.score : 85}%</span>
+              <span className="text-[10px] text-slate-500 font-bold block mb-1">RESUME COMPLETENESS</span>
+              <span className="text-xl font-black text-indigo-400">{resumeCompletionScore}%</span>
             </div>
           </div>
 
@@ -1369,7 +1350,7 @@ ${sourceText.slice(0, 14000)}`;
               }`}
             >
               <CheckCircle className="w-4 h-4" />
-              <span>ATS Scorecard</span>
+              <span>Keyword Checklist</span>
             </button>
             <button 
               onClick={() => setActiveTab('coverletter')}
@@ -1428,7 +1409,7 @@ ${sourceText.slice(0, 14000)}`;
                   <div>
                     <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest bg-emerald-500/10 px-3 py-1 rounded-full">Open Source Core Active</span>
                     <h1 className="text-2xl sm:text-3xl font-black text-white mt-2 mb-1">Welcome back, {resumeData.personalInfo.fullName.split(' ')[0]}!</h1>
-                    <p className="text-slate-400 text-sm">Your active resume is ready to edit, audit, print, and export with transparent local-first tooling.</p>
+                    <p className="text-slate-400 text-sm">Your active resume is ready to edit, review, print, and export with transparent local-first tooling.</p>
                   </div>
                   <button 
                     onClick={() => setActiveTab('builder')}
@@ -1455,9 +1436,9 @@ ${sourceText.slice(0, 14000)}`;
 
                 <div className="bg-slate-900/50 border border-slate-900 rounded-2xl p-4 flex items-center justify-between">
                   <div>
-                    <span className="text-[10px] font-bold text-slate-500 uppercase">ATS Matching Audit</span>
-                    <p className="text-2xl font-black text-emerald-400 mt-1">{atsAnalysisResult ? atsAnalysisResult.score : 85}/100</p>
-                    <p className="text-xs text-slate-400 mt-1">Score: <strong>Optimized</strong></p>
+                    <span className="text-[10px] font-bold text-slate-500 uppercase">Keyword Checklist</span>
+                    <p className="text-2xl font-black text-emerald-400 mt-1">{atsAnalysisResult ? `${atsAnalysisResult.matched.length}/10` : "—"}</p>
+                    <p className="text-xs text-slate-400 mt-1">keywords found in resume (demo)</p>
                   </div>
                   <div className="p-3 bg-emerald-500/10 rounded-xl text-emerald-400">
                     <CheckCircle className="w-6 h-6" />
@@ -1502,7 +1483,6 @@ ${sourceText.slice(0, 14000)}`;
                           </div>
                         </div>
                         <div className="flex items-center gap-2.5">
-                          <span className="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded">Score: {res.score}%</span>
                           <button 
                             onClick={() => {
                               setActiveTab('builder');
@@ -1528,7 +1508,7 @@ ${sourceText.slice(0, 14000)}`;
                     <div className="space-y-3">
                       <div className="flex gap-2.5 items-start text-xs text-slate-400">
                         <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-1.5 shrink-0"></span>
-                        <p>Our audit reports that the <strong>"Staff AI Engineer"</strong> CV is missing <strong>"Docker"</strong>. Add this to improve ATS matching.</p>
+                        <p>Keyword checklist: add any missing skills from the checklist to your resume.</p>
                       </div>
                       <div className="flex gap-2.5 items-start text-xs text-slate-400">
                         <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-1.5 shrink-0"></span>
@@ -1541,7 +1521,7 @@ ${sourceText.slice(0, 14000)}`;
                       onClick={() => setActiveTab('matcher')} 
                       className="w-full text-center py-2 bg-slate-950 border border-slate-800 hover:bg-slate-900 transition rounded-xl text-xs font-bold text-indigo-400 block"
                     >
-                      Audit ATS Now
+                      Check keywords
                     </button>
                   </div>
                 </div>
@@ -1567,7 +1547,7 @@ ${sourceText.slice(0, 14000)}`;
                       </span>
                       <h2 className="mt-3 text-2xl font-black tracking-tight text-white">Resume Architect Studio</h2>
                       <p className="mt-1 max-w-2xl text-xs leading-relaxed text-slate-400">
-                        Import, refine, preview, print, and export an ATS-ready resume with OpenRouter-powered writing tools.
+                        Import, refine, preview, and print a resume. AI writing help needs an OpenRouter key; otherwise demo text is shown.
                       </p>
                     </div>
                     <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap">
@@ -1612,7 +1592,7 @@ ${sourceText.slice(0, 14000)}`;
                       className="inline-flex items-center gap-1.5 rounded-xl bg-indigo-600 px-4 py-2 text-xs font-black text-white shadow-lg shadow-indigo-600/20 transition hover:bg-indigo-500"
                     >
                       <Download className="w-3.5 h-3.5" />
-                      <span>Export PDF</span>
+                      <span>Save as PDF</span>
                     </button>
                   </div>
                 </div>
@@ -2057,7 +2037,7 @@ ${sourceText.slice(0, 14000)}`;
                           className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-indigo-600 px-3 py-2 text-xs font-black text-white shadow-lg shadow-indigo-600/20 transition hover:bg-indigo-500"
                         >
                           <Download className="w-3.5 h-3.5" />
-                          <span>Export PDF</span>
+                          <span>Save as PDF</span>
                         </button>
                       </div>
                     </div>
@@ -2260,9 +2240,9 @@ ${sourceText.slice(0, 14000)}`;
               <div className="bg-slate-900/40 border border-slate-900 p-6 rounded-3xl">
                 <h2 className="text-xl font-black text-white flex items-center gap-2 mb-1">
                   <CheckCircle className="w-5 h-5 text-indigo-400" />
-                  <span>Interactive Job Description Compatibility Matcher</span>
+                  <span>Keyword Checklist (Demo)</span>
                 </h2>
-                <p className="text-xs text-slate-400">Paste your target job description below. The open matcher checks keywords and structure against your active resume context.</p>
+                <p className="text-xs text-slate-400">Paste your target job description below for reference. The demo checklist checks 10 common tech keywords against your resume — it does not analyze the job description and is not an ATS score.</p>
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -2288,7 +2268,7 @@ ${sourceText.slice(0, 14000)}`;
                         ) : (
                           <Sparkles className="w-4 h-4" />
                         )}
-                        <span>Audit Resume Compatibility</span>
+                        <span>Run keyword check</span>
                       </button>
                     </div>
                   </div>
@@ -2300,21 +2280,11 @@ ${sourceText.slice(0, 14000)}`;
                   {atsAnalysisResult ? (
                     <div className="bg-slate-900/40 border border-slate-900 p-5 rounded-2xl space-y-6">
                       
-                      {/* Big Circle Score Display */}
+                      {/* Keyword checklist summary (no score) */}
                       <div className="flex items-center gap-6 bg-slate-950 p-4 rounded-xl border border-slate-900">
-                        <div className="relative shrink-0">
-                          <svg className="w-24 h-24 transform -rotate-90">
-                            <circle cx="48" cy="48" r="40" stroke="#1e293b" strokeWidth="8" fill="transparent" />
-                            <circle cx="48" cy="48" r="40" stroke="#4f46e5" strokeWidth="8" fill="transparent" 
-                              strokeDasharray={2 * Math.PI * 40}
-                              strokeDashoffset={2 * Math.PI * 40 * (1 - atsAnalysisResult.score / 100)}
-                            />
-                          </svg>
-                          <span className="absolute inset-0 m-auto flex items-center justify-center text-xl font-black text-white">{atsAnalysisResult.score}%</span>
-                        </div>
                         <div>
-                          <h4 className="text-sm font-bold text-white">ATS General Compatibility Rank</h4>
-                          <p className="text-xs text-slate-400 mt-1">Calculated via structural analysis of your CV files against keywords extracted in real-time.</p>
+                          <h4 className="text-sm font-bold text-white">Keyword checklist — {atsAnalysisResult.matched.length} of 10 found</h4>
+                          <p className="text-xs text-slate-400 mt-1">Demo checklist only. It checks 10 common tech keywords against your resume text; it is not an ATS score and the pasted job description is not analyzed yet.</p>
                         </div>
                       </div>
 
@@ -2362,7 +2332,7 @@ ${sourceText.slice(0, 14000)}`;
                   ) : (
                     <div className="bg-slate-900/30 border border-slate-900 p-8 rounded-2xl text-center text-slate-500">
                       <Sparkles className="w-10 h-10 text-slate-700 mx-auto mb-3" />
-                      <p className="text-sm">Initiate the audit pipeline to see interactive scoring, keywords matching, and suggestions.</p>
+                      <p className="text-sm">Run the check to see matched and missing keywords.</p>
                     </div>
                   )}
 

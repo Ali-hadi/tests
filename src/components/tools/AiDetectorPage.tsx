@@ -2,21 +2,16 @@ import {
   AlertTriangle,
   ArrowRight,
   BarChart3,
-  BookOpenCheck,
   BrainCircuit,
-  BriefcaseBusiness,
-  Building2,
   Check,
   ChevronDown,
   ClipboardList,
   FileSearch,
-  GraduationCap,
   Loader2,
   PenLine,
   SearchCheck,
   ShieldCheck,
   Sparkles,
-  Star,
   WandSparkles,
   Zap,
   type LucideIcon,
@@ -27,9 +22,7 @@ import { useMemo, useState } from "react";
 const MIN_WORDS = 30;
 
 type DetectorResult = {
-  human: number;
-  ai: number;
-  confidence: string;
+  markersFound: string[];
   summary: string;
   signals: string[];
 };
@@ -49,11 +42,9 @@ function getWordCount(value: string) {
   return value.trim().split(/\s+/).filter(Boolean).length;
 }
 
-function clamp(value: number, min: number, max: number) {
-  return Math.min(max, Math.max(min, value));
-}
-
-function buildMockDetection(input: string): DetectorResult {
+// Demo check only: highlights a few generic phrases found in the text.
+// It does NOT measure AI probability — no detector backend is connected yet.
+function buildDemoCheck(input: string): DetectorResult {
   const normalized = input.toLowerCase();
   const markers = [
     "in conclusion",
@@ -67,27 +58,14 @@ function buildMockDetection(input: string): DetectorResult {
     "seamless",
     "robust",
   ];
-  const markerHits = markers.reduce((total, marker) => {
-    return total + (normalized.includes(marker) ? 1 : 0);
-  }, 0);
-  const sentenceCount = Math.max(1, input.split(/[.!?]+/).filter(Boolean).length);
-  const avgSentenceLength = getWordCount(input) / sentenceCount;
-  const lengthSignal = avgSentenceLength > 24 ? 14 : avgSentenceLength > 18 ? 8 : 2;
-  const seed = input.length % 17;
-  const ai = clamp(18 + markerHits * 7 + lengthSignal + seed, 6, 94);
-  const human = 100 - ai;
+  const markersFound = markers.filter((marker) => normalized.includes(marker));
 
   return {
-    human,
-    ai,
-    confidence:
-      ai > 70 ? "High AI probability" : ai > 42 ? "Mixed writing pattern" : "Mostly human",
+    markersFound,
     summary:
-      ai > 70
-        ? "The writing shows repeated formal phrasing and predictable transitions."
-        : ai > 42
-          ? "The text has a blend of natural and AI-like structure."
-          : "The writing looks natural, specific, and varied in rhythm.",
+      markersFound.length > 0
+        ? `Found ${markersFound.length} generic phrase${markersFound.length > 1 ? "s" : ""} that often appear in AI-assisted drafts. This is a pattern highlight only — it is not an AI probability score.`
+        : "No generic phrases from the demo list were found. This is a pattern highlight only — it is not an AI probability score.",
     signals: [
       "Sentence rhythm and transition patterns",
       "Generic phrasing density",
@@ -98,10 +76,8 @@ function buildMockDetection(input: string): DetectorResult {
 }
 
 async function runAiDetectorApi(input: string): Promise<DetectorResult> {
-  // Replace this mock with your backend request when the real detector API is ready.
-  return new Promise((resolve) => {
-    window.setTimeout(() => resolve(buildMockDetection(input)), 2000);
-  });
+  // Replace this demo with your backend request when the real detector API is ready.
+  return Promise.resolve(buildDemoCheck(input));
 }
 
 const sampleText =
@@ -116,7 +92,7 @@ const faqs: Faq[] = [
   {
     question: "How accurate is the AI checker?",
     answer:
-      "The current result is mocked for UI development. Once connected to your backend model, accuracy will depend on the detector engine, training data, and the kind of writing being checked.",
+      "This demo does not measure accuracy — it only highlights a few generic phrases. No detector backend is connected yet, so there is no accuracy to report.",
   },
   {
     question: "How does AI detection work?",
@@ -143,7 +119,7 @@ const steps: Step[] = [
   },
   {
     title: "Get the Report",
-    description: "See human and AI percentages with simple signals for editorial review.",
+    description: "See which generic phrases were found, with simple signals for editorial review.",
     icon: BarChart3,
   },
 ];
@@ -151,7 +127,7 @@ const steps: Step[] = [
 const toolkitCards = [
   {
     title: "AI Detector",
-    description: "Estimate AI probability, review signals, and make faster editorial decisions.",
+    description: "Demo checker: highlights generic phrases for editorial review. No AI probability.",
     icon: SearchCheck,
   },
   {
@@ -166,13 +142,6 @@ const toolkitCards = [
   },
 ];
 
-const trustedLogos = [
-  { label: "Academy", icon: GraduationCap },
-  { label: "Editorial", icon: BookOpenCheck },
-  { label: "Enterprise", icon: Building2 },
-  { label: "Teams", icon: BriefcaseBusiness },
-];
-
 export function AiDetectorPage() {
   return (
     <div
@@ -181,7 +150,6 @@ export function AiDetectorPage() {
     >
       <HeroSection />
       <WhyChooseSection />
-      <StatsSection />
       <HowItWorksSection />
       <ToolkitSection />
       <CtaSection />
@@ -204,19 +172,17 @@ function HeroSection() {
 
         <div className="mx-auto mt-7 max-w-5xl text-center">
           <h1 className="text-balance text-4xl font-extrabold leading-[1.05] text-[#2B2B2B] md:text-5xl lg:text-6xl">
-            Free AI Detector: Check ChatGPT, Gemini & More with AI Checker
+            AI Detector Demo: Try Our Pattern Checker
           </h1>
           <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-[#666666] md:text-lg">
-            Paste any text and run our free AI checker to review ChatGPT, Gemini, Claude, and other
-            AI-generated writing patterns in seconds.
+            Paste any text to try the demo checker — it highlights a few generic phrases. It is
+            not a real AI detector yet.
           </p>
         </div>
 
         <div id="ai-detector-tool" className="mt-10">
           <DetectorTool />
         </div>
-
-        <RatingStrip />
       </div>
     </section>
   );
@@ -293,7 +259,7 @@ function DetectorTool() {
               ) : (
                 <SearchCheck className="h-5 w-5" />
               )}
-              {isLoading ? "Checking..." : "Check for AI"}
+              {isLoading ? "Checking..." : "Run demo check"}
             </button>
           </div>
         </div>
@@ -346,8 +312,8 @@ function DetectorTool() {
                   </div>
                   <h2 className="mt-5 text-2xl font-extrabold">Your report will appear here</h2>
                   <p className="mt-3 text-sm leading-6 text-[#666666]">
-                    The mock detector returns a human score, AI score, confidence label, and review
-                    signals.
+                    This demo highlights generic phrases only. It does not measure AI
+                    probability.
                   </p>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
@@ -356,8 +322,8 @@ function DetectorTool() {
                     <p className="mt-1 text-sm text-[#666666]">minimum words</p>
                   </div>
                   <div className="rounded-[8px] bg-[#E8FBD8] p-4">
-                    <p className="text-3xl font-extrabold text-[#315F18]">2s</p>
-                    <p className="mt-1 text-sm text-[#315F18]">mock scan</p>
+                    <p className="text-3xl font-extrabold text-[#315F18]">Demo</p>
+                    <p className="mt-1 text-sm text-[#315F18]">pattern check</p>
                   </div>
                 </div>
               </motion.div>
@@ -374,36 +340,28 @@ function ResultPanel({ result }: { result: DetectorResult }) {
     <div>
       <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="text-sm font-bold text-[#666666]">Detection result</p>
-          <h2 className="mt-2 text-2xl font-extrabold text-[#2B2B2B]">{result.confidence}</h2>
+          <p className="text-sm font-bold text-[#666666]">Demo result</p>
+          <h2 className="mt-2 text-2xl font-extrabold text-[#2B2B2B]">
+            {result.markersFound.length > 0 ? "Generic phrases found" : "No generic phrases found"}
+          </h2>
         </div>
         <span className="rounded-full bg-[#E8FBD8] px-3 py-1 text-xs font-bold text-[#315F18]">
-          Mock API
+          Demo
         </span>
       </div>
 
-      <div className="mt-6 grid place-items-center">
-        <div
-          className="grid h-44 w-44 place-items-center rounded-full"
-          style={{
-            background: `conic-gradient(#A7E872 ${result.human * 3.6}deg, #ECDCFF 0deg)`,
-          }}
-        >
-          <div className="grid h-32 w-32 place-items-center rounded-full bg-white text-center shadow-inner">
-            <div>
-              <p className="text-4xl font-extrabold text-[#2B2B2B]">{result.human}%</p>
-              <p className="text-sm font-bold text-[#315F18]">Human</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-6 grid grid-cols-2 gap-3">
-        <ScoreBox label="Human" value={result.human} tone="green" />
-        <ScoreBox label="AI" value={result.ai} tone="purple" />
-      </div>
-
       <p className="mt-5 text-sm leading-6 text-[#666666]">{result.summary}</p>
+
+      {result.markersFound.length > 0 ? (
+        <div className="mt-5 space-y-2">
+          {result.markersFound.map((marker) => (
+            <div key={marker} className="flex items-center gap-2 text-sm text-[#4D5C68]">
+              <Check className="h-4 w-4 text-[#6DAF39]" />
+              <span>&ldquo;{marker}&rdquo;</span>
+            </div>
+          ))}
+        </div>
+      ) : null}
 
       <div className="mt-5 space-y-2">
         {result.signals.map((signal) => (
@@ -413,41 +371,11 @@ function ResultPanel({ result }: { result: DetectorResult }) {
           </div>
         ))}
       </div>
-    </div>
-  );
-}
 
-function ScoreBox({
-  label,
-  value,
-  tone,
-}: {
-  label: string;
-  value: number;
-  tone: "green" | "purple";
-}) {
-  return (
-    <div
-      className={
-        tone === "green" ? "rounded-[8px] bg-[#E8FBD8] p-4" : "rounded-[8px] bg-[#ECDCFF] p-4"
-      }
-    >
-      <p className="text-sm font-bold text-[#666666]">{label}</p>
-      <p className="mt-1 text-3xl font-extrabold text-[#2B2B2B]">{value}%</p>
-    </div>
-  );
-}
-
-function RatingStrip() {
-  return (
-    <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
-      <span className="text-lg font-bold text-[#2B2B2B]">Excellent!</span>
-      <div className="flex items-center gap-1" aria-label="5 out of 5 stars">
-        {Array.from({ length: 5 }).map((_, index) => (
-          <Star key={index} className="h-7 w-7 fill-[#A7E872] text-[#6DAF39]" aria-hidden="true" />
-        ))}
-      </div>
-      <span className="text-base font-semibold text-[#2B2B2B] underline">5,467 reviews</span>
+      <p className="mt-5 rounded-[8px] bg-[#F5F7F9] p-4 text-sm leading-6 text-[#666666]">
+        This demo does not measure AI probability. Connect a real detector backend for scored
+        results.
+      </p>
     </div>
   );
 }
@@ -456,7 +384,7 @@ function WhyChooseSection() {
   const bullets = [
     "No limits, no locked features",
     "Clean, easy-to-read insights",
-    "Cross-checking logic for more consistent results",
+    "Simple phrase highlights for quick review",
   ];
 
   return (
@@ -471,8 +399,8 @@ function WhyChooseSection() {
           </h2>
           <p className="mt-6 text-base leading-8 text-[#666666]">
             AI Touch Solutions focuses on practical review signals instead of confusing verdicts.
-            You get fast scanning, clean insights, and a simple workflow that supports writers,
-            teachers, editors, and teams.
+            You get instant demo highlights, clean insights, and a simple workflow that supports
+            writers, teachers, editors, and teams.
           </p>
           <div className="mt-7 space-y-4">
             {bullets.map((item) => (
@@ -505,26 +433,20 @@ function DashboardIllustration() {
             <BrainCircuit className="h-8 w-8 text-[#6DAF39]" />
           </div>
           <div className="mt-6 space-y-3">
-            {[76, 54, 88, 42].map((value, index) => (
-              <div key={value}>
-                <div className="mb-2 flex justify-between text-xs font-bold text-[#666666]">
-                  <span>Signal {index + 1}</span>
-                  <span>{value}%</span>
+            {["Generic phrasing", "Sentence rhythm", "Specificity", "Transition patterns"].map(
+              (signal) => (
+                <div key={signal} className="flex items-center gap-2 text-xs font-bold text-[#666666]">
+                  <Check className="h-4 w-4 text-[#6DAF39]" />
+                  <span>{signal}</span>
                 </div>
-                <div className="h-3 rounded-full bg-[#EDF1F5]">
-                  <div
-                    className="h-full rounded-full bg-[#A7E872]"
-                    style={{ width: `${value}%` }}
-                  />
-                </div>
-              </div>
-            ))}
+              ),
+            )}
           </div>
         </div>
         <div className="grid gap-4">
           <div className="rounded-[8px] bg-[#ECDCFF] p-5">
-            <p className="text-sm font-bold text-[#666666]">Human score</p>
-            <p className="mt-2 text-4xl font-extrabold">82%</p>
+            <p className="text-sm font-bold text-[#666666]">Demo check</p>
+            <p className="mt-2 text-2xl font-extrabold">Pattern highlights only</p>
           </div>
           <div className="rounded-[8px] bg-[#0D1609] p-5 text-white">
             <ShieldCheck className="h-6 w-6 text-[#A7E872]" />
@@ -543,53 +465,6 @@ function DashboardIllustration() {
         ))}
       </div>
     </div>
-  );
-}
-
-function StatsSection() {
-  return (
-    <section className="bg-[#F5F7F9] px-4 py-16 sm:px-6 lg:px-10 lg:py-24">
-      <div className="mx-auto max-w-[1180px]">
-        <div className="grid gap-5 lg:grid-cols-12">
-          <div className="relative overflow-hidden rounded-[8px] bg-gradient-to-br from-[#F4E9FF] via-[#ECDCFF] to-[#BDA2F5] p-8 lg:col-span-4">
-            <div className="absolute bottom-0 right-0 h-40 w-40 translate-x-8 translate-y-8 rounded-full border border-white/60" />
-            <p className="text-6xl font-extrabold text-[#2B2B2B] md:text-7xl">99%</p>
-            <p className="mt-3 text-xl font-extrabold text-[#2B2B2B]">Success Rate</p>
-            <p className="mt-5 max-w-sm text-sm leading-6 text-[#4D4D4D]">
-              Built for fast text review workflows and clear confidence scoring.
-            </p>
-          </div>
-
-          <div className="rounded-[8px] border border-[#E0E6EC] bg-white p-8 lg:col-span-5">
-            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#666666]">
-              Trusted by professionals
-            </p>
-            <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-              {trustedLogos.map(({ label, icon: Icon }) => (
-                <div
-                  key={label}
-                  className="flex min-h-24 flex-col items-center justify-center rounded-[8px] border border-[#E4E8ED] bg-[#F8FAFB] text-center grayscale transition hover:grayscale-0"
-                >
-                  <Icon className="h-7 w-7 text-[#666666]" />
-                  <span className="mt-2 text-xs font-bold text-[#666666]">{label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="relative overflow-hidden rounded-[8px] bg-[#0D1609] p-8 text-white lg:col-span-3">
-            <div className="absolute inset-0 opacity-30 [background-image:linear-gradient(rgba(167,232,114,0.18)_1px,transparent_1px),linear-gradient(90deg,rgba(167,232,114,0.18)_1px,transparent_1px)] [background-size:28px_28px]" />
-            <div className="relative">
-              <p className="text-5xl font-extrabold leading-none text-[#A7E872]">1.7 million+</p>
-              <p className="mt-5 text-lg font-bold">Texts analyzed</p>
-              <p className="mt-4 text-sm leading-6 text-white/70">
-                Across drafts, reports, essays, blogs, and editorial reviews.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   );
 }
 
