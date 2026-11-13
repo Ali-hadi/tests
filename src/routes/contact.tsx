@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { createSeo, siteConfig } from "@/lib/seo";
@@ -26,6 +27,8 @@ export const Route = createFileRoute("/contact")({
 function ContactPage() {
   const { service, project } = Route.useSearch();
   const projectContext = project ? `I would like to discuss a product similar to ${project}.` : "";
+  const [submitted, setSubmitted] = useState<{ method: string; message: string } | null>(null);
+  const [copied, setCopied] = useState(false);
 
   return (
     <>
@@ -60,7 +63,16 @@ function ContactPage() {
                   .map(([key, value]) => `${key}: ${String(value).trim()}`)
                   .join("\n");
                 const message = `Project inquiry: ${String(data.get("service") || "New project")}\n\n${body}`;
-                if (data.get("preferredContact") === "Email") {
+                // This form does not send anything itself: there is no
+                // server endpoint for it. It only opens the visitor's own
+                // email app or WhatsApp with the message pre-filled, so the
+                // visitor must press Send there. "Either" uses email, the
+                // primary contact method, instead of silently picking one.
+                const method = data.get("preferredContact") === "WhatsApp" ? "WhatsApp" : "Email";
+                setSubmitted({ method, message });
+                setCopied(false);
+                void navigator.clipboard?.writeText(message).catch(() => undefined);
+                if (method === "Email") {
                   const subject = encodeURIComponent(
                     `Project inquiry: ${String(data.get("service") || "New project")}`,
                   );
@@ -141,6 +153,7 @@ function ContactPage() {
                 label="Preferred contact method"
                 name="preferredContact"
                 options={["Email", "WhatsApp", "Either"]}
+                defaultValue="Email"
               />
               <Field label="Phone or WhatsApp (optional)" name="phone" type="tel" />
               <div>
@@ -169,8 +182,39 @@ function ContactPage() {
               </button>
               <p className="text-xs leading-relaxed text-muted-foreground">
                 This opens your selected contact method with your project details filled in. Review
-                the message and press Send in WhatsApp or your email app to contact us.
+                the message and press Send in WhatsApp or your email app to contact us. Nothing is
+                sent until you press Send there — choosing “Either” opens email.
               </p>
+              {submitted ? (
+                <div
+                  role="status"
+                  className="rounded-md border border-teal/40 bg-ink p-5 text-sm leading-relaxed"
+                >
+                  <p className="font-bold text-foreground">
+                    Your message is ready in {submitted.method} — it has not been sent yet.
+                  </p>
+                  <p className="mt-2 text-muted-foreground">
+                    Press Send in your {submitted.method === "Email" ? "email app" : "WhatsApp"} to
+                    contact us. If the app did not open, copy the message below and send it to{" "}
+                    {submitted.method === "Email" ? siteConfig.email : "us on WhatsApp"} manually.
+                  </p>
+                  <pre className="mt-4 max-h-48 overflow-auto whitespace-pre-wrap break-words rounded bg-background p-4 text-xs text-muted-foreground">
+                    {submitted.message}
+                  </pre>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      void navigator.clipboard
+                        ?.writeText(submitted.message)
+                        .then(() => setCopied(true))
+                        .catch(() => setCopied(false));
+                    }}
+                    className="mt-4 inline-flex items-center gap-2 rounded-full border border-teal/40 px-5 py-2 text-xs font-bold uppercase tracking-[0.16em] text-teal hover:bg-teal/10"
+                  >
+                    {copied ? "Copied" : "Copy message"}
+                  </button>
+                </div>
+              ) : null}
             </form>
           </Reveal>
 

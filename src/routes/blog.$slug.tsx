@@ -245,10 +245,20 @@ function BlogDetailPage() {
         <div className="max-w-[1200px] mx-auto grid gap-12 px-6 lg:grid-cols-[minmax(0,1fr)_340px] lg:px-10">
           <article className="min-w-0">
             {!post.indexable ? (
-              <p className="mb-10 border-l-2 border-border bg-ink p-6 text-sm leading-relaxed text-muted-foreground">
-                Archived feed entry. The article source is linked below; this page is retained for
-                URL compatibility and is not an AiTouchSolutions editorial article.
-              </p>
+              <>
+                <p className="mb-6 border-l-2 border-border bg-ink p-6 text-sm leading-relaxed text-muted-foreground">
+                  Archived feed entry. The article source is linked below; this page is retained for
+                  URL compatibility and is not an AiTouchSolutions editorial article.
+                </p>
+                <a
+                  href={post.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mb-10 inline-flex items-center gap-2 rounded-full bg-teal px-6 py-3 text-xs font-bold uppercase tracking-[0.16em] text-ink hover:bg-teal-glow"
+                >
+                  Read the original at {post.source}
+                </a>
+              </>
             ) : null}
 
             {post.keyTakeaways.length > 0 ? (

@@ -66,7 +66,10 @@ function BlogIndexPage() {
       <section className="border-y border-border bg-ink">
         <div className="max-w-[1400px] mx-auto grid grid-cols-2 px-6 lg:grid-cols-4 lg:px-10">
           {[
-            { label: "Stories", value: visibleNewsPosts.length.toString() },
+            {
+              label: "News briefs",
+              value: (visibleNewsPosts.length - indexableNewsPosts.length).toString(),
+            },
             {
               label: "AI posts",
               value: visibleNewsPosts.filter((post) => post.category === "AI").length.toString(),

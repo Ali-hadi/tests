@@ -123,7 +123,7 @@ function PortfolioPage() {
               {[
                 {
                   icon: Sparkles,
-                  value: `${enterpriseProjects.length}+`,
+                  value: `${enterpriseProjects.length}`,
                   label: "Illustrative concepts",
                 },
                 { icon: ShieldCheck, value: "CRM / ERP", label: "Core business systems" },
