@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T03:38:36.572Z",
+  "generatedAt": "2026-11-13T18:56:45.181936Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,98 @@
     }
   ],
   "posts": [
+    {
+      "category": "AI",
+      "content": [
+        {
+          "body": [
+            "Nvidia has a new face at the top for the first time in a generation. Jensen Huang, who led the company for 33 years and turned a graphics-chip maker into the most important supplier of the AI era, has resigned as chief executive, president and board member. Chief financial officer Colette Kress has been named interim chief executive while the board searches for a permanent successor.",
+            "Reports say the resignation followed a board investigation and reports about Huang's personal conduct, including allegations involving a woman suspected of passing information to China. Nvidia has not presented the departure as a strategy change, and the company continues to operate under its existing leadership team, but the sudden exit of the executive most associated with the AI boom has put the company under unusual scrutiny."
+          ],
+          "heading": "What happened at Nvidia"
+        },
+        {
+          "body": [
+            "Nvidia's chips sit at the centre of almost every serious AI effort. Training a frontier model, running a large chatbot, or building an AI agent platform usually means buying, renting or queuing for Nvidia accelerators, and many teams plan their budgets and product launches around Nvidia's roadmap and supply. A leadership change at the top therefore reaches far beyond one company's boardroom: it raises questions about pricing, allocation, product timing and how aggressively the company will keep investing in new chip generations.",
+            "That does not mean supply stops or roadmaps are cancelled. Nvidia's engineering teams, manufacturing partners and customer commitments remain in place, and Kress has worked alongside Huang for years as chief financial officer, so she knows the company's customers, costs and supply chain. The practical question for buyers is not whether Nvidia disappears, but whether decisions slow down while the company is run by an interim chief."
+          ],
+          "heading": "Why the change matters for AI teams"
+        },
+        {
+          "body": [
+            "Investors have reacted sharply to the uncertainty. Reports put Nvidia's loss of market value at more than one trillion dollars since the first revelations in late October, a scale of decline that shows how much of the AI trade was tied to confidence in one leader. At the same time, the wider AI buildout has not paused: in the same week, SpaceX disclosed plans to invest more than 74 billion dollars in AI supercomputing campuses, and Google released Gemini 4 Hydrogen, a faster model built for coding and AI agents.",
+            "The contrast matters. The demand for computing power keeps growing even while the company that supplies most of it goes through a leadership crisis, which suggests the pressure on chip supply and data-centre capacity will continue whatever Nvidia's board decides next."
+          ],
+          "heading": "The market reaction so far"
+        },
+        {
+          "body": [
+            "For teams buying AI infrastructure or building products on top of it, the sensible response is planning, not panic. Confirm current allocations and delivery dates with suppliers rather than assuming they will slip, and keep a second option warm where a project depends on a single chip family or cloud provider. A leadership transition is also a good moment to review contracts: check what happens to pricing and support if a roadmap date moves, and make sure long-term commitments have room for change.",
+            "Watch two signals in the coming weeks. The first is the permanent chief executive appointment, which will show whether the board wants continuity or a new direction. The second is Nvidia's next guidance on sales and supply, which will show whether the leadership change has affected the business or only the share price. Until those arrive, projects should continue as planned, with a little more attention paid to supply risk than usual."
+          ],
+          "heading": "What buyers and builders should do now"
+        },
+        {
+          "body": [
+            "The episode is a reminder that the AI boom still depends on a small number of companies and people. One resignation has moved markets, raised geopolitical questions and forced customers to rethink their plans, all in a single week. For businesses, the lesson is to treat AI supply like any other critical dependency: understand where it comes from, keep alternatives ready, and avoid building a strategy that collapses if one supplier or one leader changes.",
+            "Nvidia will almost certainly remain central to AI computing, whoever leads it next. The company's technology, customer base and manufacturing scale do not change overnight. But the week has shown that leadership risk is now part of AI planning, and the teams that plan for it will be the ones least affected when the next surprise arrives."
+          ],
+          "heading": "The bigger lesson for the AI industry"
+        }
+      ],
+      "excerpt": "Nvidia chief executive Jensen Huang has resigned after 33 years, and CFO Colette Kress is interim CEO. We explain what the leadership change means for artificial intelligence teams, chip supply and buyers.",
+      "focusKeyword": "Nvidia CEO Jensen Huang resigns",
+      "keyTakeaways": [
+        "Jensen Huang resigned as Nvidia CEO after 33 years, and CFO Colette Kress is interim CEO while the board searches for a permanent successor.",
+        "Nvidia supplies the accelerators behind most AI training and inference, so a leadership change raises real questions about roadmaps, pricing and chip allocation.",
+        "AI demand is not slowing: Google launched Gemini 4 Hydrogen and SpaceX announced a 74 billion dollar AI campus plan in the same week, so buyers should plan rather than panic."
+      ],
+      "metaDescription": "Jensen Huang has resigned as Nvidia CEO after 33 years, with CFO Colette Kress as interim chief. What the change means for AI teams and chip buyers.",
+      "searchIntent": "Informational: what Nvidia's CEO change means for AI teams and buyers",
+      "secondaryKeywords": [
+        "Nvidia interim CEO Colette Kress",
+        "Nvidia leadership change",
+        "AI chip supply 2026",
+        "Jensen Huang resigns",
+        "AI infrastructure news"
+      ],
+      "seoTitle": "Nvidia CEO Jensen Huang Resigns: What Comes Next",
+      "supportingSources": [
+        {
+          "name": "The Neuron",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-13-2026/"
+        },
+        {
+          "name": "The New News in AI",
+          "url": "https://markmcneilly.substack.com/p/the-new-news-in-ai-111326-edition"
+        }
+      ],
+      "tags": [
+        "Nvidia",
+        "Jensen Huang",
+        "AI chips",
+        "AI leadership",
+        "AI infrastructure"
+      ],
+      "title": "Jensen Huang Steps Down as Nvidia CEO After 33 Years",
+      "id": "924c1090d24e",
+      "slug": "jensen-huang-steps-down-as-nvidia-ceo-after-33-years-924c1090d24e",
+      "source": "The Neuron",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-13-2026/",
+      "image": "/og-image.jpg",
+      "imageAlt": "Jensen Huang Steps Down as Nvidia CEO After 33 Years",
+      "publishedAt": "2026-11-13T18:56:45.181936Z",
+      "updatedAt": "2026-11-13T18:56:45.181936Z",
+      "author": "AiTouchSolutions Editorial",
+      "cta": {
+        "text": "Discuss how this topic may affect a AI agent development project.",
+        "label": "Explore AI agent development",
+        "href": "/services/ai-agent-development"
+      },
+      "readingTime": 4,
+      "contentType": "news",
+      "indexable": true
+    },
     {
       "id": "5f9b2dff770e",
       "title": "Everything new coming to Meta’s AI agent Muse",
