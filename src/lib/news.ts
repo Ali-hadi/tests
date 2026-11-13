@@ -341,3 +341,66 @@ export function getRelatedNewsPosts(post: NewsPost, limit = 3) {
     .map(({ item }) => item)
     .slice(0, limit);
 }
+
+// Contextual service links for indexable articles, matched on the article's
+// own wording. Slugs must match src/lib/service-seo.ts.
+const serviceLinkChoices: Array<{ terms: string[]; href: string; label: string }> = [
+  {
+    terms: ["rag", "chatbot", "assistant", "retrieval"],
+    href: "/services/ai-chatbot-development",
+    label: "AI chatbot development",
+  },
+  {
+    terms: ["agent", "agentic"],
+    href: "/services/ai-agent-development",
+    label: "AI agent development",
+  },
+  {
+    terms: ["automation", "workflow"],
+    href: "/services/ai-automation",
+    label: "AI automation",
+  },
+  {
+    terms: ["shopify", "ecommerce", "e-commerce"],
+    href: "/services/ecommerce-development",
+    label: "E-commerce development",
+  },
+  {
+    terms: ["mobile", "android", "ios"],
+    href: "/services/mobile-app-development",
+    label: "Mobile app development",
+  },
+  {
+    terms: ["saas", "startup", "mvp"],
+    href: "/services/custom-saas-development",
+    label: "SaaS development",
+  },
+  {
+    terms: ["crm", "erp", "point of sale"],
+    href: "/services/crm-erp-development",
+    label: "CRM & ERP development",
+  },
+  {
+    terms: ["cloud", "devops"],
+    href: "/services/cloud-devops-services",
+    label: "Cloud and DevOps services",
+  },
+  {
+    terms: ["security", "cybersecurity"],
+    href: "/services/cybersecurity-services",
+    label: "Cybersecurity services",
+  },
+];
+
+export function getRelatedServices(post: Pick<NewsPost, "title" | "excerpt" | "tags">) {
+  const text = `${post.title} ${post.excerpt} ${post.tags.join(" ")}`.toLowerCase();
+  const matched = serviceLinkChoices
+    .filter((choice) => choice.terms.some((term) => text.includes(term)))
+    .map(({ href, label }) => ({ href, label }));
+  const fallback = {
+    href: "/services/web-application-development",
+    label: "Web application development",
+  };
+  if (!matched.some((service) => service.href === fallback.href)) matched.push(fallback);
+  return matched.slice(0, 3);
+}

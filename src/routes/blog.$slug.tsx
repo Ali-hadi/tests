@@ -6,6 +6,7 @@ import {
   getNewsPost,
   getNewsReadTime,
   getRelatedNewsPosts,
+  getRelatedServices,
   type NewsArticleSection,
   type NewsArticleSubsection,
 } from "@/lib/news";
@@ -351,6 +352,27 @@ function BlogDetailPage() {
                     {post.cta.label}
                     <ArrowRight className="h-4 w-4" />
                   </a>
+                </div>
+              </Reveal>
+            ) : null}
+
+            {post.indexable ? (
+              <Reveal>
+                <div className="mt-14 border-t border-border pt-10">
+                  <p className="mb-5 font-mono text-[10px] uppercase tracking-[0.3em] text-teal">
+                    Related services
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {getRelatedServices(post).map((service) => (
+                      <Link
+                        key={service.href}
+                        to={service.href}
+                        className="rounded-md border border-border bg-ink px-4 py-2 text-sm text-muted-foreground transition-colors hover:border-teal hover:text-teal"
+                      >
+                        {service.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </Reveal>
             ) : null}
