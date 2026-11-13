@@ -21,6 +21,11 @@ export const GEMINI_TOOL_IDS = [
   "portfolio-builder",
   "chatbot-saas",
   "jarvis",
+  // Resume-builder page helpers (same endpoint, same limits): the cover
+  // letter tab, the career coach tab, and the AI resume import parser.
+  "cover-letter",
+  "career-coach",
+  "resume-import",
 ] as const;
 
 export type GeminiToolId = (typeof GEMINI_TOOL_IDS)[number];
@@ -127,6 +132,27 @@ export function buildToolPrompt(
         prompt: input,
         maxOutputTokens: 450,
         temperature: 0.25,
+      };
+    case "cover-letter":
+      return {
+        systemInstruction: `You are a master corporate headhunter who drafts high-converting formal cover letters. Use only the facts in the resume data provided — never invent jobs, employers, dates, salaries, or credentials. ${HONESTY}`,
+        prompt: `Draft a formal cover letter from the resume data and target job below. Keep it to 3-4 short paragraphs plus a closing line, professional and specific to the role.\n\n${input}`,
+        maxOutputTokens: 900,
+        temperature: 0.6,
+      };
+    case "career-coach":
+      return {
+        systemInstruction: `You are an executive career coach. Give practical, specific guidance based only on the profile provided. Never invent market salaries as facts — give ranges only as rough guidance and say they vary by market. ${HONESTY}`,
+        prompt: `Answer the career question below for the profile given. Give a short structured plan: skills to build, next steps, and what to watch out for.\n\n${input}`,
+        maxOutputTokens: 1200,
+        temperature: 0.6,
+      };
+    case "resume-import":
+      return {
+        systemInstruction: `You are a resume import parser. Return ONLY strict JSON matching the requested schema — no markdown, no notes, no explanations. Preserve only facts from the resume text. Keep arrays empty when information is missing. ${HONESTY}`,
+        prompt: `Convert the resume text below into valid JSON only, using exactly this schema:\n{\n  "personalInfo": { "fullName": "", "jobTitle": "", "email": "", "phone": "", "location": "", "website": "", "linkedin": "" },\n  "summary": "",\n  "experience": [ { "company": "", "position": "", "location": "", "duration": "", "achievements": [] } ],\n  "education": [ { "institution": "", "degree": "", "location": "", "duration": "" } ],\n  "skills": [],\n  "projects": [ { "title": "", "role": "", "link": "", "description": "" } ],\n  "certifications": [],\n  "languages": []\n}\n\nResume text:\n${input}`,
+        maxOutputTokens: 2000,
+        temperature: 0.2,
       };
   }
 }

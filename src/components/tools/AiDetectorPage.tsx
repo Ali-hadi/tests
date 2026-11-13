@@ -18,13 +18,19 @@ import {
 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useMemo, useState } from "react";
+import { callGeminiTool } from "@/lib/gemini-client";
 
 const MIN_WORDS = 30;
+const MAX_CHARS = 4000;
 
 type DetectorResult = {
   markersFound: string[];
   summary: string;
   signals: string[];
+  /** Full AI analysis text from Gemini (likelihood band + reasoning). */
+  aiReport: string;
+  /** Honest error from the AI service, if the call failed. */
+  error?: string;
 };
 
 type Faq = {
@@ -42,8 +48,9 @@ function getWordCount(value: string) {
   return value.trim().split(/\s+/).filter(Boolean).length;
 }
 
-// Demo check only: highlights a few generic phrases found in the text.
-// It does NOT measure AI probability — no detector backend is connected yet.
+// Local phrase highlight only: finds a few generic phrases in the text.
+// It does NOT measure AI probability. The actual analysis comes from
+// Gemini via /api/gemini (likelihood band + reasoning, no precise %).
 function buildDemoCheck(input: string): DetectorResult {
   const normalized = input.toLowerCase();
   const markers = [
@@ -72,12 +79,25 @@ function buildDemoCheck(input: string): DetectorResult {
       "Specificity and example usage",
       "Probability-style language markers",
     ],
+    aiReport: "",
   };
 }
 
 async function runAiDetectorApi(input: string): Promise<DetectorResult> {
-  // Replace this demo with your backend request when the real detector API is ready.
-  return Promise.resolve(buildDemoCheck(input));
+  const local = buildDemoCheck(input);
+  try {
+    const { result } = await callGeminiTool("ai-detector", input);
+    return { ...local, aiReport: result };
+  } catch (error) {
+    return {
+      ...local,
+      aiReport: "",
+      error:
+        error instanceof Error
+          ? error.message
+          : "The AI service is temporarily unavailable. Please try again shortly.",
+    };
+  }
 }
 
 const sampleText =
@@ -92,7 +112,7 @@ const faqs: Faq[] = [
   {
     question: "How accurate is the AI checker?",
     answer:
-      "This demo does not measure accuracy — it only highlights a few generic phrases. No detector backend is connected yet, so there is no accuracy to report.",
+      "The analysis is an AI estimate, not a definitive verdict — no detector is certain, and no precise percentage is shown. Use it as one review signal alongside human judgment.",
   },
   {
     question: "How does AI detection work?",
@@ -127,7 +147,7 @@ const steps: Step[] = [
 const toolkitCards = [
   {
     title: "AI Detector",
-    description: "Demo checker: highlights generic phrases for editorial review. No AI probability.",
+    description: "AI analysis: likelihood estimate with reasoning. No precise percentage.",
     icon: SearchCheck,
   },
   {
@@ -172,11 +192,12 @@ function HeroSection() {
 
         <div className="mx-auto mt-7 max-w-5xl text-center">
           <h1 className="text-balance text-4xl font-extrabold leading-[1.05] text-[#2B2B2B] md:text-5xl lg:text-6xl">
-            AI Detector Demo: Try Our Pattern Checker
+            AI Detector: Try Our Pattern Checker
           </h1>
           <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-[#666666] md:text-lg">
-            Paste any text to try the demo checker — it highlights a few generic phrases. It is
-            not a real AI detector yet.
+            Paste any text — Gemini analyses writing patterns and gives a likelihood estimate
+            with reasoning. It is an estimate, not a definitive verdict, and no precise
+            percentage is shown.
           </p>
         </div>
 
@@ -199,6 +220,16 @@ function DetectorTool() {
 
   const checkForAi = async () => {
     if (!canRun) return;
+    if (text.length > MAX_CHARS) {
+      setResultScore({
+        markersFound: [],
+        summary: "",
+        signals: [],
+        aiReport: "",
+        error: `Please paste up to ${MAX_CHARS.toLocaleString()} characters.`,
+      });
+      return;
+    }
     setIsLoading(true);
     setResultScore(null);
     try {
@@ -259,7 +290,7 @@ function DetectorTool() {
               ) : (
                 <SearchCheck className="h-5 w-5" />
               )}
-              {isLoading ? "Checking..." : "Run demo check"}
+              {isLoading ? "Checking..." : "Run AI check"}
             </button>
           </div>
         </div>
@@ -312,8 +343,8 @@ function DetectorTool() {
                   </div>
                   <h2 className="mt-5 text-2xl font-extrabold">Your report will appear here</h2>
                   <p className="mt-3 text-sm leading-6 text-[#666666]">
-                    This demo highlights generic phrases only. It does not measure AI
-                    probability.
+                    Gemini gives a likelihood band (Low / Moderate / High) with reasoning. It is
+                    an estimate, not a verdict.
                   </p>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
@@ -322,8 +353,8 @@ function DetectorTool() {
                     <p className="mt-1 text-sm text-[#666666]">minimum words</p>
                   </div>
                   <div className="rounded-[8px] bg-[#E8FBD8] p-4">
-                    <p className="text-3xl font-extrabold text-[#315F18]">Demo</p>
-                    <p className="mt-1 text-sm text-[#315F18]">pattern check</p>
+                    <p className="text-3xl font-extrabold text-[#315F18]">AI</p>
+                    <p className="mt-1 text-sm text-[#315F18]">estimate</p>
                   </div>
                 </div>
               </motion.div>
@@ -340,41 +371,57 @@ function ResultPanel({ result }: { result: DetectorResult }) {
     <div>
       <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="text-sm font-bold text-[#666666]">Demo result</p>
+          <p className="text-sm font-bold text-[#666666]">AI analysis</p>
           <h2 className="mt-2 text-2xl font-extrabold text-[#2B2B2B]">
-            {result.markersFound.length > 0 ? "Generic phrases found" : "No generic phrases found"}
+            {result.error
+              ? "AI unavailable"
+              : result.markersFound.length > 0
+                ? "Generic phrases found"
+                : "No generic phrases found"}
           </h2>
         </div>
         <span className="rounded-full bg-[#E8FBD8] px-3 py-1 text-xs font-bold text-[#315F18]">
-          Demo
+          Gemini
         </span>
       </div>
 
-      <p className="mt-5 text-sm leading-6 text-[#666666]">{result.summary}</p>
+      {result.error ? (
+        <p className="mt-5 rounded-[8px] border border-[#F0CFD1] bg-[#FFF7F7] p-4 text-sm leading-6 text-[#B8474C]">
+          {result.error}
+        </p>
+      ) : (
+        <>
+          <p className="mt-5 whitespace-pre-wrap text-sm leading-6 text-[#2B2B2B]">
+            {result.aiReport}
+          </p>
 
-      {result.markersFound.length > 0 ? (
-        <div className="mt-5 space-y-2">
-          {result.markersFound.map((marker) => (
-            <div key={marker} className="flex items-center gap-2 text-sm text-[#4D5C68]">
-              <Check className="h-4 w-4 text-[#6DAF39]" />
-              <span>&ldquo;{marker}&rdquo;</span>
+          <p className="mt-5 text-sm leading-6 text-[#666666]">{result.summary}</p>
+
+          {result.markersFound.length > 0 ? (
+            <div className="mt-5 space-y-2">
+              {result.markersFound.map((marker) => (
+                <div key={marker} className="flex items-center gap-2 text-sm text-[#4D5C68]">
+                  <Check className="h-4 w-4 text-[#6DAF39]" />
+                  <span>&ldquo;{marker}&rdquo;</span>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      ) : null}
+          ) : null}
 
-      <div className="mt-5 space-y-2">
-        {result.signals.map((signal) => (
-          <div key={signal} className="flex items-center gap-2 text-sm text-[#4D5C68]">
-            <Check className="h-4 w-4 text-[#6DAF39]" />
-            <span>{signal}</span>
+          <div className="mt-5 space-y-2">
+            {result.signals.map((signal) => (
+              <div key={signal} className="flex items-center gap-2 text-sm text-[#4D5C68]">
+                <Check className="h-4 w-4 text-[#6DAF39]" />
+                <span>{signal}</span>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </>
+      )}
 
       <p className="mt-5 rounded-[8px] bg-[#F5F7F9] p-4 text-sm leading-6 text-[#666666]">
-        This demo does not measure AI probability. Connect a real detector backend for scored
-        results.
+        This is an AI estimate, not a definitive verdict — no detector is certain, and no
+        precise percentage is shown.
       </p>
     </div>
   );
@@ -399,7 +446,7 @@ function WhyChooseSection() {
           </h2>
           <p className="mt-6 text-base leading-8 text-[#666666]">
             AI Touch Solutions focuses on practical review signals instead of confusing verdicts.
-            You get instant demo highlights, clean insights, and a simple workflow that supports
+            You get instant AI analysis, clean insights, and a simple workflow that supports
             writers, teachers, editors, and teams.
           </p>
           <div className="mt-7 space-y-4">

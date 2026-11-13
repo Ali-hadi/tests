@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { siteConfig } from "@/lib/seo";
+import { callJarvis } from "@/lib/gemini-client";
 
 type Msg = { role: "user" | "assistant"; text: string };
 
@@ -26,18 +27,10 @@ export function Jarvis() {
     setInput("");
     setLoading(true);
     try {
-      const response = await fetch("/api/jarvis", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          messages: nextMessages.slice(-10).map(({ role, text: content }) => ({ role, content })),
-        }),
-      });
-      const result = (await response.json()) as { answer?: string; error?: string };
-      if (!response.ok || !result.answer) {
-        throw new Error(result.error || "The assistant is unavailable.");
-      }
-      setMessages((current) => [...current, { role: "assistant", text: result.answer! }]);
+      const { result } = await callJarvis(
+        nextMessages.slice(-10).map(({ role, text: content }) => ({ role, content })),
+      );
+      setMessages((current) => [...current, { role: "assistant", text: result }]);
     } catch {
       setMessages((current) => [
         ...current,

@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React, { useState, useEffect, useRef } from 'react';
-import { createServerFn, useServerFn } from '@tanstack/react-start';
+import { callGeminiTool } from '@/lib/gemini-client';
 import { 
   Sparkles, FileText, LayoutDashboard, Briefcase, CheckCircle, 
   Trash2, Plus, Download, Edit2, RotateCcw, AlertCircle, 
@@ -119,66 +119,6 @@ const FONT_PRESETS = [
 
 // No pre-filled applications: the tracker starts empty and the user adds their own.
 const INITIAL_JOBS_CRM = [];
-
-const generateWithOpenRouterServer = createServerFn({ method: 'POST' })
-  .inputValidator((input) => input)
-  .handler(async ({ data }) => {
-    const apiKey = data?.apiKeyOverride?.trim() || process.env.OPENROUTER_API_KEY;
-
-    if (!apiKey) {
-      throw new Error('Missing OPENROUTER_API_KEY');
-    }
-
-    const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-        'HTTP-Referer': 'https://aitouchsolutions.com',
-        'X-OpenRouter-Title': 'AI Touch Solutions Resume Builder',
-      },
-      body: JSON.stringify({
-        model: process.env.OPENROUTER_MODEL || 'openai/gpt-5.2',
-        temperature: 0.55,
-        max_tokens: 900,
-        messages: [
-          {
-            role: 'system',
-            content:
-              data?.systemInstruction ||
-              'You are a world-class executive CV & resume ATS optimization agent.',
-          },
-          {
-            role: 'user',
-            content: data?.prompt || '',
-          },
-        ],
-      }),
-    });
-
-    if (!response.ok) {
-      const details = await response.text();
-      throw new Error(`OpenRouter returned ${response.status}: ${details.slice(0, 220)}`);
-    }
-
-    const result = await response.json();
-    const content = result.choices?.[0]?.message?.content;
-
-    if (typeof content === 'string') {
-      return content;
-    }
-
-    if (Array.isArray(content)) {
-      const text = content
-        .map((part) => (typeof part === 'string' ? part : part?.text || ''))
-        .join('')
-        .trim();
-
-      if (text) return text;
-    }
-
-    throw new Error('OpenRouter returned an empty completion.');
-  });
 
 const cleanImportedText = (value = '') => (value == null ? '' : String(value))
   .replace(/\u0000/g, '')
@@ -388,10 +328,6 @@ export function AiResumeBuilderPage() {
   // Navigation View
   const [activeTab, setActiveTab] = useState('dashboard');
   
-  // Optional user override. The production key stays server-side in OPENROUTER_API_KEY.
-  const [openRouterApiKey, setOpenRouterApiKey] = useState('');
-  const [isApiKeyModalOpen, setIsApiKeyModalOpen] = useState(false);
-  const generateOpenRouterCompletion = useServerFn(generateWithOpenRouterServer);
   const [isImportResumeModalOpen, setIsImportResumeModalOpen] = useState(false);
   const [importResumeText, setImportResumeText] = useState('');
   const [importResumeFileName, setImportResumeFileName] = useState('');
@@ -474,68 +410,25 @@ Requirements:
     runATSAnalysis(true);
   }, [resumeData]);
 
-  const generateWithOpenRouter = async (prompt, systemInstruction = "You are a world-class executive CV & resume ATS optimization agent.") => {
-    const activeKey = openRouterApiKey.trim();
+  // All AI writing help runs through POST /api/gemini (Google Gemini).
+  // There is no canned fallback: on error the honest message is shown
+  // and the caller must not apply an empty result.
+  const generateWithGemini = async (prompt, toolId = "resume-builder") => {
     setGlobalAiLoading(true);
-    
     try {
-      const textResponse = await generateOpenRouterCompletion({
-        data: {
-          prompt,
-          systemInstruction,
-          apiKeyOverride: activeKey || undefined,
-        },
-      });
-      
-      if (!textResponse) {
-        throw new Error("Invalid schema structure returned from artificial intelligence node.");
+      const { result } = await callGeminiTool(toolId, prompt);
+      if (!result || !result.trim()) {
+        throw new Error("The AI service returned an empty result.");
       }
-
-      setGlobalAiLoading(false);
-      return textResponse;
+      return result;
     } catch (err) {
+      const message =
+        err instanceof Error ? err.message : "The AI service is temporarily unavailable.";
+      showToast(message, "error");
+      throw err;
+    } finally {
       setGlobalAiLoading(false);
-      console.warn("OpenRouter API request failed or no key entered. Initializing local predictive generator.", err);
-      // Demo fallback: canned text only — the AI service is not connected.
-      showToast("AI service not connected — demo text shown.", "info");
-      return runMockLocalAI(prompt);
     }
-  };
-
-  const runMockLocalAI = (prompt) => {
-    return new Promise((resolve) => {
-        const lowerPrompt = prompt.toLowerCase();
-        
-        if (lowerPrompt.includes('summary')) {
-          resolve(`Distinguished Senior Staff AI Engineer & Enterprise System Architect with a verified history of building hyperscale Deep Learning applications. Champion of cutting-edge neural system design, managing high-concurrency cloud graphics processors (GPUs), and reducing prompt latency by up to 55%. Pioneer of multi-cloud Vector Database clustering and modern enterprise workflows (CI/CD, Kubernetes).`);
-        } 
-        else if (lowerPrompt.includes('achievement') || lowerPrompt.includes('experience')) {
-          resolve(`Spearheaded development of core AI algorithms driving a 140% rise in multi-cloud RAG retrieval speed, delivering actionable data models to enterprise leaders and improving application runtime security by 40% globally.`);
-        } 
-        else if (lowerPrompt.includes('cover letter')) {
-          resolve(`Dear Hiring Committee,
-
-I am writing to express my profound interest in the Senior Leadership role within your organization. With a rich history of building and executing production-ready Large Language Model frameworks, cloud orchestration layers, and modern developer-first UI web clients, my background directly mirrors your needs.
-
-At InnovateAI Labs, I designed and operationalized distributed RAG architectures supporting over 2.5 million daily users. This initiative not only improved semantic query accuracy to 98% but reduced inference overhead by over 45%. 
-
-I am eager to contribute my high-performance architecture skills to your team's ambitious engineering initiatives. Thank you for your time and careful consideration.
-
-Sincerely,
-${resumeData.personalInfo.fullName}`);
-        } 
-        else if (lowerPrompt.includes('coach') || lowerPrompt.includes('roadmap')) {
-          resolve(`Here is your custom Executive Career Roadmap to transition from Staff Engineer to VP of AI:
-
-1. COMPLETED SKILL ACQUISITION (Technical Mastery): You are exceptional with Deep Learning, PyTorch, Kubernetes, and NextJS.
-2. NEXT STEP (Business Unit Alignment): Shift focus from pure code architecture to direct budget and team management. Learn to calculate the ROI of AI model deployments.
-3. ORGANIZATIONAL DYNAMICS: Champion cross-team initiatives. Build AI literacy programs for sales and operations leads.
-4. ESTIMATED SALARY POTENTIAL: $380,000 - $480,000 Base Salary + Equity.`);
-        }
-        else {
-          resolve(`Optimized Open Result: Designed, implemented, and scaled a state-of-the-art software orchestration engine, resulting in a 35% decrease in developer configuration overhead and enabling frictionless API delivery.`);
-        }
-    });
   };
 
   // Demo keyword checklist: checks whether 10 common tech keywords appear in the
@@ -721,9 +614,15 @@ ${resumeData.personalInfo.fullName}`);
   // Live AI Optimization Prompts
   const handleAiImproveSummary = async () => {
     const prompt = `Write an optimized, professional, ATS-friendly professional summary for an experienced ${resumeData.personalInfo.jobTitle}. Focus on clear vocabulary and quantitative achievements. Here is the draft: "${resumeData.summary}". Format your output as a single paragraph of exactly 70 to 95 words.`;
-    const response = await generateWithOpenRouter(prompt);
-    handleUpdateSummary(response);
-    showToast("AI polished summary successfully!", "success");
+    try {
+      const response = await generateWithGemini(prompt, "resume-builder");
+      // The endpoint returns a full resume draft; the summary is its first paragraph.
+      const firstParagraph = response.split(/\n\s*\n/)[0]?.trim() || response.trim();
+      handleUpdateSummary(firstParagraph);
+      showToast("AI polished summary successfully!", "success");
+    } catch {
+      // Error toast already shown by generateWithGemini; keep the old summary.
+    }
   };
 
   const handleAiImproveAchievements = async (expIndex) => {
@@ -731,40 +630,59 @@ ${resumeData.personalInfo.fullName}`);
     const prompt = `Convert these work experience bullets into high-performance, action-oriented resume accomplishments containing key business metrics:
     "${currentAch}"
     Format the response as exactly 3 separate bullet lines without any bullet symbols or serial numbers.`;
-    
-    const response = await generateWithOpenRouter(prompt);
-    const bullets = response.split("\n").map(b => b.trim()).filter(b => b.length > 0);
-    
-    if (bullets.length > 0) {
-      const updated = [...resumeData.experience];
-      updated[expIndex].achievements = bullets.slice(0, 4);
-      setResumeData(prev => ({ ...prev, experience: updated }));
-      showToast("Work accomplishments optimized!", "success");
+
+    try {
+      const response = await generateWithGemini(prompt, "resume-builder");
+      const bullets = response
+        .split("\n")
+        .map((b) => b.replace(/^\s*(?:[-•*]|\d+[.)])\s*/, "").trim())
+        .filter((b) => b.length > 0 && !/^(summary|skills|professional summary)/i.test(b));
+
+      if (bullets.length > 0) {
+        const updated = [...resumeData.experience];
+        updated[expIndex].achievements = bullets.slice(0, 4);
+        setResumeData(prev => ({ ...prev, experience: updated }));
+        showToast("Work accomplishments optimized!", "success");
+      } else {
+        showToast("AI response had no usable bullet lines.", "error");
+      }
+    } catch {
+      // Error toast already shown by generateWithGemini.
     }
   };
 
   const handleGenerateCoverLetter = async () => {
     setIsGeneratingCoverLetter(true);
-    const prompt = `Generate a modern cover letter matching style preference '${coverLetterStyle}' using this exact resume data:
+    const prompt = `Style preference: '${coverLetterStyle}'
     Name: ${resumeData.personalInfo.fullName}
     Job Title: ${resumeData.personalInfo.jobTitle}
     Experience Details: ${JSON.stringify(resumeData.experience)}
     Target Job Spec: ${jobDescriptionInput}`;
 
-    const response = await generateWithOpenRouter(prompt, "You are a master corporate headhunter who drafts high-converting formal cover letters.");
-    setCoverLetterResult(response);
-    setIsGeneratingCoverLetter(false);
-    showToast("Cover letter created dynamically!", "success");
+    try {
+      const response = await generateWithGemini(prompt, "cover-letter");
+      setCoverLetterResult(response);
+      showToast("Cover letter created dynamically!", "success");
+    } catch {
+      // Error toast already shown by generateWithGemini; keep the old result.
+    } finally {
+      setIsGeneratingCoverLetter(false);
+    }
   };
 
   const handleAskCareerCoach = async () => {
     setIsCoachLoading(true);
     const prompt = `User profile details: Current Role: ${resumeData.personalInfo.jobTitle}, Skills: ${resumeData.skills.join(', ')}. 
     Question: ${careerCoachInput}`;
-    
-    const response = await generateWithOpenRouter(prompt, "You are an elite Silicon Valley executive talent coach. Analyze profile skill gaps, predict accurate market salaries, and plan technical roadmaps.");
-    setCoachResponse(response);
-    setIsCoachLoading(false);
+
+    try {
+      const response = await generateWithGemini(prompt, "career-coach");
+      setCoachResponse(response);
+    } catch {
+      // Error toast already shown by generateWithGemini; keep the old response.
+    } finally {
+      setIsCoachLoading(false);
+    }
   };
 
   const applyImportedResume = (importedResume, importMode = 'AI import') => {
@@ -826,62 +744,9 @@ ${resumeData.personalInfo.fullName}`);
         return;
       }
 
-      const prompt = `Convert the resume text below into valid JSON only. Do not include markdown, notes, or explanations.
-
-Required schema:
-{
-  "personalInfo": {
-    "fullName": "",
-    "jobTitle": "",
-    "email": "",
-    "phone": "",
-    "location": "",
-    "website": "",
-    "linkedin": ""
-  },
-  "summary": "",
-  "experience": [
-    {
-      "company": "",
-      "position": "",
-      "location": "",
-      "duration": "",
-      "achievements": []
-    }
-  ],
-  "education": [
-    {
-      "institution": "",
-      "degree": "",
-      "location": "",
-      "duration": ""
-    }
-  ],
-  "skills": [],
-  "projects": [
-    {
-      "title": "",
-      "role": "",
-      "link": "",
-      "description": ""
-    }
-  ],
-  "certifications": [],
-  "languages": []
-}
-
-Rules:
-- Preserve only facts from the resume.
-- Convert responsibilities into concise achievement strings.
-- Keep arrays empty when information is missing.
-
-Resume text:
-${sourceText.slice(0, 14000)}`;
-
-      const aiResponse = await generateWithOpenRouter(
-        prompt,
-        "You are a resume import parser. Return only strict JSON matching the requested schema.",
-      );
+      // The /api/gemini resume-import tool already asks for strict JSON
+      // matching the schema; pass only the resume text as input.
+      const aiResponse = await generateWithGemini(sourceText.slice(0, 14000), "resume-import");
       const parsed = extractResumeJson(aiResponse);
 
       if (!parsed) {
@@ -1114,62 +979,7 @@ ${sourceText.slice(0, 14000)}`;
               <Sparkles className="w-6 h-6 text-indigo-400 absolute inset-0 m-auto animate-pulse" />
             </div>
             <h3 className="text-xl font-bold text-white mb-2">Open Resume Engine</h3>
-            <p className="text-slate-400 text-sm">The community parser is refining, aligning, and boosting your resume variables for a cleaner resume...</p>
-          </div>
-        </div>
-      )}
-
-      {/* API Key Settings Drawer/Modal */}
-      {isApiKeyModalOpen && (
-        <div className="fixed inset-0 z-40 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl w-full max-w-md p-6 relative">
-            <button 
-              onClick={() => setIsApiKeyModalOpen(false)} 
-              className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors"
-            >
-              <X className="w-5 h-5" />
-            </button>
-            <div className="flex items-center gap-3 mb-4">
-              <Shield className="w-6 h-6 text-indigo-400" />
-              <h3 className="text-lg font-bold text-white">OpenRouter API Configuration</h3>
-            </div>
-            <p className="text-xs text-slate-400 mb-4 leading-relaxed">
-              The production key is loaded server-side from OPENROUTER_API_KEY. You can optionally supply a temporary OpenRouter override below for local testing.
-            </p>
-            <div className="space-y-3">
-              <label className="text-xs font-semibold text-slate-300 block">OpenRouter API Key</label>
-              <input 
-                type="password" 
-                placeholder="sk-or-v1-..."
-                value={openRouterApiKey}
-                onChange={(e) => setOpenRouterApiKey(e.target.value)}
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg p-2.5 text-sm text-indigo-200 placeholder-slate-600 focus:outline-none focus:border-indigo-500"
-              />
-              <div className="flex items-center justify-between text-[11px] text-slate-500 pt-1">
-                <span>Local fallback active if OpenRouter is unavailable</span>
-                <span className="text-indigo-400 hover:underline cursor-pointer" onClick={() => window.open('https://openrouter.ai/keys', '_blank')}>Manage API Keys</span>
-              </div>
-            </div>
-            <div className="mt-6 flex justify-end gap-3">
-              <button 
-                onClick={() => {
-                  setOpenRouterApiKey('');
-                  showToast("OpenRouter override cleared. Server key/local fallback will be used.", "info");
-                }} 
-                className="px-4 py-2 rounded-lg text-xs font-semibold bg-slate-950 border border-slate-800 text-slate-400 hover:text-white transition"
-              >
-                Clear Key
-              </button>
-              <button 
-                onClick={() => {
-                  setIsApiKeyModalOpen(false); 
-                  showToast("OpenRouter configuration locked.", "success");
-                }} 
-                className="px-4 py-2 rounded-lg text-xs font-semibold bg-indigo-600 text-white hover:bg-indigo-500 transition"
-              >
-                Save & Lock
-              </button>
-            </div>
+            <p className="text-slate-400 text-sm">Gemini is working on your resume...</p>
           </div>
         </div>
       )}
@@ -1282,18 +1092,11 @@ ${sourceText.slice(0, 14000)}`;
             </div>
             <div className="flex items-center gap-1.5">
               <span className="text-xs text-slate-400">Provider:</span>
-              <span className="text-xs font-bold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-full">{openRouterApiKey ? "OpenRouter GPT-5.2" : "Demo mode — no AI key"}</span>
+              <span className="text-xs font-bold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-full">Gemini</span>
             </div>
           </div>
 
           <div className="flex items-center gap-3">
-            <button 
-              onClick={() => setIsApiKeyModalOpen(true)}
-              className="px-3.5 py-1.5 rounded-lg border border-slate-800 text-slate-300 hover:text-white text-xs font-medium flex items-center gap-2 transition bg-slate-900/50 hover:bg-slate-900"
-            >
-              <Settings className="w-4 h-4" />
-              <span>{openRouterApiKey ? 'Override Set' : 'OpenRouter Key'}</span>
-            </button>
             <span className="hidden sm:inline-flex items-center gap-1.5 rounded-lg border border-emerald-500/20 bg-emerald-500/10 px-3.5 py-1.5 text-xs font-black text-emerald-300">
               <CheckCircle2 className="w-3.5 h-3.5" />
               Open Source
@@ -1547,7 +1350,7 @@ ${sourceText.slice(0, 14000)}`;
                       </span>
                       <h2 className="mt-3 text-2xl font-black tracking-tight text-white">Resume Architect Studio</h2>
                       <p className="mt-1 max-w-2xl text-xs leading-relaxed text-slate-400">
-                        Import, refine, preview, and print a resume. AI writing help needs an OpenRouter key; otherwise demo text is shown.
+                        Import, refine, preview, and print a resume. AI writing help runs on Google Gemini.
                       </p>
                     </div>
                     <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap">
@@ -2681,8 +2484,8 @@ ${sourceText.slice(0, 14000)}`;
                 </div>
                 <div className="p-4 bg-slate-900/60 border border-slate-900 rounded-2xl">
                   <span className="text-[10px] text-slate-500 font-bold uppercase">Provider Mode</span>
-                  <h3 className="text-2xl font-black text-white mt-1">BYOK</h3>
-                  <p className="text-[10px] text-slate-400 mt-1">Use your own OpenRouter key, or keep local fallback generation active.</p>
+                  <h3 className="text-2xl font-black text-white mt-1">Gemini</h3>
+                  <p className="text-[10px] text-slate-400 mt-1">AI writing help runs on Google Gemini through the site backend.</p>
                 </div>
                 <div className="p-4 bg-slate-900/60 border border-slate-900 rounded-2xl">
                   <span className="text-[10px] text-slate-500 font-bold uppercase">Template Access</span>

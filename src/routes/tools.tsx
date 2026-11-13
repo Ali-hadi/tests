@@ -84,7 +84,7 @@ export const tools: Tool[] = [
     shortName: "Humanizer",
     category: "Writing",
     summary:
-      "Demo: try simple word-swap rewriting on pasted text. No live AI model is connected yet.",
+      "Powered by Gemini: rewrite pasted text in a more natural, human-sounding way, in your chosen tone.",
     icon: Sparkles,
     accent: "teal",
     metricLabel: "Status",
@@ -99,7 +99,7 @@ export const tools: Tool[] = [
       "History and exports",
     ],
     workflows: ["Paste AI text", "Choose tone", "Humanize", "Compare", "Copy or download"],
-    outputs: ["Demo rewrite", "SEO notes", "History item"],
+    outputs: ["AI rewrite", "SEO notes", "History item"],
     backend: ["LLM rewrite API", "MongoDB history", "JWT + rate limits", "Prompt safety layer"],
   },
   {
@@ -108,7 +108,7 @@ export const tools: Tool[] = [
     shortName: "Detector",
     category: "Analysis",
     summary:
-      "Demo checker: highlights a few generic phrases in pasted text. It does not measure AI probability — no detector backend is connected yet.",
+      "Powered by Gemini: an AI estimate of whether text looks AI-generated, with reasoning. It is an estimate, not a verdict — no precise percentage is shown.",
     icon: SearchCheck,
     accent: "orange",
     metricLabel: "Status",
@@ -121,7 +121,7 @@ export const tools: Tool[] = [
       "Suspicious text highlights",
     ],
     workflows: ["Paste text", "Run scan", "Review highlighted terms", "Export report"],
-    outputs: ["Demo report", "Sentence flags", "Report summary"],
+    outputs: ["AI report", "Sentence flags", "Report summary"],
     backend: ["Detection API", "Report generator", "Admin analytics", "Secure scan storage"],
   },
   {
@@ -130,7 +130,7 @@ export const tools: Tool[] = [
     shortName: "Resume",
     category: "Career",
     summary:
-      "Draft a resume with templates, cover letters, and a print / save-as-PDF export. No ATS scoring — the keyword checklist is a demo.",
+      "Draft a resume with templates, cover letters, and a print / save-as-PDF export. AI writing help runs on Gemini. No ATS scoring — the keyword checklist is a demo.",
     icon: BriefcaseBusiness,
     accent: "blue",
     metricLabel: "Status",
@@ -156,7 +156,7 @@ export const tools: Tool[] = [
     shortName: "Thumbnail",
     category: "Creator",
     summary:
-      "Demo: get a thumbnail concept and text prompt for your video idea. No image is generated — no image model is connected yet.",
+      "Powered by Gemini: get a thumbnail concept and text prompt for your video idea. Text prompt only — no image is generated.",
     icon: Image,
     accent: "violet",
     metricLabel: "Status",
@@ -179,7 +179,7 @@ export const tools: Tool[] = [
     shortName: "Proposal",
     category: "Sales",
     summary:
-      "Demo: draft a proposal outline from a client brief. No scoring — the output is a fixed template example.",
+      "Powered by Gemini: draft a client-ready proposal from your brief.",
     icon: FileText,
     accent: "teal",
     metricLabel: "Status",
@@ -204,7 +204,7 @@ export const tools: Tool[] = [
     shortName: "Website",
     category: "Build",
     summary:
-      "Demo: get a multi-page website plan outline from a description. No code is generated yet.",
+      "Powered by Gemini: get a multi-page website plan outline from a description. A plan, not generated code.",
     icon: Globe2,
     accent: "orange",
     metricLabel: "Status",
@@ -231,7 +231,7 @@ export const tools: Tool[] = [
     shortName: "Captions",
     category: "Social",
     summary:
-      "Demo: see example hooks, captions, and hashtags for a post idea. Outputs are fixed examples, not AI-generated.",
+      "Powered by Gemini: hooks, captions, and hashtags for your post idea.",
     icon: Megaphone,
     accent: "blue",
     metricLabel: "Status",
@@ -257,7 +257,7 @@ export const tools: Tool[] = [
     shortName: "Domains",
     category: "Naming",
     summary:
-      "Demo: see brandable name ideas from your keywords. Availability is not checked.",
+      "Powered by Gemini: brandable name ideas from your keywords. Availability is not checked — verify with a registrar.",
     icon: Clipboard,
     accent: "violet",
     metricLabel: "Status",
@@ -283,7 +283,7 @@ export const tools: Tool[] = [
     shortName: "Portfolio",
     category: "Creator",
     summary:
-      "Demo: see a portfolio outline for your profile. No site is built or deployed.",
+      "Powered by Gemini: a portfolio outline for your profile. No site is built or deployed.",
     icon: Layers3,
     accent: "teal",
     metricLabel: "Status",
@@ -310,7 +310,7 @@ export const tools: Tool[] = [
     shortName: "Chatbot",
     category: "Platform",
     summary:
-      "Demo: a static mock of a chatbot SaaS conversation and architecture outline. No live chat or model is connected.",
+      "Powered by Gemini: a chatbot SaaS scope and architecture outline for your use case.",
     icon: Bot,
     accent: "orange",
     metricLabel: "Status",
@@ -357,8 +357,8 @@ const highlights = [
 
 const faqs = [
   {
-    q: "Can these tools connect to OpenAI, Claude, or Gemini?",
-    a: "No — not yet. The tools on this page are interface demos; they do not call OpenAI, Claude, or Gemini. Live model connections are planned — contact us to discuss wiring them up.",
+    q: "Are these tools connected to a real AI model?",
+    a: "Yes — the tools are connected to Google Gemini. Press Submit on any tool page and the result is generated live by the model. Results are AI-generated, so review them before using. The detector gives a likelihood estimate, not a definitive verdict, and the domain tool does not check live availability.",
   },
   {
     q: "Is the layout Adsense and SEO friendly?",
@@ -423,45 +423,6 @@ export function countCharacters(value: string) {
   return value.length;
 }
 
-export function generateOutput(tool: Tool, input: string, tone: ToolTone) {
-  const source = input.trim() || tool.sample;
-
-  switch (tool.id) {
-    case "ai-humanizer":
-      return `Humanized ${tone.toLowerCase()} draft:\n\n${source.replace(
-        /\b(leverage|utilize|comprehensive|significantly|optimize)\b/gi,
-        (match) =>
-          ({
-            leverage: "use",
-            utilize: "use",
-            comprehensive: "complete",
-            significantly: "meaningfully",
-            optimize: "improve",
-          })[match.toLowerCase()] ?? match,
-      )}\n\nSEO note: clearer verbs, less robotic phrasing, and a more natural reader flow.`;
-    case "ai-detector":
-      return `Demo detection report (no real detection):\n\nThis example output lists generic patterns only. It does not measure AI probability — no detector backend is connected yet.\n\nFlagged patterns (example): repeated generic claims, overly formal transitions, and low specificity.\nRecommended fix: add examples, concrete numbers, and personal context.`;
-    case "resume-builder":
-      return `ATS resume draft:\n\nTarget summary: ${tone} ${source}\n\nImpact bullets:\n- Built scalable product workflows with measurable business outcomes.\n- Improved performance, reliability, and delivery speed across product teams.\n- Collaborated with stakeholders to convert requirements into shipped features.\n\nSuggested skills: React, TypeScript, APIs, analytics, automation, communication.`;
-    case "thumbnail-generator":
-      return `Thumbnail generation prompt:\n\nCreate a high-contrast YouTube thumbnail about "${source}". Use expressive subject framing, readable 3-word headline, bold lighting, creator-style composition, and 16:9 HD export.\n\nOverlay ideas: "AI Changed This", "30 Day Build", "Stop Doing This".`;
-    case "proposal-generator":
-      return `Client-ready proposal:\n\nHi, I reviewed your brief and can help with ${source}.\n\nMy approach:\n1. Clarify the core workflow and success metrics.\n2. Build a clean MVP with secure architecture.\n3. Add analytics, testing, and launch support.\n\nSmart CTA: I can share a short implementation plan today.`;
-    case "website-generator":
-      return `Website blueprint:\n\nProject: ${source}\n\nPages: Home, Services, Pricing, Case Studies, Blog, Contact.\nDesign system: Tailwind, modern SaaS layout, fast loading, semantic SEO.\nComponents: Hero, proof strip, feature grid, process, testimonials, FAQ, CTA.\nExport: Next.js/React-ready source plan.`;
-    case "caption-generator":
-      return `Caption pack:\n\nHook: Most teams are using AI the slow way.\nCaption: ${source}\n\nCTA: Comment "AI" and I will send the workflow.\nHashtags: #AIautomation #SaaS #BusinessGrowth #Productivity #NoCodeAI`;
-    case "domain-generator":
-      return `Brandable domain ideas:\n\n- NeuralDesk.ai\n- ReplyPilot.com\n- FlowSignal.ai\n- SupportMint.com\n- CartNexus.io\n\nNaming angle: short, memorable, benefit-led, and easy to say out loud.\nBased on: ${source}`;
-    case "portfolio-builder":
-      return `Portfolio structure:\n\nHero: ${source}\nSections: About, Skills, Featured Projects, Case Studies, Resume, Testimonials, Contact.\nSEO title: Full-stack developer portfolio with AI and SaaS projects.\nCTA: Start a project.`;
-    case "chatbot-saas":
-      return `Chatbot SaaS architecture:\n\nUse case: ${source}\n\nCore modules: streaming chat UI, model router, file upload, RAG memory, team workspaces, admin analytics, rate limits, and API key vault.\nLaunch path: MVP chat, knowledge base, billing, admin controls.`;
-    default:
-      return source;
-  }
-}
-
 export function getSuspiciousParts(input: string) {
   const source = input.trim();
   if (!source) return [];
@@ -510,12 +471,12 @@ function ToolsHubPage() {
             <div className="mt-8 grid gap-10 lg:grid-cols-[1fr_420px] lg:items-end">
               <div>
                 <h1 className="font-display max-w-5xl text-5xl font-bold leading-[0.94] tracking-[-0.04em] md:text-7xl lg:text-8xl">
-                  Ten AI tool demos in one <span className="gradient-text">demo hub</span>.
+                  Ten AI tools in one <span className="gradient-text">hub</span>.
                 </h1>
                 <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground lg:text-lg">
                   Humanizer, detector, resume builder, thumbnail generator, proposal writer, website
                   generator, captions, domains, portfolio builder, and chatbot SaaS interface in one
-                  responsive tools page.
+                  responsive tools page — now powered by Google Gemini.
                 </p>
                 <div className="mt-10 flex flex-wrap gap-3">
                   <a
@@ -558,7 +519,7 @@ function ToolsHubPage() {
               Complete catalog
             </p>
             <h2 className="mt-4 max-w-4xl font-display text-4xl font-bold tracking-tight lg:text-6xl">
-              Every tool has its own workflow, demo output, and planned backend path.
+              Every tool has its own workflow, AI-generated output, and connected backend.
             </h2>
           </Reveal>
           <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -604,7 +565,7 @@ function ToolsHubPage() {
                 {
                   title: "AI model router",
                   icon: WandSparkles,
-                  copy: "OpenAI, Claude, Gemini, image generation, detector APIs, and fallback model orchestration.",
+                  copy: "Google Gemini connected now, with fallback models and rate limits; image generation, detector APIs, and other providers as future options.",
                 },
                 {
                   title: "Admin and billing",
@@ -697,11 +658,11 @@ function ToolsHubPage() {
           <Reveal>
             <PenLine className="mx-auto h-8 w-8 text-orange" />
             <h2 className="mx-auto mt-6 max-w-4xl font-display text-5xl font-bold tracking-tight lg:text-7xl">
-              Want these tools connected to real AI APIs?
+              Want a custom AI tool built for your business?
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground lg:text-base">
-              AiTouchSolutions can wire this interface to authentication, subscriptions, MongoDB,
-              Redis, analytics, OpenAI, Claude, Gemini, image generation, and admin dashboards.
+              AiTouchSolutions can build custom AI tools for your team — authentication, subscriptions, MongoDB,
+              Redis, analytics, image generation, and admin dashboards.
             </p>
             <Link
               to="/contact"
@@ -802,12 +763,62 @@ type ToolExperienceProps = {
   input: string;
   setInput: (value: string) => void;
   output: string;
+  isGenerating: boolean;
+  aiError: string;
   tone: ToolTone;
   setTone: (value: ToolTone) => void;
   words: number;
   characters: number;
   light: boolean;
 };
+
+/** Shared AI output rendering: loading, honest error, live result, or hint. */
+function AiOutputPanel({
+  output,
+  isGenerating,
+  aiError,
+  mutedText,
+  title = "AI output",
+  minHeight = "min-h-[300px]",
+}: {
+  output: string;
+  isGenerating: boolean;
+  aiError: string;
+  mutedText: string;
+  title?: string;
+  minHeight?: string;
+}) {
+  return (
+    <div>
+      <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em]">{title}</p>
+      {isGenerating ? (
+        <p className={`whitespace-pre-wrap text-sm leading-relaxed ${mutedText} animate-pulse ${minHeight}`}>
+          Generating with Gemini…
+        </p>
+      ) : aiError ? (
+        <p className="rounded-md border border-orange/40 bg-orange/10 p-4 text-sm leading-relaxed text-orange">
+          {aiError}
+        </p>
+      ) : output ? (
+        <pre className={`whitespace-pre-wrap text-sm leading-relaxed ${mutedText} ${minHeight}`}>
+          {output}
+        </pre>
+      ) : (
+        <p className={`text-sm leading-relaxed ${mutedText} ${minHeight}`}>
+          Press Submit to generate with Gemini.
+        </p>
+      )}
+    </div>
+  );
+}
+
+/** Extract brandable domain names from AI-generated text. */
+function parseDomainIdeas(output: string): string[] {
+  const matches = output.match(
+    /\b[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.(?:com|ai|io|app|co|net|org|dev|xyz)\b/gi,
+  );
+  return [...new Set((matches ?? []).map((item) => item.toLowerCase()))].slice(0, 6);
+}
 
 function downloadTextFile(filename: string, content: string) {
   const file = new Blob([content], { type: "text/plain;charset=utf-8" });
@@ -824,6 +835,8 @@ export function ToolExperience({
   input,
   setInput,
   output,
+  isGenerating,
+  aiError,
   tone,
   setTone,
   words,
@@ -849,13 +862,6 @@ export function ToolExperience({
     .split(/[.!?]+/)
     .filter(Boolean)
     .slice(0, 4);
-  const domainBase = source
-    .toLowerCase()
-    .replace(/[^a-z0-9\s]/g, "")
-    .split(/\s+/)
-    .filter((word) => word.length > 3)
-    .slice(0, 2)
-    .join("");
 
   const ToneButtons = () => (
     <div className="flex flex-wrap gap-2">
@@ -900,15 +906,18 @@ export function ToolExperience({
             <ToneButtons />
           </div>
           <div className="mt-6 rounded-md border border-teal/30 bg-teal/10 p-4 text-sm text-teal">
-            Demo rewrite — simple word swaps only. No AI model is connected, so no score is
-            shown.
+            AI rewrite — generated live by Gemini. No score is shown.
           </div>
         </div>
         <div className={`rounded-md border p-5 ${card}`}>
-          <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em]">Humanized output</p>
-          <pre className={`min-h-[360px] whitespace-pre-wrap text-sm leading-relaxed ${mutedText}`}>
-            {output}
-          </pre>
+          <AiOutputPanel
+            output={output}
+            isGenerating={isGenerating}
+            aiError={aiError}
+            mutedText={mutedText}
+            title="Humanized output"
+            minHeight="min-h-[360px]"
+          />
         </div>
       </div>
     );
@@ -1044,6 +1053,16 @@ export function ToolExperience({
             </div>
           </div>
         </div>
+        <div className={`rounded-md border p-5 ${card} lg:col-span-2`}>
+          <AiOutputPanel
+            output={output}
+            isGenerating={isGenerating}
+            aiError={aiError}
+            mutedText={mutedText}
+            title="AI-generated resume draft"
+            minHeight="min-h-[160px]"
+          />
+        </div>
       </div>
     );
   }
@@ -1100,6 +1119,16 @@ export function ToolExperience({
               </div>
             ))}
           </div>
+          <div className="mt-4">
+            <AiOutputPanel
+              output={output}
+              isGenerating={isGenerating}
+              aiError={aiError}
+              mutedText={mutedText}
+              title="AI thumbnail prompt"
+              minHeight="min-h-[160px]"
+            />
+          </div>
         </div>
       </div>
     );
@@ -1125,14 +1154,19 @@ export function ToolExperience({
               </span>
             ))}
           </div>
-          <pre className={`min-h-[300px] whitespace-pre-wrap text-sm leading-relaxed ${mutedText}`}>
-            {output}
-          </pre>
+          <AiOutputPanel
+            output={output}
+            isGenerating={isGenerating}
+            aiError={aiError}
+            mutedText={mutedText}
+            title="Proposal draft"
+            minHeight="min-h-[300px]"
+          />
         </div>
         <div className={`rounded-md border p-5 ${panel}`}>
-          <p className="text-xs font-bold uppercase tracking-[0.2em]">Demo draft checklist</p>
+          <p className="text-xs font-bold uppercase tracking-[0.2em]">AI draft checklist</p>
           <p className="mt-3 text-sm text-teal">
-            No scoring — this is a fixed template example.
+            AI-generated draft — review before sending.
           </p>
           <div className="mt-5 space-y-3">
             {["Personalization", "Proof", "CTA", "Keyword fit"].map((item) => (
@@ -1200,6 +1234,16 @@ export function ToolExperience({
               </div>
             </div>
           </div>
+          <div className="mt-4">
+            <AiOutputPanel
+              output={output}
+              isGenerating={isGenerating}
+              aiError={aiError}
+              mutedText={mutedText}
+              title="AI website blueprint"
+              minHeight="min-h-[160px]"
+            />
+          </div>
         </div>
       </div>
     );
@@ -1237,7 +1281,9 @@ export function ToolExperience({
                 {captionPlatform} preview
               </p>
               <p className="mt-5 font-display text-2xl font-bold leading-tight">
-                Most teams are using AI the slow way.
+                {output
+                  ? output.split("\n").find((line) => line.trim()) ?? "Caption pack"
+                  : "Press Submit to generate a caption pack."}
               </p>
               <p className={`mt-4 text-sm leading-relaxed ${mutedText}`}>{source}</p>
               <div className="mt-5 flex flex-wrap gap-2">
@@ -1249,17 +1295,15 @@ export function ToolExperience({
               </div>
             </div>
           </div>
-          <div className="grid gap-3">
-            {[
-              "Stop scrolling if your team still repeats this task.",
-              "Explain the repetitive step your product is designed to simplify.",
-              "Show how a clearer workflow could help a team move work forward.",
-            ].map((hook) => (
-              <div key={hook} className={`rounded-md border p-4 text-sm ${card}`}>
-                <Megaphone className="mb-3 h-4 w-4 text-orange" />
-                {hook}
-              </div>
-            ))}
+          <div className={`rounded-md border p-5 ${card}`}>
+            <AiOutputPanel
+              output={output}
+              isGenerating={isGenerating}
+              aiError={aiError}
+              mutedText={mutedText}
+              title="AI caption pack"
+              minHeight="min-h-[260px]"
+            />
           </div>
         </div>
       </div>
@@ -1267,14 +1311,7 @@ export function ToolExperience({
   }
 
   if (tool.id === "domain-generator") {
-    const domains = [
-      `${domainBase || "neuraldesk"}.ai`,
-      `${domainBase || "flowpilot"}hq.com`,
-      `get${domainBase || "supportmint"}.com`,
-      `${domainBase || "cartnexus"}.io`,
-      `${domainBase || "replysignal"}.app`,
-      `${domainBase || "brandforge"}.co`,
-    ];
+    const domains = parseDomainIdeas(output);
     return (
       <div className="grid gap-4 lg:grid-cols-[330px_1fr]">
         <div className={`rounded-md border p-5 ${panel}`}>
@@ -1303,53 +1340,78 @@ export function ToolExperience({
             </p>
           ) : null}
         </div>
-        <div className="grid gap-3 sm:grid-cols-2">
-          {domains.map((domain, index) => (
-            <div key={domain} className={`rounded-md border p-5 ${card}`}>
-              <div className="flex items-start justify-between gap-3">
-                <div>
-                  <p className="font-display text-2xl font-bold">{domain}</p>
-                  <p className={`mt-2 text-sm ${mutedText}`}>
-                    Generated name idea · availability not checked
-                  </p>
+        {isGenerating ? (
+          <div className={`rounded-md border p-5 ${card}`}>
+            <p className={`animate-pulse text-sm leading-relaxed ${mutedText}`}>
+              Generating with Gemini…
+            </p>
+          </div>
+        ) : aiError ? (
+          <div className={`rounded-md border p-5 ${card}`}>
+            <p className="rounded-md border border-orange/40 bg-orange/10 p-4 text-sm leading-relaxed text-orange">
+              {aiError}
+            </p>
+          </div>
+        ) : domains.length > 0 ? (
+          <div className="grid gap-3 sm:grid-cols-2">
+            {domains.map((domain, index) => (
+              <div key={domain} className={`rounded-md border p-5 ${card}`}>
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <p className="font-display text-2xl font-bold">{domain}</p>
+                    <p className={`mt-2 text-sm ${mutedText}`}>
+                      AI name idea · availability not checked
+                    </p>
+                  </div>
+                  <span className="text-teal">Suggestion {index + 1}</span>
                 </div>
-                <span className="text-teal">Suggestion {index + 1}</span>
+                <div className="mt-5 flex gap-2">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSavedDomains((current) =>
+                        current.includes(domain)
+                          ? current.filter((saved) => saved !== domain)
+                          : [...current, domain],
+                      );
+                      setDomainActionMessage(
+                        savedDomains.includes(domain)
+                          ? `${domain} removed from saved ideas.`
+                          : `${domain} saved in this session.`,
+                      );
+                    }}
+                    className="rounded-md bg-teal px-3 py-2 text-xs font-bold text-ink"
+                  >
+                    {savedDomains.includes(domain) ? "Saved · remove" : "Save idea"}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      downloadTextFile(
+                        `${domain}-name-idea.txt`,
+                        `${domain}\nGenerated suggestion only. Availability has not been checked.\n`,
+                      )
+                    }
+                    className={`rounded-md border px-3 py-2 text-xs ${panel}`}
+                  >
+                    Export idea
+                  </button>
+                </div>
               </div>
-              <div className="mt-5 flex gap-2">
-                <button
-                  type="button"
-                  onClick={() => {
-                    setSavedDomains((current) =>
-                      current.includes(domain)
-                        ? current.filter((saved) => saved !== domain)
-                        : [...current, domain],
-                    );
-                    setDomainActionMessage(
-                      savedDomains.includes(domain)
-                        ? `${domain} removed from saved ideas.`
-                        : `${domain} saved in this session.`,
-                    );
-                  }}
-                  className="rounded-md bg-teal px-3 py-2 text-xs font-bold text-ink"
-                >
-                  {savedDomains.includes(domain) ? "Saved · remove" : "Save idea"}
-                </button>
-                <button
-                  type="button"
-                  onClick={() =>
-                    downloadTextFile(
-                      `${domain}-name-idea.txt`,
-                      `${domain}\nGenerated suggestion only. Availability has not been checked.\n`,
-                    )
-                  }
-                  className={`rounded-md border px-3 py-2 text-xs ${panel}`}
-                >
-                  Export idea
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        ) : (
+          <div className={`rounded-md border p-5 ${card}`}>
+            <AiOutputPanel
+              output={output}
+              isGenerating={isGenerating}
+              aiError={aiError}
+              mutedText={mutedText}
+              title="AI domain ideas"
+              minHeight="min-h-[160px]"
+            />
+          </div>
+        )}
       </div>
     );
   }
@@ -1394,6 +1456,16 @@ export function ToolExperience({
               ))}
             </div>
           </div>
+          <div className="mt-4">
+            <AiOutputPanel
+              output={output}
+              isGenerating={isGenerating}
+              aiError={aiError}
+              mutedText={mutedText}
+              title="AI portfolio outline"
+              minHeight="min-h-[160px]"
+            />
+          </div>
         </div>
       </div>
     );
@@ -1409,22 +1481,29 @@ export function ToolExperience({
             <Bot className="h-5 w-5 text-teal" />
             <div>
               <p className="text-sm font-bold">Support AI</p>
-              <p className={`text-xs ${mutedText}`}>Demo conversation | No live model</p>
+              <p className={`text-xs ${mutedText}`}>AI scope · Powered by Gemini</p>
             </div>
           </div>
-          <span className="rounded-md bg-teal/10 px-2 py-1 text-xs text-teal">Demo</span>
+          <span className="rounded-md bg-teal/10 px-2 py-1 text-xs text-teal">Gemini</span>
         </div>
         <div className="space-y-4 p-5">
           <div className={`max-w-[78%] rounded-md border p-4 text-sm ${panel}`}>{source}</div>
           <div className="ml-auto max-w-[82%] rounded-md bg-teal p-4 text-sm text-ink">
-            I can answer from your docs, create tickets, remember users, and escalate complex cases
-            to your team.
+            Example reply — press Submit to generate a live scope for your use case.
           </div>
           <textarea
             value={input}
             onChange={(event) => setInput(event.target.value)}
             placeholder={tool.placeholder}
             className={`${textarea} min-h-[120px]`}
+          />
+          <AiOutputPanel
+            output={output}
+            isGenerating={isGenerating}
+            aiError={aiError}
+            mutedText={mutedText}
+            title="AI chatbot scope"
+            minHeight="min-h-[160px]"
           />
         </div>
       </div>

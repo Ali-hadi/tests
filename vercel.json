@@ -6,6 +6,9 @@
   "functions": {
     "api/jarvis.ts": {
       "maxDuration": 25
+    },
+    "api/gemini.ts": {
+      "maxDuration": 25
     }
   },
   "cleanUrls": true,
