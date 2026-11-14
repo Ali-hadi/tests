@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T21:23:16.465Z",
+  "generatedAt": "2026-11-14T04:00:35.005Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,110 @@
     }
   ],
   "posts": [
+    {
+      "category": "AI",
+      "title": "OpenAI Launches ChatGPT Wallet So AI Agents Can Pay for You",
+      "seoTitle": "ChatGPT Wallet: OpenAI Lets AI Agents Pay Securely",
+      "metaDescription": "OpenAI's ChatGPT Wallet lets its dots AI agents pay for purchases without seeing your card details. Here is how the tokenised checkout works and what it means for businesses.",
+      "excerpt": "OpenAI has launched ChatGPT Wallet, a payment feature that lets its dots AI agents complete purchases on your behalf without ever seeing your card details, with a biometric security check on every transaction.",
+      "focusKeyword": "ChatGPT Wallet",
+      "secondaryKeywords": [
+        "AI agents",
+        "agentic commerce",
+        "dots",
+        "tokenised payments",
+        "OpenAI"
+      ],
+      "searchIntent": "Informational: understand how ChatGPT Wallet works and what it means for businesses",
+      "tags": [
+        "OpenAI",
+        "ChatGPT Wallet",
+        "AI agents",
+        "agentic commerce",
+        "payments",
+        "artificial intelligence"
+      ],
+      "keyTakeaways": [
+        "ChatGPT Wallet lets OpenAI's dots AI agents pay for purchases without ever accessing the user's actual card details.",
+        "Every purchase needs the user's review and a biometric security check, and the card network issues a single-use payment token instead of the real card number.",
+        "At launch the wallet is limited to US ChatGPT Pro subscribers aged 18 and over, and OpenAI is not taking a cut of transactions.",
+        "Businesses will need to stop blocking AI agents at checkout, or approved agent purchases may fail."
+      ],
+      "supportingSources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/technology/openai-launches-chatgpt-wallet-letting-ai-agents-pay-purchases-2026-11-13/"
+        },
+        {
+          "name": "PYMNTS",
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-gives-ai-agents-a-wallet-while-blocking-them-from-seeing-the-card/"
+        },
+        {
+          "name": "Unite.AI",
+          "url": "https://www.unite.ai/openai-launches-chatgpt-wallet-for-agent-assisted-purchases/"
+        },
+        {
+          "name": "9to5Mac",
+          "url": "https://9to5mac.com/2026/11/13/openai-launches-chatgpt-wallet-enabling-dot-agents-to-make-purchases/"
+        },
+        {
+          "name": "Silicon Report",
+          "url": "https://www.siliconreport.com/openai-announces-chatgpt-wallet-to-let-ai-agents-make-purchases"
+        }
+      ],
+      "content": [
+        {
+          "heading": "What OpenAI announced on November 13",
+          "body": [
+            "OpenAI launched ChatGPT Wallet on Friday, November 13, 2026, a payment feature that lets its dots AI agents complete purchases on behalf of users. The company described it as the first wallet that lets agents pay without access to users' actual card details and that requires a security check for every purchase, while preserving existing card rewards and protections for eligible disputes.",
+            "The wallet is built in partnership with American Express, Mastercard and Visa, according to OpenAI and Reuters. At launch it is available only in the United States to ChatGPT Pro subscribers who are 18 or older and hold eligible US-issued cards, and it works inside dots, OpenAI's always-on personal AI agents.",
+            "Dots were introduced on September 29, 2026, as agents that run on their own cloud computers and browsers and connect to more than 4,000 apps through plugins. ChatGPT Wallet adds the missing payment step to that supervised model, so an agent can now find, fill and pay for an order instead of stopping at checkout."
+          ]
+        },
+        {
+          "heading": "How the tokenised payment works",
+          "body": [
+            "Users add a card to ChatGPT Wallet once. When an agent is asked to buy something, it presents a summary showing the items, the total and the selected card, and the user reviews it before approving the purchase with a security check such as Face ID or a fingerprint scan.",
+            "After approval, the payment network supplies a payment token, a substitute containing a card number, security code and expiration date, which is used to charge the selected card. Because the token stands in for the real credentials, neither the dot agent nor the merchant ever receives the buyer's actual card details.",
+            "Consent covers only the specific transaction, and merchants must not reuse or save the payment credential for a separate purchase. OpenAI says the wallet works with existing checkout pages and payment forms without a Wallet-specific integration, although optional compatibility checks can improve reliability."
+          ]
+        },
+        {
+          "heading": "What it means for businesses and online stores",
+          "body": [
+            "OpenAI published a Commerce Partner Playbook alongside the wallet, telling businesses in plain terms to stop blocking agents at checkout. Many sites use anti-bot systems that can flag legitimate agent transactions, and OpenAI advised merchants to update firewalls and content delivery networks to recognise signed agent requests.",
+            "The company is working with fraud-prevention partners Forter, Riskified, Sardine and Signifyd, and payment providers Adyen, Checkout.com and Stripe, to help their systems recognise legitimate agent purchases. That matters because the wallet's practical reach depends on whether business websites and risk systems can consistently accept approved agent transactions.",
+            "OpenAI confirmed it is not taking a percentage cut of transactions at launch, according to reports, and is focusing instead on building relationships with online sellers. For stores, the early question is not the fee but whether their checkout accepts a payment token from an approved agent purchase.",
+            "Research cited alongside the launch found that consumers are comfortable delegating research to an AI tool but are much less comfortable delegating identity, payment choice or an irreversible decision. That gap is exactly what the per-purchase approval and token design are meant to close."
+          ]
+        },
+        {
+          "heading": "Limits at launch and what comes next",
+          "body": [
+            "The rollout is deliberately narrow: Pro tier only, United States only, adults only, and US-issued cards only. The feature also will not work with websites that block agents, which has become an increasingly common practice online.",
+            "OpenAI expects users eventually to delegate purchases entirely by setting spending limits, purchase categories or time periods and pre-approving them with enhanced safeguards. At launch, though, an agent cannot complete a Wallet purchase without the user's review and security check.",
+            "For software teams, the signal is clear: agentic commerce is moving from demos to real money movement. Businesses that build AI agents, online stores or payment flows should treat agent-ready checkout as a near-term product requirement, not a distant idea."
+          ]
+        }
+      ],
+      "id": "4a85250a309d",
+      "slug": "openai-launches-chatgpt-wallet-so-ai-agents-can-pay-for-you-4a85250a309d",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/technology/openai-launches-chatgpt-wallet-letting-ai-agents-pay-purchases-2026-11-13/",
+      "image": "/og-image.jpg",
+      "imageAlt": "OpenAI Launches ChatGPT Wallet So AI Agents Can Pay for You",
+      "publishedAt": "2026-11-14T04:00:35.005Z",
+      "updatedAt": "2026-11-14T04:00:35.005Z",
+      "author": "AiTouchSolutions Editorial",
+      "cta": {
+        "text": "Discuss how this topic may affect a AI agent development project.",
+        "label": "Explore AI agent development",
+        "href": "/services/ai-agent-development"
+      },
+      "readingTime": 4,
+      "contentType": "news",
+      "indexable": true
+    },
     {
       "category": "AI",
       "content": [
