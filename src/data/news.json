@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T04:00:35.005Z",
+  "generatedAt": "2026-11-15T04:02:37.244Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,113 @@
     }
   ],
   "posts": [
+    {
+      "category": "AI",
+      "title": "Uber Drivers' Licence Data Stolen After Hackers Breach AI Vendor Fireworks",
+      "seoTitle": "Uber Drivers' Data Stolen in Fireworks AI Vendor Breach",
+      "metaDescription": "Hackers stole thousands of Uber drivers' licence details through a breach at AI vendor Fireworks AI. Here is what happened, what was taken, and what businesses should learn.",
+      "excerpt": "Uber is notifying thousands of drivers that their personal and driver's licence information was stolen in an October breach at Fireworks AI, the AI vendor that hosts open models for developers. State filings put the confirmed count at 7,870 across three states so far.",
+      "focusKeyword": "Fireworks AI breach",
+      "secondaryKeywords": [
+        "Uber data breach",
+        "AI vendor security",
+        "driver's licence data",
+        "third-party risk",
+        "Fireworks AI"
+      ],
+      "searchIntent": "Informational: understand how the Fireworks AI breach exposed Uber driver data and what it means for vendor security",
+      "tags": [
+        "Fireworks AI",
+        "Uber",
+        "data breach",
+        "cybersecurity",
+        "AI vendor security",
+        "third-party risk"
+      ],
+      "keyTakeaways": [
+        "Hackers stole internal credentials from AI vendor Fireworks AI and used them to reach Uber driver records, including licence images and personal details.",
+        "State filings so far confirm licence data for 7,870 drivers across Massachusetts, South Carolina and Rhode Island, and Uber has not published a national total.",
+        "Fireworks attributes the attack to a financially motivated group that sells stolen access tokens for large language models, and no group has publicly claimed the theft.",
+        "Businesses should treat AI vendors as part of their security perimeter, with tight credential controls, least-privilege access and a tested incident plan."
+      ],
+      "supportingSources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/13/uber-confirms-hackers-stole-thousands-of-drivers-license-information-in-data-breach/?utm_campaign=etb&utm_source=morning_brew&utm_medium=newsletter"
+        },
+        {
+          "name": "Engadget",
+          "url": "https://www.engadget.com/2316881/uber-drivers-information-stolen-in-a-third-party-hack/"
+        },
+        {
+          "name": "GBHackers",
+          "url": "https://gbhackers.com/uber-hacked-hackers-steal-drivers-license-personal-data/"
+        },
+        {
+          "name": "DailyMech",
+          "url": "https://dailymech.com/articles/uber-drivers-license-data-stolen-fireworks-ai-breach.html"
+        }
+      ],
+      "content": [
+        {
+          "heading": "What Uber disclosed this week",
+          "body": [
+            "Uber is notifying thousands of drivers in the United States that their personal and driver's licence information was stolen during an October data breach at one of its technology providers. The company disclosed the incident in notices filed this week with several state attorneys general, including California.",
+            "The provider is Fireworks AI, a company that gives developers hosted access to open AI models, TechCrunch reported on November 13. An Uber spokesperson confirmed the vendor's involvement and said the notices relate to a security incident at Fireworks.ai, which had access to some Uber data.",
+            "According to the notices, Fireworks told Uber on October 9 that hackers had stolen its internal credentials and used them to access Uber's data. Uber said it cut its data connections with the provider, opened an investigation, and confirmed on October 13 that the attacker had reached Uber data containing personal information."
+          ]
+        },
+        {
+          "heading": "What the attackers took",
+          "body": [
+            "Data breach notices seen by TechCrunch put the confirmed count at 7,870 people across three states: 3,430 in South Carolina, 2,567 in Massachusetts and 1,873 in Rhode Island. An Illinois filing showed some residents' licence information was stolen, but the number of affected people was pending, and Uber also notified drivers in California without saying how many were affected.",
+            "Filings from Iowa and Vermont add about 2,999 and 1,071 more people, putting one count of the published filings from five states at about 11,940. Uber has not said how many drivers are affected in total, and the number is expected to rise as more state filings become public.",
+            "The stolen material includes images of driver's licences and the personal details on them, such as names, addresses, dates of birth and licence numbers. Licence numbers are valuable to fraudsters because they help pass identity checks, and unlike a password, a licence number cannot be quickly changed."
+          ]
+        },
+        {
+          "heading": "How the breach at Fireworks AI unfolded",
+          "body": [
+            "Fireworks AI disclosed its own breach last month, reporting that hackers stole customer information including billing data and some private AI datasets. A Fireworks spokesperson confirmed to TechCrunch that the company identified unauthorised access to some of its systems that affected customer data.",
+            "Fireworks attributed its breach to a financially motivated cybercriminal group whose goal is to sell stolen tokens for accessing large language models. No known cybercriminal group has taken credit for the data theft, and it is unclear whether the stolen information was also sold or leaked online.",
+            "The compromise has reached other companies too. Online productivity startup Notion confirmed its data was also stolen in the Fireworks hack, with AI chat transcripts affected in fewer than 1% of its customer workspaces."
+          ]
+        },
+        {
+          "heading": "What Uber and Fireworks say now",
+          "body": [
+            "Uber says it has found no misuse of the stolen information so far. It is offering affected drivers free credit monitoring and fraud assistance through Cyberscout, a TransUnion company, and drivers are being asked to enrol within 90 days of the letter's date using an activation code.",
+            "The notification letters are dated November 10, about a month after Fireworks first alerted Uber. Uber has not said whether it will keep working with Fireworks AI, and Fireworks has not answered detailed questions about the incident beyond confirming the unauthorised access.",
+            "This is Uber's second known data breach of 2026. Earlier in the year the company reported a security incident at its Uber Freight truck shipping unit, for which an extortion gang took credit for stealing data."
+          ]
+        },
+        {
+          "heading": "What businesses should take from this",
+          "body": [
+            "The incident shows how a vendor's credentials can become a direct route into a much larger company's data. The attackers never needed to breach Uber's own systems: compromised credentials at Fireworks AI were enough to reach records Uber had placed with the provider.",
+            "Companies that use AI vendors should map exactly what data each vendor can reach, limit that access to what the work requires, and require strong credential controls and monitoring on vendor accounts. Contracts should spell out how quickly a vendor must report a suspected breach.",
+            "Incident plans should also cover the vendor scenario in advance: who notifies affected people, which regulator filings are needed in each state, and what support is offered. Uber's month-long gap between the first alert and the notification letters shows why that plan needs to be ready before an incident, not written during one."
+          ]
+        }
+      ],
+      "id": "6605257c3ddb",
+      "slug": "uber-drivers-licence-data-stolen-after-hackers-breach-ai-vendor-fireworks-6605257c3ddb",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/13/uber-confirms-hackers-stole-thousands-of-drivers-license-information-in-data-breach/?utm_campaign=etb&utm_source=morning_brew&utm_medium=newsletter",
+      "image": "/og-image.jpg",
+      "imageAlt": "Uber Drivers' Licence Data Stolen After Hackers Breach AI Vendor Fireworks",
+      "publishedAt": "2026-11-15T04:02:37.244Z",
+      "updatedAt": "2026-11-15T04:02:37.244Z",
+      "author": "AiTouchSolutions Editorial",
+      "cta": {
+        "text": "Discuss how this topic may affect a cybersecurity services project.",
+        "label": "Explore cybersecurity services",
+        "href": "/services/cybersecurity-services"
+      },
+      "readingTime": 4,
+      "contentType": "news",
+      "indexable": true
+    },
     {
       "category": "AI",
       "title": "OpenAI Launches ChatGPT Wallet So AI Agents Can Pay for You",
