@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T04:04:41.630Z",
+  "generatedAt": "2026-11-20T04:01:11.810Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,96 @@
     }
   ],
   "posts": [
+    {
+      "category": "AI",
+      "title": "Students Sue After AI Gun Detector Mistakes a Doritos Bag for a Gun",
+      "seoTitle": "AI Gun Detector Mistook Doritos for a Gun, Students Sue",
+      "metaDescription": "Four Baltimore students sued Omnilert after its AI gun-detection system flagged a bag of Doritos and police handcuffed them. What happened and what it means for AI in schools.",
+      "excerpt": "Four Baltimore high school students sued Omnilert, their school district and police after the company's artificial intelligence gun-detection system flagged a bag of Cool Ranch Doritos as a firearm, prompting a police response that ended with the teens handcuffed and searched.",
+      "focusKeyword": "Omnilert AI gun detection lawsuit",
+      "secondaryKeywords": [
+        "AI gun detection",
+        "Omnilert",
+        "AI false positives",
+        "AI in schools",
+        "Kenwood High School"
+      ],
+      "searchIntent": "Informational: understand why students sued Omnilert and what the Doritos bag incident says about AI gun detection in schools",
+      "tags": [
+        "Omnilert",
+        "AI gun detection",
+        "artificial intelligence",
+        "cybersecurity",
+        "AI safety",
+        "schools"
+      ],
+      "keyTakeaways": [
+        "Four Baltimore students sued Omnilert, Baltimore County Public Schools and police after an AI gun alert over a bag of Doritos led to them being handcuffed and searched.",
+        "The alert was reviewed and canceled within about two minutes, but a school employee missed the cancellation and shared a screenshot, which brought armed officers to the scene.",
+        "Maryland's inspector general found the system flagged the student's hand movement, not the chip bag itself, and blamed human error and training gaps rather than bias.",
+        "The report found more than 99% of Omnilert alerts in Baltimore County schools from November 2023 to November 2025 were false positives that did not need police action."
+      ],
+      "supportingSources": [
+        {
+          "name": "USA TODAY",
+          "url": "https://www.usatoday.com/story/news/nation/2026/11/19/baltimore-students-lawsuit-ai-gun-alert-chips/92855684007/"
+        },
+        {
+          "name": "PEOPLE",
+          "url": "https://people.com/ai-security-system-mistakes-doritos-gun-lawsuit-12265426"
+        }
+      ],
+      "content": [
+        {
+          "heading": "A bag of chips, a 90% alert, and an armed response",
+          "body": [
+            "The lawsuit was filed on November 17, 2026, in Baltimore County Circuit Court, and it names Omnilert, Baltimore County Public Schools, school officials, the Baltimore County Police Department and individual officers as defendants. The four plaintiffs, current and former students at Kenwood High School, say their constitutional rights were violated during an incident on October 20, 2025, outside the school.",
+            "According to the complaint, the students were waiting for a ride home after football practice when officers responded to an alert from Omnilert's artificial intelligence weapon detection system. The system put the probability of a gun on campus at 90%, their attorneys said, and officers surrounded the teenagers, many with guns drawn, then forced them to their knees on the concrete, handcuffed them and searched them before finding no weapon."
+          ]
+        },
+        {
+          "heading": "The alert was canceled in two minutes. The police came anyway.",
+          "body": [
+            "School and police personnel reviewed the alert quickly, decided it was not a credible threat and canceled it within about two minutes, according to Omnilert and the state investigation. A cancellation notice was sent to the staff who had received the alert, and everyone who got it was notified.",
+            "The armed response still happened because of a breakdown in communication, the lawsuit alleges. A school employee failed to notice the cancellation and shared a screenshot of the original alert with a law enforcement officer, who then contacted the police. The students were already handcuffed by the time officers realised the flagged item was a bag of chips; one officer is heard on body-camera footage saying, \"Oh, it looks like a bag or something,\" according to PEOPLE's account of the footage.",
+            "One of the plaintiffs, Taki Allen, told NBC: \"The first thing I thought about was, 'Am I about to die?' because they had a gun pointed at me.\" The teenagers were compliant throughout the encounter, according to the body-camera footage obtained by NBC."
+          ]
+        },
+        {
+          "heading": "What the state investigation found",
+          "body": [
+            "The Maryland Office of the Inspector General for Education investigated the incident and issued a report in November 2025. It found the system had not specifically identified a potato chip bag as a gun; the alert was triggered by the student's position, hand movements and the reflective properties of an object visible in the image.",
+            "The agency said it could not substantiate claims that the Omnilert system was ineffective, inefficient or biased, and concluded that \"human error and training gaps\" led to the incident. Omnilert told USA TODAY it was \"truly sorry for the fear\" the teenagers experienced, and said its technology is designed to flag anything that could be a firearm for human review because \"missing a real gun is the worst possible outcome.\"",
+            "The investigation also put the system's record in context: more than 99% of Omnilert alerts in Baltimore County schools between November 2023 and November 2025 were false positives that did not require police intervention, according to reporting on the report. The lawyers for the students say the operator \"regularly produced false alerts.\""
+          ]
+        },
+        {
+          "heading": "What the lawsuit wants, and what it means for AI in schools",
+          "body": [
+            "The students, represented by the Lawyers' Committee for Civil Rights Under Law with Willkie Farr & Gallagher LLP and Engel Law Group, are seeking damages and reforms. Those reforms would require schools and police to verify reports from AI threat-detection systems before acting, and to adopt policies that stop false alerts from triggering armed responses, along with more training, oversight and transparency around the technology.",
+            "\"These students were failed not only by a technology that is prone to false alerts, but also by the very adults meant to keep them safe when we send them to school,\" Damon Hewitt, president and executive director of the Lawyers' Committee for Civil Rights Under Law, said in a statement. He added: \"Overreliance on artificial intelligence technology mixed with inept communication and coordination among key officials is a toxic mix.\"",
+            "For schools and businesses deploying AI detection tools, the case is a warning about the full chain, not just the model. A detection that is right to be cautious still needs a human review that sticks, a cancellation that reaches everyone, and staff trained to treat an AI alert as a starting point rather than a verdict. Omnilert said the case shows \"why human review matters, and why a canceled alert must stay canceled.\""
+          ]
+        }
+      ],
+      "id": "69d0c1fd0b2f",
+      "slug": "students-sue-after-ai-gun-detector-mistakes-a-doritos-bag-for-a-gun-69d0c1fd0b2f",
+      "source": "USA TODAY",
+      "url": "https://www.usatoday.com/story/news/nation/2026/11/19/baltimore-students-lawsuit-ai-gun-alert-chips/92855684007/",
+      "image": "/og-image.jpg",
+      "imageAlt": "Students Sue After AI Gun Detector Mistakes a Doritos Bag for a Gun",
+      "publishedAt": "2026-11-20T04:01:11.810Z",
+      "updatedAt": "2026-11-20T04:01:11.810Z",
+      "author": "AiTouchSolutions Editorial",
+      "cta": {
+        "text": "Discuss how this topic may affect a cybersecurity services project.",
+        "label": "Explore cybersecurity services",
+        "href": "/services/cybersecurity-services"
+      },
+      "readingTime": 4,
+      "contentType": "news",
+      "indexable": true
+    },
     {
       "category": "AI",
       "content": [
