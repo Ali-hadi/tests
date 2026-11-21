@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T04:01:11.810Z",
+  "generatedAt": "2026-11-21T04:01:57.994Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,110 @@
     }
   ],
   "posts": [
+    {
+      "category": "AI",
+      "title": "Attackers Hijacked Microsoft's AI Agent Framework to Steal Cloud Credentials",
+      "seoTitle": "Microsoft AI Agent Framework PyPI Attack Explained",
+      "metaDescription": "Two malicious releases of Microsoft's agent-framework package stole cloud credentials from developers. Here is what happened, who was affected, and how to recover.",
+      "excerpt": "Attackers published two malicious versions of Microsoft's agent-framework package to PyPI on November 17, 2026. The releases ran a credential stealer on every Python start, harvesting cloud tokens and developer secrets before the packages were pulled within the hour.",
+      "focusKeyword": "Microsoft agent-framework PyPI compromise",
+      "secondaryKeywords": [
+        "agent-framework",
+        "Microsoft Agent Framework",
+        "PyPI supply chain attack",
+        "AI agent security",
+        "cloud credential theft"
+      ],
+      "searchIntent": "Informational: understand how the Microsoft agent-framework PyPI compromise worked and what affected teams should do",
+      "tags": [
+        "Microsoft",
+        "AI agents",
+        "artificial intelligence",
+        "cybersecurity",
+        "supply chain security",
+        "Python",
+        "cloud security"
+      ],
+      "keyTakeaways": [
+        "Two malicious versions of Microsoft's agent-framework package, 1.26.1 and 1.26.2, were published to PyPI on November 17, 2026, and pulled within about an hour.",
+        "A .pth startup hook ran a credential stealer on every Python start, collecting environment variables, credential files, and Azure and GitHub tokens.",
+        "Wiz researchers traced the publishing access to a compromised Microsoft release-pipeline certificate, though how the attacker obtained it is still unknown.",
+        "Teams that installed either version should rebuild from the clean 1.26.0 release and rotate every secret the affected environment could reach."
+      ],
+      "supportingSources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html"
+        },
+        {
+          "name": "SiliconANGLE",
+          "url": "https://siliconangle.com/2026/11/19/wiz-ties-microsoft-agent-framework-package-compromise-to-release-pipeline-certificate/"
+        }
+      ],
+      "content": [
+        {
+          "heading": "Two malicious releases, one hour on PyPI",
+          "body": [
+            "On November 17, 2026, two versions of agent-framework, the official Python package for Microsoft Agent Framework, appeared on the Python Package Index 33 minutes apart. Versions 1.26.1 and 1.26.2 were published through Microsoft's own publisher account, so they looked like routine updates to a package that attracts about 190,000 downloads a month. Both versions were pulled from PyPI within about an hour.",
+            "Agent-framework is the meta-package for Microsoft Agent Framework, an open-source framework for building and orchestrating artificial intelligence agents in Python. Because the releases came through the official account, developers and automated build systems had little reason to suspect them, and anyone who installed either version during the short window is at risk."
+          ]
+        },
+        {
+          "heading": "How the credential stealer worked",
+          "body": [
+            "Both malicious releases added a .pth file to the package's site-packages directory, agent_framework_meta.pth in version 1.26.1 and af_runtime_diag.pth in version 1.26.2. Python executes import lines in .pth files on every interpreter start, so the stealer ran whenever Python launched in an affected environment, even when nothing imported the framework, including pip itself.",
+            "Once running, the code collected credential-like environment variables and read credential files for services including Azure CLI, npm, pip, Git, Docker and Hugging Face, along with .env and JSON files. It also asked the platform to issue fresh tokens, requesting Azure DevOps OIDC tokens and Azure managed-identity tokens, and version 1.26.2 added GitHub Actions OIDC tokens. Everything collected was compressed, encoded and sent in a single HTTPS POST to a webhook.site address controlled by the attacker.",
+            "The malicious releases kept the genuine agent-framework-core 1.26.0 as a dependency, so the framework continued to work normally while the stealer ran in the background. Researchers at OpenSourceMalware described the code as a focused credential and token stealer rather than a remote access trojan, noting that it does not install persistence on infected systems."
+          ]
+        },
+        {
+          "heading": "How the attackers appear to have got in",
+          "body": [
+            "Researchers at Wiz reported that the attacker appears to have gained publishing access using a client certificate and private key for Microsoft's Engineering System Release Pipeline, the internal service Microsoft uses to sign and publish packages. Address filtering on the service blocked the attacker's first attempt from Amazon Web Services, but a second attempt from Microsoft-owned address space succeeded. How the attacker obtained the credentials is not known.",
+            "The researchers also observed part of the operation because the attacker's tooling reported its progress to the same public webhook used to collect the stolen data. That tooling identified itself as Cairn, an open-source penetration-testing framework that uses artificial intelligence. Microsoft has made some of its repositories private, including microsoft/agent-framework and microsoft/onnxruntime, while it investigates, and a spokesperson said protecting customers and the broader ecosystem is the priority.",
+            "Wiz has not linked this incident to the earlier compromise of Microsoft's durabletask package in May 2026, when attackers pushed three malicious versions to distribute the Mini Shai-Hulud worm. Agent-framework is the second Microsoft-related PyPI package to be compromised this year."
+          ]
+        },
+        {
+          "heading": "How many teams were actually hit",
+          "body": [
+            "Wiz's analysis suggests the number of victims may be small, though it covers only the 50 requests retained by the attacker's free webhook.site account. Of those, 17 represented only three unique successful thefts of victim data, with the rest coming from the attacker's own machines and from sandbox and security vendor scanning.",
+            "That small sample should not reassure teams that installed the packages. Security researchers warn that a production dependency list may show no trace of the framework while a build runner installed it and was shut down before the alert arrived. If that runner held a deployment token, the team needs to know which version it installed and what the token could access."
+          ]
+        },
+        {
+          "heading": "What affected teams should do now",
+          "body": [
+            "Anyone who installed version 1.26.1 or 1.26.2 should treat it as a credential compromise. Researchers advise isolating affected hosts and runners, pinning the package to the most recent safe version, 1.26.0, and restoring from a clean environment. Teams should check for exposure between 8:35 and roughly 9:20 p.m. UTC on November 17, 2026, and search proxy and DNS logs for requests to the attacker's webhook.site address.",
+            "Secrets must be rotated from a clean system, not from the affected environment, because the stealer also requested freshly issued tokens that rotating stored secrets alone would not cover. Teams should audit Azure identities and sign-in logs, review GitHub Actions workflows that deploy to Azure, and treat every secret the affected environment could reach as exposed."
+          ]
+        },
+        {
+          "heading": "Why this matters for teams building with AI agents",
+          "body": [
+            "The incident shows how attackers are now targeting the AI developer ecosystem and the continuous integration pipelines behind it. A trusted package from a major vendor became the delivery route for credential theft, and the malicious code needed no user interaction beyond a routine install during a one-hour window.",
+            "For teams building products with AI agents, the lesson is that dependency hygiene is part of agent security. Pinning versions, locking dependencies, monitoring installs in continuous integration, and limiting what tokens build runners can reach all reduce the damage when a trusted package turns hostile."
+          ]
+        }
+      ],
+      "id": "e60a634685ac",
+      "slug": "attackers-hijacked-microsoft-s-ai-agent-framework-to-steal-cloud-credential-e60a634685ac",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
+      "image": "/og-image.jpg",
+      "imageAlt": "Attackers Hijacked Microsoft's AI Agent Framework to Steal Cloud Credentials",
+      "publishedAt": "2026-11-21T04:01:57.994Z",
+      "updatedAt": "2026-11-21T04:01:57.994Z",
+      "author": "AiTouchSolutions Editorial",
+      "cta": {
+        "text": "Discuss how this topic may affect a AI agent development project.",
+        "label": "Explore AI agent development",
+        "href": "/services/ai-agent-development"
+      },
+      "readingTime": 5,
+      "contentType": "news",
+      "indexable": true
+    },
     {
       "category": "AI",
       "title": "Students Sue After AI Gun Detector Mistakes a Doritos Bag for a Gun",
