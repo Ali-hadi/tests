@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T04:01:41.556Z",
+  "generatedAt": "2026-11-23T04:01:02.803Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,114 @@
     }
   ],
   "posts": [
+    {
+      "category": "AI",
+      "content": [
+        {
+          "body": [
+            "Security company Dragos ran a canary token experiment that planted unique web links and credentials in about two million prompts sent to AI services between July and November 2026, then watched for anyone using them. A planted secret can only be learned in one place, so any use of it proves someone read the prompt that carried it.",
+            "The researchers found that attackers had stolen data from inside three AI inference providers for months, and none of the three knew until the researchers told them, according to Dragos chief research officer HD Moore. The earliest of the three breaches began in mid-July. The planted prompts were bait, but they were processed alongside real customer requests, and Dragos said those real requests were almost certainly copied too.",
+            "Some of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a prompt is never stored. As Moore put it in the research report, a privacy flag does not help when the attacker is already inside the provider."
+          ],
+          "heading": "Two million bait prompts, three breached providers"
+        },
+        {
+          "body": [
+            "OpenRouter, the gateway that routes customers' AI requests to a pool of third-party providers, said on November 22, 2026 that it has removed three providers from its platform, removed 125 endpoints from eligibility for Zero Data Retention, and notified all potentially affected customers. The company said the findings showed no breach of OpenRouter itself.",
+            "The 125 endpoints cover providers flagged by the researchers plus others cut as a precaution, according to OpenRouter's incident announcement. Any endpoint removed during the review will require assurances and validation before its Zero Data Retention status is returned. The gateway said it is adapting the researchers' testing approach so the checks can run on an ongoing basis, and it is verifying network paths to identify where requests and responses may be forwarded to third parties."
+          ],
+          "heading": "What OpenRouter did on November 22"
+        },
+        {
+          "body": [
+            "The largest of the three breaches involved a couple hundred planted AWS keys, each sent in exactly one request to one provider during a few short windows in late October. Every request sent during those windows was stolen, and some came from requests the provider had rejected before a model ever ran, indicating the attacker was copying traffic at the first point of arrival rather than deeper in the inference stack.",
+            "The thief tested the stolen keys within hours in some cases, listed S3 buckets, searched Secrets Manager and Parameter Store, and tried to create Bedrock API keys and add IAM users to keep access, driving tens of thousands of AWS API calls. One attacker appears to have compromised two of the providers at once, using secrets from both from a single rented server.",
+            "On November 1, the same attacker brought in ARTEX, an AI-driven penetration testing framework, and used it only to confirm that keys it already held were still live. The researchers are now working with about a dozen providers, and planted keys and secret links were still being accessed months after the first thefts, as of the week of the report."
+          ],
+          "heading": "How the theft worked"
+        },
+        {
+          "body": [
+            "The research found a second way prompts were exposed that needed no break-in at all. Sellers on an AI inference marketplace listed models at the lowest prices, enabled request logging, and collected what flowed through, according to the researchers. One person, working from a Mac on home broadband in France, took passwords from two prompts and typed root SSH login attempts by hand, then used the same machine to test several planted AWS keys.",
+            "One router quietly forwarded some of its traffic to the marketplace, a hop no customer was told about, and route tracing across about 2,000 paths found several hundred unidentified systems, plus one seller that quietly adds about 1,000 hidden tokens to every prompt. An unnamed Chinese AI lab fetched the secret links from more than half of the seeded prompts sent to its models between July and October, including about two-thirds of the requests marked no data collection or Zero Data Retention.",
+            "In one case, a secret link was posted into a chat on Feishu, the Chinese workplace app known as Lark elsewhere, 24 days after the prompt was sent, and it was opened within two minutes from three desktops and three phones in Beijing and Shanghai. Dragos had disclosed only the first eight characters of the link, so whoever posted it was reading a cached copy of the full prompt."
+          ],
+          "heading": "The second problem: prompts read without any break-in"
+        },
+        {
+          "body": [
+            "Phala, one provider on the gateway, said in a preliminary incident report that an attacker took control of an inference server and could view request data while it was being processed. The incident was contained on November 8, and Phala said requests to the DeepSeek V4 Flash 0731 model that reached it through the gateway between October 21 at 00:00 UTC and November 8 at 05:35 UTC should be treated as exposed, with every key, token, password or other secret in them rotated.",
+            "Together AI said in a security notice on November 21 that an unauthorized party downloaded stored samples of customer prompts after an AI coding agent committed a credential to the company's public GitHub repository. The samples had been collected for routine software testing and came from requests to the MiniMax M3, GLM-5.2 and Kimi K2.6 models in June and July. The party searched the samples for credentials and tested them, and five of the tested credentials were canaries from the researchers' experiment.",
+            "Novita, another provider on the gateway, confirmed that a routing configuration issue caused some MiniMax requests to be sent on to MiniMax's official API, beyond what was intended for those customers. Neither Dragos nor OpenRouter has named the three breached providers, OpenRouter has not named the three it removed, and neither has said publicly whether they are the same three."
+          ],
+          "heading": "What the providers disclosed"
+        },
+        {
+          "body": [
+            "The researchers' advice starts from one limit: a privacy flag binds only the first hop, and AI systems will send whatever they can read, credentials included. Where a prompt goes is a choice, and a customer who does not choose hands the choice to the lowest price, according to the research.",
+            "Teams should rotate any secrets that appeared in prompts routed through the affected providers, and treat Phala's October 21 to November 8 window as exposed. For the longer term, the researchers recommend picking upstream providers directly instead of accepting a router's default pool, verifying that privacy settings actually change where requests go, and staying away from reseller marketplaces, some of whose capacity runs on stolen keys.",
+            "Self-hosting is the only option in which no third party reads a prompt, while going directly to a first-tier provider leaves one company, one contract and one privacy policy to check. A fake credential seeded into the context that agents and pipelines already send can serve as a tripwire if any use of it is treated as an incident, and settings that scrub known credential formats from prompts help, though they miss sensitive data that is not shaped like a key."
+          ],
+          "heading": "What teams should do now"
+        }
+      ],
+      "excerpt": "OpenRouter removed three artificial intelligence inference providers on November 22, 2026, after Dragos researchers found attackers had copied customer prompts for months, including prompts marked Zero Data Retention. Here is what the research exposed and what teams should do.",
+      "focusKeyword": "OpenRouter prompt theft",
+      "keyTakeaways": [
+        "Dragos researchers seeded about two million prompts with unique canary credentials between July and November 2026 and caught attackers copying data from inside three AI inference providers.",
+        "OpenRouter removed three providers from its platform on November 22, 2026, and pulled 125 endpoints from Zero Data Retention eligibility, while saying its own systems were not breached.",
+        "Some stolen prompts were marked Zero Data Retention, and one unnamed lab fetched secret links from more than half of the seeded prompts sent to its models, including about two-thirds marked for no data collection.",
+        "Phala and Together AI published their own incident notices, and affected customers should rotate any secrets that appeared in prompts routed to the exposed providers."
+      ],
+      "metaDescription": "OpenRouter removed three AI inference providers and pulled 125 endpoints from Zero Data Retention after Dragos caught months of prompt theft. What happened and what to do.",
+      "searchIntent": "Informational: understand the OpenRouter prompt theft findings and what AI users should do about exposed prompts",
+      "secondaryKeywords": [
+        "Dragos canary research",
+        "Zero Data Retention",
+        "AI inference providers",
+        "prompt security",
+        "Together AI"
+      ],
+      "seoTitle": "OpenRouter Drops 3 Providers After Prompt Theft | AiTouchSolutions",
+      "supportingSources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html"
+        },
+        {
+          "name": "explainx.ai",
+          "url": "https://explainx.ai/blog/dragos-hd-moore-two-million-canary-prompts-three-provider-breaches-zdr-ignored-ai-routers-2026"
+        }
+      ],
+      "tags": [
+        "OpenRouter",
+        "Dragos",
+        "artificial intelligence",
+        "cybersecurity",
+        "Zero Data Retention",
+        "AI inference",
+        "prompt security",
+        "cloud security"
+      ],
+      "title": "OpenRouter Drops Three AI Providers After Prompt Theft Exposed",
+      "id": "e82f221fd6fd",
+      "slug": "openrouter-drops-three-ai-providers-after-prompt-theft-exposed-e82f221fd6fd",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+      "image": "/og-image.jpg",
+      "imageAlt": "OpenRouter Drops Three AI Providers After Prompt Theft Exposed",
+      "publishedAt": "2026-11-23T04:01:02.803Z",
+      "updatedAt": "2026-11-23T04:01:02.803Z",
+      "author": "AiTouchSolutions Editorial",
+      "cta": {
+        "text": "Discuss how this topic may affect a cybersecurity services project.",
+        "label": "Explore cybersecurity services",
+        "href": "/services/cybersecurity-services"
+      },
+      "readingTime": 7,
+      "contentType": "news",
+      "indexable": true
+    },
     {
       "category": "AI",
       "title": "Claude Helped Prove the Riemann Hypothesis, Independent Checkers Confirm",
