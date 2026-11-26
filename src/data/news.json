@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T04:02:30.156Z",
+  "generatedAt": "2026-11-26T04:01:34.646Z",
   "sources": [
     {
       "name": "OpenAI News",
@@ -51,6 +51,103 @@
     }
   ],
   "posts": [
+    {
+      "title": "Claude Rebuilt Anthropic's Own API in Rust and Cut CPU Use by 70%",
+      "seoTitle": "Claude Rewrote Anthropic's API in Rust | AiTouchSolutions",
+      "metaDescription": "Anthropic says Claude agents rebuilt its Messages API in Rust, cutting CPU use by about 70% with no downtime. Verification, not code, was the hard part.",
+      "excerpt": "Anthropic has moved the Messages API that connects customers to Claude from Python to Rust, with Claude agents writing most of the new code. The company reports about 70% less CPU per request and replies starting about 20% faster — but proving it matched took months.",
+      "focusKeyword": "Claude Rust API migration",
+      "searchIntent": "Informational: how Anthropic used Claude agents to rebuild its Messages API in Rust and what the results were",
+      "category": "AI",
+      "tags": [
+        "AI agents",
+        "Claude",
+        "Rust",
+        "API migration",
+        "software development",
+        "Anthropic",
+        "artificial intelligence"
+      ],
+      "keyTakeaways": [
+        "Anthropic moved its Messages API from Python to Rust, with Claude agents writing most of the new code, and reports about 70% less CPU per request and over 80% less memory.",
+        "Claude wrote a first version of the API's core request path in about a week, but proving it behaved exactly like the Python version took months of verification work.",
+        "The team turned the live Python service into a verifier, shadowing production traffic and dispatching agents to fix mismatches until parity reached 99.6% in August.",
+        "Public traffic moved to Rust in September 2026 with no downtime and no feature freeze, though the performance figures are Anthropic's own and have not been independently verified."
+      ],
+      "supportingSources": [
+        {
+          "name": "Anthropic",
+          "url": "https://www.anthropic.com/research/migrating-api-to-rust"
+        },
+        {
+          "name": "InfoWorld",
+          "url": "https://www.infoworld.com/article/4253460/anthropic-says-it-moved-its-claude-api-from-python-to-rust-with-no-downtime.html"
+        },
+        {
+          "name": "The Neuron",
+          "url": "https://www.theneuron.ai/news/anthropic-claude-api-rust-migration/"
+        }
+      ],
+      "content": [
+        {
+          "heading": "The API that serves every Claude request",
+          "body": [
+            "Anthropic published an engineering account on 25 November 2026 describing how it moved its Messages API — the main way customers, and its own apps Claude Code and Cowork, reach Claude — from Python to Rust.",
+            "The API was built in Python in 2023, when one engineer described it as basically a request forwarder. Since then it has taken on validation, prompt construction, tokenisation and safety screening for every request, while traffic grew roughly 1,800 times from early 2024 to autumn 2026.",
+            "That growth is why the rewrite mattered. Python added overhead to every step of every request, and Anthropic says Rust offered far lower CPU use per request."
+          ]
+        },
+        {
+          "heading": "Claude wrote the code in about a week",
+          "body": [
+            "According to Anthropic, Claude produced a first version of the API's core request path in about a week. By May 2026, the company says Claude was writing more than 80% of the code it merged, which lowered the barrier to attempting a full rewrite.",
+            "The turnaround is striking. In 2024, after one engineer suggested migrating to Go or Rust, another replied: “We are not rewriting the API in go or rust!” Two years later, the same team let Claude do most of the rewriting.",
+            "An earlier, partial attempt had shown why a halfway step would not work. In March 2026 the team rewrote only the code that parses a model's output in Rust and called it from Python. CPU use fell by only 8% to 10%, and each token crossed between the two languages three times, adding complexity the gains did not justify. The team therefore chose a full rewrite, with Claude agents doing most of the coding and engineers focusing on architecture and migration strategy."
+          ]
+        },
+        {
+          "heading": "Verification, not generation, became the bottleneck",
+          "body": [
+            "The hard part was not writing the Rust code but proving it behaved exactly like the Python version. The roughly 700 existing integration tests were tied to the Python implementation, and an audit found more than 100 weakened assertions in the ported tests.",
+            "In April the Rust version passed about 98% of those tests, yet only about 24% of real production inputs matched what Python produced — a figure that briefly fell to 6.5% in early May.",
+            "Three problems made parity hard to check: the Python service kept changing, Claude can answer the same request differently each time, and engineers could not read customer requests to see where the versions diverged. Anthropic's engineers summed it up by saying that verification, not generation, had become the bottleneck."
+          ]
+        },
+        {
+          "heading": "Turning the live service into a verifier",
+          "body": [
+            "The team's answer was to use the production Python API as the reference. It ran production requests through both versions, calling the model once and replaying its output to each, so customers were never billed twice and natural variation in Claude's replies did not register as false differences.",
+            "To protect privacy, engineers never read customer requests. Each mismatch was logged only as a fingerprint — which step it happened in, where in the prompt it began, and how many bytes it differed by — so a single bug did not surface as thousands of separate failures.",
+            "A script grouped new kinds of mismatches every 10 to 30 minutes and alerted a coordinating Claude agent, which assigned worker agents to each bug and opened a Slack thread so engineers could follow the fixes. The share of matching inputs climbed from about 24% in late April to 99.6% by August, and merged changes to the Rust code rose from under 100 a fortnight in April to more than 3,000 in mid-August."
+          ]
+        },
+        {
+          "heading": "What changed, and what to question",
+          "body": [
+            "Public traffic moved to Rust in September 2026, and Anthropic says the switch happened without taking the service offline or freezing feature development. The company reports about 70% less CPU per request, more than 80% less memory, and about 20% lower median time to first token on customers' Claude Code requests.",
+            "Those figures come from Anthropic and have not been independently verified. Other reporting has noted lower estimates given on an October 2026 episode of the Latent Space podcast, where Anthropic staff reportedly cited a 40% to 50% CPU reduction and a 10% to 20% improvement in time to first token — a discrepancy the company has not publicly explained.",
+            "Even with that caveat, the project is a useful case study for software teams: AI coding agents can now produce a first draft of a core system quickly, but the real work shifts to verification — building the checks that prove the new system behaves like the old one before customers ever notice."
+          ]
+        }
+      ],
+      "id": "3773e1d2142a",
+      "slug": "claude-rebuilt-anthropic-s-own-api-in-rust-and-cut-cpu-use-by-70-3773e1d2142a",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+      "image": "/og-image.jpg",
+      "imageAlt": "Claude Rebuilt Anthropic's Own API in Rust and Cut CPU Use by 70%",
+      "publishedAt": "2026-11-26T04:01:34.646Z",
+      "updatedAt": "2026-11-26T04:01:34.646Z",
+      "author": "AiTouchSolutions Editorial",
+      "cta": {
+        "text": "Discuss how this topic may affect a AI agent development project.",
+        "label": "Explore AI agent development",
+        "href": "/services/ai-agent-development"
+      },
+      "readingTime": 4,
+      "contentType": "news",
+      "indexable": true
+    },
     {
       "title": "UK Regulators Warn Meta Over Muse Privacy as AI Agent Launches in Britain",
       "seoTitle": "UK Regulators Warn Meta Over Muse AI Agent Privacy",
